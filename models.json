@@ -61,6 +61,43 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think X-High",
+          "description": "Maximum reasoning depth for the hardest problems",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "description": "Extreme reasoning depth for frontier-scale problems",
+          "strategy": "effort",
+          "effort": "max"
+        },
+        "default": "medium"
       }
     },
     "agent-prime": {
@@ -91,6 +128,27 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
       }
     },
     "agent-standard": {
@@ -121,6 +179,27 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
       }
     },
     "agnes-1.5-lite": {
@@ -2087,7 +2166,6 @@
       "origin": "Apertus",
       "features": {
         "supported": [
-          "reasoning",
           "temperature",
           "tool_calling"
         ],
@@ -3518,7 +3596,32 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
+      }
     },
     "claude-3-5-haiku": {
       "lifecycle": "deprecated",
@@ -9762,6 +9865,43 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think X-High",
+          "description": "Maximum reasoning depth for the hardest problems",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "description": "Extreme reasoning depth for frontier-scale problems",
+          "strategy": "effort",
+          "effort": "max"
+        },
+        "default": "medium"
       }
     },
     "code-prime": {
@@ -9792,6 +9932,27 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
       }
     },
     "code-standard": {
@@ -9822,6 +9983,27 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
       }
     },
     "codegemma-1.1-7b": {
@@ -17680,7 +17862,32 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
+      }
     },
     "e5-large-v2": {
       "context_window_tokens": 512,
@@ -23132,7 +23339,6 @@
       },
       "features": {
         "supported": [
-          "reasoning",
           "structured_output",
           "temperature",
           "tool_calling"
@@ -34449,7 +34655,28 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 131072
+      "max_input_tokens": 131072,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
+      }
     },
     "green-s": {
       "context_window_tokens": 0,
@@ -34764,7 +34991,24 @@
           "structured_output"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        }
+      }
     },
     "grok-4-fast": {
       "lifecycle": "deprecated",
@@ -36523,7 +36767,6 @@
       },
       "features": {
         "supported": [
-          "reasoning",
           "structured_output",
           "temperature",
           "tool_calling"
@@ -41969,7 +42212,6 @@
       "origin": "NVIDIA",
       "features": {
         "supported": [
-          "reasoning",
           "structured_output",
           "temperature",
           "tool_calling"
@@ -42341,7 +42583,6 @@
       },
       "features": {
         "supported": [
-          "reasoning",
           "structured_output",
           "temperature"
         ],
@@ -50057,6 +50298,13 @@
         "unsupported": [
           "structured_output"
         ]
+      },
+      "thinking_modes": {
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "nemotron-3-ultra": {
@@ -50234,6 +50482,13 @@
         "unsupported": [
           "structured_output"
         ]
+      },
+      "thinking_modes": {
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "nemotron-3.5-content-safety": {
@@ -50525,7 +50780,38 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 128000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "description": "Extreme reasoning depth for frontier-scale problems",
+          "strategy": "effort",
+          "effort": "max"
+        },
+        "default": "medium"
+      }
     },
     "nemotron-nano-3-30b": {
       "context_window_tokens": 128000,
@@ -52927,7 +53213,28 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 128000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
+      }
     },
     "openai-gpt-4o-mini-2024-07-18": {
       "context_window_tokens": 128000,
@@ -56168,7 +56475,6 @@
       },
       "features": {
         "supported": [
-          "reasoning",
           "structured_output",
           "temperature",
           "tool_calling"
@@ -56370,7 +56676,6 @@
       },
       "features": {
         "supported": [
-          "reasoning",
           "temperature",
           "tool_calling"
         ],
@@ -57993,7 +58298,6 @@
       "origin": "Alibaba",
       "features": {
         "supported": [
-          "reasoning",
           "temperature",
           "tool_calling"
         ],
@@ -58569,7 +58873,6 @@
       },
       "features": {
         "supported": [
-          "reasoning",
           "structured_output",
           "temperature",
           "tool_calling"
@@ -58941,7 +59244,6 @@
       "origin": "Alibaba",
       "features": {
         "supported": [
-          "reasoning",
           "structured_output",
           "temperature",
           "tool_calling"
@@ -67897,7 +68199,32 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
+      }
     },
     "synth-code": {
       "context_window_tokens": 1000000,
@@ -67928,7 +68255,32 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
+      }
     },
     "synthetic-video-detector": {
       "context_window_tokens": 0,
@@ -68148,6 +68500,43 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think X-High",
+          "description": "Maximum reasoning depth for the hardest problems",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "description": "Extreme reasoning depth for frontier-scale problems",
+          "strategy": "effort",
+          "effort": "max"
+        },
+        "default": "medium"
       }
     },
     "text-multilingual-embedding-002": {
@@ -68200,6 +68589,27 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
       }
     },
     "text-standard": {
@@ -68229,6 +68639,27 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "description": "Fast responses with lighter reasoning",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "description": "Balances speed and reasoning depth for everyday tasks",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "description": "Greater reasoning depth for complex problems",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "default": "medium"
       }
     },
     "text-to-audio": {

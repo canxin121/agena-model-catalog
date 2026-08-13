@@ -2490,7 +2490,7 @@
       "context_window_tokens": 32768,
       "max_input_tokens": 32768,
       "max_output_tokens": 32768,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Baichuan's medical-domain large language model served on the Baichuan API platform with a 32K-token context window and OpenAI-compatible API.",
       "release_date": "2025-08-19",
       "last_updated": "2025-08-19",
       "open_weights": false,
@@ -2498,15 +2498,16 @@
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "15.73",
-        "output_usd_per_million_tokens": "15.73",
-        "cache_read_usd_per_million_tokens": "7.865"
+        "input_usd_per_million_tokens": "0.32",
+        "output_usd_per_million_tokens": "3.20"
       },
       "display_name": "Baichuan M2 32B Medical",
       "origin": "Baichuan",
       "features": {
+        "supported": [
+          "reasoning"
+        ],
         "unsupported": [
-          "reasoning",
           "tool_calling",
           "structured_output"
         ]
@@ -2515,7 +2516,7 @@
     "baichuan-m2-32b": {
       "context_window_tokens": 131072,
       "max_output_tokens": 131072,
-      "description": "Open-weight instruction model for adaptable chat and self-hosted production workloads",
+      "description": "Baichuan's open-weight (Apache-2.0) medical reasoning model built on Qwen2.5-32B with a Large Verifier System; world-leading open-source model on HealthBench with a 131K-token context window.",
       "knowledge_cutoff": "2024-12",
       "release_date": "2025-08-13",
       "last_updated": "2025-08-13",
@@ -2531,15 +2532,32 @@
       "origin": "Baichuan",
       "features": {
         "supported": [
-          "temperature"
+          "temperature",
+          "reasoning"
         ],
         "unsupported": [
-          "reasoning",
           "tool_calling",
           "structured_output"
         ]
       },
-      "max_input_tokens": 131072
+      "max_input_tokens": 131072,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "chat_template_kwargs": {
+                "thinking_mode": "on"
+              }
+            }
+          }
+        }
+      }
     },
     "baichuan4-air": {
       "context_window_tokens": 32768,
@@ -13582,18 +13600,10 @@
         ]
       },
       "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
         }
       },
       "max_input_tokens": 163840
@@ -13629,7 +13639,8 @@
           "text"
         ]
       },
-      "max_input_tokens": 1048576
+      "max_input_tokens": 1048576,
+      "knowledge_cutoff": "2025-05"
     },
     "deepseek-chat": {
       "lifecycle": "deprecated",
@@ -13749,7 +13760,16 @@
         "text"
       ],
       "display_name": "deepseek-coder-6.7b-instruct",
-      "origin": "DeepSeek"
+      "origin": "DeepSeek",
+      "context_window_tokens": 16384,
+      "max_input_tokens": 16384,
+      "max_output_tokens": 4096,
+      "knowledge_cutoff": "2024-04",
+      "description": "DeepSeek Coder 6.7B instruction model for code generation, project-level completion, and fill-in-the-blank across 80+ programming languages",
+      "pricing": {
+        "input_usd_per_million_tokens": "0.14",
+        "output_usd_per_million_tokens": "0.28"
+      }
     },
     "deepseek-latest": {
       "context_window_tokens": 1048576,
@@ -13793,7 +13813,7 @@
     "deepseek-math-v2": {
       "context_window_tokens": 160000,
       "max_output_tokens": 160000,
-      "description": "DeepSeek chat model for instruction following, coding, and analysis",
+      "description": "DeepSeekMath-V2, an open 685B-parameter mathematical reasoning model with a verifier-generator architecture for self-verifying problem solving and theorem proving",
       "release_date": "2025-12-04",
       "last_updated": "2025-12-04",
       "open_weights": false,
@@ -13889,7 +13909,7 @@
       "context_window_tokens": 160000,
       "max_input_tokens": 160000,
       "max_output_tokens": 16384,
-      "description": "Flagship DeepSeek model for coding, reasoning, and agentic work",
+      "description": "DeepSeek-Prover-V2, a 671B mixture-of-experts formal theorem-proving model fine-tuned on DeepSeek-V3-Base for Lean 4 proofs and math",
       "release_date": "2025-11-15",
       "last_updated": "2025-04-30",
       "open_weights": true,
@@ -13912,7 +13932,8 @@
           "tool_calling",
           "structured_output"
         ]
-      }
+      },
+      "knowledge_cutoff": "2024-07"
     },
     "deepseek-r1": {
       "lifecycle": "deprecated",
@@ -14029,9 +14050,10 @@
         ]
       },
       "thinking_modes": {
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only"
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
         }
       },
       "max_input_tokens": 128000
@@ -14283,9 +14305,10 @@
         "temperature"
       ],
       "thinking_modes": {
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only"
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
         }
       },
       "max_input_tokens": 64000
@@ -14643,21 +14666,18 @@
         ]
       },
       "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
         }
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 128000,
+      "pricing": {
+        "input_usd_per_million_tokens": "0.28",
+        "output_usd_per_million_tokens": "0.42",
+        "cache_read_usd_per_million_tokens": "0.028"
+      }
     },
     "deepseek-v3.2-exp": {
       "context_window_tokens": 163840,
@@ -14729,11 +14749,13 @@
         ]
       },
       "thinking_modes": {
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only"
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-07-31"
     },
     "deepseek-v3.2-fast": {
       "lifecycle": "deprecated",
@@ -14801,18 +14823,10 @@
         "temperature"
       ],
       "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
         }
       },
       "max_input_tokens": 131072
@@ -14848,9 +14862,10 @@
         ]
       },
       "thinking_modes": {
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only"
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
         }
       },
       "max_input_tokens": 128000
@@ -14885,9 +14900,10 @@
         "temperature"
       ],
       "thinking_modes": {
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only"
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
         }
       }
     },
@@ -14995,21 +15011,6 @@
           "text"
         ]
       },
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
-      },
       "max_input_tokens": 1000000
     },
     "deepseek-v4-flash-0731:thinking": {
@@ -15036,13 +15037,7 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ],
-      "thinking_modes": {
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only"
-        }
-      }
+      ]
     },
     "deepseek-v4-flash-0731@eu": {
       "context_window_tokens": 1048576,
@@ -15075,21 +15070,6 @@
           "text"
         ]
       },
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
-      },
       "max_input_tokens": 1048576
     },
     "deepseek-v4-flash-el": {
@@ -15116,21 +15096,6 @@
         "reasoning",
         "tool_calling"
       ],
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
-      },
       "knowledge_cutoff": "2025-05"
     },
     "deepseek-v4-flash-latest": {
@@ -15157,21 +15122,6 @@
         "structured_output",
         "temperature"
       ],
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
-      },
       "knowledge_cutoff": "2025-05"
     },
     "deepseek-v4-flash:0731": {
@@ -15199,21 +15149,6 @@
         "supported": [
           "text"
         ]
-      },
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
       },
       "max_input_tokens": 1048576,
       "pricing": {
@@ -15249,21 +15184,6 @@
           "structured_output"
         ]
       },
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
-      },
       "max_input_tokens": 1048576,
       "knowledge_cutoff": "2025-05"
     },
@@ -15291,13 +15211,7 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ],
-      "thinking_modes": {
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only"
-        }
-      }
+      ]
     },
     "deepseek-v4-pro": {
       "context_window_tokens": 1000000,
@@ -15364,21 +15278,6 @@
           "structured_output"
         ]
       },
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
-      },
       "knowledge_cutoff": "2025-05"
     },
     "deepseek-v4-pro-0813:thinking": {
@@ -15405,12 +15304,6 @@
         "structured_output",
         "temperature"
       ],
-      "thinking_modes": {
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only"
-        }
-      },
       "knowledge_cutoff": "2025-05"
     },
     "deepseek-v4-pro-el": {
@@ -15437,21 +15330,6 @@
         "reasoning",
         "tool_calling"
       ],
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
-      },
       "knowledge_cutoff": "2025-05"
     },
     "deepseek-v4-pro-lightning": {
@@ -15487,21 +15365,6 @@
           "text"
         ]
       },
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
-      },
       "max_input_tokens": 1000000
     },
     "deepseek-v4-pro:discounted": {
@@ -15531,21 +15394,6 @@
           "structured_output"
         ]
       },
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
-      },
       "max_input_tokens": 1048576,
       "knowledge_cutoff": "2025-05"
     },
@@ -15573,13 +15421,7 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ],
-      "thinking_modes": {
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only"
-        }
-      }
+      ]
     },
     "deplot": {
       "release_date": "2023-04-03",
@@ -16159,7 +16001,7 @@
       "context_window_tokens": 256000,
       "max_input_tokens": 256000,
       "max_output_tokens": 16384,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Doubao 1.5 Pro 256k is ByteDance's long-context (256k) variant of the Doubao 1.5 Pro LLM for general chat, analysis, and production workloads.",
       "release_date": "2025-03-12",
       "last_updated": "2025-03-12",
       "open_weights": false,
@@ -16190,7 +16032,7 @@
       "context_window_tokens": 32000,
       "max_input_tokens": 32000,
       "max_output_tokens": 8192,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Doubao 1.5 Pro 32k is ByteDance's 32k-context variant of the Doubao 1.5 Pro LLM for everyday chat and cost-efficient high-volume workloads.",
       "release_date": "2024-11-20",
       "last_updated": "2025-01-22",
       "open_weights": false,
@@ -16254,7 +16096,11 @@
           "effort": "high"
         }
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 128000,
+      "pricing": {
+        "input_usd_per_million_tokens": "0.571",
+        "output_usd_per_million_tokens": "2.286"
+      }
     },
     "doubao-1.5-vision-pro": {
       "context_window_tokens": 128000,
@@ -16286,13 +16132,17 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 128000,
+      "pricing": {
+        "input_usd_per_million_tokens": "0.429",
+        "output_usd_per_million_tokens": "1.286"
+      }
     },
     "doubao-1.5-vision-pro-32k": {
       "context_window_tokens": 32000,
       "max_input_tokens": 32000,
       "max_output_tokens": 8192,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Doubao 1.5 Vision Pro 32k is ByteDance's multimodal 1.5-series model for image and document understanding, with a 32k context window.",
       "release_date": "2024-11-20",
       "last_updated": "2025-01-22",
       "open_weights": false,
@@ -16325,8 +16175,8 @@
       "context_window_tokens": 256000,
       "max_input_tokens": 256000,
       "max_output_tokens": 16384,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "release_date": "2024-01-01",
+      "description": "Doubao Seed 1.6 is ByteDance's multimodal flagship LLM with a 256k context window for text, image, video, and document input, with deep thinking optionally enabled per request.",
+      "release_date": "2025-06-15",
       "last_updated": "2025-06-15",
       "open_weights": false,
       "output_modalities": [
@@ -16350,14 +16200,31 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "doubao-seed-1-6-flash-250615": {
       "context_window_tokens": 256000,
       "max_input_tokens": 256000,
       "max_output_tokens": 16384,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "release_date": "2024-01-01",
+      "description": "Doubao Seed 1.6 Flash is ByteDance's low-latency, cost-optimized variant of the Doubao Seed 1.6 multimodal LLM, with a 256k context window and optional deep thinking.",
+      "release_date": "2025-06-15",
       "last_updated": "2025-06-15",
       "open_weights": false,
       "output_modalities": [
@@ -16381,6 +16248,23 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "doubao-seed-1-6-thinking-250715": {
@@ -16460,7 +16344,7 @@
       "context_window_tokens": 224000,
       "max_input_tokens": 128000,
       "max_output_tokens": 64000,
-      "description": "Multimodal model for analyzing text, images, documents, and rich media",
+      "description": "Doubao Seed 1.8 is ByteDance's multimodal LLM for text, image, video, and document understanding with configurable deep-thinking effort.",
       "release_date": "2025-12-18",
       "last_updated": "2025-12-18",
       "open_weights": false,
@@ -16490,7 +16374,34 @@
           "reasoning",
           "structured_output"
         ]
-      }
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      },
+      "knowledge_cutoff": "2025-01-01"
     },
     "doubao-seed-1.6": {
       "context_window_tokens": 256000,
@@ -16539,7 +16450,11 @@
           }
         }
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "pricing": {
+        "input_usd_per_million_tokens": "0.114",
+        "output_usd_per_million_tokens": "1.143"
+      }
     },
     "doubao-seed-1.6-flash": {
       "context_window_tokens": 256000,
@@ -16588,7 +16503,11 @@
           }
         }
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "pricing": {
+        "input_usd_per_million_tokens": "0.021",
+        "output_usd_per_million_tokens": "0.214"
+      }
     },
     "doubao-seed-1.6-thinking": {
       "context_window_tokens": 256000,
@@ -16627,7 +16546,11 @@
           "effort": "high"
         }
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "pricing": {
+        "input_usd_per_million_tokens": "0.114",
+        "output_usd_per_million_tokens": "1.143"
+      }
     },
     "doubao-seed-1.8": {
       "context_window_tokens": 256000,
@@ -16793,13 +16716,39 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "doubao-seed-2-0-lite-260215": {
       "context_window_tokens": 256000,
       "max_input_tokens": 256000,
       "max_output_tokens": 32000,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Doubao Seed 2.0 Lite is ByteDance's fast, low-cost multimodal LLM with a 256k context window and configurable thinking effort for high-volume workloads.",
       "release_date": "2026-02-14",
       "last_updated": "2026-02-14",
       "open_weights": false,
@@ -16824,6 +16773,32 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "doubao-seed-2-0-lite-260428": {
@@ -16905,7 +16880,7 @@
       "context_window_tokens": 256000,
       "max_input_tokens": 256000,
       "max_output_tokens": 32000,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Doubao Seed 2.0 Mini is ByteDance's compact, low-cost multimodal LLM with a 256k context window and configurable thinking effort for lightweight tasks.",
       "release_date": "2026-02-14",
       "last_updated": "2026-02-14",
       "open_weights": false,
@@ -16930,6 +16905,32 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "doubao-seed-2-0-mini-260428": {
@@ -17086,7 +17087,7 @@
       "context_window_tokens": 256000,
       "max_input_tokens": 256000,
       "max_output_tokens": 128000,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Doubao Seed 2.0 Pro is ByteDance's high-capability multimodal LLM with a 256k context window, up to 128k output tokens, and configurable thinking effort.",
       "release_date": "2026-02-14",
       "last_updated": "2026-02-14",
       "open_weights": false,
@@ -17111,6 +17112,32 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "doubao-seed-2.0-code": {
@@ -17395,6 +17422,23 @@
           "tool_calling",
           "structured_output"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "doubao-seed-2.1-turbo": {
@@ -17421,6 +17465,23 @@
           "tool_calling",
           "structured_output"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "doubao-seed-character": {
@@ -17484,7 +17545,24 @@
         "tool_calling",
         "temperature"
       ],
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "doubao-seed-code-preview-251028": {
       "context_window_tokens": 256000,
@@ -17861,7 +17939,7 @@
     "ernie-4.5-21b-a3b": {
       "context_window_tokens": 120000,
       "max_output_tokens": 8000,
-      "description": "Open-weight instruction model for adaptable chat and self-hosted production workloads",
+      "description": "Baidu's open-weight ERNIE 4.5 21B MoE (3B active) text chat model for non-thinking chat and tool-calling workloads",
       "knowledge_cutoff": "2025-03",
       "release_date": "2025-06-30",
       "last_updated": "2025-06-30",
@@ -17889,7 +17967,7 @@
     "ernie-4.5-21b-a3b-thinking": {
       "context_window_tokens": 128000,
       "max_output_tokens": 8000,
-      "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
+      "description": "Open-weight thinking variant of Baidu ERNIE 4.5 21B with always-on deep thinking for reasoning, math, and tool use",
       "knowledge_cutoff": "2025-03",
       "release_date": "2025-03-16",
       "last_updated": "2025-03-16",
@@ -17929,10 +18007,10 @@
     "ernie-4.5-300b-a47b": {
       "context_window_tokens": 131000,
       "max_output_tokens": 131000,
-      "description": "Tool-capable chat model for instruction following and agentic application workflows",
+      "description": "Baidu's open-weight ERNIE 4.5 300B MoE (47B active) text model for instruction following and agentic workflows",
       "release_date": "2025-07-02",
       "last_updated": "2025-11-25",
-      "open_weights": false,
+      "open_weights": true,
       "output_modalities": [
         "text"
       ],
@@ -17952,12 +18030,13 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 131000
+      "max_input_tokens": 131000,
+      "knowledge_cutoff": "2025-03"
     },
     "ernie-4.5-300b-a47b-paddle": {
       "context_window_tokens": 123000,
       "max_output_tokens": 12000,
-      "description": "Open-weight instruction model for adaptable chat and self-hosted production workloads",
+      "description": "Open-weight ERNIE 4.5 300B MoE (47B active) text model, PaddlePaddle-served variant for self-hosted workloads",
       "release_date": "2026-01",
       "last_updated": "2026-01",
       "open_weights": true,
@@ -17980,12 +18059,13 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 123000
+      "max_input_tokens": 123000,
+      "knowledge_cutoff": "2025-03"
     },
     "ernie-4.5-vl-28b-a3b": {
       "context_window_tokens": 30000,
       "max_output_tokens": 8000,
-      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "description": "Open-weight multimodal (text/image/video) ERNIE 4.5 VL 28B MoE (3B active) model with an optional deep-thinking toggle",
       "release_date": "2025-06-30",
       "last_updated": "2026-06-14",
       "open_weights": true,
@@ -18007,12 +18087,28 @@
         "tool_calling",
         "temperature"
       ],
-      "max_input_tokens": 30000
+      "max_input_tokens": 30000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      },
+      "knowledge_cutoff": "2025-03"
     },
     "ernie-4.5-vl-28b-a3b-thinking": {
       "context_window_tokens": 131072,
       "max_output_tokens": 65536,
-      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "description": "Open-weight multimodal (text/image/video) thinking variant of ERNIE 4.5 VL 28B with always-on deep thinking",
       "release_date": "2025-11-26",
       "last_updated": "2025-11-26",
       "open_weights": true,
@@ -18043,16 +18139,17 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-03"
     },
     "ernie-4.5-vl-424b-a47b": {
       "context_window_tokens": 123000,
       "max_output_tokens": 16000,
-      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "description": "Baidu's open-weight ERNIE 4.5 VL 424B MoE (47B active) multimodal (text/image/video) model with deep thinking",
       "knowledge_cutoff": "2025-03-31",
       "release_date": "2025-06-30",
       "last_updated": "2025-06-30",
-      "open_weights": false,
+      "open_weights": true,
       "output_modalities": [
         "text"
       ],
@@ -18076,13 +18173,28 @@
           "structured_output"
         ]
       },
-      "max_input_tokens": 123000
+      "max_input_tokens": 123000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "ernie-5.0-thinking-preview": {
       "context_window_tokens": 128000,
       "max_input_tokens": 128000,
       "max_output_tokens": 16384,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Baidu ERNIE 5.0 preview deep-thinking model with reasoning enabled by default for complex problem solving",
       "knowledge_cutoff": "2025-01-01",
       "release_date": "2025-11-18",
       "last_updated": "2025-11-18",
@@ -18126,7 +18238,7 @@
       "context_window_tokens": 119000,
       "max_input_tokens": 119000,
       "max_output_tokens": 64000,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Baidu's ERNIE 5.1 flagship text-generation model for agentic tasks, tool calling, and deep search (non-thinking)",
       "release_date": "2026-05-10",
       "last_updated": "2026-05-10",
       "open_weights": false,
@@ -18157,7 +18269,7 @@
       "context_window_tokens": 119000,
       "max_input_tokens": 119000,
       "max_output_tokens": 64000,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Deep-thinking variant of Baidu ERNIE 5.1 for reasoning-heavy and agentic workloads",
       "release_date": "2026-05-10",
       "last_updated": "2026-05-10",
       "open_weights": false,
@@ -18197,7 +18309,7 @@
       "context_window_tokens": 64000,
       "max_input_tokens": 64000,
       "max_output_tokens": 8192,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Baidu ERNIE X1.1 preview deep-thinking reasoning model built on ERNIE 4.5 with tool calling and agentic capabilities",
       "release_date": "2025-09-10",
       "last_updated": "2025-09-10",
       "open_weights": false,
@@ -18225,6 +18337,13 @@
           "structured_output",
           "tool_calling"
         ]
+      },
+      "thinking_modes": {
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "esm2-650m": {
@@ -24160,6 +24279,23 @@
           "structured_output",
           "tool_calling"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "glm-4.1v-thinking-flashx": {
@@ -24193,6 +24329,23 @@
           "structured_output",
           "tool_calling"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "glm-4.5": {
@@ -24327,7 +24480,20 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ]
+      ],
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      }
     },
     "glm-4.5-airx": {
       "context_window_tokens": 128000,
@@ -24362,7 +24528,24 @@
           "text"
         ]
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 128000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      }
     },
     "glm-4.5-flash": {
       "context_window_tokens": 131072,
@@ -24493,6 +24676,19 @@
           "tool_calling",
           "structured_output"
         ]
+      },
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "glm-4.5v": {
@@ -24581,6 +24777,19 @@
           "tool_calling",
           "structured_output"
         ]
+      },
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "glm-4.6": {
@@ -24662,7 +24871,25 @@
           "tool_calling",
           "structured_output"
         ]
-      }
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "glm-4.6-turbo:thinking": {
       "context_window_tokens": 200000,
@@ -24691,7 +24918,20 @@
           "structured_output"
         ]
       },
-      "knowledge_cutoff": "2025-04"
+      "knowledge_cutoff": "2025-04",
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      }
     },
     "glm-4.6:thinking": {
       "context_window_tokens": 200000,
@@ -24717,7 +24957,20 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ]
+      ],
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      }
     },
     "glm-4.6v": {
       "context_window_tokens": 131072,
@@ -25019,6 +25272,19 @@
           "tool_calling",
           "structured_output"
         ]
+      },
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "glm-4.7-flashx": {
@@ -25141,7 +25407,20 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ]
+      ],
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      }
     },
     "glm-5": {
       "lifecycle": "deprecated",
@@ -25456,7 +25735,21 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ]
+      ],
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "glm-5.1:thinking": {
       "context_window_tokens": 200000,
@@ -25481,7 +25774,21 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ]
+      ],
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "glm-5.2": {
       "lifecycle": "alpha",
@@ -25534,7 +25841,8 @@
           "strategy": "effort",
           "effort": "max"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-11"
     },
     "glm-5.2-caveman": {
       "context_window_tokens": 1000000,
@@ -25719,7 +26027,8 @@
           "text"
         ]
       },
-      "max_input_tokens": 1048560
+      "max_input_tokens": 1048560,
+      "knowledge_cutoff": "2025-11"
     },
     "glm-5.2-flex": {
       "context_window_tokens": 1048560,
@@ -26298,7 +26607,8 @@
           "text"
         ]
       },
-      "max_input_tokens": 199984
+      "max_input_tokens": 199984,
+      "knowledge_cutoff": "2025-11"
     },
     "glm-5.2-short-fast-flex": {
       "context_window_tokens": 199984,
@@ -26331,7 +26641,8 @@
           "text"
         ]
       },
-      "max_input_tokens": 199984
+      "max_input_tokens": 199984,
+      "knowledge_cutoff": "2025-11"
     },
     "glm-5.2-short-flex": {
       "context_window_tokens": 199984,
@@ -26406,7 +26717,20 @@
         "structured_output",
         "temperature"
       ],
-      "knowledge_cutoff": "2025-11"
+      "knowledge_cutoff": "2025-11",
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      }
     },
     "glm-5.2@eu": {
       "context_window_tokens": 1048576,
@@ -26481,7 +26805,21 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ]
+      ],
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "glm-5p2": {
       "context_window_tokens": 1048575,
@@ -26656,7 +26994,20 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ]
+      ],
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
+      }
     },
     "glm-for-coding": {
       "context_window_tokens": 200000,
@@ -26771,6 +27122,23 @@
           "tool_calling",
           "structured_output"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "glm-z1-air": {
@@ -26804,6 +27172,23 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "glm-z1-airx": {
@@ -26837,6 +27222,23 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "glm-zero-preview": {
@@ -26868,6 +27270,23 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          }
+        }
       }
     },
     "glm5.2": {
@@ -37133,8 +37552,8 @@
     "hunyuan-2.0-instruct": {
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
-      "description": "Tencent Hy reasoning model for coding, instruction following, and agent tasks",
-      "release_date": "2026-03-08",
+      "description": "Tencent Hunyuan 2.0 instruct chat variant (non-reasoning) for fast coding, instruction-following, and agent tasks",
+      "release_date": "2025-12-05",
       "last_updated": "2026-03-08",
       "open_weights": false,
       "output_modalities": [
@@ -37168,7 +37587,7 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
       "description": "Tencent Hy reasoning model for coding, instruction following, and agent tasks",
-      "release_date": "2026-03-08",
+      "release_date": "2025-12-05",
       "last_updated": "2026-03-08",
       "open_weights": false,
       "assistant_reasoning_interleaved": true,
@@ -37212,7 +37631,7 @@
       "knowledge_cutoff": "2025-03-31",
       "release_date": "2025-07-08",
       "last_updated": "2025-07-08",
-      "open_weights": false,
+      "open_weights": true,
       "output_modalities": [
         "text"
       ],
@@ -37252,7 +37671,7 @@
       "description": "Translation model for multilingual conversion, localization, and cross-language workflows",
       "release_date": "2025-08-15",
       "last_updated": "2025-09-18",
-      "open_weights": false,
+      "open_weights": true,
       "output_modalities": [
         "text"
       ],
@@ -37275,7 +37694,7 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
       "description": "Tencent Hy reasoning model for coding, instruction following, and agent tasks",
-      "release_date": "2026-03-08",
+      "release_date": "2025-03-21",
       "last_updated": "2026-03-08",
       "open_weights": false,
       "assistant_reasoning_interleaved": true,
@@ -37310,13 +37729,14 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2024-12-31"
     },
     "hunyuan-turbos": {
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
-      "description": "Tencent Hy reasoning model for coding, instruction following, and agent tasks",
-      "release_date": "2026-03-08",
+      "description": "Tencent Hunyuan TurboS fast-response hybrid MoE chat model (non-reasoning) for low-latency assistance and high-volume workloads",
+      "release_date": "2025-02-27",
       "last_updated": "2026-03-08",
       "open_weights": false,
       "output_modalities": [
@@ -37344,7 +37764,8 @@
           "text"
         ]
       },
-      "max_input_tokens": 131072
+      "max_input_tokens": 131072,
+      "knowledge_cutoff": "2024-12-31"
     },
     "hunyuan-turbos-20250226": {
       "context_window_tokens": 24000,
@@ -37375,7 +37796,8 @@
         "supported": [
           "text"
         ]
-      }
+      },
+      "knowledge_cutoff": "2024-12-31"
     },
     "hy3": {
       "context_window_tokens": 262144,
@@ -39017,7 +39439,7 @@
       "max_input_tokens": 128000,
       "max_output_tokens": 8192,
       "description": "Kimi model for long-context chat, coding, and agentic reasoning",
-      "release_date": "2024-01-01",
+      "release_date": "2025-07-11",
       "last_updated": "2025-07-11",
       "open_weights": true,
       "output_modalities": [
@@ -39038,7 +39460,8 @@
         "unsupported": [
           "reasoning"
         ]
-      }
+      },
+      "knowledge_cutoff": "2024-10"
     },
     "kimi-k2-instruct-0905": {
       "lifecycle": "deprecated",
@@ -39076,7 +39499,7 @@
       "context_window_tokens": 131072,
       "max_input_tokens": 131072,
       "max_output_tokens": 16384,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Fast low-latency variant of Kimi K2 0711 Instruct for high-volume workloads",
       "release_date": "2025-12-15",
       "last_updated": "2025-07-15",
       "open_weights": true,
@@ -39104,7 +39527,8 @@
           "structured_output",
           "tool_calling"
         ]
-      }
+      },
+      "knowledge_cutoff": "2024-10"
     },
     "kimi-k2-thinking": {
       "lifecycle": "deprecated",
@@ -39241,7 +39665,7 @@
       "max_output_tokens": 16384,
       "description": "Kimi model for long-context chat, coding, and agentic reasoning",
       "knowledge_cutoff": "2025-01",
-      "release_date": "2025-01-01",
+      "release_date": "2025-07-11",
       "last_updated": "2025-01-01",
       "open_weights": false,
       "output_modalities": [
@@ -39301,7 +39725,7 @@
       "knowledge_cutoff": "2024-10",
       "release_date": "2025-09-04",
       "last_updated": "2025-09-04",
-      "open_weights": false,
+      "open_weights": true,
       "output_modalities": [
         "text"
       ],
@@ -39478,7 +39902,8 @@
           "reasoning",
           "temperature"
         ]
-      }
+      },
+      "knowledge_cutoff": "2025-01"
     },
     "kimi-k2.5-lightning": {
       "context_window_tokens": 131072,
@@ -39538,7 +39963,8 @@
           "effort": "high"
         }
       },
-      "max_input_tokens": 131072
+      "max_input_tokens": 131072,
+      "knowledge_cutoff": "2025-01"
     },
     "kimi-k2.5:thinking": {
       "context_window_tokens": 256000,
@@ -40088,7 +40514,8 @@
           }
         }
       },
-      "max_input_tokens": 262000
+      "max_input_tokens": 262000,
+      "knowledge_cutoff": "2025-01"
     },
     "kimi-k2p6-fast": {
       "context_window_tokens": 262000,
@@ -40118,7 +40545,8 @@
         "tool_calling",
         "temperature"
       ],
-      "max_input_tokens": 262000
+      "max_input_tokens": 262000,
+      "knowledge_cutoff": "2025-01"
     },
     "kimi-k2p6-turbo": {
       "context_window_tokens": 262000,
@@ -40148,7 +40576,8 @@
         "tool_calling",
         "temperature"
       ],
-      "max_input_tokens": 262000
+      "max_input_tokens": 262000,
+      "knowledge_cutoff": "2025-01"
     },
     "kimi-k2p7-code": {
       "context_window_tokens": 262000,
@@ -40185,7 +40614,8 @@
           "effort": "high"
         }
       },
-      "max_input_tokens": 262000
+      "max_input_tokens": 262000,
+      "knowledge_cutoff": "2025-01"
     },
     "kimi-k2p7-code-fast": {
       "context_window_tokens": 262000,
@@ -40222,7 +40652,8 @@
           "effort": "high"
         }
       },
-      "max_input_tokens": 262000
+      "max_input_tokens": 262000,
+      "knowledge_cutoff": "2025-01"
     },
     "kimi-k3": {
       "context_window_tokens": 1048576,
@@ -40433,7 +40864,13 @@
       "features": [
         "reasoning"
       ],
-      "max_input_tokens": 262144
+      "max_input_tokens": 262144,
+      "pricing": {
+        "input_usd_per_million_tokens": "3",
+        "output_usd_per_million_tokens": "15",
+        "cache_read_usd_per_million_tokens": "0.3"
+      },
+      "release_date": "2026-07-16"
     },
     "kimi-k3@eu": {
       "context_window_tokens": 1048576,
@@ -44776,7 +45213,7 @@
       "context_window_tokens": 65536,
       "max_input_tokens": 65532,
       "max_output_tokens": 2048,
-      "description": "MiniMax model for chat, coding, office work, and agentic tasks",
+      "description": "MiniMax dialogue-first model specialized for immersive roleplay and AI-companion chat, powering Talkie and Xingye",
       "release_date": "2026-01-23",
       "last_updated": "2026-01-23",
       "open_weights": false,
@@ -44799,6 +45236,13 @@
           "tool_calling",
           "structured_output"
         ]
+      },
+      "thinking_modes": {
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "minimax-m2.1": {
@@ -44970,7 +45414,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-08"
     },
     "minimax-m2.5-fast": {
       "lifecycle": "deprecated",
@@ -45046,7 +45491,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-08"
     },
     "minimax-m2.5-lightning": {
       "context_window_tokens": 204800,
@@ -45196,7 +45642,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-01"
     },
     "minimax-m25": {
       "context_window_tokens": 198000,
@@ -45236,7 +45683,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-08"
     },
     "minimax-m27": {
       "context_window_tokens": 198000,
@@ -45274,7 +45722,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-01"
     },
     "minimax-m2p7": {
       "context_window_tokens": 196608,
@@ -45307,7 +45756,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-01"
     },
     "minimax-m3": {
       "lifecycle": "deprecated",
@@ -45407,6 +45857,16 @@
             }
           }
         }
+      },
+      "speed_modes": {
+        "priority": {
+          "display_name": "Priority",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        }
       }
     },
     "minimax-m3-preview": {
@@ -45457,7 +45917,8 @@
             }
           }
         }
-      }
+      },
+      "knowledge_cutoff": "2025-01"
     },
     "minimax-m3:thinking": {
       "context_window_tokens": 512000,
@@ -45493,7 +45954,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-01"
     },
     "minimax-text-01": {
       "context_window_tokens": 1000000,
@@ -55944,7 +56406,11 @@
           "text"
         ]
       },
-      "max_input_tokens": 131072
+      "max_input_tokens": 131072,
+      "pricing": {
+        "input_usd_per_million_tokens": "0.36",
+        "output_usd_per_million_tokens": "1.45"
+      }
     },
     "qwen-2.5-72b-instruct": {
       "context_window_tokens": 32768,
@@ -57056,7 +57522,12 @@
           "text"
         ]
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 128000,
+      "pricing": {
+        "input_usd_per_million_tokens": "1.6",
+        "output_usd_per_million_tokens": "6.4",
+        "cache_read_usd_per_million_tokens": "0.79985"
+      }
     },
     "qwen-max-latest": {
       "context_window_tokens": 131072,
@@ -57334,7 +57805,22 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen-plus-2025-07-28:thinking": {
       "context_window_tokens": 1000000,
@@ -57587,7 +58073,11 @@
           "structured_output"
         ]
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 128000,
+      "pricing": {
+        "input_usd_per_million_tokens": "0.42",
+        "output_usd_per_million_tokens": "1.27"
+      }
     },
     "qwen-vl-ocr": {
       "context_window_tokens": 34096,
@@ -57797,7 +58287,8 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "knowledge_cutoff": "2024-04"
     },
     "qwen2.5-coder-0.5b": {
       "context_window_tokens": 32768,
@@ -57826,7 +58317,8 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "knowledge_cutoff": "2024-04"
     },
     "qwen2.5-coder-32b-instruct": {
       "context_window_tokens": 128000,
@@ -58153,7 +58645,8 @@
           "structured_output",
           "tool_calling"
         ]
-      }
+      },
+      "knowledge_cutoff": "2024-06-30"
     },
     "qwen3-asr-flash": {
       "context_window_tokens": 53248,
@@ -58535,7 +59028,8 @@
           "text"
         ]
       },
-      "max_input_tokens": 8000
+      "max_input_tokens": 8000,
+      "knowledge_cutoff": "2025-06"
     },
     "qwen3-embedding-4b": {
       "context_window_tokens": 32000,
@@ -58699,6 +59193,21 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
       }
     },
     "qwen3-max-2025-09-23": {
@@ -58732,7 +59241,22 @@
           "text"
         ]
       },
-      "max_input_tokens": 258048
+      "max_input_tokens": 258048,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen3-max-2026-01-23": {
       "context_window_tokens": 262144,
@@ -58768,6 +59292,21 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
       }
     },
     "qwen3-max-preview": {
@@ -58803,7 +59342,22 @@
           "text"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen3-max-thinking": {
       "context_window_tokens": 262144,
@@ -58874,7 +59428,22 @@
           "text"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen3-next-80b-a3b-instruct": {
       "context_window_tokens": 131072,
@@ -58912,6 +59481,21 @@
         "unsupported": [
           "reasoning"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
       }
     },
     "qwen3-next-80b-a3b-thinking": {
@@ -59063,7 +59647,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2024-04"
     },
     "qwen3-omni-flash": {
       "context_window_tokens": 65536,
@@ -59484,7 +60069,14 @@
           "structured_output"
         ]
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 128000,
+      "thinking_modes": {
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "qwen3-vl-32b-instruct": {
       "context_window_tokens": 131072,
@@ -59516,7 +60108,8 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 131072
+      "max_input_tokens": 131072,
+      "knowledge_cutoff": "2025-09"
     },
     "qwen3-vl-32b-thinking": {
       "context_window_tokens": 262000,
@@ -59551,7 +60144,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-09"
     },
     "qwen3-vl-8b-instruct": {
       "context_window_tokens": 131072,
@@ -59584,7 +60178,8 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 131072
+      "max_input_tokens": 131072,
+      "knowledge_cutoff": "2025-09"
     },
     "qwen3-vl-8b-thinking": {
       "context_window_tokens": 131072,
@@ -59619,7 +60214,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-09"
     },
     "qwen3-vl-embedding-8b": {
       "context_window_tokens": 32000,
@@ -59685,7 +60281,8 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 262144
+      "max_input_tokens": 262144,
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3-vl-instruct": {
       "context_window_tokens": 131072,
@@ -59830,7 +60427,8 @@
         "tool_calling",
         "temperature"
       ],
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "knowledge_cutoff": "2025-03-31"
     },
     "qwen3.14b": {
       "context_window_tokens": 40960,
@@ -59900,7 +60498,23 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "knowledge_cutoff": "2025-03-31",
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen3.235b": {
       "context_window_tokens": 128000,
@@ -60019,7 +60633,22 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 262144
+      "max_input_tokens": 262144,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen3.235b-a22b-instruct": {
       "context_window_tokens": 256000,
@@ -60047,7 +60676,22 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen3.235b-a22b-instruct-2507": {
       "lifecycle": "deprecated",
@@ -60080,6 +60724,21 @@
           "reasoning",
           "structured_output"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
       }
     },
     "qwen3.235b-a22b-thinking": {
@@ -60265,7 +60924,22 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 262144
+      "max_input_tokens": 262144,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen3.30b-a3b-instruct-2507": {
       "context_window_tokens": 128000,
@@ -60296,6 +60970,21 @@
         "unsupported": [
           "reasoning"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
       }
     },
     "qwen3.30b-a3b-thinking-2507": {
@@ -60407,7 +61096,8 @@
         "tool_calling",
         "temperature"
       ],
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "knowledge_cutoff": "2025-03-31"
     },
     "qwen3.4b-instruct-2507": {
       "context_window_tokens": 262144,
@@ -60449,7 +61139,8 @@
             }
           }
         }
-      }
+      },
+      "knowledge_cutoff": "2025-06-30"
     },
     "qwen3.5-0.8b": {
       "context_window_tokens": 32768,
@@ -60481,7 +61172,23 @@
           "text"
         ]
       },
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "knowledge_cutoff": "2025-04",
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen3.5-122b": {
       "context_window_tokens": 262144,
@@ -60528,7 +61235,8 @@
             }
           }
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-122b-a10b": {
       "context_window_tokens": 262144,
@@ -60633,7 +61341,8 @@
             }
           }
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-122b-a10b:thinking": {
       "context_window_tokens": 131072,
@@ -60672,7 +61381,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-27b": {
       "context_window_tokens": 262144,
@@ -60775,7 +61485,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-2b": {
       "context_window_tokens": 32768,
@@ -60807,7 +61518,23 @@
           "text"
         ]
       },
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "knowledge_cutoff": "2025-04",
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen3.5-35b-a3b": {
       "context_window_tokens": 262144,
@@ -60910,7 +61637,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-397b-a17b": {
       "lifecycle": "deprecated",
@@ -61068,7 +61796,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-397b-fast": {
       "context_window_tokens": 262128,
@@ -61101,7 +61830,8 @@
           "text"
         ]
       },
-      "max_input_tokens": 262128
+      "max_input_tokens": 262128,
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-4b": {
       "context_window_tokens": 32768,
@@ -61138,7 +61868,22 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "enable_thinking": true
+            }
+          }
+        }
+      }
     },
     "qwen3.5-9b": {
       "context_window_tokens": 262144,
@@ -61230,7 +61975,8 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-9b-q4.k.m": {
       "context_window_tokens": 32768,
@@ -61261,7 +62007,8 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-flash": {
       "context_window_tokens": 1000000,
@@ -61358,7 +62105,8 @@
             }
           }
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-flash:thinking": {
       "context_window_tokens": 991808,
@@ -61402,7 +62150,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-omni-flash": {
       "context_window_tokens": 49152,
@@ -61436,7 +62185,8 @@
           "structured_output",
           "tool_calling"
         ]
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-omni-plus": {
       "context_window_tokens": 983616,
@@ -61470,7 +62220,8 @@
           "structured_output",
           "tool_calling"
         ]
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-plus": {
       "lifecycle": "deprecated",
@@ -61654,7 +62405,8 @@
             }
           }
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.5-plus-thinking": {
       "context_window_tokens": 983616,
@@ -61758,7 +62510,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.6-27b:thinking": {
       "context_window_tokens": 260096,
@@ -61799,7 +62552,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.6-35b": {
       "context_window_tokens": 256000,
@@ -61845,7 +62599,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.6-35b-a3b": {
       "lifecycle": "beta",
@@ -61953,7 +62708,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.6-35b-fast": {
       "context_window_tokens": 131056,
@@ -61988,7 +62744,8 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 131056
+      "max_input_tokens": 131056,
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.6-flash": {
       "context_window_tokens": 1000000,
@@ -62377,7 +63134,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.7-flash:thinking": {
       "context_window_tokens": 983616,
@@ -62420,7 +63178,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.7-max": {
       "context_window_tokens": 1000000,
@@ -62483,7 +63242,8 @@
             }
           }
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.7-max:thinking": {
       "context_window_tokens": 1000000,
@@ -62525,7 +63285,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.7-plus": {
       "context_window_tokens": 1000000,
@@ -62729,7 +63490,8 @@
           "strategy": "effort",
           "effort": "xhigh"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.8-max": {
       "context_window_tokens": 1000000,
@@ -62783,7 +63545,8 @@
             }
           }
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.8-max-preview": {
       "lifecycle": "beta",
@@ -62844,7 +63607,8 @@
           "strategy": "effort",
           "effort": "xhigh"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.8-max:thinking": {
       "context_window_tokens": 991000,
@@ -62889,7 +63653,8 @@
           "strategy": "effort",
           "effort": "high"
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3.8b": {
       "context_window_tokens": 131072,
@@ -62976,7 +63741,8 @@
             }
           }
         }
-      }
+      },
+      "knowledge_cutoff": "2025-04"
     },
     "qwen35.397b-a17b": {
       "context_window_tokens": 262144,
@@ -63021,7 +63787,8 @@
           }
         }
       },
-      "max_input_tokens": 262144
+      "max_input_tokens": 262144,
+      "knowledge_cutoff": "2025-04"
     },
     "qwen3guard-gen-0.6b": {
       "context_window_tokens": 32000,
@@ -63130,7 +63897,8 @@
           }
         }
       },
-      "max_input_tokens": 262144
+      "max_input_tokens": 262144,
+      "knowledge_cutoff": "2025-04"
     },
     "qwenlong-l1-32b": {
       "context_window_tokens": 128000,
@@ -64869,6 +65637,13 @@
           "temperature",
           "tool_calling"
         ]
+      },
+      "thinking_modes": {
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "seed-2.0-code": {
@@ -65064,10 +65839,10 @@
     "seed-oss-36b-instruct": {
       "context_window_tokens": 262000,
       "max_output_tokens": 262000,
-      "description": "Tool-capable chat model for instruction following and agentic application workflows",
+      "description": "ByteDance's open-weights (Apache-2.0) Seed-OSS-36B-Instruct model with built-in chain-of-thought thinking, a controllable thinking budget, and tool use.",
       "release_date": "2025-09-04",
       "last_updated": "2025-11-25",
-      "open_weights": false,
+      "open_weights": true,
       "output_modalities": [
         "text"
       ],
@@ -65087,7 +65862,14 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 262000
+      "max_input_tokens": 262000,
+      "thinking_modes": {
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "seedance-2": {
       "context_window_tokens": 4096,
@@ -66497,7 +67279,7 @@
       "context_window_tokens": 65536,
       "max_input_tokens": 65536,
       "max_output_tokens": 8192,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "StepFun's open-source multimodal reasoning flagship (321B total / 38B active MoE) with always-on chain-of-thought.",
       "knowledge_cutoff": "2025-01-01",
       "release_date": "2025-07-31",
       "last_updated": "2025-07-31",
@@ -66525,6 +67307,12 @@
           "structured_output",
           "tool_calling"
         ]
+      },
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only"
+        }
       }
     },
     "step-3-5-flash": {
@@ -66864,8 +67652,8 @@
       "context_window_tokens": 128000,
       "max_input_tokens": 128000,
       "max_output_tokens": 65536,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "release_date": "2024-01-01",
+      "description": "StepFun's compact R1-style multimodal vision reasoning model that surfaces visible chain-of-thought for image understanding.",
+      "release_date": "2025-04-08",
       "last_updated": "2025-04-08",
       "open_weights": false,
       "output_modalities": [
@@ -66889,6 +67677,12 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only"
+        }
       }
     },
     "step-router-v1": {
@@ -70245,7 +71039,7 @@
       "context_window_tokens": 32000,
       "max_input_tokens": 32000,
       "max_output_tokens": 4096,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "01.AI's flagship hundred-billion-parameter Yi large model with strong question-answering, text generation, and reasoning capability plus enhanced System Prompt handling; 32K context window.",
       "release_date": "2024-01-01",
       "last_updated": "2024-05-13",
       "open_weights": false,
@@ -70276,7 +71070,7 @@
       "context_window_tokens": 12000,
       "max_input_tokens": 12000,
       "max_output_tokens": 4096,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "01.AI's fast, cost-efficient Yi chat model designed for real-time interaction and high-complexity reasoning scenarios with strong output quality and greatly improved inference speed.",
       "release_date": "2025-06-15",
       "last_updated": "2024-10-16",
       "open_weights": false,
@@ -70307,7 +71101,7 @@
       "context_window_tokens": 200000,
       "max_input_tokens": 200000,
       "max_output_tokens": 4096,
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "01.AI's Yi Medium variant with a 200K-token context window for long-text understanding and generation, document reading, question-answering, and knowledge-base use cases.",
       "release_date": "2024-01-01",
       "last_updated": "2024-03-01",
       "open_weights": false,

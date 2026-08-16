@@ -42,8 +42,11 @@ documents in `docs/research/`.
 
 ## Adding a patch
 
-1. Write `<name>.json` in `patches/` (follow the conventions above).
-2. Run `bash scripts/refresh.sh --no-fetch` to apply + validate + report.
-3. Cross-check thinking modes: `python3 scripts/verify_thinking.py curation/patches/<name>.json`.
-4. Commit with a message describing the change set, e.g.
+1. Read [`PATCH_SPEC.md`](PATCH_SPEC.md) — the detailed authoring spec (output
+   contract, thinking/speed mode decision rules, source priority, no-fabrication
+   rules). Follow it.
+2. Write `<name>.json` in `patches/` (follow the conventions above).
+3. Run `bash scripts/refresh.sh --no-fetch` to apply + validate + report.
+4. Cross-check thinking modes: `python3 scripts/verify_thinking.py curation/patches/<name>.json`.
+5. Commit with a message describing the change set, e.g.
    `chore(catalog): add thinking modes for <family>`.

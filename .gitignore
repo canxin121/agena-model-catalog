@@ -1,0 +1,4 @@
+# Fetched upstream snapshots — reproducible via scripts/fetch_modelsdev.sh.
+# Kept on disk for offline merge/verify tooling; not committed.
+.cache/
+.DS_Store

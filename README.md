@@ -122,4 +122,47 @@ Verification rules:
 - A model flagged `reasoning` but with no documented toggle (e.g. some
   Llama/Pixtral/Gemma entries) should NOT get thinking modes.
 
-See `scripts/update.sh` for a skeleton.
+## Repository layout
+
+```
+models.json          canonical catalog (the runtime fetches this)
+README.md            this file
+curation/
+  patches/           hand-verified metadata patches applied over the base
+  README.md          patch conventions and how to add one
+docs/research/       per-vendor verification documents (domestic families)
+scripts/
+  refresh.sh         end-to-end refresh: fetch → merge → apply → backfill → validate → report
+  publish.sh         validate + commit + push (the release gate)
+  fetch_modelsdev.sh snapshot models.dev into .cache/
+  merge_modelsdev.py fill missing base fields from the models.dev snapshot
+  apply_patches.py   apply curation/patches onto models.json
+  backfill_input.py  conservative max_input_tokens backfill
+  validate.py        full-document schema validation (publish gate)
+  verify_thinking.py cross-check thinking patches against models.dev reasoning_options
+  report.py          coverage report
+```
+
+The data pipeline is **fetch → merge → curate → verify**:
+
+1. **fetch** — `fetch_modelsdev.sh` snapshots `models.dev/api.json` into
+   `.cache/` (not committed; reproducible).
+2. **merge** — `merge_modelsdev.py` fills missing base fields (limits, pricing,
+   descriptions, knowledge cutoffs, input/features) from the snapshot, exact-id
+   matches only, never overwriting an existing value.
+3. **curate** — `apply_patches.py` merges `curation/patches/*.json` over the
+   merged base. Curated values win (they were verified against official
+   sources); `null` in a patch deletes a key.
+4. **verify** — `verify_thinking.py` cross-checks thinking-mode patches against
+   models.dev `reasoning_options` (mismatch = fabrication signal);
+   `validate.py` enforces the full schema before anything is committed.
+
+### Refreshing the catalog
+
+```bash
+bash scripts/refresh.sh            # fetch + merge + apply + backfill + validate + report
+bash scripts/refresh.sh --no-fetch # reuse an existing .cache snapshot
+bash scripts/publish.sh "chore(catalog): ..."   # validate, commit, push
+```
+
+See `curation/README.md` for the patch conventions.

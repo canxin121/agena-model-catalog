@@ -1,0 +1,77 @@
+{
+  "models": {
+    "glm-5.3": {
+      "thinking_modes": {
+        "default": "max",
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
+    },
+    "glm-5.3-flash": {
+      "thinking_modes": {
+        "default": "max",
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
+    },
+    "qwen3.8-27b": {
+      "thinking_modes": {
+        "default": "xhigh",
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "xhigh": {
+          "display_name": "Think Extra-High",
+          "strategy": "effort",
+          "effort": "xhigh"
+        }
+      }
+    }
+  },
+  "notes": "Sources: current models.dev snapshot for GLM-5.3/GLM-5.3-Flash reasoning_options effort=[low,high,max] and Qwen3.8-27B effort=[low,medium,xhigh]; official Qwen Hugging Face organization for Qwen3.8-27B model identity; existing reviewed GLM-5.2 and Qwen3.8 family curation for the disabled/off convention and family defaults. Gemini 3.7 Flash and DeepSeek V4 Flash Vision Exp intentionally have no catalog thinking_modes patch because Agena runtime already enriches Gemini and deepseek-v4 families. No speed modes were added: flash is a distinct model id, not a request-level speed tier."
+}

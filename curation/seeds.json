@@ -1,4 +1,30 @@
 {
-  "models": {},
-  "notes": "Reviewed canonical model ids that may be seeded from a pinned models.dev provider record. Keep this list intentionally small: gateway aliases and third-party variants belong in the catalog only after explicit review."
+  "models": {
+    "deepseek-v4-flash-vision-exp": {
+      "provider": "deepseek",
+      "source_id": "deepseek-v4-flash-vision-exp",
+      "origin": "DeepSeek"
+    },
+    "gemini-3.7-flash": {
+      "provider": "google",
+      "source_id": "gemini-3.7-flash",
+      "origin": "Google"
+    },
+    "glm-5.3": {
+      "provider": "zai",
+      "source_id": "glm-5.3",
+      "origin": "Zhipu AI"
+    },
+    "glm-5.3-flash": {
+      "provider": "zai",
+      "source_id": "glm-5.3-flash",
+      "origin": "Zhipu AI"
+    },
+    "qwen3.8-27b": {
+      "provider": "huggingface",
+      "source_id": "Qwen/Qwen3.8-27B",
+      "origin": "Alibaba"
+    }
+  },
+  "notes": "Late-August 2026 reviewed additions. Gemini 3.7 Flash, GLM-5.3, GLM-5.3-Flash, and DeepSeek V4 Flash Vision Exp use first-party models.dev provider records. Qwen3.8-27B uses the models.dev Hugging Face record after verifying the model under the official Qwen Hugging Face organization. Gateway aliases and third-party finetunes remain excluded."
 }

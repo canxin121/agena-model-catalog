@@ -4,6 +4,14 @@
 models.dev-derived base. Each file is a `{ "models": { "<model-id>": {...} } }`
 object that `scripts/apply_patches.py` merges into `models.json`.
 
+## Adding new model ids
+
+`patches/` never create catalog members. New canonical ids must first be reviewed in
+`curation/seeds.json`, which pins each id to one models.dev provider/source record and
+its canonical origin. `scripts/seed_modelsdev.py` creates only those reviewed entries.
+This keeps refresh reproducible without turning the catalog into an automatic mirror of
+every gateway alias or third-party variant in models.dev.
+
 ## Why patches instead of editing models.json directly
 
 - The base comes from models.dev (see `scripts/merge_modelsdev.py`). Any field

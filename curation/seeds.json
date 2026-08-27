@@ -1,0 +1,4 @@
+{
+  "models": {},
+  "notes": "Reviewed canonical model ids that may be seeded from a pinned models.dev provider record. Keep this list intentionally small: gateway aliases and third-party variants belong in the catalog only after explicit review."
+}

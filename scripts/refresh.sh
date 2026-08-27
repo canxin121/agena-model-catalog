@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # End-to-end catalog refresh:
-#   fetch → merge → apply → backfill → validate → report
+#   fetch → seed → merge → apply → backfill → validate → report
 #
 # Mutates models.json in place. A timestamped backup is kept in .cache/ before
 # any write; restore from it if a later stage fails validation.
@@ -14,29 +14,32 @@ cd "$ROOT"
 mkdir -p .cache
 
 if [[ "${1:-}" != "--no-fetch" ]]; then
-  echo "=== 1/6 fetch upstream snapshot ==="
+  echo "=== 1/7 fetch upstream snapshot ==="
   bash scripts/fetch_modelsdev.sh
 else
-  echo "=== 1/6 fetch: skipped (--no-fetch) ==="
+  echo "=== 1/7 fetch: skipped (--no-fetch) ==="
 fi
 
 BACKUP=".cache/models.$(date +%Y%m%d-%H%M%S).bak"
 cp models.json "$BACKUP"
 echo "backup -> $BACKUP"
 
-echo "=== 2/6 merge models.dev base fields (fill missing only) ==="
+echo "=== 2/7 seed reviewed new model ids ==="
+python3 scripts/seed_modelsdev.py
+
+echo "=== 3/7 merge models.dev base fields (fill missing only) ==="
 python3 scripts/merge_modelsdev.py
 
-echo "=== 3/6 apply curated patches ==="
+echo "=== 4/7 apply curated patches ==="
 python3 scripts/apply_patches.py
 
-echo "=== 4/6 conservative backfills ==="
+echo "=== 5/7 conservative backfills ==="
 python3 scripts/backfill_input.py
 
-echo "=== 5/6 validate full document ==="
+echo "=== 6/7 validate full document ==="
 python3 scripts/validate.py
 
-echo "=== 6/6 coverage report ==="
+echo "=== 7/7 coverage report ==="
 python3 scripts/report.py
 
 echo "refresh complete. Review the diff, then: bash scripts/publish.sh"

@@ -128,11 +128,13 @@ Verification rules:
 models.json          canonical catalog (the runtime fetches this)
 README.md            this file
 curation/
+  seeds.json         reviewed new canonical ids allowed into the catalog
   patches/           hand-verified metadata patches applied over the base
   README.md          patch conventions and how to add one
 docs/research/       per-vendor verification documents (domestic families)
 scripts/
-  refresh.sh         end-to-end refresh: fetch → merge → apply → backfill → validate → report
+  refresh.sh         end-to-end refresh: fetch → seed → merge → apply → backfill → validate → report
+  seed_modelsdev.py  add only reviewed new ids from curation/seeds.json
   publish.sh         validate + commit + push (the release gate)
   fetch_modelsdev.sh snapshot models.dev into .cache/
   merge_modelsdev.py fill missing base fields from the models.dev snapshot
@@ -143,17 +145,21 @@ scripts/
   report.py          coverage report
 ```
 
-The data pipeline is **fetch → merge → curate → verify**:
+The data pipeline is **fetch → seed → merge → curate → verify**:
 
 1. **fetch** — `fetch_modelsdev.sh` snapshots `models.dev/api.json` into
    `.cache/` (not committed; reproducible).
-2. **merge** — `merge_modelsdev.py` fills missing base fields (limits, pricing,
+2. **seed** — `seed_modelsdev.py` adds only canonical ids explicitly reviewed in
+   `curation/seeds.json`, using one pinned models.dev provider record per id. This is
+   the membership gate: gateway aliases and third-party variants are never admitted
+   automatically.
+3. **merge** — `merge_modelsdev.py` fills missing base fields (limits, pricing,
    descriptions, knowledge cutoffs, input/features) from the snapshot, exact-id
    matches only, never overwriting an existing value.
-3. **curate** — `apply_patches.py` merges `curation/patches/*.json` over the
+4. **curate** — `apply_patches.py` merges `curation/patches/*.json` over the
    merged base. Curated values win (they were verified against official
    sources); `null` in a patch deletes a key.
-4. **verify** — `verify_thinking.py` cross-checks thinking-mode patches against
+5. **verify** — `verify_thinking.py` cross-checks thinking-mode patches against
    models.dev `reasoning_options` (mismatch = fabrication signal);
    `validate.py` enforces the full schema before anything is committed.
 

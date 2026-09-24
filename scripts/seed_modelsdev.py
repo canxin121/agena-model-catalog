@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
-"""Seed explicitly reviewed new catalog members from models.dev.
+"""Discover new canonical models from trusted models.dev sources.
 
-The catalog is intentionally not an automatic mirror of every models.dev provider:
-curation/seeds.json is the membership gate. Each seed names one canonical catalog id
-and one provider/source id whose metadata may be used to create that model. Existing
-catalog entries are never overwritten here; later merge + curated patches own updates.
+The source policy admits first-party providers and official Hugging Face
+organizations. It does not require a new hand-written entry for each model.
+Existing catalog entries are preserved; merge and curated patches update them.
 """
 import json
 import os
 import sys
 
+from model_sources import discover_trusted_models
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "models.json")
 MODELS_DEV = os.path.join(ROOT, ".cache", "models.dev.json")
-SEEDS = os.path.join(ROOT, "curation", "seeds.json")
+MAX_AUTO_ADDITIONS = 100
 
 LIFECYCLES = {"active", "preview", "beta", "alpha", "experimental", "deprecated"}
 INPUT_MODALITIES = {"text", "image", "document", "audio", "video", "file"}
@@ -52,10 +53,11 @@ def pricing_from_cost(cost):
     tiers = []
     for tier in cost.get("tiers") or []:
         item = {}
-        if tier.get("type"):
-            item["tier_type"] = tier["type"]
-        if tier.get("size"):
-            item["size_tokens"] = tier["size"]
+        threshold = tier.get("tier") or tier
+        if threshold.get("type"):
+            item["tier_type"] = threshold["type"]
+        if threshold.get("size"):
+            item["size_tokens"] = threshold["size"]
         for source_key, catalog_key in mapping.items():
             value = usd(tier.get(source_key))
             if value is not None:
@@ -73,7 +75,7 @@ def canonical_input_modalities(model):
         value = {"pdf": "document"}.get(value.lower(), value.lower())
         if value in INPUT_MODALITIES and value not in values:
             values.append(value)
-    return values
+    return sorted(values)
 
 
 def feature_flags(model):
@@ -93,23 +95,10 @@ def feature_flags(model):
             unsupported.append(catalog_key)
     result = {}
     if supported:
-        result["supported"] = supported
+        result["supported"] = sorted(supported)
     if unsupported:
-        result["unsupported"] = unsupported
+        result["unsupported"] = sorted(unsupported)
     return result or None
-
-
-def find_source_model(models_dev, provider_key, source_id):
-    provider = models_dev.get(provider_key)
-    if not isinstance(provider, dict):
-        return None
-    models = provider.get("models") or {}
-    if source_id in models:
-        return models[source_id]
-    for raw_id, model in models.items():
-        if (model.get("id") or raw_id) == source_id:
-            return model
-    return None
 
 
 def seed_definition(source, origin):
@@ -173,43 +162,26 @@ def seed_definition(source, origin):
 def main():
     catalog = load(CATALOG)
     models_dev = load(MODELS_DEV)
-    seeds_doc = load(SEEDS)
-    seeds = seeds_doc.get("models")
-    if not isinstance(seeds, dict):
-        print("curation/seeds.json: 'models' must be an object", file=sys.stderr)
-        return 1
-
     models = catalog.get("models")
     if not isinstance(models, dict):
         print("models.json: 'models' must be an object", file=sys.stderr)
         return 1
 
-    added = []
-    errors = []
-    for canonical_id, spec in seeds.items():
-        if canonical_id in models:
-            continue
-        if not isinstance(spec, dict):
-            errors.append(f"{canonical_id}: seed spec must be an object")
-            continue
-        provider = spec.get("provider")
-        source_id = spec.get("source_id") or canonical_id
-        origin = spec.get("origin")
-        if not provider or not origin:
-            errors.append(f"{canonical_id}: seed requires provider and origin")
-            continue
-        source = find_source_model(models_dev, provider, source_id)
-        if source is None:
-            errors.append(f"{canonical_id}: {provider}/{source_id} not found in models.dev")
-            continue
-        models[canonical_id] = seed_definition(source, origin)
-        added.append((canonical_id, provider, source_id))
-
-    if errors:
-        print("seed errors:", file=sys.stderr)
-        for error in errors:
-            print(f"  {error}", file=sys.stderr)
+    sources = discover_trusted_models(models_dev)
+    missing = sorted(sources.keys() - models.keys())
+    if len(missing) > MAX_AUTO_ADDITIONS:
+        print(
+            f"refusing {len(missing)} automatic additions (limit {MAX_AUTO_ADDITIONS}); "
+            "review curation/sources.json and the upstream snapshot",
+            file=sys.stderr,
+        )
         return 1
+
+    added = []
+    for canonical_id in missing:
+        source = sources[canonical_id]
+        models[canonical_id] = seed_definition(source.model, source.origin)
+        added.append((canonical_id, source.provider, source.source_id))
 
     if added:
         catalog["models"] = dict(sorted(models.items()))
@@ -217,7 +189,7 @@ def main():
             json.dump(catalog, f, ensure_ascii=False, indent=2)
             f.write("\n")
 
-    print(f"seeded {len(added)} reviewed models from models.dev")
+    print(f"discovered {len(sources)} trusted canonical ids; added {len(added)} new models")
     for canonical_id, provider, source_id in added:
         print(f"  {canonical_id} <- {provider}/{source_id}")
     return 0

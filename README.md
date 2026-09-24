@@ -2,8 +2,11 @@
 
 Self-maintained model catalog for the [Agena](https://github.com/canxin121/agena) LLM runtime.
 
-`models.json` is the canonical, hand-curated source of model metadata. The Agena runtime
-fetches this file at startup instead of crawling external model registries at runtime.
+`models.json` is the canonical generated source of model metadata. A daily GitHub
+Actions refresh fetches `models.dev`, discovers new models from trusted first-party
+providers and official Hugging Face organizations, updates trusted metadata, applies
+curated exceptions and route limits, validates the result, and publishes changes. The Agena runtime
+fetches this file at startup instead of crawling registries at runtime.
 
 ## File
 
@@ -98,16 +101,18 @@ Anthropic fast-mode example:
 
 ## Updating
 
-The catalog is updated by hand (or by a maintainer's script), then pushed here. Follow
-the existing field conventions. When you remove a model that is truly gone, also check
-that no consumer depends on it. Prefer keeping a `deprecated` lifecycle over deleting.
+`.github/workflows/refresh-models.yml` runs the refresh daily and can also be
+started manually. The workflow commits `models.json` when the validated output
+changes. Adding a new model from an already trusted source requires no model ID
+entry or catalog edit. A new provider or official Hugging Face organization is
+admitted once in `curation/sources.json`; provider-specific gateway aliases and
+third-party finetunes are excluded by the source policy. A refresh never removes
+existing models automatically, since older IDs may still be used by consumers.
 
-Recommended flow for a bulk refresh:
-
-1. Generate a fresh candidate from the upstream aggregators
-   (e.g. `models.dev/api.json`, vendor model pages, HuggingFace official lists).
-2. Curate: normalize ids, merge aliases, keep the best source per model, assign origins.
-3. Diff against `models.json`, review, and commit.
+Existing IDs are preserved. For models from a trusted source, each field that
+source provides is refreshed; missing source fields keep their catalog value.
+Verified exceptions belong in `curation/patches/`, which run after the source
+merge. For older models without a trusted source, the merge only fills gaps.
 
 Verification rules:
 
@@ -128,45 +133,54 @@ Verification rules:
 models.json          canonical catalog (the runtime fetches this)
 README.md            this file
 curation/
-  seeds.json         reviewed new canonical ids allowed into the catalog
+  sources.json       trusted provider and official organization policy
   patches/           hand-verified metadata patches applied over the base
   README.md          patch conventions and how to add one
 docs/research/       per-vendor verification documents (domestic families)
 scripts/
-  refresh.sh         end-to-end refresh: fetch → seed → merge → apply → backfill → validate → report
-  seed_modelsdev.py  add only reviewed new ids from curation/seeds.json
+  refresh.sh         end-to-end refresh: fetch → discover → merge → curate → route caps → backfill → validate → report
+  model_sources.py   canonicalize and select trusted upstream records
+  seed_modelsdev.py  add newly discovered canonical model ids
   publish.sh         validate + commit + push (the release gate)
   fetch_modelsdev.sh snapshot models.dev into .cache/
-  merge_modelsdev.py fill missing base fields from the models.dev snapshot
+  merge_modelsdev.py sync trusted fields and fill legacy gaps from the snapshot
   apply_patches.py   apply curation/patches onto models.json
+  apply_route_limits.py cap shared context and output by configured route limits
   backfill_input.py  conservative max_input_tokens backfill
   validate.py        full-document schema validation (publish gate)
   verify_thinking.py cross-check thinking patches against models.dev reasoning_options
   report.py          coverage report
 ```
 
-The data pipeline is **fetch → seed → merge → curate → verify**:
+The data pipeline is **fetch → discover → merge → curate → route caps → verify**:
 
 1. **fetch** — `fetch_modelsdev.sh` snapshots `models.dev/api.json` into
    `.cache/` (not committed; reproducible).
-2. **seed** — `seed_modelsdev.py` adds only canonical ids explicitly reviewed in
-   `curation/seeds.json`, using one pinned models.dev provider record per id. This is
-   the membership gate: gateway aliases and third-party variants are never admitted
-   automatically.
-3. **merge** — `merge_modelsdev.py` fills missing base fields (limits, pricing,
-   descriptions, knowledge cutoffs, input/features) from the snapshot, exact-id
-   matches only, never overwriting an existing value.
+2. **discover** — `model_sources.py` selects first-party provider records and
+   models from official Hugging Face organizations according to `curation/sources.json`.
+   `seed_modelsdev.py` adds every new canonical ID from those sources. Source order
+   resolves duplicate IDs, and a large unexpected influx stops the refresh for review.
+3. **merge** — `merge_modelsdev.py` updates fields explicitly supplied by a
+   trusted source, including limits, prices, descriptions, and capabilities.
+   Price components omitted by the source are preserved; legacy price tiers
+   without a unique threshold are discarded. Older models without a trusted
+   source only receive missing fields from exact-ID matches.
 4. **curate** — `apply_patches.py` merges `curation/patches/*.json` over the
    merged base. Curated values win (they were verified against official
    sources); `null` in a patch deletes a key.
-5. **verify** — `verify_thinking.py` cross-checks thinking-mode patches against
-   models.dev `reasoning_options` (mismatch = fabrication signal);
-   `validate.py` enforces the full schema before anything is committed.
+5. **route caps** — `apply_route_limits.py` takes the lower of the trusted
+   source's context and output limits and each configured route's corresponding
+   limits for the same canonical model. Route providers cannot introduce new
+   model IDs. This keeps shared limits safe for routes such as Cline Pass.
+6. **verify** — `validate.py` enforces the catalog schema before anything is
+   committed. `verify_thinking.py` is a separate advisory audit of existing
+   thinking-mode patches against models.dev `reasoning_options`; it is not the
+   automated publish gate because upstream reasoning records are incomplete.
 
 ### Refreshing the catalog
 
 ```bash
-bash scripts/refresh.sh            # fetch + merge + apply + backfill + validate + report
+bash scripts/refresh.sh            # fetch + discover + merge + curate + route caps + validate
 bash scripts/refresh.sh --no-fetch # reuse an existing .cache snapshot
 bash scripts/publish.sh "chore(catalog): ..."   # validate, commit, push
 ```

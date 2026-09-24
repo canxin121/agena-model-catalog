@@ -4,13 +4,21 @@
 models.dev-derived base. Each file is a `{ "models": { "<model-id>": {...} } }`
 object that `scripts/apply_patches.py` merges into `models.json`.
 
-## Adding new model ids
+## Discovering new model ids
 
-`patches/` never create catalog members. New canonical ids must first be reviewed in
-`curation/seeds.json`, which pins each id to one models.dev provider/source record and
-its canonical origin. `scripts/seed_modelsdev.py` creates only those reviewed entries.
-This keeps refresh reproducible without turning the catalog into an automatic mirror of
-every gateway alias or third-party variant in models.dev.
+`scripts/seed_modelsdev.py` automatically adds new IDs found in the first-party
+providers and official Hugging Face organizations listed in `sources.json`.
+The policy is ordered: the first trusted source for a canonical ID wins. Prefix
+rules keep mixed providers such as Alibaba China and Volcengine from admitting
+other vendors' hosted models. Gateway providers are not discovery sources.
+To support a new vendor, add its provider or official organization once to
+`sources.json`; individual new models then require no entry. `patches/` never
+create catalog members and remain for verified exceptions.
+
+`sources.json` also lists route providers whose context and output limits constrain the
+shared catalog value for a model already found through a trusted source. A
+route provider cannot add an identity on its own. This replaces individual
+limit patches for Cline Pass models.
 
 ## Why patches instead of editing models.json directly
 

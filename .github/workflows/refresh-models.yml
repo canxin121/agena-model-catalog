@@ -1,0 +1,36 @@
+name: Refresh model catalog
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: model-catalog-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Fetch, discover, and validate
+        run: bash scripts/refresh.sh
+      - name: Publish verified catalog changes
+        run: |
+          git add models.json
+          if git diff --cached --quiet; then
+            echo "Catalog is already current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(catalog): refresh models.dev data"
+          git push origin HEAD:main

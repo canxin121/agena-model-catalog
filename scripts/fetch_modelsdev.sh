@@ -7,6 +7,19 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 mkdir -p "$ROOT/.cache"
 
-curl -fsSL https://models.dev/api.json -o "$ROOT/.cache/models.dev.json"
-PROVIDERS=$(jq '. | length' "$ROOT/.cache/models.dev.json")
+SNAPSHOT_TMP=$(mktemp "$ROOT/.cache/models.dev.XXXXXX")
+trap 'rm -f "$SNAPSHOT_TMP"' EXIT
+curl -fsSL https://models.dev/api.json -o "$SNAPSHOT_TMP"
+PROVIDERS=$(python3 - "$SNAPSHOT_TMP" <<'PY'
+import json
+import sys
+
+with open(sys.argv[1]) as file:
+    providers = json.load(file)
+if not isinstance(providers, dict) or len(providers) < 100:
+    raise SystemExit("models.dev snapshot is incomplete")
+print(len(providers))
+PY
+)
+mv "$SNAPSHOT_TMP" "$ROOT/.cache/models.dev.json"
 echo "saved models.dev snapshot: $PROVIDERS providers -> .cache/models.dev.json"

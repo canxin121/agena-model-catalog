@@ -33869,6 +33869,91 @@
         }
       }
     },
+    "gpt-daybreak-blue-latest": {
+      "context_window_tokens": 1050000,
+      "max_input_tokens": 922000,
+      "max_output_tokens": 128000,
+      "description": "Alias for flagship general-purpose models with safeguards for defensive cybersecurity work",
+      "knowledge_cutoff": "2026-02-16",
+      "release_date": "2026-08-07",
+      "last_updated": "2026-08-07",
+      "open_weights": false,
+      "display_name": "Daybreak Blue",
+      "origin": "OpenAI",
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "4",
+        "output_usd_per_million_tokens": "20",
+        "cache_read_usd_per_million_tokens": "0.4",
+        "cache_write_usd_per_million_tokens": "5",
+        "tiers": [
+          {
+            "tier_type": "context",
+            "size_tokens": 272000,
+            "input_usd_per_million_tokens": "8",
+            "output_usd_per_million_tokens": "30",
+            "cache_read_usd_per_million_tokens": "0.8",
+            "cache_write_usd_per_million_tokens": "10"
+          }
+        ]
+      },
+      "input": {
+        "supported": [
+          "document",
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "tool_calling"
+        ],
+        "unsupported": [
+          "temperature"
+        ]
+      }
+    },
+    "gpt-daybreak-red-latest": {
+      "context_window_tokens": 400000,
+      "max_input_tokens": 272000,
+      "max_output_tokens": 128000,
+      "description": "Alias for advanced cybersecurity models for authorized vulnerability research and security testing",
+      "knowledge_cutoff": "2026-02-16",
+      "release_date": "2026-08-07",
+      "last_updated": "2026-08-07",
+      "open_weights": false,
+      "display_name": "Daybreak Red",
+      "origin": "OpenAI",
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "12.5",
+        "output_usd_per_million_tokens": "75",
+        "cache_read_usd_per_million_tokens": "1.25",
+        "cache_write_usd_per_million_tokens": "15.625"
+      },
+      "input": {
+        "supported": [
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "tool_calling"
+        ],
+        "unsupported": [
+          "temperature"
+        ]
+      }
+    },
     "gpt-image-1": {
       "lifecycle": "deprecated",
       "context_window_tokens": 0,
@@ -63644,15 +63729,15 @@
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "knowledge_cutoff": "2025-04",
       "release_date": "2026-02-23",
-      "last_updated": "2026-09-22",
+      "last_updated": "2026-02-23",
       "open_weights": false,
       "output_modalities": [
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.029",
-        "output_usd_per_million_tokens": "0.287",
-        "cache_read_usd_per_million_tokens": "0.05",
+        "input_usd_per_million_tokens": "0.1",
+        "output_usd_per_million_tokens": "0.4",
+        "cache_read_usd_per_million_tokens": "0.01",
         "cache_write_usd_per_million_tokens": "0.125",
         "tiers": [
           {
@@ -64607,8 +64692,8 @@
     },
     "qwen3.7-flash": {
       "context_window_tokens": 1000000,
-      "max_input_tokens": 991000,
-      "max_output_tokens": 65536,
+      "max_input_tokens": 991808,
+      "max_output_tokens": 131072,
       "description": "Lightweight multimodal Qwen model for high-throughput text, image, and video tasks",
       "release_date": "2026-07-15",
       "last_updated": "2026-07-15",
@@ -64617,26 +64702,26 @@
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.02962",
-        "output_usd_per_million_tokens": "0.1185",
-        "cache_read_usd_per_million_tokens": "0.002962",
-        "cache_write_usd_per_million_tokens": "0.03703",
+        "input_usd_per_million_tokens": "0.03",
+        "output_usd_per_million_tokens": "0.13",
+        "cache_read_usd_per_million_tokens": "0.003",
+        "cache_write_usd_per_million_tokens": "0.0375",
         "tiers": [
           {
             "tier_type": "context",
             "size_tokens": 32000,
-            "input_usd_per_million_tokens": "0.08887",
-            "output_usd_per_million_tokens": "0.35549",
-            "cache_read_usd_per_million_tokens": "0.008887",
-            "cache_write_usd_per_million_tokens": "0.11109"
+            "input_usd_per_million_tokens": "0.1",
+            "output_usd_per_million_tokens": "0.4",
+            "cache_read_usd_per_million_tokens": "0.01",
+            "cache_write_usd_per_million_tokens": "0.125"
           },
           {
             "tier_type": "context",
             "size_tokens": 256000,
-            "input_usd_per_million_tokens": "0.17774",
-            "output_usd_per_million_tokens": "0.71098",
-            "cache_read_usd_per_million_tokens": "0.017774",
-            "cache_write_usd_per_million_tokens": "0.22218"
+            "input_usd_per_million_tokens": "0.2",
+            "output_usd_per_million_tokens": "0.8",
+            "cache_read_usd_per_million_tokens": "0.02",
+            "cache_write_usd_per_million_tokens": "0.25"
           }
         ]
       },
@@ -64670,7 +64755,9 @@
           "effort": "high"
         }
       },
-      "knowledge_cutoff": "2025-04"
+      "knowledge_cutoff": "2025-04",
+      "assistant_reasoning_interleaved": true,
+      "assistant_reasoning_field": "reasoning_content"
     },
     "qwen3.7-flash:thinking": {
       "context_window_tokens": 983616,
@@ -64826,18 +64913,18 @@
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.5",
-        "output_usd_per_million_tokens": "3",
-        "cache_read_usd_per_million_tokens": "0.05",
-        "cache_write_usd_per_million_tokens": "0.625",
+        "input_usd_per_million_tokens": "0.4",
+        "output_usd_per_million_tokens": "1.6",
+        "cache_read_usd_per_million_tokens": "0.04",
+        "cache_write_usd_per_million_tokens": "0.5",
         "tiers": [
           {
             "tier_type": "context",
             "size_tokens": 256000,
-            "input_usd_per_million_tokens": "2",
-            "output_usd_per_million_tokens": "6",
-            "cache_read_usd_per_million_tokens": "0.2",
-            "cache_write_usd_per_million_tokens": "2.5"
+            "input_usd_per_million_tokens": "1.2",
+            "output_usd_per_million_tokens": "4.8",
+            "cache_read_usd_per_million_tokens": "0.12",
+            "cache_write_usd_per_million_tokens": "1.5"
           }
         ]
       },
@@ -65229,6 +65316,42 @@
         }
       },
       "knowledge_cutoff": "2025-04"
+    },
+    "qwen3.8-omni-flash": {
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 131072,
+      "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
+      "release_date": "2026-09-17",
+      "last_updated": "2026-09-17",
+      "open_weights": false,
+      "display_name": "Qwen3.8 Omni Flash",
+      "origin": "Alibaba",
+      "assistant_reasoning_interleaved": true,
+      "assistant_reasoning_field": "reasoning_content",
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "0.15",
+        "output_usd_per_million_tokens": "0.47",
+        "cache_read_usd_per_million_tokens": "0.016"
+      },
+      "input": {
+        "supported": [
+          "audio",
+          "image",
+          "text",
+          "video"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "tool_calling"
+        ]
+      },
+      "max_input_tokens": 1000000
     },
     "qwen3.8b": {
       "context_window_tokens": 131072,

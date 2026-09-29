@@ -9521,6 +9521,44 @@
         ]
       }
     },
+    "claude-sonnet-5-5": {
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 128000,
+      "description": "Fast Claude model for everyday coding, agents, and knowledge work",
+      "knowledge_cutoff": "2026-06",
+      "release_date": "2026-09-28",
+      "last_updated": "2026-09-28",
+      "open_weights": false,
+      "display_name": "Claude Sonnet 5.5",
+      "origin": "Anthropic",
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "2",
+        "output_usd_per_million_tokens": "10",
+        "cache_read_usd_per_million_tokens": "0.2",
+        "cache_write_usd_per_million_tokens": "2.5"
+      },
+      "input": {
+        "supported": [
+          "document",
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "tool_calling"
+        ],
+        "unsupported": [
+          "temperature"
+        ]
+      },
+      "max_input_tokens": 1000000
+    },
     "claude-sonnet-5:thinking": {
       "context_window_tokens": 1000000,
       "max_input_tokens": 1000000,
@@ -10549,7 +10587,8 @@
       ],
       "pricing": {
         "input_usd_per_million_tokens": "0.3",
-        "output_usd_per_million_tokens": "0.9"
+        "output_usd_per_million_tokens": "0.9",
+        "cache_read_usd_per_million_tokens": "0.03"
       },
       "display_name": "Codestral (latest)",
       "origin": "Mistral AI",
@@ -48440,7 +48479,7 @@
       "pricing": {
         "input_usd_per_million_tokens": "0.5",
         "output_usd_per_million_tokens": "1.5",
-        "cache_read_usd_per_million_tokens": "0.056"
+        "cache_read_usd_per_million_tokens": "0.05"
       },
       "display_name": "Mistral Large 3",
       "origin": "Mistral AI",
@@ -48655,7 +48694,8 @@
       ],
       "pricing": {
         "input_usd_per_million_tokens": "0.5",
-        "output_usd_per_million_tokens": "1.5"
+        "output_usd_per_million_tokens": "1.5",
+        "cache_read_usd_per_million_tokens": "0.05"
       },
       "display_name": "Mistral Large (latest)",
       "origin": "Mistral AI",
@@ -48829,7 +48869,8 @@
       ],
       "pricing": {
         "input_usd_per_million_tokens": "1.5",
-        "output_usd_per_million_tokens": "7.5"
+        "output_usd_per_million_tokens": "7.5",
+        "cache_read_usd_per_million_tokens": "0.15"
       },
       "display_name": "Mistral Medium 3.5",
       "origin": "Mistral AI",
@@ -49164,7 +49205,8 @@
       ],
       "pricing": {
         "input_usd_per_million_tokens": "1.5",
-        "output_usd_per_million_tokens": "7.5"
+        "output_usd_per_million_tokens": "7.5",
+        "cache_read_usd_per_million_tokens": "0.15"
       },
       "display_name": "Mistral Medium (latest)",
       "origin": "Mistral AI",
@@ -49535,7 +49577,7 @@
       "pricing": {
         "input_usd_per_million_tokens": "0.15",
         "output_usd_per_million_tokens": "0.6",
-        "cache_read_usd_per_million_tokens": "0.014"
+        "cache_read_usd_per_million_tokens": "0.015"
       },
       "display_name": "Mistral Small 4",
       "origin": "Mistral AI",
@@ -49914,7 +49956,8 @@
       ],
       "pricing": {
         "input_usd_per_million_tokens": "0.15",
-        "output_usd_per_million_tokens": "0.6"
+        "output_usd_per_million_tokens": "0.6",
+        "cache_read_usd_per_million_tokens": "0.015"
       },
       "display_name": "Mistral Small (latest)",
       "origin": "Mistral AI",

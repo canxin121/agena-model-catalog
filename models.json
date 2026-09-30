@@ -33778,6 +33778,54 @@
         ]
       }
     },
+    "gpt-6.1-sol": {
+      "context_window_tokens": 1050000,
+      "max_input_tokens": 922000,
+      "max_output_tokens": 128000,
+      "description": "Near-Astra performance for complex coding, computer use, and professional work at a lower cost.",
+      "knowledge_cutoff": "2026-04-30",
+      "release_date": "2026-09-29",
+      "last_updated": "2026-09-29",
+      "open_weights": false,
+      "display_name": "GPT-6.1 Sol",
+      "origin": "OpenAI",
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "2",
+        "output_usd_per_million_tokens": "10",
+        "cache_read_usd_per_million_tokens": "0.1",
+        "cache_write_usd_per_million_tokens": "2.5",
+        "tiers": [
+          {
+            "tier_type": "context",
+            "size_tokens": 272000,
+            "input_usd_per_million_tokens": "4",
+            "output_usd_per_million_tokens": "15",
+            "cache_read_usd_per_million_tokens": "0.2",
+            "cache_write_usd_per_million_tokens": "5"
+          }
+        ]
+      },
+      "input": {
+        "supported": [
+          "document",
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "tool_calling"
+        ],
+        "unsupported": [
+          "temperature"
+        ]
+      }
+    },
     "gpt-audio": {
       "context_window_tokens": 128000,
       "max_output_tokens": 16384,

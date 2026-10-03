@@ -15626,9 +15626,9 @@
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.435",
-        "output_usd_per_million_tokens": "0.87",
-        "cache_read_usd_per_million_tokens": "0.003625",
+        "input_usd_per_million_tokens": "0.66",
+        "output_usd_per_million_tokens": "1.98",
+        "cache_read_usd_per_million_tokens": "0.022",
         "cache_write_usd_per_million_tokens": "0"
       },
       "display_name": "DeepSeek V4 Pro",
@@ -37881,6 +37881,34 @@
           "audio",
           "document",
           "file",
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "unsupported": [
+          "reasoning",
+          "temperature",
+          "tool_calling"
+        ]
+      },
+      "max_input_tokens": 1024
+    },
+    "grok-imagine-video-1.5-lite": {
+      "context_window_tokens": 1024,
+      "max_output_tokens": 0,
+      "description": "Cost-efficient video model for text-to-video and image-to-video generation",
+      "release_date": "2026-10-01",
+      "last_updated": "2026-10-01",
+      "open_weights": false,
+      "display_name": "Grok Imagine Video 1.5 Lite",
+      "origin": "xAI",
+      "output_modalities": [
+        "video"
+      ],
+      "input": {
+        "supported": [
+          "document",
           "image",
           "text"
         ]

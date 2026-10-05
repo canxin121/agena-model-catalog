@@ -4,11 +4,12 @@
 
 Self-maintained model catalog for the [Agena](https://github.com/canxin121/agena) LLM runtime.
 
-`models.json` is the canonical generated source of model metadata. A daily GitHub
-Actions refresh fetches `models.dev`, discovers new models from trusted first-party
-providers and official Hugging Face organizations, updates trusted metadata, applies
-curated exceptions and route limits, validates the result, and publishes changes. The Agena runtime
-fetches this file at startup instead of crawling registries at runtime.
+`models.json` is the canonical generated source of model metadata. A GitHub
+Actions refresh runs every six hours. It fetches `models.dev`, discovers new models
+from trusted first-party providers and official Hugging Face organizations, updates
+trusted metadata, applies curated exceptions and route limits, validates the result,
+and publishes changes. The Agena runtime fetches this file at startup instead of
+crawling registries at runtime.
 
 ## File
 
@@ -103,10 +104,11 @@ Anthropic fast-mode example:
 
 ## Updating
 
-`.github/workflows/refresh-models.yml` runs the refresh daily and can also be
+`.github/workflows/refresh-models.yml` runs the refresh four times a day and can also be
 started manually from **Actions → Refresh model catalog → Run workflow** on
-`main`. Its daily schedule is **03:17 UTC (11:17 UTC+8)**; GitHub may delay the
-actual start. Changes to the workflow, scripts, or curation on `main` also trigger
+`main`. Its schedule is **05:17, 11:17, 17:17, and 23:17 UTC+8**, every six hours
+(cron `17 3,9,15,21 * * *` in UTC); GitHub may delay the actual start.
+Changes to the workflow, scripts, or curation on `main` also trigger
 a refresh. The workflow uses the built-in `GITHUB_TOKEN` with `contents: write`,
 so no API keys or additional secrets are required.
 

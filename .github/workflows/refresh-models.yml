@@ -2,8 +2,9 @@ name: Refresh model catalog
 
 on:
   schedule:
-    # Daily at 03:17 UTC (11:17 UTC+8); GitHub may delay scheduled runs.
-    - cron: "17 3 * * *"
+    # Every 6 hours: 05:17, 11:17, 17:17, and 23:17 UTC+8.
+    # GitHub may delay scheduled runs; cron is evaluated in UTC.
+    - cron: "17 3,9,15,21 * * *"
   workflow_dispatch:
   push:
     branches: [main]

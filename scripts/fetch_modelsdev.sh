@@ -9,7 +9,10 @@ mkdir -p "$ROOT/.cache"
 
 SNAPSHOT_TMP=$(mktemp "$ROOT/.cache/models.dev.XXXXXX")
 trap 'rm -f "$SNAPSHOT_TMP"' EXIT
-curl -fsSL https://models.dev/api.json -o "$SNAPSHOT_TMP"
+curl -fsSL \
+  --retry 3 --retry-delay 5 --retry-max-time 180 --retry-connrefused \
+  --connect-timeout 15 --max-time 60 \
+  https://models.dev/api.json -o "$SNAPSHOT_TMP"
 PROVIDERS=$(python3 - "$SNAPSHOT_TMP" <<'PY'
 import json
 import sys

@@ -1,5 +1,7 @@
 # Agena Model Catalog
 
+[![Refresh model catalog](https://github.com/canxin121/agena-model-catalog/actions/workflows/refresh-models.yml/badge.svg)](https://github.com/canxin121/agena-model-catalog/actions/workflows/refresh-models.yml)
+
 Self-maintained model catalog for the [Agena](https://github.com/canxin121/agena) LLM runtime.
 
 `models.json` is the canonical generated source of model metadata. A daily GitHub
@@ -102,8 +104,20 @@ Anthropic fast-mode example:
 ## Updating
 
 `.github/workflows/refresh-models.yml` runs the refresh daily and can also be
-started manually. The workflow commits `models.json` when the validated output
-changes. Adding a new model from an already trusted source requires no model ID
+started manually from **Actions → Refresh model catalog → Run workflow** on
+`main`. Its daily schedule is **03:17 UTC (11:17 UTC+8)**; GitHub may delay the
+actual start. Changes to the workflow, scripts, or curation on `main` also trigger
+a refresh. The workflow uses the built-in `GITHUB_TOKEN` with `contents: write`,
+so no API keys or additional secrets are required.
+
+The workflow commits and pushes `models.json` to `main` only when the validated
+output changes. An unchanged catalog is a successful refresh and produces no
+commit. Every run includes a summary with the publication result and pipeline
+log. Downloads have bounded retries and timeouts; a failed refresh never reaches
+the publish step. GitHub refreshes the remote catalog; use `git pull --ff-only`
+to bring those changes into a local checkout.
+
+Adding a new model from an already trusted source requires no model ID
 entry or catalog edit. A new provider or official Hugging Face organization is
 admitted once in `curation/sources.json`; provider-specific gateway aliases and
 third-party finetunes are excluded by the source policy. A refresh never removes

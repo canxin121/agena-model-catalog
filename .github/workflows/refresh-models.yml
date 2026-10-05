@@ -2,8 +2,15 @@ name: Refresh model catalog
 
 on:
   schedule:
+    # Daily at 03:17 UTC (11:17 UTC+8); GitHub may delay scheduled runs.
     - cron: "17 3 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/refresh-models.yml"
+      - "scripts/**"
+      - "curation/**"
 
 permissions:
   contents: write
@@ -12,25 +19,62 @@ concurrency:
   group: model-catalog-refresh
   cancel-in-progress: false
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   refresh:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
       - name: Fetch, discover, and validate
-        run: bash scripts/refresh.sh
+        run: |
+          mkdir -p .cache
+          bash scripts/refresh.sh 2>&1 | tee .cache/refresh.log
       - name: Publish verified catalog changes
+        id: publish
         run: |
           git add models.json
           if git diff --cached --quiet; then
             echo "Catalog is already current"
+            echo "result=unchanged" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore(catalog): refresh models.dev data"
           git push origin HEAD:main
+          echo "result=updated" >> "$GITHUB_OUTPUT"
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Write refresh summary
+        if: always()
+        env:
+          REFRESH_STATUS: ${{ job.status }}
+          REFRESH_EVENT: ${{ github.event_name }}
+          PUBLISH_RESULT: ${{ steps.publish.outputs.result }}
+          PUBLISH_COMMIT: ${{ steps.publish.outputs.commit }}
+        run: |
+          {
+            echo "## Model catalog refresh"
+            echo
+            echo "- Trigger: $REFRESH_EVENT"
+            echo "- Status: $REFRESH_STATUS"
+            echo "- Publication: ${PUBLISH_RESULT:-not completed}"
+            if [[ -n "$PUBLISH_COMMIT" ]]; then
+              echo "- Commit: [$PUBLISH_COMMIT]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/commit/$PUBLISH_COMMIT)"
+            fi
+            if [[ -f .cache/refresh.log ]]; then
+              echo
+              echo '```text'
+              cat .cache/refresh.log
+              echo '```'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

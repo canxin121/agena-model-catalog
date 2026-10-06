@@ -7958,17 +7958,22 @@
           "effort": "max"
         }
       },
-      "input": [
-        "image",
-        "document",
-        "file"
-      ],
-      "features": [
-        "reasoning",
-        "tool_calling",
-        "structured_output",
-        "temperature"
-      ]
+      "input": {
+        "supported": [
+          "document",
+          "file",
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "temperature",
+          "tool_calling"
+        ]
+      }
     },
     "claude-opus4-5": {
       "context_window_tokens": 200000,
@@ -46635,15 +46640,23 @@
       },
       "display_name": "MiniMax Latest",
       "origin": "MiniMax",
-      "input": [
-        "image",
-        "file"
-      ],
-      "features": [
-        "reasoning",
-        "tool_calling",
-        "structured_output"
-      ],
+      "input": {
+        "supported": [
+          "file",
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "tool_calling"
+        ],
+        "unsupported": [
+          "temperature"
+        ]
+      },
       "thinking_modes": {
         "off": {
           "display_name": "Off",
@@ -47952,7 +47965,7 @@
       }
     },
     "ministral-3b-latest": {
-      "context_window_tokens": 128000,
+      "context_window_tokens": 131072,
       "max_output_tokens": 128000,
       "description": "Compact Mistral model for edge, latency-sensitive, and cost-efficient workloads",
       "knowledge_cutoff": "2024-10",
@@ -47979,10 +47992,11 @@
       },
       "input": {
         "supported": [
+          "image",
           "text"
         ]
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 131072
     },
     "ministral-8b": {
       "context_window_tokens": 128000,
@@ -48078,7 +48092,7 @@
       "max_input_tokens": 128000
     },
     "ministral-8b-latest": {
-      "context_window_tokens": 128000,
+      "context_window_tokens": 262144,
       "max_output_tokens": 128000,
       "description": "Compact Mistral model for edge, latency-sensitive, and cost-efficient workloads",
       "knowledge_cutoff": "2024-10",
@@ -48105,10 +48119,11 @@
       },
       "input": {
         "supported": [
+          "image",
           "text"
         ]
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 262144
     },
     "mirothinker-1-7-deepresearch": {
       "context_window_tokens": 262144,
@@ -48713,6 +48728,40 @@
         "input_usd_per_million_tokens": "0.5",
         "output_usd_per_million_tokens": "1.5"
       }
+    },
+    "mistral-large-4": {
+      "lifecycle": "beta",
+      "context_window_tokens": 524288,
+      "max_output_tokens": 262144,
+      "description": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
+      "release_date": "2026-10-06",
+      "last_updated": "2026-10-06",
+      "open_weights": false,
+      "display_name": "Mistral Large 4",
+      "origin": "Mistral AI",
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "0.68",
+        "output_usd_per_million_tokens": "2.09",
+        "cache_read_usd_per_million_tokens": "0.07"
+      },
+      "input": {
+        "supported": [
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "temperature",
+          "tool_calling"
+        ]
+      },
+      "max_input_tokens": 524288
     },
     "mistral-large-instruct-2407": {
       "release_date": "2024-07-24",
@@ -49640,7 +49689,7 @@
       "max_input_tokens": 128000
     },
     "mistral-small-2603": {
-      "context_window_tokens": 256000,
+      "context_window_tokens": 262144,
       "max_output_tokens": 256000,
       "description": "Fast Mistral production model for chat, extraction, and cost-sensitive agents",
       "knowledge_cutoff": "2025-06",
@@ -50020,7 +50069,7 @@
       }
     },
     "mistral-small-latest": {
-      "context_window_tokens": 256000,
+      "context_window_tokens": 262144,
       "max_output_tokens": 256000,
       "description": "Efficient Mistral model for fast chat, extraction, and production assistants",
       "knowledge_cutoff": "2025-06",
@@ -72039,7 +72088,7 @@
       "max_input_tokens": 32000
     },
     "voxtral-small-latest": {
-      "context_window_tokens": 32000,
+      "context_window_tokens": 32768,
       "max_output_tokens": 32000,
       "description": "Instruct model with native audio input for speech understanding and tool use",
       "release_date": "2025-07-15",
@@ -72070,7 +72119,7 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 32000
+      "max_input_tokens": 32768
     },
     "voyage-3-large": {
       "context_window_tokens": 8192,

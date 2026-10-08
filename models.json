@@ -8454,7 +8454,7 @@
       }
     },
     "claude-sonnet-4-5": {
-      "context_window_tokens": 1000000,
+      "context_window_tokens": 200000,
       "max_output_tokens": 64000,
       "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
       "knowledge_cutoff": "2025-07-31",
@@ -8512,11 +8512,11 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 200000
     },
     "claude-sonnet-4-5-20250929": {
-      "context_window_tokens": 1000000,
-      "max_input_tokens": 1000000,
+      "context_window_tokens": 200000,
+      "max_input_tokens": 200000,
       "max_output_tokens": 64000,
       "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
       "knowledge_cutoff": "2025-07-31",
@@ -9590,7 +9590,7 @@
       "pricing": {
         "input_usd_per_million_tokens": "2",
         "output_usd_per_million_tokens": "10",
-        "cache_read_usd_per_million_tokens": "0.2",
+        "cache_read_usd_per_million_tokens": "0.1",
         "cache_write_usd_per_million_tokens": "2.5"
       },
       "input": {

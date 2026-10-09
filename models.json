@@ -46766,10 +46766,10 @@
     "minimax-m1.80k": {
       "context_window_tokens": 1000000,
       "max_input_tokens": 1000000,
-      "max_output_tokens": 40000,
+      "max_output_tokens": 80000,
       "description": "MiniMax model for chat, coding, office work, and agentic tasks",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "release_date": "2025-06-17",
+      "last_updated": "2025-06-17",
       "open_weights": true,
       "output_modalities": [
         "text"
@@ -46779,18 +46779,16 @@
         "output_usd_per_million_tokens": "2.2",
         "cache_read_usd_per_million_tokens": "0.3026"
       },
-      "display_name": "MiniMax M1",
+      "display_name": "MiniMax M1 80K",
       "origin": "MiniMax",
       "features": {
         "supported": [
           "reasoning",
-          "tool_calling",
-          "temperature"
+          "temperature",
+          "tool_calling"
         ],
         "unsupported": [
-          "structured_output",
-          "reasoning",
-          "tool_calling"
+          "structured_output"
         ]
       },
       "thinking_modes": {
@@ -46799,6 +46797,11 @@
           "strategy": "effort",
           "effort": "high"
         }
+      },
+      "input": {
+        "supported": [
+          "text"
+        ]
       }
     },
     "minimax-m2": {
@@ -61938,19 +61941,19 @@
       }
     },
     "qwen3-vl-30b-a3b-instruct": {
-      "context_window_tokens": 262144,
-      "max_output_tokens": 8192,
+      "context_window_tokens": 131072,
+      "max_output_tokens": 32768,
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "knowledge_cutoff": "2025-03-31",
-      "release_date": "2025-10-02",
-      "last_updated": "2025-10-02",
+      "release_date": "2025-10-04",
+      "last_updated": "2025-10-04",
       "open_weights": true,
       "output_modalities": [
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.15",
-        "output_usd_per_million_tokens": "0.6"
+        "input_usd_per_million_tokens": "0.2",
+        "output_usd_per_million_tokens": "0.7"
       },
       "display_name": "Qwen3 VL 30B A3B Instruct",
       "origin": "Alibaba",
@@ -61972,7 +61975,7 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 262144
+      "max_input_tokens": 131072
     },
     "qwen3-vl-30b-a3b-thinking": {
       "context_window_tokens": 128000,

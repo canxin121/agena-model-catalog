@@ -123,47 +123,252 @@
       }
     },
     "deepseek-v4-flash-0731-fast": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash-0731:thinking": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash-0731@eu": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash-el": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash-latest": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash:0731": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash:discounted": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash:thinking": {
-      "thinking_modes": null
-    },
-    "deepseek-v4-pro-0813": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-pro-0813:thinking": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-pro-el": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-pro-lightning": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-pro:discounted": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-pro:thinking": {
-      "thinking_modes": null
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     }
   },
-  "notes": "Sources: official api-docs.deepseek.com pricing page (deepseek-v4-flash $0.14/$0.28 cache-hit $0.0028; deepseek-v4-pro $0.435/$0.87 cache-hit $0.003625; no request-level speed/tier parameter), DeepSeek thinking-mode guide (thinking toggle + reasoning_effort are documented only for deepseek-v4-flash/v4-pro, default high; reasoning_effort was NOT documented for the V3.2-era deepseek-reasoner, so deepseek-3.2 -- DigitalOcean's V3.2 serving whose models.dev ropts=effort[none,low,medium,high] -- is treated as always-on reasoning and given a single always-on high mode), DeepSeek news251201 V3.2 release (V3.2 is a hybrid: deepseek-chat = non-thinking lane, deepseek-reasoner = thinking lane; no reasoning_effort in the release), official DeepSeek V3.2 pricing ($0.28 input cache-miss / $0.028 cache-hit / $0.42 output, filled for deepseek-v3.2-251201), DeepSeek-Coder GitHub/HF model card (16K context, 2T-token code corpus; used 2024-04 cutoff per brief), DeepSeek-Prover-V2 HF card (671B MoE on DeepSeek-V3-Base whose cutoff is 2024-07; 160K context via YaRN), DeepSeekMath-V2 coverage (685B verifier-generator math reasoner open-sourced Nov 2025; no published cutoff/pricing), and the provided models.dev snapshot (V4 Flash family knowledge=2025-05 used for deepseek-4-flash). Deliberately left unchanged: (1) thinking_modes removed (set null) for the entire deepseek-v4-* family plus deepseek-4-flash/deepseek-latest where a prior patch had added them, because the runtime auto-enriches effort modes for V4 -- deliberate, not omission; deepseek-v4-flash, deepseek-v4-flash-0731, deepseek-v4-pro and deepseek-4-flash were already absent and left untouched; (2) non-thinking chat lanes (deepseek-chat, deepseek-chat-v3-0324, deepseek-v3, deepseek-v3.0324, deepseek-v3-turbo, deepseek-v3.1, deepseek-v3.1-terminus, deepseek-v3.1:thinking) received no thinking_modes because DeepSeek exposes no reasoning toggle for the v3.x chat series; existing off/on thinking on deepseek-chat-v3.1 / deepseek-v3.1 / deepseek-v3.1-terminus left as-is per instructions; (3) V3.2 entries whose models.dev source shows empty reasoning_options (always-on) were converted to the single always-on high mode: deepseek-v3.2-251201 (qiniu-ai), deepseek-v3.2-nvfp4 (vultr), plus the pure thinking lanes deepseek-v3.2-thinking, deepseek-v3.2:thinking, deepseek-v3.2-exp-thinking and the r1-family always-on lanes deepseek-r1-turbo, deepseek-r1-0528-qwen3-8b (all matching deepseek-r1/deepseek-reasoner); the genuinely-hybrid V3.2 entries (deepseek-v3.2 with models.dev effort[none,low,medium,high], deepseek-v3.2-fast with toggle, and deepseek-v3.2-exp) keep their existing off+effort/toggle thinking because V3.2 ships separate non-thinking and thinking lanes; (4) NO speed_modes added to any model -- DeepSeek has no request-level speed/tier parameter, speed is expressed only as separate model IDs (-fast/-el/-turbo). deepseek-math-v2's existing 'on' thinking mode was removed (not a thinking model). Could NOT verify (omitted rather than guessed): knowledge_cutoff for deepseek-latest, deepseek-math-v2, deepseek-ocr, deepseek-ocr-2, deepseek-r1-0528-qwen3-8b, deepseek-r1-turbo, deepseek-v3-turbo, deepseek-v3.1:thinking, deepseek-v3.2-251201, and the R1-distill family (llama-8b, qwen-1.5b/7b/14b); pricing for deepseek-math-v2 (no provider publishes a cost); deepseek-coder-6.7b-instruct pricing is the legacy DeepSeek deepseek-coder API rate ($0.14/$0.28) since the 6.7B open model itself was never on DeepSeek's paid API. The 'input'/'features' missing flags in the brief refer to non-patchable capability fields and were not addressed. REVIEW CORRECTIONS (caller, 2026-08-13): (a) deepseek-latest thinking restored to off/on toggle — it was wrongly nulled on the assumption the runtime enriches it, but model_modes.rs only matches IDs containing 'deepseek-v4'; deepseek-latest's pricing ($0.435/$0.87) matches deepseek-v4-pro and is a v4-pro API alias, so the documented v4 thinking toggle applies. (b) deepseek-math-v2 thinking restored to single always-on 'on' — DeepSeekMath-V2 is a mathematical reasoning model, so the round-1 always-on mode stands."
+  "notes": "Sources: official api-docs.deepseek.com pricing page (deepseek-v4-flash $0.14/$0.28 cache-hit $0.0028; deepseek-v4-pro $0.435/$0.87 cache-hit $0.003625; no request-level speed/tier parameter), DeepSeek thinking-mode guide (thinking toggle + reasoning_effort are documented only for deepseek-v4-flash/v4-pro, default high; reasoning_effort was NOT documented for the V3.2-era deepseek-reasoner, so deepseek-3.2 -- DigitalOcean's V3.2 serving whose models.dev ropts=effort[none,low,medium,high] -- is treated as always-on reasoning and given a single always-on high mode), DeepSeek news251201 V3.2 release (V3.2 is a hybrid: deepseek-chat = non-thinking lane, deepseek-reasoner = thinking lane; no reasoning_effort in the release), official DeepSeek V3.2 pricing ($0.28 input cache-miss / $0.028 cache-hit / $0.42 output, filled for deepseek-v3.2-251201), DeepSeek-Coder GitHub/HF model card (16K context, 2T-token code corpus; used 2024-04 cutoff per brief), DeepSeek-Prover-V2 HF card (671B MoE on DeepSeek-V3-Base whose cutoff is 2024-07; 160K context via YaRN), DeepSeekMath-V2 coverage (685B verifier-generator math reasoner open-sourced Nov 2025; no published cutoff/pricing), and the provided models.dev snapshot (V4 Flash family knowledge=2025-05 used for deepseek-4-flash). Deliberately left unchanged: (1) the deepseek-v4-* serving variants carry the same V4 effort ladder the trusted DeepSeek record publishes (thinking toggle + reasoning_effort low/high/max) because the runtime no longer infers effort modes: every entry that should offer a thinking selector declares it here, while deepseek-v4-flash, deepseek-v4-flash-0731, deepseek-v4-pro, deepseek-v4-pro-0813, deepseek-flash and deepseek-v4-flash-vision-exp are left to the pipeline's reasoning_options derivation; (2) non-thinking chat lanes (deepseek-chat, deepseek-chat-v3-0324, deepseek-v3, deepseek-v3.0324, deepseek-v3-turbo, deepseek-v3.1, deepseek-v3.1-terminus, deepseek-v3.1:thinking) received no thinking_modes because DeepSeek exposes no reasoning toggle for the v3.x chat series; existing off/on thinking on deepseek-chat-v3.1 / deepseek-v3.1 / deepseek-v3.1-terminus left as-is per instructions; (3) V3.2 entries whose models.dev source shows empty reasoning_options (always-on) were converted to the single always-on high mode: deepseek-v3.2-251201 (qiniu-ai), deepseek-v3.2-nvfp4 (vultr), plus the pure thinking lanes deepseek-v3.2-thinking, deepseek-v3.2:thinking, deepseek-v3.2-exp-thinking and the r1-family always-on lanes deepseek-r1-turbo, deepseek-r1-0528-qwen3-8b (all matching deepseek-r1/deepseek-reasoner); the genuinely-hybrid V3.2 entries (deepseek-v3.2 with models.dev effort[none,low,medium,high], deepseek-v3.2-fast with toggle, and deepseek-v3.2-exp) keep their existing off+effort/toggle thinking because V3.2 ships separate non-thinking and thinking lanes; (4) NO speed_modes added to any model -- DeepSeek has no request-level speed/tier parameter, speed is expressed only as separate model IDs (-fast/-el/-turbo). deepseek-math-v2's existing 'on' thinking mode was removed (not a thinking model). Could NOT verify (omitted rather than guessed): knowledge_cutoff for deepseek-latest, deepseek-math-v2, deepseek-ocr, deepseek-ocr-2, deepseek-r1-0528-qwen3-8b, deepseek-r1-turbo, deepseek-v3-turbo, deepseek-v3.1:thinking, deepseek-v3.2-251201, and the R1-distill family (llama-8b, qwen-1.5b/7b/14b); pricing for deepseek-math-v2 (no provider publishes a cost); deepseek-coder-6.7b-instruct pricing is the legacy DeepSeek deepseek-coder API rate ($0.14/$0.28) since the 6.7B open model itself was never on DeepSeek's paid API. The 'input'/'features' missing flags in the brief refer to non-patchable capability fields and were not addressed. REVIEW CORRECTIONS (caller, 2026-08-13): (a) deepseek-latest thinking restored to off/on toggle — it was wrongly nulled on the assumption the runtime enriches it, but model_modes.rs only matches IDs containing 'deepseek-v4'; deepseek-latest's pricing ($0.435/$0.87) matches deepseek-v4-pro and is a v4-pro API alias, so the documented v4 thinking toggle applies. (b) deepseek-math-v2 thinking restored to single always-on 'on' — DeepSeekMath-V2 is a mathematical reasoning model, so the round-1 always-on mode stands."
 }

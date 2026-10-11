@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # End-to-end catalog refresh:
-#   fetch → discover → merge → curate → route caps → backfill → validate → report
+#   fetch → discover → merge → derive modes → curate → route caps → backfill
+#   → validate → verify → report
 #
 # Mutates models.json in place. A timestamped backup is kept in .cache/ before
 # any write, and restored automatically if a stage fails.
@@ -14,10 +15,10 @@ cd "$ROOT"
 mkdir -p .cache
 
 if [[ "${1:-}" != "--no-fetch" ]]; then
-  echo "=== 1/8 fetch upstream snapshot ==="
+  echo "=== 1/10 fetch upstream snapshot ==="
   bash scripts/fetch_modelsdev.sh
 else
-  echo "=== 1/8 fetch: skipped (--no-fetch) ==="
+  echo "=== 1/10 fetch: skipped (--no-fetch) ==="
 fi
 
 BACKUP=$(mktemp ".cache/models.$(date +%Y%m%d-%H%M%S).bak.XXXXXX")
@@ -32,25 +33,35 @@ restore_on_failure() {
 }
 trap restore_on_failure EXIT
 
-echo "=== 2/8 discover new models from trusted sources ==="
+echo "=== 2/10 discover new models from trusted sources ==="
 python3 scripts/seed_modelsdev.py
 
-echo "=== 3/8 sync trusted fields and fill legacy gaps ==="
+echo "=== 3/10 sync trusted fields and fill legacy gaps ==="
 python3 scripts/merge_modelsdev.py
 
-echo "=== 4/8 apply curated patches ==="
+echo "=== 4/10 derive thinking modes from trusted reasoning options ==="
+python3 scripts/derive_thinking_modes.py
+
+echo "=== 5/10 apply curated patches ==="
 python3 scripts/apply_patches.py
 
-echo "=== 5/8 cap context and output by configured route limits ==="
+echo "=== 6/10 cap context and output by configured route limits ==="
 python3 scripts/apply_route_limits.py
 
-echo "=== 6/8 conservative backfills ==="
+echo "=== 7/10 conservative backfills ==="
 python3 scripts/backfill_input.py
 
-echo "=== 7/8 validate full document ==="
+echo "=== 8/10 validate full document ==="
 python3 scripts/validate.py
 
-echo "=== 8/8 coverage report ==="
+echo "=== 9/10 verify thinking modes against the snapshot (advisory) ==="
+# Pre-existing patches deliberately differ from gateway-shaped reasoning records
+# (for example a documented vendor toggle where models.dev advertises effort
+# values), so this audit reports instead of failing the refresh. validate.py
+# remains the hard publish gate.
+python3 scripts/verify_thinking.py || true
+
+echo "=== 10/10 coverage report ==="
 python3 scripts/report.py
 
 trap - EXIT

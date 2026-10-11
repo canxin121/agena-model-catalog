@@ -4663,7 +4663,34 @@
           "temperature"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "claude-fable-latest": {
       "context_window_tokens": 1000000,
@@ -5121,7 +5148,34 @@
           "temperature"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "claude-haiku-latest": {
       "context_window_tokens": 200000,
@@ -7871,7 +7925,34 @@
           "temperature"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "claude-opus-5-fast": {
       "context_window_tokens": 1000000,
@@ -9610,7 +9691,34 @@
           "temperature"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "claude-sonnet-5:thinking": {
       "context_window_tokens": 1000000,
@@ -14180,7 +14288,24 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-latest": {
       "context_window_tokens": 1048576,
@@ -15355,7 +15480,24 @@
           "text"
         ]
       },
-      "lifecycle": "deprecated"
+      "lifecycle": "deprecated",
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash-0731": {
       "lifecycle": "beta",
@@ -15392,6 +15534,18 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
       }
     },
     "deepseek-v4-flash-0731-fast": {
@@ -15425,7 +15579,24 @@
           "text"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash-0731:thinking": {
       "context_window_tokens": 1000000,
@@ -15451,7 +15622,24 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ]
+      ],
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash-0731@eu": {
       "context_window_tokens": 1048576,
@@ -15484,7 +15672,24 @@
           "text"
         ]
       },
-      "max_input_tokens": 1048576
+      "max_input_tokens": 1048576,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash-el": {
       "context_window_tokens": 1000000,
@@ -15510,7 +15715,24 @@
         "reasoning",
         "tool_calling"
       ],
-      "knowledge_cutoff": "2025-05"
+      "knowledge_cutoff": "2025-05",
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash-latest": {
       "context_window_tokens": 1048576,
@@ -15536,7 +15758,24 @@
         "structured_output",
         "temperature"
       ],
-      "knowledge_cutoff": "2025-05"
+      "knowledge_cutoff": "2025-05",
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash-vision-exp": {
       "lifecycle": "deprecated",
@@ -15573,7 +15812,24 @@
         ]
       },
       "max_input_tokens": 1000000,
-      "knowledge_cutoff": "2025-05"
+      "knowledge_cutoff": "2025-05",
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash:0731": {
       "context_window_tokens": 1048576,
@@ -15606,6 +15862,23 @@
         "input_usd_per_million_tokens": "0.14",
         "output_usd_per_million_tokens": "0.28",
         "cache_read_usd_per_million_tokens": "0.0028"
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
       }
     },
     "deepseek-v4-flash:discounted": {
@@ -15636,7 +15909,24 @@
         ]
       },
       "max_input_tokens": 1048576,
-      "knowledge_cutoff": "2025-05"
+      "knowledge_cutoff": "2025-05",
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-flash:thinking": {
       "context_window_tokens": 1048576,
@@ -15662,7 +15952,24 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ]
+      ],
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-pro": {
       "context_window_tokens": 1000000,
@@ -15699,6 +16006,23 @@
           "temperature",
           "tool_calling"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
       }
     },
     "deepseek-v4-pro-0813": {
@@ -15732,6 +16056,21 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "on": {
+          "display_name": "Thinking",
+          "strategy": "request_only",
+          "request_override": {
+            "body_patch": {
+              "thinking": true
+            }
+          }
+        }
       }
     },
     "deepseek-v4-pro-0813:thinking": {
@@ -15758,7 +16097,24 @@
         "structured_output",
         "temperature"
       ],
-      "knowledge_cutoff": "2025-05"
+      "knowledge_cutoff": "2025-05",
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-pro-el": {
       "context_window_tokens": 1000000,
@@ -15784,7 +16140,24 @@
         "reasoning",
         "tool_calling"
       ],
-      "knowledge_cutoff": "2025-05"
+      "knowledge_cutoff": "2025-05",
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-pro-lightning": {
       "context_window_tokens": 1000000,
@@ -15819,7 +16192,24 @@
           "text"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-pro:discounted": {
       "context_window_tokens": 1048576,
@@ -15849,7 +16239,24 @@
         ]
       },
       "max_input_tokens": 1048576,
-      "knowledge_cutoff": "2025-05"
+      "knowledge_cutoff": "2025-05",
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4-pro:thinking": {
       "context_window_tokens": 1048576,
@@ -15875,7 +16282,24 @@
         "tool_calling",
         "structured_output",
         "temperature"
-      ]
+      ],
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deepseek-v4.1-flash": {
       "context_window_tokens": 1000000,
@@ -15908,7 +16332,33 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "deplot": {
       "release_date": "2023-04-03",
@@ -16758,7 +17208,29 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "doubao-seed-1-6-flash-250615": {
       "context_window_tokens": 256000,
@@ -17062,7 +17534,43 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "doubao-seed-1.6": {
       "context_window_tokens": 256000,
@@ -17882,7 +18390,43 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "doubao-seed-2-1-turbo-260628": {
       "context_window_tokens": 256000,
@@ -17918,7 +18462,43 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "doubao-seed-2.0-code": {
       "context_window_tokens": 256000,
@@ -18350,7 +18930,24 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "doubao-seed-code": {
       "lifecycle": "deprecated",
@@ -18467,7 +19064,43 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "dracarys-72b-instruct": {
       "context_window_tokens": 16384,
@@ -23326,7 +23959,24 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1048576
+      "max_input_tokens": 1048576,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "gemini-3.8-flash": {
       "context_window_tokens": 1048576,
@@ -23362,7 +24012,24 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1048576
+      "max_input_tokens": 1048576,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "gemini-deep-research": {
       "lifecycle": "deprecated",
@@ -27825,7 +28492,24 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "glm-5:thinking": {
       "context_window_tokens": 200000,
@@ -33733,6 +34417,33 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
       }
     },
     "gpt-6-luna": {
@@ -33781,6 +34492,37 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
       }
     },
     "gpt-6-sol": {
@@ -33829,6 +34571,37 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
       }
     },
     "gpt-6.1-sol": {
@@ -33877,6 +34650,33 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
       }
     },
     "gpt-audio": {
@@ -34055,6 +34855,37 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
       }
     },
     "gpt-daybreak-red-latest": {
@@ -34092,6 +34923,37 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
       }
     },
     "gpt-image-1": {
@@ -37565,7 +38427,29 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 500000
+      "max_input_tokens": 500000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        }
+      }
     },
     "grok-build-0-1": {
       "context_window_tokens": 256000,
@@ -39211,7 +40095,18 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "ideogram": {
       "context_window_tokens": 150,
@@ -45407,6 +46302,23 @@
         "supported": [
           "text"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "mercury-2.5": {
@@ -45440,7 +46352,24 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 260000
+      "max_input_tokens": 260000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "mercury-coder-small": {
       "context_window_tokens": 32768,
@@ -48815,7 +49744,18 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1048576
+      "max_input_tokens": 1048576,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "mistral-large-instruct-2407": {
       "release_date": "2024-07-24",
@@ -51008,7 +51948,39 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1048576
+      "max_input_tokens": 1048576,
+      "thinking_modes": {
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      }
     },
     "muse-spark-1.3-contributor": {
       "context_window_tokens": 1048576,
@@ -51044,7 +52016,34 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1048576
+      "max_input_tokens": 1048576,
+      "thinking_modes": {
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        }
+      }
     },
     "mythomax-l2-13b": {
       "context_window_tokens": 4096,
@@ -65383,7 +66382,24 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        }
+      }
     },
     "qwen3.8-max": {
       "context_window_tokens": 1000000,
@@ -65582,7 +66598,28 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        }
+      }
     },
     "qwen3.8b": {
       "context_window_tokens": 131072,
@@ -68155,7 +69192,28 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 262144
+      "max_input_tokens": 262144,
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "shisa-v2-llama3.3-70b": {
       "context_window_tokens": 128000,
@@ -69736,6 +70794,23 @@
           "structured_output",
           "tool_calling"
         ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
       }
     },
     "step-r1-v-mini": {

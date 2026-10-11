@@ -32,9 +32,10 @@ limit patches for Cline Pass models.
 ## Conventions
 
 - **Patch fields are authoritative** for the keys they contain. `null` deletes
-  a key from the merged model (used to clear fields that should be absent,
-  e.g. `thinking_modes` on runtime-enriched models — a literal null would fail
-  Rust deserialization since these fields are not `Option`).
+  a key from the merged model — a literal null would fail Rust deserialization
+  since these fields are not `Option`. `null` must not be used to blank
+  `thinking_modes` any more: the runtime no longer infers modes, so deleting a
+  derived ladder removes the model's thinking selector.
 - **Never fabricate.** Only include values verified from an official source
   (vendor docs, models.dev, HuggingFace model cards). A missing field is always
   preferable to a wrong one.
@@ -47,6 +48,11 @@ limit patches for Cline Pass models.
 - Thinking/speed modes must pass `scripts/apply_patches.py` shape checks and
   should be cross-checked against models.dev `reasoning_options` with
   `scripts/verify_thinking.py`.
+- Patches run *after* `scripts/derive_thinking_modes.py`, which materialises
+  `thinking_modes` from the trusted record's `reasoning_options`. Write a patch
+  when the trusted record is missing, when it only advertises a `toggle` or
+  `budget_tokens` option that needs a vendor-specific request encoding, or when
+  a gateway variant ID has no trusted record of its own.
 
 ## Historical note
 
@@ -62,7 +68,7 @@ documents in `docs/research/`.
    contract, thinking/speed mode decision rules, source priority, no-fabrication
    rules). Follow it.
 2. Write `<name>.json` in `patches/` (follow the conventions above).
-3. Run `bash scripts/refresh.sh --no-fetch` to apply + validate + report.
+3. Run `bash scripts/refresh.sh --no-fetch` to derive + apply + validate + verify + report.
 4. Cross-check thinking modes: `python3 scripts/verify_thinking.py curation/patches/<name>.json`.
 5. Commit with a message describing the change set, e.g.
    `chore(catalog): add thinking modes for <family>`.

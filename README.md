@@ -7,9 +7,10 @@ Self-maintained model catalog for the [Agena](https://github.com/canxin121/agena
 `models.json` is the canonical generated source of model metadata. A GitHub
 Actions refresh runs every six hours. It fetches `models.dev`, discovers new models
 from trusted first-party providers and official Hugging Face organizations, updates
-trusted metadata, applies curated exceptions and route limits, validates the result,
-and publishes changes. The Agena runtime fetches this file at startup instead of
-crawling registries at runtime.
+trusted metadata, derives thinking modes from the trusted reasoning options, applies
+curated exceptions and route limits, validates the result, and publishes changes. The
+Agena runtime fetches this file at startup instead of crawling registries at runtime,
+and it reads thinking modes from this file instead of inferring them per vendor family.
 
 ## File
 
@@ -72,6 +73,25 @@ used when none is requested.
 - `request_override` / `adapter_overrides` add provider-specific request fields
   (headers and/or a nested `body_patch`), e.g.:
   `{"request_override": {"body_patch": {"enable_thinking": true}}}`.
+
+This file is the only source of thinking modes: the Agena runtime does not infer
+OpenAI / Anthropic / Gemini family ladders from model IDs any more. Every mode a model
+can offer is declared here, and a model whose entry has no `thinking_modes` shows no
+thinking selector.
+
+`scripts/derive_thinking_modes.py` fills the gap for entries that declare `reasoning`
+but have no curated modes yet, using the **trusted first-party record only**:
+
+- each published `effort` value becomes an effort mode, `none` becomes the disabled
+  `off` mode; the order of the source is preserved;
+- `toggle` and `budget_tokens` options are not derived, because they need a
+  vendor-specific request encoding — those stay in `curation/patches/`;
+- an entry that already declares `thinking_modes` is never modified, and no `default`
+  key is invented (models.dev publishes none).
+
+So a model such as `gpt-6.1-sol` gets exactly the effort values OpenAI publishes
+(`low`, `medium`, `high`, `xhigh`, `max`) and nothing else — no invented `off`/
+`minimal`, no missing `max`.
 
 ## Speed modes (`speed_modes`)
 
@@ -137,9 +157,12 @@ Verification rules:
   field is always preferable to a wrong one.
 - `models.dev` is the authoritative base for context/output limits, pricing,
   descriptions, knowledge cutoffs, and the `input`/`features` capability flags.
-- Thinking modes and speed modes require per-vendor verification against official
-  API docs; the runtime auto-enriches only the OpenAI (gpt-5/o1/o3/o4), Gemini,
-  and Claude families — every other vendor's modes must be curated here.
+- Thinking modes come from the trusted record's `reasoning_options` (derived) or from
+  a curated patch; the runtime adds nothing on its own. Speed modes always require
+  per-vendor verification against official API docs.
+- A model that a gateway serves under a variant ID without its own trusted record
+  (for example `deepseek-v4-flash:thinking`) needs a curated patch when it should
+  offer a thinking selector.
 - A model flagged `reasoning` but with no documented toggle (e.g. some
   Llama/Pixtral/Gemma entries) should NOT get thinking modes.
 
@@ -154,21 +177,22 @@ curation/
   README.md          patch conventions and how to add one
 docs/research/       per-vendor verification documents (domestic families)
 scripts/
-  refresh.sh         end-to-end refresh: fetch → discover → merge → curate → route caps → backfill → validate → report
+  refresh.sh         end-to-end refresh: fetch → discover → merge → derive modes → curate → route caps → backfill → validate → verify → report
   model_sources.py   canonicalize and select trusted upstream records
   seed_modelsdev.py  add newly discovered canonical model ids
   publish.sh         validate + commit + push (the release gate)
   fetch_modelsdev.sh snapshot models.dev into .cache/
   merge_modelsdev.py sync trusted fields and fill legacy gaps from the snapshot
+  derive_thinking_modes.py materialise thinking modes from trusted reasoning_options
   apply_patches.py   apply curation/patches onto models.json
   apply_route_limits.py cap shared context and output by configured route limits
   backfill_input.py  conservative max_input_tokens backfill
   validate.py        full-document schema validation (publish gate)
-  verify_thinking.py cross-check thinking patches against models.dev reasoning_options
+  verify_thinking.py cross-check thinking patches and catalog modes against reasoning_options
   report.py          coverage report
 ```
 
-The data pipeline is **fetch → discover → merge → curate → route caps → verify**:
+The data pipeline is **fetch → discover → merge → derive → curate → route caps → validate → verify**:
 
 1. **fetch** — `fetch_modelsdev.sh` snapshots `models.dev/api.json` into
    `.cache/` (not committed; reproducible).
@@ -181,22 +205,27 @@ The data pipeline is **fetch → discover → merge → curate → route caps �
    Price components omitted by the source are preserved; legacy price tiers
    without a unique threshold are discarded. Older models without a trusted
    source only receive missing fields from exact-ID matches.
-4. **curate** — `apply_patches.py` merges `curation/patches/*.json` over the
+4. **derive** — `derive_thinking_modes.py` materialises `thinking_modes` from the
+   trusted record's `reasoning_options` for entries that declare `reasoning` and
+   have no curated modes yet. Existing modes are never modified, so reruns are no-ops
+   and curation always wins.
+5. **curate** — `apply_patches.py` merges `curation/patches/*.json` over the
    merged base. Curated values win (they were verified against official
    sources); `null` in a patch deletes a key.
-5. **route caps** — `apply_route_limits.py` takes the lower of the trusted
+6. **route caps** — `apply_route_limits.py` takes the lower of the trusted
    source's context and output limits and each configured route's corresponding
    limits for the same canonical model. Route providers cannot introduce new
    model IDs. This keeps shared limits safe for routes such as Cline Pass.
-6. **verify** — `validate.py` enforces the catalog schema before anything is
-   committed. `verify_thinking.py` is a separate advisory audit of existing
-   thinking-mode patches against models.dev `reasoning_options`; it is not the
-   automated publish gate because upstream reasoning records are incomplete.
+7. **verify** — `validate.py` enforces the catalog schema before anything is
+   committed and stays the hard gate. `verify_thinking.py` runs inside the refresh
+   as an advisory audit: it lists patch records that differ from the models.dev
+   reasoning options (curated entries are deliberately allowed to be wider than a
+   gateway-shaped record) and prints the catalog-vs-trusted cross-check for review.
 
 ### Refreshing the catalog
 
 ```bash
-bash scripts/refresh.sh            # fetch + discover + merge + curate + route caps + validate
+bash scripts/refresh.sh            # fetch + discover + merge + derive + curate + route caps + validate + verify
 bash scripts/refresh.sh --no-fetch # reuse an existing .cache snapshot
 bash scripts/publish.sh "chore(catalog): ..."   # validate, commit, push
 ```

@@ -36,3 +36,14 @@ print(f"features capabilities present: {n - miss('features')}")
 rs = sum(1 for c in cat.values() if reasoning_supported(c))
 rs_no_tm = sum(1 for c in cat.values() if reasoning_supported(c) and not c.get('thinking_modes'))
 print(f"reasoning-supported: {rs}, of which still NO thinking modes: {rs_no_tm}")
+if rs_no_tm:
+    # These either have no trusted first-party record (aggregator aliases and
+    # gateway variants) or a record that only advertises a toggle/budget option.
+    # The runtime no longer infers modes for them, so they stay without a
+    # thinking selector until a curated patch adds one.
+    missing = sorted(mid for mid, c in cat.items()
+                     if reasoning_supported(c) and not c.get('thinking_modes'))
+    for mid in missing[:20]:
+        print(f"    no thinking modes: {mid}")
+    if len(missing) > 20:
+        print(f"    ... {len(missing) - 20} more")

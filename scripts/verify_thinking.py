@@ -1,195 +1,187 @@
 #!/usr/bin/env python3
-"""Cross-check thinking modes against the models.dev snapshot's
-reasoning_options.
+"""Cross-check thinking modes against the trusted first-party records.
 
 Two passes:
 
-1. Patches (curation/patches/*.json): a patch that sets thinking_modes on a
-   model whose ropts contradict it (or whose ropts are absent/empty) is a
-   fabrication signal. Mismatches fail the run.
-2. Catalog (models.json): entries whose effort modes are wider than the trusted
-   first-party record publishes, or that offer an off mode the vendor does not
-   publish. Reported only - curated entries are deliberately allowed to be
-   wider than a gateway-shaped source record.
+1. Patches (`curation/patches/*.json`). A patch fails the run only when it
+   contradicts what the trusted record publishes for that model:
+   - it declares an effort value the record does not publish, or
+   - it turns a read-only toggle into an effort ladder.
+   Everything else is advisory: a patch for a model without a trusted record
+   (gateway aliases and variants), a patch that keeps an on/off toggle the
+   record does not describe, or a patch that offers an off mode where the
+   record lists no `none`.
+2. Catalog (`models.json`). Entries whose effort modes are wider than the
+   trusted record publishes, or that offer an off mode the record does not
+   list. Report only: curated entries are deliberately allowed to be wider
+   than a gateway-shaped source record.
 
 Run after fetch_modelsdev.sh; pass specific patch files to check only those:
+
     python3 scripts/verify_thinking.py curation/patches/domestic_*.json
 """
+import glob
 import json
 import os
 import sys
-import glob
 
 from model_sources import discover_trusted_models
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-md = json.load(open(os.path.join(ROOT, ".cache/models.dev.json")))
-trusted = discover_trusted_models(md)
-dev = {}
-for prov in md.values():
-    for mid, m in (prov.get("models") or {}).items():
-        real = m.get("id") or mid
-        dev.setdefault(real, m)
-        dev.setdefault(mid, m)
+CATALOG = os.path.join(ROOT, "models.json")
+PATCH_DIR = os.path.join(ROOT, "curation", "patches")
+SNAPSHOT = os.path.join(ROOT, ".cache", "models.dev.json")
+
+TRUSTED = discover_trusted_models(json.load(open(SNAPSHOT)))
 
 
-def patch_has_toggle(tm):
-    for k, v in (tm or {}).items():
-        if k == "default":
+def reasoning_options(model):
+    return [
+        option
+        for option in (model.get("reasoning_options") or [])
+        if isinstance(option, dict)
+    ]
+
+
+def option_kinds(model):
+    return {option.get("type") for option in reasoning_options(model)}
+
+
+def effort_values(model):
+    values = set()
+    for option in reasoning_options(model):
+        if option.get("type") == "effort":
+            values |= {str(value).strip().lower() for value in option.get("values") or []}
+    return values
+
+
+def modes_of(definition):
+    return {
+        name: value
+        for name, value in (definition or {}).items()
+        if name != "default" and isinstance(value, dict)
+    }
+
+
+def strategies(modes):
+    return {mode.get("strategy") for mode in modes.values()}
+
+
+def efforts(modes):
+    return {
+        mode.get("effort")
+        for mode in modes.values()
+        if mode.get("strategy") == "effort" and mode.get("effort")
+    }
+
+
+def patch_check(path):
+    """Return (name, contradictions, advisories, checked) for one patch file."""
+    name = os.path.basename(path)
+    patch = json.load(open(path))
+    hard, advisory, checked = [], [], 0
+    for model_id, value in sorted((patch.get("models") or {}).items()):
+        if not isinstance(value, dict):
             continue
-        if isinstance(v, dict) and v.get("strategy") == "request_only":
-            return True
-    return False
-
-
-def patch_has_effort(tm):
-    for k, v in (tm or {}).items():
-        if k == "default":
-            continue
-        if isinstance(v, dict) and v.get("strategy") == "effort":
-            return True
-    return False
-
-
-def patch_always_on(tm):
-    # a single mode with no off toggle = always-on reasoning variant
-    if not tm:
-        return False
-    return not patch_has_toggle(tm) and not any(
-        isinstance(v, dict) and v.get("strategy") == "disabled" for v in tm.values())
-
-
-def ropts_kind(ro):
-    if not ro:
-        return None
-    for r in ro:
-        t = r.get("type")
-        if t == "effort":
-            return "effort"
-        if t == "toggle":
-            return "toggle"
-        if t == "token":
-            return "budget"
-    return "other"
-
-
-def check(pf):
-    base = os.path.basename(pf)
-    patch = json.load(open(pf))
-    pmodels = patch.get("models") or {}
-    mismatch, empty, absent, ok, skipped = [], [], [], [], []
-    for mid, pv in sorted(pmodels.items()):
-        tm = pv.get("thinking_modes")
-        if not tm:
-            skipped.append((mid, "no thinking_modes in patch"))
-            continue
-        m = dev.get(mid)
-        if m is None:
-            # :thinking / alias variants won't match; try stripping suffixes
-            absent.append((mid, "not in models.dev (alias/variant?)"))
-            continue
-        ro = m.get("reasoning_options")
-        kind = ropts_kind(ro)
-        has_t = patch_has_toggle(tm)
-        has_e = patch_has_effort(tm)
-        if kind == "toggle" and has_e and not has_t:
-            mismatch.append((mid, "patch=effort but ropts=toggle", ro))
-        elif kind == "effort" and has_t and not has_e:
-            mismatch.append((mid, "patch=toggle but ropts=effort", ro))
-        elif kind in ("effort", "toggle") and (has_t or has_e):
-            ok.append((mid, kind))
-        elif kind is None:
-            if patch_always_on(tm):
-                # always-on variants are deliberate (e.g. -thinking models);
-                # only flag if base model is a non-reasoning type
-                empty.append((mid, "ropts empty but always-on mode (check base model)"))
-            else:
-                empty.append((mid, "ropts empty — template risk", ro))
-        else:
-            empty.append((mid, f"ropts kind={kind}", ro))
-    return base, mismatch, empty, absent, ok
-
-
-def catalog_pass():
-    """Report catalog entries that are wider than the trusted record (advisory)."""
-    catalog = json.load(open(os.path.join(ROOT, "models.json")))["models"]
-    checked = wider = off_unsupported = 0
-    wider_rows = []
-    off_rows = []
-    for mid, c in sorted(catalog.items()):
-        tm = c.get("thinking_modes") or {}
-        if not tm:
-            continue
-        source = trusted.get(mid)
-        if source is None:
-            continue
-        values = set()
-        for option in source.model.get("reasoning_options") or []:
-            if isinstance(option, dict) and option.get("type") == "effort":
-                values |= {str(v).strip().lower() for v in option.get("values") or []}
-        if not values:
+        modes = modes_of(value.get("thinking_modes"))
+        if not modes:
             continue
         checked += 1
-        efforts = {
-            m.get("effort")
-            for mk, m in tm.items()
-            if mk != "default" and isinstance(m, dict) and m.get("strategy") == "effort"
-        }
-        extra = {effort for effort in efforts if effort} - values
-        has_off = any(
-            isinstance(m, dict) and m.get("strategy") == "disabled"
-            for mk, m in tm.items()
-            if mk != "default"
-        )
-        if extra:
-            wider += 1
-            wider_rows.append((mid, sorted(extra), sorted(values)))
-        if has_off and "none" not in values:
-            off_unsupported += 1
-            off_rows.append(mid)
+        source = TRUSTED.get(model_id)
+        if source is None:
+            advisory.append((model_id, "no trusted record - unverifiable"))
+            continue
+        model = source.model
+        published = effort_values(model)
+        kinds = option_kinds(model)
+        declared = efforts(modes)
+        outside = declared - published
+        if published and outside:
+            hard.append(
+                (
+                    model_id,
+                    "declares effort "
+                    + str(sorted(outside))
+                    + " but the record publishes "
+                    + str(sorted(published)),
+                )
+            )
+        elif not published and declared and kinds == {"toggle"}:
+            advisory.append(
+                (model_id, "declares an effort ladder where the record publishes only a toggle")
+            )
+        elif not published and not kinds:
+            advisory.append((model_id, "declares modes where the record publishes none"))
+        if "disabled" in strategies(modes) and published and "none" not in published:
+            advisory.append((model_id, "offers an off mode while the record lists no none"))
+    return name, hard, advisory, checked
+
+
+def catalog_check():
+    """Advisory comparison of the published catalog against the trusted records."""
+    catalog = json.load(open(CATALOG))["models"]
+    checked = 0
+    wider, off = [], []
+    for model_id, definition in sorted(catalog.items()):
+        modes = modes_of(definition.get("thinking_modes"))
+        if not modes:
+            continue
+        source = TRUSTED.get(model_id)
+        if source is None:
+            continue
+        published = effort_values(source.model)
+        if not published:
+            continue
+        checked += 1
+        outside = efforts(modes) - published
+        if outside:
+            wider.append((model_id, sorted(outside), sorted(published)))
+        if "disabled" in strategies(modes) and "none" not in published:
+            off.append(model_id)
     print("\n===== catalog cross-check (report only) =====")
-    print(f"  entries with a trusted record to compare: {checked}")
-    print(f"  offer effort values the trusted record does not publish: {wider}")
-    for mid, extra, values in wider_rows[:15]:
-        print(f"    {mid}: catalog has {extra}, trusted publishes {values}")
-    if len(wider_rows) > 15:
-        print(f"    ... {len(wider_rows) - 15} more")
-    print(f"  offer an off mode while the trusted record lists no 'none': {off_unsupported}")
-    for mid in off_rows[:15]:
-        print(f"    {mid}")
-    if len(off_rows) > 15:
-        print(f"    ... {len(off_rows) - 15} more")
+    print("  entries with a trusted record to compare: " + str(checked))
+    print("  offer effort values the trusted record does not publish: " + str(len(wider)))
+    for model_id, extra, published in wider[:15]:
+        print("    " + model_id + ": catalog has " + str(extra) + ", trusted publishes " + str(published))
+    if len(wider) > 15:
+        print("    ... " + str(len(wider) - 15) + " more")
+    print("  offer an off mode while the trusted record lists no none: " + str(len(off)))
 
 
 def main():
-    targets = sys.argv[1:] or sorted(
-        glob.glob(os.path.join(ROOT, "curation/patches/*.json")))
-    explicit_targets = bool(sys.argv[1:])
-    total_mismatch = total_empty = 0
-    for t in targets:
-        base, mismatch, empty, absent, ok = check(t)
-        print(f"\n===== {base} =====")
-        print(f"  patched-with-thinking: {len(mismatch)+len(empty)+len(ok)} (ok={len(ok)})")
-        if mismatch:
-            print(f"  *** MISMATCH ({len(mismatch)}) ***")
-            for mid, why, ro in mismatch:
-                print(f"    {mid}: {why}  ropts={json.dumps(ro)}")
-            total_mismatch += len(mismatch)
-        if empty:
-            print(f"  ropts-empty/unsupported ({len(empty)})")
-            for row in empty:
-                if len(row) == 3:
-                    mid, why, ro = row
-                else:
-                    mid, why = row
-                print(f"    {mid}: {why}")
-            total_empty += len(empty)
-        if absent:
-            print(f"  absent-from-models.dev ({len(absent)}): {', '.join(m for m, _ in absent[:25])}")
-    if not explicit_targets:
-        catalog_pass()
-    print(f"\n===== TOTALS: {total_mismatch} mismatches, {total_empty} ropts-empty =====")
-    if total_mismatch:
+    explicit = bool(sys.argv[1:])
+    targets = sys.argv[1:] or sorted(glob.glob(os.path.join(PATCH_DIR, "*.json")))
+    total_hard = 0
+    total_advisory = 0
+    total_checked = 0
+    for target in targets:
+        name, hard, advisory, checked = patch_check(target)
+        total_hard += len(hard)
+        total_advisory += len(advisory)
+        total_checked += checked
+        if not hard and not advisory:
+            continue
+        print("\n===== " + name + " =====")
+        if hard:
+            print("  *** CONTRADICTS THE TRUSTED RECORD (" + str(len(hard)) + ") ***")
+            for model_id, why in hard:
+                print("    " + model_id + ": " + why)
+        if advisory:
+            print("  advisory (" + str(len(advisory)) + "):")
+            for model_id, why in advisory:
+                print("    " + model_id + ": " + why)
+    print(
+        "\nchecked "
+        + str(total_checked)
+        + " patched entries: "
+        + str(total_hard)
+        + " contradictions, "
+        + str(total_advisory)
+        + " advisories"
+    )
+    if not explicit:
+        catalog_check()
+    if total_hard:
         sys.exit(1)
 
 

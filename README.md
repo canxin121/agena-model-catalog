@@ -213,7 +213,7 @@ scripts/
   apply_route_limits.py cap shared context and output by configured route limits
   backfill_input.py  conservative max_input_tokens backfill
   validate.py        full-document schema validation (publish gate)
-  verify_thinking.py cross-check thinking patches and catalog modes against reasoning_options
+  verify_thinking.py cross-check thinking modes against the trusted first-party records
   report.py          coverage report
 ```
 
@@ -245,11 +245,12 @@ The data pipeline is **fetch → discover → merge → derive thinking → deri
    source's context and output limits and each configured route's corresponding
    limits for the same canonical model. Route providers cannot introduce new
    model IDs. This keeps shared limits safe for routes such as Cline Pass.
-8. **verify** — `validate.py` enforces the catalog schema before anything is
-   committed and stays the hard gate. `verify_thinking.py` runs inside the refresh
-   as an advisory audit: it lists patch records that differ from the models.dev
-   reasoning options (curated entries are deliberately allowed to be wider than a
-   gateway-shaped record) and prints the catalog-vs-trusted cross-check for review.
+8. **verify** — `validate.py` enforces the catalog schema and `verify_thinking.py`
+   cross-checks thinking modes against the trusted first-party records. A patch that
+   declares an effort value the record does not publish, or that turns a read-only
+   toggle into an effort ladder, fails the refresh. Patches for models without a
+   trusted record and ladders wider than a gateway-shaped record are reported as
+   advisories, and the catalog-vs-trusted comparison stays a report.
 
 ### Refreshing the catalog
 

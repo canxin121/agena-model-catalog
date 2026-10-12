@@ -60,12 +60,12 @@ python3 scripts/backfill_input.py
 echo "=== 10/12 validate full document ==="
 python3 scripts/validate.py
 
-echo "=== 11/12 verify thinking modes against the snapshot (advisory) ==="
-# Pre-existing patches deliberately differ from gateway-shaped reasoning records
-# (for example a documented vendor toggle where models.dev advertises effort
-# values), so this audit reports instead of failing the refresh. validate.py
-# remains the hard publish gate.
-python3 scripts/verify_thinking.py || true
+echo "=== 11/12 verify thinking modes against the trusted records ==="
+# Fails when a patch contradicts the trusted record (an effort value it does not
+# publish, or a toggle turned into an effort ladder). Patches for models without
+# a trusted record and ladders wider than a gateway-shaped record are reported as
+# advisories only.
+python3 scripts/verify_thinking.py
 
 echo "=== 12/12 coverage report ==="
 python3 scripts/report.py

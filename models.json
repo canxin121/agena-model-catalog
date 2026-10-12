@@ -6173,7 +6173,11 @@
               "speed": "fast"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -6434,7 +6438,11 @@
               "speed": "fast"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -6651,7 +6659,11 @@
               }
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -7229,7 +7241,11 @@
               "speed": "fast"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -7480,7 +7496,11 @@
               "speed": "fast"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -7637,7 +7657,11 @@
               "speed": "fast"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -7868,7 +7892,11 @@
               }
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -7952,6 +7980,23 @@
           "strategy": "effort",
           "effort": "max"
         }
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "headers": {
+              "anthropic-beta": "fast-mode-2026-02-01"
+            },
+            "body_patch": {
+              "speed": "fast"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "claude-opus-5-fast": {
@@ -12154,7 +12199,11 @@
               "speed": "fast"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -12215,7 +12264,11 @@
               "speed": "fast"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -13029,7 +13082,11 @@
               "service_tier": "priority"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -13104,7 +13161,11 @@
               "service_tier": "priority"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -13256,7 +13317,11 @@
               "service_tier": "priority"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -29751,6 +29816,20 @@
         "unsupported": [
           "reasoning"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-4.1-mini": {
@@ -29791,6 +29870,20 @@
         "unsupported": [
           "reasoning"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-4.1-mini-2025-04-14": {
@@ -29904,6 +29997,20 @@
         "unsupported": [
           "reasoning"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-4.1-nano@eu": {
@@ -30019,6 +30126,20 @@
         "unsupported": [
           "reasoning"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-4o-2024-05-13": {
@@ -30057,7 +30178,21 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 128000
+      "max_input_tokens": 128000,
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
+      }
     },
     "gpt-4o-2024-08-06": {
       "context_window_tokens": 128000,
@@ -30206,6 +30341,20 @@
         "unsupported": [
           "reasoning"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-4o-mini-2024-07-18": {
@@ -30547,6 +30696,28 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "flex": {
+          "display_name": "Flex",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "flex"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-5-chat": {
@@ -30875,6 +31046,28 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "flex": {
+          "display_name": "Flex",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "flex"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-5-mini@eu": {
@@ -31007,6 +31200,20 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "speed_modes": {
+        "flex": {
+          "display_name": "Flex",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "flex"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-5-nano@eu": {
@@ -31263,6 +31470,28 @@
           "temperature",
           "tool_calling"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "flex": {
+          "display_name": "Flex",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "flex"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-5.1-2025-11-13": {
@@ -31865,6 +32094,28 @@
           "temperature",
           "tool_calling"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "flex": {
+          "display_name": "Flex",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "flex"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-5.2-chat": {
@@ -32285,6 +32536,20 @@
           "temperature",
           "tool_calling"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-5.3-codex-spark": {
@@ -32530,7 +32795,11 @@
               }
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -32683,7 +32952,11 @@
               }
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -32829,6 +33102,20 @@
           "temperature",
           "tool_calling"
         ]
+      },
+      "speed_modes": {
+        "flex": {
+          "display_name": "Flex",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "flex"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-5.4-nano-2026-03-17": {
@@ -33129,7 +33416,11 @@
               }
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -33446,7 +33737,11 @@
               }
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -33569,7 +33864,11 @@
               }
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -33849,7 +34148,11 @@
               }
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -34129,7 +34432,11 @@
               }
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -34444,6 +34751,40 @@
           "strategy": "effort",
           "effort": "max"
         }
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "pro": {
+          "display_name": "Pro",
+          "adapter_overrides": {
+            "openai_responses": {
+              "body_patch": {
+                "reasoning": {
+                  "mode": "pro"
+                }
+              }
+            }
+          }
+        },
+        "ultrafast": {
+          "display_name": "Ultrafast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "ultrafast"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-6-luna": {
@@ -34523,6 +34864,32 @@
           "strategy": "effort",
           "effort": "max"
         }
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "pro": {
+          "display_name": "Pro",
+          "adapter_overrides": {
+            "openai_responses": {
+              "body_patch": {
+                "reasoning": {
+                  "mode": "pro"
+                }
+              }
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-6-sol": {
@@ -34602,6 +34969,32 @@
           "strategy": "effort",
           "effort": "max"
         }
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "pro": {
+          "display_name": "Pro",
+          "adapter_overrides": {
+            "openai_responses": {
+              "body_patch": {
+                "reasoning": {
+                  "mode": "pro"
+                }
+              }
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-6.1-sol": {
@@ -34677,6 +35070,40 @@
           "strategy": "effort",
           "effort": "max"
         }
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "pro": {
+          "display_name": "Pro",
+          "adapter_overrides": {
+            "openai_responses": {
+              "body_patch": {
+                "reasoning": {
+                  "mode": "pro"
+                }
+              }
+            }
+          }
+        },
+        "ultrafast": {
+          "display_name": "Ultrafast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "ultrafast"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "gpt-audio": {
@@ -38366,7 +38793,11 @@
               "service_tier": "priority"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -48400,7 +48831,11 @@
               "service_tier": "priority"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "minimax-m3-preview": {
@@ -54927,6 +55362,28 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "flex": {
+          "display_name": "Flex",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "flex"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "o3-deep-research": {
@@ -55279,6 +55736,28 @@
         "unsupported": [
           "temperature"
         ]
+      },
+      "speed_modes": {
+        "fast": {
+          "display_name": "Fast",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "priority"
+            }
+          }
+        },
+        "flex": {
+          "display_name": "Flex",
+          "request_override": {
+            "body_patch": {
+              "service_tier": "flex"
+            }
+          }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       }
     },
     "o4-mini-deep-research": {
@@ -56438,7 +56917,11 @@
               "service_tier": "priority"
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "input": {
         "supported": [
@@ -58281,7 +58764,11 @@
               }
             }
           }
-        }
+        },
+        "standard": {
+          "display_name": "Default"
+        },
+        "default": "standard"
       },
       "max_input_tokens": 200000
     },

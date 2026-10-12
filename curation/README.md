@@ -53,6 +53,12 @@ limit patches for Cline Pass models.
   when the trusted record is missing, when it only advertises a `toggle` or
   `budget_tokens` option that needs a vendor-specific request encoding, or when
   a gateway variant ID has no trusted record of its own.
+- `scripts/derive_speed_modes.py` runs right after it and materialises
+  `speed_modes` from the trusted record's `experimental.modes`, always adding the
+  `standard` entry (display name `Default`, no override) plus the `default`
+  pointer. Patch speed modes when the vendor documents a tier the record does
+  not publish, and name the concrete adapter (`openai_responses`, ...) in
+  `adapter_overrides`.
 
 ## Historical note
 

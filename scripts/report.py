@@ -30,7 +30,18 @@ for f in ("description", "context_window_tokens", "max_input_tokens", "max_outpu
           "pricing", "knowledge_cutoff"):
     print(f"missing {f}: {miss(f)}")
 print(f"thinking_modes present: {sum(1 for c in cat.values() if c.get('thinking_modes'))}")
-print(f"speed_modes present: {sum(1 for c in cat.values() if c.get('speed_modes'))}")
+speed = {mid: (c.get('speed_modes') or {}) for mid, c in cat.items() if c.get('speed_modes')}
+print(f"speed_modes present: {len(speed)}")
+no_standard = sorted(mid for mid, modes in speed.items() if 'standard' not in modes)
+print(f"  of which missing the explicit `standard` (Default) entry: {len(no_standard)}")
+for mid in no_standard[:10]:
+    print(f"    no standard entry: {mid}")
+not_pointing_at_standard = sorted(
+    mid for mid, modes in speed.items()
+    if modes.get('default') not in (None, 'standard')
+)
+for mid in not_pointing_at_standard[:10]:
+    print(f"    default pointer is curated: {mid} -> {speed[mid].get('default')}")
 print(f"input capabilities present: {n - miss('input')}")
 print(f"features capabilities present: {n - miss('features')}")
 rs = sum(1 for c in cat.values() if reasoning_supported(c))

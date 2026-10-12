@@ -122,6 +122,30 @@ Anthropic fast-mode example:
 }
 ```
 
+Like thinking modes, speed modes come from this file only: the runtime sends
+exactly what a mode declares and never invents a tier. `scripts/derive_speed_modes.py`
+materialises them from the trusted record's `experimental.modes` when an entry has
+none yet:
+
+- `{"service_tier": ...}` becomes a request body patch (accepted by both the
+  Responses and the Chat Completions API);
+- `{"speed": "fast"}` from Anthropic also carries the documented
+  `anthropic-beta: fast-mode-2026-02-01` header;
+- `{"reasoning": {"mode": ...}}` becomes an `openai_responses` adapter override,
+  because `reasoning.mode` is Responses-only;
+- any other shape (for example Bedrock's `additionalModelRequestFields`) is
+  skipped and reported for curation.
+
+`adapter_overrides` keys must be the adapter ids a provider route really uses
+(`openai_responses`, `openai_chat_completions`); a plain `openai` key is still
+accepted by the runtime as an alias for those two, but new data should name the
+concrete adapter.
+
+Exactly one entry of every `speed_modes` map is `standard`
+(`{ "display_name": "Default" }`, no override) and the `default` pointer names it, so
+the selector can always express "send no speed tier". Selecting it changes nothing on
+the wire; the provider keeps its native default.
+
 ## Updating
 
 `.github/workflows/refresh-models.yml` runs the refresh four times a day and can also be
@@ -184,6 +208,7 @@ scripts/
   fetch_modelsdev.sh snapshot models.dev into .cache/
   merge_modelsdev.py sync trusted fields and fill legacy gaps from the snapshot
   derive_thinking_modes.py materialise thinking modes from trusted reasoning_options
+  derive_speed_modes.py materialise speed modes from trusted experimental.modes
   apply_patches.py   apply curation/patches onto models.json
   apply_route_limits.py cap shared context and output by configured route limits
   backfill_input.py  conservative max_input_tokens backfill
@@ -192,7 +217,7 @@ scripts/
   report.py          coverage report
 ```
 
-The data pipeline is **fetch → discover → merge → derive → curate → route caps → validate → verify**:
+The data pipeline is **fetch → discover → merge → derive thinking → derive speed → curate → route caps → validate → verify**:
 
 1. **fetch** — `fetch_modelsdev.sh` snapshots `models.dev/api.json` into
    `.cache/` (not committed; reproducible).
@@ -205,18 +230,22 @@ The data pipeline is **fetch → discover → merge → derive → curate → ro
    Price components omitted by the source are preserved; legacy price tiers
    without a unique threshold are discarded. Older models without a trusted
    source only receive missing fields from exact-ID matches.
-4. **derive** — `derive_thinking_modes.py` materialises `thinking_modes` from the
-   trusted record's `reasoning_options` for entries that declare `reasoning` and
-   have no curated modes yet. Existing modes are never modified, so reruns are no-ops
-   and curation always wins.
-5. **curate** — `apply_patches.py` merges `curation/patches/*.json` over the
+4. **derive thinking** — `derive_thinking_modes.py` materialises `thinking_modes`
+   from the trusted record's `reasoning_options` for entries that declare
+   `reasoning` and have no curated modes yet. Existing modes are never modified, so
+   reruns are no-ops and curation always wins.
+5. **derive speed** — `derive_speed_modes.py` materialises `speed_modes` from the
+   trusted record's `experimental.modes`. It runs again after the patches with
+   `--ensure-existing-only`, so entries whose modes come from a curated patch also
+   receive the explicit `standard` entry and its `default` pointer.
+6. **curate** — `apply_patches.py` merges `curation/patches/*.json` over the
    merged base. Curated values win (they were verified against official
    sources); `null` in a patch deletes a key.
-6. **route caps** — `apply_route_limits.py` takes the lower of the trusted
+7. **route caps** — `apply_route_limits.py` takes the lower of the trusted
    source's context and output limits and each configured route's corresponding
    limits for the same canonical model. Route providers cannot introduce new
    model IDs. This keeps shared limits safe for routes such as Cline Pass.
-7. **verify** — `validate.py` enforces the catalog schema before anything is
+8. **verify** — `validate.py` enforces the catalog schema before anything is
    committed and stays the hard gate. `verify_thinking.py` runs inside the refresh
    as an advisory audit: it lists patch records that differ from the models.dev
    reasoning options (curated entries are deliberately allowed to be wider than a
@@ -225,7 +254,7 @@ The data pipeline is **fetch → discover → merge → derive → curate → ro
 ### Refreshing the catalog
 
 ```bash
-bash scripts/refresh.sh            # fetch + discover + merge + derive + curate + route caps + validate + verify
+bash scripts/refresh.sh            # fetch + discover + merge + derive think+speed + curate + route caps + validate + verify
 bash scripts/refresh.sh --no-fetch # reuse an existing .cache snapshot
 bash scripts/publish.sh "chore(catalog): ..."   # validate, commit, push
 ```

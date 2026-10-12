@@ -52480,6 +52480,69 @@
         }
       }
     },
+    "muse-wonder-1.0": {
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 131072,
+      "description": "Muse Wonder is a frontier multimodal reasoning model from Meta for personal and professional agents, long-horizon coding, and computer use. It combines Active Memory, which carries relevant context across conversations, with Active Focus, which keeps it working through blockers toward a goal.",
+      "release_date": "2026-10-12",
+      "last_updated": "2026-10-12",
+      "open_weights": false,
+      "display_name": "Muse Wonder",
+      "origin": "Muse",
+      "output_modalities": [
+        "text"
+      ],
+      "input": {
+        "supported": [
+          "audio",
+          "document",
+          "image",
+          "text",
+          "video"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "temperature",
+          "tool_calling"
+        ]
+      },
+      "thinking_modes": {
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      },
+      "max_input_tokens": 1048576
+    },
     "mythomax-l2-13b": {
       "context_window_tokens": 4096,
       "max_input_tokens": 4000,
@@ -52589,10 +52652,13 @@
       },
       "display_name": "Nano-Banana-Pro",
       "origin": "Nano",
-      "input": [
-        "image",
-        "file"
-      ],
+      "input": {
+        "supported": [
+          "file",
+          "image",
+          "text"
+        ]
+      },
       "features": {
         "supported": [
           "tool_calling"
@@ -52602,7 +52668,8 @@
           "temperature"
         ]
       },
-      "max_input_tokens": 65536
+      "max_input_tokens": 65536,
+      "knowledge_cutoff": "2025-01"
     },
     "nano-gpt-help": {
       "context_window_tokens": 6000,

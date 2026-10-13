@@ -24098,6 +24098,60 @@
         }
       }
     },
+    "gemini-4-argon": {
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 32768,
+      "description": "Google's flagship reasoning model for complex software engineering, deep math and science, and long-horizon autonomous agents",
+      "knowledge_cutoff": "2026-03",
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "open_weights": false,
+      "display_name": "Gemini 4 Argon",
+      "origin": "Google",
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "2",
+        "output_usd_per_million_tokens": "10",
+        "cache_read_usd_per_million_tokens": "0.1"
+      },
+      "input": {
+        "supported": [
+          "audio",
+          "document",
+          "image",
+          "text",
+          "video"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "temperature",
+          "tool_calling"
+        ]
+      },
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      },
+      "max_input_tokens": 1048576
+    },
     "gemini-deep-research": {
       "lifecycle": "deprecated",
       "context_window_tokens": 1048576,
@@ -52543,7 +52597,12 @@
           "effort": "max"
         }
       },
-      "max_input_tokens": 1048576
+      "max_input_tokens": 1048576,
+      "pricing": {
+        "input_usd_per_million_tokens": "4",
+        "output_usd_per_million_tokens": "20",
+        "cache_read_usd_per_million_tokens": "0.2"
+      }
     },
     "mythomax-l2-13b": {
       "context_window_tokens": 4096,

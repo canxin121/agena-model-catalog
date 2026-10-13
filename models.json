@@ -401,6 +401,7 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
         ]
       },
@@ -453,6 +454,7 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
         ]
       },

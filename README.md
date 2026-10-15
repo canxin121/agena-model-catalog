@@ -27,7 +27,7 @@ client behavior, so it is evidence for those clients and never a provider defaul
   ```json
   {
     "models": {
-      "gpt-4o": {
+      "gpt-5": {
         "lifecycle": "active",
         "context_window_tokens": 128000,
         "max_output_tokens": 16384,
@@ -42,10 +42,18 @@ client behavior, so it is evidence for those clients and never a provider defaul
           "cache_read_usd_per_million_tokens": "1.25",
           "cache_write_usd_per_million_tokens": "3.75"
         },
-        "display_name": "GPT-4o",
+        "display_name": "GPT-5",
         "origin": "OpenAI",
+        "provider_sources": ["openai", "openrouter"],
         "thinking_modes": {},
         "speed_modes": {},
+        "verbosity_by_provider": {
+          "openai": {
+            "supported": true,
+            "levels": ["low", "medium", "high"],
+            "provider_default": "medium"
+          }
+        },
         "input": { "supported": ["text", "image"] },
         "features": { "supported": ["tool_calling", "streaming", "temperature"] }
       }
@@ -58,36 +66,38 @@ client behavior, so it is evidence for those clients and never a provider defaul
   - `lifecycle` is one of `active | preview | beta | alpha | experimental | deprecated`.
   - All fields are optional and skipped when absent.
 
-## Answer verbosity (`supports_verbosity`, `default_verbosity`)
+## Answer verbosity (`verbosity_by_provider`)
 
-These fields describe Agena's ability to send an answer-verbosity value for a
-canonical model and the value Agena sends when the user has not selected one.
-`default_verbosity` is therefore an Agena request default; it must not be
-presented as the provider's native default unless the provider documents that
-same value. OpenAI documents `text.verbosity` as controlling response detail
-(`low`, `medium`, or `high`) in the
-[API deployment checklist](https://developers.openai.com/api/docs/guides/deployment-checklist#set-up-textverbosity).
+Verbosity support belongs to a provider API route. A canonical model can have
+multiple provider sources, so each model may include `provider_sources` and a
+`verbosity_by_provider` map keyed by source provider ID. A profile appears only
+when the source provides direct evidence or a reviewed provider API profile
+applies. It contains `supported: true`, optional accepted `levels`, and an
+optional `provider_default`. A profile is omitted when a route is explicitly
+unsupported or its support is unknown; the raw observation still remains in
+the source sidecar.
 
-The fields in `models.json` are model-level Agena defaults and cannot express
-different support by adapter or provider route. A route-specific signal such as
-OpenRouter's `supported_parameters: ["verbosity"]` is retained in
-`data/routes/openrouter.json` and does not set the global model field.
+The refresh applies the reviewed OpenAI API profile to OpenAI publisher records
+for GPT-5-and-later text-generation models. Newly listed GPT models receive the
+profile on the next refresh without a model-specific patch. Audio, real-time,
+image, embedding, and moderation products are excluded. `provider_default`
+records the provider's documented API behavior; it is not Agena's user-selected
+request default. Agena's request preference remains in provider/model settings.
 
-The refresh pipeline copies exact upstream `supports_verbosity` booleans
-(including explicit `false`) and non-empty `default_verbosity` strings when
-present. A missing or `null` value is unknown and never clears an existing value.
-Selected publisher records are resolved by the semantics field priority, with
-provider policy order used only to break equal-priority conflicts; curated patches
-run last. Exact-ID records outside the allowlist do not supply route limits,
-pricing, capabilities, or verbosity defaults. `reasoning_options` is a separate
-reasoning-effort capability and is never converted into verbosity.
+OpenRouter's `supported_parameters: ["verbosity"]` is a route-level signal,
+retained in `data/routes/openrouter.json`. It does not establish allowed levels
+and therefore does not create a model-level profile. The models.dev snapshot
+inspected on 2026-10-15 has no direct verbosity fields. If an upstream adds an
+unrecognized verbosity-shaped field or changes a known field's type, refresh
+fails for review instead of silently discarding it. `scripts/verify_verbosity.py`
+checks that profiles and provider source lists match current observations and
+that the future-GPT rule stays scoped.
 
-The models.dev snapshot inspected on 2026-10-15 has no answer-verbosity fields.
-OpenRouter's route parameter list is retained as route-scoped evidence. If a
-source adds an unrecognized verbosity-shaped field or changes a known field's
-type, refresh fails and names the field for review instead of silently dropping
-it. `scripts/verify_verbosity.py` checks model-level source retention in every
-refresh.
+Catalog identity is the normalized canonical model ID: all trusted provider
+observations that normalize to the same ID merge into one `models` map entry.
+The sorted, unique `provider_sources` list records which provider records
+contributed to each entry. Refresh validation also rejects duplicate canonical
+IDs after normalization.
 
 ## Thinking modes (`thinking_modes`)
 

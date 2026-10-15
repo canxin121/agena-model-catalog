@@ -817,43 +817,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "claude-haiku-4-5@20251001",
-      "field": "origin",
-      "winner": {
-        "value": "Vertex",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google-vertex",
-          "source_id": "claude-haiku-4-5@20251001",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Vertex",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex",
-            "source_id": "claude-haiku-4-5@20251001",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Vertex (Anthropic)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex-anthropic",
-            "source_id": "claude-haiku-4-5@20251001",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "claude-haiku-4.5",
       "field": "origin",
       "winner": {
@@ -1678,43 +1641,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "claude-opus-4-1@20250805",
-      "field": "origin",
-      "winner": {
-        "value": "Vertex",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google-vertex",
-          "source_id": "claude-opus-4-1@20250805",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Vertex",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex",
-            "source_id": "claude-opus-4-1@20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Vertex (Anthropic)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex-anthropic",
-            "source_id": "claude-opus-4-1@20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "claude-opus-4-20250514",
       "field": "display_name",
       "winner": {
@@ -1863,43 +1789,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "claude-opus-4-5@20251101",
-      "field": "origin",
-      "winner": {
-        "value": "Vertex",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google-vertex",
-          "source_id": "claude-opus-4-5@20251101",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Vertex",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex",
-            "source_id": "claude-opus-4-5@20251101",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Vertex (Anthropic)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex-anthropic",
-            "source_id": "claude-opus-4-5@20251101",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "claude-opus-4.8",
       "field": "origin",
       "winner": {
@@ -1929,43 +1818,6 @@
             "upstream": "models.dev",
             "provider": "model-oracle-ai",
             "source_id": "claude-opus-4.8",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-opus-4@20250514",
-      "field": "origin",
-      "winner": {
-        "value": "Vertex",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google-vertex",
-          "source_id": "claude-opus-4@20250514",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Vertex",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex",
-            "source_id": "claude-opus-4@20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Vertex (Anthropic)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex-anthropic",
-            "source_id": "claude-opus-4@20250514",
             "priority": 20,
             "policy_rank": 0
           }
@@ -2497,80 +2349,6 @@
             "upstream": "models.dev",
             "provider": "jiekou",
             "source_id": "claude-sonnet-4-20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-sonnet-4-5@20250929",
-      "field": "origin",
-      "winner": {
-        "value": "Vertex",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google-vertex",
-          "source_id": "claude-sonnet-4-5@20250929",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Vertex",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex",
-            "source_id": "claude-sonnet-4-5@20250929",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Vertex (Anthropic)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex-anthropic",
-            "source_id": "claude-sonnet-4-5@20250929",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-sonnet-4@20250514",
-      "field": "origin",
-      "winner": {
-        "value": "Vertex",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google-vertex",
-          "source_id": "claude-sonnet-4@20250514",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Vertex",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex",
-            "source_id": "claude-sonnet-4@20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Vertex (Anthropic)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "google-vertex-anthropic",
-            "source_id": "claude-sonnet-4@20250514",
             "priority": 20,
             "policy_rank": 0
           }

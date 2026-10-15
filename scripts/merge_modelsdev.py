@@ -9,7 +9,7 @@ are saved in the local resolution snapshot for publication as a sidecar.
 import json
 from pathlib import Path
 
-from model_sources import discover_exact_models, discover_trusted_models
+from model_sources import canonical_model_id, discover_exact_models, discover_trusted_models
 from seed_modelsdev import resolve_model_observations
 
 
@@ -107,11 +107,34 @@ def fill_legacy(definition, base):
     return changed
 
 
+def collapse_catalog_aliases(models):
+    """Keep one canonical identity when legacy catalog keys are route aliases."""
+    removed = []
+    for model_id in sorted(list(models)):
+        canonical_id = canonical_model_id(model_id)
+        if canonical_id is None or canonical_id == model_id:
+            continue
+        if canonical_id in models:
+            alias = models.pop(model_id)
+            canonical = models[canonical_id]
+            sources = sorted(
+                set(canonical.get("provider_sources", []))
+                | set(alias.get("provider_sources", []))
+            )
+            if sources:
+                canonical["provider_sources"] = sources
+        else:
+            models[canonical_id] = models.pop(model_id)
+        removed.append((model_id, canonical_id))
+    return removed
+
+
 def main():
     with CATALOG.open() as file:
         catalog = json.load(file)
     with SNAPSHOT.open() as file:
         models_dev = json.load(file)
+    collapsed = collapse_catalog_aliases(catalog["models"])
     trusted = discover_trusted_models(models_dev)
     exact = discover_exact_models(models_dev)
 
@@ -124,6 +147,20 @@ def main():
             trusted_matches += 1
             base, provenance, model_conflicts = resolve_model_observations(observations)
             trusted_updates += sync_trusted(definition, base)
+            provider_sources = sorted({source.provider for source in observations})
+            if definition.get("provider_sources") != provider_sources:
+                definition["provider_sources"] = provider_sources
+                trusted_updates += 1
+            provenance["provider_sources"] = {
+                "value": provider_sources,
+                "observations": [
+                    {"provider": provider_id, "source_id": source_id}
+                    for provider_id, source_id in sorted({
+                        (source.provider, source.source_id)
+                        for source in observations
+                    })
+                ],
+            }
             resolution_models[model_id] = {
                 "scope": "publisher_api_model",
                 "fields": provenance,
@@ -148,6 +185,25 @@ def main():
                     {"model_id": model_id, **conflict} for conflict in model_conflicts
                 )
 
+    # The legacy global fields conflated API defaults, model support, and
+    # Agena's request preference. New catalog data is provider-scoped; refresh
+    # it exactly from the current trusted observations so stale facts disappear.
+    for definition in catalog["models"].values():
+        definition.pop("supports_verbosity", None)
+        definition.pop("default_verbosity", None)
+        definition.pop("verbosity_by_provider", None)
+
+    for model_id, model in catalog["models"].items():
+        observations = trusted.get(model_id)
+        if not observations:
+            definition = model
+            definition.pop("provider_sources", None)
+            continue
+        definition, _provenance, _conflicts = resolve_model_observations(observations)
+        scoped_verbosity = definition.get("verbosity_by_provider")
+        if scoped_verbosity:
+            model["verbosity_by_provider"] = scoped_verbosity
+
     with CATALOG.open("w") as file:
         json.dump(catalog, file, ensure_ascii=False, indent=2)
         file.write("\n")
@@ -162,6 +218,10 @@ def main():
     )
     print(f"trusted records: {trusted_matches}, fields updated: {trusted_updates}")
     print(f"legacy exact-ID records: {legacy_matches}, fields filled: {legacy_fills}")
+    if collapsed:
+        print(f"collapsed {len(collapsed)} route aliases to canonical IDs")
+        for alias, canonical in collapsed:
+            print(f"  {alias} -> {canonical}")
     print(f"wrote {CATALOG}")
 
 

@@ -160,25 +160,6 @@
         }
       }
     },
-    "deepseek-v4-flash-0731@eu": {
-      "thinking_modes": {
-        "low": {
-          "display_name": "Think Low",
-          "strategy": "effort",
-          "effort": "low"
-        },
-        "high": {
-          "display_name": "Think High",
-          "strategy": "effort",
-          "effort": "high"
-        },
-        "max": {
-          "display_name": "Think Max",
-          "strategy": "effort",
-          "effort": "max"
-        }
-      }
-    },
     "deepseek-v4-flash-el": {
       "thinking_modes": {
         "low": {

@@ -93,6 +93,19 @@ def main():
     require(len(models_dev_doc["records"]) == len(expected_models_dev)
             and actual_models_dev == expected_models_dev,
             "models.dev: selected source records or raw fields were lost/changed")
+    for model_id, definition in catalog.items():
+        observations = trusted.get(model_id, [])
+        expected_sources = sorted({row.provider for row in observations})
+        require(
+            definition.get("provider_sources") == (expected_sources or None),
+            f"{model_id}: provider_sources does not match selected publisher observations",
+        )
+        canonical = canonical_model_id(model_id)
+        require(canonical == model_id, f"{model_id}: catalog key is not canonical ({canonical})")
+    require(
+        len({canonical_model_id(model_id) for model_id in catalog}) == len(catalog),
+        "catalog contains duplicate canonical model IDs",
+    )
     exact_observations = discover_exact_models(models_dev)
     trusted_ids = set(trusted)
     expected_legacy = {

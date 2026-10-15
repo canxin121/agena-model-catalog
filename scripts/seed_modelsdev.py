@@ -7,20 +7,69 @@ Existing catalog entries are preserved; merge and curated patches update them.
 """
 import json
 import os
+import re
 import sys
 
-from model_sources import discover_trusted_models, preferred_source, source_ref
+from model_sources import canonical_model_id, discover_trusted_models, preferred_source, source_ref
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "models.json")
 MODELS_DEV = os.path.join(ROOT, ".cache", "models.dev.json")
+VERBOSITY_PROFILES = os.path.join(ROOT, "curation", "verbosity-profiles.json")
 MAX_AUTO_ADDITIONS = 100
+
+with open(VERBOSITY_PROFILES, encoding="utf-8") as _file:
+    VERBOSITY_PROFILE_POLICY = json.load(_file)
+
+
+def _validate_verbosity_profile_policy(policy):
+    profiles = policy.get("profiles")
+    if not isinstance(profiles, list):
+        raise ValueError("curation/verbosity-profiles.json must contain a profiles list")
+    seen = set()
+    for profile in profiles:
+        if not isinstance(profile, dict):
+            raise ValueError("verbosity profile entries must be objects")
+        provider = profile.get("provider")
+        profile_id = profile.get("id")
+        minimum_major = profile.get("minimum_model_major")
+        levels = profile.get("levels")
+        if not isinstance(provider, str) or not provider.strip():
+            raise ValueError("verbosity profiles require a provider ID")
+        if not isinstance(profile_id, str) or not profile_id.strip():
+            raise ValueError("verbosity profiles require an ID")
+        if (provider, profile_id) in seen:
+            raise ValueError(f"duplicate verbosity profile {provider}/{profile_id}")
+        seen.add((provider, profile_id))
+        if type(minimum_major) is not int or minimum_major < 1:
+            raise ValueError(f"{profile_id}: minimum_model_major must be a positive integer")
+        if (
+            not isinstance(levels, list)
+            or not levels
+            or any(not isinstance(value, str) or not value.strip() or value != value.strip()
+                   for value in levels)
+            or len(levels) != len(set(levels))
+        ):
+            raise ValueError(f"{profile_id}: levels must be unique, trimmed, non-empty strings")
+        provider_default = profile.get("provider_default")
+        if provider_default is not None and provider_default not in levels:
+            raise ValueError(f"{profile_id}: provider_default must be one of its levels")
+        exclusions = profile.get("exclude_id_patterns", [])
+        if not isinstance(exclusions, list) or any(not isinstance(value, str) for value in exclusions):
+            raise ValueError(f"{profile_id}: exclude_id_patterns must be a list of regex strings")
+        for pattern in exclusions:
+            re.compile(pattern)
+
+
+_validate_verbosity_profile_policy(VERBOSITY_PROFILE_POLICY)
 
 LIFECYCLES = {"active", "preview", "beta", "alpha", "experimental", "deprecated"}
 INPUT_MODALITIES = {"text", "image", "document", "audio", "video", "file"}
 VERBOSITY_SOURCE_FIELDS = {
     "supports_verbosity": "supports_verbosity",
     "default_verbosity": "default_verbosity",
+    "verbosity_levels": "verbosity_levels",
+    "supported_verbosity_levels": "verbosity_levels",
 }
 
 
@@ -37,12 +86,35 @@ def _verbosity_key_paths(value, path=()):
             yield from _verbosity_key_paths(child, path + (str(index),))
 
 
-def verbosity_metadata(source):
-    """Copy supported upstream verbosity fields without conflating effort.
+def _provider_verbosity_profile(source, provider_id):
+    """Return an explicitly scoped endpoint profile for this provider/model."""
+    raw_id = (source.get("id") or "").strip().lower()
+    source_id = canonical_model_id(raw_id) or raw_id
+    output_modalities = (source.get("modalities") or {}).get("output") or []
+    if not isinstance(output_modalities, list) or "text" not in output_modalities:
+        return None
+    for profile in VERBOSITY_PROFILE_POLICY.get("profiles", []):
+        if profile.get("provider") != provider_id:
+            continue
+        match = re.match(r"^gpt-(\d+)(?:[.-]|$)", source_id)
+        if not match or int(match.group(1)) < int(profile.get("minimum_model_major", 0)):
+            continue
+        if any(re.search(pattern, source_id) for pattern in profile.get("exclude_id_patterns", [])):
+            continue
+        return {
+            "supported": True,
+            "levels": list(profile["levels"]),
+            "provider_default": profile.get("provider_default"),
+        }
+    return None
 
-    models.dev does not currently publish these keys. If it adds a new
-    verbosity-shaped field or changes a value's type, fail closed so refresh
-    cannot silently discard data or guess how to map it.
+
+def verbosity_metadata(source, provider_id):
+    """Resolve route-scoped verbosity evidence without deriving reasoning.
+
+    Unknown verbosity-shaped upstream fields fail closed. An explicit false
+    suppresses inherited endpoint support. Unsupported and unknown providers
+    are omitted from the published catalog.
     """
     paths = list(_verbosity_key_paths(source))
     unknown = [
@@ -55,30 +127,57 @@ def verbosity_metadata(source):
             "unsupported upstream verbosity field(s): " + ", ".join(sorted(unknown))
         )
 
-    result = {}
+    explicit_support = source.get("supports_verbosity")
+    if explicit_support is not None and type(explicit_support) is not bool:
+        raise ValueError(
+            f"upstream supports_verbosity must be a boolean or null, got {explicit_support!r}"
+        )
+    if explicit_support is False:
+        return {"verbosity_by_provider": {provider_id: {"supported": False}}}
+
+    result = _provider_verbosity_profile(source, provider_id)
+    if result is None:
+        if explicit_support is not True:
+            return {}
+        result = {"supported": True}
+
     for source_key, catalog_key in VERBOSITY_SOURCE_FIELDS.items():
         if source_key not in source or source[source_key] is None:
             continue
         value = source[source_key]
         if source_key == "supports_verbosity":
-            if type(value) is not bool:
-                raise ValueError(
-                    f"upstream {source_key} must be a boolean or null, got {value!r}"
-                )
-            # Preserve explicit false; false means unsupported, not missing.
-            result[catalog_key] = value
+            if value:
+                result["supported"] = True
         else:
-            if (
-                not isinstance(value, str)
-                or not value.strip()
-                or value != value.strip()
-            ):
-                raise ValueError(
-                    f"upstream {source_key} must be a trimmed, non-empty string "
-                    f"or null, got {value!r}"
-                )
-            result[catalog_key] = value
-    return result
+            if source_key == "default_verbosity":
+                if not isinstance(value, str) or not value.strip() or value != value.strip():
+                    raise ValueError(
+                        f"upstream {source_key} must be a trimmed, non-empty string "
+                        f"or null, got {value!r}"
+                    )
+                result["provider_default"] = value
+                result["supported"] = True
+            else:
+                if (
+                    not isinstance(value, list)
+                    or any(not isinstance(item, str) or not item.strip() or item != item.strip()
+                           for item in value)
+                    or len(value) != len(set(value))
+                ):
+                    raise ValueError(
+                        f"upstream {source_key} must be a unique list of trimmed, "
+                        f"non-empty strings or null, got {value!r}"
+                    )
+                result["levels"] = value
+                result["supported"] = True
+
+    if not result.get("supported"):
+        return {"verbosity_by_provider": {provider_id: {"supported": False}}}
+    result.pop("default_verbosity", None)
+    result.pop("supported_verbosity_levels", None)
+    if result.get("provider_default") is None:
+        result.pop("provider_default", None)
+    return {"verbosity_by_provider": {provider_id: result}}
 
 
 def load(path):
@@ -162,10 +261,10 @@ def feature_flags(model):
     return result or None
 
 
-def seed_definition(source, origin):
+def seed_definition(source, origin, provider_id):
     definition = {}
     try:
-        definition.update(verbosity_metadata(source))
+        definition.update(verbosity_metadata(source, provider_id))
     except ValueError as error:
         source_id = source.get("id") or "<unknown model id>"
         raise ValueError(f"{source_id}: {error}") from error
@@ -240,8 +339,7 @@ FIELD_GROUPS = {
     "input": "capabilities",
     "features": "capabilities",
     "output_modalities": "capabilities",
-    "supports_verbosity": "semantics",
-    "default_verbosity": "semantics",
+    "verbosity_by_provider": "semantics",
     "supports_parallel_tool_calls": "semantics",
     "default_temperature": "semantics",
     "default_top_p": "semantics",
@@ -253,7 +351,7 @@ FIELD_GROUPS = {
 
 
 def _source_definition(source):
-    return seed_definition(source.model, source.origin)
+    return seed_definition(source.model, source.origin, source.provider)
 
 
 def _resolve_capability_group(observations, definitions, field):
@@ -316,6 +414,55 @@ def _resolve_capability_group(observations, definitions, field):
     return resolved or None, field_provenance, conflicts
 
 
+def _resolve_verbosity_group(observations, definitions):
+    """Resolve verbosity independently for each API provider namespace."""
+    candidates_by_provider = {}
+    for source in observations:
+        if source.priority("semantics") <= 0:
+            continue
+        profiles = definitions[id(source)].get("verbosity_by_provider") or {}
+        for provider_id, profile in profiles.items():
+            candidates_by_provider.setdefault(provider_id, []).append((source, profile))
+
+    resolved = {}
+    field_provenance = {}
+    conflicts = []
+    for provider_id, candidates in sorted(candidates_by_provider.items()):
+        winner_source, winner = min(
+            candidates,
+            key=lambda pair: (
+                -pair[0].priority("semantics"),
+                pair[0].policy_rank,
+                pair[0].provider,
+                pair[0].source_id,
+            ),
+        )
+        source_ref_value = source_ref(winner_source, "semantics")
+        direct_keys = {
+            "supports_verbosity", "default_verbosity",
+            "verbosity_levels", "supported_verbosity_levels",
+        }
+        inherited = not any(key in winner_source.model for key in direct_keys)
+        if winner.get("supported") is True:
+            resolved[provider_id] = winner
+        field_provenance[provider_id] = {
+            "kind": "curated_provider_api_profile" if inherited else "upstream_provider_observation",
+            "value": winner,
+            "source": source_ref_value,
+        }
+        if len({json.dumps(profile, sort_keys=True) for _, profile in candidates}) > 1:
+            conflicts.append({
+                "field": f"verbosity_by_provider.{provider_id}",
+                "winner": {"value": winner, "source": source_ref_value},
+                "candidates": [
+                    {"value": value, "source": source_ref(source, "semantics")}
+                    for source, value in candidates
+                ],
+                "resolution": "highest field priority, then source policy order",
+            })
+    return resolved or None, field_provenance, conflicts
+
+
 def resolve_model_observations(observations, allowed_field_groups=None):
     """Resolve one canonical definition independently for every field group.
 
@@ -339,6 +486,15 @@ def resolve_model_observations(observations, allowed_field_groups=None):
             if value is not None:
                 resolved[field] = value
                 provenance[field] = {"items": items}
+            conflicts.extend(field_conflicts)
+            continue
+        if field == "verbosity_by_provider":
+            value, provider_provenance, field_conflicts = _resolve_verbosity_group(
+                observations, definitions
+            )
+            if value is not None:
+                resolved[field] = value
+                provenance[field] = provider_provenance
             conflicts.extend(field_conflicts)
             continue
 
@@ -399,6 +555,9 @@ def main():
     added = []
     for canonical_id in missing:
         definition, _provenance, _conflicts = resolve_model_observations(sources[canonical_id])
+        definition["provider_sources"] = sorted(
+            {observation.provider for observation in sources[canonical_id]}
+        )
         models[canonical_id] = definition
         source = preferred_source(sources[canonical_id], "identity")
         added.append((canonical_id, source.provider, source.source_id))

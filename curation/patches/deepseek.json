@@ -273,24 +273,6 @@
         }
       }
     },
-    "deepseek-v4-flash-0731@eu": {
-      "thinking_modes": {
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "on": {
-          "display_name": "Thinking",
-          "strategy": "request_only",
-          "request_override": {
-            "body_patch": {
-              "thinking": true
-            }
-          }
-        }
-      },
-      "max_input_tokens": 1048576
-    },
     "deepseek-v4-flash-el": {
       "thinking_modes": {
         "off": {

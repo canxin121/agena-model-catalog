@@ -257,6 +257,13 @@ def build_model_provenance(catalog, resolution, route_caps):
                 }
                 continue
             source_field = base_fields.get(field)
+            if field == "verbosity_by_provider" and source_field:
+                fields[field] = {
+                    "kind": "provider_scoped_verbosity_resolution",
+                    "scope": resolved_models.get(model_id, {}).get("scope"),
+                    "providers": deepcopy(source_field),
+                }
+                continue
             if source_field and source_field.get("value", value) == value:
                 fields[field] = {
                     "kind": "upstream_field_observation",

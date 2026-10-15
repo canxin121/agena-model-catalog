@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "profiles": [
+    {
+      "id": "openai-gpt-5-and-later-api-verbosity",
+      "provider": "openai",
+      "minimum_model_major": 5,
+      "levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "exclude_id_patterns": [
+        "(?:audio|transcribe|tts|realtime|image|embedding|moderation)"
+      ],
+      "provider_default": "medium",
+      "scope": "OpenAI publisher text-generation models in the GPT-5-and-later family; audio, realtime, image, embedding, and moderation products are excluded",
+      "evidence": [
+        "https://developers.openai.com/api/docs/guides/deployment-checklist#set-up-textverbosity",
+        "https://developers.openai.com/api/reference/resources/responses/methods/create",
+        "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create"
+      ],
+      "reviewed_at": "2026-10-15"
+    }
+  ]
+}

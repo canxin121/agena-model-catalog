@@ -142910,7 +142910,7 @@
       "route_id": "vertex_ai/claude-3-5-haiku@20241022",
       "provider": "vertex_ai-anthropic_models",
       "scope": "provider_route_reference",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "claude-3-5-haiku",
       "priority": {
         "identity": 20,
         "limits": 40,
@@ -143049,7 +143049,7 @@
       "route_id": "vertex_ai/claude-3-haiku@20240307",
       "provider": "vertex_ai-anthropic_models",
       "scope": "provider_route_reference",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "claude-3-haiku",
       "priority": {
         "identity": 20,
         "limits": 40,
@@ -143117,7 +143117,7 @@
       "route_id": "vertex_ai/claude-3-opus@20240229",
       "provider": "vertex_ai-anthropic_models",
       "scope": "provider_route_reference",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "claude-3-opus",
       "priority": {
         "identity": 20,
         "limits": 40,
@@ -143184,7 +143184,7 @@
       "route_id": "vertex_ai/claude-3-sonnet@20240229",
       "provider": "vertex_ai-anthropic_models",
       "scope": "provider_route_reference",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "claude-3-sonnet",
       "priority": {
         "identity": 20,
         "limits": 40,
@@ -143510,7 +143510,7 @@
       "route_id": "vertex_ai/claude-haiku-4-5@20251001",
       "provider": "vertex_ai-anthropic_models",
       "scope": "provider_route_reference",
-      "catalog_model_id_candidate": "claude-haiku-4-5@20251001",
+      "catalog_model_id_candidate": "claude-haiku-4-5",
       "priority": {
         "identity": 20,
         "limits": 40,
@@ -143744,7 +143744,7 @@
       "route_id": "vertex_ai/claude-opus-4-5@20251101",
       "provider": "vertex_ai-anthropic_models",
       "scope": "provider_route_reference",
-      "catalog_model_id_candidate": "claude-opus-4-5@20251101",
+      "catalog_model_id_candidate": "claude-opus-4-5",
       "priority": {
         "identity": 20,
         "limits": 40,
@@ -144444,7 +144444,7 @@
       "route_id": "vertex_ai/claude-sonnet-4-5@20250929",
       "provider": "vertex_ai-anthropic_models",
       "scope": "provider_route_reference",
-      "catalog_model_id_candidate": "claude-sonnet-4-5@20250929",
+      "catalog_model_id_candidate": "claude-sonnet-4-5",
       "priority": {
         "identity": 20,
         "limits": 40,

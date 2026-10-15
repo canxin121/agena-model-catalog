@@ -37,7 +37,7 @@ limit patches for Cline Pass models.
 - **Legacy exact-ID fallback (20 for descriptive facts):** can fill missing
   knowledge cutoff, release date, or open-weight status for an existing catalog
   entry with no allowlisted publisher record. Its route-specific limits,
-  pricing, capabilities, and verbosity are never promoted to model-global data.
+  pricing, capabilities, and verbosity are never promoted to publisher-wide data.
 - **OpenRouter route (90):** applies only to an exact OpenRouter route.
 - **LiteLLM route reference (40):** route-level cross-check, not a model-global
   fallback.
@@ -78,14 +78,12 @@ normalizer does not interpret. Model-level field choices are explained in
 - Allowed top-level fields in a patch:
   `thinking_modes`, `speed_modes`, `max_input_tokens`, `context_window_tokens`,
   `max_output_tokens`, `knowledge_cutoff`, `description`, `pricing`,
-  `release_date`, `last_updated`, `open_weights`, `display_name`,
-  `supports_verbosity`, `default_verbosity`.
-- Verbosity patches must be grounded in provider documentation. `default_verbosity`
-  is the value Agena sends when the user has not chosen one; do not copy a
-  client-specific preference (such as a coding agent's default) as if it were
-  the provider's native default. `reasoning_options` describes reasoning effort
-  and must not be mapped to answer verbosity. Values must be trimmed, non-empty
-  strings.
+  `release_date`, `last_updated`, `open_weights`, `display_name`.
+- Provider-specific verbosity profiles live in `curation/verbosity-profiles.json`
+  and must be grounded in provider API documentation. `provider_default` is the
+  provider API default, not Agena's request preference. `reasoning_options`
+  describes reasoning effort and must not be mapped to answer verbosity.
+  Profiles are absent when support has no evidence.
 - **Never add a model** that is not already in `models.json` (apply_patches.py
   rejects it).
 - Thinking/speed modes must pass `scripts/apply_patches.py` shape checks and

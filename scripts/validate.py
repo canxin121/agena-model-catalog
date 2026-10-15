@@ -6,6 +6,8 @@ import json
 import os
 import sys
 
+from model_sources import canonical_model_id
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 cat = json.load(open(os.path.join(ROOT, "models.json")))
 models = cat["models"]
@@ -13,7 +15,7 @@ models = cat["models"]
 ALLOWED = {
     "lifecycle", "context_window_tokens", "max_input_tokens", "max_output_tokens",
     "description", "knowledge_cutoff", "release_date", "last_updated", "open_weights",
-    "supports_parallel_tool_calls", "supports_verbosity", "default_verbosity",
+    "supports_parallel_tool_calls", "provider_sources", "verbosity_by_provider",
     "default_temperature", "default_top_p", "default_top_k",
     "assistant_reasoning_interleaved", "assistant_reasoning_field",
     "output_modalities", "pricing", "display_name", "origin",
@@ -33,6 +35,7 @@ TIER_KEYS = {"tier_type", "size_tokens", "input_usd_per_million_tokens",
 
 errors = []
 n = 0
+canonical_ids = {}
 
 
 def check(cond, msg):
@@ -42,20 +45,67 @@ def check(cond, msg):
 
 for mid, c in models.items():
     n += 1
+    normalized_id = canonical_model_id(mid)
+    if normalized_id is None:
+        errors.append(f"{mid}: invalid model ID")
+    elif normalized_id != mid:
+        errors.append(f"{mid}: route/version alias must be stored as canonical ID {normalized_id!r}")
+    elif normalized_id in canonical_ids:
+        errors.append(
+            f"{mid}: duplicate canonical ID also used by {canonical_ids[normalized_id]}"
+        )
+    else:
+        canonical_ids[normalized_id] = mid
     for k in c:
         if k not in ALLOWED:
             errors.append(f"{mid}: unknown key {k!r}")
             continue
     if c.get("lifecycle") is not None and c["lifecycle"] not in LIFECYCLE:
         errors.append(f"{mid}: bad lifecycle {c['lifecycle']}")
-    if "supports_verbosity" in c and type(c["supports_verbosity"]) is not bool:
-        errors.append(f"{mid}: supports_verbosity must be a boolean")
-    if "default_verbosity" in c and (
-        not isinstance(c["default_verbosity"], str)
-        or not c["default_verbosity"].strip()
-        or c["default_verbosity"] != c["default_verbosity"].strip()
-    ):
-        errors.append(f"{mid}: default_verbosity must be a trimmed, non-empty string")
+    provider_sources = c.get("provider_sources")
+    if provider_sources is not None:
+        if (
+            not isinstance(provider_sources, list)
+            or not provider_sources
+            or any(not isinstance(value, str) or not value.strip() or value != value.strip()
+                   for value in provider_sources)
+            or provider_sources != sorted(set(provider_sources))
+        ):
+            errors.append(f"{mid}: provider_sources must be sorted, unique provider IDs")
+    verbosity_by_provider = c.get("verbosity_by_provider")
+    if verbosity_by_provider is not None:
+        if not isinstance(verbosity_by_provider, dict) or not verbosity_by_provider:
+            errors.append(f"{mid}: verbosity_by_provider must be a non-empty object")
+        else:
+            sources = set(provider_sources or [])
+            for provider_id, profile in verbosity_by_provider.items():
+                if provider_id not in sources:
+                    errors.append(f"{mid}: verbosity profile provider {provider_id!r} is not in provider_sources")
+                if not isinstance(profile, dict):
+                    errors.append(f"{mid}: verbosity profile for {provider_id} must be an object")
+                    continue
+                unknown = set(profile) - {"supported", "levels", "provider_default"}
+                if unknown:
+                    errors.append(f"{mid}: verbosity profile for {provider_id} has unknown keys {sorted(unknown)}")
+                if profile.get("supported") is not True:
+                    errors.append(f"{mid}: published verbosity profile for {provider_id} must explicitly be supported")
+                levels = profile.get("levels")
+                if levels is not None and (
+                    not isinstance(levels, list)
+                    or any(not isinstance(value, str) or not value.strip() or value != value.strip()
+                           for value in levels)
+                    or len(levels) != len(set(levels))
+                ):
+                    errors.append(f"{mid}: verbosity levels for {provider_id} must be unique non-empty strings")
+                provider_default = profile.get("provider_default")
+                if provider_default is not None and (
+                    not isinstance(provider_default, str)
+                    or not provider_default.strip()
+                    or provider_default != provider_default.strip()
+                ):
+                    errors.append(f"{mid}: provider default verbosity for {provider_id} must be a trimmed string")
+                if levels and provider_default is not None and provider_default not in levels:
+                    errors.append(f"{mid}: provider default verbosity for {provider_id} is not an advertised level")
     # numeric limits: u32; 0 is a pre-existing convention for "unknown/unlimited"
     for f in ("context_window_tokens", "max_input_tokens", "max_output_tokens"):
         v = c.get(f)

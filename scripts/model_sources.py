@@ -35,6 +35,7 @@ class SourceModel:
 def canonical_model_id(source_id):
     """Mirror Agena's common first-party and Hugging Face ID transforms."""
     value = source_id.strip().lower().rsplit("/", 1)[-1]
+    value = re.sub(r"@(eu|us|global|apac|jp|au|[0-9]{8})$", "", value)
     for suffix in ("@default", "-maas", ":free", "-free"):
         if value.endswith(suffix):
             value = value[: -len(suffix)]

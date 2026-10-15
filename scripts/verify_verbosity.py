@@ -1,55 +1,22 @@
 #!/usr/bin/env python3
-"""Ensure supported models.dev verbosity metadata reaches the final catalog.
-
-Trusted publisher observations are resolved by the semantics field priority
-unless a curated patch overrides the field. Legacy exact-ID observations have
-zero priority for semantics and are retained for audit without affecting model
-verbosity metadata.
-"""
-import glob
+"""Verify scoped verbosity retention and the automatic OpenAI GPT profile."""
 import json
 import os
 import sys
 
-from model_sources import discover_exact_models, discover_trusted_models
-from seed_modelsdev import VERBOSITY_SOURCE_FIELDS, resolve_model_observations
+from model_sources import discover_trusted_models
+from seed_modelsdev import resolve_model_observations, verbosity_metadata
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "models.json")
 SNAPSHOT = os.path.join(ROOT, ".cache", "models.dev.json")
-PATCH_DIR = os.path.join(ROOT, "curation", "patches")
-FIELDS = tuple(VERBOSITY_SOURCE_FIELDS.values())
-
-
-def load_patches():
-    """Return the last patch value for each model/verbosity field."""
-    overrides = {}
-    for path in sorted(glob.glob(os.path.join(PATCH_DIR, "*.json"))):
-        with open(path) as file:
-            patch = json.load(file)
-        for model_id, definition in (patch.get("models") or {}).items():
-            for field in FIELDS:
-                if field in definition:
-                    overrides.setdefault(model_id, {})[field] = definition[field]
-    return overrides
-
-
-def check_final_value(model_id, definition, field, expected, errors, source):
-    if expected is None:
-        if field in definition:
-            errors.append(f"{model_id}: {field} should be absent after {source}")
-    elif definition.get(field) != expected:
-        errors.append(
-            f"{model_id}: {field}={definition.get(field)!r}, "
-            f"expected {expected!r} from {source}"
-        )
 
 
 def main():
-    with open(CATALOG) as file:
+    with open(CATALOG, encoding="utf-8") as file:
         catalog = json.load(file)
-    with open(SNAPSHOT) as file:
+    with open(SNAPSHOT, encoding="utf-8") as file:
         models_dev = json.load(file)
 
     models = catalog.get("models")
@@ -58,73 +25,68 @@ def main():
         return 1
 
     trusted = discover_trusted_models(models_dev)
-    exact = discover_exact_models(models_dev)
-
-    patch_overrides = load_patches()
     errors = []
-    trusted_sources = legacy_sources = trusted_fields = legacy_fields = 0
-
+    models_with_profiles = 0
+    total_profiles = 0
     for model_id, definition in models.items():
         observations = trusted.get(model_id)
-        source_kind = "trusted models.dev field winner"
-        is_trusted = bool(observations)
-        if is_trusted:
-            resolved, _provenance, _conflicts = resolve_model_observations(observations)
-            trusted_sources += 1
-        else:
-            observations = exact.get(model_id) or exact.get(model_id.lower())
-            resolved = {}
-            if observations:
-                resolved, _provenance, _conflicts = resolve_model_observations(observations)
-                source_kind = "legacy exact-ID models.dev field winner"
-                legacy_sources += 1
-
-        upstream = {field: resolved[field] for field in FIELDS if field in resolved}
-        if is_trusted:
-            trusted_fields += len(upstream)
-        else:
-            legacy_fields += len(upstream)
-
-        overrides = patch_overrides.get(model_id, {})
-        for field in FIELDS:
-            if field in overrides:
-                check_final_value(
-                    model_id, definition, field, overrides[field], errors,
-                    "curated patch",
-                )
-                continue
-
-            if field not in upstream:
-                continue
-            expected = upstream[field]
-            if is_trusted:
-                check_final_value(
-                    model_id, definition, field, expected, errors, source_kind
-                )
-            elif definition.get(field) is None:
+        if observations:
+            expected_sources = sorted({source.provider for source in observations})
+            if definition.get("provider_sources") != expected_sources:
                 errors.append(
-                    f"{model_id}: {field} from {source_kind} was not copied into the catalog"
+                    f"{model_id}: provider_sources={definition.get('provider_sources')!r}, "
+                    f"expected {expected_sources!r}"
                 )
+            resolved, _provenance, _conflicts = resolve_model_observations(observations)
+            expected = resolved.get("verbosity_by_provider")
+        else:
+            expected = None
+            if "provider_sources" in definition:
+                errors.append(f"{model_id}: stale provider_sources without a trusted current observation")
 
-    catalog_models_with_verbosity = sum(
-        any(field in definition for field in FIELDS) for definition in models.values()
+        actual = definition.get("verbosity_by_provider")
+        if actual != expected:
+            errors.append(
+                f"{model_id}: verbosity_by_provider={actual!r}, expected {expected!r}"
+            )
+        if actual:
+            models_with_profiles += 1
+            total_profiles += len(actual)
+
+        for legacy in ("supports_verbosity", "default_verbosity"):
+            if legacy in definition:
+                errors.append(f"{model_id}: legacy global {legacy} must not be published")
+
+    # These policy probes protect the refresh behavior for future models:
+    # GPT-6 text models get the OpenAI profile, while other providers and
+    # non-text GPT products remain unannotated.
+    future_text_gpt = verbosity_metadata(
+        {"id": "gpt-99.1", "modalities": {"output": ["text"]}},
+        "openai",
     )
+    if future_text_gpt.get("verbosity_by_provider", {}).get("openai", {}).get("levels") != [
+        "low", "medium", "high"
+    ]:
+        errors.append("future OpenAI GPT text model did not receive the configured verbosity profile")
+    for source, provider_id in (
+        ({"id": "gpt-99.1", "modalities": {"output": ["text"]}}, "openrouter"),
+        ({"id": "gpt-99-audio", "modalities": {"output": ["audio", "text"]}}, "openai"),
+        ({"id": "gpt-99-image", "modalities": {"output": ["image"]}}, "openai"),
+    ):
+        if verbosity_metadata(source, provider_id):
+            errors.append(f"non-matching source/model unexpectedly received verbosity: {provider_id}/{source['id']}")
+
     print(
-        "verbosity source records: "
-        f"trusted={trusted_sources} ({trusted_fields} field values), "
-        f"legacy exact-ID={legacy_sources} ({legacy_fields} field values)"
-    )
-    print(
-        "catalog models with verbosity metadata: "
-        f"{catalog_models_with_verbosity}/{len(models)}"
+        "verbosity profiles: "
+        f"{models_with_profiles}/{len(models)} models, {total_profiles} provider profiles"
     )
     if errors:
         print(f"\nERRORS ({len(errors)}):", file=sys.stderr)
-        for error in errors[:80]:
+        for error in errors[:100]:
             print(f"  {error}", file=sys.stderr)
         return 1
 
-    print("ALL PASS: source verbosity metadata is retained according to catalog precedence")
+    print("ALL PASS: provider-scoped verbosity and source lists match current evidence")
     return 0
 
 

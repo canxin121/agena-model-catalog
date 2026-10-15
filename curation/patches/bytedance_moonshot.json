@@ -660,16 +660,6 @@
    },
    "max_input_tokens": 1000000
   },
-  "kimi-k3@eu": {
-   "thinking_modes": {
-    "high": {
-     "display_name": "Think High",
-     "strategy": "effort",
-     "effort": "high"
-    }
-   },
-   "max_input_tokens": 1048576
-  },
   "umans-kimi-k3": {
    "thinking_modes": {
     "high": {

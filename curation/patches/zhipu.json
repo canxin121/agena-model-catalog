@@ -679,27 +679,6 @@
     "glm-5.2:thinking": {
       "knowledge_cutoff": "2025-11"
     },
-    "glm-5.2@eu": {
-      "thinking_modes": {
-        "default": "max",
-        "off": {
-          "display_name": "Off",
-          "strategy": "disabled"
-        },
-        "high": {
-          "display_name": "Think High",
-          "strategy": "effort",
-          "effort": "high"
-        },
-        "max": {
-          "display_name": "Think Max",
-          "strategy": "effort",
-          "effort": "max"
-        }
-      },
-      "knowledge_cutoff": "2025-11",
-      "max_input_tokens": 1048576
-    },
     "glm-5p2": {
       "thinking_modes": {
         "default": "max",

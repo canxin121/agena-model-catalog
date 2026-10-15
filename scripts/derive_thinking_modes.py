@@ -25,7 +25,7 @@ import json
 import os
 import sys
 
-from model_sources import discover_trusted_models
+from model_sources import discover_trusted_models, preferred_source
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "models.json")
@@ -94,10 +94,11 @@ def main():
             continue
         if not reasoning_supported(definition):
             continue
-        source = trusted.get(model_id)
-        if source is None:
+        observations = trusted.get(model_id)
+        if not observations:
             no_trusted += 1
             continue
+        source = preferred_source(observations, "modes")
         values = effort_values(source.model)
         if not values:
             no_effort += 1

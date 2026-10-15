@@ -24943,8 +24943,8 @@
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.07",
-        "output_usd_per_million_tokens": "0.34",
+        "input_usd_per_million_tokens": "0.13",
+        "output_usd_per_million_tokens": "0.4",
         "cache_read_usd_per_million_tokens": "0.015",
         "cache_write_usd_per_million_tokens": "0.058"
       },
@@ -24998,8 +24998,8 @@
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.102",
-        "output_usd_per_million_tokens": "0.297",
+        "input_usd_per_million_tokens": "0.14",
+        "output_usd_per_million_tokens": "0.4",
         "cache_read_usd_per_million_tokens": "0.012",
         "cache_write_usd_per_million_tokens": "0.5"
       },
@@ -48305,7 +48305,7 @@
       "max_input_tokens": 200000,
       "max_output_tokens": 131072,
       "description": "Earlier MiniMax agent model for practical coding and productivity tasks",
-      "knowledge_cutoff": "2025-01",
+      "knowledge_cutoff": "2025-10",
       "release_date": "2025-12-23",
       "last_updated": "2025-12-23",
       "open_weights": true,
@@ -52159,7 +52159,8 @@
           "document",
           "file",
           "image",
-          "text"
+          "text",
+          "video"
         ]
       },
       "features": {
@@ -61892,8 +61893,7 @@
           "tool_calling"
         ],
         "unsupported": [
-          "reasoning",
-          "structured_output"
+          "reasoning"
         ]
       },
       "input": {
@@ -62765,7 +62765,9 @@
             }
           }
         }
-      }
+      },
+      "assistant_reasoning_interleaved": true,
+      "assistant_reasoning_field": "reasoning_content"
     },
     "qwen3-max-2025-09-23": {
       "context_window_tokens": 258048,
@@ -64148,11 +64150,9 @@
       "features": {
         "supported": [
           "reasoning",
+          "structured_output",
           "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "structured_output"
         ]
       },
       "thinking_modes": {
@@ -65857,7 +65857,9 @@
             }
           }
         }
-      }
+      },
+      "assistant_reasoning_interleaved": true,
+      "assistant_reasoning_field": "reasoning_content"
     },
     "qwen3.5-plus-02-15": {
       "context_window_tokens": 1000000,

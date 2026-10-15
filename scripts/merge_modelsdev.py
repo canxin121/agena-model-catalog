@@ -1,25 +1,24 @@
 #!/usr/bin/env python3
-"""Sync trusted model records, then fill gaps in legacy catalog entries.
+"""Resolve trusted models.dev observations per field group and fill old gaps.
 
-First-party models.dev records are the base for canonical models. Curated
-patches run after this script and take precedence over that base. Records from
-other providers can only fill missing fields in pre-existing catalog entries;
-they cannot change trusted models or introduce new identities.
+All allowlisted records for an ID participate. Source priority chooses a value
+independently for each field group; explicit conflicts and their losing records
+are saved in the local resolution snapshot for publication as a sidecar.
 """
 
 import json
 from pathlib import Path
 
-from model_sources import discover_trusted_models
-from seed_modelsdev import seed_definition
+from model_sources import discover_exact_models, discover_trusted_models
+from seed_modelsdev import resolve_model_observations
 
 
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "models.json"
 SNAPSHOT = ROOT / ".cache" / "models.dev.json"
+RESOLUTION = ROOT / ".cache" / "modelsdev-resolution.json"
 LEGACY_FILL_FIELDS = (
-    "description", "knowledge_cutoff", "release_date", "open_weights",
-    "context_window_tokens", "max_input_tokens", "max_output_tokens", "pricing",
+    "knowledge_cutoff", "release_date", "open_weights",
 )
 
 
@@ -54,14 +53,11 @@ def merge_capabilities(existing, incoming, source_wins):
 
 
 def merge_pricing(existing, incoming):
-    """Update explicit source prices and retain only usable legacy thresholds."""
+    """Let the selected source win explicit prices without erasing omissions."""
     if not isinstance(existing, dict):
         return incoming
     result = {**existing, **incoming}
     if "tiers" not in incoming and "tiers" in result:
-        # Old gateway-derived catalogs contain tier lists with no threshold,
-        # and sometimes multiple conflicting prices for the same threshold.
-        # Neither can describe a canonical model's price schedule.
         thresholds = {}
         for tier in result["tiers"]:
             key = (tier.get("tier_type"), tier.get("size_tokens"))
@@ -78,9 +74,8 @@ def merge_pricing(existing, incoming):
     return result
 
 
-def sync_trusted(definition, source):
+def sync_trusted(definition, base):
     old_context = definition.get("context_window_tokens")
-    base = seed_definition(source.model, source.origin)
     changed = 0
     for field, value in base.items():
         if field in ("input", "features"):
@@ -103,19 +98,12 @@ def sync_trusted(definition, source):
     return changed
 
 
-def fill_legacy(definition, model):
-    base = seed_definition(model, definition.get("origin"))
+def fill_legacy(definition, base):
     changed = 0
     for field in LEGACY_FILL_FIELDS:
         if definition.get(field) is None and field in base:
             definition[field] = base[field]
             changed += 1
-    for field in ("input", "features"):
-        if field in base:
-            merged = merge_capabilities(definition.get(field), base[field], source_wins=False)
-            if definition.get(field) != merged:
-                definition[field] = merged
-                changed += 1
     return changed
 
 
@@ -125,30 +113,53 @@ def main():
     with SNAPSHOT.open() as file:
         models_dev = json.load(file)
     trusted = discover_trusted_models(models_dev)
-
-    # Exact-ID fallback preserves the legacy coverage for catalog entries that
-    # have no first-party record. It never takes precedence over trusted data.
-    exact = {}
-    for provider in models_dev.values():
-        for raw_id, model in (provider.get("models") or {}).items():
-            exact.setdefault(model.get("id") or raw_id, model)
-            exact.setdefault(raw_id, model)
+    exact = discover_exact_models(models_dev)
 
     trusted_matches = legacy_matches = trusted_updates = legacy_fills = 0
+    resolution_models = {}
+    conflicts = []
     for model_id, definition in catalog["models"].items():
-        source = trusted.get(model_id)
-        if source is not None:
+        observations = trusted.get(model_id)
+        if observations:
             trusted_matches += 1
-            trusted_updates += sync_trusted(definition, source)
+            base, provenance, model_conflicts = resolve_model_observations(observations)
+            trusted_updates += sync_trusted(definition, base)
+            resolution_models[model_id] = {
+                "scope": "publisher_api_model",
+                "fields": provenance,
+            }
+            conflicts.extend(
+                {"model_id": model_id, **conflict} for conflict in model_conflicts
+            )
         else:
-            model = exact.get(model_id) or exact.get(model_id.lower())
-            if model is not None:
+            legacy_observations = exact.get(model_id) or exact.get(model_id.lower())
+            if legacy_observations:
                 legacy_matches += 1
-                legacy_fills += fill_legacy(definition, model)
+                base, provenance, model_conflicts = resolve_model_observations(
+                    legacy_observations,
+                    allowed_field_groups={"descriptive"},
+                )
+                legacy_fills += fill_legacy(definition, base)
+                resolution_models[model_id] = {
+                    "scope": "legacy_exact_id_fallback",
+                    "fields": provenance,
+                }
+                conflicts.extend(
+                    {"model_id": model_id, **conflict} for conflict in model_conflicts
+                )
 
     with CATALOG.open("w") as file:
         json.dump(catalog, file, ensure_ascii=False, indent=2)
         file.write("\n")
+    RESOLUTION.write_text(
+        json.dumps(
+            {"models": resolution_models, "conflicts": conflicts},
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
     print(f"trusted records: {trusted_matches}, fields updated: {trusted_updates}")
     print(f"legacy exact-ID records: {legacy_matches}, fields filled: {legacy_fills}")
     print(f"wrote {CATALOG}")

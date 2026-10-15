@@ -16,7 +16,8 @@ PATCH_DIR = os.path.join(ROOT, "curation", "patches")
 ALLOWED_TOP = {
     "thinking_modes", "speed_modes", "max_input_tokens", "context_window_tokens",
     "max_output_tokens", "knowledge_cutoff", "description", "pricing", "release_date",
-    "last_updated", "open_weights", "display_name",
+    "last_updated", "open_weights", "display_name", "supports_verbosity",
+    "default_verbosity",
 }
 THINK_STRATS = {"disabled", "effort", "budget", "adaptive", "request_only"}
 EFFORTS = {"minimal", "low", "medium", "high", "xhigh", "max"}
@@ -63,6 +64,20 @@ def main():
                     # models). A literal null would fail Rust deserialization
                     # since these fields are not Option.
                     cur.pop(k, None)
+                    continue
+                if k == "supports_verbosity" and type(v) is not bool:
+                    errors.append(
+                        f"{os.path.basename(pf)}: model {mid} "
+                        "supports_verbosity must be boolean"
+                    )
+                    continue
+                if k == "default_verbosity" and (
+                    not isinstance(v, str) or not v.strip() or v != v.strip()
+                ):
+                    errors.append(
+                        f"{os.path.basename(pf)}: model {mid} "
+                        "default_verbosity must be a trimmed, non-empty string"
+                    )
                     continue
                 cur[k] = v
             models_touched.add(mid)

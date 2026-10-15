@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "field_groups": [
+    "identity",
+    "descriptive",
+    "limits",
+    "capabilities",
+    "semantics",
+    "pricing",
+    "modes",
+    "artifact"
+  ],
+  "sources": [
+    {
+      "id": "models.dev",
+      "url": "https://models.dev/api.json",
+      "fetcher": "models_dev",
+      "enabled": true,
+      "scope": "publisher_api_model",
+      "priority": 70,
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "selection": "curation/sources.json first-party provider policy"
+    },
+    {
+      "id": "opencode",
+      "url": "https://models.opencode.ai/api.json",
+      "fetcher": "mirror",
+      "enabled": false,
+      "scope": "mirror",
+      "priority": 0,
+      "mirror_of": "models.dev",
+      "reason": "Verified byte-for-byte mirror; do not count it as independent evidence."
+    },
+    {
+      "id": "huggingface",
+      "url": "https://huggingface.co/api/models",
+      "fetcher": "huggingface_hub",
+      "enabled": true,
+      "scope": "weight_artifact",
+      "priority": 80,
+      "field_priorities": {
+        "identity": 80,
+        "artifact": 100,
+        "descriptive": 40
+      },
+      "selection": "curation/sources.json official organization and prefix allowlist",
+      "max_page_size": 1000,
+      "refresh_interval_seconds": 604800,
+      "published_snapshot": "data/observations/huggingface.json"
+    },
+    {
+      "id": "openrouter",
+      "url": "https://openrouter.ai/api/v1/models",
+      "fetcher": "openrouter_routes",
+      "enabled": true,
+      "scope": "openrouter_api_route",
+      "priority": 90,
+      "field_priorities": {
+        "identity": 50,
+        "limits": 90,
+        "capabilities": 90,
+        "semantics": 90,
+        "pricing": 90
+      },
+      "refresh_interval_seconds": 43200,
+      "published_snapshot": "data/routes/openrouter.json",
+      "selection": "exact OpenRouter route only; never merged into provider-global model fields"
+    },
+    {
+      "id": "litellm",
+      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+      "fetcher": "litellm_routes",
+      "enabled": true,
+      "scope": "provider_route_reference",
+      "priority": 40,
+      "field_priorities": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "refresh_interval_seconds": 86400,
+      "published_snapshot": "data/routes/litellm.json",
+      "selection": "route-level price and limit cross-check; no global fallback without explicit route mapping"
+    },
+    {
+      "id": "codex-client",
+      "url": "https://github.com/openai/codex/tree/main/codex-rs/models-manager",
+      "fetcher": "manual_client_evidence",
+      "enabled": false,
+      "scope": "codex_client_preset",
+      "priority": 0,
+      "field_priorities": {
+        "semantics": 0,
+        "modes": 0
+      },
+      "reason": "Client preset defaults are not provider API defaults. Track as client evidence only."
+    },
+    {
+      "id": "gemini-cli-client",
+      "url": "https://github.com/google-gemini/gemini-cli/tree/main/packages/core/src/config",
+      "fetcher": "manual_client_evidence",
+      "enabled": false,
+      "scope": "gemini_cli_client_preset",
+      "priority": 0,
+      "field_priorities": {
+        "semantics": 0,
+        "modes": 0
+      },
+      "reason": "CLI request configuration is client behavior, not a generic model default."
+    }
+  ],
+  "global_model_field_priority": {
+    "manual_verified_patch": 100,
+    "models.dev_publisher_record": 70,
+    "legacy_exact_id_fallback": {
+      "identity": 20,
+      "descriptive": 20,
+      "limits": 0,
+      "capabilities": 0,
+      "semantics": 0,
+      "pricing": 0,
+      "modes": 0,
+      "artifact": 0
+    },
+    "openrouter_route": 0,
+    "litellm_route": 0,
+    "huggingface_artifact": 0,
+    "client_preset": 0
+  }
+}

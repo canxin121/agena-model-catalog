@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "models.dev",
+      "url": "https://models.dev/api.json",
+      "fetcher": "models_dev",
+      "enabled": true,
+      "scope": "publisher_api_model",
+      "priority": 70,
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "selection": "curation/sources.json first-party provider policy",
+      "snapshot_status": "current",
+      "snapshot_sha256": "a819b0deb7424bb618b9d1bacc5ce11e05003ff0ced3ba4115ea4f6b3bdaa5d7",
+      "snapshot_record_count": 230
+    },
+    {
+      "id": "opencode",
+      "url": "https://models.opencode.ai/api.json",
+      "fetcher": "mirror",
+      "enabled": false,
+      "scope": "mirror",
+      "priority": 0,
+      "mirror_of": "models.dev",
+      "reason": "Verified byte-for-byte mirror; do not count it as independent evidence.",
+      "snapshot_status": "mirror",
+      "snapshot_sha256": null,
+      "snapshot_record_count": null
+    },
+    {
+      "id": "huggingface",
+      "url": "https://huggingface.co/api/models",
+      "fetcher": "huggingface_hub",
+      "enabled": true,
+      "scope": "weight_artifact",
+      "priority": 80,
+      "field_priorities": {
+        "identity": 80,
+        "artifact": 100,
+        "descriptive": 40
+      },
+      "selection": "curation/sources.json official organization and prefix allowlist",
+      "max_page_size": 1000,
+      "refresh_interval_seconds": 604800,
+      "published_snapshot": "data/observations/huggingface.json",
+      "snapshot_status": "current",
+      "snapshot_sha256": "ee873bd6f197b735dd52a2ff3f2ab8be271b63710036748c541316e3078b5bdb",
+      "snapshot_record_count": 2264,
+      "last_successful_retrieval": "2026-10-15T05:37:19+00:00"
+    },
+    {
+      "id": "openrouter",
+      "url": "https://openrouter.ai/api/v1/models",
+      "fetcher": "openrouter_routes",
+      "enabled": true,
+      "scope": "openrouter_api_route",
+      "priority": 90,
+      "field_priorities": {
+        "identity": 50,
+        "limits": 90,
+        "capabilities": 90,
+        "semantics": 90,
+        "pricing": 90
+      },
+      "refresh_interval_seconds": 43200,
+      "published_snapshot": "data/routes/openrouter.json",
+      "selection": "exact OpenRouter route only; never merged into provider-global model fields",
+      "snapshot_status": "current",
+      "snapshot_sha256": "fcb98d811198ba44bebf8032af2aa005eee26c57c74a571b436b5073618f0253",
+      "snapshot_record_count": 462,
+      "last_successful_retrieval": "2026-10-15T05:37:21+00:00"
+    },
+    {
+      "id": "litellm",
+      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+      "fetcher": "litellm_routes",
+      "enabled": true,
+      "scope": "provider_route_reference",
+      "priority": 40,
+      "field_priorities": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "refresh_interval_seconds": 86400,
+      "published_snapshot": "data/routes/litellm.json",
+      "selection": "route-level price and limit cross-check; no global fallback without explicit route mapping",
+      "snapshot_status": "current",
+      "snapshot_sha256": "6fc1f38bce2adaf89463e1bb9436de227dd78e5b2f6befc1b005c3cd88deb2cb",
+      "snapshot_record_count": 4123,
+      "last_successful_retrieval": "2026-10-15T05:37:26+00:00"
+    },
+    {
+      "id": "codex-client",
+      "url": "https://github.com/openai/codex/tree/main/codex-rs/models-manager",
+      "fetcher": "manual_client_evidence",
+      "enabled": false,
+      "scope": "codex_client_preset",
+      "priority": 0,
+      "field_priorities": {
+        "semantics": 0,
+        "modes": 0
+      },
+      "reason": "Client preset defaults are not provider API defaults. Track as client evidence only.",
+      "snapshot_status": "registered_only",
+      "snapshot_sha256": null,
+      "snapshot_record_count": null
+    },
+    {
+      "id": "gemini-cli-client",
+      "url": "https://github.com/google-gemini/gemini-cli/tree/main/packages/core/src/config",
+      "fetcher": "manual_client_evidence",
+      "enabled": false,
+      "scope": "gemini_cli_client_preset",
+      "priority": 0,
+      "field_priorities": {
+        "semantics": 0,
+        "modes": 0
+      },
+      "reason": "CLI request configuration is client behavior, not a generic model default.",
+      "snapshot_status": "registered_only",
+      "snapshot_sha256": null,
+      "snapshot_record_count": null
+    }
+  ],
+  "route_record_counts": {
+    "models.dev_allowlisted_observations": 477,
+    "models.dev_exact_id_fallback_candidates": 829,
+    "models.dev_route_limit_caps": 18,
+    "openrouter": 462,
+    "litellm": 4123
+  },
+  "artifact_record_counts": {
+    "huggingface": 978
+  },
+  "model_provenance_count": 1928
+}

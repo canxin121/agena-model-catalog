@@ -29,7 +29,7 @@ import json
 import os
 import sys
 
-from model_sources import discover_trusted_models
+from model_sources import discover_trusted_models, preferred_source
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "models.json")
@@ -103,10 +103,11 @@ def main():
 
     for model_id, definition in document["models"].items():
         if not ensure_existing_only and not definition.get("speed_modes"):
-            source = trusted.get(model_id)
-            if source is None:
+            observations = trusted.get(model_id)
+            if not observations:
                 skip("no trusted record")
             else:
+                source = preferred_source(observations, "modes")
                 modes = {}
                 for mode_name, spec in sorted(published_modes(source.model).items()):
                     if mode_name == STANDARD_KEY:

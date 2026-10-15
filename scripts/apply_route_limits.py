@@ -8,13 +8,14 @@ an already discovered, source-backed model's shared safety bounds.
 import json
 from pathlib import Path
 
-from model_sources import canonical_model_id, discover_trusted_models
+from model_sources import canonical_model_id, discover_trusted_models, preferred_source
 
 
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "models.json"
 MODELS_DEV = ROOT / ".cache" / "models.dev.json"
 POLICY = ROOT / "curation" / "sources.json"
+ROUTE_EVIDENCE = ROOT / ".cache" / "route-limit-caps.json"
 
 
 def positive_limit(model, field):
@@ -32,6 +33,7 @@ def main():
     trusted = discover_trusted_models(models_dev)
     models = catalog["models"]
     changed = set()
+    evidence = {}
 
     for provider_id in route_providers:
         provider_models = (models_dev.get(provider_id) or {}).get("models") or {}
@@ -43,28 +45,68 @@ def main():
             if canonical_id not in models or canonical_id not in trusted:
                 continue
             definition = models[canonical_id]
-            official_context = positive_limit(trusted[canonical_id].model, "context")
+            preferred = preferred_source(trusted[canonical_id], "limits")
+            official_context = positive_limit(preferred.model, "context")
             route_context = positive_limit(route_model, "context")
+            route_output = positive_limit(route_model, "output")
+            model_evidence = evidence.setdefault(canonical_id, {"routes": []})
+            model_evidence["routes"].append({
+                "upstream": "models.dev",
+                "provider": provider_id,
+                "source_id": raw_id,
+                "route_id": route_id,
+                "context_window_tokens": route_context,
+                "max_output_tokens": route_output,
+            })
             if official_context is not None and route_context is not None:
                 safe_context = min(official_context, route_context)
                 current_context = definition.get("context_window_tokens")
                 if current_context is None or current_context > safe_context:
                     definition["context_window_tokens"] = safe_context
                     changed.add(canonical_id)
+                    if route_context < official_context:
+                        model_evidence["context_window_tokens"] = {
+                            "value": safe_context,
+                            "priority": 70,
+                            "resolution": "lower configured route limit",
+                            "official_value": official_context,
+                            "route_value": route_context,
+                        }
                 current_input = definition.get("max_input_tokens")
                 effective_context = definition["context_window_tokens"]
                 if current_input is not None and current_input > effective_context:
                     definition["max_input_tokens"] = effective_context
                     changed.add(canonical_id)
+                    if route_context < official_context:
+                        model_evidence["max_input_tokens"] = {
+                            "value": effective_context,
+                            "priority": 70,
+                            "resolution": "capped by configured route context limit",
+                            "official_context_value": official_context,
+                            "route_context_value": route_context,
+                        }
 
-            official_output = positive_limit(trusted[canonical_id].model, "output")
-            route_output = positive_limit(route_model, "output")
+            official_output = positive_limit(preferred.model, "output")
             if official_output is not None and route_output is not None:
                 safe_output = min(official_output, route_output)
                 current_output = definition.get("max_output_tokens")
                 if current_output is None or current_output > safe_output:
                     definition["max_output_tokens"] = safe_output
                     changed.add(canonical_id)
+                    if route_output < official_output:
+                        model_evidence["max_output_tokens"] = {
+                            "value": safe_output,
+                            "priority": 70,
+                            "resolution": "lower configured route limit",
+                            "official_value": official_output,
+                            "route_value": route_output,
+                        }
+
+    ROUTE_EVIDENCE.parent.mkdir(parents=True, exist_ok=True)
+    ROUTE_EVIDENCE.write_text(
+        json.dumps({"models": evidence}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
     if changed:
         with CATALOG.open("w") as file:

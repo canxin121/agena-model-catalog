@@ -43,7 +43,7 @@ jobs:
       - name: Publish verified catalog changes
         id: publish
         run: |
-          git add models.json
+          git add models.json data
           if git diff --cached --quiet; then
             echo "Catalog is already current"
             echo "result=unchanged" >> "$GITHUB_OUTPUT"
@@ -51,7 +51,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore(catalog): refresh models.dev data"
+          git commit -m "chore(catalog): refresh model sources"
           git push origin HEAD:main
           echo "result=updated" >> "$GITHUB_OUTPUT"
           echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"

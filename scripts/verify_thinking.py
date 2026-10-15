@@ -25,7 +25,7 @@ import json
 import os
 import sys
 
-from model_sources import discover_trusted_models
+from model_sources import discover_trusted_models, preferred_source
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "models.json")
@@ -87,10 +87,11 @@ def patch_check(path):
         if not modes:
             continue
         checked += 1
-        source = TRUSTED.get(model_id)
-        if source is None:
+        observations = TRUSTED.get(model_id)
+        if not observations:
             advisory.append((model_id, "no trusted record - unverifiable"))
             continue
+        source = preferred_source(observations, "modes")
         model = source.model
         published = effort_values(model)
         kinds = option_kinds(model)
@@ -126,9 +127,10 @@ def catalog_check():
         modes = modes_of(definition.get("thinking_modes"))
         if not modes:
             continue
-        source = TRUSTED.get(model_id)
-        if source is None:
+        observations = TRUSTED.get(model_id)
+        if not observations:
             continue
+        source = preferred_source(observations, "modes")
         published = effort_values(source.model)
         if not published:
             continue

@@ -9,6 +9,15 @@ cd "$ROOT"
 echo "=== validate ==="
 python3 scripts/validate.py
 
+if [[ ! -s .cache/models.dev.json ]]; then
+  echo "missing .cache/models.dev.json; run the refresh pipeline before publishing" >&2
+  exit 1
+fi
+echo "=== verify verbosity source retention ==="
+python3 scripts/verify_verbosity.py
+echo "=== verify multi-source record completeness ==="
+python3 scripts/verify_source_artifacts.py
+
 echo "=== stage + commit ==="
 git add -A
 if git diff --cached --quiet; then

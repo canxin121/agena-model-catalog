@@ -1,30 +1,66 @@
 # Curation layer
 
 `patches/` holds the hand-verified metadata edits that sit on top of the
-models.dev-derived base. Each file is a `{ "models": { "<model-id>": {...} } }`
+automatically resolved model-level base. Each file is a `{ "models": { "<model-id>": {...} } }`
 object that `scripts/apply_patches.py` merges into `models.json`.
+
+`upstreams.json` is the independent upstream registry. It records URLs, source
+scope, field groups, priorities, and mirrors. `sources.json` is a separate
+selection policy for provider records inside models.dev and the official HF
+organization/prefix discovery list.
 
 ## Discovering new model ids
 
 `scripts/seed_modelsdev.py` automatically adds new IDs found in the first-party
 providers and official Hugging Face organizations listed in `sources.json`.
-The policy is ordered: the first trusted source for a canonical ID wins. Prefix
-rules keep mixed providers such as Alibaba China and Volcengine from admitting
-other vendors' hosted models. Gateway providers are not discovery sources.
-To support a new vendor, add its provider or official organization once to
-`sources.json`; individual new models then require no entry. `patches/` never
-create catalog members and remain for verified exceptions.
+The policy order is a tie-breaker when multiple allowlisted records have equal
+field priority. All observations mapping to one canonical ID are retained and
+fields are resolved by group instead of selecting one winning record wholesale.
+Prefix rules keep mixed providers such as Alibaba China and Volcengine from
+admitting other vendors' hosted models. Gateway providers are not canonical
+model discovery sources. To support a new vendor, add its provider or official
+organization once to `sources.json`; individual new models then require no
+entry. `patches/` never create catalog members and remain for verified
+exceptions.
 
 `sources.json` also lists route providers whose context and output limits constrain the
 shared catalog value for a model already found through a trusted source. A
 route provider cannot add an identity on its own. This replaces individual
 limit patches for Cline Pass models.
 
+## Source scopes and priority
+
+- **Verified patch (100):** manually checked provider facts; runs last.
+- **models.dev publisher record (70):** canonical API model descriptions,
+  limits, capabilities, semantics, pricing, and published modes, subject to the
+  allowlist in `sources.json`.
+- **Legacy exact-ID fallback (20 for descriptive facts):** can fill missing
+  knowledge cutoff, release date, or open-weight status for an existing catalog
+  entry with no allowlisted publisher record. Its route-specific limits,
+  pricing, capabilities, and verbosity are never promoted to model-global data.
+- **OpenRouter route (90):** applies only to an exact OpenRouter route.
+- **LiteLLM route reference (40):** route-level cross-check, not a model-global
+  fallback.
+- **Hugging Face artifact (100 for artifact facts):** repository/license/task
+  metadata; it does not automatically define a hosted API model.
+- **OpenCode mirror (0):** same bytes as models.dev in the audit, so it is not
+  fetched or counted independently.
+- **Codex and Gemini CLI presets (0 for provider facts):** client behavior only.
+
+Route and artifact sources are emitted under `data/routes/` and
+`data/artifacts/`. Route records keep the complete source object in `raw`.
+Hugging Face artifact rows link to `data/observations/huggingface.json`, which
+keeps each complete repository object once, including fields the current
+normalizer does not interpret. Model-level field choices are explained in
+`data/model-provenance.json`; disagreements are listed in
+`data/source-conflicts.json`.
+
 ## Why patches instead of editing models.json directly
 
-- The base comes from models.dev (see `scripts/merge_modelsdev.py`). Any field
-  a refresh re-derives must not clobber a hand-verified value, so curated
-  overrides live separately and are applied *after* the merge.
+- The base comes from source-prioritized observations (see
+  `scripts/merge_modelsdev.py`). Any field a refresh re-derives must not
+  clobber a hand-verified value, so curated overrides live separately and are
+  applied *after* the merge.
 - A patch is a reviewable unit: each one corresponds to one verified change set
   (a family sweep, a capability fix, a pricing table) and can be re-verified
   independently (`scripts/verify_thinking.py`).
@@ -42,7 +78,14 @@ limit patches for Cline Pass models.
 - Allowed top-level fields in a patch:
   `thinking_modes`, `speed_modes`, `max_input_tokens`, `context_window_tokens`,
   `max_output_tokens`, `knowledge_cutoff`, `description`, `pricing`,
-  `release_date`, `last_updated`, `open_weights`, `display_name`.
+  `release_date`, `last_updated`, `open_weights`, `display_name`,
+  `supports_verbosity`, `default_verbosity`.
+- Verbosity patches must be grounded in provider documentation. `default_verbosity`
+  is the value Agena sends when the user has not chosen one; do not copy a
+  client-specific preference (such as a coding agent's default) as if it were
+  the provider's native default. `reasoning_options` describes reasoning effort
+  and must not be mapped to answer verbosity. Values must be trimmed, non-empty
+  strings.
 - **Never add a model** that is not already in `models.json` (apply_patches.py
   rejects it).
 - Thinking/speed modes must pass `scripts/apply_patches.py` shape checks and

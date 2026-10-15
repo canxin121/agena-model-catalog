@@ -4,13 +4,21 @@
 
 Self-maintained model catalog for the [Agena](https://github.com/canxin121/agena) LLM runtime.
 
-`models.json` is the canonical generated source of model metadata. A GitHub
-Actions refresh runs every six hours. It fetches `models.dev`, discovers new models
-from trusted first-party providers and official Hugging Face organizations, updates
-trusted metadata, derives thinking modes from the trusted reasoning options, applies
-curated exceptions and route limits, validates the result, and publishes changes. The
-Agena runtime fetches this file at startup instead of crawling registries at runtime,
-and it reads thinking modes from this file instead of inferring them per vendor family.
+`models.json` is the canonical model-level catalog. A GitHub Actions refresh runs
+every six hours and fetches each independent source registered in
+[`curation/upstreams.json`](curation/upstreams.json). The pipeline resolves
+model-level fields by field group, retains route and artifact observations in
+separate sidecars under `data/`, applies curated exceptions and route limits, then
+validates and publishes the result. The Agena runtime currently consumes
+`models.json`; route-specific sidecars preserve information that cannot safely be
+collapsed into one model-level value.
+
+Source scope matters: models.dev supplies selected publisher API model records;
+Hugging Face supplies official weight-repository facts; OpenRouter supplies
+OpenRouter route capabilities and pricing; LiteLLM supplies provider-route price
+and limit references. OpenCode's model endpoint is registered as a verified
+models.dev mirror and is not counted twice. Codex and Gemini CLI configuration is
+client behavior, so it is evidence for those clients and never a provider default.
 
 ## File
 
@@ -49,6 +57,37 @@ and it reads thinking modes from this file instead of inferring them per vendor 
   - `origin` is the vendor display name (e.g. "OpenAI", "Anthropic", "Google", "DeepSeek").
   - `lifecycle` is one of `active | preview | beta | alpha | experimental | deprecated`.
   - All fields are optional and skipped when absent.
+
+## Answer verbosity (`supports_verbosity`, `default_verbosity`)
+
+These fields describe Agena's ability to send an answer-verbosity value for a
+canonical model and the value Agena sends when the user has not selected one.
+`default_verbosity` is therefore an Agena request default; it must not be
+presented as the provider's native default unless the provider documents that
+same value. OpenAI documents `text.verbosity` as controlling response detail
+(`low`, `medium`, or `high`) in the
+[API deployment checklist](https://developers.openai.com/api/docs/guides/deployment-checklist#set-up-textverbosity).
+
+The fields in `models.json` are model-level Agena defaults and cannot express
+different support by adapter or provider route. A route-specific signal such as
+OpenRouter's `supported_parameters: ["verbosity"]` is retained in
+`data/routes/openrouter.json` and does not set the global model field.
+
+The refresh pipeline copies exact upstream `supports_verbosity` booleans
+(including explicit `false`) and non-empty `default_verbosity` strings when
+present. A missing or `null` value is unknown and never clears an existing value.
+Selected publisher records are resolved by the semantics field priority, with
+provider policy order used only to break equal-priority conflicts; curated patches
+run last. Exact-ID records outside the allowlist do not supply route limits,
+pricing, capabilities, or verbosity defaults. `reasoning_options` is a separate
+reasoning-effort capability and is never converted into verbosity.
+
+The models.dev snapshot inspected on 2026-10-15 has no answer-verbosity fields.
+OpenRouter's route parameter list is retained as route-scoped evidence. If a
+source adds an unrecognized verbosity-shaped field or changes a known field's
+type, refresh fails and names the field for review instead of silently dropping
+it. `scripts/verify_verbosity.py` checks model-level source retention in every
+refresh.
 
 ## Thinking modes (`thinking_modes`)
 
@@ -156,12 +195,14 @@ Changes to the workflow, scripts, or curation on `main` also trigger
 a refresh. The workflow uses the built-in `GITHUB_TOKEN` with `contents: write`,
 so no API keys or additional secrets are required.
 
-The workflow commits and pushes `models.json` to `main` only when the validated
-output changes. An unchanged catalog is a successful refresh and produces no
-commit. Every run includes a summary with the publication result and pipeline
-log. Downloads have bounded retries and timeouts; a failed refresh never reaches
-the publish step. GitHub refreshes the remote catalog; use `git pull --ff-only`
-to bring those changes into a local checkout.
+The workflow commits and pushes `models.json` and generated `data/` sidecars to
+`main` only when their outputs change. An unchanged catalog is a successful
+refresh and produces no commit. Every run includes a summary with publication
+result, source freshness, and pipeline log. Downloads have bounded retries and
+timeouts. A failed required models.dev fetch stops publication; optional source
+failures retain their previous snapshot and are marked stale in the run log and
+`data/source-inventory.json`. GitHub refreshes the remote catalog; use
+`git pull --ff-only` to bring those changes into a local checkout.
 
 Adding a new model from an already trusted source requires no model ID
 entry or catalog edit. A new provider or official Hugging Face organization is
@@ -179,8 +220,17 @@ Verification rules:
 - **Never fabricate.** If a value cannot be verified from an official source
   (vendor docs, models.dev, HuggingFace model cards), omit the field — a missing
   field is always preferable to a wrong one.
-- `models.dev` is the authoritative base for context/output limits, pricing,
-  descriptions, knowledge cutoffs, and the `input`/`features` capability flags.
+- `models.dev` has priority 70 for selected publisher API model fields. Where
+  several allowlisted records map to one canonical ID, the pipeline chooses
+  separately for descriptive, limits, capabilities, semantics, and pricing
+  fields. The order in `curation/sources.json` breaks equal-priority ties, and
+  every conflicting candidate is retained in `data/source-conflicts.json`.
+- OpenRouter (priority 90) and LiteLLM (priority 40) values stay on their own
+  route records. They never overwrite global model pricing, limits, or
+  `supports_verbosity`. Hugging Face facts stay on artifact records and do not
+  automatically create canonical API models.
+- Verified curated patches have priority 100 and run after automatic source
+  resolution. OpenCode is a mirror of models.dev and adds no independent weight.
 - Thinking modes come from the trusted record's `reasoning_options` (derived) or from
   a curated patch; the runtime adds nothing on its own. Speed modes always require
   per-vendor verification against official API docs.
@@ -195,18 +245,32 @@ Verification rules:
 ```
 models.json          canonical catalog (the runtime fetches this)
 README.md            this file
+data/
+  source-inventory.json       registered sources, scopes, priorities, freshness hashes
+  model-provenance.json       per-field source/patch provenance for models.json
+  source-conflicts.json       competing models.dev values and the selected winner
+  observations/models.dev.json allowlisted records with their complete raw objects
+  observations/models.dev-exact-id-fallback.json low-priority exact-ID candidates, retained for audit
+  observations/huggingface.json complete official-organization listing used for artifact discovery
+  routes/modelsdev-caps.json   configured models.dev route caps with raw evidence
+  routes/openrouter.json      OpenRouter route capabilities, pricing, and raw objects
+  routes/litellm.json         LiteLLM route references, pricing, and raw objects
+  artifacts/huggingface.json  normalized HF facts linked by repo ID to raw observations
 curation/
+  upstreams.json      independent upstream registry, scopes, and priority policy
   sources.json       trusted provider and official organization policy
   patches/           hand-verified metadata patches applied over the base
   README.md          patch conventions and how to add one
 docs/research/       per-vendor verification documents (domestic families)
 scripts/
-  refresh.sh         end-to-end refresh: fetch → discover → merge → derive modes → curate → route caps → backfill → validate → verify → report
-  model_sources.py   canonicalize and select trusted upstream records
+  refresh.sh         end-to-end refresh: fetch → discover → merge → derive → curate → cap → validate → publish/verify sidecars
+  model_sources.py   canonicalize and retain every trusted provider observation
+  fetch_upstreams.py download registered sources and record freshness/failures
+  build_source_artifacts.py write route/artifact sidecars and provenance/conflicts
   seed_modelsdev.py  add newly discovered canonical model ids
-  publish.sh         validate + commit + push (the release gate)
-  fetch_modelsdev.sh snapshot models.dev into .cache/
-  merge_modelsdev.py sync trusted fields and fill legacy gaps from the snapshot
+  publish.sh         validate + verify source retention + commit + push (the release gate)
+  fetch_modelsdev.sh fetch registered upstreams into .cache/
+  merge_modelsdev.py resolve trusted values by field group and fill legacy gaps
   derive_thinking_modes.py materialise thinking modes from trusted reasoning_options
   derive_speed_modes.py materialise speed modes from trusted experimental.modes
   apply_patches.py   apply curation/patches onto models.json
@@ -214,22 +278,31 @@ scripts/
   backfill_input.py  conservative max_input_tokens backfill
   validate.py        full-document schema validation (publish gate)
   verify_thinking.py cross-check thinking modes against the trusted first-party records
+  verify_verbosity.py ensure upstream verbosity metadata survives merges and curation
+  verify_source_artifacts.py ensure selected rows and raw fields survive publication
   report.py          coverage report
 ```
 
-The data pipeline is **fetch → discover → merge → derive thinking → derive speed → curate → route caps → validate → verify**:
+The data pipeline is **fetch → discover → field-group merge → derive → curate → validate → publish source sidecars**:
 
-1. **fetch** — `fetch_modelsdev.sh` snapshots `models.dev/api.json` into
-   `.cache/` (not committed; reproducible).
+1. **fetch** — `fetch_modelsdev.sh` reads `curation/upstreams.json` and snapshots
+   models.dev, Hugging Face, OpenRouter, and LiteLLM into `.cache/sources/`.
+   OpenCode is recorded as a mirror and is not fetched twice. A failed optional
+   source keeps its prior cache marked stale; models.dev is required for the
+   canonical catalog refresh. HF listings refresh weekly and LiteLLM daily;
+   `bash scripts/fetch_modelsdev.sh --force` forces optional-source refreshes.
 2. **discover** — `model_sources.py` selects first-party provider records and
    models from official Hugging Face organizations according to `curation/sources.json`.
-   `seed_modelsdev.py` adds every new canonical ID from those sources. Source order
-   resolves duplicate IDs, and a large unexpected influx stops the refresh for review.
-3. **merge** — `merge_modelsdev.py` updates fields explicitly supplied by a
-   trusted source, including limits, prices, descriptions, and capabilities.
-   Price components omitted by the source are preserved; legacy price tiers
-   without a unique threshold are discarded. Older models without a trusted
-   source only receive missing fields from exact-ID matches.
+   `seed_modelsdev.py` adds new canonical IDs from models.dev's allowlisted
+   publisher and HF records. It preserves every matching record. Exact-ID
+   records outside the allowlist are retained as low-priority descriptive
+   candidates only; they cannot supply route-specific pricing, limits,
+   capabilities, or verbosity defaults. A large unexpected influx stops the
+   refresh for review.
+3. **field-group merge** — `merge_modelsdev.py` picks values by registry
+   priority for each field group and reports disagreements instead of discarding
+   losing observations. Curated patches run afterward. Older exact-ID records
+   can fill only missing descriptive identity facts at lower priority.
 4. **derive thinking** — `derive_thinking_modes.py` materialises `thinking_modes`
    from the trusted record's `reasoning_options` for entries that declare
    `reasoning` and have no curated modes yet. Existing modes are never modified, so
@@ -244,20 +317,27 @@ The data pipeline is **fetch → discover → merge → derive thinking → deri
 7. **route caps** — `apply_route_limits.py` takes the lower of the trusted
    source's context and output limits and each configured route's corresponding
    limits for the same canonical model. Route providers cannot introduce new
-   model IDs. This keeps shared limits safe for routes such as Cline Pass.
-8. **verify** — `validate.py` enforces the catalog schema and `verify_thinking.py`
-   cross-checks thinking modes against the trusted first-party records. A patch that
-   declares an effort value the record does not publish, or that turns a read-only
-   toggle into an effort ladder, fails the refresh. Patches for models without a
-   trusted record and ladders wider than a gateway-shaped record are reported as
-   advisories, and the catalog-vs-trusted comparison stays a report.
+   model IDs. The applied cap and its raw route evidence are recorded separately.
+8. **verify** — `validate.py` enforces the catalog schema, `verify_thinking.py`
+   cross-checks thinking modes against the trusted first-party records, and
+   `verify_verbosity.py` checks verbosity-field retention from all selected
+   source observations. A thinking patch that declares an effort value the record does not
+   publish, or turns a read-only toggle into an effort ladder, fails the refresh.
+   Patches for models without a trusted record and ladders wider than a
+   gateway-shaped record are reported as advisories, and the catalog-vs-trusted
+   comparison stays a report.
+9. **publish source sidecars** — `build_source_artifacts.py` writes full raw
+   objects beside normalized route/artifact fields, per-field provenance, source
+   inventory, and conflict records. `verify_source_artifacts.py` compares every
+   published record and raw object against its cached source snapshot.
+   Route-scoped values remain separate from model-level fields.
 
 ### Refreshing the catalog
 
 ```bash
 bash scripts/refresh.sh            # fetch + discover + merge + derive think+speed + curate + route caps + validate + verify
 bash scripts/refresh.sh --no-fetch # reuse an existing .cache snapshot
-bash scripts/publish.sh "chore(catalog): ..."   # validate, commit, push
+bash scripts/publish.sh "chore(catalog): ..."   # validate + verify source retention, commit, push
 ```
 
 See `curation/README.md` for the patch conventions.

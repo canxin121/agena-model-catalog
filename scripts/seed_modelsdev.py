@@ -9,7 +9,7 @@ import json
 import os
 import sys
 
-from model_sources import discover_trusted_models
+from model_sources import discover_trusted_models, preferred_source, source_ref
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "models.json")
@@ -18,6 +18,67 @@ MAX_AUTO_ADDITIONS = 100
 
 LIFECYCLES = {"active", "preview", "beta", "alpha", "experimental", "deprecated"}
 INPUT_MODALITIES = {"text", "image", "document", "audio", "video", "file"}
+VERBOSITY_SOURCE_FIELDS = {
+    "supports_verbosity": "supports_verbosity",
+    "default_verbosity": "default_verbosity",
+}
+
+
+def _verbosity_key_paths(value, path=()):
+    """Find verbosity-related source keys so schema changes cannot vanish silently."""
+    if isinstance(value, dict):
+        for key, child in value.items():
+            next_path = path + (str(key),)
+            if "verbosity" in str(key).casefold():
+                yield next_path
+            yield from _verbosity_key_paths(child, next_path)
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            yield from _verbosity_key_paths(child, path + (str(index),))
+
+
+def verbosity_metadata(source):
+    """Copy supported upstream verbosity fields without conflating effort.
+
+    models.dev does not currently publish these keys. If it adds a new
+    verbosity-shaped field or changes a value's type, fail closed so refresh
+    cannot silently discard data or guess how to map it.
+    """
+    paths = list(_verbosity_key_paths(source))
+    unknown = [
+        ".".join(path)
+        for path in paths
+        if len(path) != 1 or path[0] not in VERBOSITY_SOURCE_FIELDS
+    ]
+    if unknown:
+        raise ValueError(
+            "unsupported upstream verbosity field(s): " + ", ".join(sorted(unknown))
+        )
+
+    result = {}
+    for source_key, catalog_key in VERBOSITY_SOURCE_FIELDS.items():
+        if source_key not in source or source[source_key] is None:
+            continue
+        value = source[source_key]
+        if source_key == "supports_verbosity":
+            if type(value) is not bool:
+                raise ValueError(
+                    f"upstream {source_key} must be a boolean or null, got {value!r}"
+                )
+            # Preserve explicit false; false means unsupported, not missing.
+            result[catalog_key] = value
+        else:
+            if (
+                not isinstance(value, str)
+                or not value.strip()
+                or value != value.strip()
+            ):
+                raise ValueError(
+                    f"upstream {source_key} must be a trimmed, non-empty string "
+                    f"or null, got {value!r}"
+                )
+            result[catalog_key] = value
+    return result
 
 
 def load(path):
@@ -103,6 +164,11 @@ def feature_flags(model):
 
 def seed_definition(source, origin):
     definition = {}
+    try:
+        definition.update(verbosity_metadata(source))
+    except ValueError as error:
+        source_id = source.get("id") or "<unknown model id>"
+        raise ValueError(f"{source_id}: {error}") from error
     status = source.get("status")
     if status in LIFECYCLES:
         definition["lifecycle"] = status
@@ -159,6 +225,159 @@ def seed_definition(source, origin):
     return definition
 
 
+FIELD_GROUPS = {
+    "lifecycle": "descriptive",
+    "description": "descriptive",
+    "knowledge_cutoff": "descriptive",
+    "release_date": "descriptive",
+    "last_updated": "descriptive",
+    "open_weights": "descriptive",
+    "display_name": "descriptive",
+    "origin": "descriptive",
+    "context_window_tokens": "limits",
+    "max_input_tokens": "limits",
+    "max_output_tokens": "limits",
+    "input": "capabilities",
+    "features": "capabilities",
+    "output_modalities": "capabilities",
+    "supports_verbosity": "semantics",
+    "default_verbosity": "semantics",
+    "supports_parallel_tool_calls": "semantics",
+    "default_temperature": "semantics",
+    "default_top_p": "semantics",
+    "default_top_k": "semantics",
+    "assistant_reasoning_interleaved": "semantics",
+    "assistant_reasoning_field": "semantics",
+    "pricing": "pricing",
+}
+
+
+def _source_definition(source):
+    return seed_definition(source.model, source.origin)
+
+
+def _resolve_capability_group(observations, definitions, field):
+    values = {}
+    for source in observations:
+        if source.priority("capabilities") <= 0:
+            continue
+        selection = definitions[id(source)].get(field)
+        if not isinstance(selection, dict):
+            continue
+        supported = set(selection.get("supported") or [])
+        unsupported = set(selection.get("unsupported") or [])
+        for item in supported | unsupported:
+            values.setdefault(item, []).append((source, item in supported))
+
+    selected = {}
+    field_provenance = {}
+    conflicts = []
+    for item, candidates in sorted(values.items()):
+        winner = min(
+            candidates,
+            key=lambda pair: (
+                -pair[0].priority("capabilities"),
+                pair[0].policy_rank,
+                pair[0].provider,
+                pair[0].source_id,
+            ),
+        )
+        status = "supported" if winner[1] else "unsupported"
+        selected.setdefault(status, []).append(item)
+        candidate_details = [
+            {
+                "value": "supported" if is_supported else "unsupported",
+                "source": source_ref(source, "capabilities"),
+            }
+            for source, is_supported in candidates
+        ]
+        winner_detail = next(
+            detail
+            for detail, (source, _is_supported) in zip(candidate_details, candidates)
+            if source == winner[0]
+        )
+        field_provenance[item] = {
+            "value": status,
+            "source": source_ref(winner[0], "capabilities"),
+        }
+        if len({is_supported for _, is_supported in candidates}) > 1:
+            conflicts.append({
+                "field": f"{field}.{item}",
+                "winner": winner_detail,
+                "candidates": candidate_details,
+                "resolution": "highest field priority, then source policy order",
+            })
+
+    resolved = {}
+    if selected.get("supported"):
+        resolved["supported"] = sorted(selected["supported"])
+    if selected.get("unsupported"):
+        resolved["unsupported"] = sorted(selected["unsupported"])
+    return resolved or None, field_provenance, conflicts
+
+
+def resolve_model_observations(observations, allowed_field_groups=None):
+    """Resolve one canonical definition independently for every field group.
+
+    Missing values do not compete. Explicit false values do. Pricing remains an
+    atomic value because tier schedules and cache prices belong together.
+    """
+    definitions = {id(source): _source_definition(source) for source in observations}
+    resolved = {}
+    provenance = {}
+    conflicts = []
+
+    for field, field_group in FIELD_GROUPS.items():
+        if allowed_field_groups is not None and field_group not in allowed_field_groups:
+            continue
+        if not any(source.priority(field_group) > 0 for source in observations):
+            continue
+        if field in ("input", "features"):
+            value, items, field_conflicts = _resolve_capability_group(
+                observations, definitions, field
+            )
+            if value is not None:
+                resolved[field] = value
+                provenance[field] = {"items": items}
+            conflicts.extend(field_conflicts)
+            continue
+
+        candidates = [
+            (source, definitions[id(source)][field])
+            for source in observations
+            if source.priority(field_group) > 0
+            and field in definitions[id(source)]
+        ]
+        if not candidates:
+            continue
+        winner_source, winner_value = min(
+            candidates,
+            key=lambda pair: (
+                -pair[0].priority(field_group),
+                pair[0].policy_rank,
+                pair[0].provider,
+                pair[0].source_id,
+            ),
+        )
+        resolved[field] = winner_value
+        provenance[field] = {
+            "value": winner_value,
+            "source": source_ref(winner_source, field_group),
+        }
+        if any(value != winner_value for _, value in candidates):
+            conflicts.append({
+                "field": field,
+                "winner": {"value": winner_value, "source": source_ref(winner_source, field_group)},
+                "candidates": [
+                    {"value": value, "source": source_ref(source, field_group)}
+                    for source, value in candidates
+                ],
+                "resolution": "highest field priority, then source policy order",
+            })
+
+    return resolved, provenance, conflicts
+
+
 def main():
     catalog = load(CATALOG)
     models_dev = load(MODELS_DEV)
@@ -179,8 +398,9 @@ def main():
 
     added = []
     for canonical_id in missing:
-        source = sources[canonical_id]
-        models[canonical_id] = seed_definition(source.model, source.origin)
+        definition, _provenance, _conflicts = resolve_model_observations(sources[canonical_id])
+        models[canonical_id] = definition
+        source = preferred_source(sources[canonical_id], "identity")
         added.append((canonical_id, source.provider, source.source_id))
 
     if added:

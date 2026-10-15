@@ -21,6 +21,8 @@ Write your patch to:
       "knowledge_cutoff": "2025-12",   // optional
       "release_date": "2025-06-01",    // optional
       "description": "English description", // optional
+      "supports_verbosity": true,     // optional
+      "default_verbosity": "medium", // optional
       "pricing": {                     // optional
         "input_usd_per_million_tokens": "0.25",
         "output_usd_per_million_tokens": "0.8",
@@ -41,7 +43,11 @@ Write your patch to:
 2. Do NOT add new model IDs. Every key must already exist in the catalog.
 3. Allowed top-level keys: `thinking_modes, speed_modes, max_input_tokens,
    context_window_tokens, max_output_tokens, knowledge_cutoff, description,
-   pricing, release_date, open_weights, display_name`. Nothing else.
+   pricing, release_date, open_weights, display_name,
+   supports_verbosity, default_verbosity`. Nothing else.
+   `supports_verbosity` must be a boolean. `default_verbosity` must be a
+   trimmed, non-empty string verified for the relevant provider API. Do not
+   infer it from `reasoning_options` or a client-side model catalog.
 4. `knowledge_cutoff` format: `"YYYY-MM"` (or `"YYYY-MM-DD"` if known).
    `release_date` format: `"YYYY-MM-DD"`.
 5. `description`: one concise English sentence on what the model is/does.
@@ -95,10 +101,18 @@ Research whether the provider's API has a real speed parameter:
   Include the actual body_patch/headers the provider documents.
 
 ## Sources priority
-1. Official provider API docs & pricing pages (search the web).
-2. The provided models.dev snapshot (`models.dev:` lines in your brief).
-3. HuggingFace model cards for open-weights models.
-4. If two sources conflict, trust official docs and note the conflict.
+1. Verified provider API documentation for the exact API/adapter and product.
+2. The models.dev publisher record (priority 70) for model-level API metadata.
+3. Official Hugging Face model cards for weight-repository facts.
+4. OpenRouter (priority 90) and LiteLLM (priority 40) apply only to their
+   route observations; they do not override provider-global fields.
+5. A verified curated patch has catalog priority 100 and runs last. Keep the
+   source URL and verification date in the patch notes.
+6. Codex/Gemini CLI values describe that client's request behavior, not a
+   provider default. OpenCode is a models.dev mirror and adds no new evidence.
+7. If same-scope sources conflict, keep both values in the conflict report and
+   resolve by the field-group priority in `curation/upstreams.json`; cite why a
+   manual patch is needed if official documentation contradicts the feed.
 
 ## Final check
 - Re-read your patch: every value traceable to a source you can cite in `notes`.

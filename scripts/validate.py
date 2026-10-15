@@ -48,6 +48,14 @@ for mid, c in models.items():
             continue
     if c.get("lifecycle") is not None and c["lifecycle"] not in LIFECYCLE:
         errors.append(f"{mid}: bad lifecycle {c['lifecycle']}")
+    if "supports_verbosity" in c and type(c["supports_verbosity"]) is not bool:
+        errors.append(f"{mid}: supports_verbosity must be a boolean")
+    if "default_verbosity" in c and (
+        not isinstance(c["default_verbosity"], str)
+        or not c["default_verbosity"].strip()
+        or c["default_verbosity"] != c["default_verbosity"].strip()
+    ):
+        errors.append(f"{mid}: default_verbosity must be a trimmed, non-empty string")
     # numeric limits: u32; 0 is a pre-existing convention for "unknown/unlimited"
     for f in ("context_window_tokens", "max_input_tokens", "max_output_tokens"):
         v = c.get(f)

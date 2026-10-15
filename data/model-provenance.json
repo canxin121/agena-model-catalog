@@ -106398,6 +106398,18 @@
           "policy_rank": 14
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "xiaomi",
+          "source_id": "mimo-v2.5",
+          "priority": 70,
+          "policy_rank": 14
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -106630,6 +106642,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2026-06-24",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "xiaomi",
+          "source_id": "mimo-v2.5-pro",
+          "priority": 70,
+          "policy_rank": 14
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "xiaomi",
@@ -106971,7 +106995,7 @@
       "lifecycle": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "beta",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "xiaomi",

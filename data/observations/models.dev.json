@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "d10bdb286a624e0ab585be0d930d815e0f4c6e9373a536eebdba3448e0bf31fa",
+    "sha256": "8d07fe7aa3f75f6849b4700aee3c012d51db69a36ec82d819f202c1686b5b35f",
     "record_count": 230
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -15594,6 +15594,7 @@
           "context": 1048576,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.14,
           "output": 0.28,
@@ -15720,6 +15721,7 @@
           "context": 1048576,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.435,
           "output": 0.87,
@@ -15846,7 +15848,7 @@
           "context": 1048576,
           "output": 131072
         },
-        "status": "beta",
+        "status": "deprecated",
         "cost": {
           "input": 1.305,
           "output": 2.61,

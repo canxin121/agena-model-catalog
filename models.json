@@ -46459,7 +46459,8 @@
       "provider_sources": [
         "huggingface",
         "xiaomi"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "mimo-v2.5-pro": {
       "context_window_tokens": 1048576,
@@ -46518,7 +46519,8 @@
       "provider_sources": [
         "huggingface",
         "xiaomi"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "mimo-v2.5-pro-crof": {
       "context_window_tokens": 1000000,
@@ -46595,7 +46597,7 @@
       "knowledge_cutoff": "2024-12"
     },
     "mimo-v2.5-pro-ultraspeed": {
-      "lifecycle": "beta",
+      "lifecycle": "deprecated",
       "context_window_tokens": 1048576,
       "max_output_tokens": 131072,
       "description": "MiMo pro model for strong multimodal reasoning and agent execution",

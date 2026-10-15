@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "d10bdb286a624e0ab585be0d930d815e0f4c6e9373a536eebdba3448e0bf31fa",
+    "sha256": "8d07fe7aa3f75f6849b4700aee3c012d51db69a36ec82d819f202c1686b5b35f",
     "record_count": 230
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -35356,8 +35356,9 @@
           "output": 16384
         },
         "cost": {
-          "input": 3.125,
-          "output": 12.5
+          "input": 2.5,
+          "output": 10,
+          "cache_read": 1.25
         },
         "canonical_model_id": "openai/gpt-4o-2024-11-20"
       }
@@ -35474,9 +35475,9 @@
           "output": 16384
         },
         "cost": {
-          "input": 0.1875,
-          "output": 0.75,
-          "cache_read": 0.09375
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.075
         },
         "canonical_model_id": "openai/gpt-4o-mini"
       }
@@ -37281,9 +37282,9 @@
           "output": 65536
         },
         "cost": {
-          "input": 2.19,
-          "output": 17.5,
-          "cache_read": 0.219
+          "input": 1.75,
+          "output": 14,
+          "cache_read": 0.175
         },
         "canonical_model_id": "openai/gpt-5.2"
       }
@@ -37349,9 +37350,9 @@
           "output": 128000
         },
         "cost": {
-          "input": 2.19,
-          "output": 17.5,
-          "cache_read": 0.219
+          "input": 1.75,
+          "output": 14,
+          "cache_read": 0.175
         },
         "canonical_model_id": "openai/gpt-5.3-codex"
       }
@@ -37417,9 +37418,25 @@
           "output": 131072
         },
         "cost": {
-          "input": 3.13,
-          "output": 18.8,
-          "cache_read": 0.313
+          "input": 2.5,
+          "output": 15,
+          "cache_read": 0.25,
+          "tiers": [
+            {
+              "input": 5,
+              "output": 22.5,
+              "cache_read": 0.5,
+              "tier": {
+                "type": "context",
+                "size": 272000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 5,
+            "output": 22.5,
+            "cache_read": 0.5
+          }
         },
         "canonical_model_id": "openai/gpt-5.4"
       }
@@ -37485,9 +37502,9 @@
           "output": 128000
         },
         "cost": {
-          "input": 0.9375,
-          "output": 5.625,
-          "cache_read": 0.09375
+          "input": 0.75,
+          "output": 4.5,
+          "cache_read": 0.075
         },
         "canonical_model_id": "openai/gpt-5.4-mini"
       }
@@ -37552,12 +37569,12 @@
           "output": 128000
         },
         "cost": {
-          "input": 37.5,
-          "output": 225,
+          "input": 30,
+          "output": 180,
           "tiers": [
             {
-              "input": 75,
-              "output": 337.5,
+              "input": 60,
+              "output": 270,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -37565,8 +37582,8 @@
             }
           ],
           "context_over_200k": {
-            "input": 75,
-            "output": 337.5
+            "input": 60,
+            "output": 270
           }
         },
         "canonical_model_id": "openai/gpt-5.4-pro"
@@ -37633,14 +37650,14 @@
           "output": 131072
         },
         "cost": {
-          "input": 6.25,
-          "output": 37.5,
-          "cache_read": 0.625,
+          "input": 5,
+          "output": 30,
+          "cache_read": 0.5,
           "tiers": [
             {
-              "input": 12.5,
-              "output": 56.25,
-              "cache_read": 1.25,
+              "input": 10,
+              "output": 45,
+              "cache_read": 1,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -37648,9 +37665,9 @@
             }
           ],
           "context_over_200k": {
-            "input": 12.5,
-            "output": 56.25,
-            "cache_read": 1.25
+            "input": 10,
+            "output": 45,
+            "cache_read": 1
           }
         },
         "canonical_model_id": "openai/gpt-5.5"
@@ -37715,8 +37732,22 @@
           "output": 128000
         },
         "cost": {
-          "input": 37.5,
-          "output": 225
+          "input": 30,
+          "output": 180,
+          "tiers": [
+            {
+              "input": 60,
+              "output": 270,
+              "tier": {
+                "type": "context",
+                "size": 272000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 60,
+            "output": 270
+          }
         },
         "canonical_model_id": "openai/gpt-5.5-pro"
       }
@@ -37782,16 +37813,16 @@
           "output": 128000
         },
         "cost": {
-          "input": 0.25,
-          "output": 1.5,
-          "cache_read": 0.025,
-          "cache_write": 0.3125,
+          "input": 0.2,
+          "output": 1.2,
+          "cache_read": 0.02,
+          "cache_write": 0.25,
           "tiers": [
             {
-              "input": 0.5,
-              "output": 2.25,
-              "cache_read": 0.05,
-              "cache_write": 0.625,
+              "input": 0.4,
+              "output": 1.8,
+              "cache_read": 0.04,
+              "cache_write": 0.5,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -37799,10 +37830,10 @@
             }
           ],
           "context_over_200k": {
-            "input": 0.5,
-            "output": 2.25,
-            "cache_read": 0.05,
-            "cache_write": 0.625
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5
           }
         },
         "canonical_model_id": "openai/gpt-5.6-luna"
@@ -37868,16 +37899,16 @@
           "output": 128000
         },
         "cost": {
-          "input": 0.25,
-          "output": 1.5,
-          "cache_read": 0.025,
-          "cache_write": 0.3125,
+          "input": 0.2,
+          "output": 1.2,
+          "cache_read": 0.02,
+          "cache_write": 0.25,
           "tiers": [
             {
-              "input": 0.5,
-              "output": 2.25,
-              "cache_read": 0.05,
-              "cache_write": 0.625,
+              "input": 0.4,
+              "output": 1.8,
+              "cache_read": 0.04,
+              "cache_write": 0.5,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -37885,10 +37916,10 @@
             }
           ],
           "context_over_200k": {
-            "input": 0.5,
-            "output": 2.25,
-            "cache_read": 0.05,
-            "cache_write": 0.625
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5
           }
         },
         "canonical_model_id": "openai/gpt-5.6-luna"
@@ -37955,16 +37986,16 @@
           "output": 128000
         },
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cache_read": 0.5,
-          "cache_write": 6.25,
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.4,
+          "cache_write": 5,
           "tiers": [
             {
-              "input": 10,
-              "output": 37.5,
-              "cache_read": 1,
-              "cache_write": 12.5,
+              "input": 8,
+              "output": 30,
+              "cache_read": 0.8,
+              "cache_write": 10,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -37972,10 +38003,10 @@
             }
           ],
           "context_over_200k": {
-            "input": 10,
-            "output": 37.5,
-            "cache_read": 1,
-            "cache_write": 12.5
+            "input": 8,
+            "output": 30,
+            "cache_read": 0.8,
+            "cache_write": 10
           }
         },
         "canonical_model_id": "openai/gpt-5.6-sol"
@@ -38042,16 +38073,16 @@
           "output": 128000
         },
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cache_read": 0.5,
-          "cache_write": 6.25,
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.4,
+          "cache_write": 5,
           "tiers": [
             {
-              "input": 10,
-              "output": 37.5,
-              "cache_read": 1,
-              "cache_write": 12.5,
+              "input": 8,
+              "output": 30,
+              "cache_read": 0.8,
+              "cache_write": 10,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -38059,10 +38090,10 @@
             }
           ],
           "context_over_200k": {
-            "input": 10,
-            "output": 37.5,
-            "cache_read": 1,
-            "cache_write": 12.5
+            "input": 8,
+            "output": 30,
+            "cache_read": 0.8,
+            "cache_write": 10
           }
         },
         "canonical_model_id": "openai/gpt-5.6-sol"
@@ -38129,16 +38160,16 @@
           "output": 128000
         },
         "cost": {
-          "input": 2.5,
-          "output": 15,
-          "cache_read": 0.25,
-          "cache_write": 3.125,
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2,
+          "cache_write": 2.5,
           "tiers": [
             {
-              "input": 5,
-              "output": 22.5,
-              "cache_read": 0.5,
-              "cache_write": 6.25,
+              "input": 4,
+              "output": 18,
+              "cache_read": 0.4,
+              "cache_write": 5,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -38146,10 +38177,10 @@
             }
           ],
           "context_over_200k": {
-            "input": 5,
-            "output": 22.5,
-            "cache_read": 0.5,
-            "cache_write": 6.25
+            "input": 4,
+            "output": 18,
+            "cache_read": 0.4,
+            "cache_write": 5
           }
         },
         "canonical_model_id": "openai/gpt-5.6-terra"
@@ -38215,16 +38246,16 @@
           "output": 128000
         },
         "cost": {
-          "input": 2.5,
-          "output": 15,
-          "cache_read": 0.25,
-          "cache_write": 3.125,
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2,
+          "cache_write": 2.5,
           "tiers": [
             {
-              "input": 5,
-              "output": 22.5,
-              "cache_read": 0.5,
-              "cache_write": 6.25,
+              "input": 4,
+              "output": 18,
+              "cache_read": 0.4,
+              "cache_write": 5,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -38232,10 +38263,10 @@
             }
           ],
           "context_over_200k": {
-            "input": 5,
-            "output": 22.5,
-            "cache_read": 0.5,
-            "cache_write": 6.25
+            "input": 4,
+            "output": 18,
+            "cache_read": 0.4,
+            "cache_write": 5
           }
         },
         "canonical_model_id": "openai/gpt-5.6-terra"

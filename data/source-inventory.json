@@ -19,8 +19,8 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "4f9c4dae7f80f6b9e81f3b8c6364528196052168bf6f2e565041d800dfa203d0",
-      "snapshot_record_count": 230
+      "snapshot_sha256": "e3b26ae018cac147e3e8523c88f4bf97232581a0b89a5f06743dece3fa08ce75",
+      "snapshot_record_count": 231
     },
     {
       "id": "opencode",

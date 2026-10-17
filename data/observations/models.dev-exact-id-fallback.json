@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "0c3528cef6a62061db10ffaad5c8288081f6a1397dc33179587493f0e4ffefe3",
+    "sha256": "3e2ba8ce60a2184f1c6f85083f9da3f06488ecbf7f9f9ca8076efffcbc3e6ac2",
     "record_count": 232
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -6317,77 +6317,6 @@
           "cache_write": 6.797
         },
         "canonical_model_id": "anthropic/claude-opus-4-8"
-      }
-    },
-    {
-      "catalog_model_id": "claude-sonnet-4",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "cortecs",
-        "source_id": "claude-sonnet-4",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "claude-sonnet-4",
-        "name": "Claude Sonnet 4 (latest)",
-        "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
-        "family": "claude-sonnet",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          },
-          {
-            "type": "budget_tokens",
-            "min": 1024
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-03-31",
-        "release_date": "2025-05-22",
-        "last_updated": "2025-05-22",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 65000
-        },
-        "cost": {
-          "input": 2.989,
-          "output": 14.945,
-          "cache_read": 0.296,
-          "cache_write": 3.707
-        },
-        "canonical_model_id": "anthropic/claude-sonnet-4-0"
       }
     },
     {
@@ -30776,56 +30705,6 @@
         "cost": {
           "input": 0.159,
           "output": 0.219
-        }
-      }
-    },
-    {
-      "catalog_model_id": "mistral-7b-instruct-v0.3",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "cortecs",
-        "source_id": "mistral-7b-instruct-v0.3",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mistral-7b-instruct-v0.3",
-        "name": "mistral-7b-instruct-v0.3",
-        "description": "Mistral-7B-Instruct-v0.3 model is a fine-tuned version of the Mistral 7B base model, optimized for instruction-following tasks. Released in 2023, it is intended for demonstration purposes and does not include built-in guardrails or moderation features.",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": false,
-        "release_date": "2025-05-26",
-        "last_updated": "2025-05-26",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 127000,
-          "output": 127000
-        },
-        "cost": {
-          "input": 0.111,
-          "output": 0.111
         }
       }
     },

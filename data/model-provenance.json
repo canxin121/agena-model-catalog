@@ -14881,23 +14881,14 @@
         "value": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "helicone",
           "source_id": "claude-sonnet-4",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Claude Sonnet 4 (latest)",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "claude-sonnet-4",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -14906,28 +14897,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-03-31",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "claude-sonnet-4",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "claude-sonnet-4",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -14941,7 +14914,7 @@
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "helicone",
           "source_id": "claude-sonnet-4",
           "priority": 20,
           "policy_rank": 0
@@ -14957,16 +14930,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "claude-sonnet-4",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -113140,28 +113104,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Mistral-7B-Instruct-v0.3 model is a fine-tuned version of the Mistral 7B base model, optimized for instruction-following tasks. Released in 2023, it is intended for demonstration purposes and does not include built-in guardrails or moderation features.",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "mistral-7b-instruct-v0.3",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -113170,16 +113116,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -113188,16 +113125,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -113209,16 +113137,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "mistral-code-agent-latest": {

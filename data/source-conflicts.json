@@ -1977,26 +1977,16 @@
       "model_id": "claude-sonnet-4",
       "field": "display_name",
       "winner": {
-        "value": "Claude Sonnet 4 (latest)",
+        "value": "Anthropic: Claude Sonnet 4",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "helicone",
           "source_id": "claude-sonnet-4",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "Claude Sonnet 4 (latest)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "claude-sonnet-4",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "Anthropic: Claude Sonnet 4",
           "source": {
@@ -2024,26 +2014,16 @@
       "model_id": "claude-sonnet-4",
       "field": "knowledge_cutoff",
       "winner": {
-        "value": "2025-03-31",
+        "value": "2025-05",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "helicone",
           "source_id": "claude-sonnet-4",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "2025-03-31",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "claude-sonnet-4",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "2025-05",
           "source": {
@@ -2071,26 +2051,16 @@
       "model_id": "claude-sonnet-4",
       "field": "last_updated",
       "winner": {
-        "value": "2025-05-22",
+        "value": "2025-05-14",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "helicone",
           "source_id": "claude-sonnet-4",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "2025-05-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "claude-sonnet-4",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "2025-05-14",
           "source": {
@@ -2118,26 +2088,16 @@
       "model_id": "claude-sonnet-4",
       "field": "origin",
       "winner": {
-        "value": "Cortecs",
+        "value": "Helicone",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "helicone",
           "source_id": "claude-sonnet-4",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "Cortecs",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "claude-sonnet-4",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "Helicone",
           "source": {
@@ -2165,26 +2125,16 @@
       "model_id": "claude-sonnet-4",
       "field": "release_date",
       "winner": {
-        "value": "2025-05-22",
+        "value": "2025-05-14",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "helicone",
           "source_id": "claude-sonnet-4",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "2025-05-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "claude-sonnet-4",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "2025-05-14",
           "source": {
@@ -15910,228 +15860,6 @@
             "upstream": "models.dev",
             "provider": "pioneer",
             "source_id": "ministral-3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-7b-instruct-v0.3",
-      "field": "description",
-      "winner": {
-        "value": "Mistral-7B-Instruct-v0.3 model is a fine-tuned version of the Mistral 7B base model, optimized for instruction-following tasks. Released in 2023, it is intended for demonstration purposes and does not include built-in guardrails or moderation features.",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Mistral-7B-Instruct-v0.3 model is a fine-tuned version of the Mistral 7B base model, optimized for instruction-following tasks. Released in 2023, it is intended for demonstration purposes and does not include built-in guardrails or moderation features.",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-7b-instruct-v0.3",
-      "field": "display_name",
-      "winner": {
-        "value": "mistral-7b-instruct-v0.3",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "mistral-7b-instruct-v0.3",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Mistral 7B Instruct v0.3",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-7b-instruct-v0.3",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-05-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-05-26",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-05-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-7b-instruct-v0.3",
-      "field": "open_weights",
-      "winner": {
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-7b-instruct-v0.3",
-      "field": "origin",
-      "winner": {
-        "value": "Cortecs",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Cortecs",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "DigitalOcean",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-7b-instruct-v0.3",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-05-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-7b-instruct-v0.3",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-05-26",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-7b-instruct-v0.3",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-05-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-7b-instruct-v0.3",
             "priority": 20,
             "policy_rank": 0
           }

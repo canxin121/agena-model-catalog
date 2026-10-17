@@ -19,7 +19,7 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "0c3528cef6a62061db10ffaad5c8288081f6a1397dc33179587493f0e4ffefe3",
+      "snapshot_sha256": "3e2ba8ce60a2184f1c6f85083f9da3f06488ecbf7f9f9ca8076efffcbc3e6ac2",
       "snapshot_record_count": 232
     },
     {
@@ -74,9 +74,9 @@
       "published_snapshot": "data/routes/openrouter.json",
       "selection": "exact OpenRouter route only; never merged into provider-global model fields",
       "snapshot_status": "current",
-      "snapshot_sha256": "5af6b415876e1b74f420c729a365a79fdf550796adc0b5c592df2d4356352794",
-      "snapshot_record_count": 467,
-      "last_successful_retrieval": "2026-10-16T23:35:23+00:00"
+      "snapshot_sha256": "9c512f57975a7dce9cd2426ec558565d879db09ed0f816c461ba4f47d637fdaf",
+      "snapshot_record_count": 470,
+      "last_successful_retrieval": "2026-10-17T12:58:22+00:00"
     },
     {
       "id": "litellm",
@@ -94,9 +94,9 @@
       "published_snapshot": "data/routes/litellm.json",
       "selection": "route-level price and limit cross-check; no global fallback without explicit route mapping",
       "snapshot_status": "current",
-      "snapshot_sha256": "83af88edfe2f22f65c7c57c4e91c0c0575d7dfd7510d4f837c96695272acc7bd",
-      "snapshot_record_count": 4190,
-      "last_successful_retrieval": "2026-10-16T08:10:44+00:00"
+      "snapshot_sha256": "e28c17a093ce39e8bce119ba6dcf5630f2f2d1167a70147532cff73720a64e26",
+      "snapshot_record_count": 4201,
+      "last_successful_retrieval": "2026-10-17T12:58:22+00:00"
     },
     {
       "id": "codex-client",
@@ -133,10 +133,10 @@
   ],
   "route_record_counts": {
     "models.dev_allowlisted_observations": 477,
-    "models.dev_exact_id_fallback_candidates": 787,
+    "models.dev_exact_id_fallback_candidates": 785,
     "models.dev_route_limit_caps": 18,
-    "openrouter": 467,
-    "litellm": 4190
+    "openrouter": 470,
+    "litellm": 4201
   },
   "artifact_record_counts": {
     "huggingface": 978

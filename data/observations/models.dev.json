@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "5980b554323ea4f118b06b960dde1eeb193f5bfa4722d6127fb3966d77195a1c",
+    "sha256": "80a19a3c78de1a7b0eb0a72e13e44df21180f0681d6cdf1dbd4c4c345fae3fb6",
     "record_count": 232
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -1870,8 +1870,8 @@
       },
       "raw": {
         "id": "deepseek-flash",
-        "name": "DeepSeek V4.1 Flash",
-        "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+        "name": "DeepSeek V4.1 Flash 1017",
+        "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
         "family": "deepseek-flash",
         "attachment": true,
         "reasoning": true,
@@ -1895,8 +1895,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-05",
-        "release_date": "2026-09-10",
-        "last_updated": "2026-09-10",
+        "release_date": "2026-10-17",
+        "last_updated": "2026-10-17",
         "modalities": {
           "input": [
             "text",
@@ -1917,7 +1917,7 @@
           "reasoning": 0.6,
           "cache_read": 0.003
         },
-        "canonical_model_id": "deepseek/deepseek-v4.1-flash"
+        "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017"
       }
     },
     {
@@ -2251,7 +2251,7 @@
       "raw": {
         "id": "deepseek-v4-flash",
         "name": "DeepSeek V4 Flash",
-        "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+        "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
         "family": "deepseek-flash",
         "attachment": true,
         "reasoning": true,
@@ -2275,8 +2275,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-05",
-        "release_date": "2026-09-10",
-        "last_updated": "2026-09-10",
+        "release_date": "2026-10-17",
+        "last_updated": "2026-10-17",
         "modalities": {
           "input": [
             "text",
@@ -2298,7 +2298,7 @@
           "reasoning": 0.6,
           "cache_read": 0.003
         },
-        "canonical_model_id": "deepseek/deepseek-v4.1-flash"
+        "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017"
       }
     },
     {
@@ -2440,7 +2440,7 @@
       "raw": {
         "id": "deepseek-v4-flash-vision-exp",
         "name": "DeepSeek V4 Flash Vision Exp",
-        "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+        "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
         "family": "deepseek-flash",
         "attachment": true,
         "reasoning": true,
@@ -2464,8 +2464,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-05",
-        "release_date": "2026-09-10",
-        "last_updated": "2026-09-10",
+        "release_date": "2026-10-17",
+        "last_updated": "2026-10-17",
         "modalities": {
           "input": [
             "text",
@@ -2487,7 +2487,7 @@
           "reasoning": 0.6,
           "cache_read": 0.003
         },
-        "canonical_model_id": "deepseek/deepseek-v4.1-flash"
+        "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017"
       }
     },
     {
@@ -6971,7 +6971,8 @@
         },
         "cost": {
           "input": 0.6,
-          "output": 1.8
+          "output": 1.8,
+          "cache_read": 0.11
         }
       }
     },
@@ -7028,7 +7029,8 @@
         },
         "cost": {
           "input": 0.6,
-          "output": 1.8
+          "output": 1.8,
+          "cache_read": 0.11
         }
       }
     },
@@ -7304,7 +7306,8 @@
         },
         "cost": {
           "input": 0.3,
-          "output": 0.9
+          "output": 0.9,
+          "cache_read": 0.05
         }
       }
     },
@@ -7361,7 +7364,8 @@
         },
         "cost": {
           "input": 0.3,
-          "output": 0.9
+          "output": 0.9,
+          "cache_read": 0.05
         }
       }
     },

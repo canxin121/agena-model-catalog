@@ -2831,7 +2831,7 @@
       "model_id": "deepseek-v4-flash",
       "field": "description",
       "winner": {
-        "value": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+        "value": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
         "source": {
           "upstream": "models.dev",
           "provider": "deepseek",
@@ -2842,7 +2842,7 @@
       },
       "candidates": [
         {
-          "value": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+          "value": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
           "source": {
             "upstream": "models.dev",
             "provider": "deepseek",
@@ -2868,7 +2868,7 @@
       "model_id": "deepseek-v4-flash",
       "field": "last_updated",
       "winner": {
-        "value": "2026-09-10",
+        "value": "2026-10-17",
         "source": {
           "upstream": "models.dev",
           "provider": "deepseek",
@@ -2879,7 +2879,7 @@
       },
       "candidates": [
         {
-          "value": "2026-09-10",
+          "value": "2026-10-17",
           "source": {
             "upstream": "models.dev",
             "provider": "deepseek",
@@ -2990,7 +2990,7 @@
       "model_id": "deepseek-v4-flash",
       "field": "release_date",
       "winner": {
-        "value": "2026-09-10",
+        "value": "2026-10-17",
         "source": {
           "upstream": "models.dev",
           "provider": "deepseek",
@@ -3001,7 +3001,7 @@
       },
       "candidates": [
         {
-          "value": "2026-09-10",
+          "value": "2026-10-17",
           "source": {
             "upstream": "models.dev",
             "provider": "deepseek",
@@ -3212,7 +3212,7 @@
       "model_id": "deepseek-v4-flash-vision-exp",
       "field": "description",
       "winner": {
-        "value": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+        "value": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
         "source": {
           "upstream": "models.dev",
           "provider": "deepseek",
@@ -3223,7 +3223,7 @@
       },
       "candidates": [
         {
-          "value": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+          "value": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
           "source": {
             "upstream": "models.dev",
             "provider": "deepseek",
@@ -3249,7 +3249,7 @@
       "model_id": "deepseek-v4-flash-vision-exp",
       "field": "last_updated",
       "winner": {
-        "value": "2026-09-10",
+        "value": "2026-10-17",
         "source": {
           "upstream": "models.dev",
           "provider": "deepseek",
@@ -3260,7 +3260,7 @@
       },
       "candidates": [
         {
-          "value": "2026-09-10",
+          "value": "2026-10-17",
           "source": {
             "upstream": "models.dev",
             "provider": "deepseek",
@@ -3371,7 +3371,7 @@
       "model_id": "deepseek-v4-flash-vision-exp",
       "field": "release_date",
       "winner": {
-        "value": "2026-09-10",
+        "value": "2026-10-17",
         "source": {
           "upstream": "models.dev",
           "provider": "deepseek",
@@ -3382,7 +3382,7 @@
       },
       "candidates": [
         {
-          "value": "2026-09-10",
+          "value": "2026-10-17",
           "source": {
             "upstream": "models.dev",
             "provider": "deepseek",
@@ -6069,6 +6069,68 @@
         },
         {
           "value": 65536,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "zai-org/GLM-4.5V",
+            "priority": 70,
+            "policy_rank": 38
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "glm-4.5v",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "0.6",
+          "output_usd_per_million_tokens": "1.8",
+          "cache_read_usd_per_million_tokens": "0.11"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.5v",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.6",
+            "output_usd_per_million_tokens": "1.8",
+            "cache_read_usd_per_million_tokens": "0.11"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "zai",
+            "source_id": "glm-4.5v",
+            "priority": 70,
+            "policy_rank": 4
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.6",
+            "output_usd_per_million_tokens": "1.8",
+            "cache_read_usd_per_million_tokens": "0.11"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "zhipuai",
+            "source_id": "glm-4.5v",
+            "priority": 70,
+            "policy_rank": 22
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.6",
+            "output_usd_per_million_tokens": "1.8"
+          },
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",

@@ -15683,6 +15683,59 @@
         "huggingface"
       ]
     },
+    "deepseek-v4.1-flash-1017": {
+      "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
+      "knowledge_cutoff": "2025-05",
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "open_weights": true,
+      "display_name": "DeepSeek V4.1 Flash 1017",
+      "origin": "DeepSeek",
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 384000,
+      "input": {
+        "supported": [
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "temperature",
+          "tool_calling"
+        ]
+      },
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "0.3",
+        "output_usd_per_million_tokens": "1.2"
+      },
+      "provider_sources": [
+        "huggingface"
+      ],
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      },
+      "max_input_tokens": 1048576
+    },
     "deplot": {
       "release_date": "2023-04-03",
       "open_weights": true,
@@ -47939,6 +47992,72 @@
         }
       },
       "knowledge_cutoff": "2025-01"
+    },
+    "minimax-m3.1-flash": {
+      "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+      "release_date": "2026-10-19",
+      "last_updated": "2026-10-19",
+      "open_weights": true,
+      "display_name": "MiniMax-M3.1-Flash",
+      "origin": "MiniMax",
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 512000,
+      "input": {
+        "supported": [
+          "image",
+          "text",
+          "video"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "tool_calling"
+        ],
+        "unsupported": [
+          "temperature"
+        ]
+      },
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "0.15",
+        "output_usd_per_million_tokens": "0.6",
+        "cache_read_usd_per_million_tokens": "0.015"
+      },
+      "provider_sources": [
+        "minimax",
+        "minimax-cn"
+      ],
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      },
+      "max_input_tokens": 1000000
     },
     "minimax-m3:thinking": {
       "context_window_tokens": 512000,

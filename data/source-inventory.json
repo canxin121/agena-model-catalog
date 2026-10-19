@@ -19,7 +19,7 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "d5baafefe018fe3e4e34fa3db498697bc1645b7e9f89785abaffd4af43d38979",
+      "snapshot_sha256": "8739071ef5b9a3f9c4b249ac441e94d8ac9574c8601d5e300c24631f43216774",
       "snapshot_record_count": 232
     },
     {
@@ -74,9 +74,9 @@
       "published_snapshot": "data/routes/openrouter.json",
       "selection": "exact OpenRouter route only; never merged into provider-global model fields",
       "snapshot_status": "current",
-      "snapshot_sha256": "5bc22e0de67565c5e9f6c71857537c1e0a4388eb9d8ea01d86f95915738f0ad7",
-      "snapshot_record_count": 471,
-      "last_successful_retrieval": "2026-10-18T23:12:22+00:00"
+      "snapshot_sha256": "329eede9f3c91cc6dd2d606c912326248634df2cfe5f43fd61017907654a01f0",
+      "snapshot_record_count": 469,
+      "last_successful_retrieval": "2026-10-19T16:27:59+00:00"
     },
     {
       "id": "litellm",
@@ -94,9 +94,9 @@
       "published_snapshot": "data/routes/litellm.json",
       "selection": "route-level price and limit cross-check; no global fallback without explicit route mapping",
       "snapshot_status": "current",
-      "snapshot_sha256": "da798353b3d14c09a13f2f1fe42eaf903212c158bb6d94d724836225c68d865d",
-      "snapshot_record_count": 4220,
-      "last_successful_retrieval": "2026-10-18T13:17:55+00:00"
+      "snapshot_sha256": "1ff100083192f0d43d2a33e27a307bb0608ab27c063825dc0b83aa5200400579",
+      "snapshot_record_count": 4222,
+      "last_successful_retrieval": "2026-10-19T16:27:59+00:00"
     },
     {
       "id": "codex-client",
@@ -132,14 +132,14 @@
     }
   ],
   "route_record_counts": {
-    "models.dev_allowlisted_observations": 478,
+    "models.dev_allowlisted_observations": 481,
     "models.dev_exact_id_fallback_candidates": 785,
     "models.dev_route_limit_caps": 18,
-    "openrouter": 471,
-    "litellm": 4220
+    "openrouter": 469,
+    "litellm": 4222
   },
   "artifact_record_counts": {
     "huggingface": 978
   },
-  "model_provenance_count": 1892
+  "model_provenance_count": 1894
 }

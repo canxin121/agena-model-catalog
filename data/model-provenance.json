@@ -32486,6 +32486,238 @@
         "priority": 70
       }
     },
+    "deepseek-v4.1-flash-1017": {
+      "context_window_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1048576,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "description": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "display_name": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "DeepSeek V4.1 Flash 1017",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "features": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+              "priority": 70,
+              "policy_rank": 27
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+              "priority": 70,
+              "policy_rank": 27
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+              "priority": 70,
+              "policy_rank": 27
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+              "priority": 70,
+              "policy_rank": 27
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+              "priority": 70,
+              "policy_rank": 27
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+              "priority": 70,
+              "policy_rank": 27
+            }
+          }
+        }
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2025-05",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "last_updated": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-17",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "max_input_tokens": {
+        "kind": "existing_catalog_or_pipeline_value"
+      },
+      "max_output_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 384000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "open_weights": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "origin": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "DeepSeek",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "output_modalities": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "pricing": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.3",
+          "output_usd_per_million_tokens": "1.2"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "huggingface"
+        ],
+        "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+          }
+        ]
+      },
+      "release_date": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-17",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "priority": 70,
+          "policy_rank": 27
+        }
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
+      }
+    },
     "deplot": {
       "description": {
         "kind": "verified_curated_patch",
@@ -111006,6 +111238,232 @@
         "path": "curation/patches/mistral_minimax.json",
         "priority": 100,
         "has_source_notes": true
+      }
+    },
+    "minimax-m3.1-flash": {
+      "context_window_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1000000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "description": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "display_name": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "MiniMax-M3.1-Flash",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "features": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "minimax",
+              "source_id": "MiniMax-M3.1-Flash",
+              "priority": 70,
+              "policy_rank": 9
+            }
+          },
+          "temperature": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "minimax",
+              "source_id": "MiniMax-M3.1-Flash",
+              "priority": 70,
+              "policy_rank": 9
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "minimax",
+              "source_id": "MiniMax-M3.1-Flash",
+              "priority": 70,
+              "policy_rank": 9
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "minimax",
+              "source_id": "MiniMax-M3.1-Flash",
+              "priority": 70,
+              "policy_rank": 9
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "minimax",
+              "source_id": "MiniMax-M3.1-Flash",
+              "priority": 70,
+              "policy_rank": 9
+            }
+          },
+          "video": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "minimax",
+              "source_id": "MiniMax-M3.1-Flash",
+              "priority": 70,
+              "policy_rank": 9
+            }
+          }
+        }
+      },
+      "last_updated": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-19",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "max_input_tokens": {
+        "kind": "existing_catalog_or_pipeline_value"
+      },
+      "max_output_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 512000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "open_weights": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "origin": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "MiniMax",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "output_modalities": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "pricing": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.15",
+          "output_usd_per_million_tokens": "0.6",
+          "cache_read_usd_per_million_tokens": "0.015"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "minimax",
+          "minimax-cn"
+        ],
+        "observations": [
+          {
+            "provider": "minimax",
+            "source_id": "MiniMax-M3.1-Flash"
+          },
+          {
+            "provider": "minimax-cn",
+            "source_id": "MiniMax-M3.1-Flash"
+          }
+        ]
+      },
+      "release_date": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-19",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
       }
     },
     "minimax-m3:thinking": {

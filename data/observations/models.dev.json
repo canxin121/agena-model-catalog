@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "d5baafefe018fe3e4e34fa3db498697bc1645b7e9f89785abaffd4af43d38979",
+    "sha256": "8739071ef5b9a3f9c4b249ac441e94d8ac9574c8601d5e300c24631f43216774",
     "record_count": 232
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -2809,6 +2809,69 @@
           "output": 1.2
         },
         "canonical_model_id": "deepseek/deepseek-v4.1-flash"
+      }
+    },
+    {
+      "canonical_model_id": "deepseek-v4.1-flash-1017",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+        "priority": 70,
+        "policy_rank": 27
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+        "name": "DeepSeek V4.1 Flash 1017",
+        "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
+        "family": "deepseek-flash",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2025-05",
+        "release_date": "2026-10-17",
+        "last_updated": "2026-10-17",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 1048576,
+          "output": 384000
+        },
+        "cost": {
+          "input": 0.3,
+          "output": 1.2
+        },
+        "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017"
       }
     },
     {
@@ -17125,6 +17188,136 @@
           "output": 1.2
         },
         "canonical_model_id": "minimax/MiniMax-M3"
+      }
+    },
+    {
+      "canonical_model_id": "minimax-m3.1-flash",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "minimax",
+        "source_id": "MiniMax-M3.1-Flash",
+        "priority": 70,
+        "policy_rank": 9
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "MiniMax-M3.1-Flash",
+        "name": "MiniMax-M3.1-Flash",
+        "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+        "family": "minimax",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "temperature": false,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 1000000,
+          "output": 512000
+        },
+        "cost": {
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.015
+        },
+        "canonical_model_id": "minimax/MiniMax-M3.1-Flash"
+      }
+    },
+    {
+      "canonical_model_id": "minimax-m3.1-flash",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "minimax-cn",
+        "source_id": "MiniMax-M3.1-Flash",
+        "priority": 70,
+        "policy_rank": 25
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "MiniMax-M3.1-Flash",
+        "name": "MiniMax-M3.1-Flash",
+        "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+        "family": "minimax",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "temperature": false,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 1000000,
+          "output": 512000
+        },
+        "cost": {
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.015
+        },
+        "canonical_model_id": "minimax/MiniMax-M3.1-Flash"
       }
     },
     {

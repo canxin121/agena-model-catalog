@@ -53004,7 +53004,7 @@
     {
       "route_id": "upstage/solar-mini4",
       "scope": "openrouter_api_route",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "solar-mini4",
       "priority": {
         "identity": 50,
         "limits": 90,

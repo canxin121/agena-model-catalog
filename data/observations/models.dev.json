@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "91b894582a45c8e36a6cdc4fdceae1d222df073fc5fd70d9187888bf1fa921bf",
+    "sha256": "d5baafefe018fe3e4e34fa3db498697bc1645b7e9f89785abaffd4af43d38979",
     "record_count": 232
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -27401,6 +27401,72 @@
       }
     },
     {
+      "canonical_model_id": "solar-mini4",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "upstage",
+        "source_id": "solar-mini4",
+        "priority": 70,
+        "policy_rank": 19
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "solar-mini4",
+        "name": "Solar Mini 4",
+        "description": "Upstage's compact, cost-efficient model for agentic use",
+        "family": "solar-mini",
+        "attachment": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2026-02",
+        "release_date": "2026-09-22",
+        "last_updated": "2026-09-22",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 524288,
+          "output": 131072
+        },
+        "cost": {
+          "input": 0.1,
+          "output": 0.4,
+          "cache_read": 0.01
+        }
+      }
+    },
+    {
       "canonical_model_id": "solar-pro2",
       "scope": "publisher_api_model",
       "source": {
@@ -28564,7 +28630,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1024000,
           "input": 1024000,
@@ -28630,7 +28696,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1000000,
           "input": 1000000,

@@ -163396,6 +163396,229 @@
         }
       }
     },
+    "solar-mini4": {
+      "context_window_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 524288,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "description": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Upstage's compact, cost-efficient model for agentic use",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "display_name": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Solar Mini 4",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "features": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "upstage",
+              "source_id": "solar-mini4",
+              "priority": 70,
+              "policy_rank": 19
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "upstage",
+              "source_id": "solar-mini4",
+              "priority": 70,
+              "policy_rank": 19
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "upstage",
+              "source_id": "solar-mini4",
+              "priority": 70,
+              "policy_rank": 19
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "upstage",
+              "source_id": "solar-mini4",
+              "priority": 70,
+              "policy_rank": 19
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "upstage",
+              "source_id": "solar-mini4",
+              "priority": 70,
+              "policy_rank": 19
+            }
+          }
+        }
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-02",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "last_updated": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-09-22",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "max_input_tokens": {
+        "kind": "existing_catalog_or_pipeline_value"
+      },
+      "max_output_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 131072,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "open_weights": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "origin": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Upstage",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "output_modalities": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "pricing": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.1",
+          "output_usd_per_million_tokens": "0.4",
+          "cache_read_usd_per_million_tokens": "0.01"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "upstage"
+        ],
+        "observations": [
+          {
+            "provider": "upstage",
+            "source_id": "solar-mini4"
+          }
+        ]
+      },
+      "release_date": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-09-22",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "upstage",
+          "source_id": "solar-mini4",
+          "priority": 70,
+          "policy_rank": 19
+        }
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
+      }
+    },
     "solar-pro-3": {
       "context_window_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -167455,7 +167678,7 @@
       "open_weights": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": false,
+        "value": true,
         "source": {
           "upstream": "models.dev",
           "provider": "stepfun-ai",

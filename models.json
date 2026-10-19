@@ -69508,6 +69508,78 @@
         "upstage"
       ]
     },
+    "solar-mini4": {
+      "description": "Upstage's compact, cost-efficient model for agentic use",
+      "knowledge_cutoff": "2026-02",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "open_weights": false,
+      "display_name": "Solar Mini 4",
+      "origin": "Upstage",
+      "context_window_tokens": 524288,
+      "max_output_tokens": 131072,
+      "input": {
+        "supported": [
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "temperature",
+          "tool_calling"
+        ]
+      },
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "0.1",
+        "output_usd_per_million_tokens": "0.4",
+        "cache_read_usd_per_million_tokens": "0.01"
+      },
+      "provider_sources": [
+        "upstage"
+      ],
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      },
+      "max_input_tokens": 524288
+    },
     "solar-pro-3": {
       "context_window_tokens": 131072,
       "max_input_tokens": 128000,
@@ -70778,7 +70850,7 @@
       "description": "StepFun's next-generation flagship base model for coding and professional knowledge work, with native text, image, and video input and a 1M-token context window",
       "release_date": "2026-09-16",
       "last_updated": "2026-09-20",
-      "open_weights": false,
+      "open_weights": true,
       "display_name": "Step 5 Preview",
       "origin": "StepFun",
       "assistant_reasoning_interleaved": true,

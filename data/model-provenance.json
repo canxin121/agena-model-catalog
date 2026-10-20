@@ -105298,23 +105298,14 @@
         "value": "Open MiMo model for multimodal coding agents and long-context automation",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "kenari",
           "source_id": "mimo-v2-5",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "MiMo V2.5",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "empiriolabs",
-          "source_id": "mimo-v2-5",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -105328,7 +105319,7 @@
         "value": "2024-12",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "kenari",
           "source_id": "mimo-v2-5",
           "priority": 20,
           "policy_rank": 0
@@ -105340,7 +105331,7 @@
         "value": "2026-04-22",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "kenari",
           "source_id": "mimo-v2-5",
           "priority": 20,
           "policy_rank": 0
@@ -105358,7 +105349,7 @@
         "value": true,
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "kenari",
           "source_id": "mimo-v2-5",
           "priority": 20,
           "policy_rank": 0
@@ -105379,7 +105370,7 @@
         "value": "2026-04-22",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "kenari",
           "source_id": "mimo-v2-5",
           "priority": 20,
           "policy_rank": 0
@@ -105402,23 +105393,14 @@
         "value": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "kenari",
           "source_id": "mimo-v2-5-pro",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "MiMo V2.5 Pro",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "empiriolabs",
-          "source_id": "mimo-v2-5-pro",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -105432,7 +105414,7 @@
         "value": "2024-12",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "kenari",
           "source_id": "mimo-v2-5-pro",
           "priority": 20,
           "policy_rank": 0
@@ -105444,7 +105426,7 @@
         "value": "2026-04-22",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "kenari",
           "source_id": "mimo-v2-5-pro",
           "priority": 20,
           "policy_rank": 0
@@ -105462,7 +105444,7 @@
         "value": true,
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "kenari",
           "source_id": "mimo-v2-5-pro",
           "priority": 20,
           "policy_rank": 0
@@ -105483,7 +105465,7 @@
         "value": "2026-04-22",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "kenari",
           "source_id": "mimo-v2-5-pro",
           "priority": 20,
           "policy_rank": 0

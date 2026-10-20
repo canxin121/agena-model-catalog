@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "6380927df10782511a2c36dfd45a2ec37434021ced35ef7de874ceb45ce90356",
+    "sha256": "9e46899001ebaa557ca8814182b2290c3fe85fe0f3a301d3640d5794567f29e2",
     "record_count": 231
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -11135,61 +11135,6 @@
           "output": 1.68,
           "cache_read": 0.07
         }
-      }
-    },
-    {
-      "catalog_model_id": "deepseek-reasoner",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "deepseek-reasoner",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "deepseek-reasoner",
-        "name": "DeepSeek Reasoner",
-        "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
-        "family": "deepseek-thinking",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "temperature": true,
-        "knowledge": "2025-09",
-        "release_date": "2025-12-01",
-        "last_updated": "2026-02-28",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 64000,
-          "input": 64000,
-          "output": 65536
-        },
-        "cost": {
-          "input": 0.4,
-          "output": 1.7,
-          "cache_read": 0.2
-        },
-        "canonical_model_id": "deepseek/deepseek-reasoner"
       }
     },
     {
@@ -29263,68 +29208,6 @@
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
         "upstream": "models.dev",
-        "provider": "empiriolabs",
-        "source_id": "mimo-v2-5",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mimo-v2-5",
-        "name": "MiMo V2.5",
-        "description": "Open MiMo model for multimodal coding agents and long-context automation",
-        "family": "mimo",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2024-12",
-        "release_date": "2026-04-22",
-        "last_updated": "2026-04-22",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "audio",
-            "video"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1000000,
-          "output": 128000
-        },
-        "cost": {
-          "input": 0.7,
-          "output": 1.4,
-          "cache_read": 0.014
-        },
-        "canonical_model_id": "xiaomi/mimo-v2.5"
-      }
-    },
-    {
-      "catalog_model_id": "mimo-v2-5",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
         "provider": "kenari",
         "source_id": "mimo-v2-5",
         "priority": 20,
@@ -29374,65 +29257,6 @@
           "output": 0
         },
         "canonical_model_id": "xiaomi/mimo-v2.5"
-      }
-    },
-    {
-      "catalog_model_id": "mimo-v2-5-pro",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "empiriolabs",
-        "source_id": "mimo-v2-5-pro",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mimo-v2-5-pro",
-        "name": "MiMo V2.5 Pro",
-        "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
-        "family": "mimo",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2024-12",
-        "release_date": "2026-04-22",
-        "last_updated": "2026-04-22",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1000000,
-          "output": 128000
-        },
-        "cost": {
-          "input": 2.175,
-          "output": 4.35,
-          "cache_read": 0.018
-        },
-        "canonical_model_id": "xiaomi/mimo-v2.5-pro"
       }
     },
     {

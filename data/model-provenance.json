@@ -71206,272 +71206,79 @@
     },
     "gpt-5.2-chat-latest": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 128000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "302ai",
           "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "GPT-5.2 Chat",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.2-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "structured_output": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.2-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "temperature": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.2-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "tool_calling": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.2-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "image": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.2-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.2-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2025-08-31",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "302ai",
           "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2025-12-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "deprecated",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 16384,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "302ai",
           "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "OpenAI",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "text"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "pricing": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": {
-          "input_usd_per_million_tokens": "1.75",
-          "output_usd_per_million_tokens": "14",
-          "cache_read_usd_per_million_tokens": "0.175"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
-      },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "openai"
-        ],
-        "observations": [
-          {
-            "provider": "openai",
-            "source_id": "gpt-5.2-chat-latest"
-          }
-        ]
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2025-12-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
-        "kind": "derived_from_models.dev_reasoning_options",
-        "upstream": "models.dev",
-        "priority": 70
-      },
-      "verbosity_by_provider": {
-        "kind": "provider_scoped_verbosity_resolution",
-        "scope": "publisher_api_model",
-        "providers": {
-          "openai": {
-            "kind": "curated_provider_api_profile",
-            "value": {
-              "supported": true,
-              "levels": [
-                "low",
-                "medium",
-                "high"
-              ],
-              "provider_default": "medium"
-            },
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.2-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "gpt-5.2-codex": {
@@ -71928,146 +71735,71 @@
     },
     "gpt-5.3-chat-latest": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 128000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "302ai",
           "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "display_name": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "GPT-5.3 Chat (latest)",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "302ai",
           "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.3-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "structured_output": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.3-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "temperature": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.3-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "tool_calling": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.3-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "image": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.3-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.3-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2025-08-31",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "302ai",
           "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2026-03-03",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "302ai",
           "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "lifecycle": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "deprecated",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "opper",
           "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
@@ -72075,93 +71807,38 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 16384,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "302ai",
           "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "OpenAI",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "text"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "pricing": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": {
-          "input_usd_per_million_tokens": "1.75",
-          "output_usd_per_million_tokens": "14",
-          "cache_read_usd_per_million_tokens": "0.175"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
-          "policy_rank": 0
-        }
-      },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "openai"
-        ],
-        "observations": [
-          {
-            "provider": "openai",
-            "source_id": "gpt-5.3-chat-latest"
-          }
-        ]
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2026-03-03",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "302ai",
           "source_id": "gpt-5.3-chat-latest",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
@@ -72170,31 +71847,6 @@
         "path": "curation/patches/xiaomi_xai_openai.json",
         "priority": 100,
         "has_source_notes": true
-      },
-      "verbosity_by_provider": {
-        "kind": "provider_scoped_verbosity_resolution",
-        "scope": "publisher_api_model",
-        "providers": {
-          "openai": {
-            "kind": "curated_provider_api_profile",
-            "value": {
-              "supported": true,
-              "levels": [
-                "low",
-                "medium",
-                "high"
-              ],
-              "provider_default": "medium"
-            },
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-5.3-chat-latest",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          }
-        }
       }
     },
     "gpt-5.3-codex": {
@@ -156634,23 +156286,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "configured_route_limit_cap",
-        "upstream": "models.dev",
-        "value": 65536,
-        "priority": 70,
-        "resolution": "lower configured route limit",
-        "official_value": 131072,
-        "route_value": 65536,
-        "routes": [
-          {
-            "upstream": "models.dev",
-            "provider": "cline-pass",
-            "source_id": "cline-pass/qwen3.7-max",
-            "route_id": "cline-pass/qwen3.7-max",
-            "context_window_tokens": 1000000,
-            "max_output_tokens": 65536
-          }
-        ]
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 131072,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3.7-max",
+          "priority": 70,
+          "policy_rank": 5
+        }
       },
       "open_weights": {
         "kind": "upstream_field_observation",

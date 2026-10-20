@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "8739071ef5b9a3f9c4b249ac441e94d8ac9574c8601d5e300c24631f43216774",
+    "sha256": "b944f63543aae99181e7d74ac40b7ccc389b4d11306c2db07a1086381aebf5b5",
     "record_count": 232
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -13165,12 +13165,14 @@
       },
       "raw": {
         "id": "faster-whisper-large-v3",
+        "type": "transcription",
         "name": "Faster Whisper Large v3",
         "description": "Open Whisper checkpoint for robust multilingual transcription and captioning",
         "family": "whisper",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": false,
+        "temperature": true,
         "release_date": "2024-10-01",
         "last_updated": "2024-10-01",
         "modalities": {
@@ -20349,7 +20351,7 @@
         "name": "GPT-5-Codex",
         "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
         "family": "gpt-codex",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [],
         "tool_call": true,
@@ -22262,6 +22264,120 @@
       }
     },
     {
+      "catalog_model_id": "gpt-5.2-chat-latest",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "302ai",
+        "source_id": "gpt-5.2-chat-latest",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gpt-5.2-chat-latest",
+        "name": "gpt-5.2-chat-latest",
+        "description": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
+        "family": "gpt-codex",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "medium"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": false,
+        "knowledge": "2025-08-31",
+        "release_date": "2025-12-12",
+        "last_updated": "2025-12-12",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 128000,
+          "output": 16384
+        },
+        "cost": {
+          "input": 1.75,
+          "output": 14
+        }
+      }
+    },
+    {
+      "catalog_model_id": "gpt-5.2-chat-latest",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "abacus",
+        "source_id": "gpt-5.2-chat-latest",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gpt-5.2-chat-latest",
+        "name": "GPT-5.2 Chat Latest",
+        "description": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
+        "family": "gpt",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "tool_call": true,
+        "temperature": true,
+        "knowledge": "2024-09-30",
+        "release_date": "2026-01-01",
+        "last_updated": "2026-01-01",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 400000,
+          "output": 128000
+        },
+        "cost": {
+          "input": 1.75,
+          "output": 14
+        }
+      }
+    },
+    {
       "catalog_model_id": "gpt-5.2-codex",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -22816,6 +22932,168 @@
           "output": 14,
           "cache_read": 0.175
         }
+      }
+    },
+    {
+      "catalog_model_id": "gpt-5.3-chat-latest",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "302ai",
+        "source_id": "gpt-5.3-chat-latest",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gpt-5.3-chat-latest",
+        "name": "GPT-5.3 Chat (latest)",
+        "description": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
+        "family": "gpt",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2025-08-31",
+        "release_date": "2026-03-03",
+        "last_updated": "2026-03-03",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 128000,
+          "output": 16384
+        },
+        "cost": {
+          "input": 1.75,
+          "output": 14
+        },
+        "canonical_model_id": "openai/gpt-5.3-chat-latest"
+      }
+    },
+    {
+      "catalog_model_id": "gpt-5.3-chat-latest",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "abacus",
+        "source_id": "gpt-5.3-chat-latest",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gpt-5.3-chat-latest",
+        "name": "GPT-5.3 Chat Latest",
+        "description": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
+        "family": "gpt",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-03-01",
+        "last_updated": "2026-03-01",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 400000,
+          "output": 128000
+        },
+        "cost": {
+          "input": 1.75,
+          "output": 14
+        }
+      }
+    },
+    {
+      "catalog_model_id": "gpt-5.3-chat-latest",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "opper",
+        "source_id": "gpt-5.3-chat-latest",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gpt-5.3-chat-latest",
+        "name": "GPT-5.3 Chat (latest)",
+        "description": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
+        "family": "gpt",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2025-08-31",
+        "release_date": "2026-03-03",
+        "last_updated": "2026-03-03",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 128000,
+          "output": 16384
+        },
+        "status": "deprecated",
+        "cost": {
+          "input": 1.75,
+          "output": 14,
+          "cache_read": 0.175
+        },
+        "canonical_model_id": "openai/gpt-5.3-chat-latest"
       }
     },
     {
@@ -38433,7 +38711,6 @@
           }
         ],
         "tool_call": true,
-        "structured_output": true,
         "temperature": true,
         "release_date": "2025-11-06",
         "last_updated": "2026-06-11",
@@ -40136,7 +40413,7 @@
         "open_weights": false,
         "limit": {
           "context": 1000000,
-          "output": 65536
+          "output": 131072
         },
         "cost": {
           "input": 2.7,
@@ -45467,12 +45744,14 @@
       },
       "raw": {
         "id": "whisper-large-v3",
+        "type": "transcription",
         "name": "Whisper large-v3",
         "description": "Open Whisper checkpoint for robust multilingual transcription and captioning",
         "family": "whisper",
         "attachment": true,
         "reasoning": false,
         "tool_call": false,
+        "temperature": true,
         "release_date": "2024-10-01",
         "last_updated": "2024-10-01",
         "modalities": {
@@ -45614,12 +45893,14 @@
       },
       "raw": {
         "id": "whisper-large-v3-turbo",
+        "type": "transcription",
         "name": "Whisper Large v3 Turbo",
         "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
         "family": "whisper",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": false,
+        "temperature": true,
         "release_date": "2024-10-01",
         "last_updated": "2024-10-01",
         "modalities": {

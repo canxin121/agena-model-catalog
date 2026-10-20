@@ -11011,6 +11011,191 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "gpt-5.2-chat-latest",
+      "field": "display_name",
+      "winner": {
+        "value": "gpt-5.2-chat-latest",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.2-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "gpt-5.2-chat-latest",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-5.2-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "GPT-5.2 Chat Latest",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-5.2-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-5.2-chat-latest",
+      "field": "knowledge_cutoff",
+      "winner": {
+        "value": "2025-08-31",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.2-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-08-31",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-5.2-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-09-30",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-5.2-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-5.2-chat-latest",
+      "field": "last_updated",
+      "winner": {
+        "value": "2025-12-12",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.2-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-12-12",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-5.2-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2026-01-01",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-5.2-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-5.2-chat-latest",
+      "field": "origin",
+      "winner": {
+        "value": "302.AI",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.2-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "302.AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-5.2-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Abacus",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-5.2-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-5.2-chat-latest",
+      "field": "release_date",
+      "winner": {
+        "value": "2025-12-12",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.2-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-12-12",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-5.2-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2026-01-01",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-5.2-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "gpt-5.2-codex",
       "field": "description",
       "winner": {
@@ -11538,6 +11723,194 @@
             "upstream": "models.dev",
             "provider": "vivgrid",
             "source_id": "gpt-5.2-codex",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-5.3-chat-latest",
+      "field": "display_name",
+      "winner": {
+        "value": "GPT-5.3 Chat (latest)",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.3-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "GPT-5.3 Chat (latest)",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "GPT-5.3 Chat Latest",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "GPT-5.3 Chat (latest)",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "opper",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-5.3-chat-latest",
+      "field": "last_updated",
+      "winner": {
+        "value": "2026-03-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.3-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2026-03-03",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2026-03-01",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2026-03-03",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "opper",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-5.3-chat-latest",
+      "field": "origin",
+      "winner": {
+        "value": "302.AI",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.3-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "302.AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Abacus",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Opper",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "opper",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-5.3-chat-latest",
+      "field": "release_date",
+      "winner": {
+        "value": "2026-03-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.3-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2026-03-03",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2026-03-01",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-5.3-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2026-03-03",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "opper",
+            "source_id": "gpt-5.3-chat-latest",
             "priority": 20,
             "policy_rank": 0
           }
@@ -25318,43 +25691,6 @@
             "upstream": "models.dev",
             "provider": "alibaba-cn",
             "source_id": "qwen3.7-flash",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3.7-max",
-      "field": "max_output_tokens",
-      "winner": {
-        "value": 131072,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3.7-max",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": 131072,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3.7-max",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": 65536,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3.7-max",
             "priority": 70,
             "policy_rank": 23
           }

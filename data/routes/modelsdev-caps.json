@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "8739071ef5b9a3f9c4b249ac441e94d8ac9574c8601d5e300c24631f43216774",
+    "sha256": "b944f63543aae99181e7d74ac40b7ccc389b4d11306c2db07a1086381aebf5b5",
     "record_count": 232
   },
   "scope": "configured_route_limit_cap",
@@ -834,7 +834,7 @@
       "priority": 70,
       "fields": {
         "context_window_tokens": 1000000,
-        "max_output_tokens": 65536
+        "max_output_tokens": 131072
       },
       "raw": {
         "id": "cline-pass/qwen3.7-max",
@@ -863,7 +863,7 @@
         "open_weights": false,
         "limit": {
           "context": 1000000,
-          "output": 65536
+          "output": 131072
         },
         "cost": {
           "input": 2.5,

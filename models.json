@@ -31336,21 +31336,7 @@
         ]
       },
       "max_input_tokens": 128000,
-      "lifecycle": "deprecated",
-      "provider_sources": [
-        "openai"
-      ],
-      "verbosity_by_provider": {
-        "openai": {
-          "supported": true,
-          "levels": [
-            "low",
-            "medium",
-            "high"
-          ],
-          "provider_default": "medium"
-        }
-      }
+      "lifecycle": "deprecated"
     },
     "gpt-5.2-codex": {
       "context_window_tokens": 400000,
@@ -31617,21 +31603,7 @@
         }
       },
       "max_input_tokens": 128000,
-      "lifecycle": "deprecated",
-      "provider_sources": [
-        "openai"
-      ],
-      "verbosity_by_provider": {
-        "openai": {
-          "supported": true,
-          "levels": [
-            "low",
-            "medium",
-            "high"
-          ],
-          "provider_default": "medium"
-        }
-      }
+      "lifecycle": "deprecated"
     },
     "gpt-5.3-codex": {
       "context_window_tokens": 400000,
@@ -66079,7 +66051,7 @@
     "qwen3.7-max": {
       "context_window_tokens": 1000000,
       "max_input_tokens": 1000000,
-      "max_output_tokens": 65536,
+      "max_output_tokens": 131072,
       "description": "Qwen frontier model tuned for agent frameworks, coding assistants, and long tasks",
       "release_date": "2026-05-21",
       "last_updated": "2026-05-21",

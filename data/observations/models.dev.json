@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "8739071ef5b9a3f9c4b249ac441e94d8ac9574c8601d5e300c24631f43216774",
+    "sha256": "b944f63543aae99181e7d74ac40b7ccc389b4d11306c2db07a1086381aebf5b5",
     "record_count": 232
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -29,6 +29,7 @@
       },
       "raw": {
         "id": "chatgpt-image-latest",
+        "type": "image",
         "name": "chatgpt-image-latest",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -9384,7 +9385,7 @@
         "name": "GPT-4",
         "description": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
         "family": "gpt",
-        "attachment": true,
+        "attachment": false,
         "reasoning": false,
         "tool_call": true,
         "structured_output": false,
@@ -10506,68 +10507,6 @@
       }
     },
     {
-      "canonical_model_id": "gpt-5.2-chat-latest",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "gpt-5.2-chat-latest",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gpt-5.2-chat-latest",
-        "name": "GPT-5.2 Chat",
-        "description": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
-        "family": "gpt-codex",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "medium"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": false,
-        "knowledge": "2025-08-31",
-        "release_date": "2025-12-11",
-        "last_updated": "2025-12-11",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "output": 16384
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 1.75,
-          "output": 14,
-          "cache_read": 0.175
-        }
-      }
-    },
-    {
       "canonical_model_id": "gpt-5.2-pro",
       "scope": "publisher_api_model",
       "source": {
@@ -10627,60 +10566,6 @@
         "cost": {
           "input": 21,
           "output": 168
-        }
-      }
-    },
-    {
-      "canonical_model_id": "gpt-5.3-chat-latest",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "gpt-5.3-chat-latest",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gpt-5.3-chat-latest",
-        "name": "GPT-5.3 Chat (latest)",
-        "description": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
-        "family": "gpt",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-08-31",
-        "release_date": "2026-03-03",
-        "last_updated": "2026-03-03",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "output": 16384
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 1.75,
-          "output": 14,
-          "cache_read": 0.175
         }
       }
     },
@@ -12477,6 +12362,7 @@
       },
       "raw": {
         "id": "gpt-image-1",
+        "type": "image",
         "name": "gpt-image-1",
         "description": "OpenAI image model for production generation, edits, and brand-safe visual workflows",
         "family": "gpt-image",
@@ -12526,6 +12412,7 @@
       },
       "raw": {
         "id": "gpt-image-1-mini",
+        "type": "image",
         "name": "gpt-image-1-mini",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -12574,6 +12461,7 @@
       },
       "raw": {
         "id": "gpt-image-1.5",
+        "type": "image",
         "name": "gpt-image-1.5",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -12623,6 +12511,7 @@
       },
       "raw": {
         "id": "gpt-image-2",
+        "type": "image",
         "name": "gpt-image-2",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -12798,6 +12687,7 @@
       },
       "raw": {
         "id": "gpt-realtime-2.1",
+        "type": "realtime",
         "name": "GPT-Realtime-2.1",
         "description": "Realtime speech-to-speech model with configurable reasoning, tool use, and robust voice-agent behavior",
         "family": "gpt",
@@ -19130,7 +19020,7 @@
               "cost": {
                 "input": 0.55,
                 "output": 2.2,
-                "cache_read": 0.138
+                "cache_read": 0.1375
               },
               "provider": {
                 "body": {
@@ -26477,7 +26367,7 @@
         "open_weights": false,
         "limit": {
           "context": 1000000,
-          "output": 65536
+          "output": 131072
         },
         "cost": {
           "input": 2.5,
@@ -29014,6 +28904,7 @@
       },
       "raw": {
         "id": "text-embedding-3-large",
+        "type": "embedding",
         "name": "text-embedding-3-large",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
         "family": "text-embedding",
@@ -29064,6 +28955,7 @@
       },
       "raw": {
         "id": "text-embedding-3-small",
+        "type": "embedding",
         "name": "text-embedding-3-small",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
         "family": "text-embedding",
@@ -29114,6 +29006,7 @@
       },
       "raw": {
         "id": "text-embedding-ada-002",
+        "type": "embedding",
         "name": "text-embedding-ada-002",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
         "family": "text-embedding",

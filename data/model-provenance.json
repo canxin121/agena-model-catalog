@@ -53273,94 +53273,252 @@
     },
     "gemini-pro-latest": {
       "context_window_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1048576,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-pro-latest",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "description": {
         "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
+        "scope": "publisher_api_model",
+        "value": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
+          "provider": "google",
           "source_id": "gemini-pro-latest",
-          "priority": 20,
-          "policy_rank": 0
+          "priority": 70,
+          "policy_rank": 2
         }
       },
       "display_name": {
         "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
+        "scope": "publisher_api_model",
         "value": "Gemini Pro Latest",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
+          "provider": "google",
           "source_id": "gemini-pro-latest",
-          "priority": 20,
-          "policy_rank": 0
+          "priority": 70,
+          "policy_rank": 2
         }
       },
       "features": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-pro-latest",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-pro-latest",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-pro-latest",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-pro-latest",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          }
+        }
       },
       "input": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "audio": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-pro-latest",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-pro-latest",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-pro-latest",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-pro-latest",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "video": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-pro-latest",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          }
+        }
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2025-01",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-pro-latest",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-02-27",
+        "scope": "publisher_api_model",
+        "value": "2026-02-19",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
+          "provider": "google",
           "source_id": "gemini-pro-latest",
-          "priority": 20,
-          "policy_rank": 0
+          "priority": 70,
+          "policy_rank": 2
         }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 65536,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-pro-latest",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "open_weights": {
         "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
+        "scope": "publisher_api_model",
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
+          "provider": "google",
           "source_id": "gemini-pro-latest",
-          "priority": 20,
-          "policy_rank": 0
+          "priority": 70,
+          "policy_rank": 2
         }
       },
       "origin": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Google",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-pro-latest",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "output_modalities": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-pro-latest",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "pricing": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "google"
+        ],
+        "observations": [
+          {
+            "provider": "google",
+            "source_id": "gemini-pro-latest"
+          }
+        ]
+      },
       "release_date": {
         "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-02-27",
+        "scope": "publisher_api_model",
+        "value": "2026-02-19",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
+          "provider": "google",
           "source_id": "gemini-pro-latest",
-          "priority": 20,
-          "policy_rank": 0
+          "priority": 70,
+          "policy_rank": 2
         }
       },
       "thinking_modes": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
       }
     },
     "gemini-robotics-er-1.6-preview": {
@@ -123534,16 +123692,46 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Fast NVIDIA Nemotron MoE for reliable agentic tasks across enterprise workloads",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "requesty",
+          "source_id": "nemotron-3.5-lightning-30b-a3b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Nemotron 3.5 Lightning 30B A3B",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "requesty",
+          "source_id": "nemotron-3.5-lightning-30b-a3b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "requesty",
+          "source_id": "nemotron-3.5-lightning-30b-a3b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
@@ -123564,7 +123752,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "requesty",
+          "source_id": "nemotron-3.5-lightning-30b-a3b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -162253,7 +162450,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Seed 1.8",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "requesty",
+          "source_id": "seed-1.8",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"

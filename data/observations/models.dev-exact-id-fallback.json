@@ -3,8 +3,8 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "9e46899001ebaa557ca8814182b2290c3fe85fe0f3a301d3640d5794567f29e2",
-    "record_count": 231
+    "sha256": "80e1cc115596fc0b516078eb098d44d194137c13c876b620719e017f2383a18e",
+    "record_count": 232
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
   "records": [
@@ -5028,79 +5028,6 @@
           "input": 13.5,
           "output": 67.5
         }
-      }
-    },
-    {
-      "catalog_model_id": "claude-opus-4-1-20250805",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "llmgateway",
-        "source_id": "claude-opus-4-1-20250805",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "claude-opus-4-1-20250805",
-        "name": "Claude Opus 4.1",
-        "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-        "family": "claude-opus",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "budget_tokens",
-            "min": 1024,
-            "max": 31999
-          },
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high",
-              "xhigh",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-03-31",
-        "release_date": "2025-08-05",
-        "last_updated": "2025-08-05",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 32000
-        },
-        "cost": {
-          "input": 15,
-          "output": 75,
-          "cache_read": 1.5,
-          "cache_write": 18.75
-        },
-        "canonical_model_id": "anthropic/claude-opus-4-1-20250805"
       }
     },
     {
@@ -16217,130 +16144,6 @@
           "input": 1.258,
           "output": 4.998,
           "cache_read": 0.629
-        }
-      }
-    },
-    {
-      "catalog_model_id": "gemini-pro-latest",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "llmgateway",
-        "source_id": "gemini-pro-latest",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "gemini-pro-latest",
-        "name": "Gemini Pro Latest",
-        "description": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
-        "family": "gemini",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "release_date": "2026-02-27",
-        "last_updated": "2026-02-27",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1048576,
-          "output": 65536
-        },
-        "cost": {
-          "input": 2,
-          "output": 12,
-          "cache_read": 0.2
-        }
-      }
-    },
-    {
-      "catalog_model_id": "gemini-pro-latest",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "the-grid-ai",
-        "source_id": "gemini-pro-latest",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "gemini-pro-latest",
-        "name": "Gemini Pro Latest",
-        "description": "Lab latest market for Gemini Pro frontier supply. You contract for the latest qualifying route, not a specific model.",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "structured_output": true,
-        "temperature": false,
-        "release_date": "2026-07-06",
-        "last_updated": "2026-07-06",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1000000,
-          "input": 922000,
-          "output": 65536
         }
       }
     },
@@ -31191,7 +30994,7 @@
         "open_weights": false,
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 209715
         },
         "cost": {
           "input": 1.65,
@@ -34006,8 +33809,8 @@
       },
       "raw": {
         "id": "nemotron-3.5-lightning-30b-a3b",
-        "name": "nemotron-3.5-lightning-30b-a3b",
-        "description": "NVIDIA Nemotron 3.5 Lightning 30B-A3B is a hybrid Mamba-2 + MoE + Attention model with 30B total and 3B active parameters, pre-trained on over 20T tokens with an NVFP4 recipe and Multi-Token Prediction for fast generation. Up to 1M token context for long-running autonomous agents, sub-agent workhorse deployments, and agentic workflows. Supports reasoning and tool calling. English and coding languages plus Spanish, French, German, Italian, and Japanese. Open weights under the OpenMDW License Agreement v1.1. Part of the NVIDIA Nemotron family.",
+        "name": "Nemotron 3.5 Lightning 30B A3B",
+        "description": "Fast NVIDIA Nemotron MoE for reliable agentic tasks across enterprise workloads",
         "family": "nemotron",
         "attachment": false,
         "reasoning": true,
@@ -34025,6 +33828,8 @@
         ],
         "tool_call": true,
         "structured_output": false,
+        "temperature": true,
+        "knowledge": "2025-09",
         "release_date": "2026-08-11",
         "last_updated": "2026-08-11",
         "modalities": {
@@ -34035,7 +33840,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1048576,
           "output": 65536
@@ -34043,7 +33848,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "nvidia/nemotron-3.5-lightning"
       }
     },
     {
@@ -39475,59 +39281,6 @@
       }
     },
     {
-      "catalog_model_id": "pixtral-12b-2409",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "scaleway",
-        "source_id": "pixtral-12b-2409",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "pixtral-12b-2409",
-        "name": "Pixtral 12B 2409",
-        "description": "Mistral vision-language model for image understanding and multimodal chat",
-        "family": "pixtral",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-09",
-        "release_date": "2024-09-25",
-        "last_updated": "2026-03-17",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 4096
-        },
-        "cost": {
-          "input": 0.2,
-          "output": 0.2
-        },
-        "canonical_model_id": "mistral/pixtral-12b"
-      }
-    },
-    {
       "catalog_model_id": "pixtral-large-2502",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -41572,9 +41325,9 @@
       },
       "raw": {
         "id": "qwen3.5-2b",
-        "name": "qwen3.5-2b",
-        "description": "Qwen3.5-2B is a compact yet capable model from Alibaba's Qwen3.5 series. It features a 262K token context window, support for 201 languages, thinking/reasoning mode, and tool calling for agentic workflows. A strong choice for prototyping, fine-tuning, and efficient multilingual deployments.",
-        "family": "qwen3.5",
+        "name": "Qwen3.5 2B",
+        "description": "Compact Qwen3.5 multimodal model for fast chat, reasoning, and tool use",
+        "family": "qwen",
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
@@ -41591,26 +41344,29 @@
         ],
         "tool_call": true,
         "structured_output": true,
-        "release_date": "2026-03-10",
-        "last_updated": "2026-03-10",
+        "temperature": true,
+        "release_date": "2026-03-02",
+        "last_updated": "2026-03-02",
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "video"
           ],
           "output": [
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 81920
         },
         "cost": {
           "input": 0.02,
           "output": 0.1
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3.5-2b"
       }
     },
     {
@@ -42952,8 +42708,8 @@
       },
       "raw": {
         "id": "seed-1.8",
-        "name": "seed-1.8",
-        "description": "Optimized specifically for multimodal agent scenarios. It features enhanced agent capabilities, upgraded multimodal comprehension, and more flexible context management.",
+        "name": "Seed 1.8",
+        "description": "ByteDance Seed model for multimodal reasoning, long-context analysis, and agent workflows",
         "family": "seed",
         "attachment": true,
         "reasoning": true,
@@ -42971,8 +42727,9 @@
         ],
         "tool_call": true,
         "structured_output": false,
-        "release_date": "2026-05-27",
-        "last_updated": "2026-05-27",
+        "temperature": true,
+        "release_date": "2025-12-28",
+        "last_updated": "2025-12-28",
         "modalities": {
           "input": [
             "text",
@@ -42985,13 +42742,14 @@
         "open_weights": false,
         "limit": {
           "context": 256000,
-          "output": 256000
+          "output": 64000
         },
         "cost": {
           "input": 0.25,
           "output": 2,
           "cache_read": 0.05
-        }
+        },
+        "canonical_model_id": "bytedance-seed/seed-1-8"
       }
     },
     {
@@ -43254,7 +43012,7 @@
         "open_weights": false,
         "limit": {
           "context": 256000,
-          "output": 256000
+          "output": 131072
         },
         "cost": {
           "input": 0.5,
@@ -43321,7 +43079,7 @@
         "open_weights": false,
         "limit": {
           "context": 256000,
-          "output": 256000
+          "output": 32000
         },
         "cost": {
           "input": 0.1,

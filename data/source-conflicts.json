@@ -1378,16 +1378,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "Claude Opus 4.1",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -1421,16 +1411,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-03-31",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
             "source_id": "claude-opus-4-1-20250805",
             "priority": 20,
             "policy_rank": 0
@@ -1492,16 +1472,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -1559,16 +1529,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "DevPass (LLM Gateway)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -1622,16 +1582,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
             "source_id": "claude-opus-4-1-20250805",
             "priority": 20,
             "policy_rank": 0
@@ -5331,154 +5281,6 @@
             "upstream": "models.dev",
             "provider": "snowflake-cortex",
             "source_id": "gemini-3.1-pro",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-pro-latest",
-      "field": "description",
-      "winner": {
-        "value": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "gemini-pro-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "gemini-pro-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Lab latest market for Gemini Pro frontier supply. You contract for the latest qualifying route, not a specific model.",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "the-grid-ai",
-            "source_id": "gemini-pro-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-pro-latest",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-02-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "gemini-pro-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-02-27",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "gemini-pro-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-07-06",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "the-grid-ai",
-            "source_id": "gemini-pro-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-pro-latest",
-      "field": "origin",
-      "winner": {
-        "value": "DevPass (LLM Gateway)",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "gemini-pro-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "DevPass (LLM Gateway)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "gemini-pro-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "The Grid AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "the-grid-ai",
-            "source_id": "gemini-pro-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-pro-latest",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-02-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "gemini-pro-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-02-27",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "gemini-pro-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-07-06",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "the-grid-ai",
-            "source_id": "gemini-pro-latest",
             "priority": 20,
             "policy_rank": 0
           }
@@ -20202,16 +20004,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "Mistral vision-language model for image understanding and multimodal chat",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "scaleway",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -20245,16 +20037,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "greenpt",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Pixtral 12B 2409",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "scaleway",
             "source_id": "pixtral-12b-2409",
             "priority": 20,
             "policy_rank": 0
@@ -20296,16 +20078,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "2026-03-17",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "scaleway",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -20339,16 +20111,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "greenpt",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "scaleway",
             "source_id": "pixtral-12b-2409",
             "priority": 20,
             "policy_rank": 0
@@ -20390,16 +20152,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "Scaleway",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "scaleway",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -20433,16 +20185,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "greenpt",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-09-25",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "scaleway",
             "source_id": "pixtral-12b-2409",
             "priority": 20,
             "policy_rank": 0
@@ -25070,44 +24812,7 @@
           }
         },
         {
-          "value": "Qwen3.5-2B is a compact yet capable model from Alibaba's Qwen3.5 series. It features a 262K token context window, support for 201 languages, thinking/reasoning mode, and tool calling for agentic workflows. A strong choice for prototyping, fine-tuning, and efficient multilingual deployments.",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
-            "source_id": "qwen3.5-2b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3.5-2b",
-      "field": "display_name",
-      "winner": {
-        "value": "Qwen3.5 2B",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qvac",
-          "source_id": "qwen3.5-2b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Qwen3.5 2B",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qvac",
-            "source_id": "qwen3.5-2b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "qwen3.5-2b",
+          "value": "Compact Qwen3.5 multimodal model for fast chat, reasoning, and tool use",
           "source": {
             "upstream": "models.dev",
             "provider": "requesty",
@@ -25144,44 +24849,7 @@
           }
         },
         {
-          "value": "2026-03-10",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
-            "source_id": "qwen3.5-2b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3.5-2b",
-      "field": "open_weights",
-      "winner": {
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qvac",
-          "source_id": "qwen3.5-2b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qvac",
-            "source_id": "qwen3.5-2b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": false,
+          "value": "2026-03-02",
           "source": {
             "upstream": "models.dev",
             "provider": "requesty",
@@ -25255,7 +24923,7 @@
           }
         },
         {
-          "value": "2026-03-10",
+          "value": "2026-03-02",
           "source": {
             "upstream": "models.dev",
             "provider": "requesty",

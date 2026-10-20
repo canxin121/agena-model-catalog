@@ -23750,10 +23750,10 @@
       "context_window_tokens": 1048576,
       "max_input_tokens": 1048576,
       "max_output_tokens": 65536,
-      "description": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
+      "description": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
       "knowledge_cutoff": "2025-01",
-      "release_date": "2026-02-27",
-      "last_updated": "2026-02-27",
+      "release_date": "2026-02-19",
+      "last_updated": "2026-02-19",
       "open_weights": false,
       "output_modalities": [
         "text"
@@ -23764,11 +23764,6 @@
         "cache_read_usd_per_million_tokens": "0.2",
         "cache_write_usd_per_million_tokens": "0.375",
         "tiers": [
-          {
-            "input_usd_per_million_tokens": "4",
-            "output_usd_per_million_tokens": "18",
-            "cache_read_usd_per_million_tokens": "0.4"
-          },
           {
             "tier_type": "context",
             "size_tokens": 200000,
@@ -23809,7 +23804,10 @@
           "temperature",
           "tool_calling"
         ]
-      }
+      },
+      "provider_sources": [
+        "google"
+      ]
     },
     "gemini-robotics-er-1.6-preview": {
       "context_window_tokens": 131072,
@@ -52979,7 +52977,8 @@
         "supported": [
           "text"
         ]
-      }
+      },
+      "knowledge_cutoff": "2025-09"
     },
     "nemotron-3.5-lightning:thinking": {
       "context_window_tokens": 1000000,

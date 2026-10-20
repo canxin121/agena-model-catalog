@@ -2792,43 +2792,6 @@
     },
     {
       "model_id": "deepseek-v4-flash",
-      "field": "context_window_tokens",
-      "winner": {
-        "value": 1000000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "deepseek",
-          "source_id": "deepseek-v4-flash",
-          "priority": 70,
-          "policy_rank": 3
-        }
-      },
-      "candidates": [
-        {
-          "value": 1000000,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "deepseek",
-            "source_id": "deepseek-v4-flash",
-            "priority": 70,
-            "policy_rank": 3
-          }
-        },
-        {
-          "value": 1048576,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "deepseek-ai/DeepSeek-V4-Flash",
-            "priority": 70,
-            "policy_rank": 27
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "deepseek-v4-flash",
       "field": "description",
       "winner": {
         "value": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
@@ -3173,43 +3136,6 @@
     },
     {
       "model_id": "deepseek-v4-flash-vision-exp",
-      "field": "context_window_tokens",
-      "winner": {
-        "value": 1000000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "deepseek",
-          "source_id": "deepseek-v4-flash-vision-exp",
-          "priority": 70,
-          "policy_rank": 3
-        }
-      },
-      "candidates": [
-        {
-          "value": 1000000,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "deepseek",
-            "source_id": "deepseek-v4-flash-vision-exp",
-            "priority": 70,
-            "policy_rank": 3
-          }
-        },
-        {
-          "value": 1048576,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-            "priority": 70,
-            "policy_rank": 27
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "deepseek-v4-flash-vision-exp",
       "field": "description",
       "winner": {
         "value": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
@@ -3406,43 +3332,6 @@
     },
     {
       "model_id": "deepseek-v4-pro",
-      "field": "context_window_tokens",
-      "winner": {
-        "value": 1000000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "deepseek",
-          "source_id": "deepseek-v4-pro",
-          "priority": 70,
-          "policy_rank": 3
-        }
-      },
-      "candidates": [
-        {
-          "value": 1000000,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "deepseek",
-            "source_id": "deepseek-v4-pro",
-            "priority": 70,
-            "policy_rank": 3
-          }
-        },
-        {
-          "value": 1048576,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "deepseek-ai/DeepSeek-V4-Pro",
-            "priority": 70,
-            "policy_rank": 27
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "deepseek-v4-pro",
       "field": "description",
       "winner": {
         "value": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
@@ -3568,7 +3457,7 @@
       "model_id": "deepseek-v4-pro",
       "field": "release_date",
       "winner": {
-        "value": "2026-08-12",
+        "value": "2026-08-13",
         "source": {
           "upstream": "models.dev",
           "provider": "deepseek",
@@ -3579,7 +3468,7 @@
       },
       "candidates": [
         {
-          "value": "2026-08-12",
+          "value": "2026-08-13",
           "source": {
             "upstream": "models.dev",
             "provider": "deepseek",
@@ -6004,10 +5893,20 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.2",
-            "output_usd_per_million_tokens": "1.1",
-            "cache_read_usd_per_million_tokens": "0.03",
-            "cache_write_usd_per_million_tokens": "0"
+            "input_usd_per_million_tokens": "0.11952",
+            "output_usd_per_million_tokens": "0.89637",
+            "cache_read_usd_per_million_tokens": "0.0239",
+            "cache_write_usd_per_million_tokens": "0",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "0.17927",
+                "output_usd_per_million_tokens": "1.19516",
+                "cache_read_usd_per_million_tokens": "0.03585",
+                "cache_write_usd_per_million_tokens": "0"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -6087,7 +5986,8 @@
         "value": {
           "input_usd_per_million_tokens": "0.6",
           "output_usd_per_million_tokens": "1.8",
-          "cache_read_usd_per_million_tokens": "0.11"
+          "cache_read_usd_per_million_tokens": "0.11",
+          "cache_write_usd_per_million_tokens": "0"
         },
         "source": {
           "upstream": "models.dev",
@@ -6102,7 +6002,8 @@
           "value": {
             "input_usd_per_million_tokens": "0.6",
             "output_usd_per_million_tokens": "1.8",
-            "cache_read_usd_per_million_tokens": "0.11"
+            "cache_read_usd_per_million_tokens": "0.11",
+            "cache_write_usd_per_million_tokens": "0"
           },
           "source": {
             "upstream": "models.dev",
@@ -6114,9 +6015,20 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.6",
-            "output_usd_per_million_tokens": "1.8",
-            "cache_read_usd_per_million_tokens": "0.11"
+            "input_usd_per_million_tokens": "0.29879",
+            "output_usd_per_million_tokens": "0.89637",
+            "cache_read_usd_per_million_tokens": "0.05976",
+            "cache_write_usd_per_million_tokens": "0",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "0.59758",
+                "output_usd_per_million_tokens": "1.79274",
+                "cache_read_usd_per_million_tokens": "0.11952",
+                "cache_write_usd_per_million_tokens": "0"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -6202,6 +6114,68 @@
             "source_id": "zai-org/GLM-4.6",
             "priority": 70,
             "policy_rank": 38
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "glm-4.6v",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "0.3",
+          "output_usd_per_million_tokens": "0.9",
+          "cache_read_usd_per_million_tokens": "0.05",
+          "cache_write_usd_per_million_tokens": "0"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.6v",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.3",
+            "output_usd_per_million_tokens": "0.9",
+            "cache_read_usd_per_million_tokens": "0.05",
+            "cache_write_usd_per_million_tokens": "0"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "zai",
+            "source_id": "glm-4.6v",
+            "priority": 70,
+            "policy_rank": 4
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.1494",
+            "output_usd_per_million_tokens": "0.44819",
+            "cache_read_usd_per_million_tokens": "0.02988",
+            "cache_write_usd_per_million_tokens": "0",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "0.29879",
+                "output_usd_per_million_tokens": "0.89637",
+                "cache_read_usd_per_million_tokens": "0.05976",
+                "cache_write_usd_per_million_tokens": "0"
+              }
+            ]
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "zhipuai",
+            "source_id": "glm-4.6v",
+            "priority": 70,
+            "policy_rank": 22
           }
         }
       ],
@@ -6449,10 +6423,20 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.6",
-            "output_usd_per_million_tokens": "2.2",
-            "cache_read_usd_per_million_tokens": "0.11",
-            "cache_write_usd_per_million_tokens": "0"
+            "input_usd_per_million_tokens": "0.44819",
+            "output_usd_per_million_tokens": "2.09153",
+            "cache_read_usd_per_million_tokens": "0.08964",
+            "cache_write_usd_per_million_tokens": "0",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "0.59758",
+                "output_usd_per_million_tokens": "2.39032",
+                "cache_read_usd_per_million_tokens": "0.11952",
+                "cache_write_usd_per_million_tokens": "0"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -6733,6 +6717,58 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "glm-4.7-flashx",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "0.07",
+          "output_usd_per_million_tokens": "0.4",
+          "cache_read_usd_per_million_tokens": "0.01",
+          "cache_write_usd_per_million_tokens": "0"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.7-flashx",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.07",
+            "output_usd_per_million_tokens": "0.4",
+            "cache_read_usd_per_million_tokens": "0.01",
+            "cache_write_usd_per_million_tokens": "0"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "zai",
+            "source_id": "glm-4.7-flashx",
+            "priority": 70,
+            "policy_rank": 4
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.0747",
+            "output_usd_per_million_tokens": "0.44819",
+            "cache_read_usd_per_million_tokens": "0.01494",
+            "cache_write_usd_per_million_tokens": "0"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "zhipuai",
+            "source_id": "glm-4.7-flashx",
+            "priority": 70,
+            "policy_rank": 22
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "glm-5",
       "field": "context_window_tokens",
       "winner": {
@@ -6851,7 +6887,7 @@
           }
         },
         {
-          "value": "2026-02-11",
+          "value": "2026-02-12",
           "source": {
             "upstream": "models.dev",
             "provider": "zhipuai",
@@ -6909,10 +6945,20 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "1",
-            "output_usd_per_million_tokens": "3.2",
-            "cache_read_usd_per_million_tokens": "0.2",
-            "cache_write_usd_per_million_tokens": "0"
+            "input_usd_per_million_tokens": "0.59758",
+            "output_usd_per_million_tokens": "2.68911",
+            "cache_read_usd_per_million_tokens": "0.1494",
+            "cache_write_usd_per_million_tokens": "0",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "0.89637",
+                "output_usd_per_million_tokens": "3.28669",
+                "cache_read_usd_per_million_tokens": "0.22409",
+                "cache_write_usd_per_million_tokens": "0"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -6964,7 +7010,7 @@
           }
         },
         {
-          "value": "2026-02-11",
+          "value": "2026-02-12",
           "source": {
             "upstream": "models.dev",
             "provider": "zhipuai",
@@ -7330,7 +7376,7 @@
           }
         },
         {
-          "value": "2026-03-27",
+          "value": "2026-04-07",
           "source": {
             "upstream": "models.dev",
             "provider": "zhipuai",
@@ -7341,53 +7387,6 @@
         },
         {
           "value": "2026-04-03",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "zai-org/GLM-5.1",
-            "priority": 70,
-            "policy_rank": 38
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "glm-5.1",
-      "field": "open_weights",
-      "winner": {
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "zai",
-          "source_id": "glm-5.1",
-          "priority": 70,
-          "policy_rank": 4
-        }
-      },
-      "candidates": [
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zai",
-            "source_id": "glm-5.1",
-            "priority": 70,
-            "policy_rank": 4
-          }
-        },
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zhipuai",
-            "source_id": "glm-5.1",
-            "priority": 70,
-            "policy_rank": 22
-          }
-        },
-        {
-          "value": true,
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -7435,10 +7434,20 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "1.4",
-            "output_usd_per_million_tokens": "4.4",
-            "cache_read_usd_per_million_tokens": "0.26",
-            "cache_write_usd_per_million_tokens": "0"
+            "input_usd_per_million_tokens": "0.89637",
+            "output_usd_per_million_tokens": "3.58548",
+            "cache_read_usd_per_million_tokens": "0.19421",
+            "cache_write_usd_per_million_tokens": "0",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "1.19516",
+                "output_usd_per_million_tokens": "4.18306",
+                "cache_read_usd_per_million_tokens": "0.29879",
+                "cache_write_usd_per_million_tokens": "0"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -7490,7 +7499,7 @@
           }
         },
         {
-          "value": "2026-03-27",
+          "value": "2026-04-07",
           "source": {
             "upstream": "models.dev",
             "provider": "zhipuai",
@@ -7561,53 +7570,6 @@
     },
     {
       "model_id": "glm-5.2",
-      "field": "open_weights",
-      "winner": {
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "zai",
-          "source_id": "glm-5.2",
-          "priority": 70,
-          "policy_rank": 4
-        }
-      },
-      "candidates": [
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zai",
-            "source_id": "glm-5.2",
-            "priority": 70,
-            "policy_rank": 4
-          }
-        },
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zhipuai",
-            "source_id": "glm-5.2",
-            "priority": 70,
-            "policy_rank": 22
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "zai-org/GLM-5.2",
-            "priority": 70,
-            "policy_rank": 38
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "glm-5.2",
       "field": "pricing",
       "winner": {
         "value": {
@@ -7642,9 +7604,9 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "1.4",
-            "output_usd_per_million_tokens": "4.4",
-            "cache_read_usd_per_million_tokens": "0.26",
+            "input_usd_per_million_tokens": "1.19516",
+            "output_usd_per_million_tokens": "4.18306",
+            "cache_read_usd_per_million_tokens": "0.29879",
             "cache_write_usd_per_million_tokens": "0"
           },
           "source": {
@@ -8143,9 +8105,9 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "1.4",
-            "output_usd_per_million_tokens": "4.4",
-            "cache_read_usd_per_million_tokens": "0.26",
+            "input_usd_per_million_tokens": "1.19516",
+            "output_usd_per_million_tokens": "4.18306",
+            "cache_read_usd_per_million_tokens": "0.29879",
             "cache_write_usd_per_million_tokens": "0"
           },
           "source": {
@@ -8302,9 +8264,9 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.15",
-            "output_usd_per_million_tokens": "0.5",
-            "cache_read_usd_per_million_tokens": "0.03",
+            "input_usd_per_million_tokens": "0.11952",
+            "output_usd_per_million_tokens": "0.41831",
+            "cache_read_usd_per_million_tokens": "0.03436",
             "cache_write_usd_per_million_tokens": "0"
           },
           "source": {
@@ -8326,6 +8288,58 @@
             "source_id": "zai-org/GLM-5.3-Flash",
             "priority": 70,
             "policy_rank": 38
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "glm-5.3-flashx",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "0.37",
+          "output_usd_per_million_tokens": "1.25",
+          "cache_read_usd_per_million_tokens": "0.075",
+          "cache_write_usd_per_million_tokens": "0"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-5.3-flashx",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.37",
+            "output_usd_per_million_tokens": "1.25",
+            "cache_read_usd_per_million_tokens": "0.075",
+            "cache_write_usd_per_million_tokens": "0"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "zai",
+            "source_id": "glm-5.3-flashx",
+            "priority": 70,
+            "policy_rank": 4
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.29879",
+            "output_usd_per_million_tokens": "1.04577",
+            "cache_read_usd_per_million_tokens": "0.08516",
+            "cache_write_usd_per_million_tokens": "0"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "zhipuai",
+            "source_id": "glm-5.3-flashx",
+            "priority": 70,
+            "policy_rank": 22
           }
         }
       ],
@@ -8367,10 +8381,20 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "5",
-            "output_usd_per_million_tokens": "22",
-            "cache_read_usd_per_million_tokens": "1.2",
-            "cache_write_usd_per_million_tokens": "0"
+            "input_usd_per_million_tokens": "0.74698",
+            "output_usd_per_million_tokens": "3.28669",
+            "cache_read_usd_per_million_tokens": "0.17927",
+            "cache_write_usd_per_million_tokens": "0",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "1.04577",
+                "output_usd_per_million_tokens": "3.88427",
+                "cache_read_usd_per_million_tokens": "0.26891",
+                "cache_write_usd_per_million_tokens": "0"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -9593,7 +9617,7 @@
           }
         },
         {
-          "value": "Speech generation model for controllable voice, narration, and audio delivery",
+          "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
           "source": {
             "upstream": "models.dev",
             "provider": "azure",
@@ -9603,7 +9627,7 @@
           }
         },
         {
-          "value": "Speech generation model for controllable voice, narration, and audio delivery",
+          "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
           "source": {
             "upstream": "models.dev",
             "provider": "azure-cognitive-services",
@@ -13844,9 +13868,9 @@
     },
     {
       "model_id": "kimi-k2.6",
-      "field": "last_updated",
+      "field": "features.temperature",
       "winner": {
-        "value": "2026-04-21",
+        "value": "unsupported",
         "source": {
           "upstream": "models.dev",
           "provider": "moonshotai",
@@ -13857,7 +13881,7 @@
       },
       "candidates": [
         {
-          "value": "2026-04-21",
+          "value": "unsupported",
           "source": {
             "upstream": "models.dev",
             "provider": "moonshotai",
@@ -13867,7 +13891,7 @@
           }
         },
         {
-          "value": "2026-04-21",
+          "value": "unsupported",
           "source": {
             "upstream": "models.dev",
             "provider": "moonshotai-cn",
@@ -13877,7 +13901,7 @@
           }
         },
         {
-          "value": "2026-04-20",
+          "value": "supported",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -13891,9 +13915,13 @@
     },
     {
       "model_id": "kimi-k2.6",
-      "field": "release_date",
+      "field": "pricing",
       "winner": {
-        "value": "2026-04-21",
+        "value": {
+          "input_usd_per_million_tokens": "0.95",
+          "output_usd_per_million_tokens": "4",
+          "cache_read_usd_per_million_tokens": "0.16"
+        },
         "source": {
           "upstream": "models.dev",
           "provider": "moonshotai",
@@ -13904,7 +13932,11 @@
       },
       "candidates": [
         {
-          "value": "2026-04-21",
+          "value": {
+            "input_usd_per_million_tokens": "0.95",
+            "output_usd_per_million_tokens": "4",
+            "cache_read_usd_per_million_tokens": "0.16"
+          },
           "source": {
             "upstream": "models.dev",
             "provider": "moonshotai",
@@ -13914,7 +13946,11 @@
           }
         },
         {
-          "value": "2026-04-21",
+          "value": {
+            "input_usd_per_million_tokens": "0.9711",
+            "output_usd_per_million_tokens": "4.0337",
+            "cache_read_usd_per_million_tokens": "0.1643"
+          },
           "source": {
             "upstream": "models.dev",
             "provider": "moonshotai-cn",
@@ -13924,7 +13960,11 @@
           }
         },
         {
-          "value": "2026-04-20",
+          "value": {
+            "input_usd_per_million_tokens": "0.95",
+            "output_usd_per_million_tokens": "4",
+            "cache_read_usd_per_million_tokens": "0.16"
+          },
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -13970,9 +14010,9 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.95",
-            "output_usd_per_million_tokens": "4",
-            "cache_read_usd_per_million_tokens": "0.19"
+            "input_usd_per_million_tokens": "0.9711",
+            "output_usd_per_million_tokens": "4.0337",
+            "cache_read_usd_per_million_tokens": "0.1942"
           },
           "source": {
             "upstream": "models.dev",
@@ -13993,6 +14033,55 @@
             "source_id": "moonshotai/Kimi-K2.7-Code",
             "priority": 70,
             "policy_rank": 31
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "kimi-k2.7-code-highspeed",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "1.9",
+          "output_usd_per_million_tokens": "8",
+          "cache_read_usd_per_million_tokens": "0.38"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k2.7-code-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "1.9",
+            "output_usd_per_million_tokens": "8",
+            "cache_read_usd_per_million_tokens": "0.38"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "moonshotai",
+            "source_id": "kimi-k2.7-code-highspeed",
+            "priority": 70,
+            "policy_rank": 8
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "1.9421",
+            "output_usd_per_million_tokens": "8.0673",
+            "cache_read_usd_per_million_tokens": "0.3884"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "moonshotai-cn",
+            "source_id": "kimi-k2.7-code-highspeed",
+            "priority": 70,
+            "policy_rank": 24
           }
         }
       ],
@@ -14175,10 +14264,10 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "3",
-            "output_usd_per_million_tokens": "15",
-            "cache_read_usd_per_million_tokens": "0.3",
-            "cache_write_usd_per_million_tokens": "3"
+            "input_usd_per_million_tokens": "2.9879",
+            "output_usd_per_million_tokens": "14.9395",
+            "cache_read_usd_per_million_tokens": "0.2988",
+            "cache_write_usd_per_million_tokens": "2.9879"
           },
           "source": {
             "upstream": "models.dev",
@@ -15505,6 +15594,67 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "minimax-m2",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "0.3",
+          "output_usd_per_million_tokens": "1.2"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M2",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.3",
+            "output_usd_per_million_tokens": "1.2"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax",
+            "source_id": "MiniMax-M2",
+            "priority": 70,
+            "policy_rank": 9
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.3137",
+            "output_usd_per_million_tokens": "1.2549",
+            "cache_read_usd_per_million_tokens": "0.0314",
+            "cache_write_usd_per_million_tokens": "0.3922"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax-cn",
+            "source_id": "MiniMax-M2",
+            "priority": 70,
+            "policy_rank": 25
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.3",
+            "output_usd_per_million_tokens": "1.2"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "MiniMaxAI/MiniMax-M2",
+            "priority": 70,
+            "policy_rank": 32
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "minimax-m2.1",
       "field": "description",
       "winner": {
@@ -15587,10 +15737,10 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.3",
-            "output_usd_per_million_tokens": "1.2",
-            "cache_read_usd_per_million_tokens": "0.03",
-            "cache_write_usd_per_million_tokens": "0.375"
+            "input_usd_per_million_tokens": "0.3137",
+            "output_usd_per_million_tokens": "1.2549",
+            "cache_read_usd_per_million_tokens": "0.0314",
+            "cache_write_usd_per_million_tokens": "0.3922"
           },
           "source": {
             "upstream": "models.dev",
@@ -15699,10 +15849,10 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.3",
-            "output_usd_per_million_tokens": "1.2",
-            "cache_read_usd_per_million_tokens": "0.03",
-            "cache_write_usd_per_million_tokens": "0.375"
+            "input_usd_per_million_tokens": "0.3137",
+            "output_usd_per_million_tokens": "1.2549",
+            "cache_read_usd_per_million_tokens": "0.0314",
+            "cache_write_usd_per_million_tokens": "0.3922"
           },
           "source": {
             "upstream": "models.dev",
@@ -15765,10 +15915,10 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.6",
-            "output_usd_per_million_tokens": "2.4",
-            "cache_read_usd_per_million_tokens": "0.06",
-            "cache_write_usd_per_million_tokens": "0.375"
+            "input_usd_per_million_tokens": "0.6275",
+            "output_usd_per_million_tokens": "2.5098",
+            "cache_read_usd_per_million_tokens": "0.0314",
+            "cache_write_usd_per_million_tokens": "0.3922"
           },
           "source": {
             "upstream": "models.dev",
@@ -15864,10 +16014,10 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.3",
-            "output_usd_per_million_tokens": "1.2",
-            "cache_read_usd_per_million_tokens": "0.06",
-            "cache_write_usd_per_million_tokens": "0.375"
+            "input_usd_per_million_tokens": "0.3137",
+            "output_usd_per_million_tokens": "1.2549",
+            "cache_read_usd_per_million_tokens": "0.0627",
+            "cache_write_usd_per_million_tokens": "0.3922"
           },
           "source": {
             "upstream": "models.dev",
@@ -15920,6 +16070,58 @@
         },
         {
           "value": "High-speed MiniMax model for low-latency coding and agent workflows",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax-cn",
+            "source_id": "MiniMax-M2.7-highspeed",
+            "priority": 70,
+            "policy_rank": 25
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "minimax-m2.7-highspeed",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "0.6",
+          "output_usd_per_million_tokens": "2.4",
+          "cache_read_usd_per_million_tokens": "0.06",
+          "cache_write_usd_per_million_tokens": "0.375"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M2.7-highspeed",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.6",
+            "output_usd_per_million_tokens": "2.4",
+            "cache_read_usd_per_million_tokens": "0.06",
+            "cache_write_usd_per_million_tokens": "0.375"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax",
+            "source_id": "MiniMax-M2.7-highspeed",
+            "priority": 70,
+            "policy_rank": 9
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.6275",
+            "output_usd_per_million_tokens": "2.5098",
+            "cache_read_usd_per_million_tokens": "0.0627",
+            "cache_write_usd_per_million_tokens": "0.3922"
+          },
           "source": {
             "upstream": "models.dev",
             "provider": "minimax-cn",
@@ -16027,6 +16229,53 @@
     },
     {
       "model_id": "minimax-m3",
+      "field": "features.structured_output",
+      "winner": {
+        "value": "unsupported",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "candidates": [
+        {
+          "value": "unsupported",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax",
+            "source_id": "MiniMax-M3",
+            "priority": 70,
+            "policy_rank": 9
+          }
+        },
+        {
+          "value": "unsupported",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax-cn",
+            "source_id": "MiniMax-M3",
+            "priority": 70,
+            "policy_rank": 25
+          }
+        },
+        {
+          "value": "supported",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "MiniMaxAI/MiniMax-M3",
+            "priority": 70,
+            "policy_rank": 32
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "minimax-m3",
       "field": "last_updated",
       "winner": {
         "value": "2026-06-25",
@@ -16061,6 +16310,53 @@
         },
         {
           "value": "2026-06-01",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "MiniMaxAI/MiniMax-M3",
+            "priority": 70,
+            "policy_rank": 32
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "minimax-m3",
+      "field": "max_output_tokens",
+      "winner": {
+        "value": 524288,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "candidates": [
+        {
+          "value": 524288,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax",
+            "source_id": "MiniMax-M3",
+            "priority": 70,
+            "policy_rank": 9
+          }
+        },
+        {
+          "value": 524288,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax-cn",
+            "source_id": "MiniMax-M3",
+            "priority": 70,
+            "policy_rank": 25
+          }
+        },
+        {
+          "value": 512000,
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -16124,16 +16420,16 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.3",
-            "output_usd_per_million_tokens": "1.2",
-            "cache_read_usd_per_million_tokens": "0.06",
+            "input_usd_per_million_tokens": "0.3137",
+            "output_usd_per_million_tokens": "1.2549",
+            "cache_read_usd_per_million_tokens": "0.0627",
             "tiers": [
               {
                 "tier_type": "context",
                 "size_tokens": 512000,
-                "input_usd_per_million_tokens": "0.6",
-                "output_usd_per_million_tokens": "2.4",
-                "cache_read_usd_per_million_tokens": "0.12"
+                "input_usd_per_million_tokens": "0.6275",
+                "output_usd_per_million_tokens": "2.5098",
+                "cache_read_usd_per_million_tokens": "0.1255"
               }
             ]
           },
@@ -16156,6 +16452,55 @@
             "source_id": "MiniMaxAI/MiniMax-M3",
             "priority": 70,
             "policy_rank": 32
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "minimax-m3.1-flash",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "0.15",
+          "output_usd_per_million_tokens": "0.6",
+          "cache_read_usd_per_million_tokens": "0.015"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.15",
+            "output_usd_per_million_tokens": "0.6",
+            "cache_read_usd_per_million_tokens": "0.015"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax",
+            "source_id": "MiniMax-M3.1-Flash",
+            "priority": 70,
+            "policy_rank": 9
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.1494",
+            "output_usd_per_million_tokens": "0.5976",
+            "cache_read_usd_per_million_tokens": "0.0149"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax-cn",
+            "source_id": "MiniMax-M3.1-Flash",
+            "priority": 70,
+            "policy_rank": 25
           }
         }
       ],
@@ -16838,7 +17183,7 @@
           }
         },
         {
-          "value": "2024-11-20",
+          "value": "2024-07-18",
           "source": {
             "upstream": "models.dev",
             "provider": "ovhcloud",
@@ -16979,7 +17324,7 @@
           }
         },
         {
-          "value": "2024-11-20",
+          "value": "2024-07-18",
           "source": {
             "upstream": "models.dev",
             "provider": "ovhcloud",
@@ -17496,6 +17841,53 @@
     },
     {
       "model_id": "mistral-small-3.2-24b-instruct-2506",
+      "field": "knowledge_cutoff",
+      "winner": {
+        "value": "2025-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "greenpt",
+          "source_id": "mistral-small-3.2-24b-instruct-2506",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-03",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "greenpt",
+            "source_id": "mistral-small-3.2-24b-instruct-2506",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2023-10-31",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "ovhcloud",
+            "source_id": "mistral-small-3.2-24b-instruct-2506",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2025-03",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "scaleway",
+            "source_id": "mistral-small-3.2-24b-instruct-2506",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "mistral-small-3.2-24b-instruct-2506",
       "field": "last_updated",
       "winner": {
         "value": "2025-05-26",
@@ -17529,7 +17921,7 @@
           }
         },
         {
-          "value": "2025-07-16",
+          "value": "2025-06-20",
           "source": {
             "upstream": "models.dev",
             "provider": "ovhcloud",
@@ -17700,7 +18092,7 @@
           }
         },
         {
-          "value": "2025-07-16",
+          "value": "2025-06-20",
           "source": {
             "upstream": "models.dev",
             "provider": "ovhcloud",
@@ -20229,7 +20621,7 @@
           }
         },
         {
-          "value": "2024-09-01",
+          "value": "2024-09-11",
           "source": {
             "upstream": "models.dev",
             "provider": "greenpt",
@@ -20370,7 +20762,7 @@
           }
         },
         {
-          "value": "2024-09-01",
+          "value": "2024-09-11",
           "source": {
             "upstream": "models.dev",
             "provider": "greenpt",
@@ -20865,7 +21257,15 @@
       "winner": {
         "value": {
           "input_usd_per_million_tokens": "0.05",
-          "output_usd_per_million_tokens": "0.4"
+          "output_usd_per_million_tokens": "0.4",
+          "tiers": [
+            {
+              "tier_type": "context",
+              "size_tokens": 256000,
+              "input_usd_per_million_tokens": "0.25",
+              "output_usd_per_million_tokens": "2"
+            }
+          ]
         },
         "source": {
           "upstream": "models.dev",
@@ -20879,7 +21279,15 @@
         {
           "value": {
             "input_usd_per_million_tokens": "0.05",
-            "output_usd_per_million_tokens": "0.4"
+            "output_usd_per_million_tokens": "0.4",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "0.25",
+                "output_usd_per_million_tokens": "2"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -20892,7 +21300,21 @@
         {
           "value": {
             "input_usd_per_million_tokens": "0.022",
-            "output_usd_per_million_tokens": "0.216"
+            "output_usd_per_million_tokens": "0.216",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 128000,
+                "input_usd_per_million_tokens": "0.087",
+                "output_usd_per_million_tokens": "0.861"
+              },
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "0.173",
+                "output_usd_per_million_tokens": "1.721"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -21252,7 +21674,15 @@
       "winner": {
         "value": {
           "input_usd_per_million_tokens": "0.4",
-          "output_usd_per_million_tokens": "1.2"
+          "output_usd_per_million_tokens": "1.2",
+          "tiers": [
+            {
+              "tier_type": "context",
+              "size_tokens": 256000,
+              "input_usd_per_million_tokens": "1.2",
+              "output_usd_per_million_tokens": "3.6"
+            }
+          ]
         },
         "source": {
           "upstream": "models.dev",
@@ -21266,7 +21696,15 @@
         {
           "value": {
             "input_usd_per_million_tokens": "0.4",
-            "output_usd_per_million_tokens": "1.2"
+            "output_usd_per_million_tokens": "1.2",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "1.2",
+                "output_usd_per_million_tokens": "3.6"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -21281,7 +21719,21 @@
             "input_usd_per_million_tokens": "0.115",
             "output_usd_per_million_tokens": "0.287",
             "cache_read_usd_per_million_tokens": "0.012",
-            "cache_write_usd_per_million_tokens": "0.144"
+            "cache_write_usd_per_million_tokens": "0.144",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 128000,
+                "input_usd_per_million_tokens": "0.345",
+                "output_usd_per_million_tokens": "2.868"
+              },
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "0.689",
+                "output_usd_per_million_tokens": "6.881"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -22311,6 +22763,53 @@
     },
     {
       "model_id": "qwen3-coder-30b-a3b-instruct",
+      "field": "last_updated",
+      "winner": {
+        "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-coder-30b-a3b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-coder-30b-a3b-instruct",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-coder-30b-a3b-instruct",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": "2025-07-31",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3-coder-30b-a3b-instruct",
       "field": "pricing",
       "winner": {
         "value": {
@@ -22399,6 +22898,53 @@
             "input_usd_per_million_tokens": "0.07",
             "output_usd_per_million_tokens": "0.26"
           },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3-coder-30b-a3b-instruct",
+      "field": "release_date",
+      "winner": {
+        "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-coder-30b-a3b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-coder-30b-a3b-instruct",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-coder-30b-a3b-instruct",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": "2025-07-31",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -22752,7 +23298,27 @@
       "winner": {
         "value": {
           "input_usd_per_million_tokens": "0.3",
-          "output_usd_per_million_tokens": "1.5"
+          "output_usd_per_million_tokens": "1.5",
+          "tiers": [
+            {
+              "tier_type": "context",
+              "size_tokens": 32000,
+              "input_usd_per_million_tokens": "0.5",
+              "output_usd_per_million_tokens": "2.5"
+            },
+            {
+              "tier_type": "context",
+              "size_tokens": 128000,
+              "input_usd_per_million_tokens": "0.8",
+              "output_usd_per_million_tokens": "4"
+            },
+            {
+              "tier_type": "context",
+              "size_tokens": 256000,
+              "input_usd_per_million_tokens": "1.6",
+              "output_usd_per_million_tokens": "9.6"
+            }
+          ]
         },
         "source": {
           "upstream": "models.dev",
@@ -22766,7 +23332,27 @@
         {
           "value": {
             "input_usd_per_million_tokens": "0.3",
-            "output_usd_per_million_tokens": "1.5"
+            "output_usd_per_million_tokens": "1.5",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "0.5",
+                "output_usd_per_million_tokens": "2.5"
+              },
+              {
+                "tier_type": "context",
+                "size_tokens": 128000,
+                "input_usd_per_million_tokens": "0.8",
+                "output_usd_per_million_tokens": "4"
+              },
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "1.6",
+                "output_usd_per_million_tokens": "9.6"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -22779,7 +23365,27 @@
         {
           "value": {
             "input_usd_per_million_tokens": "0.144",
-            "output_usd_per_million_tokens": "0.574"
+            "output_usd_per_million_tokens": "0.574",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "0.216",
+                "output_usd_per_million_tokens": "0.861"
+              },
+              {
+                "tier_type": "context",
+                "size_tokens": 128000,
+                "input_usd_per_million_tokens": "0.359",
+                "output_usd_per_million_tokens": "1.434"
+              },
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "0.717",
+                "output_usd_per_million_tokens": "3.584"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -24039,8 +24645,8 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.058",
-            "output_usd_per_million_tokens": "0.23"
+            "input_usd_per_million_tokens": "0.258",
+            "output_usd_per_million_tokens": "0.989"
           },
           "source": {
             "upstream": "models.dev",
@@ -24197,7 +24803,21 @@
       "winner": {
         "value": {
           "input_usd_per_million_tokens": "0.2",
-          "output_usd_per_million_tokens": "1.6"
+          "output_usd_per_million_tokens": "1.6",
+          "tiers": [
+            {
+              "tier_type": "context",
+              "size_tokens": 32000,
+              "input_usd_per_million_tokens": "0.3",
+              "output_usd_per_million_tokens": "2.4"
+            },
+            {
+              "tier_type": "context",
+              "size_tokens": 128000,
+              "input_usd_per_million_tokens": "0.6",
+              "output_usd_per_million_tokens": "4.8"
+            }
+          ]
         },
         "source": {
           "upstream": "models.dev",
@@ -24211,7 +24831,21 @@
         {
           "value": {
             "input_usd_per_million_tokens": "0.2",
-            "output_usd_per_million_tokens": "1.6"
+            "output_usd_per_million_tokens": "1.6",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "0.3",
+                "output_usd_per_million_tokens": "2.4"
+              },
+              {
+                "tier_type": "context",
+                "size_tokens": 128000,
+                "input_usd_per_million_tokens": "0.6",
+                "output_usd_per_million_tokens": "4.8"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -24224,7 +24858,21 @@
         {
           "value": {
             "input_usd_per_million_tokens": "0.143353",
-            "output_usd_per_million_tokens": "1.433525"
+            "output_usd_per_million_tokens": "1.433525",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 32000,
+                "input_usd_per_million_tokens": "0.215",
+                "output_usd_per_million_tokens": "2.15"
+              },
+              {
+                "tier_type": "context",
+                "size_tokens": 128000,
+                "input_usd_per_million_tokens": "0.43",
+                "output_usd_per_million_tokens": "4.301"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -24379,6 +25027,53 @@
     },
     {
       "model_id": "qwen3.235b-a22b",
+      "field": "last_updated",
+      "winner": {
+        "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-235b-a22b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-235b-a22b",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-235b-a22b",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": "2025-04-28",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-235B-A22B",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.235b-a22b",
       "field": "pricing",
       "winner": {
         "value": {
@@ -24425,6 +25120,53 @@
             "input_usd_per_million_tokens": "0.2",
             "output_usd_per_million_tokens": "0.8"
           },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-235B-A22B",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.235b-a22b",
+      "field": "release_date",
+      "winner": {
+        "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-235b-a22b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-235b-a22b",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-235b-a22b",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": "2025-04-28",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -24485,6 +25227,53 @@
     },
     {
       "model_id": "qwen3.32b",
+      "field": "last_updated",
+      "winner": {
+        "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-32b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-32b",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-32b",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": "2025-04-28",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-32B",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.32b",
       "field": "pricing",
       "winner": {
         "value": {
@@ -24531,6 +25320,53 @@
             "input_usd_per_million_tokens": "0.29",
             "output_usd_per_million_tokens": "0.59"
           },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-32B",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.32b",
+      "field": "release_date",
+      "winner": {
+        "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-32b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-32b",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-32b",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": "2025-04-28",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -25210,7 +26046,15 @@
       "winner": {
         "value": {
           "input_usd_per_million_tokens": "0.4",
-          "output_usd_per_million_tokens": "2.4"
+          "output_usd_per_million_tokens": "2.4",
+          "tiers": [
+            {
+              "tier_type": "context",
+              "size_tokens": 256000,
+              "input_usd_per_million_tokens": "0.5",
+              "output_usd_per_million_tokens": "3"
+            }
+          ]
         },
         "source": {
           "upstream": "models.dev",
@@ -25224,7 +26068,15 @@
         {
           "value": {
             "input_usd_per_million_tokens": "0.4",
-            "output_usd_per_million_tokens": "2.4"
+            "output_usd_per_million_tokens": "2.4",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "0.5",
+                "output_usd_per_million_tokens": "3"
+              }
+            ]
           },
           "source": {
             "upstream": "models.dev",
@@ -25389,8 +26241,8 @@
       "field": "pricing",
       "winner": {
         "value": {
-          "input_usd_per_million_tokens": "0.248",
-          "output_usd_per_million_tokens": "1.485"
+          "input_usd_per_million_tokens": "0.375",
+          "output_usd_per_million_tokens": "2.25"
         },
         "source": {
           "upstream": "models.dev",
@@ -25403,8 +26255,8 @@
       "candidates": [
         {
           "value": {
-            "input_usd_per_million_tokens": "0.248",
-            "output_usd_per_million_tokens": "1.485"
+            "input_usd_per_million_tokens": "0.375",
+            "output_usd_per_million_tokens": "2.25"
           },
           "source": {
             "upstream": "models.dev",
@@ -25425,6 +26277,88 @@
             "source_id": "Qwen/Qwen3.6-35B-A3B",
             "priority": 70,
             "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.6-flash",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "0.25",
+          "output_usd_per_million_tokens": "1.5",
+          "cache_read_usd_per_million_tokens": "0.025",
+          "cache_write_usd_per_million_tokens": "0.3125",
+          "tiers": [
+            {
+              "tier_type": "context",
+              "size_tokens": 256000,
+              "input_usd_per_million_tokens": "1",
+              "output_usd_per_million_tokens": "4",
+              "cache_read_usd_per_million_tokens": "0.1",
+              "cache_write_usd_per_million_tokens": "1.25"
+            }
+          ]
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3.6-flash",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.25",
+            "output_usd_per_million_tokens": "1.5",
+            "cache_read_usd_per_million_tokens": "0.025",
+            "cache_write_usd_per_million_tokens": "0.3125",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "1",
+                "output_usd_per_million_tokens": "4",
+                "cache_read_usd_per_million_tokens": "0.1",
+                "cache_write_usd_per_million_tokens": "1.25"
+              }
+            ]
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3.6-flash",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.165",
+            "output_usd_per_million_tokens": "0.99",
+            "cache_read_usd_per_million_tokens": "0.0165",
+            "cache_write_usd_per_million_tokens": "0.20625",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "0.66",
+                "output_usd_per_million_tokens": "3.961",
+                "cache_read_usd_per_million_tokens": "0.066",
+                "cache_write_usd_per_million_tokens": "0.825"
+              }
+            ]
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3.6-flash",
+            "priority": 70,
+            "policy_rank": 23
           }
         }
       ],
@@ -25593,6 +26527,88 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "qwen3.6-plus",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "0.5",
+          "output_usd_per_million_tokens": "3",
+          "cache_read_usd_per_million_tokens": "0.05",
+          "cache_write_usd_per_million_tokens": "0.625",
+          "tiers": [
+            {
+              "tier_type": "context",
+              "size_tokens": 256000,
+              "input_usd_per_million_tokens": "2",
+              "output_usd_per_million_tokens": "6",
+              "cache_read_usd_per_million_tokens": "0.2",
+              "cache_write_usd_per_million_tokens": "2.5"
+            }
+          ]
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3.6-plus",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.5",
+            "output_usd_per_million_tokens": "3",
+            "cache_read_usd_per_million_tokens": "0.05",
+            "cache_write_usd_per_million_tokens": "0.625",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "2",
+                "output_usd_per_million_tokens": "6",
+                "cache_read_usd_per_million_tokens": "0.2",
+                "cache_write_usd_per_million_tokens": "2.5"
+              }
+            ]
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3.6-plus",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.276",
+            "output_usd_per_million_tokens": "1.651",
+            "cache_read_usd_per_million_tokens": "0.0276",
+            "cache_write_usd_per_million_tokens": "0.345",
+            "tiers": [
+              {
+                "tier_type": "context",
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "1.101",
+                "output_usd_per_million_tokens": "6.602",
+                "cache_read_usd_per_million_tokens": "0.1101",
+                "cache_write_usd_per_million_tokens": "1.37625"
+              }
+            ]
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3.6-plus",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "qwen3.7-flash",
       "field": "pricing",
       "winner": {
@@ -25691,6 +26707,58 @@
             "upstream": "models.dev",
             "provider": "alibaba-cn",
             "source_id": "qwen3.7-flash",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.7-max",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "2.5",
+          "output_usd_per_million_tokens": "7.5",
+          "cache_read_usd_per_million_tokens": "0.5",
+          "cache_write_usd_per_million_tokens": "3.125"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3.7-max",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "2.5",
+            "output_usd_per_million_tokens": "7.5",
+            "cache_read_usd_per_million_tokens": "0.5",
+            "cache_write_usd_per_million_tokens": "3.125"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3.7-max",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "1.65",
+            "output_usd_per_million_tokens": "4.951",
+            "cache_read_usd_per_million_tokens": "0.33",
+            "cache_write_usd_per_million_tokens": "2.0625"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3.7-max",
             "priority": 70,
             "policy_rank": 23
           }
@@ -25828,18 +26896,18 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.5",
-            "output_usd_per_million_tokens": "3",
-            "cache_read_usd_per_million_tokens": "0.05",
-            "cache_write_usd_per_million_tokens": "0.625",
+            "input_usd_per_million_tokens": "0.276",
+            "output_usd_per_million_tokens": "1.101",
+            "cache_read_usd_per_million_tokens": "0.0276",
+            "cache_write_usd_per_million_tokens": "0.345",
             "tiers": [
               {
                 "tier_type": "context",
-                "size_tokens": 128000,
-                "input_usd_per_million_tokens": "2",
-                "output_usd_per_million_tokens": "6",
-                "cache_read_usd_per_million_tokens": "0.2",
-                "cache_write_usd_per_million_tokens": "2.5"
+                "size_tokens": 256000,
+                "input_usd_per_million_tokens": "0.826",
+                "output_usd_per_million_tokens": "3.301",
+                "cache_read_usd_per_million_tokens": "0.0826",
+                "cache_write_usd_per_million_tokens": "1.0325"
               }
             ]
           },
@@ -26631,7 +27699,7 @@
       "model_id": "sarvam-105b",
       "field": "last_updated",
       "winner": {
-        "value": "2025-09-01",
+        "value": "2026-02-18",
         "source": {
           "upstream": "models.dev",
           "provider": "nano-gpt",
@@ -26642,7 +27710,7 @@
       },
       "candidates": [
         {
-          "value": "2025-09-01",
+          "value": "2026-02-18",
           "source": {
             "upstream": "models.dev",
             "provider": "nano-gpt",
@@ -26690,43 +27758,6 @@
         },
         {
           "value": "Sarvam AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "sarvam",
-            "source_id": "sarvam-105b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "sarvam-105b",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-09-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "sarvam-105b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "sarvam-105b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-02-18",
           "source": {
             "upstream": "models.dev",
             "provider": "sarvam",

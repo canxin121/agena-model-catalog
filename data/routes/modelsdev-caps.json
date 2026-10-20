@@ -3,8 +3,8 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "b944f63543aae99181e7d74ac40b7ccc389b4d11306c2db07a1086381aebf5b5",
-    "record_count": 232
+    "sha256": "6380927df10782511a2c36dfd45a2ec37434021ced35ef7de874ceb45ce90356",
+    "record_count": 231
   },
   "scope": "configured_route_limit_cap",
   "records": [
@@ -373,8 +373,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-01",
-        "release_date": "2026-04-21",
-        "last_updated": "2026-04-21",
+        "release_date": "2026-04-20",
+        "last_updated": "2026-04-20",
         "modalities": {
           "input": [
             "text",

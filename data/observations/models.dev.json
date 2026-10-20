@@ -3,8 +3,8 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "b944f63543aae99181e7d74ac40b7ccc389b4d11306c2db07a1086381aebf5b5",
-    "record_count": 232
+    "sha256": "6380927df10782511a2c36dfd45a2ec37434021ced35ef7de874ceb45ce90356",
+    "record_count": 231
   },
   "scope": "allowlisted_publisher_api_model_observation",
   "records": [
@@ -1291,7 +1291,7 @@
         "name": "Codestral 25.08",
         "description": "Mistral code model for low-latency completion, fill-in-the-middle, and code generation",
         "family": "codestral",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
@@ -1300,7 +1300,8 @@
         "last_updated": "2025-07-30",
         "modalities": {
           "input": [
-            "text"
+            "text",
+            "pdf"
           ],
           "output": [
             "text"
@@ -1343,16 +1344,18 @@
         "name": "Codestral (latest)",
         "description": "Mistral code model for completions, refactors, and developer IDE workflows",
         "family": "codestral",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-10",
         "release_date": "2024-05-29",
         "last_updated": "2025-01-04",
         "modalities": {
           "input": [
-            "text"
+            "text",
+            "pdf"
           ],
           "output": [
             "text"
@@ -1397,6 +1400,7 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-06-01",
         "release_date": "2025-03-13",
@@ -1519,6 +1523,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-06-01",
         "release_date": "2025-08-21",
@@ -1570,6 +1575,7 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-06-01",
         "release_date": "2025-08-28",
@@ -1621,6 +1627,7 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": false,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-06-01",
         "release_date": "2025-07-31",
@@ -1673,6 +1680,7 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-06-01",
         "release_date": "2024-08-30",
@@ -1724,6 +1732,7 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-06-01",
         "release_date": "2024-08-30",
@@ -1775,10 +1784,11 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-06-01",
-        "release_date": "2024-12-02",
-        "last_updated": "2024-12-02",
+        "release_date": "2024-12-13",
+        "last_updated": "2024-12-13",
         "modalities": {
           "input": [
             "text"
@@ -1826,6 +1836,7 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-06-01",
         "release_date": "2025-02-27",
@@ -1909,7 +1920,7 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 1000000,
+          "context": 1048576,
           "output": 393216
         },
         "cost": {
@@ -2289,7 +2300,7 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 1000000,
+          "context": 1048576,
           "output": 393216
         },
         "status": "deprecated",
@@ -2478,7 +2489,7 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 1000000,
+          "context": 1048576,
           "output": 393216
         },
         "status": "deprecated",
@@ -2598,7 +2609,7 @@
         },
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-08-12",
+        "release_date": "2026-08-13",
         "last_updated": "2026-08-22",
         "modalities": {
           "input": [
@@ -2610,7 +2621,7 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 1000000,
+          "context": 1048576,
           "output": 393216
         },
         "cost": {
@@ -2725,7 +2736,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-08-12",
+        "release_date": "2026-08-13",
         "last_updated": "2026-08-22",
         "modalities": {
           "input": [
@@ -3840,7 +3851,7 @@
           "field": "reasoning_content"
         },
         "structured_output": true,
-        "temperature": true,
+        "temperature": false,
         "release_date": "2026-02-14",
         "last_updated": "2026-02-14",
         "modalities": {
@@ -4336,6 +4347,7 @@
       },
       "raw": {
         "id": "gemini-2.5-flash-image",
+        "type": "image",
         "name": "Nano Banana",
         "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
         "family": "gemini-flash",
@@ -4458,6 +4470,7 @@
       },
       "raw": {
         "id": "gemini-2.5-flash-preview-tts",
+        "type": "speech",
         "name": "Gemini 2.5 Flash Preview TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "gemini-flash",
@@ -4588,6 +4601,7 @@
       },
       "raw": {
         "id": "gemini-2.5-pro-preview-tts",
+        "type": "speech",
         "name": "Gemini 2.5 Pro Preview TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "gemini-flash",
@@ -4706,6 +4720,7 @@
       },
       "raw": {
         "id": "gemini-3-pro-image",
+        "type": "image",
         "name": "Nano Banana Pro",
         "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
         "family": "gemini-pro",
@@ -4768,6 +4783,7 @@
       },
       "raw": {
         "id": "gemini-3-pro-image-preview",
+        "type": "image",
         "name": "Nano Banana Pro",
         "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
         "family": "gemini-pro",
@@ -4822,6 +4838,7 @@
       },
       "raw": {
         "id": "gemini-3.1-flash-image",
+        "type": "image",
         "name": "Nano Banana 2",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gemini-flash",
@@ -4886,6 +4903,7 @@
       },
       "raw": {
         "id": "gemini-3.1-flash-image-preview",
+        "type": "image",
         "name": "Nano Banana 2",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gemini-flash",
@@ -5016,6 +5034,7 @@
       },
       "raw": {
         "id": "gemini-3.1-flash-lite-image",
+        "type": "image",
         "name": "Nano Banana 2 Lite",
         "description": "Fastest, most cost-efficient Gemini image model for high-volume 1K generation and editing",
         "family": "gemini-flash-lite",
@@ -5148,6 +5167,7 @@
       },
       "raw": {
         "id": "gemini-3.1-flash-live-preview",
+        "type": "realtime",
         "name": "Gemini 3.1 Flash Live Preview",
         "description": "High-quality, low-latency Live API model for real-time dialogue and voice-first AI applications",
         "family": "gemini-flash",
@@ -5217,6 +5237,7 @@
       },
       "raw": {
         "id": "gemini-3.1-flash-tts-preview",
+        "type": "speech",
         "name": "Gemini 3.1 Flash TTS Preview",
         "description": "Low-latency speech generation with steerable prompts and expressive audio tags",
         "family": "gemini-flash",
@@ -5569,6 +5590,7 @@
       },
       "raw": {
         "id": "gemini-3.5-live-translate-preview",
+        "type": "realtime",
         "name": "Gemini 3.5 Live Translate Preview",
         "description": "Low-latency audio-to-audio model for real-time speech translation across 70+ languages",
         "family": "gemini-pro",
@@ -5895,6 +5917,7 @@
       },
       "raw": {
         "id": "gemini-embedding-001",
+        "type": "embedding",
         "name": "Gemini Embedding 001",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
         "family": "gemini",
@@ -5945,6 +5968,7 @@
       },
       "raw": {
         "id": "gemini-embedding-2",
+        "type": "embedding",
         "name": "Gemini Embedding 2",
         "description": "Multimodal embedding model mapping text, images, video, audio, and PDFs into a unified embedding space",
         "family": "gemini",
@@ -6135,6 +6159,7 @@
       },
       "raw": {
         "id": "gemini-omni-flash-preview",
+        "type": "video",
         "name": "Gemini Omni Flash Preview",
         "description": "Video generation and editing model for fast, conversational text- and image-to-video workflows",
         "family": "gemini",
@@ -6568,6 +6593,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-07-28",
@@ -6590,7 +6618,8 @@
           "output": 2.2,
           "cache_read": 0.11,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.5"
       }
     },
     {
@@ -6625,6 +6654,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-07-28",
@@ -6647,7 +6679,8 @@
           "output": 2.2,
           "cache_read": 0.11,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.5"
       }
     },
     {
@@ -6734,6 +6767,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-07-28",
@@ -6756,7 +6792,8 @@
           "output": 1.1,
           "cache_read": 0.03,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.5-air"
       }
     },
     {
@@ -6791,6 +6828,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-07-28",
@@ -6809,11 +6849,24 @@
           "output": 98304
         },
         "cost": {
-          "input": 0.2,
-          "output": 1.1,
-          "cache_read": 0.03,
-          "cache_write": 0
-        }
+          "input": 0.11952,
+          "output": 0.89637,
+          "cache_read": 0.0239,
+          "cache_write": 0,
+          "tiers": [
+            {
+              "input": 0.17927,
+              "output": 1.19516,
+              "cache_read": 0.03585,
+              "cache_write": 0,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            }
+          ]
+        },
+        "canonical_model_id": "zhipuai/glm-4.5-air"
       }
     },
     {
@@ -6900,6 +6953,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-07-28",
@@ -6912,7 +6968,7 @@
             "text"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 131072,
           "output": 98304
@@ -6922,7 +6978,8 @@
           "output": 0,
           "cache_read": 0,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.5-flash"
       }
     },
     {
@@ -6957,6 +7014,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-07-28",
@@ -6969,7 +7029,7 @@
             "text"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 131072,
           "output": 98304
@@ -6979,7 +7039,8 @@
           "output": 0,
           "cache_read": 0,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.5-flash"
       }
     },
     {
@@ -7014,6 +7075,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-08-11",
@@ -7036,8 +7100,10 @@
         "cost": {
           "input": 0.6,
           "output": 1.8,
-          "cache_read": 0.11
-        }
+          "cache_read": 0.11,
+          "cache_write": 0
+        },
+        "canonical_model_id": "zhipuai/glm-4.5v"
       }
     },
     {
@@ -7072,6 +7138,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-08-11",
@@ -7092,10 +7161,24 @@
           "output": 16384
         },
         "cost": {
-          "input": 0.6,
-          "output": 1.8,
-          "cache_read": 0.11
-        }
+          "input": 0.29879,
+          "output": 0.89637,
+          "cache_read": 0.05976,
+          "cache_write": 0,
+          "tiers": [
+            {
+              "input": 0.59758,
+              "output": 1.79274,
+              "cache_read": 0.11952,
+              "cache_write": 0,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            }
+          ]
+        },
+        "canonical_model_id": "zhipuai/glm-4.5v"
       }
     },
     {
@@ -7183,6 +7266,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-09-30",
@@ -7205,7 +7291,8 @@
           "output": 2.2,
           "cache_read": 0.11,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.6"
       }
     },
     {
@@ -7240,6 +7327,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-09-30",
@@ -7262,7 +7352,8 @@
           "output": 2.2,
           "cache_read": 0.11,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.6"
       }
     },
     {
@@ -7349,6 +7440,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-12-08",
@@ -7371,8 +7465,10 @@
         "cost": {
           "input": 0.3,
           "output": 0.9,
-          "cache_read": 0.05
-        }
+          "cache_read": 0.05,
+          "cache_write": 0
+        },
+        "canonical_model_id": "zhipuai/glm-4.6v"
       }
     },
     {
@@ -7407,6 +7503,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-12-08",
@@ -7427,10 +7526,24 @@
           "output": 32768
         },
         "cost": {
-          "input": 0.3,
-          "output": 0.9,
-          "cache_read": 0.05
-        }
+          "input": 0.1494,
+          "output": 0.44819,
+          "cache_read": 0.02988,
+          "cache_write": 0,
+          "tiers": [
+            {
+              "input": 0.29879,
+              "output": 0.89637,
+              "cache_read": 0.05976,
+              "cache_write": 0,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            }
+          ]
+        },
+        "canonical_model_id": "zhipuai/glm-4.6v"
       }
     },
     {
@@ -7465,6 +7578,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "release_date": "2025-12-08",
         "last_updated": "2025-12-08",
@@ -7524,6 +7640,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "release_date": "2025-12-08",
         "last_updated": "2025-12-08",
@@ -7664,7 +7783,8 @@
           "output": 2.2,
           "cache_read": 0.11,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.7"
       }
     },
     {
@@ -7720,11 +7840,24 @@
           "output": 131072
         },
         "cost": {
-          "input": 0.6,
-          "output": 2.2,
-          "cache_read": 0.11,
-          "cache_write": 0
-        }
+          "input": 0.44819,
+          "output": 2.09153,
+          "cache_read": 0.08964,
+          "cache_write": 0,
+          "tiers": [
+            {
+              "input": 0.59758,
+              "output": 2.39032,
+              "cache_read": 0.11952,
+              "cache_write": 0,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            }
+          ]
+        },
+        "canonical_model_id": "zhipuai/glm-4.7"
       }
     },
     {
@@ -7814,6 +7947,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2026-01-19",
@@ -7836,7 +7972,8 @@
           "output": 0,
           "cache_read": 0,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.7-flash"
       }
     },
     {
@@ -7871,6 +8008,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2026-01-19",
@@ -7893,7 +8033,8 @@
           "output": 0,
           "cache_read": 0,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.7-flash"
       }
     },
     {
@@ -7982,6 +8123,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2026-01-19",
@@ -8004,7 +8148,8 @@
           "output": 0.4,
           "cache_read": 0.01,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.7-flashx"
       }
     },
     {
@@ -8039,6 +8184,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2026-01-19",
@@ -8057,11 +8205,12 @@
           "output": 131072
         },
         "cost": {
-          "input": 0.07,
-          "output": 0.4,
-          "cache_read": 0.01,
+          "input": 0.0747,
+          "output": 0.44819,
+          "cache_read": 0.01494,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.7-flashx"
       }
     },
     {
@@ -8160,8 +8309,8 @@
           "field": "reasoning_content"
         },
         "temperature": true,
-        "release_date": "2026-02-11",
-        "last_updated": "2026-02-11",
+        "release_date": "2026-02-12",
+        "last_updated": "2026-02-12",
         "modalities": {
           "input": [
             "text"
@@ -8176,11 +8325,24 @@
           "output": 131072
         },
         "cost": {
-          "input": 1,
-          "output": 3.2,
-          "cache_read": 0.2,
-          "cache_write": 0
-        }
+          "input": 0.59758,
+          "output": 2.68911,
+          "cache_read": 0.1494,
+          "cache_write": 0,
+          "tiers": [
+            {
+              "input": 0.89637,
+              "output": 3.28669,
+              "cache_read": 0.22409,
+              "cache_write": 0,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            }
+          ]
+        },
+        "canonical_model_id": "zhipuai/glm-5"
       }
     },
     {
@@ -8294,7 +8456,8 @@
           "output": 4,
           "cache_read": 0.24,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-5-turbo"
       }
     },
     {
@@ -8395,8 +8558,8 @@
         },
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-03-27",
-        "last_updated": "2026-03-27",
+        "release_date": "2026-04-07",
+        "last_updated": "2026-04-07",
         "modalities": {
           "input": [
             "text"
@@ -8405,17 +8568,30 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 200000,
           "output": 131072
         },
         "cost": {
-          "input": 1.4,
-          "output": 4.4,
-          "cache_read": 0.26,
-          "cache_write": 0
-        }
+          "input": 0.89637,
+          "output": 3.58548,
+          "cache_read": 0.19421,
+          "cache_write": 0,
+          "tiers": [
+            {
+              "input": 1.19516,
+              "output": 4.18306,
+              "cache_read": 0.29879,
+              "cache_write": 0,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            }
+          ]
+        },
+        "canonical_model_id": "zhipuai/glm-5.1"
       }
     },
     {
@@ -8500,6 +8676,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
+            "type": "toggle"
+          },
+          {
             "type": "effort",
             "values": [
               "high",
@@ -8565,6 +8744,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
+            "type": "toggle"
+          },
+          {
             "type": "effort",
             "values": [
               "high",
@@ -8588,17 +8770,18 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1000000,
           "output": 131072
         },
         "cost": {
-          "input": 1.4,
-          "output": 4.4,
-          "cache_read": 0.26,
+          "input": 1.19516,
+          "output": 4.18306,
+          "cache_read": 0.29879,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-5.2"
       }
     },
     {
@@ -8777,9 +8960,9 @@
           "output": 131072
         },
         "cost": {
-          "input": 1.4,
-          "output": 4.4,
-          "cache_read": 0.26,
+          "input": 1.19516,
+          "output": 4.18306,
+          "cache_read": 0.29879,
           "cache_write": 0
         },
         "canonical_model_id": "zhipuai/glm-5.3"
@@ -8976,9 +9159,9 @@
           "output": 131072
         },
         "cost": {
-          "input": 0.15,
-          "output": 0.5,
-          "cache_read": 0.03,
+          "input": 0.11952,
+          "output": 0.41831,
+          "cache_read": 0.03436,
           "cache_write": 0
         },
         "canonical_model_id": "zhipuai/glm-5.3-flash"
@@ -9176,9 +9359,9 @@
           "output": 131072
         },
         "cost": {
-          "input": 0.37,
-          "output": 1.25,
-          "cache_read": 0.075,
+          "input": 0.29879,
+          "output": 1.04577,
+          "cache_read": 0.08516,
           "cache_write": 0
         },
         "canonical_model_id": "zhipuai/glm-5.3-flash"
@@ -9243,7 +9426,8 @@
           "output": 4,
           "cache_read": 0.24,
           "cache_write": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-5v-turbo"
       }
     },
     {
@@ -9301,11 +9485,24 @@
           "output": 131072
         },
         "cost": {
-          "input": 5,
-          "output": 22,
-          "cache_read": 1.2,
-          "cache_write": 0
-        }
+          "input": 0.74698,
+          "output": 3.28669,
+          "cache_read": 0.17927,
+          "cache_write": 0,
+          "tiers": [
+            {
+              "input": 1.04577,
+              "output": 3.88427,
+              "cache_read": 0.26891,
+              "cache_write": 0,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            }
+          ]
+        },
+        "canonical_model_id": "zhipuai/glm-5v-turbo"
       }
     },
     {
@@ -12990,7 +13187,8 @@
               "none",
               "low",
               "medium",
-              "high"
+              "high",
+              "xhigh"
             ]
           }
         ],
@@ -13069,7 +13267,8 @@
             "values": [
               "low",
               "medium",
-              "high"
+              "high",
+              "xhigh"
             ]
           }
         ],
@@ -13372,6 +13571,7 @@
       },
       "raw": {
         "id": "grok-imagine-image",
+        "type": "image",
         "name": "Grok Imagine Image",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "grok",
@@ -13384,12 +13584,10 @@
         "modalities": {
           "input": [
             "text",
-            "image",
-            "pdf"
+            "image"
           ],
           "output": [
-            "image",
-            "pdf"
+            "image"
           ]
         },
         "open_weights": false,
@@ -13421,6 +13619,7 @@
       },
       "raw": {
         "id": "grok-imagine-image-quality",
+        "type": "image",
         "name": "Grok Imagine Image Quality",
         "description": "Higher-fidelity Grok Imagine image model for prompt-driven generation, editing, and visual design workflows",
         "family": "grok",
@@ -13433,12 +13632,10 @@
         "modalities": {
           "input": [
             "text",
-            "image",
-            "pdf"
+            "image"
           ],
           "output": [
-            "image",
-            "pdf"
+            "image"
           ]
         },
         "open_weights": false,
@@ -13446,6 +13643,7 @@
           "context": 16000,
           "output": 0
         },
+        "status": "deprecated",
         "canonical_model_id": "xai/grok-imagine-image-quality"
       }
     },
@@ -13470,6 +13668,7 @@
       },
       "raw": {
         "id": "grok-imagine-video",
+        "type": "video",
         "name": "Grok Imagine Video",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "grok",
@@ -13483,8 +13682,7 @@
           "input": [
             "text",
             "image",
-            "video",
-            "pdf"
+            "video"
           ],
           "output": [
             "video"
@@ -13518,8 +13716,9 @@
       },
       "raw": {
         "id": "grok-imagine-video-1.5",
+        "type": "video",
         "name": "Grok Imagine Video 1.5",
-        "description": "Video model for image-to-video generation, editing, and extension workflows",
+        "description": "Video model for text-to-video, image-to-video, and reference-to-video generation with optional voice references",
         "family": "grok",
         "attachment": true,
         "reasoning": false,
@@ -13531,8 +13730,7 @@
           "input": [
             "text",
             "image",
-            "audio",
-            "pdf"
+            "audio"
           ],
           "output": [
             "video"
@@ -13567,6 +13765,7 @@
       },
       "raw": {
         "id": "grok-imagine-video-1.5-lite",
+        "type": "video",
         "name": "Grok Imagine Video 1.5 Lite",
         "description": "Cost-efficient video model for text-to-video and image-to-video generation",
         "family": "grok",
@@ -13579,8 +13778,7 @@
         "modalities": {
           "input": [
             "text",
-            "image",
-            "pdf"
+            "image"
           ],
           "output": [
             "video"
@@ -13860,8 +14058,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2024-08-22",
-        "release_date": "2025-07-01",
-        "last_updated": "2025-07-01",
+        "release_date": "2025-07-03",
+        "last_updated": "2025-07-03",
         "modalities": {
           "input": [
             "text"
@@ -13912,8 +14110,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2024-08-22",
-        "release_date": "2026-01-01",
-        "last_updated": "2026-01-01",
+        "release_date": "2026-01-08",
+        "last_updated": "2026-01-08",
         "modalities": {
           "input": [
             "text"
@@ -14182,10 +14380,10 @@
           "field": "reasoning_content"
         },
         "structured_output": true,
-        "temperature": true,
+        "temperature": false,
         "knowledge": "2025-01",
-        "release_date": "2026-04-21",
-        "last_updated": "2026-04-21",
+        "release_date": "2026-04-20",
+        "last_updated": "2026-04-20",
         "modalities": {
           "input": [
             "text",
@@ -14205,7 +14403,8 @@
           "input": 0.95,
           "output": 4,
           "cache_read": 0.16
-        }
+        },
+        "canonical_model_id": "moonshotai/kimi-k2.6"
       }
     },
     {
@@ -14244,10 +14443,10 @@
           "field": "reasoning_content"
         },
         "structured_output": true,
-        "temperature": true,
+        "temperature": false,
         "knowledge": "2025-01",
-        "release_date": "2026-04-21",
-        "last_updated": "2026-04-21",
+        "release_date": "2026-04-20",
+        "last_updated": "2026-04-20",
         "modalities": {
           "input": [
             "text",
@@ -14264,10 +14463,11 @@
           "output": 262144
         },
         "cost": {
-          "input": 0.95,
-          "output": 4,
-          "cache_read": 0.16
-        }
+          "input": 0.9711,
+          "output": 4.0337,
+          "cache_read": 0.1643
+        },
+        "canonical_model_id": "moonshotai/kimi-k2.6"
       }
     },
     {
@@ -14438,9 +14638,9 @@
           "output": 262144
         },
         "cost": {
-          "input": 0.95,
-          "output": 4,
-          "cache_read": 0.19
+          "input": 0.9711,
+          "output": 4.0337,
+          "cache_read": 0.1942
         },
         "canonical_model_id": "moonshotai/kimi-k2.7-code"
       }
@@ -14610,9 +14810,9 @@
           "output": 262144
         },
         "cost": {
-          "input": 1.9,
-          "output": 8,
-          "cache_read": 0.38
+          "input": 1.9421,
+          "output": 8.0673,
+          "cache_read": 0.3884
         },
         "canonical_model_id": "moonshotai/kimi-k2.7-code"
       }
@@ -14745,10 +14945,10 @@
           "output": 1048576
         },
         "cost": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3,
-          "cache_write": 3
+          "input": 2.9879,
+          "output": 14.9395,
+          "cache_read": 0.2988,
+          "cache_write": 2.9879
         },
         "canonical_model_id": "moonshotai/kimi-k3"
       }
@@ -15207,6 +15407,67 @@
           "input": 0.04,
           "output": 0.15,
           "cache_read": 0.004
+        }
+      }
+    },
+    {
+      "canonical_model_id": "mercury-3",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "inception",
+        "source_id": "mercury-3",
+        "priority": 70,
+        "policy_rank": 15
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "mercury-3",
+        "name": "Mercury 3",
+        "description": "Inception's diffusion reasoning model for chat, multi-step problem solving, and tool use",
+        "family": "mercury",
+        "attachment": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "release_date": "2026-10-16",
+        "last_updated": "2026-10-20",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1000000,
+          "output": 131072
+        },
+        "cost": {
+          "input": 0.1,
+          "output": 0.35,
+          "cache_read": 0.01
         }
       }
     },
@@ -16091,6 +16352,7 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.3,
           "output": 1.2
@@ -16141,9 +16403,12 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
-          "input": 0.3,
-          "output": 1.2
+          "input": 0.3137,
+          "output": 1.2549,
+          "cache_read": 0.0314,
+          "cache_write": 0.3922
         }
       }
     },
@@ -16242,6 +16507,7 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.3,
           "output": 1.2,
@@ -16294,11 +16560,12 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.03,
-          "cache_write": 0.375
+          "input": 0.3137,
+          "output": 1.2549,
+          "cache_read": 0.0314,
+          "cache_write": 0.3922
         }
       }
     },
@@ -16400,6 +16667,7 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.3,
           "output": 1.2,
@@ -16452,11 +16720,12 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.03,
-          "cache_write": 0.375
+          "input": 0.3137,
+          "output": 1.2549,
+          "cache_read": 0.0314,
+          "cache_write": 0.3922
         }
       }
     },
@@ -16558,6 +16827,7 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.6,
           "output": 2.4,
@@ -16610,11 +16880,12 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
-          "input": 0.6,
-          "output": 2.4,
-          "cache_read": 0.06,
-          "cache_write": 0.375
+          "input": 0.6275,
+          "output": 2.5098,
+          "cache_read": 0.0314,
+          "cache_write": 0.3922
         }
       }
     },
@@ -16662,6 +16933,7 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.3,
           "output": 1.2,
@@ -16714,11 +16986,12 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.06,
-          "cache_write": 0.375
+          "input": 0.3137,
+          "output": 1.2549,
+          "cache_read": 0.0627,
+          "cache_write": 0.3922
         }
       }
     },
@@ -16821,6 +17094,7 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.6,
           "output": 2.4,
@@ -16873,11 +17147,12 @@
           "context": 204800,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
-          "input": 0.6,
-          "output": 2.4,
-          "cache_read": 0.06,
-          "cache_write": 0.375
+          "input": 0.6275,
+          "output": 2.5098,
+          "cache_read": 0.0627,
+          "cache_write": 0.3922
         }
       }
     },
@@ -16913,6 +17188,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": false,
         "temperature": true,
         "release_date": "2026-06-01",
         "last_updated": "2026-06-25",
@@ -16929,7 +17205,7 @@
         "open_weights": true,
         "limit": {
           "context": 1000000,
-          "output": 512000
+          "output": 524288
         },
         "cost": {
           "input": 0.3,
@@ -16986,6 +17262,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": false,
         "temperature": true,
         "release_date": "2026-06-01",
         "last_updated": "2026-06-25",
@@ -17002,17 +17279,17 @@
         "open_weights": true,
         "limit": {
           "context": 1000000,
-          "output": 512000
+          "output": 524288
         },
         "cost": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.06,
+          "input": 0.3137,
+          "output": 1.2549,
+          "cache_read": 0.0627,
           "tiers": [
             {
-              "input": 0.6,
-              "output": 2.4,
-              "cache_read": 0.12,
+              "input": 0.6275,
+              "output": 2.5098,
+              "cache_read": 0.1255,
               "tier": {
                 "type": "context",
                 "size": 512000
@@ -17020,9 +17297,9 @@
             }
           ],
           "context_over_200k": {
-            "input": 0.6,
-            "output": 2.4,
-            "cache_read": 0.12
+            "input": 0.6275,
+            "output": 2.5098,
+            "cache_read": 0.1255
           }
         }
       }
@@ -17119,7 +17396,8 @@
           }
         ],
         "tool_call": true,
-        "temperature": false,
+        "structured_output": false,
+        "temperature": true,
         "release_date": "2026-10-19",
         "last_updated": "2026-10-19",
         "modalities": {
@@ -17132,10 +17410,10 @@
             "text"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 1000000,
-          "output": 512000
+          "output": 524288
         },
         "cost": {
           "input": 0.15,
@@ -17184,7 +17462,8 @@
           }
         ],
         "tool_call": true,
-        "temperature": false,
+        "structured_output": false,
+        "temperature": true,
         "release_date": "2026-10-19",
         "last_updated": "2026-10-19",
         "modalities": {
@@ -17197,15 +17476,15 @@
             "text"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 1000000,
-          "output": 512000
+          "output": 524288
         },
         "cost": {
-          "input": 0.15,
-          "output": 0.6,
-          "cache_read": 0.015
+          "input": 0.1494,
+          "output": 0.5976,
+          "cache_read": 0.0149
         },
         "canonical_model_id": "minimax/MiniMax-M3.1-Flash"
       }
@@ -17244,7 +17523,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -17297,7 +17577,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -17343,6 +17624,7 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-10",
         "release_date": "2024-10-01",
@@ -17350,7 +17632,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -17362,8 +17645,9 @@
           "output": 128000
         },
         "cost": {
-          "input": 0.04,
-          "output": 0.04
+          "input": 0.1,
+          "output": 0.1,
+          "cache_read": 0.01
         }
       }
     },
@@ -17401,7 +17685,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -17447,6 +17732,7 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-10",
         "release_date": "2024-10-01",
@@ -17454,7 +17740,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -17466,8 +17753,9 @@
           "output": 128000
         },
         "cost": {
-          "input": 0.1,
-          "output": 0.1
+          "input": 0.15,
+          "output": 0.15,
+          "cache_read": 0.015
         }
       }
     },
@@ -17492,6 +17780,7 @@
       },
       "raw": {
         "id": "mistral-embed",
+        "type": "embedding",
         "name": "Mistral Embed",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
         "family": "mistral-embed",
@@ -17599,6 +17888,7 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-11",
         "release_date": "2024-11-01",
@@ -17606,7 +17896,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -17667,7 +17958,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -17714,6 +18006,7 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-11",
         "release_date": "2024-11-01",
@@ -17721,7 +18014,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -17886,7 +18180,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -17947,7 +18242,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -18041,7 +18337,7 @@
         "name": "Mistral Small 3.2",
         "description": "Efficient Mistral model for fast chat, extraction, and production assistants",
         "family": "mistral-small",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -18105,6 +18401,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-06",
         "release_date": "2026-03-16",
@@ -18112,7 +18409,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -18166,6 +18464,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-06",
         "release_date": "2026-03-16",
@@ -18173,7 +18472,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -19038,57 +19338,6 @@
       }
     },
     {
-      "canonical_model_id": "open-mistral-7b",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "open-mistral-7b",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "open-mistral-7b",
-        "name": "Mistral 7B",
-        "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "family": "mistral",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2023-12",
-        "release_date": "2023-09-27",
-        "last_updated": "2023-09-27",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 8000,
-          "output": 8000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.25,
-          "output": 0.25
-        }
-      }
-    },
-    {
       "canonical_model_id": "open-mistral-nemo",
       "scope": "publisher_api_model",
       "source": {
@@ -19136,108 +19385,6 @@
         "cost": {
           "input": 0.15,
           "output": 0.15
-        }
-      }
-    },
-    {
-      "canonical_model_id": "open-mixtral-8x22b",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "open-mixtral-8x22b",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "open-mixtral-8x22b",
-        "name": "Mixtral 8x22B",
-        "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "family": "mixtral",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-04",
-        "release_date": "2024-04-17",
-        "last_updated": "2024-04-17",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 64000,
-          "output": 64000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 2,
-          "output": 6
-        }
-      }
-    },
-    {
-      "canonical_model_id": "open-mixtral-8x7b",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "open-mixtral-8x7b",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "open-mixtral-8x7b",
-        "name": "Mixtral 8x7B",
-        "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "family": "mixtral",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-01",
-        "release_date": "2023-12-11",
-        "last_updated": "2023-12-11",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 32000,
-          "output": 32000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.7,
-          "output": 0.7
         }
       }
     },
@@ -19480,6 +19627,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-04",
         "release_date": "2025-07-28",
@@ -19499,7 +19647,21 @@
         },
         "cost": {
           "input": 0.05,
-          "output": 0.4
+          "output": 0.4,
+          "tiers": [
+            {
+              "input": 0.25,
+              "output": 2,
+              "tier": {
+                "type": "context",
+                "size": 256000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 0.25,
+            "output": 2
+          }
         }
       }
     },
@@ -19539,6 +19701,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-04",
         "release_date": "2025-07-28",
@@ -19558,7 +19721,25 @@
         },
         "cost": {
           "input": 0.022,
-          "output": 0.216
+          "output": 0.216,
+          "tiers": [
+            {
+              "input": 0.087,
+              "output": 0.861,
+              "tier": {
+                "type": "context",
+                "size": 128000
+              }
+            },
+            {
+              "input": 0.173,
+              "output": 1.721,
+              "tier": {
+                "type": "context",
+                "size": 256000
+              }
+            }
+          ]
         }
       }
     },
@@ -19588,7 +19769,8 @@
         "family": "qwen",
         "attachment": false,
         "reasoning": false,
-        "tool_call": true,
+        "tool_call": false,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-04",
         "release_date": "2025-01-25",
@@ -19656,6 +19838,7 @@
           "context": 4096,
           "output": 3072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.574,
           "output": 1.721
@@ -19706,6 +19889,7 @@
           "context": 4096,
           "output": 3072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.287,
           "output": 0.861
@@ -19739,6 +19923,7 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-04",
         "release_date": "2024-04-03",
@@ -19789,6 +19974,7 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-04",
         "release_date": "2024-04-03",
@@ -19956,6 +20142,7 @@
           "context": 16384,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.16,
           "output": 0.49
@@ -20006,6 +20193,7 @@
           "context": 16384,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.101,
           "output": 0.28
@@ -20036,7 +20224,7 @@
         "name": "Qwen-Omni Turbo",
         "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -20060,6 +20248,7 @@
           "context": 32768,
           "output": 2048
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.07,
           "output": 0.27,
@@ -20092,7 +20281,7 @@
         "name": "Qwen-Omni Turbo",
         "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -20116,6 +20305,7 @@
           "context": 32768,
           "output": 2048
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.058,
           "output": 0.23,
@@ -20145,10 +20335,11 @@
       },
       "raw": {
         "id": "qwen-omni-turbo-realtime",
+        "type": "realtime",
         "name": "Qwen-Omni Turbo Realtime",
         "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -20171,6 +20362,7 @@
           "context": 32768,
           "output": 2048
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.27,
           "output": 1.07,
@@ -20200,10 +20392,11 @@
       },
       "raw": {
         "id": "qwen-omni-turbo-realtime",
+        "type": "realtime",
         "name": "Qwen-Omni Turbo Realtime",
         "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -20226,6 +20419,7 @@
           "context": 32768,
           "output": 2048
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.23,
           "output": 0.918,
@@ -20269,6 +20463,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-04",
         "release_date": "2024-01-25",
@@ -20289,7 +20484,23 @@
         "cost": {
           "input": 0.4,
           "output": 1.2,
-          "reasoning": 4
+          "reasoning": 4,
+          "tiers": [
+            {
+              "input": 1.2,
+              "output": 3.6,
+              "reasoning": 12,
+              "tier": {
+                "type": "context",
+                "size": 256000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 1.2,
+            "output": 3.6,
+            "reasoning": 12
+          }
         }
       }
     },
@@ -20329,6 +20540,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2024-04",
         "release_date": "2024-01-25",
@@ -20351,7 +20563,27 @@
           "output": 0.287,
           "reasoning": 1.147,
           "cache_read": 0.012,
-          "cache_write": 0.144
+          "cache_write": 0.144,
+          "tiers": [
+            {
+              "input": 0.345,
+              "output": 2.868,
+              "reasoning": 3.441,
+              "tier": {
+                "type": "context",
+                "size": 128000
+              }
+            },
+            {
+              "input": 0.689,
+              "output": 6.881,
+              "reasoning": 9.175,
+              "tier": {
+                "type": "context",
+                "size": 256000
+              }
+            }
+          ]
         }
       }
     },
@@ -20381,7 +20613,7 @@
         "family": "qwen",
         "attachment": false,
         "reasoning": false,
-        "tool_call": true,
+        "tool_call": false,
         "temperature": true,
         "knowledge": "2024-04",
         "release_date": "2024-01",
@@ -20431,7 +20663,7 @@
         "family": "qwen",
         "attachment": false,
         "reasoning": false,
-        "tool_call": true,
+        "tool_call": false,
         "temperature": true,
         "knowledge": "2024-04",
         "release_date": "2024-01",
@@ -20507,6 +20739,7 @@
           "context": 1000000,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.05,
           "output": 0.2,
@@ -20567,6 +20800,7 @@
           "context": 1000000,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.044,
           "output": 0.087,
@@ -20598,7 +20832,7 @@
         "name": "Qwen-VL Max",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -20619,6 +20853,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.8,
           "output": 3.2
@@ -20649,7 +20884,7 @@
         "name": "Qwen-VL Max",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -20670,6 +20905,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.23,
           "output": 0.574
@@ -20700,7 +20936,7 @@
         "name": "Qwen-VL OCR",
         "description": "OCR model for extracting structured text from documents and screenshots",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": false,
         "temperature": true,
@@ -20751,7 +20987,7 @@
         "name": "Qwen-VL OCR",
         "description": "OCR model for extracting structured text from documents and screenshots",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": false,
         "temperature": true,
@@ -20802,7 +21038,7 @@
         "name": "Qwen-VL Plus",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -20823,6 +21059,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.21,
           "output": 0.63
@@ -20853,7 +21090,7 @@
         "name": "Qwen-VL Plus",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -20874,6 +21111,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.115,
           "output": 0.287
@@ -20924,6 +21162,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.35,
           "output": 1.4
@@ -20974,6 +21213,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.144,
           "output": 0.431
@@ -21024,6 +21264,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.7,
           "output": 2.8
@@ -21074,6 +21315,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.287,
           "output": 0.861
@@ -21124,6 +21366,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.4,
           "output": 5.6
@@ -21174,6 +21417,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.574,
           "output": 1.721
@@ -21224,6 +21468,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.175,
           "output": 0.7
@@ -21274,6 +21519,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.072,
           "output": 0.144
@@ -21324,6 +21570,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.287,
           "output": 0.861
@@ -21425,6 +21672,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.144,
           "output": 0.287
@@ -21475,6 +21723,7 @@
           "context": 4096,
           "output": 3072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.574,
           "output": 1.721
@@ -21525,6 +21774,7 @@
           "context": 4096,
           "output": 3072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.144,
           "output": 0.287
@@ -21555,7 +21805,7 @@
         "name": "Qwen2.5-Omni 7B",
         "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -21579,6 +21829,7 @@
           "context": 32768,
           "output": 2048
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.1,
           "output": 0.4,
@@ -21610,7 +21861,7 @@
         "name": "Qwen2.5-Omni 7B",
         "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -21634,6 +21885,7 @@
           "context": 32768,
           "output": 2048
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.087,
           "output": 0.345,
@@ -21665,7 +21917,7 @@
         "name": "Qwen2.5-VL 72B Instruct",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -21686,6 +21938,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 2.8,
           "output": 8.4
@@ -21716,7 +21969,7 @@
         "name": "Qwen2.5-VL 72B Instruct",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -21737,6 +21990,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 2.294,
           "output": 6.881
@@ -21767,7 +22021,7 @@
         "name": "Qwen2.5-VL 7B Instruct",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -21788,6 +22042,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.35,
           "output": 1.05
@@ -21818,7 +22073,7 @@
         "name": "Qwen2.5-VL 7B Instruct",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -21839,6 +22094,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.287,
           "output": 0.717
@@ -21866,6 +22122,7 @@
       },
       "raw": {
         "id": "qwen3-asr-flash",
+        "type": "transcription",
         "name": "Qwen3-ASR Flash",
         "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
         "family": "qwen",
@@ -21916,6 +22173,7 @@
       },
       "raw": {
         "id": "qwen3-asr-flash",
+        "type": "transcription",
         "name": "Qwen3-ASR Flash",
         "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
         "family": "qwen",
@@ -21989,6 +22247,7 @@
           "context": 262144,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.45,
           "output": 2.25,
@@ -22057,6 +22316,7 @@
           "context": 262144,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.216,
           "output": 0.861,
@@ -22111,8 +22371,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2025-04",
-        "last_updated": "2025-04",
+        "release_date": "2025-07-31",
+        "last_updated": "2025-07-31",
         "modalities": {
           "input": [
             "text"
@@ -22177,6 +22437,7 @@
           "context": 262144,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.5,
           "output": 7.5,
@@ -22245,6 +22506,7 @@
           "context": 262144,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.861,
           "output": 3.441,
@@ -22346,6 +22608,7 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-07-28",
@@ -22365,7 +22628,33 @@
         },
         "cost": {
           "input": 0.3,
-          "output": 1.5
+          "output": 1.5,
+          "tiers": [
+            {
+              "input": 0.5,
+              "output": 2.5,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            },
+            {
+              "input": 0.8,
+              "output": 4,
+              "tier": {
+                "type": "context",
+                "size": 128000
+              }
+            },
+            {
+              "input": 1.6,
+              "output": 9.6,
+              "tier": {
+                "type": "context",
+                "size": 256000
+              }
+            }
+          ]
         }
       }
     },
@@ -22396,6 +22685,7 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-07-28",
@@ -22415,7 +22705,33 @@
         },
         "cost": {
           "input": 0.144,
-          "output": 0.574
+          "output": 0.574,
+          "tiers": [
+            {
+              "input": 0.216,
+              "output": 0.861,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            },
+            {
+              "input": 0.359,
+              "output": 1.434,
+              "tier": {
+                "type": "context",
+                "size": 128000
+              }
+            },
+            {
+              "input": 0.717,
+              "output": 3.584,
+              "tier": {
+                "type": "context",
+                "size": 256000
+              }
+            }
+          ]
         }
       }
     },
@@ -22513,6 +22829,7 @@
           "context": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 1,
           "output": 5
@@ -22563,6 +22880,7 @@
           "context": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.574,
           "output": 2.296,
@@ -22716,10 +23034,11 @@
       },
       "raw": {
         "id": "qwen3-livetranslate-flash-realtime",
+        "type": "realtime",
         "name": "Qwen3-LiveTranslate Flash Realtime",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": false,
         "temperature": true,
@@ -22743,6 +23062,7 @@
           "context": 53248,
           "output": 4096
         },
+        "status": "deprecated",
         "cost": {
           "input": 10,
           "output": 10,
@@ -22795,6 +23115,7 @@
           "context": 262144,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.2,
           "output": 6
@@ -22858,6 +23179,7 @@
           "context": 262144,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.359,
           "output": 1.434,
@@ -22929,6 +23251,7 @@
           "context": 131072,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.5,
           "output": 2
@@ -22979,6 +23302,7 @@
           "context": 131072,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.144,
           "output": 0.574
@@ -23084,6 +23408,7 @@
           "context": 131072,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.5,
           "output": 6
@@ -23139,6 +23464,7 @@
           "context": 131072,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.144,
           "output": 1.434
@@ -23219,7 +23545,7 @@
         "name": "Qwen3-Omni Flash",
         "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -23280,7 +23606,7 @@
         "name": "Qwen3-Omni Flash",
         "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -23310,10 +23636,10 @@
           "output": 16384
         },
         "cost": {
-          "input": 0.058,
-          "output": 0.23,
-          "input_audio": 3.584,
-          "output_audio": 7.168
+          "input": 0.258,
+          "output": 0.989,
+          "input_audio": 2.265,
+          "output_audio": 8.974
         }
       }
     },
@@ -23338,10 +23664,11 @@
       },
       "raw": {
         "id": "qwen3-omni-flash-realtime",
+        "type": "realtime",
         "name": "Qwen3-Omni Flash Realtime",
         "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -23365,6 +23692,7 @@
           "context": 65536,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.52,
           "output": 1.99,
@@ -23394,10 +23722,11 @@
       },
       "raw": {
         "id": "qwen3-omni-flash-realtime",
+        "type": "realtime",
         "name": "Qwen3-Omni Flash Realtime",
         "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -23420,6 +23749,7 @@
           "context": 65536,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.23,
           "output": 0.918,
@@ -23452,7 +23782,7 @@
         "name": "Qwen3-VL 235B-A22B",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -23478,6 +23808,7 @@
           "context": 131072,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.7,
           "output": 2.8,
@@ -23509,7 +23840,7 @@
         "name": "Qwen3-VL 235B-A22B",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [],
         "tool_call": true,
@@ -23531,6 +23862,7 @@
           "context": 131072,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.286705,
           "output": 1.14682,
@@ -23678,9 +24010,12 @@
         "name": "Qwen3-VL 30B-A3B",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
+          {
+            "type": "toggle"
+          },
           {
             "type": "budget_tokens"
           }
@@ -23735,7 +24070,7 @@
         "name": "Qwen3-VL 30B-A3B",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [],
         "tool_call": true,
@@ -23757,6 +24092,7 @@
           "context": 131072,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.108,
           "output": 0.431,
@@ -23840,7 +24176,7 @@
         "name": "Qwen3-VL Plus",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -23851,6 +24187,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-09-23",
@@ -23872,7 +24209,24 @@
         "cost": {
           "input": 0.2,
           "output": 1.6,
-          "reasoning": 4.8
+          "tiers": [
+            {
+              "input": 0.3,
+              "output": 2.4,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            },
+            {
+              "input": 0.6,
+              "output": 4.8,
+              "tier": {
+                "type": "context",
+                "size": 128000
+              }
+            }
+          ]
         }
       }
     },
@@ -23900,7 +24254,7 @@
         "name": "Qwen3-VL Plus",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -23912,6 +24266,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2025-09-23",
@@ -23933,7 +24288,24 @@
         "cost": {
           "input": 0.143353,
           "output": 1.433525,
-          "reasoning": 4.300576
+          "tiers": [
+            {
+              "input": 0.215,
+              "output": 2.15,
+              "tier": {
+                "type": "context",
+                "size": 32000
+              }
+            },
+            {
+              "input": 0.43,
+              "output": 4.301,
+              "tier": {
+                "type": "context",
+                "size": 128000
+              }
+            }
+          ]
         }
       }
     },
@@ -23989,6 +24361,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.35,
           "output": 1.4,
@@ -24049,6 +24422,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.144,
           "output": 0.574,
@@ -24108,6 +24482,7 @@
           "context": 131072,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.7,
           "output": 2.8,
@@ -24168,6 +24543,7 @@
           "context": 131072,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.287,
           "output": 1.147,
@@ -24206,8 +24582,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2025-04",
-        "last_updated": "2025-04",
+        "release_date": "2025-04-28",
+        "last_updated": "2025-04-28",
         "modalities": {
           "input": [
             "text"
@@ -24434,6 +24810,7 @@
           "context": 131072,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.7,
           "output": 2.8,
@@ -24494,6 +24871,7 @@
           "context": 131072,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.287,
           "output": 1.147,
@@ -24532,8 +24910,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2025-04",
-        "last_updated": "2025-04",
+        "release_date": "2025-04-28",
+        "last_updated": "2025-04-28",
         "modalities": {
           "input": [
             "text"
@@ -24597,8 +24975,7 @@
           "input": [
             "text",
             "image",
-            "video",
-            "audio"
+            "video"
           ],
           "output": [
             "text"
@@ -24711,8 +25088,7 @@
           "input": [
             "text",
             "image",
-            "video",
-            "audio"
+            "video"
           ],
           "output": [
             "text"
@@ -24825,8 +25201,7 @@
           "input": [
             "text",
             "image",
-            "video",
-            "audio"
+            "video"
           ],
           "output": [
             "text"
@@ -24939,8 +25314,7 @@
           "input": [
             "text",
             "image",
-            "video",
-            "audio"
+            "video"
           ],
           "output": [
             "text"
@@ -24981,7 +25355,7 @@
         "name": "Qwen3.5 397B-A17B",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -24993,6 +25367,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2026-02-16",
@@ -25325,7 +25700,7 @@
         "name": "Qwen3.5 Plus",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -25336,6 +25711,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2026-02-16",
@@ -25358,7 +25734,21 @@
         "cost": {
           "input": 0.4,
           "output": 2.4,
-          "reasoning": 2.4
+          "reasoning": 2.4,
+          "tiers": [
+            {
+              "input": 0.5,
+              "output": 3,
+              "tier": {
+                "type": "context",
+                "size": 256000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 0.5,
+            "output": 3
+          }
         }
       }
     },
@@ -25491,8 +25881,7 @@
           "input": [
             "text",
             "image",
-            "video",
-            "audio"
+            "video"
           ],
           "output": [
             "text"
@@ -25605,8 +25994,7 @@
           "input": [
             "text",
             "image",
-            "video",
-            "audio"
+            "video"
           ],
           "output": [
             "text"
@@ -25618,8 +26006,8 @@
           "output": 65536
         },
         "cost": {
-          "input": 0.248,
-          "output": 1.485
+          "input": 0.375,
+          "output": 2.25
         }
       }
     },
@@ -25731,9 +26119,28 @@
           "output": 65536
         },
         "cost": {
-          "input": 0.1875,
-          "output": 1.125,
-          "cache_write": 0.234375
+          "input": 0.25,
+          "output": 1.5,
+          "cache_read": 0.025,
+          "cache_write": 0.3125,
+          "tiers": [
+            {
+              "input": 1,
+              "output": 4,
+              "cache_read": 0.1,
+              "cache_write": 1.25,
+              "tier": {
+                "type": "context",
+                "size": 256000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 1,
+            "output": 4,
+            "cache_read": 0.1,
+            "cache_write": 1.25
+          }
         }
       }
     },
@@ -25793,9 +26200,28 @@
           "output": 65536
         },
         "cost": {
-          "input": 0.1875,
-          "output": 1.125,
-          "cache_write": 0.234375
+          "input": 0.165,
+          "output": 0.99,
+          "cache_read": 0.0165,
+          "cache_write": 0.20625,
+          "tiers": [
+            {
+              "input": 0.66,
+              "output": 3.961,
+              "cache_read": 0.066,
+              "cache_write": 0.825,
+              "tier": {
+                "type": "context",
+                "size": 256000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 0.66,
+            "output": 3.961,
+            "cache_read": 0.066,
+            "cache_write": 0.825
+          }
         },
         "canonical_model_id": "alibaba/qwen3.6-flash"
       }
@@ -25852,6 +26278,7 @@
           "context": 262144,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.3,
           "output": 7.8,
@@ -25913,6 +26340,7 @@
           "context": 245800,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.32,
           "output": 7.9,
@@ -25944,7 +26372,7 @@
         "name": "Qwen3.6 Plus",
         "description": "Earlier Qwen multimodal workhorse for million-token agent and document tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -25955,6 +26383,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2026-04-02",
@@ -26024,7 +26453,7 @@
         "name": "Qwen3.6 Plus",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -26036,6 +26465,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2026-04-02",
@@ -26056,16 +26486,16 @@
           "output": 65536
         },
         "cost": {
-          "input": 0.5,
-          "output": 3,
-          "cache_read": 0.05,
-          "cache_write": 0.625,
+          "input": 0.276,
+          "output": 1.651,
+          "cache_read": 0.0276,
+          "cache_write": 0.345,
           "tiers": [
             {
-              "input": 2,
-              "output": 6,
-              "cache_read": 0.2,
-              "cache_write": 2.5,
+              "input": 1.101,
+              "output": 6.602,
+              "cache_read": 0.1101,
+              "cache_write": 1.37625,
               "tier": {
                 "type": "context",
                 "size": 256000
@@ -26073,10 +26503,10 @@
             }
           ],
           "context_over_200k": {
-            "input": 2,
-            "output": 6,
-            "cache_read": 0.2,
-            "cache_write": 2.5
+            "input": 1.101,
+            "output": 6.602,
+            "cache_read": 0.1101,
+            "cache_write": 1.37625
           }
         }
       }
@@ -26293,6 +26723,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "release_date": "2026-05-21",
         "last_updated": "2026-05-21",
@@ -26353,6 +26784,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "release_date": "2026-05-21",
         "last_updated": "2026-05-21",
@@ -26370,10 +26802,10 @@
           "output": 131072
         },
         "cost": {
-          "input": 2.5,
-          "output": 7.5,
-          "cache_read": 0.5,
-          "cache_write": 3.125
+          "input": 1.65,
+          "output": 4.951,
+          "cache_read": 0.33,
+          "cache_write": 2.0625
         },
         "canonical_model_id": "alibaba/qwen3.7-max"
       }
@@ -26498,6 +26930,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2026-06-02",
@@ -26518,22 +26951,28 @@
           "output": 64000
         },
         "cost": {
-          "input": 0.5,
-          "output": 3,
-          "cache_read": 0.05,
-          "cache_write": 0.625,
+          "input": 0.276,
+          "output": 1.101,
+          "cache_read": 0.0276,
+          "cache_write": 0.345,
           "tiers": [
             {
-              "input": 2,
-              "output": 6,
-              "cache_read": 0.2,
-              "cache_write": 2.5,
+              "input": 0.826,
+              "output": 3.301,
+              "cache_read": 0.0826,
+              "cache_write": 1.0325,
               "tier": {
                 "type": "context",
-                "size": 128000
+                "size": 256000
               }
             }
-          ]
+          ],
+          "context_over_200k": {
+            "input": 0.826,
+            "output": 3.301,
+            "cache_read": 0.0826,
+            "cache_write": 1.0325
+          }
         },
         "canonical_model_id": "alibaba/qwen3.7-plus"
       }
@@ -26709,6 +27148,7 @@
           "field": "reasoning_content"
         },
         "structured_output": true,
+        "temperature": true,
         "release_date": "2026-08-26",
         "last_updated": "2026-08-26",
         "modalities": {
@@ -26783,6 +27223,7 @@
           "field": "reasoning_content"
         },
         "structured_output": true,
+        "temperature": true,
         "release_date": "2026-08-26",
         "last_updated": "2026-08-26",
         "modalities": {
@@ -27005,6 +27446,7 @@
           "field": "reasoning_content"
         },
         "structured_output": true,
+        "temperature": true,
         "release_date": "2026-09-17",
         "last_updated": "2026-09-17",
         "modalities": {
@@ -27073,6 +27515,7 @@
           "field": "reasoning_content"
         },
         "structured_output": true,
+        "temperature": true,
         "release_date": "2026-09-17",
         "last_updated": "2026-09-17",
         "modalities": {
@@ -27151,6 +27594,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.18,
           "output": 0.7,
@@ -27211,6 +27655,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.072,
           "output": 0.287,
@@ -27263,6 +27708,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.287,
           "output": 0.861
@@ -27314,6 +27760,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.8,
           "output": 2.4
@@ -27365,6 +27812,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.23,
           "output": 0.574
@@ -28701,6 +29149,7 @@
           "field": "reasoning_content"
         },
         "structured_output": true,
+        "temperature": true,
         "release_date": "2026-09-16",
         "last_updated": "2026-09-20",
         "modalities": {
@@ -28767,6 +29216,7 @@
           "field": "reasoning_content"
         },
         "structured_output": true,
+        "temperature": true,
         "release_date": "2026-09-16",
         "last_updated": "2026-09-20",
         "modalities": {
@@ -29057,6 +29507,7 @@
       },
       "raw": {
         "id": "veo-3.1-fast-generate-preview",
+        "type": "video",
         "name": "Veo 3.1 fast",
         "description": "Video model for prompt-guided generation, editing, and motion workflows",
         "family": "veo",
@@ -29105,6 +29556,7 @@
       },
       "raw": {
         "id": "veo-3.1-generate-preview",
+        "type": "video",
         "name": "Veo 3.1",
         "description": "Video model for prompt-guided generation, editing, and motion workflows",
         "family": "veo",
@@ -29153,6 +29605,7 @@
       },
       "raw": {
         "id": "veo-3.1-lite-generate-preview",
+        "type": "video",
         "name": "Veo 3.1 lite",
         "description": "Video model for prompt-guided generation, editing, and motion workflows",
         "family": "veo",
@@ -29200,6 +29653,7 @@
       },
       "raw": {
         "id": "voxtral-mini-latest",
+        "type": "transcription",
         "name": "Voxtral Mini (latest)",
         "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
         "family": "voxtral",
@@ -29207,8 +29661,8 @@
         "reasoning": false,
         "tool_call": false,
         "temperature": false,
-        "release_date": "2026-02-01",
-        "last_updated": "2026-02-01",
+        "release_date": "2026-02-04",
+        "last_updated": "2026-02-04",
         "modalities": {
           "input": [
             "audio"
@@ -29245,6 +29699,7 @@
       },
       "raw": {
         "id": "voxtral-mini-tts-latest",
+        "type": "speech",
         "name": "Voxtral Mini TTS (latest)",
         "description": "Multilingual text-to-speech model with zero-shot voice cloning",
         "family": "voxtral",
@@ -29252,8 +29707,8 @@
         "reasoning": false,
         "tool_call": false,
         "temperature": false,
-        "release_date": "2026-03-01",
-        "last_updated": "2026-03-01",
+        "release_date": "2026-03-23",
+        "last_updated": "2026-03-23",
         "modalities": {
           "input": [
             "text"
@@ -29262,7 +29717,7 @@
             "audio"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 0,
           "output": 0
@@ -29296,13 +29751,15 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "release_date": "2025-07-15",
         "last_updated": "2025-07-15",
         "modalities": {
           "input": [
             "text",
-            "audio"
+            "audio",
+            "pdf"
           ],
           "output": [
             "text"
@@ -29346,13 +29803,15 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "release_date": "2025-07-15",
         "last_updated": "2025-07-15",
         "modalities": {
           "input": [
             "text",
-            "audio"
+            "audio",
+            "pdf"
           ],
           "output": [
             "text"
@@ -29365,7 +29824,7 @@
         },
         "cost": {
           "input": 0.1,
-          "output": 0.3
+          "output": 0.4
         }
       }
     }

@@ -19284,6 +19284,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "codestral-2508",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "text": {
             "value": "supported",
             "source": {
@@ -19492,6 +19502,16 @@
               "policy_rank": 7
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "codestral-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -19518,6 +19538,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "codestral-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "text": {
             "value": "supported",
             "source": {
@@ -20695,6 +20725,16 @@
               "policy_rank": 10
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "cohere",
+              "source_id": "command-a-03-2025",
+              "priority": 70,
+              "policy_rank": 10
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -21123,6 +21163,16 @@
               "policy_rank": 10
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "cohere",
+              "source_id": "command-a-reasoning-08-2025",
+              "priority": 70,
+              "policy_rank": 10
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -21316,6 +21366,16 @@
         "items": {
           "reasoning": {
             "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "cohere",
+              "source_id": "command-a-translate-08-2025",
+              "priority": 70,
+              "policy_rank": 10
+            }
+          },
+          "structured_output": {
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "cohere",
@@ -21523,6 +21583,16 @@
         "items": {
           "reasoning": {
             "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "cohere",
+              "source_id": "command-a-vision-07-2025",
+              "priority": 70,
+              "policy_rank": 10
+            }
+          },
+          "structured_output": {
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "cohere",
@@ -21748,6 +21818,16 @@
               "policy_rank": 10
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "cohere",
+              "source_id": "command-r-08-2024",
+              "priority": 70,
+              "policy_rank": 10
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -21955,6 +22035,16 @@
               "policy_rank": 10
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "cohere",
+              "source_id": "command-r-plus-08-2024",
+              "priority": 70,
+              "policy_rank": 10
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -22150,6 +22240,16 @@
               "policy_rank": 10
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "cohere",
+              "source_id": "command-r7b-12-2024",
+              "priority": 70,
+              "policy_rank": 10
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -22203,7 +22303,7 @@
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2024-12-02",
+        "value": "2024-12-13",
         "source": {
           "upstream": "models.dev",
           "provider": "cohere",
@@ -22296,7 +22396,7 @@
       "release_date": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2024-12-02",
+        "value": "2024-12-13",
         "source": {
           "upstream": "models.dev",
           "provider": "cohere",
@@ -22349,6 +22449,16 @@
         "items": {
           "reasoning": {
             "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "cohere",
+              "source_id": "command-r7b-arabic-02-2025",
+              "priority": 70,
+              "policy_rank": 10
+            }
+          },
+          "structured_output": {
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "cohere",
@@ -27207,7 +27317,7 @@
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 1000000,
+        "value": 1048576,
         "source": {
           "upstream": "models.dev",
           "provider": "deepseek",
@@ -30322,16 +30432,23 @@
         }
       },
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "kind": "configured_route_limit_cap",
+        "upstream": "models.dev",
         "value": 1000000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "deepseek",
-          "source_id": "deepseek-v4-flash",
-          "priority": 70,
-          "policy_rank": 3
-        }
+        "priority": 70,
+        "resolution": "lower configured route limit",
+        "official_value": 1048576,
+        "route_value": 1000000,
+        "routes": [
+          {
+            "upstream": "models.dev",
+            "provider": "cline-pass",
+            "source_id": "cline-pass/deepseek-v4-flash",
+            "route_id": "cline-pass/deepseek-v4-flash",
+            "context_window_tokens": 1000000,
+            "max_output_tokens": 384000
+          }
+        ]
       },
       "description": {
         "kind": "upstream_field_observation",
@@ -30466,7 +30583,23 @@
         }
       },
       "max_input_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "configured_route_limit_cap",
+        "upstream": "models.dev",
+        "value": 1000000,
+        "priority": 70,
+        "resolution": "capped by configured route context limit",
+        "official_context_value": 1048576,
+        "route_context_value": 1000000,
+        "routes": [
+          {
+            "upstream": "models.dev",
+            "provider": "cline-pass",
+            "source_id": "cline-pass/deepseek-v4-flash",
+            "route_id": "cline-pass/deepseek-v4-flash",
+            "context_window_tokens": 1000000,
+            "max_output_tokens": 384000
+          }
+        ]
       },
       "max_output_tokens": {
         "kind": "configured_route_limit_cap",
@@ -31059,7 +31192,7 @@
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 1000000,
+        "value": 1048576,
         "source": {
           "upstream": "models.dev",
           "provider": "deepseek",
@@ -31541,16 +31674,23 @@
         }
       },
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "kind": "configured_route_limit_cap",
+        "upstream": "models.dev",
         "value": 1000000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "deepseek",
-          "source_id": "deepseek-v4-pro",
-          "priority": 70,
-          "policy_rank": 3
-        }
+        "priority": 70,
+        "resolution": "lower configured route limit",
+        "official_value": 1048576,
+        "route_value": 1000000,
+        "routes": [
+          {
+            "upstream": "models.dev",
+            "provider": "cline-pass",
+            "source_id": "cline-pass/deepseek-v4-pro",
+            "route_id": "cline-pass/deepseek-v4-pro",
+            "context_window_tokens": 1000000,
+            "max_output_tokens": 384000
+          }
+        ]
       },
       "description": {
         "kind": "upstream_field_observation",
@@ -31663,7 +31803,23 @@
         }
       },
       "max_input_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "configured_route_limit_cap",
+        "upstream": "models.dev",
+        "value": 1000000,
+        "priority": 70,
+        "resolution": "capped by configured route context limit",
+        "official_context_value": 1048576,
+        "route_context_value": 1000000,
+        "routes": [
+          {
+            "upstream": "models.dev",
+            "provider": "cline-pass",
+            "source_id": "cline-pass/deepseek-v4-pro",
+            "route_id": "cline-pass/deepseek-v4-pro",
+            "context_window_tokens": 1000000,
+            "max_output_tokens": 384000
+          }
+        ]
       },
       "max_output_tokens": {
         "kind": "configured_route_limit_cap",
@@ -31746,7 +31902,7 @@
       "release_date": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-08-12",
+        "value": "2026-08-13",
         "source": {
           "upstream": "models.dev",
           "provider": "deepseek",
@@ -31950,7 +32106,7 @@
       "release_date": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-08-12",
+        "value": "2026-08-13",
         "source": {
           "upstream": "models.dev",
           "provider": "huggingface",
@@ -38010,7 +38166,7 @@
             }
           },
           "temperature": {
-            "value": "supported",
+            "value": "unsupported",
             "source": {
               "upstream": "models.dev",
               "provider": "volcengine",
@@ -56530,10 +56686,28 @@
     },
     "glm-4.5": {
       "assistant_reasoning_field": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.5",
+          "priority": 70,
+          "policy_rank": 4
+        }
       },
       "assistant_reasoning_interleaved": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.5",
+          "priority": 70,
+          "policy_rank": 4
+        }
       },
       "context_window_tokens": {
         "kind": "upstream_field_observation",
@@ -56760,6 +56934,30 @@
       }
     },
     "glm-4.5-air": {
+      "assistant_reasoning_field": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.5-air",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
+      "assistant_reasoning_interleaved": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.5-air",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
@@ -57127,6 +57325,30 @@
       }
     },
     "glm-4.5-flash": {
+      "assistant_reasoning_field": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.5-flash",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
+      "assistant_reasoning_interleaved": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.5-flash",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
@@ -57257,7 +57479,7 @@
       "open_weights": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": true,
+        "value": false,
         "source": {
           "upstream": "models.dev",
           "provider": "zai",
@@ -57501,6 +57723,30 @@
       }
     },
     "glm-4.5v": {
+      "assistant_reasoning_field": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.5v",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
+      "assistant_reasoning_interleaved": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.5v",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
@@ -57687,7 +57933,21 @@
         }
       },
       "pricing": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.6",
+          "output_usd_per_million_tokens": "1.8",
+          "cache_read_usd_per_million_tokens": "0.11",
+          "cache_write_usd_per_million_tokens": "0"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.5v",
+          "priority": 70,
+          "policy_rank": 4
+        }
       },
       "provider_sources": {
         "kind": "upstream_field_observation",
@@ -57783,10 +58043,28 @@
     },
     "glm-4.6": {
       "assistant_reasoning_field": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.6",
+          "priority": 70,
+          "policy_rank": 4
+        }
       },
       "assistant_reasoning_interleaved": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.6",
+          "priority": 70,
+          "policy_rank": 4
+        }
       },
       "context_window_tokens": {
         "kind": "upstream_field_observation",
@@ -58163,6 +58441,30 @@
       }
     },
     "glm-4.6v": {
+      "assistant_reasoning_field": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.6v",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
+      "assistant_reasoning_interleaved": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.6v",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
@@ -58354,7 +58656,8 @@
         "value": {
           "input_usd_per_million_tokens": "0.3",
           "output_usd_per_million_tokens": "0.9",
-          "cache_read_usd_per_million_tokens": "0.05"
+          "cache_read_usd_per_million_tokens": "0.05",
+          "cache_write_usd_per_million_tokens": "0"
         },
         "source": {
           "upstream": "models.dev",
@@ -58402,6 +58705,30 @@
       }
     },
     "glm-4.6v-flash": {
+      "assistant_reasoning_field": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.6v-flash",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
+      "assistant_reasoning_interleaved": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.6v-flash",
+          "priority": 70,
+          "policy_rank": 4
+        }
+      },
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
@@ -58994,10 +59321,10 @@
         "value": "reasoning_content",
         "source": {
           "upstream": "models.dev",
-          "provider": "huggingface",
-          "source_id": "zai-org/GLM-4.7-Flash",
+          "provider": "zai",
+          "source_id": "glm-4.7-flash",
           "priority": 70,
-          "policy_rank": 38
+          "policy_rank": 4
         }
       },
       "assistant_reasoning_interleaved": {
@@ -59006,10 +59333,10 @@
         "value": true,
         "source": {
           "upstream": "models.dev",
-          "provider": "huggingface",
-          "source_id": "zai-org/GLM-4.7-Flash",
+          "provider": "zai",
+          "source_id": "glm-4.7-flash",
           "priority": 70,
-          "policy_rank": 38
+          "policy_rank": 4
         }
       },
       "context_window_tokens": {
@@ -59285,10 +59612,28 @@
     },
     "glm-4.7-flashx": {
       "assistant_reasoning_field": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.7-flashx",
+          "priority": 70,
+          "policy_rank": 4
+        }
       },
       "assistant_reasoning_interleaved": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "zai",
+          "source_id": "glm-4.7-flashx",
+          "priority": 70,
+          "policy_rank": 4
+        }
       },
       "context_window_tokens": {
         "kind": "upstream_field_observation",
@@ -82562,28 +82907,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Efficient model for low-latency assistance, extraction, and routine automation",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-1-mini",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Greg 1 Mini",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-1-mini",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82592,16 +82919,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-01-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-1-mini",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82610,16 +82928,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-1-mini",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82631,16 +82940,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-01-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-1-mini",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "greg-2-super": {
@@ -82648,28 +82948,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "General-purpose chat model for instruction following, writing, and analysis",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-2-super",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Greg 2 Super",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-2-super",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82678,16 +82960,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-2-super",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82696,16 +82969,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-2-super",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82717,16 +82981,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-2-super",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "greg-2-ultra": {
@@ -82734,28 +82989,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Flagship model for demanding analysis, coding, and production agent workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-2-ultra",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Greg 2 Ultra",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-2-ultra",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82764,16 +83001,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-2-ultra",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82782,16 +83010,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-2-ultra",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82803,16 +83022,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "greg-2-ultra",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "grok-3": {
@@ -86559,16 +86769,6 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
-          "document": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-imagine-image",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
           "image": {
             "value": "supported",
             "source": {
@@ -86646,8 +86846,7 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": [
-          "image",
-          "pdf"
+          "image"
         ],
         "source": {
           "upstream": "models.dev",
@@ -86795,16 +86994,6 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
-          "document": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-imagine-image-quality",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
           "image": {
             "value": "supported",
             "source": {
@@ -86831,6 +87020,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2026-04-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "xai",
+          "source_id": "grok-imagine-image-quality",
+          "priority": 70,
+          "policy_rank": 6
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "xai",
@@ -86882,8 +87083,7 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": [
-          "image",
-          "pdf"
+          "image"
         ],
         "source": {
           "upstream": "models.dev",
@@ -86996,16 +87196,6 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
-          "document": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-imagine-video",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
           "image": {
             "value": "supported",
             "source": {
@@ -87145,7 +87335,7 @@
       "description": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "Video model for image-to-video generation, editing, and extension workflows",
+        "value": "Video model for text-to-video, image-to-video, and reference-to-video generation with optional voice references",
         "source": {
           "upstream": "models.dev",
           "provider": "xai",
@@ -87207,16 +87397,6 @@
         "scope": "publisher_api_model",
         "items": {
           "audio": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-imagine-video-1.5",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
-          "document": {
             "value": "supported",
             "source": {
               "upstream": "models.dev",
@@ -87416,16 +87596,6 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
-          "document": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-imagine-video-1.5-lite",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
           "image": {
             "value": "supported",
             "source": {
@@ -91961,7 +92131,7 @@
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2025-07-01",
+        "value": "2025-07-03",
         "source": {
           "upstream": "models.dev",
           "provider": "ai21",
@@ -92042,7 +92212,7 @@
       "release_date": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2025-07-01",
+        "value": "2025-07-03",
         "source": {
           "upstream": "models.dev",
           "provider": "ai21",
@@ -92292,7 +92462,7 @@
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-01-01",
+        "value": "2026-01-08",
         "source": {
           "upstream": "models.dev",
           "provider": "ai21",
@@ -92373,7 +92543,7 @@
       "release_date": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-01-01",
+        "value": "2026-01-08",
         "source": {
           "upstream": "models.dev",
           "provider": "ai21",
@@ -94917,7 +95087,7 @@
             }
           },
           "temperature": {
-            "value": "supported",
+            "value": "unsupported",
             "source": {
               "upstream": "models.dev",
               "provider": "moonshotai",
@@ -94989,7 +95159,7 @@
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-04-21",
+        "value": "2026-04-20",
         "source": {
           "upstream": "models.dev",
           "provider": "moonshotai",
@@ -95083,7 +95253,7 @@
       "release_date": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-04-21",
+        "value": "2026-04-20",
         "source": {
           "upstream": "models.dev",
           "provider": "moonshotai",
@@ -95145,16 +95315,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-21",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "greenpt",
-          "source_id": "kimi-k2.6-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
         "kind": "upstream_field_observation",
@@ -95196,16 +95357,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-21",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "greenpt",
-          "source_id": "kimi-k2.6-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "kimi-k2.6-flex": {
@@ -95317,16 +95469,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-21",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "routing-run",
-          "source_id": "kimi-k2.6-nitro",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -95356,16 +95499,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-21",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "routing-run",
-          "source_id": "kimi-k2.6-nitro",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "kimi-k2.6:thinking": {
@@ -96806,28 +96940,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "kimi-k3-eco",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Kimi K3 Eco",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "kimi-k3-eco",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -96836,16 +96952,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-07-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "kimi-k3-eco",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -96857,16 +96964,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "kimi-k3-eco",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -96878,16 +96976,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-07-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "crof",
-          "source_id": "kimi-k3-eco",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -97174,16 +97263,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-21",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "privatemode-ai",
-          "source_id": "kimi-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -97213,16 +97293,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-21",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "privatemode-ai",
-          "source_id": "kimi-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -104281,6 +104352,217 @@
         "priority": 70
       }
     },
+    "mercury-3": {
+      "context_window_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1000000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "inception",
+          "source_id": "mercury-3",
+          "priority": 70,
+          "policy_rank": 15
+        }
+      },
+      "description": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Inception's diffusion reasoning model for chat, multi-step problem solving, and tool use",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "inception",
+          "source_id": "mercury-3",
+          "priority": 70,
+          "policy_rank": 15
+        }
+      },
+      "display_name": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Mercury 3",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "inception",
+          "source_id": "mercury-3",
+          "priority": 70,
+          "policy_rank": 15
+        }
+      },
+      "features": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "inception",
+              "source_id": "mercury-3",
+              "priority": 70,
+              "policy_rank": 15
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "inception",
+              "source_id": "mercury-3",
+              "priority": 70,
+              "policy_rank": 15
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "inception",
+              "source_id": "mercury-3",
+              "priority": 70,
+              "policy_rank": 15
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "inception",
+              "source_id": "mercury-3",
+              "priority": 70,
+              "policy_rank": 15
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "inception",
+              "source_id": "mercury-3",
+              "priority": 70,
+              "policy_rank": 15
+            }
+          }
+        }
+      },
+      "last_updated": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-20",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "inception",
+          "source_id": "mercury-3",
+          "priority": 70,
+          "policy_rank": 15
+        }
+      },
+      "max_input_tokens": {
+        "kind": "existing_catalog_or_pipeline_value"
+      },
+      "max_output_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 131072,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "inception",
+          "source_id": "mercury-3",
+          "priority": 70,
+          "policy_rank": 15
+        }
+      },
+      "open_weights": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "inception",
+          "source_id": "mercury-3",
+          "priority": 70,
+          "policy_rank": 15
+        }
+      },
+      "origin": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Mercury",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "inception",
+          "source_id": "mercury-3",
+          "priority": 70,
+          "policy_rank": 15
+        }
+      },
+      "output_modalities": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "inception",
+          "source_id": "mercury-3",
+          "priority": 70,
+          "policy_rank": 15
+        }
+      },
+      "pricing": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.1",
+          "output_usd_per_million_tokens": "0.35",
+          "cache_read_usd_per_million_tokens": "0.01"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "inception",
+          "source_id": "mercury-3",
+          "priority": 70,
+          "policy_rank": 15
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "inception"
+        ],
+        "observations": [
+          {
+            "provider": "inception",
+            "source_id": "mercury-3"
+          }
+        ]
+      },
+      "release_date": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-16",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "inception",
+          "source_id": "mercury-3",
+          "priority": 70,
+          "policy_rank": 15
+        }
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
+      }
+    },
     "mercury-coder-small": {
       "context_window_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -108646,6 +108928,18 @@
           "policy_rank": 9
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M2",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -108929,7 +109223,16 @@
         }
       },
       "lifecycle": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M2.1",
+          "priority": 70,
+          "policy_rank": 9
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -109270,7 +109573,16 @@
         }
       },
       "lifecycle": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M2.5",
+          "priority": 70,
+          "policy_rank": 9
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -109603,6 +109915,18 @@
           "policy_rank": 9
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M2.5-highspeed",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
         "path": "curation/patches/mistral_minimax.json",
@@ -109901,6 +110225,18 @@
           "policy_rank": 9
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M2.7",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -110109,6 +110445,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2026-03-18",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M2.7-highspeed",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "minimax",
@@ -110602,13 +110950,13 @@
             }
           },
           "structured_output": {
-            "value": "supported",
+            "value": "unsupported",
             "source": {
               "upstream": "models.dev",
-              "provider": "huggingface",
-              "source_id": "MiniMaxAI/MiniMax-M3",
+              "provider": "minimax",
+              "source_id": "MiniMax-M3",
               "priority": 70,
-              "policy_rank": 32
+              "policy_rank": 9
             }
           },
           "temperature": {
@@ -110691,16 +111039,23 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "kind": "configured_route_limit_cap",
+        "upstream": "models.dev",
         "value": 512000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "minimax",
-          "source_id": "MiniMax-M3",
-          "priority": 70,
-          "policy_rank": 9
-        }
+        "priority": 70,
+        "resolution": "lower configured route limit",
+        "official_value": 524288,
+        "route_value": 512000,
+        "routes": [
+          {
+            "upstream": "models.dev",
+            "provider": "cline-pass",
+            "source_id": "cline-pass/minimax-m3",
+            "route_id": "cline-pass/minimax-m3",
+            "context_window_tokens": 1048576,
+            "max_output_tokens": 512000
+          }
+        ]
       },
       "open_weights": {
         "kind": "upstream_field_observation",
@@ -110943,8 +111298,18 @@
               "policy_rank": 9
             }
           },
-          "temperature": {
+          "structured_output": {
             "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "minimax",
+              "source_id": "MiniMax-M3.1-Flash",
+              "priority": 70,
+              "policy_rank": 9
+            }
+          },
+          "temperature": {
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "minimax",
@@ -111019,7 +111384,7 @@
       "max_output_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 512000,
+        "value": 524288,
         "source": {
           "upstream": "models.dev",
           "provider": "minimax",
@@ -111031,7 +111396,7 @@
       "open_weights": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": true,
+        "value": false,
         "source": {
           "upstream": "models.dev",
           "provider": "minimax",
@@ -111409,6 +111774,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "ministral-14b-2512",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -112114,6 +112489,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "ministral-3b-2512",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -112294,6 +112679,16 @@
               "policy_rank": 7
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "ministral-3b-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -112320,6 +112715,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "ministral-3b-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -112423,8 +112828,9 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": {
-          "input_usd_per_million_tokens": "0.04",
-          "output_usd_per_million_tokens": "0.04"
+          "input_usd_per_million_tokens": "0.1",
+          "output_usd_per_million_tokens": "0.1",
+          "cache_read_usd_per_million_tokens": "0.01"
         },
         "source": {
           "upstream": "models.dev",
@@ -112588,6 +112994,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "ministral-8b-2512",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -112806,6 +113222,16 @@
               "policy_rank": 7
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "ministral-8b-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -112832,6 +113258,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "ministral-8b-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -112935,8 +113371,9 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": {
-          "input_usd_per_million_tokens": "0.1",
-          "output_usd_per_million_tokens": "0.1"
+          "input_usd_per_million_tokens": "0.15",
+          "output_usd_per_million_tokens": "0.15",
+          "cache_read_usd_per_million_tokens": "0.015"
         },
         "source": {
           "upstream": "models.dev",
@@ -114115,6 +114552,16 @@
               "policy_rank": 7
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-large-2512",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -114141,6 +114588,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-large-2512",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -114629,6 +115086,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-large-4",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -114908,6 +115375,16 @@
               "policy_rank": 7
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-large-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -114934,6 +115411,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-large-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -115771,6 +116258,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-medium-2604",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -116490,6 +116987,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-medium-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -117670,6 +118177,16 @@
               "policy_rank": 7
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-small-2603",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -117696,6 +118213,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-small-2603",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -118425,6 +118952,16 @@
               "policy_rank": 7
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-small-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -118451,6 +118988,16 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "mistral-small-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "image": {
             "value": "supported",
             "source": {
@@ -122214,6 +122761,18 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-06-25",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "ollama-cloud",
+          "source_id": "nemotron-3-nano:30b",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
@@ -122685,6 +123244,18 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "llmgateway",
+          "source_id": "nemotron-3-ultra-550b",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
       "last_updated": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -122758,6 +123329,18 @@
       },
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "kenari",
+          "source_id": "nemotron-3-ultra-550b-a55b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
@@ -122878,16 +123461,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-04",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "requesty",
-          "source_id": "nemotron-3.5-content-safety",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -122917,16 +123491,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-04",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "requesty",
-          "source_id": "nemotron-3.5-content-safety",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "nemotron-3.5-lightning": {
@@ -125075,6 +125640,18 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-06",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "digitalocean",
+          "source_id": "nvidia-nemotron-3-super-120b",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
@@ -125222,6 +125799,18 @@
       },
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "venice",
+          "source_id": "nvidia-nemotron-3-ultra-550b-a55b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
@@ -127597,221 +128186,49 @@
     },
     "open-mistral-7b": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 8000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Mistral 7B",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mistral-7b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          },
-          "temperature": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mistral-7b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          },
-          "tool_calling": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mistral-7b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mistral-7b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2023-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2023-09-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "deprecated",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 8000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Mistral AI",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "text"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "pricing": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": {
-          "input_usd_per_million_tokens": "0.25",
-          "output_usd_per_million_tokens": "0.25"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
-      },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "mistral"
-        ],
-        "observations": [
-          {
-            "provider": "mistral",
-            "source_id": "open-mistral-7b"
-          }
-        ]
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2023-09-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mistral-7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "open-mistral-nemo": {
@@ -128035,440 +128452,96 @@
     },
     "open-mixtral-8x22b": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 64000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Mixtral 8x22B",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mixtral-8x22b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          },
-          "temperature": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mixtral-8x22b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          },
-          "tool_calling": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mixtral-8x22b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mixtral-8x22b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2024-04",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2024-04-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "deprecated",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 64000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Mistral AI",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "text"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "pricing": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": {
-          "input_usd_per_million_tokens": "2",
-          "output_usd_per_million_tokens": "6"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
-      },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "mistral"
-        ],
-        "observations": [
-          {
-            "provider": "mistral",
-            "source_id": "open-mixtral-8x22b"
-          }
-        ]
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2024-04-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x22b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "open-mixtral-8x7b": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 32000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Mixtral 8x7B",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mixtral-8x7b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          },
-          "temperature": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mixtral-8x7b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          },
-          "tool_calling": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mixtral-8x7b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "mistral",
-              "source_id": "open-mixtral-8x7b",
-              "priority": 70,
-              "policy_rank": 7
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2024-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2023-12-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "deprecated",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 32000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Mistral AI",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "text"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "pricing": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": {
-          "input_usd_per_million_tokens": "0.7",
-          "output_usd_per_million_tokens": "0.7"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
-      },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "mistral"
-        ],
-        "observations": [
-          {
-            "provider": "mistral",
-            "source_id": "open-mixtral-8x7b"
-          }
-        ]
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2023-12-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "mistral",
-          "source_id": "open-mixtral-8x7b",
-          "priority": 70,
-          "policy_rank": 7
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "openai-gpt-4.1": {
@@ -136838,6 +136911,16 @@
               "policy_rank": 5
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "alibaba",
+              "source_id": "qwen-flash",
+              "priority": 70,
+              "policy_rank": 5
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -137346,6 +137429,16 @@
               "policy_rank": 23
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "alibaba-cn",
+              "source_id": "qwen-long",
+              "priority": 70,
+              "policy_rank": 23
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -137357,7 +137450,7 @@
             }
           },
           "tool_calling": {
-            "value": "supported",
+            "value": "unsupported",
             "source": {
               "upstream": "models.dev",
               "provider": "alibaba-cn",
@@ -137603,6 +137696,18 @@
           "policy_rank": 23
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba-cn",
+          "source_id": "qwen-math-plus",
+          "priority": 70,
+          "policy_rank": 23
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -137810,6 +137915,18 @@
           "policy_rank": 23
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba-cn",
+          "source_id": "qwen-math-turbo",
+          "priority": 70,
+          "policy_rank": 23
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -137947,6 +138064,16 @@
         "items": {
           "reasoning": {
             "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "alibaba",
+              "source_id": "qwen-max",
+              "priority": 70,
+              "policy_rank": 5
+            }
+          },
+          "structured_output": {
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "alibaba",
@@ -138562,6 +138689,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen-mt-turbo",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -138804,6 +138943,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen-omni-turbo",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -139037,6 +139188,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen-omni-turbo-realtime",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -139179,6 +139342,16 @@
         "scope": "publisher_api_model",
         "items": {
           "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "alibaba",
+              "source_id": "qwen-plus",
+              "priority": 70,
+              "policy_rank": 5
+            }
+          },
+          "structured_output": {
             "value": "supported",
             "source": {
               "upstream": "models.dev",
@@ -139502,7 +139675,7 @@
             }
           },
           "tool_calling": {
-            "value": "supported",
+            "value": "unsupported",
             "source": {
               "upstream": "models.dev",
               "provider": "alibaba-cn",
@@ -139709,7 +139882,7 @@
             }
           },
           "tool_calling": {
-            "value": "supported",
+            "value": "unsupported",
             "source": {
               "upstream": "models.dev",
               "provider": "alibaba",
@@ -140053,6 +140226,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen-turbo",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -140255,6 +140440,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-08-13",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen-vl-max",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -140784,6 +140981,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen-vl-plus",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -140988,6 +141197,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2024-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen2-5-14b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -141208,6 +141429,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen2-5-32b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -141420,6 +141653,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen2-5-72b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -141624,6 +141869,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2024-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen2-5-7b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -141936,6 +142193,18 @@
           "policy_rank": 23
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba-cn",
+          "source_id": "qwen2-5-coder-32b-instruct",
+          "priority": 70,
+          "policy_rank": 23
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -142234,6 +142503,18 @@
           "policy_rank": 23
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba-cn",
+          "source_id": "qwen2-5-coder-7b-instruct",
+          "priority": 70,
+          "policy_rank": 23
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -142441,6 +142722,18 @@
           "policy_rank": 23
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba-cn",
+          "source_id": "qwen2-5-math-72b-instruct",
+          "priority": 70,
+          "policy_rank": 23
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -142640,6 +142933,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2024-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba-cn",
+          "source_id": "qwen2-5-math-7b-instruct",
+          "priority": 70,
+          "policy_rank": 23
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba-cn",
@@ -142877,6 +143182,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2024-12",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen2-5-omni-7b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -143152,6 +143469,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen2-5-vl-72b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -143354,6 +143683,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2024-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen2-5-vl-7b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -144035,6 +144376,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-coder-30b-a3b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -144232,6 +144585,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-coder-480b-a35b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -144464,6 +144829,16 @@
         "items": {
           "reasoning": {
             "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "alibaba",
+              "source_id": "qwen3-coder-flash",
+              "priority": 70,
+              "policy_rank": 5
+            }
+          },
+          "structured_output": {
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "alibaba",
@@ -144921,6 +145296,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-07-23",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-coder-plus",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -145674,6 +146061,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-livetranslate-flash-realtime",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -145908,6 +146307,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-09-23",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-max",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -146576,6 +146987,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-next-80b-a3b-instruct",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -146785,6 +147208,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-next-80b-a3b-thinking",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -147433,6 +147868,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-omni-flash-realtime",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -147855,6 +148302,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-vl-235b-a22b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -148513,6 +148972,18 @@
           "source_id": "qwen3-vl-30b-a3b",
           "priority": 70,
           "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba-cn",
+          "source_id": "qwen3-vl-30b-a3b",
+          "priority": 70,
+          "policy_rank": 23
         }
       },
       "max_input_tokens": {
@@ -149307,6 +149778,16 @@
               "policy_rank": 5
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "alibaba",
+              "source_id": "qwen3-vl-plus",
+              "priority": 70,
+              "policy_rank": 5
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -149688,6 +150169,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-14b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -149990,6 +150483,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-235b-a22b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -151174,6 +151679,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-32b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -151652,16 +152169,6 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
-          "audio": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "alibaba",
-              "source_id": "qwen3.5-122b-a10b",
-              "priority": 70,
-              "policy_rank": 5
-            }
-          },
           "image": {
             "value": "supported",
             "source": {
@@ -151992,16 +152499,6 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
-          "audio": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "alibaba",
-              "source_id": "qwen3.5-27b",
-              "priority": 70,
-              "policy_rank": 5
-            }
-          },
           "image": {
             "value": "supported",
             "source": {
@@ -152374,16 +152871,6 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
-          "audio": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "alibaba",
-              "source_id": "qwen3.5-35b-a3b",
-              "priority": 70,
-              "policy_rank": 5
-            }
-          },
           "image": {
             "value": "supported",
             "source": {
@@ -152685,16 +153172,6 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
-          "audio": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "alibaba",
-              "source_id": "qwen3.5-397b-a17b",
-              "priority": 70,
-              "policy_rank": 5
-            }
-          },
           "image": {
             "value": "supported",
             "source": {
@@ -153927,10 +154404,10 @@
             "value": "supported",
             "source": {
               "upstream": "models.dev",
-              "provider": "alibaba-cn",
+              "provider": "alibaba",
               "source_id": "qwen3.5-plus",
               "priority": 70,
-              "policy_rank": 23
+              "policy_rank": 5
             }
           },
           "temperature": {
@@ -154360,16 +154837,6 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
-          "audio": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "alibaba",
-              "source_id": "qwen3.6-27b",
-              "priority": 70,
-              "policy_rank": 5
-            }
-          },
           "image": {
             "value": "supported",
             "source": {
@@ -154754,16 +155221,6 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
-          "audio": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "alibaba",
-              "source_id": "qwen3.6-35b-a3b",
-              "priority": 70,
-              "policy_rank": 5
-            }
-          },
           "image": {
             "value": "supported",
             "source": {
@@ -155240,7 +155697,31 @@
         }
       },
       "pricing": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.25",
+          "output_usd_per_million_tokens": "1.5",
+          "cache_read_usd_per_million_tokens": "0.025",
+          "cache_write_usd_per_million_tokens": "0.3125",
+          "tiers": [
+            {
+              "tier_type": "context",
+              "size_tokens": 256000,
+              "input_usd_per_million_tokens": "1",
+              "output_usd_per_million_tokens": "4",
+              "cache_read_usd_per_million_tokens": "0.1",
+              "cache_write_usd_per_million_tokens": "1.25"
+            }
+          ]
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3.6-flash",
+          "priority": 70,
+          "policy_rank": 5
+        }
       },
       "provider_sources": {
         "kind": "upstream_field_observation",
@@ -155461,6 +155942,18 @@
           "policy_rank": 5
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3.6-max-preview",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -155616,6 +156109,16 @@
         "scope": "publisher_api_model",
         "items": {
           "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "alibaba",
+              "source_id": "qwen3.6-plus",
+              "priority": 70,
+              "policy_rank": 5
+            }
+          },
+          "structured_output": {
             "value": "supported",
             "source": {
               "upstream": "models.dev",
@@ -156220,6 +156723,16 @@
         "scope": "publisher_api_model",
         "items": {
           "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "alibaba",
+              "source_id": "qwen3.7-max",
+              "priority": 70,
+              "policy_rank": 5
+            }
+          },
+          "structured_output": {
             "value": "supported",
             "source": {
               "upstream": "models.dev",
@@ -157291,6 +157804,16 @@
               "policy_rank": 5
             }
           },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "alibaba",
+              "source_id": "qwen3.8-flash",
+              "priority": 70,
+              "policy_rank": 5
+            }
+          },
           "tool_calling": {
             "value": "supported",
             "source": {
@@ -157974,6 +158497,16 @@
               "policy_rank": 5
             }
           },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "alibaba",
+              "source_id": "qwen3.8-omni-flash",
+              "priority": 70,
+              "policy_rank": 5
+            }
+          },
           "tool_calling": {
             "value": "supported",
             "source": {
@@ -158260,6 +158793,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-8b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -158872,6 +159417,18 @@
           "policy_rank": 23
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba-cn",
+          "source_id": "qwq-32b",
+          "priority": 70,
+          "policy_rank": 23
+        }
+      },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
         "path": "curation/patches/alibaba.json",
@@ -159080,6 +159637,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-03-05",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwq-plus",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "alibaba",
@@ -160890,7 +161459,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2026-02-18",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "nano-gpt",
+          "source_id": "sarvam-105b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -167694,6 +168272,16 @@
               "policy_rank": 13
             }
           },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "stepfun-ai",
+              "source_id": "step-5-preview",
+              "priority": 70,
+              "policy_rank": 13
+            }
+          },
           "tool_calling": {
             "value": "supported",
             "source": {
@@ -172699,7 +173287,7 @@
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-02-01",
+        "value": "2026-02-04",
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -172777,7 +173365,7 @@
       "release_date": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-02-01",
+        "value": "2026-02-04",
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -172870,7 +173458,7 @@
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-03-01",
+        "value": "2026-03-23",
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -172897,7 +173485,7 @@
       "open_weights": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": false,
+        "value": true,
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -172948,7 +173536,7 @@
       "release_date": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-03-01",
+        "value": "2026-03-23",
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -173107,6 +173695,16 @@
               "policy_rank": 7
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "voxtral-small-2507",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -173134,6 +173732,16 @@
         "scope": "publisher_api_model",
         "items": {
           "audio": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "voxtral-small-2507",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
+          "document": {
             "value": "supported",
             "source": {
               "upstream": "models.dev",
@@ -173300,6 +173908,16 @@
               "policy_rank": 7
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "voxtral-small-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -173327,6 +173945,16 @@
         "scope": "publisher_api_model",
         "items": {
           "audio": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "mistral",
+              "source_id": "voxtral-small-latest",
+              "priority": 70,
+              "policy_rank": 7
+            }
+          },
+          "document": {
             "value": "supported",
             "source": {
               "upstream": "models.dev",
@@ -173418,7 +174046,7 @@
         "scope": "publisher_api_model",
         "value": {
           "input_usd_per_million_tokens": "0.1",
-          "output_usd_per_million_tokens": "0.3"
+          "output_usd_per_million_tokens": "0.4"
         },
         "source": {
           "upstream": "models.dev",
@@ -176163,28 +176791,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Budget GLM lane for fast coding help, routing, and everyday automation",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "zai-org-glm-4.7-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "GLM 4.7 Flash",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "zai-org-glm-4.7-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -176193,28 +176803,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-04",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "zai-org-glm-4.7-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "zai-org-glm-4.7-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -176223,16 +176815,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "zai-org-glm-4.7-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -176244,16 +176827,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-01-29",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "zai-org-glm-4.7-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",

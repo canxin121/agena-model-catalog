@@ -3,8 +3,8 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "b944f63543aae99181e7d74ac40b7ccc389b4d11306c2db07a1086381aebf5b5",
-    "record_count": 232
+    "sha256": "6380927df10782511a2c36dfd45a2ec37434021ced35ef7de874ceb45ce90356",
+    "record_count": 231
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
   "records": [
@@ -2559,6 +2559,7 @@
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "structured_output": false,
         "temperature": true,
         "release_date": "2024-10-24",
         "last_updated": "2024-10-24",
@@ -2574,6 +2575,10 @@
         "limit": {
           "context": 128000,
           "output": 4000
+        },
+        "cost": {
+          "input": 0.5,
+          "output": 1.5
         },
         "canonical_model_id": "cohere/c4ai-aya-expanse-32b"
       }
@@ -2605,6 +2610,7 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": false,
+        "structured_output": false,
         "temperature": true,
         "release_date": "2025-03-04",
         "last_updated": "2025-05-14",
@@ -4149,8 +4155,7 @@
               "low",
               "medium",
               "high",
-              "xhigh",
-              "max"
+              "xhigh"
             ]
           }
         ],
@@ -4223,8 +4228,7 @@
               "low",
               "medium",
               "high",
-              "xhigh",
-              "max"
+              "xhigh"
             ]
           }
         ],
@@ -7476,7 +7480,9 @@
         "last_updated": "2025-05-16",
         "modalities": {
           "input": [
-            "text"
+            "text",
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -7539,7 +7545,9 @@
         "last_updated": "2025-05-16",
         "modalities": {
           "input": [
-            "text"
+            "text",
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -10575,6 +10583,7 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": false,
+        "temperature": true,
         "release_date": "2026-01-27",
         "last_updated": "2026-01-27",
         "modalities": {
@@ -10627,6 +10636,7 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": false,
+        "temperature": true,
         "release_date": "2026-01-27",
         "last_updated": "2026-01-27",
         "modalities": {
@@ -10678,7 +10688,7 @@
         "attachment": false,
         "reasoning": true,
         "reasoning_options": [],
-        "tool_call": true,
+        "tool_call": false,
         "temperature": true,
         "release_date": "2025-01-01",
         "last_updated": "2025-01-01",
@@ -10861,6 +10871,7 @@
           "context": 32768,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0,
           "output": 0
@@ -10895,7 +10906,7 @@
         "attachment": false,
         "reasoning": true,
         "reasoning_options": [],
-        "tool_call": true,
+        "tool_call": false,
         "temperature": true,
         "release_date": "2025-01-01",
         "last_updated": "2025-01-01",
@@ -10963,6 +10974,7 @@
           "context": 32768,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.144,
           "output": 0.431
@@ -11014,6 +11026,7 @@
           "context": 32768,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.287,
           "output": 0.861
@@ -11065,6 +11078,7 @@
           "context": 32768,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.072,
           "output": 0.144
@@ -14806,6 +14820,7 @@
       },
       "raw": {
         "id": "gemini-2.5-flash-tts",
+        "type": "speech",
         "name": "Gemini 2.5 Flash TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "gemini-flash",
@@ -15180,6 +15195,7 @@
       },
       "raw": {
         "id": "gemini-2.5-pro-tts",
+        "type": "speech",
         "name": "Gemini 2.5 Pro TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "gemini-pro",
@@ -16178,6 +16194,7 @@
       },
       "raw": {
         "id": "gemini-embedding",
+        "type": "embedding",
         "name": "Gemini Embedding 001",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
         "family": "gemini",
@@ -18396,6 +18413,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
+            "type": "toggle"
+          },
+          {
             "type": "effort",
             "values": [
               "high",
@@ -18424,6 +18444,7 @@
           "context": 1000000,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0,
           "output": 0,
@@ -20408,7 +20429,7 @@
         "name": "GPT-5-Codex",
         "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
         "family": "gpt-codex",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -20428,7 +20449,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -20443,7 +20465,7 @@
         "cost": {
           "input": 1.25,
           "output": 10,
-          "cache_read": 0.13
+          "cache_read": 0.125
         }
       }
     },
@@ -20472,7 +20494,7 @@
         "name": "GPT-5-Codex",
         "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
         "family": "gpt-codex",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -20492,7 +20514,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -20507,7 +20530,7 @@
         "cost": {
           "input": 1.25,
           "output": 10,
-          "cache_read": 0.13
+          "cache_read": 0.125
         }
       }
     },
@@ -21049,9 +21072,9 @@
       "raw": {
         "id": "gpt-5.1-codex",
         "name": "GPT-5.1 Codex",
-        "description": "Speech generation model for controllable voice, narration, and audio delivery",
+        "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
         "family": "gpt-codex",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -21073,12 +21096,10 @@
           "input": [
             "text",
             "image",
-            "audio"
+            "pdf"
           ],
           "output": [
-            "text",
-            "image",
-            "audio"
+            "text"
           ]
         },
         "open_weights": false,
@@ -21117,9 +21138,9 @@
       "raw": {
         "id": "gpt-5.1-codex",
         "name": "GPT-5.1 Codex",
-        "description": "Speech generation model for controllable voice, narration, and audio delivery",
+        "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
         "family": "gpt-codex",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -21141,12 +21162,10 @@
           "input": [
             "text",
             "image",
-            "audio"
+            "pdf"
           ],
           "output": [
-            "text",
-            "image",
-            "audio"
+            "text"
           ]
         },
         "open_weights": false,
@@ -21561,7 +21580,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -21628,7 +21648,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -21916,7 +21937,7 @@
         "name": "GPT-5.1 Codex Mini",
         "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
         "family": "gpt-codex",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -21937,7 +21958,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -21981,7 +22003,7 @@
         "name": "GPT-5.1 Codex Mini",
         "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
         "family": "gpt-codex",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -22002,7 +22024,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -22526,7 +22549,7 @@
         "name": "GPT-5.2 Codex",
         "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
         "family": "gpt-codex",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -22548,7 +22571,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -22592,7 +22616,7 @@
         "name": "GPT-5.2 Codex",
         "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
         "family": "gpt-codex",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -22614,7 +22638,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -23819,157 +23844,6 @@
         "cost": {
           "input": 0.00437,
           "output": 0
-        }
-      }
-    },
-    {
-      "catalog_model_id": "greg-1-mini",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "crof",
-        "source_id": "greg-1-mini",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "greg-1-mini",
-        "name": "Greg 1 Mini",
-        "description": "Efficient model for low-latency assistance, extraction, and routine automation",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": false,
-        "temperature": true,
-        "release_date": "2026-01-27",
-        "last_updated": "2026-01-27",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 229376,
-          "output": 229376
-        },
-        "cost": {
-          "input": 0.07,
-          "output": 0.15,
-          "cache_read": 0.01
-        }
-      }
-    },
-    {
-      "catalog_model_id": "greg-2-super",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "crof",
-        "source_id": "greg-2-super",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "greg-2-super",
-        "name": "Greg 2 Super",
-        "description": "General-purpose chat model for instruction following, writing, and analysis",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "temperature": true,
-        "release_date": "2026-06-14",
-        "last_updated": "2026-06-14",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 229376,
-          "output": 229376
-        },
-        "cost": {
-          "input": 1.5,
-          "output": 5,
-          "cache_read": 0.25
-        }
-      }
-    },
-    {
-      "catalog_model_id": "greg-2-ultra",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "crof",
-        "source_id": "greg-2-ultra",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "greg-2-ultra",
-        "name": "Greg 2 Ultra",
-        "description": "Flagship model for demanding analysis, coding, and production agent workflows",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "temperature": true,
-        "release_date": "2026-06-14",
-        "last_updated": "2026-06-14",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 229376,
-          "output": 229376
-        },
-        "cost": {
-          "input": 3,
-          "output": 10,
-          "cache_read": 0.5
         }
       }
     },
@@ -25245,6 +25119,7 @@
       },
       "raw": {
         "id": "happyhorse-1.1-i2v",
+        "type": "video",
         "name": "HappyHorse 1.1 Image-to-Video",
         "description": "Video model for image-to-video generation",
         "attachment": true,
@@ -25295,6 +25170,7 @@
       },
       "raw": {
         "id": "happyhorse-1.1-i2v",
+        "type": "video",
         "name": "HappyHorse 1.1 Image-to-Video",
         "description": "Video model for image-to-video generation",
         "attachment": true,
@@ -25345,6 +25221,7 @@
       },
       "raw": {
         "id": "happyhorse-1.1-r2v",
+        "type": "video",
         "name": "HappyHorse 1.1 Reference-to-Video",
         "description": "Video model for reference-guided video generation",
         "attachment": true,
@@ -25395,6 +25272,7 @@
       },
       "raw": {
         "id": "happyhorse-1.1-r2v",
+        "type": "video",
         "name": "HappyHorse 1.1 Reference-to-Video",
         "description": "Video model for reference-guided video generation",
         "attachment": true,
@@ -25445,6 +25323,7 @@
       },
       "raw": {
         "id": "happyhorse-1.1-t2v",
+        "type": "video",
         "name": "HappyHorse 1.1 Text-to-Video",
         "description": "Video model for prompt-driven text-to-video generation",
         "attachment": false,
@@ -25494,6 +25373,7 @@
       },
       "raw": {
         "id": "happyhorse-1.1-t2v",
+        "type": "video",
         "name": "HappyHorse 1.1 Text-to-Video",
         "description": "Video model for prompt-driven text-to-video generation",
         "attachment": false,
@@ -26410,11 +26290,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
-          },
-          {
             "type": "effort",
             "values": [
+              "none",
               "low",
               "high",
               "max"
@@ -26482,11 +26360,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
-          },
-          {
             "type": "effort",
             "values": [
+              "none",
               "low",
               "high",
               "max"
@@ -26556,6 +26432,7 @@
           {
             "type": "effort",
             "values": [
+              "none",
               "low",
               "high",
               "max"
@@ -26624,6 +26501,7 @@
           {
             "type": "effort",
             "values": [
+              "none",
               "low",
               "high",
               "max"
@@ -26740,11 +26618,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
-          },
-          {
             "type": "effort",
             "values": [
+              "none",
               "low",
               "high",
               "max"
@@ -26755,6 +26631,7 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "temperature": false,
         "release_date": "2026-09-11",
         "last_updated": "2026-09-11",
         "modalities": {
@@ -26810,11 +26687,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
-          },
-          {
             "type": "effort",
             "values": [
+              "none",
               "low",
               "high",
               "max"
@@ -26825,6 +26700,7 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "temperature": false,
         "release_date": "2026-09-11",
         "last_updated": "2026-09-11",
         "modalities": {
@@ -27313,8 +27189,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-01",
-        "release_date": "2026-04-21",
-        "last_updated": "2026-04-21",
+        "release_date": "2026-04-20",
+        "last_updated": "2026-04-20",
         "modalities": {
           "input": [
             "text",
@@ -27372,8 +27248,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-01",
-        "release_date": "2026-04-21",
-        "last_updated": "2026-04-21",
+        "release_date": "2026-04-20",
+        "last_updated": "2026-04-20",
         "modalities": {
           "input": [
             "text",
@@ -27514,78 +27390,6 @@
           "output": 1.1
         },
         "canonical_model_id": "moonshotai/kimi-k2.7-code"
-      }
-    },
-    {
-      "catalog_model_id": "kimi-k3-eco",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "crof",
-        "source_id": "kimi-k3-eco",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "kimi-k3-eco",
-        "name": "Kimi K3 Eco",
-        "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-        "family": "kimi-k3",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "structured_output": true,
-        "temperature": false,
-        "release_date": "2026-07-16",
-        "last_updated": "2026-07-16",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1000000,
-          "output": 131072
-        },
-        "provider": {
-          "npm": "@ai-sdk/openai-compatible"
-        },
-        "cost": {
-          "input": 1,
-          "output": 4,
-          "cache_read": 0.1
-        },
-        "canonical_model_id": "moonshotai/kimi-k3"
       }
     },
     {
@@ -27811,8 +27615,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-01",
-        "release_date": "2026-04-21",
-        "last_updated": "2026-04-21",
+        "release_date": "2026-04-20",
+        "last_updated": "2026-04-20",
         "modalities": {
           "input": [
             "text",
@@ -27909,7 +27713,7 @@
         "name": "Devstral Small 2",
         "description": "Legacy model retained for compatibility with older integrations",
         "family": "devstral",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -31944,13 +31748,15 @@
         "id": "mistral-nemo-instruct-2407",
         "name": "Mistral-Nemo-Instruct-2407",
         "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
+        "family": "mistral-nemo",
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2024-11-20",
-        "last_updated": "2024-11-20",
+        "knowledge": "2024-07",
+        "release_date": "2024-07-18",
+        "last_updated": "2024-07-18",
         "modalities": {
           "input": [
             "text"
@@ -31967,7 +31773,8 @@
         "cost": {
           "input": 0.14,
           "output": 0.14
-        }
+        },
+        "canonical_model_id": "mistral/mistral-nemo"
       }
     },
     {
@@ -31995,7 +31802,7 @@
         "name": "Mistral Small 3.2",
         "description": "Efficient Mistral model for fast chat, extraction, and production assistants",
         "family": "mistral-small",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -32364,17 +32171,19 @@
         "id": "mistral-small-3.2-24b-instruct-2506",
         "name": "Mistral-Small-3.2-24B-Instruct-2506",
         "description": "Efficient Mistral model for fast chat, extraction, and production assistants",
+        "family": "mistral-small",
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2025-07-16",
-        "last_updated": "2025-07-16",
+        "knowledge": "2023-10-31",
+        "release_date": "2025-06-20",
+        "last_updated": "2025-06-20",
         "modalities": {
           "input": [
-            "text",
-            "image"
+            "image",
+            "text"
           ],
           "output": [
             "text"
@@ -32388,7 +32197,8 @@
         "cost": {
           "input": 0.1,
           "output": 0.31
-        }
+        },
+        "canonical_model_id": "mistral/mistral-small-3.2-24b-instruct"
       }
     },
     {
@@ -32416,7 +32226,7 @@
         "name": "Mistral Small 3.2 24B Instruct (2506)",
         "description": "Efficient Mistral model for fast chat, extraction, and production assistants",
         "family": "mistral-small",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
@@ -32606,6 +32416,7 @@
           "output": 16384
         },
         "provider": {
+          "npm": "@ai-sdk/azure",
           "shape": "completions"
         },
         "cost": {
@@ -32659,6 +32470,7 @@
           "output": 16384
         },
         "provider": {
+          "npm": "@ai-sdk/azure",
           "shape": "completions"
         },
         "cost": {
@@ -33174,6 +32986,7 @@
       },
       "raw": {
         "id": "nano-banana-pro",
+        "type": "image",
         "name": "Nano Banana Pro",
         "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
         "family": "gemini-pro",
@@ -33307,6 +33120,7 @@
         ],
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2025-06-25",
         "release_date": "2025-04-14",
         "last_updated": "2025-04-14",
         "modalities": {
@@ -33355,6 +33169,7 @@
         "reasoning_options": [],
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2025-06-25",
         "release_date": "2025-12-15",
         "last_updated": "2025-12-15",
         "modalities": {
@@ -33667,6 +33482,7 @@
         ],
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2025-06-25",
         "release_date": "2025-12-15",
         "last_updated": "2026-01-19",
         "modalities": {
@@ -33723,6 +33539,7 @@
         ],
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2025-06",
         "release_date": "2026-03-11",
         "last_updated": "2026-03-12",
         "modalities": {
@@ -33784,6 +33601,7 @@
         ],
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2025-06",
         "release_date": "2026-03-11",
         "last_updated": "2026-03-11",
         "modalities": {
@@ -33848,6 +33666,7 @@
         "tool_call": true,
         "structured_output": false,
         "temperature": true,
+        "knowledge": "2025-06",
         "release_date": "2026-03-11",
         "last_updated": "2026-03-11",
         "modalities": {
@@ -33904,6 +33723,7 @@
         ],
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2025-09",
         "release_date": "2026-06-04",
         "last_updated": "2026-06-04",
         "modalities": {
@@ -33960,6 +33780,7 @@
           "field": "reasoning_content"
         },
         "temperature": true,
+        "knowledge": "2025-09",
         "release_date": "2026-06-04",
         "last_updated": "2026-06-04",
         "modalities": {
@@ -34067,6 +33888,7 @@
         ],
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2025-09",
         "release_date": "2026-06-04",
         "last_updated": "2026-06-04",
         "modalities": {
@@ -34128,6 +33950,7 @@
         ],
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2025-09",
         "release_date": "2026-06-04",
         "last_updated": "2026-06-04",
         "modalities": {
@@ -34192,6 +34015,7 @@
         "tool_call": true,
         "structured_output": false,
         "temperature": true,
+        "knowledge": "2025-09",
         "release_date": "2026-06-04",
         "last_updated": "2026-06-04",
         "modalities": {
@@ -34256,8 +34080,8 @@
         "tool_call": false,
         "structured_output": false,
         "temperature": true,
-        "release_date": "2026-06-04",
-        "last_updated": "2026-06-04",
+        "release_date": "2026-06-02",
+        "last_updated": "2026-06-02",
         "modalities": {
           "input": [
             "text",
@@ -34313,8 +34137,8 @@
         ],
         "tool_call": false,
         "temperature": true,
-        "release_date": "2026-06-04",
-        "last_updated": "2026-06-04",
+        "release_date": "2026-06-02",
+        "last_updated": "2026-06-02",
         "modalities": {
           "input": [
             "text",
@@ -34606,7 +34430,7 @@
         "interleaved": {
           "field": "reasoning_content"
         },
-        "structured_output": true,
+        "structured_output": false,
         "temperature": true,
         "knowledge": "2025-09-23",
         "release_date": "2026-06-09",
@@ -35061,6 +34885,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2025-06-25",
         "release_date": "2026-01-27",
         "last_updated": "2026-06-11",
         "modalities": {
@@ -35125,6 +34950,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2025-06",
         "release_date": "2026-03-11",
         "last_updated": "2026-03-11",
         "modalities": {
@@ -35189,6 +35015,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2025-09",
         "release_date": "2026-06-04",
         "last_updated": "2026-06-11",
         "modalities": {
@@ -38711,6 +38538,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "release_date": "2025-11-06",
         "last_updated": "2026-06-11",
@@ -39799,8 +39627,8 @@
         "tool_call": true,
         "temperature": true,
         "knowledge": "2024-09",
-        "release_date": "2024-09-01",
-        "last_updated": "2024-09-01",
+        "release_date": "2024-09-11",
+        "last_updated": "2024-09-11",
         "modalities": {
           "input": [
             "text",
@@ -40007,7 +39835,7 @@
         "name": "QVQ Max",
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qvq",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [],
         "tool_call": true,
@@ -40029,6 +39857,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.2,
           "output": 4.8
@@ -40060,7 +39889,7 @@
         "name": "QVQ Max",
         "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
         "family": "qvq",
-        "attachment": false,
+        "attachment": true,
         "reasoning": true,
         "reasoning_options": [],
         "tool_call": true,
@@ -40082,6 +39911,7 @@
           "context": 131072,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.147,
           "output": 4.588
@@ -40413,7 +40243,7 @@
         "open_weights": false,
         "limit": {
           "context": 1000000,
-          "output": 131072
+          "output": 65536
         },
         "cost": {
           "input": 2.7,
@@ -40702,6 +40532,7 @@
       },
       "raw": {
         "id": "qwen-image-2.0",
+        "type": "image",
         "name": "Qwen Image 2.0",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "qwen",
@@ -40752,6 +40583,7 @@
       },
       "raw": {
         "id": "qwen-image-2.0",
+        "type": "image",
         "name": "Qwen Image 2.0",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "qwen",
@@ -40802,6 +40634,7 @@
       },
       "raw": {
         "id": "qwen-image-2.0-pro",
+        "type": "image",
         "name": "Qwen Image 2.0 Pro",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "qwen",
@@ -40852,6 +40685,7 @@
       },
       "raw": {
         "id": "qwen-image-2.0-pro",
+        "type": "image",
         "name": "Qwen Image 2.0 Pro",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "qwen",
@@ -41386,6 +41220,7 @@
           "context": 262144,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0,
           "output": 0,
@@ -41439,6 +41274,7 @@
           "context": 262144,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0,
           "output": 0,
@@ -42870,8 +42706,8 @@
         "tool_call": true,
         "structured_output": false,
         "temperature": true,
-        "release_date": "2025-09-01",
-        "last_updated": "2025-09-01",
+        "release_date": "2026-02-18",
+        "last_updated": "2026-02-18",
         "modalities": {
           "input": [
             "text"
@@ -45502,6 +45338,7 @@
       },
       "raw": {
         "id": "wan2.7-image",
+        "type": "image",
         "name": "Wan2.7 Image",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "attachment": false,
@@ -45551,6 +45388,7 @@
       },
       "raw": {
         "id": "wan2.7-image",
+        "type": "image",
         "name": "Wan2.7 Image",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "attachment": false,
@@ -45600,6 +45438,7 @@
       },
       "raw": {
         "id": "wan2.7-image-pro",
+        "type": "image",
         "name": "Wan2.7 Image Pro",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "attachment": false,
@@ -45649,6 +45488,7 @@
       },
       "raw": {
         "id": "wan2.7-image-pro",
+        "type": "image",
         "name": "Wan2.7 Image Pro",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "attachment": false,
@@ -46809,71 +46649,6 @@
           "cache_read": 0.11
         },
         "canonical_model_id": "zhipuai/glm-4.7"
-      }
-    },
-    {
-      "catalog_model_id": "zai-org-glm-4.7-flash",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "venice",
-        "source_id": "zai-org-glm-4.7-flash",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "zai-org-glm-4.7-flash",
-        "name": "GLM 4.7 Flash",
-        "description": "Budget GLM lane for fast coding help, routing, and everyday automation",
-        "family": "glm-flash",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-04",
-        "release_date": "2026-01-29",
-        "last_updated": "2026-06-11",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 16384
-        },
-        "cost": {
-          "input": 0.06,
-          "output": 0.4,
-          "cache_read": 0.01
-        },
-        "canonical_model_id": "zhipuai/glm-4.7-flash"
       }
     },
     {

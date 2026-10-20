@@ -42297,16 +42297,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "fugu-ultra",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -42336,16 +42327,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "fugu-ultra",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "fugu-ultra-20260615": {
@@ -45821,6 +45803,18 @@
       },
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-01-31",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "nano-gpt",
+          "source_id": "gemini-2.5-pro-preview-06-05",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
@@ -94134,16 +94128,7 @@
         "has_source_notes": true
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "kimi-k2-instruct-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -94173,16 +94158,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-12-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "kimi-k2-instruct-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "kimi-k2-thinking": {
@@ -98764,16 +98740,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-08-02",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "ling-3.0-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -98785,16 +98752,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "ling-3.0-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -98806,16 +98764,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-08-02",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "ling-3.0-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "ling-3.0-flash:thinking": {
@@ -100739,6 +100688,18 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-08",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "llmgateway",
+          "source_id": "llama-4-maverick-17b-instruct",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
@@ -101020,6 +100981,18 @@
       },
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-08",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "llmgateway",
+          "source_id": "llama-4-scout-17b-instruct",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
@@ -116670,7 +116643,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2026-04-30",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "llmgateway",
+          "source_id": "mistral-medium-3-5",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -116703,7 +116685,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2026-04-30",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "llmgateway",
+          "source_id": "mistral-medium-3-5",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -117573,16 +117564,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-08-07",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-nemo-instruct-2407",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
         "kind": "upstream_field_observation",
@@ -117603,16 +117585,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-nemo-instruct-2407",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -117624,16 +117597,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-08-07",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-nemo-instruct-2407",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "mistral-nemo-minitron-8b-8k-instruct": {
@@ -118680,28 +118644,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-03",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "greenpt",
-          "source_id": "mistral-small-3.2-24b-instruct-2506",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-small-3.2-24b-instruct-2506",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -118710,16 +118656,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-small-3.2-24b-instruct-2506",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -118731,16 +118668,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-small-3.2-24b-instruct-2506",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "mistral-small-31.24b-instruct": {
@@ -124281,16 +124209,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-10-31",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "nemotron-nano-v2-12b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -124299,16 +124218,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "nemotron-nano-v2-12b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -124320,16 +124230,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-10-31",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "nemotron-nano-v2-12b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "nemotron-parse": {
@@ -125631,16 +125532,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-01-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -125649,16 +125541,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -125670,16 +125553,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-01-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -133997,16 +133871,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "phi-4-mini-instruct",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -134036,16 +133901,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "phi-4-mini-instruct",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "phi-4-mini-reasoning": {
@@ -134822,23 +134678,14 @@
         "value": "2024-09",
         "source": {
           "upstream": "models.dev",
-          "provider": "greenpt",
+          "provider": "cortecs",
           "source_id": "pixtral-12b-2409",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-11-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "pixtral-12b-2409",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -134847,16 +134694,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "pixtral-12b-2409",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -134868,16 +134706,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-11-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "pixtral-12b-2409",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "pixtral-large-2502": {

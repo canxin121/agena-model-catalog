@@ -3516,53 +3516,6 @@
     },
     {
       "model_id": "fugu-ultra",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-06-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "fugu-ultra",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "fugu-ultra",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-06-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
-            "source_id": "fugu-ultra",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-06-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "sakana",
-            "source_id": "fugu-ultra",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "fugu-ultra",
       "field": "origin",
       "winner": {
         "value": "DevPass (LLM Gateway)",
@@ -3597,53 +3550,6 @@
         },
         {
           "value": "Sakana AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "sakana",
-            "source_id": "fugu-ultra",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "fugu-ultra",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-06-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "fugu-ultra",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "fugu-ultra",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-06-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
-            "source_id": "fugu-ultra",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-06-15",
           "source": {
             "upstream": "models.dev",
             "provider": "sakana",
@@ -16118,43 +16024,6 @@
     },
     {
       "model_id": "mistral-medium-3-5",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-05-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "mistral-medium-3-5",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-05-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "mistral-medium-3-5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-04-30",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
-            "source_id": "mistral-medium-3-5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-medium-3-5",
       "field": "origin",
       "winner": {
         "value": "DevPass (LLM Gateway)",
@@ -16179,43 +16048,6 @@
         },
         {
           "value": "Requesty",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
-            "source_id": "mistral-medium-3-5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-medium-3-5",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-05-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "mistral-medium-3-5",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-05-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "mistral-medium-3-5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-04-30",
           "source": {
             "upstream": "models.dev",
             "provider": "requesty",
@@ -16619,100 +16451,6 @@
     },
     {
       "model_id": "mistral-nemo-instruct-2407",
-      "field": "last_updated",
-      "winner": {
-        "value": "2024-08-07",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-nemo-instruct-2407",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-08-07",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-07-18",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-07-18",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "ovhcloud",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-nemo-instruct-2407",
-      "field": "open_weights",
-      "winner": {
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-nemo-instruct-2407",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "ovhcloud",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-nemo-instruct-2407",
       "field": "origin",
       "winner": {
         "value": "Cortecs",
@@ -16747,53 +16485,6 @@
         },
         {
           "value": "OVHcloud AI Endpoints",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "ovhcloud",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-nemo-instruct-2407",
-      "field": "release_date",
-      "winner": {
-        "value": "2024-08-07",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-nemo-instruct-2407",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-08-07",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-07-18",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-07-18",
           "source": {
             "upstream": "models.dev",
             "provider": "ovhcloud",
@@ -16957,6 +16648,16 @@
           "value": "2024-06",
           "source": {
             "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "mistral-small-2503",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-06",
+          "source": {
+            "upstream": "models.dev",
             "provider": "google-vertex",
             "source_id": "mistral-small-2503",
             "priority": 20,
@@ -17001,7 +16702,7 @@
           }
         },
         {
-          "value": "2025-03-20",
+          "value": "2025-03-17",
           "source": {
             "upstream": "models.dev",
             "provider": "cortecs",
@@ -17058,7 +16759,7 @@
           }
         },
         {
-          "value": false,
+          "value": true,
           "source": {
             "upstream": "models.dev",
             "provider": "cortecs",
@@ -17172,7 +16873,7 @@
           }
         },
         {
-          "value": "2025-03-20",
+          "value": "2025-03-17",
           "source": {
             "upstream": "models.dev",
             "provider": "cortecs",
@@ -17312,16 +17013,26 @@
       "model_id": "mistral-small-3.2-24b-instruct-2506",
       "field": "knowledge_cutoff",
       "winner": {
-        "value": "2025-03",
+        "value": "2023-10-31",
         "source": {
           "upstream": "models.dev",
-          "provider": "greenpt",
+          "provider": "cortecs",
           "source_id": "mistral-small-3.2-24b-instruct-2506",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
+        {
+          "value": "2023-10-31",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "mistral-small-3.2-24b-instruct-2506",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
         {
           "value": "2025-03",
           "source": {
@@ -17359,7 +17070,7 @@
       "model_id": "mistral-small-3.2-24b-instruct-2506",
       "field": "last_updated",
       "winner": {
-        "value": "2025-05-26",
+        "value": "2025-06-20",
         "source": {
           "upstream": "models.dev",
           "provider": "cortecs",
@@ -17370,7 +17081,7 @@
       },
       "candidates": [
         {
-          "value": "2025-05-26",
+          "value": "2025-06-20",
           "source": {
             "upstream": "models.dev",
             "provider": "cortecs",
@@ -17401,63 +17112,6 @@
         },
         {
           "value": "2026-03-17",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "scaleway",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-small-3.2-24b-instruct-2506",
-      "field": "open_weights",
-      "winner": {
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-small-3.2-24b-instruct-2506",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "greenpt",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "ovhcloud",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
           "source": {
             "upstream": "models.dev",
             "provider": "scaleway",
@@ -17515,63 +17169,6 @@
         },
         {
           "value": "Scaleway",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "scaleway",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-small-3.2-24b-instruct-2506",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-05-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-small-3.2-24b-instruct-2506",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-05-26",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-06-20",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "greenpt",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-06-20",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "ovhcloud",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-06-20",
           "source": {
             "upstream": "models.dev",
             "provider": "scaleway",
@@ -18384,7 +17981,7 @@
       "model_id": "nvidia-nemotron-3-nano-30b-a3b",
       "field": "last_updated",
       "winner": {
-        "value": "2026-01-12",
+        "value": "2025-12-15",
         "source": {
           "upstream": "models.dev",
           "provider": "cortecs",
@@ -18395,7 +17992,7 @@
       },
       "candidates": [
         {
-          "value": "2026-01-12",
+          "value": "2025-12-15",
           "source": {
             "upstream": "models.dev",
             "provider": "cortecs",
@@ -18406,43 +18003,6 @@
         },
         {
           "value": "2026-06-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "nvidia-nemotron-3-nano-30b-a3b",
-      "field": "open_weights",
-      "winner": {
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
           "source": {
             "upstream": "models.dev",
             "provider": "venice",
@@ -18495,7 +18055,7 @@
       "model_id": "nvidia-nemotron-3-nano-30b-a3b",
       "field": "release_date",
       "winner": {
-        "value": "2026-01-12",
+        "value": "2025-12-15",
         "source": {
           "upstream": "models.dev",
           "provider": "cortecs",
@@ -18506,7 +18066,7 @@
       },
       "candidates": [
         {
-          "value": "2026-01-12",
+          "value": "2025-12-15",
           "source": {
             "upstream": "models.dev",
             "provider": "cortecs",
@@ -20047,80 +19607,6 @@
     },
     {
       "model_id": "pixtral-12b-2409",
-      "field": "last_updated",
-      "winner": {
-        "value": "2024-11-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "pixtral-12b-2409",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-11-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-09-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "greenpt",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "pixtral-12b-2409",
-      "field": "open_weights",
-      "winner": {
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "pixtral-12b-2409",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "greenpt",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "pixtral-12b-2409",
       "field": "origin",
       "winner": {
         "value": "Cortecs",
@@ -20145,43 +19631,6 @@
         },
         {
           "value": "GreenPT",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "greenpt",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "pixtral-12b-2409",
-      "field": "release_date",
-      "winner": {
-        "value": "2024-11-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "pixtral-12b-2409",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-11-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "pixtral-12b-2409",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-09-11",
           "source": {
             "upstream": "models.dev",
             "provider": "greenpt",

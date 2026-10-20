@@ -21414,7 +21414,8 @@
           "temperature",
           "tool_calling"
         ]
-      }
+      },
+      "knowledge_cutoff": "2025-01-31"
     },
     "gemini-2.5-pro-preview-tts": {
       "context_window_tokens": 8192,
@@ -44392,7 +44393,8 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 1048576
+      "max_input_tokens": 1048576,
+      "knowledge_cutoff": "2024-08"
     },
     "llama-4-scout": {
       "context_window_tokens": 131072,
@@ -44500,7 +44502,8 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 131072
+      "max_input_tokens": 131072,
+      "knowledge_cutoff": "2024-08"
     },
     "llama-guard-3-8b": {
       "context_window_tokens": 131072,

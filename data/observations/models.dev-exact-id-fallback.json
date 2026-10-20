@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "80e1cc115596fc0b516078eb098d44d194137c13c876b620719e017f2383a18e",
+    "sha256": "7250abfb1e7e559c4af8d8352aa0d9cbac0334c199afc471ad3e04df11a59988",
     "record_count": 232
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -1818,8 +1818,7 @@
         "name": "Apertus 70B",
         "description": "Apertus 70B is an open, multilingual language model designed for research, long-context reasoning, and sovereignty-focused AI systems.",
         "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [],
+        "reasoning": false,
         "tool_call": true,
         "structured_output": false,
         "temperature": false,
@@ -6143,10 +6142,6 @@
               "medium",
               "high"
             ]
-          },
-          {
-            "type": "budget_tokens",
-            "min": 1024
           }
         ],
         "tool_call": true,
@@ -6214,10 +6209,6 @@
               "medium",
               "high"
             ]
-          },
-          {
-            "type": "budget_tokens",
-            "min": 1024
           }
         ],
         "tool_call": true,
@@ -12201,6 +12192,7 @@
         "reasoning": false,
         "tool_call": false,
         "structured_output": false,
+        "temperature": true,
         "release_date": "2026-02-14",
         "last_updated": "2026-02-14",
         "modalities": {
@@ -12221,7 +12213,8 @@
           "input": 0.1462,
           "output": 0.8738,
           "cache_read": 0.0731
-        }
+        },
+        "canonical_model_id": "bytedance-seed/seed-2.0-lite"
       }
     },
     {
@@ -12253,6 +12246,7 @@
         "reasoning": false,
         "tool_call": false,
         "structured_output": false,
+        "temperature": true,
         "release_date": "2026-02-14",
         "last_updated": "2026-02-14",
         "modalities": {
@@ -12273,7 +12267,8 @@
           "input": 0.0493,
           "output": 0.4845,
           "cache_read": 0.02465
-        }
+        },
+        "canonical_model_id": "bytedance-seed/seed-2.0-mini"
       }
     },
     {
@@ -13155,6 +13150,7 @@
         "id": "fugu-ultra",
         "name": "Fugu Ultra",
         "description": "Quality-first multi-agent model for hard research, analysis, and competitions",
+        "family": "fugu",
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
@@ -13170,8 +13166,8 @@
         "tool_call": true,
         "structured_output": false,
         "temperature": true,
-        "release_date": "2026-06-22",
-        "last_updated": "2026-06-22",
+        "release_date": "2026-06-15",
+        "last_updated": "2026-06-15",
         "modalities": {
           "input": [
             "text",
@@ -13190,7 +13186,8 @@
           "input": 5,
           "output": 30,
           "cache_read": 0.5
-        }
+        },
+        "canonical_model_id": "sakana/fugu-ultra"
       }
     },
     {
@@ -14000,6 +13997,7 @@
           "input": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.1,
           "output": 0.4,
@@ -14065,6 +14063,7 @@
           "input": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.1,
           "output": 0.4,
@@ -14237,6 +14236,7 @@
           "input": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.15,
           "output": 0.6,
@@ -14301,6 +14301,7 @@
           "input": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.15,
           "output": 3.5,
@@ -14419,6 +14420,7 @@
           "input": 1048000,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.15,
           "output": 0.6,
@@ -14482,6 +14484,7 @@
           "input": 1048000,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.15,
           "output": 3.5,
@@ -15020,6 +15023,8 @@
         ],
         "tool_call": false,
         "structured_output": false,
+        "temperature": true,
+        "knowledge": "2025-01-31",
         "release_date": "2025-06-05",
         "last_updated": "2025-06-05",
         "modalities": {
@@ -15042,7 +15047,8 @@
           "input": 2.5,
           "output": 10,
           "cache_read": 0.25
-        }
+        },
+        "canonical_model_id": "google/gemini-2.5-pro-preview"
       }
     },
     {
@@ -26831,8 +26837,9 @@
         "reasoning": false,
         "tool_call": false,
         "structured_output": false,
-        "release_date": "2025-12-15",
-        "last_updated": "2025-07-15",
+        "temperature": true,
+        "release_date": "2025-07-11",
+        "last_updated": "2025-07-11",
         "modalities": {
           "input": [
             "text",
@@ -26848,11 +26855,13 @@
           "input": 131072,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.4,
           "output": 1.8,
           "cache_read": 0.2
-        }
+        },
+        "canonical_model_id": "moonshotai/kimi-k2-instruct"
       }
     },
     {
@@ -27627,8 +27636,8 @@
         "tool_call": true,
         "structured_output": false,
         "temperature": true,
-        "release_date": "2026-08-02",
-        "last_updated": "2026-08-02",
+        "release_date": "2026-07-23",
+        "last_updated": "2026-07-23",
         "modalities": {
           "input": [
             "text"
@@ -27637,7 +27646,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 262144,
           "output": 262144
@@ -27646,7 +27655,8 @@
           "input": 0.06,
           "output": 0.18,
           "cache_read": 0.012
-        }
+        },
+        "canonical_model_id": "inclusionai/ling-3.0-flash"
       }
     },
     {
@@ -27741,6 +27751,7 @@
         "tool_call": false,
         "structured_output": false,
         "temperature": true,
+        "knowledge": "2023-12",
         "release_date": "2024-07-23",
         "last_updated": "2024-07-23",
         "modalities": {
@@ -27760,7 +27771,8 @@
         "cost": {
           "input": 0.72,
           "output": 0.72
-        }
+        },
+        "canonical_model_id": "meta/llama-3.1-70b-instruct"
       }
     },
     {
@@ -28004,6 +28016,7 @@
         "tool_call": false,
         "structured_output": false,
         "temperature": true,
+        "knowledge": "2024-08",
         "release_date": "2025-04-05",
         "last_updated": "2025-04-05",
         "modalities": {
@@ -28023,7 +28036,8 @@
         "cost": {
           "input": 0.27,
           "output": 0.85
-        }
+        },
+        "canonical_model_id": "meta/llama-4-maverick-17b-instruct"
       }
     },
     {
@@ -28212,6 +28226,7 @@
         "tool_call": false,
         "structured_output": false,
         "temperature": true,
+        "knowledge": "2024-08",
         "release_date": "2025-04-05",
         "last_updated": "2025-04-05",
         "modalities": {
@@ -28231,7 +28246,8 @@
         "cost": {
           "input": 0.18,
           "output": 0.59
-        }
+        },
+        "canonical_model_id": "meta/llama-4-scout-17b-instruct"
       }
     },
     {
@@ -30915,8 +30931,8 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-05-01",
-        "last_updated": "2026-05-01",
+        "release_date": "2026-04-30",
+        "last_updated": "2026-04-30",
         "modalities": {
           "input": [
             "text",
@@ -30934,7 +30950,8 @@
         "cost": {
           "input": 1.5,
           "output": 7.5
-        }
+        },
+        "canonical_model_id": "mistral/mistral-medium-3-5"
       }
     },
     {
@@ -31028,6 +31045,7 @@
         "id": "mistral-medium-3.5",
         "name": "mistral-medium-3.5",
         "description": "Mistral Medium 3.5 is a frontier multimodal 128B model combining reasoning, coding, and instruction-following with strong agentic performance and efficient deployment.",
+        "family": "mistral-medium",
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -31054,7 +31072,8 @@
           "input": 1.532,
           "output": 7.843,
           "cache_read": 0.154
-        }
+        },
+        "canonical_model_id": "mistral/mistral-medium-3-5"
       }
     },
     {
@@ -31273,13 +31292,15 @@
         "id": "mistral-nemo-instruct-2407",
         "name": "mistral-nemo-instruct-2407",
         "description": "A 12B parameter, instruct-tuned language model by Mistral AI and NVIDIA, designed for advanced instruction following, multi-turn conversations, and generating text and code across multiple languages.",
+        "family": "mistral-nemo",
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": false,
-        "release_date": "2024-08-07",
-        "last_updated": "2024-08-07",
+        "knowledge": "2024-07",
+        "release_date": "2024-07-18",
+        "last_updated": "2024-07-18",
         "modalities": {
           "input": [
             "text"
@@ -31288,7 +31309,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 128000,
           "output": 128000
@@ -31297,7 +31318,8 @@
           "input": 0.145,
           "output": 0.145,
           "cache_read": 0.014
-        }
+        },
+        "canonical_model_id": "mistral/mistral-nemo"
       }
     },
     {
@@ -31585,13 +31607,15 @@
         "id": "mistral-small-2503",
         "name": "mistral-small-2503",
         "description": "Combines advanced text and vision capabilities with 24 billion parameters, supporting multilingual tasks and long contexts up to 131k tokens, making it versatile for various applications without sacrificing performance.",
+        "family": "mistral-small",
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": false,
-        "release_date": "2025-03-20",
-        "last_updated": "2025-03-20",
+        "knowledge": "2024-06",
+        "release_date": "2025-03-17",
+        "last_updated": "2025-03-17",
         "modalities": {
           "input": [
             "text",
@@ -31601,7 +31625,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 128000,
           "output": 128000
@@ -31609,7 +31633,8 @@
         "cost": {
           "input": 0.111,
           "output": 0.334
-        }
+        },
+        "canonical_model_id": "mistral/mistral-small-3-1-24b-instruct-2503"
       }
     },
     {
@@ -31694,23 +31719,25 @@
         "id": "mistral-small-3.2-24b-instruct-2506",
         "name": "mistral-small-3.2-24b-instruct-2506",
         "description": "Mistral-Small-3.2-24B-Instruct-2506 is a 24B parameter instruction-tuned model with enhanced long-context support (128k) and state-of-the-art vision understanding.",
+        "family": "mistral-small",
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": false,
-        "release_date": "2025-05-26",
-        "last_updated": "2025-05-26",
+        "knowledge": "2023-10-31",
+        "release_date": "2025-06-20",
+        "last_updated": "2025-06-20",
         "modalities": {
           "input": [
-            "text",
-            "image"
+            "image",
+            "text"
           ],
           "output": [
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 131000,
           "output": 131000
@@ -31718,7 +31745,8 @@
         "cost": {
           "input": 0.1,
           "output": 0.312
-        }
+        },
+        "canonical_model_id": "mistral/mistral-small-3.2-24b-instruct"
       }
     },
     {
@@ -33508,12 +33536,9 @@
         "family": "nemotron",
         "attachment": false,
         "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          }
-        ],
+        "reasoning_options": [],
         "tool_call": true,
+        "structured_output": false,
         "temperature": true,
         "knowledge": "2025-09",
         "release_date": "2026-06-04",
@@ -33942,14 +33967,15 @@
         "id": "nemotron-nano-v2-12b",
         "name": "nemotron-nano-v2-12b",
         "description": "NVIDIA Nemotron Nano v2 12B is a 12-billion-parameter multimodal reasoning model designed for advanced video understanding, document intelligence, and visual reasoning, built with a hybrid Transformer-Mamba architecture for high efficiency and low latency.",
+        "family": "nemotron",
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [],
         "tool_call": true,
         "structured_output": true,
         "temperature": false,
-        "release_date": "2025-10-31",
-        "last_updated": "2025-10-31",
+        "release_date": "2025-10-28",
+        "last_updated": "2025-10-28",
         "modalities": {
           "input": [
             "text",
@@ -33959,7 +33985,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 128000,
           "output": 128000
@@ -33967,7 +33993,8 @@
         "cost": {
           "input": 0.24,
           "output": 0.707
-        }
+        },
+        "canonical_model_id": "nvidia/nemotron-nano-12b-v2-vl"
       }
     },
     {
@@ -34293,8 +34320,7 @@
         "description": "Nova Lite is a fast, low-cost multimodal foundation model capable of reasoning over text, images, and video in 200+ languages.",
         "family": "nova-lite",
         "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
+        "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": false,
@@ -34349,8 +34375,7 @@
         "description": "Nova Micro is a multilingual text-to-text foundation model with strong reasoning capabilities and broad language coverage across 200+ languages.",
         "family": "nova-micro",
         "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
+        "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": false,
@@ -34404,8 +34429,7 @@
         "description": "Flagship model for demanding analysis, coding, and production agent workflows",
         "family": "nova-pro",
         "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
+        "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
@@ -34458,14 +34482,16 @@
         "id": "nvidia-nemotron-3-nano-30b-a3b",
         "name": "nvidia-nemotron-3-nano-30b-a3b",
         "description": "Nemotron-Nano-3-30B-A3B is a compact Mixture-of-Experts model optimized for efficient reasoning, chat, and coding, with strong multilingual support and long-context RAG and agent workflows.",
+        "family": "nemotron",
         "attachment": false,
         "reasoning": true,
         "reasoning_options": [],
         "tool_call": true,
         "structured_output": true,
         "temperature": false,
-        "release_date": "2026-01-12",
-        "last_updated": "2026-01-12",
+        "knowledge": "2025-06-25",
+        "release_date": "2025-12-15",
+        "last_updated": "2025-12-15",
         "modalities": {
           "input": [
             "text"
@@ -34474,7 +34500,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 256000,
           "output": 256000
@@ -34482,7 +34508,8 @@
         "cost": {
           "input": 0.06,
           "output": 0.24
-        }
+        },
+        "canonical_model_id": "nvidia/nemotron-3-nano-30b-a3b"
       }
     },
     {
@@ -38680,8 +38707,10 @@
         "reasoning": false,
         "tool_call": false,
         "structured_output": false,
-        "release_date": "2025-07-26",
-        "last_updated": "2025-07-26",
+        "temperature": true,
+        "knowledge": "2024-06",
+        "release_date": "2025-02-26",
+        "last_updated": "2025-02-26",
         "modalities": {
           "input": [
             "text"
@@ -38700,7 +38729,8 @@
           "input": 0.17,
           "output": 0.68,
           "cache_read": 0.085
-        }
+        },
+        "canonical_model_id": "microsoft/phi-4-mini"
       }
     },
     {
@@ -39199,14 +39229,15 @@
         "id": "pixtral-12b-2409",
         "name": "pixtral-12b-2409",
         "description": "Pixtral 2409 12B is a state-of-the-art multimodal model with 12B parameters and a 400M vision encoder, natively trained on interleaved text and image data. It excels in tasks spanning vision-language reasoning, instruction following, and pure text understanding, making it highly effective for real-world multimodal applications.",
+        "family": "pixtral",
         "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
+        "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": false,
-        "release_date": "2024-11-09",
-        "last_updated": "2024-11-09",
+        "knowledge": "2024-09",
+        "release_date": "2024-09-11",
+        "last_updated": "2024-09-11",
         "modalities": {
           "input": [
             "text",
@@ -39216,7 +39247,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 128000,
           "output": 4096
@@ -39224,7 +39255,8 @@
         "cost": {
           "input": 0.223,
           "output": 0.223
-        }
+        },
+        "canonical_model_id": "mistral/pixtral-12b"
       }
     },
     {

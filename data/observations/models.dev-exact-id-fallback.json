@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "7250abfb1e7e559c4af8d8352aa0d9cbac0334c199afc471ad3e04df11a59988",
+    "sha256": "466cb0122831ad11808f204046d3e6f215849b7a8841baf9106d9e9736d0ac6e",
     "record_count": 232
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -227,8 +227,8 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-07-08",
-        "last_updated": "2026-07-08",
+        "release_date": "2026-05-05",
+        "last_updated": "2026-05-05",
         "modalities": {
           "input": [
             "text"
@@ -280,8 +280,8 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-07-08",
-        "last_updated": "2026-07-08",
+        "release_date": "2026-05-14",
+        "last_updated": "2026-05-14",
         "modalities": {
           "input": [
             "text"
@@ -345,8 +345,9 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2025-04-30",
-        "last_updated": "2026-04-16",
+        "knowledge": "2025-04",
+        "release_date": "2025-04-28",
+        "last_updated": "2025-04-28",
         "modalities": {
           "input": [
             "text"
@@ -360,10 +361,12 @@
           "context": 32768,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.25,
           "output": 0.55
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3-32b"
       }
     },
     {
@@ -571,15 +574,15 @@
       },
       "raw": {
         "id": "all-mini-lm-l6-v2",
+        "type": "embedding",
         "name": "All-MiniLM-L6-v2",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-        "family": "text-embedding",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
         "temperature": false,
         "release_date": "2021-08-30",
-        "last_updated": "2026-04-16",
+        "last_updated": "2021-08-30",
         "modalities": {
           "input": [
             "text"
@@ -596,7 +599,8 @@
         "cost": {
           "input": 0.009,
           "output": 0
-        }
+        },
+        "canonical_model_id": "sentence-transformers/all-minilm-l6-v2"
       }
     },
     {
@@ -733,9 +737,9 @@
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
-        "knowledge": "2024-07",
-        "release_date": "2024-11-05",
-        "last_updated": "2024-11-05",
+        "knowledge": "2024-07-31",
+        "release_date": "2024-10-22",
+        "last_updated": "2024-10-22",
         "modalities": {
           "input": [
             "text"
@@ -755,7 +759,8 @@
           "output": 4,
           "cache_read": 0.08,
           "cache_write": 1
-        }
+        },
+        "canonical_model_id": "anthropic/claude-3-5-haiku-20241022"
       }
     },
     {
@@ -852,9 +857,9 @@
         ],
         "tool_call": true,
         "temperature": true,
-        "knowledge": "2024-11",
-        "release_date": "2025-02-24",
-        "last_updated": "2025-02-24",
+        "knowledge": "2024-10-31",
+        "release_date": "2025-02-19",
+        "last_updated": "2025-02-19",
         "modalities": {
           "input": [
             "text",
@@ -875,7 +880,8 @@
           "output": 15,
           "cache_read": 0.3,
           "cache_write": 3.75
-        }
+        },
+        "canonical_model_id": "anthropic/claude-3-7-sonnet-20250219"
       }
     },
     {
@@ -934,12 +940,14 @@
           "context": 200000,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 15,
           "output": 75,
           "cache_read": 1.5,
           "cache_write": 18.75
-        }
+        },
+        "canonical_model_id": "anthropic/claude-opus-4-1"
       }
     },
     {
@@ -1021,7 +1029,8 @@
             "cache_read": 0.6,
             "cache_write": 7.5
           }
-        }
+        },
+        "canonical_model_id": "anthropic/claude-sonnet-4-5"
       }
     },
     {
@@ -1104,7 +1113,8 @@
             "cache_read": 0.6,
             "cache_write": 7.5
           }
-        }
+        },
+        "canonical_model_id": "anthropic/claude-sonnet-4-6"
       }
     },
     {
@@ -1213,8 +1223,9 @@
         ],
         "tool_call": true,
         "temperature": false,
+        "knowledge": "2026-01-31",
         "release_date": "2026-06-09",
-        "last_updated": "2026-06-12",
+        "last_updated": "2026-06-09",
         "modalities": {
           "input": [
             "text",
@@ -1234,7 +1245,8 @@
           "output": 50,
           "cache_read": 1,
           "cache_write": 12.5
-        }
+        },
+        "canonical_model_id": "anthropic/claude-fable-5"
       }
     },
     {
@@ -1298,7 +1310,8 @@
           "output": 5,
           "cache_read": 0.1,
           "cache_write": 1.25
-        }
+        },
+        "canonical_model_id": "anthropic/claude-haiku-4-5"
       }
     },
     {
@@ -1358,12 +1371,14 @@
           "context": 200000,
           "output": 32000
         },
+        "status": "deprecated",
         "cost": {
           "input": 15,
           "output": 75,
           "cache_read": 1.5,
           "cache_write": 18.75
-        }
+        },
+        "canonical_model_id": "anthropic/claude-opus-4-0"
       }
     },
     {
@@ -1406,7 +1421,7 @@
         ],
         "tool_call": true,
         "temperature": true,
-        "knowledge": "2025-03-31",
+        "knowledge": "2025-05",
         "release_date": "2025-11-24",
         "last_updated": "2025-11-24",
         "modalities": {
@@ -1428,7 +1443,8 @@
           "output": 25,
           "cache_read": 0.5,
           "cache_write": 6.25
-        }
+        },
+        "canonical_model_id": "anthropic/claude-opus-4-5"
       }
     },
     {
@@ -1511,7 +1527,8 @@
             "cache_read": 1,
             "cache_write": 12.5
           }
-        }
+        },
+        "canonical_model_id": "anthropic/claude-opus-4-6"
       }
     },
     {
@@ -1576,7 +1593,8 @@
           "output": 25,
           "cache_read": 0.5,
           "cache_write": 6.25
-        }
+        },
+        "canonical_model_id": "anthropic/claude-opus-4-7"
       }
     },
     {
@@ -1619,8 +1637,9 @@
         ],
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2026-01",
         "release_date": "2026-05-28",
-        "last_updated": "2026-05-29",
+        "last_updated": "2026-05-28",
         "modalities": {
           "input": [
             "text",
@@ -1640,7 +1659,8 @@
           "output": 25,
           "cache_read": 0.5,
           "cache_write": 6.25
-        }
+        },
+        "canonical_model_id": "anthropic/claude-opus-4-8"
       }
     },
     {
@@ -1767,6 +1787,7 @@
           "context": 1000000,
           "output": 64000
         },
+        "status": "deprecated",
         "cost": {
           "input": 3,
           "output": 15,
@@ -1790,7 +1811,8 @@
             "cache_read": 0.3,
             "cache_write": 3.75
           }
-        }
+        },
+        "canonical_model_id": "anthropic/claude-sonnet-4-0"
       }
     },
     {
@@ -2239,15 +2261,16 @@
       },
       "raw": {
         "id": "bge-m3",
+        "type": "embedding",
         "name": "BGE M3",
-        "description": "Flagship model for demanding analysis, coding, and production agent workflows",
+        "description": "Multilingual embedding model combining dense, sparse, and multi-vector retrieval",
         "family": "bge",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
         "temperature": false,
         "release_date": "2024-01-30",
-        "last_updated": "2026-04-30",
+        "last_updated": "2024-01-30",
         "modalities": {
           "input": [
             "text"
@@ -2264,7 +2287,8 @@
         "cost": {
           "input": 0.02,
           "output": 0
-        }
+        },
+        "canonical_model_id": "baai/bge-m3"
       }
     },
     {
@@ -2339,6 +2363,7 @@
       },
       "raw": {
         "id": "bge-reranker-v2-m3",
+        "type": "reranking",
         "name": "BGE Reranker v2 M3",
         "description": "Reranking model for improving retrieval quality in search and recommendation systems",
         "family": "bge",
@@ -2346,8 +2371,8 @@
         "reasoning": false,
         "tool_call": false,
         "temperature": false,
-        "release_date": "2024-03-12",
-        "last_updated": "2026-04-30",
+        "release_date": "2024-03-15",
+        "last_updated": "2024-03-15",
         "modalities": {
           "input": [
             "text"
@@ -2364,7 +2389,8 @@
         "cost": {
           "input": 0.01,
           "output": 0
-        }
+        },
+        "canonical_model_id": "baai/bge-reranker-v2-m3"
       }
     },
     {
@@ -3010,6 +3036,7 @@
           "context": 1000000,
           "output": 128000
         },
+        "status": "deprecated",
         "cost": {
           "input": 3,
           "output": 15,
@@ -4688,12 +4715,7 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
+            "type": "toggle"
           }
         ],
         "tool_call": true,
@@ -4719,6 +4741,7 @@
           "context": 200000,
           "output": 32000
         },
+        "status": "deprecated",
         "cost": {
           "input": 15,
           "output": 75,
@@ -5417,7 +5440,7 @@
         "temperature": false,
         "knowledge": "2026-01",
         "release_date": "2026-05-28",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-05-28",
         "modalities": {
           "input": [
             "text",
@@ -5574,6 +5597,7 @@
           "input": 168000,
           "output": 32000
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "fast": {
@@ -5647,6 +5671,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": false,
         "knowledge": "2026-01",
         "release_date": "2026-05-28",
@@ -5795,7 +5820,9 @@
             "values": [
               "low",
               "medium",
-              "high"
+              "high",
+              "xhigh",
+              "max"
             ]
           }
         ],
@@ -5822,6 +5849,7 @@
           "context": 1000000,
           "output": 128000
         },
+        "status": "deprecated",
         "cost": {
           "input": 10,
           "output": 50,
@@ -5874,7 +5902,7 @@
         "structured_output": true,
         "temperature": false,
         "knowledge": "2026-05",
-        "release_date": "2026-07-23",
+        "release_date": "2026-07-24",
         "last_updated": "2026-07-24",
         "modalities": {
           "input": [
@@ -7892,6 +7920,7 @@
         "reasoning": true,
         "reasoning_options": [],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-02-28",
         "release_date": "2025-10-15",
@@ -7954,6 +7983,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-03-31",
         "release_date": "2025-08-05",
@@ -8016,6 +8046,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-05",
         "release_date": "2025-11-24",
@@ -8078,6 +8109,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-05-31",
         "release_date": "2026-02-05",
@@ -8096,26 +8128,6 @@
         "limit": {
           "context": 1000000,
           "output": 128000
-        },
-        "experimental": {
-          "modes": {
-            "fast": {
-              "cost": {
-                "input": 30,
-                "output": 150,
-                "cache_read": 3,
-                "cache_write": 37.5
-              },
-              "provider": {
-                "body": {
-                  "speed": "fast"
-                },
-                "headers": {
-                  "anthropic-beta": "fast-mode-2026-02-01"
-                }
-              }
-            }
-          }
         },
         "cost": {
           "input": 5,
@@ -8160,6 +8172,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": false,
         "knowledge": "2026-01-31",
         "release_date": "2026-04-16",
@@ -8178,26 +8191,6 @@
         "limit": {
           "context": 1000000,
           "output": 128000
-        },
-        "experimental": {
-          "modes": {
-            "fast": {
-              "cost": {
-                "input": 30,
-                "output": 150,
-                "cache_read": 3,
-                "cache_write": 37.5
-              },
-              "provider": {
-                "body": {
-                  "speed": "fast"
-                },
-                "headers": {
-                  "anthropic-beta": "fast-mode-2026-02-01"
-                }
-              }
-            }
-          }
         },
         "cost": {
           "input": 5,
@@ -8230,7 +8223,7 @@
       },
       "raw": {
         "id": "databricks-claude-sonnet-4",
-        "name": "Claude Sonnet 4.5",
+        "name": "Claude Sonnet 4",
         "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
         "family": "claude-sonnet",
         "attachment": true,
@@ -8242,10 +8235,11 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
-        "knowledge": "2025-07-31",
-        "release_date": "2025-09-29",
-        "last_updated": "2025-09-29",
+        "knowledge": "2025-03-31",
+        "release_date": "2025-05-22",
+        "last_updated": "2025-05-22",
         "modalities": {
           "input": [
             "text",
@@ -8261,13 +8255,14 @@
           "context": 200000,
           "output": 64000
         },
+        "status": "deprecated",
         "cost": {
           "input": 3,
           "output": 15,
           "cache_read": 0.3,
           "cache_write": 3.75
         },
-        "canonical_model_id": "anthropic/claude-sonnet-4-5-20250929"
+        "canonical_model_id": "anthropic/claude-sonnet-4-20250514"
       }
     },
     {
@@ -8304,6 +8299,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-07-31",
         "release_date": "2025-09-29",
@@ -8366,6 +8362,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-08-31",
         "release_date": "2026-02-17",
@@ -8451,6 +8448,7 @@
           "context": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.3,
           "output": 2.5,
@@ -8517,6 +8515,7 @@
           "context": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.25,
           "output": 10,
@@ -8572,6 +8571,7 @@
           {
             "type": "effort",
             "values": [
+              "minimal",
               "low",
               "medium",
               "high"
@@ -8600,6 +8600,23 @@
         "limit": {
           "context": 1048576,
           "output": 65536
+        },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 0.45,
+                "output": 2.7,
+                "cache_read": 0.045,
+                "input_audio": 0.9
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
         },
         "cost": {
           "input": 0.25,
@@ -8632,8 +8649,8 @@
       },
       "raw": {
         "id": "databricks-gemini-3-1-pro",
-        "name": "Gemini 3.1 Pro Preview Custom Tools",
-        "description": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
+        "name": "Gemini 3.1 Pro Preview",
+        "description": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
         "family": "gemini-pro",
         "attachment": true,
         "reasoning": true,
@@ -8641,6 +8658,7 @@
           {
             "type": "effort",
             "values": [
+              "minimal",
               "low",
               "medium",
               "high"
@@ -8670,10 +8688,28 @@
           "context": 1048576,
           "output": 65536
         },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 3.6,
+                "output": 21.6,
+                "cache_read": 0.36,
+                "input_audio": 3.6
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
+        },
         "cost": {
           "input": 2,
           "output": 12,
           "cache_read": 0.2,
+          "input_audio": 2,
           "tiers": [
             {
               "input": 4,
@@ -8691,7 +8727,7 @@
             "cache_read": 0.4
           }
         },
-        "canonical_model_id": "google/gemini-3.1-pro-preview-customtools"
+        "canonical_model_id": "google/gemini-3.1-pro-preview"
       }
     },
     {
@@ -8725,6 +8761,7 @@
           {
             "type": "effort",
             "values": [
+              "minimal",
               "low",
               "medium",
               "high"
@@ -8753,6 +8790,23 @@
         "limit": {
           "context": 1048576,
           "output": 65536
+        },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 0.9,
+                "output": 5.4,
+                "cache_read": 0.09,
+                "input_audio": 1.8
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
         },
         "cost": {
           "input": 0.5,
@@ -8823,6 +8877,7 @@
           "context": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 2,
           "output": 12,
@@ -8878,9 +8933,9 @@
           {
             "type": "effort",
             "values": [
-              "low",
-              "medium",
-              "high"
+              "none",
+              "high",
+              "max"
             ]
           }
         ],
@@ -8901,6 +8956,22 @@
         "limit": {
           "context": 1000000,
           "output": 131072
+        },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 2.45,
+                "output": 7.7,
+                "cache_read": 0.455
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
         },
         "cost": {
           "input": 1.4,
@@ -8969,6 +9040,22 @@
           "input": 272000,
           "output": 128000
         },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 2.5,
+                "output": 20,
+                "cache_read": 0.25
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
+        },
         "cost": {
           "input": 1.25,
           "output": 10,
@@ -9036,6 +9123,22 @@
           "input": 272000,
           "output": 128000
         },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 2.5,
+                "output": 20,
+                "cache_read": 0.25
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
+        },
         "cost": {
           "input": 1.25,
           "output": 10,
@@ -9102,6 +9205,22 @@
           "context": 400000,
           "input": 272000,
           "output": 128000
+        },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 3.5,
+                "output": 28,
+                "cache_read": 0.35
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
         },
         "cost": {
           "input": 1.75,
@@ -9512,19 +9631,38 @@
         },
         "open_weights": false,
         "limit": {
-          "context": 400000,
-          "input": 272000,
+          "context": 1050000,
+          "input": 922000,
           "output": 128000
         },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 0.4,
+                "output": 2.4,
+                "cache_read": 0.04,
+                "cache_write": 0.5
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
+        },
         "cost": {
-          "input": 1,
-          "output": 6,
-          "cache_read": 0.1,
+          "input": 0.2,
+          "output": 1.2,
+          "cache_read": 0.02,
+          "cache_write": 0.25,
           "tiers": [
             {
-              "input": 2,
-              "output": 9,
-              "cache_read": 0.2,
+              "input": 0.4,
+              "output": 1.8,
+              "cache_read": 0.04,
+              "cache_write": 0.5,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -9532,9 +9670,10 @@
             }
           ],
           "context_over_200k": {
-            "input": 2,
-            "output": 9,
-            "cache_read": 0.2
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5
           }
         },
         "canonical_model_id": "openai/gpt-5.6-luna"
@@ -9600,15 +9739,34 @@
           "input": 922000,
           "output": 128000
         },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 8,
+                "output": 40,
+                "cache_read": 0.8,
+                "cache_write": 10
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
+        },
         "cost": {
-          "input": 5,
-          "output": 30,
-          "cache_read": 0.5,
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.4,
+          "cache_write": 5,
           "tiers": [
             {
-              "input": 10,
-              "output": 45,
-              "cache_read": 1,
+              "input": 8,
+              "output": 30,
+              "cache_read": 0.8,
+              "cache_write": 10,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -9616,9 +9774,10 @@
             }
           ],
           "context_over_200k": {
-            "input": 10,
-            "output": 45,
-            "cache_read": 1
+            "input": 8,
+            "output": 30,
+            "cache_read": 0.8,
+            "cache_write": 10
           }
         },
         "canonical_model_id": "openai/gpt-5.6-sol"
@@ -9683,15 +9842,34 @@
           "input": 922000,
           "output": 128000
         },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 4,
+                "output": 24,
+                "cache_read": 0.4,
+                "cache_write": 5
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
+        },
         "cost": {
-          "input": 2.5,
-          "output": 15,
-          "cache_read": 0.25,
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2,
+          "cache_write": 2.5,
           "tiers": [
             {
-              "input": 5,
-              "output": 22.5,
-              "cache_read": 0.5,
+              "input": 4,
+              "output": 18,
+              "cache_read": 0.4,
+              "cache_write": 5,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -9699,9 +9877,10 @@
             }
           ],
           "context_over_200k": {
-            "input": 5,
-            "output": 22.5,
-            "cache_read": 0.5
+            "input": 4,
+            "output": 18,
+            "cache_read": 0.4,
+            "cache_write": 5
           }
         },
         "canonical_model_id": "openai/gpt-5.6-terra"
@@ -9765,6 +9944,22 @@
           "context": 400000,
           "input": 272000,
           "output": 128000
+        },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 0.45,
+                "output": 3.6,
+                "cache_read": 0.045
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
         },
         "cost": {
           "input": 0.25,
@@ -9864,7 +10059,7 @@
       "raw": {
         "id": "databricks-gpt-oss-120b",
         "name": "GPT OSS 120B",
-        "description": "Open-weight GPT model for self-hosted reasoning and instruction-following workloads",
+        "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
         "family": "gpt-oss",
         "attachment": false,
         "reasoning": true,
@@ -9881,6 +10076,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2024-06",
         "release_date": "2025-08-05",
         "last_updated": "2025-08-05",
         "modalities": {
@@ -9894,12 +10090,13 @@
         "open_weights": true,
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 25000
         },
         "cost": {
-          "input": 0.072,
-          "output": 0.28
-        }
+          "input": 0.15,
+          "output": 0.6
+        },
+        "canonical_model_id": "openai/gpt-oss-120b"
       }
     },
     {
@@ -9925,7 +10122,7 @@
       "raw": {
         "id": "databricks-gpt-oss-20b",
         "name": "GPT OSS 20B",
-        "description": "Open-weight GPT model for self-hosted reasoning and instruction-following workloads",
+        "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
         "family": "gpt-oss",
         "attachment": false,
         "reasoning": true,
@@ -9942,6 +10139,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2024-06",
         "release_date": "2025-08-05",
         "last_updated": "2025-08-05",
         "modalities": {
@@ -9955,12 +10153,13 @@
         "open_weights": true,
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 25000
         },
         "cost": {
-          "input": 0.05,
-          "output": 0.2
-        }
+          "input": 0.07,
+          "output": 0.3
+        },
+        "canonical_model_id": "openai/gpt-oss-20b"
       }
     },
     {
@@ -9990,16 +10189,7 @@
         "family": "kimi-k2",
         "attachment": true,
         "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
+        "reasoning_options": [],
         "tool_call": true,
         "structured_output": true,
         "temperature": false,
@@ -10021,6 +10211,7 @@
           "context": 262144,
           "output": 262144
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.95,
           "output": 4,
@@ -10344,9 +10535,9 @@
           "field": "reasoning_content"
         },
         "temperature": true,
-        "knowledge": "2024-12",
-        "release_date": "2025-12-02",
-        "last_updated": "2026-04-30",
+        "knowledge": "2024-07",
+        "release_date": "2025-12-01",
+        "last_updated": "2025-12-01",
         "modalities": {
           "input": [
             "text"
@@ -10364,7 +10555,8 @@
           "input": 0.5,
           "output": 1.6,
           "cache_read": 0.15
-        }
+        },
+        "canonical_model_id": "deepseek/deepseek-v3.2"
       }
     },
     {
@@ -10391,13 +10583,14 @@
         "id": "deepseek-4-flash",
         "name": "Deepseek V4 Flash",
         "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
-        "family": "deepseek",
+        "family": "deepseek-flash",
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
-        "release_date": "2026-05-27",
-        "last_updated": "2026-05-29",
+        "knowledge": "2025-05",
+        "release_date": "2026-04-24",
+        "last_updated": "2026-04-24",
         "modalities": {
           "input": [
             "text"
@@ -10406,7 +10599,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1048576,
           "output": 384000
@@ -10415,7 +10608,8 @@
           "input": 0.14,
           "output": 0.28,
           "cache_read": 0.028
-        }
+        },
+        "canonical_model_id": "deepseek/deepseek-v4-flash"
       }
     },
     {
@@ -10686,6 +10880,7 @@
           "context": 32678,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.99,
           "output": 0.99
@@ -11271,8 +11466,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-05",
-        "release_date": "2026-08-09",
-        "last_updated": "2026-08-11",
+        "release_date": "2026-07-31",
+        "last_updated": "2026-07-31",
         "modalities": {
           "input": [
             "text"
@@ -11334,7 +11529,7 @@
           }
         ],
         "tool_call": true,
-        "structured_output": true,
+        "structured_output": false,
         "temperature": true,
         "knowledge": "2025-05",
         "release_date": "2026-07-31",
@@ -11352,6 +11547,7 @@
           "context": 1048576,
           "output": 1048576
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.22,
           "output": 0.66,
@@ -11405,6 +11601,7 @@
           "context": 256000,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.4,
           "output": 2,
@@ -11512,6 +11709,7 @@
           "context": 256000,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.1,
           "output": 0.3,
@@ -12732,15 +12930,15 @@
       },
       "raw": {
         "id": "e5-large-v2",
+        "type": "embedding",
         "name": "E5 Large v2",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-        "family": "text-embedding",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
         "temperature": false,
-        "release_date": "2023-05-19",
-        "last_updated": "2026-04-30",
+        "release_date": "2023-05",
+        "last_updated": "2023-05",
         "modalities": {
           "input": [
             "text"
@@ -12757,7 +12955,8 @@
         "cost": {
           "input": 0.02,
           "output": 0
-        }
+        },
+        "canonical_model_id": "intfloat/e5-large-v2"
       }
     },
     {
@@ -13054,8 +13253,8 @@
         "reasoning": false,
         "tool_call": false,
         "temperature": true,
-        "release_date": "2024-10-01",
-        "last_updated": "2024-10-01",
+        "release_date": "2023-11-06",
+        "last_updated": "2023-11-06",
         "modalities": {
           "input": [
             "audio"
@@ -15277,6 +15476,7 @@
           {
             "type": "effort",
             "values": [
+              "minimal",
               "low",
               "medium",
               "high"
@@ -15309,6 +15509,7 @@
           "context": 1000000,
           "output": 65000
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.5,
           "output": 3,
@@ -15929,6 +16130,7 @@
           "context": 1000000,
           "output": 64000
         },
+        "status": "deprecated",
         "cost": {
           "input": 2,
           "output": 12,
@@ -15986,9 +16188,10 @@
         },
         "open_weights": false,
         "limit": {
-          "context": 1048576,
-          "output": 65536
+          "context": 1000000,
+          "output": 64000
         },
+        "status": "beta",
         "canonical_model_id": "google/gemini-3.1-pro-preview"
       }
     },
@@ -16427,6 +16630,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2025-01",
         "release_date": "2026-04-02",
         "last_updated": "2026-04-02",
         "modalities": {
@@ -16485,6 +16689,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2025-01",
         "release_date": "2026-04-02",
         "last_updated": "2026-04-02",
         "modalities": {
@@ -16552,6 +16757,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2025-01",
         "release_date": "2026-04-02",
         "last_updated": "2026-04-02",
         "modalities": {
@@ -16608,9 +16814,11 @@
           }
         ],
         "tool_call": true,
+        "structured_output": false,
+        "temperature": true,
         "knowledge": "2025-01",
         "release_date": "2026-04-02",
-        "last_updated": "2026-04-08",
+        "last_updated": "2026-04-02",
         "modalities": {
           "input": [
             "text",
@@ -16629,7 +16837,8 @@
           "input": 0.14,
           "output": 0.4,
           "cache_read": 0.05
-        }
+        },
+        "canonical_model_id": "google/gemma-4-31b-it"
       }
     },
     {
@@ -17277,7 +17486,7 @@
         "structured_output": true,
         "temperature": true,
         "release_date": "2026-04-07",
-        "last_updated": "2026-06-12",
+        "last_updated": "2026-04-07",
         "modalities": {
           "input": [
             "text"
@@ -19266,8 +19475,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2024-08",
-        "release_date": "2025-11-04",
-        "last_updated": "2026-06-11",
+        "release_date": "2025-03-12",
+        "last_updated": "2025-03-12",
         "modalities": {
           "input": [
             "text",
@@ -19331,7 +19540,7 @@
         "structured_output": true,
         "temperature": true,
         "release_date": "2026-04-02",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-04-02",
         "modalities": {
           "input": [
             "text",
@@ -19396,8 +19605,9 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-04-03",
-        "last_updated": "2026-06-11",
+        "knowledge": "2025-01",
+        "release_date": "2026-04-02",
+        "last_updated": "2026-04-02",
         "modalities": {
           "input": [
             "text",
@@ -23480,6 +23690,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2024-06",
         "release_date": "2025-08-05",
         "last_updated": "2025-08-05",
         "modalities": {
@@ -24445,8 +24656,8 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-05-21",
-        "last_updated": "2026-06-11",
+        "release_date": "2026-04-16",
+        "last_updated": "2026-04-16",
         "modalities": {
           "input": [
             "text",
@@ -24823,6 +25034,7 @@
       },
       "raw": {
         "id": "gte-large-en-v1.5",
+        "type": "embedding",
         "name": "GTE Large (v1.5)",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
         "family": "text-embedding",
@@ -25230,15 +25442,15 @@
         "id": "hermes-3-llama-3.1-405b",
         "name": "Hermes 3 Llama 3.1 405b",
         "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
-        "family": "hermes",
+        "family": "nousresearch",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
         "structured_output": true,
         "temperature": true,
         "knowledge": "2023-12-31",
-        "release_date": "2025-09-25",
-        "last_updated": "2026-06-11",
+        "release_date": "2024-08-16",
+        "last_updated": "2024-08-16",
         "modalities": {
           "input": [
             "text"
@@ -26365,7 +26577,7 @@
       },
       "raw": {
         "id": "kimi-for-coding",
-        "name": "kimi-for-coding",
+        "name": "Kimi K2.8 Preview",
         "description": "Kimi coding model with more efficient thinking and up to 1M context, available through Kimi Code",
         "family": "kimi-k2",
         "attachment": true,
@@ -27312,8 +27524,8 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": false,
-        "release_date": "2026-08-03",
-        "last_updated": "2026-08-03",
+        "release_date": "2026-07-16",
+        "last_updated": "2026-07-16",
         "modalities": {
           "input": [
             "text",
@@ -27858,7 +28070,7 @@
         "temperature": true,
         "knowledge": "2024-08",
         "release_date": "2025-04-05",
-        "last_updated": "2026-04-30",
+        "last_updated": "2025-04-05",
         "modalities": {
           "input": [
             "text",
@@ -27877,7 +28089,8 @@
           "input": 0.25,
           "output": 0.87,
           "cache_read": 0.05
-        }
+        },
+        "canonical_model_id": "meta/llama-4-maverick-17b-instruct"
       }
     },
     {
@@ -28642,8 +28855,7 @@
           {
             "type": "effort",
             "values": [
-              "low",
-              "medium",
+              "none",
               "high"
             ]
           }
@@ -28669,6 +28881,7 @@
           "context": 128000,
           "output": 64000
         },
+        "status": "deprecated",
         "cost": {
           "input": 2,
           "output": 5,
@@ -28735,6 +28948,7 @@
           "input": 128000,
           "output": 128000
         },
+        "status": "deprecated",
         "provider": {
           "npm": "@ai-sdk/openai"
         },
@@ -28966,7 +29180,8 @@
         "cost": {
           "input": 0.15,
           "output": 0.45
-        }
+        },
+        "canonical_model_id": "meta/llama-3.1-8b-instruct"
       }
     },
     {
@@ -29153,12 +29368,14 @@
       },
       "raw": {
         "id": "mimo-v2-tts",
+        "type": "speech",
         "name": "MiMo-V2-TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-03-18",
         "last_updated": "2026-03-18",
         "modalities": {
@@ -29169,15 +29386,17 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2-tts"
       }
     },
     {
@@ -29202,12 +29421,14 @@
       },
       "raw": {
         "id": "mimo-v2-tts",
+        "type": "speech",
         "name": "MiMo-V2-TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-03-18",
         "last_updated": "2026-03-18",
         "modalities": {
@@ -29218,15 +29439,17 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2-tts"
       }
     },
     {
@@ -29251,12 +29474,14 @@
       },
       "raw": {
         "id": "mimo-v2-tts",
+        "type": "speech",
         "name": "MiMo-V2-TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-03-18",
         "last_updated": "2026-03-18",
         "modalities": {
@@ -29267,15 +29492,17 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2-tts"
       }
     },
     {
@@ -29300,12 +29527,14 @@
       },
       "raw": {
         "id": "mimo-v2.5-tts",
+        "type": "speech",
         "name": "MiMo-V2.5-TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-04-22",
         "last_updated": "2026-04-22",
         "modalities": {
@@ -29316,7 +29545,7 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
@@ -29324,7 +29553,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-tts"
       }
     },
     {
@@ -29349,12 +29579,14 @@
       },
       "raw": {
         "id": "mimo-v2.5-tts",
+        "type": "speech",
         "name": "MiMo-V2.5-TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-04-22",
         "last_updated": "2026-04-22",
         "modalities": {
@@ -29365,7 +29597,7 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
@@ -29373,7 +29605,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-tts"
       }
     },
     {
@@ -29398,12 +29631,14 @@
       },
       "raw": {
         "id": "mimo-v2.5-tts",
+        "type": "speech",
         "name": "MiMo-V2.5-TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-04-22",
         "last_updated": "2026-04-22",
         "modalities": {
@@ -29414,7 +29649,7 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
@@ -29422,7 +29657,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-tts"
       }
     },
     {
@@ -29447,12 +29683,14 @@
       },
       "raw": {
         "id": "mimo-v2.5-tts-voiceclone",
+        "type": "speech",
         "name": "MiMo-V2.5-TTS-VoiceClone",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-04-22",
         "last_updated": "2026-04-22",
         "modalities": {
@@ -29463,7 +29701,7 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
@@ -29471,7 +29709,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-tts-voiceclone"
       }
     },
     {
@@ -29496,12 +29735,14 @@
       },
       "raw": {
         "id": "mimo-v2.5-tts-voiceclone",
+        "type": "speech",
         "name": "MiMo-V2.5-TTS-VoiceClone",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-04-22",
         "last_updated": "2026-04-22",
         "modalities": {
@@ -29512,7 +29753,7 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
@@ -29520,7 +29761,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-tts-voiceclone"
       }
     },
     {
@@ -29545,12 +29787,14 @@
       },
       "raw": {
         "id": "mimo-v2.5-tts-voiceclone",
+        "type": "speech",
         "name": "MiMo-V2.5-TTS-VoiceClone",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-04-22",
         "last_updated": "2026-04-22",
         "modalities": {
@@ -29561,7 +29805,7 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
@@ -29569,7 +29813,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-tts-voiceclone"
       }
     },
     {
@@ -29594,12 +29839,14 @@
       },
       "raw": {
         "id": "mimo-v2.5-tts-voicedesign",
+        "type": "speech",
         "name": "MiMo-V2.5-TTS-VoiceDesign",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-04-22",
         "last_updated": "2026-04-22",
         "modalities": {
@@ -29610,7 +29857,7 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
@@ -29618,7 +29865,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-tts-voicedesign"
       }
     },
     {
@@ -29643,12 +29891,14 @@
       },
       "raw": {
         "id": "mimo-v2.5-tts-voicedesign",
+        "type": "speech",
         "name": "MiMo-V2.5-TTS-VoiceDesign",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-04-22",
         "last_updated": "2026-04-22",
         "modalities": {
@@ -29659,7 +29909,7 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
@@ -29667,7 +29917,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-tts-voicedesign"
       }
     },
     {
@@ -29692,12 +29943,14 @@
       },
       "raw": {
         "id": "mimo-v2.5-tts-voicedesign",
+        "type": "speech",
         "name": "MiMo-V2.5-TTS-VoiceDesign",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "mimo",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
+        "temperature": false,
         "release_date": "2026-04-22",
         "last_updated": "2026-04-22",
         "modalities": {
@@ -29708,7 +29961,7 @@
             "audio"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 8192,
           "output": 8192
@@ -29716,7 +29969,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-tts-voicedesign"
       }
     },
     {
@@ -29935,7 +30189,7 @@
         },
         "temperature": true,
         "release_date": "2026-02-12",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-02-12",
         "modalities": {
           "input": [
             "text"
@@ -29998,7 +30252,7 @@
         "tool_call": true,
         "temperature": true,
         "release_date": "2026-03-18",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-03-18",
         "modalities": {
           "input": [
             "text"
@@ -30170,6 +30424,7 @@
           "context": 256000,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.2,
           "output": 0.2,
@@ -30208,8 +30463,8 @@
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
-        "release_date": "2025-12-15",
-        "last_updated": "2025-12-15",
+        "release_date": "2025-12-02",
+        "last_updated": "2025-12-02",
         "modalities": {
           "input": [
             "text",
@@ -30223,7 +30478,8 @@
         "limit": {
           "context": 262144,
           "output": 262144
-        }
+        },
+        "canonical_model_id": "mistral/ministral-3-8b-instruct-2512"
       }
     },
     {
@@ -30373,6 +30629,7 @@
           "context": 128000,
           "output": 4000
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.1,
           "output": 0.1,
@@ -30681,6 +30938,7 @@
           "context": 256000,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.5,
           "output": 1.5,
@@ -30718,8 +30976,11 @@
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
+        "structured_output": false,
+        "temperature": true,
+        "knowledge": "2024-11",
         "release_date": "2025-12-02",
-        "last_updated": "2026-01-19",
+        "last_updated": "2025-12-02",
         "modalities": {
           "input": [
             "text",
@@ -30737,7 +30998,8 @@
         "cost": {
           "input": 0.5,
           "output": 1.5
-        }
+        },
+        "canonical_model_id": "mistral/mistral-large-2512"
       }
     },
     {
@@ -30762,20 +31024,20 @@
       },
       "raw": {
         "id": "mistral-large2",
-        "name": "Mistral Large (latest)",
+        "name": "Mistral Large 2407",
         "description": "Flagship Mistral model for advanced reasoning, coding, and multilingual work",
         "family": "mistral-large",
-        "attachment": true,
+        "attachment": false,
         "reasoning": false,
-        "tool_call": true,
+        "tool_call": false,
+        "structured_output": false,
         "temperature": true,
-        "knowledge": "2024-11",
-        "release_date": "2024-11-01",
-        "last_updated": "2025-12-02",
+        "knowledge": "2024-03-31",
+        "release_date": "2024-07-24",
+        "last_updated": "2024-07-24",
         "modalities": {
           "input": [
-            "text",
-            "image"
+            "text"
           ],
           "output": [
             "text"
@@ -30783,10 +31045,14 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 262144,
-          "output": 262144
+          "context": 128000,
+          "output": 8192
         },
-        "canonical_model_id": "mistral/mistral-large-latest"
+        "cost": {
+          "input": 2,
+          "output": 6
+        },
+        "canonical_model_id": "mistral/mistral-large-2407"
       }
     },
     {
@@ -30835,6 +31101,7 @@
           "context": 128000,
           "output": 64000
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.4,
           "output": 2,
@@ -31107,8 +31374,7 @@
           {
             "type": "effort",
             "values": [
-              "low",
-              "medium",
+              "none",
               "high"
             ]
           }
@@ -31135,6 +31401,7 @@
           "context": 256000,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.5,
           "output": 7.5,
@@ -31346,11 +31613,12 @@
         "id": "mistral-nemo-instruct-2407",
         "name": "Mistral Nemo Instruct",
         "description": "Legacy model retained for compatibility with older integrations",
-        "family": "mistral",
+        "family": "mistral-nemo",
         "attachment": false,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2024-07",
         "release_date": "2024-07-18",
         "last_updated": "2024-07-18",
         "modalities": {
@@ -31370,7 +31638,8 @@
         "cost": {
           "input": 0.3,
           "output": 0.3
-        }
+        },
+        "canonical_model_id": "mistral/mistral-nemo"
       }
     },
     {
@@ -32256,15 +32525,15 @@
       },
       "raw": {
         "id": "multi-qa-mpnet-base-dot-v1",
+        "type": "embedding",
         "name": "Multi-QA-mpnet-base-dot-v1",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-        "family": "text-embedding",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
         "temperature": false,
-        "release_date": "2021-08-30",
-        "last_updated": "2026-04-16",
+        "release_date": "2021-08-23",
+        "last_updated": "2021-08-23",
         "modalities": {
           "input": [
             "text"
@@ -32281,7 +32550,8 @@
         "cost": {
           "input": 0.009,
           "output": 0
-        }
+        },
+        "canonical_model_id": "sentence-transformers/multi-qa-mpnet-base-dot-v1"
       }
     },
     {
@@ -32776,8 +33046,8 @@
         "tool_call": true,
         "temperature": true,
         "knowledge": "2025-06-25",
-        "release_date": "2025-04-14",
-        "last_updated": "2025-04-14",
+        "release_date": "2025-12-15",
+        "last_updated": "2025-12-15",
         "modalities": {
           "input": [
             "text"
@@ -33136,10 +33406,11 @@
           }
         ],
         "tool_call": true,
+        "structured_output": false,
         "temperature": true,
         "knowledge": "2025-06-25",
         "release_date": "2025-12-15",
-        "last_updated": "2026-01-19",
+        "last_updated": "2025-12-15",
         "modalities": {
           "input": [
             "text"
@@ -33193,10 +33464,11 @@
           }
         ],
         "tool_call": true,
+        "structured_output": false,
         "temperature": true,
         "knowledge": "2025-06",
         "release_date": "2026-03-11",
-        "last_updated": "2026-03-12",
+        "last_updated": "2026-03-11",
         "modalities": {
           "input": [
             "text"
@@ -33377,6 +33649,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": false,
         "temperature": true,
         "knowledge": "2025-09",
         "release_date": "2026-06-04",
@@ -33487,8 +33760,9 @@
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
+        "knowledge": "2025-09",
         "release_date": "2026-06-04",
-        "last_updated": "2026-06-12",
+        "last_updated": "2026-06-04",
         "modalities": {
           "input": [
             "text"
@@ -33497,7 +33771,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 131072,
           "output": 131072
@@ -33506,7 +33780,8 @@
           "input": 0.9,
           "output": 1.7,
           "cache_read": 0.18
-        }
+        },
+        "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b"
       }
     },
     {
@@ -34543,8 +34818,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-06-25",
-        "release_date": "2026-01-27",
-        "last_updated": "2026-06-11",
+        "release_date": "2025-12-15",
+        "last_updated": "2025-12-15",
         "modalities": {
           "input": [
             "text"
@@ -34623,6 +34898,7 @@
           "context": 1000000,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.3,
           "output": 0.65,
@@ -34674,7 +34950,7 @@
         "temperature": true,
         "knowledge": "2025-09",
         "release_date": "2026-06-04",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-06-04",
         "modalities": {
           "input": [
             "text"
@@ -34861,7 +35137,8 @@
           "input": 2,
           "output": 8,
           "cache_read": 0.5
-        }
+        },
+        "canonical_model_id": "openai/gpt-4.1"
       }
     },
     {
@@ -34900,8 +35177,7 @@
         "modalities": {
           "input": [
             "text",
-            "image",
-            "pdf"
+            "image"
           ],
           "output": [
             "text"
@@ -34911,6 +35187,11 @@
         "limit": {
           "context": 128000,
           "output": 32000
+        },
+        "cost": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.5
         },
         "canonical_model_id": "openai/gpt-4.1"
       }
@@ -34966,7 +35247,8 @@
           "input": 2.5,
           "output": 10,
           "cache_read": 1.25
-        }
+        },
+        "canonical_model_id": "openai/gpt-4o"
       }
     },
     {
@@ -35000,8 +35282,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2023-09",
-        "release_date": "2026-02-28",
-        "last_updated": "2026-06-11",
+        "release_date": "2024-11-20",
+        "last_updated": "2024-11-20",
         "modalities": {
           "input": [
             "text",
@@ -35085,7 +35367,8 @@
           "input": 0.15,
           "output": 0.6,
           "cache_read": 0.075
-        }
+        },
+        "canonical_model_id": "openai/gpt-4o-mini"
       }
     },
     {
@@ -35112,15 +35395,15 @@
         "id": "openai-gpt-4o-mini-2024-07-18",
         "name": "GPT-4o Mini",
         "description": "Small omni GPT for cheap multimodal assistance and production-scale traffic",
-        "family": "gpt",
+        "family": "gpt-mini",
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
         "knowledge": "2023-09",
-        "release_date": "2026-02-28",
-        "last_updated": "2026-06-11",
+        "release_date": "2024-07-18",
+        "last_updated": "2024-07-18",
         "modalities": {
           "input": [
             "text",
@@ -35199,13 +35482,15 @@
         "open_weights": false,
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "cost": {
           "input": 1.25,
           "output": 10,
           "cache_read": 0.125
-        }
+        },
+        "canonical_model_id": "openai/gpt-5"
       }
     },
     {
@@ -35268,7 +35553,11 @@
           "input": 272000,
           "output": 8192
         },
-        "status": "beta",
+        "cost": {
+          "input": 1.25,
+          "output": 10,
+          "cache_read": 0.13
+        },
         "canonical_model_id": "openai/gpt-5"
       }
     },
@@ -35328,13 +35617,15 @@
         "open_weights": false,
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "cost": {
           "input": 0.25,
           "output": 2,
           "cache_read": 0.025
-        }
+        },
+        "canonical_model_id": "openai/gpt-5-mini"
       }
     },
     {
@@ -35397,7 +35688,11 @@
           "input": 272000,
           "output": 8192
         },
-        "status": "beta",
+        "cost": {
+          "input": 0.25,
+          "output": 2,
+          "cache_read": 0.03
+        },
         "canonical_model_id": "openai/gpt-5-mini"
       }
     },
@@ -35457,13 +35752,15 @@
         "open_weights": false,
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "cost": {
           "input": 0.05,
           "output": 0.4,
           "cache_read": 0.005
-        }
+        },
+        "canonical_model_id": "openai/gpt-5-nano"
       }
     },
     {
@@ -35526,7 +35823,11 @@
           "input": 272000,
           "output": 8192
         },
-        "status": "beta",
+        "cost": {
+          "input": 0.06,
+          "output": 0.44,
+          "cache_read": 0.01
+        },
         "canonical_model_id": "openai/gpt-5-nano"
       }
     },
@@ -35590,6 +35891,11 @@
           "input": 272000,
           "output": 8192
         },
+        "cost": {
+          "input": 1.25,
+          "output": 10,
+          "cache_read": 0.13
+        },
         "canonical_model_id": "openai/gpt-5.1"
       }
     },
@@ -35649,13 +35955,16 @@
         "open_weights": false,
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.25,
           "output": 10,
           "cache_read": 0.125
-        }
+        },
+        "canonical_model_id": "openai/gpt-5.1-codex-max"
       }
     },
     {
@@ -35714,13 +36023,15 @@
         "open_weights": false,
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "cost": {
           "input": 1.75,
           "output": 14,
           "cache_read": 0.175
-        }
+        },
+        "canonical_model_id": "openai/gpt-5.2"
       }
     },
     {
@@ -35783,6 +36094,11 @@
           "input": 272000,
           "output": 128000
         },
+        "cost": {
+          "input": 1.75,
+          "output": 14,
+          "cache_read": 0.18
+        },
         "canonical_model_id": "openai/gpt-5.2"
       }
     },
@@ -35841,12 +36157,14 @@
         "open_weights": false,
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "cost": {
           "input": 21,
           "output": 168
-        }
+        },
+        "canonical_model_id": "openai/gpt-5.2-pro"
       }
     },
     {
@@ -35906,13 +36224,15 @@
         "open_weights": false,
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "cost": {
           "input": 1.75,
           "output": 14,
           "cache_read": 0.175
-        }
+        },
+        "canonical_model_id": "openai/gpt-5.3-codex"
       }
     },
     {
@@ -35994,7 +36314,8 @@
             "output": 22.5,
             "cache_read": 0.5
           }
-        }
+        },
+        "canonical_model_id": "openai/gpt-5.4"
       }
     },
     {
@@ -36045,8 +36366,7 @@
         "modalities": {
           "input": [
             "text",
-            "image",
-            "pdf"
+            "image"
           ],
           "output": [
             "text"
@@ -36058,21 +36378,25 @@
           "input": 922000,
           "output": 128000
         },
-        "status": "beta",
-        "experimental": {
-          "modes": {
-            "fast": {
-              "cost": {
-                "input": 5,
-                "output": 30,
-                "cache_read": 0.5
-              },
-              "provider": {
-                "body": {
-                  "service_tier": "priority"
-                }
+        "cost": {
+          "input": 2.5,
+          "output": 15,
+          "cache_read": 0.25,
+          "tiers": [
+            {
+              "input": 5,
+              "output": 22.5,
+              "cache_read": 0.5,
+              "tier": {
+                "type": "context",
+                "size": 272000
               }
             }
+          ],
+          "context_over_200k": {
+            "input": 5,
+            "output": 22.5,
+            "cache_read": 0.5
           }
         },
         "canonical_model_id": "openai/gpt-5.4"
@@ -36135,13 +36459,15 @@
         "open_weights": false,
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "cost": {
           "input": 0.75,
           "output": 4.5,
           "cache_read": 0.075
-        }
+        },
+        "canonical_model_id": "openai/gpt-5.4-mini"
       }
     },
     {
@@ -36201,13 +36527,15 @@
         "open_weights": false,
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "cost": {
           "input": 0.2,
           "output": 1.25,
           "cache_read": 0.02
-        }
+        },
+        "canonical_model_id": "openai/gpt-5.4-nano"
       }
     },
     {
@@ -36264,6 +36592,7 @@
         "open_weights": false,
         "limit": {
           "context": 1050000,
+          "input": 922000,
           "output": 128000
         },
         "cost": {
@@ -36283,7 +36612,8 @@
             "input": 60,
             "output": 270
           }
-        }
+        },
+        "canonical_model_id": "openai/gpt-5.4-pro"
       }
     },
     {
@@ -36330,7 +36660,7 @@
         "temperature": false,
         "knowledge": "2025-12-01",
         "release_date": "2026-04-23",
-        "last_updated": "2026-04-30",
+        "last_updated": "2026-04-23",
         "modalities": {
           "input": [
             "text",
@@ -36365,7 +36695,8 @@
             "output": 45,
             "cache_read": 1
           }
-        }
+        },
+        "canonical_model_id": "openai/gpt-5.5"
       }
     },
     {
@@ -36416,8 +36747,7 @@
         "modalities": {
           "input": [
             "text",
-            "image",
-            "pdf"
+            "image"
           ],
           "output": [
             "text"
@@ -36430,6 +36760,27 @@
           "output": 128000
         },
         "status": "beta",
+        "cost": {
+          "input": 5,
+          "output": 30,
+          "cache_read": 0.5,
+          "tiers": [
+            {
+              "input": 10,
+              "output": 45,
+              "cache_read": 1,
+              "tier": {
+                "type": "context",
+                "size": 272000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 10,
+            "output": 45,
+            "cache_read": 1
+          }
+        },
         "canonical_model_id": "openai/gpt-5.5"
       }
     },
@@ -36566,8 +36917,7 @@
         "modalities": {
           "input": [
             "text",
-            "image",
-            "pdf"
+            "image"
           ],
           "output": [
             "text"
@@ -36579,7 +36929,30 @@
           "input": 922000,
           "output": 128000
         },
-        "status": "beta",
+        "cost": {
+          "input": 0.2,
+          "output": 1.2,
+          "cache_read": 0.02,
+          "cache_write": 0.25,
+          "tiers": [
+            {
+              "input": 0.4,
+              "output": 1.8,
+              "cache_read": 0.04,
+              "cache_write": 0.5,
+              "tier": {
+                "type": "context",
+                "size": 272000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5
+          }
+        },
         "canonical_model_id": "openai/gpt-5.6-luna"
       }
     },
@@ -36716,8 +37089,7 @@
         "modalities": {
           "input": [
             "text",
-            "image",
-            "pdf"
+            "image"
           ],
           "output": [
             "text"
@@ -36729,7 +37101,30 @@
           "input": 922000,
           "output": 128000
         },
-        "status": "beta",
+        "cost": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.4,
+          "cache_write": 5,
+          "tiers": [
+            {
+              "input": 8,
+              "output": 30,
+              "cache_read": 0.8,
+              "cache_write": 10,
+              "tier": {
+                "type": "context",
+                "size": 272000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 8,
+            "output": 30,
+            "cache_read": 0.8,
+            "cache_write": 10
+          }
+        },
         "canonical_model_id": "openai/gpt-5.6-sol"
       }
     },
@@ -36866,8 +37261,7 @@
         "modalities": {
           "input": [
             "text",
-            "image",
-            "pdf"
+            "image"
           ],
           "output": [
             "text"
@@ -36879,7 +37273,30 @@
           "input": 922000,
           "output": 128000
         },
-        "status": "beta",
+        "cost": {
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2,
+          "cache_write": 2.5,
+          "tiers": [
+            {
+              "input": 4,
+              "output": 18,
+              "cache_read": 0.4,
+              "cache_write": 5,
+              "tier": {
+                "type": "context",
+                "size": 272000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 4,
+            "output": 18,
+            "cache_read": 0.4,
+            "cache_write": 5
+          }
+        },
         "canonical_model_id": "openai/gpt-5.6-terra"
       }
     },
@@ -36926,8 +37343,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-08-31",
-        "release_date": "2025-12-13",
-        "last_updated": "2026-06-11",
+        "release_date": "2025-12-11",
+        "last_updated": "2025-12-11",
         "modalities": {
           "input": [
             "text"
@@ -36974,7 +37391,7 @@
         "id": "openai-gpt-53-codex",
         "name": "GPT-5.3 Codex",
         "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-        "family": "gpt",
+        "family": "gpt-codex",
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
@@ -36993,8 +37410,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-08-31",
-        "release_date": "2026-02-24",
-        "last_updated": "2026-06-11",
+        "release_date": "2026-02-05",
+        "last_updated": "2026-02-05",
         "modalities": {
           "input": [
             "text",
@@ -37062,7 +37479,7 @@
         "temperature": true,
         "knowledge": "2025-08-31",
         "release_date": "2026-03-05",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-03-05",
         "modalities": {
           "input": [
             "text",
@@ -37126,7 +37543,7 @@
         "id": "openai-gpt-54-mini",
         "name": "GPT-5.4 Mini",
         "description": "Strong small GPT for coding subagents, quick tool use, and high-volume work",
-        "family": "gpt",
+        "family": "gpt-mini",
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
@@ -37145,8 +37562,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-08-31",
-        "release_date": "2026-03-27",
-        "last_updated": "2026-06-11",
+        "release_date": "2026-03-17",
+        "last_updated": "2026-03-17",
         "modalities": {
           "input": [
             "text",
@@ -37194,7 +37611,7 @@
         "id": "openai-gpt-54-pro",
         "name": "GPT-5.4 Pro",
         "description": "More exact GPT-5.4 tier for demanding professional reasoning and agent tasks",
-        "family": "gpt",
+        "family": "gpt-pro",
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
@@ -37213,7 +37630,7 @@
         "temperature": false,
         "knowledge": "2025-08-31",
         "release_date": "2026-03-05",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-03-05",
         "modalities": {
           "input": [
             "text",
@@ -37294,7 +37711,7 @@
         "temperature": false,
         "knowledge": "2025-12-01",
         "release_date": "2026-04-23",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-04-23",
         "modalities": {
           "input": [
             "text",
@@ -37358,7 +37775,7 @@
         "id": "openai-gpt-55-pro",
         "name": "GPT-5.5 Pro",
         "description": "Highest-accuracy GPT-5.5 tier for slower, precision-heavy reasoning and coding",
-        "family": "gpt",
+        "family": "gpt-pro",
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
@@ -37375,8 +37792,8 @@
         "structured_output": true,
         "temperature": false,
         "knowledge": "2025-12-01",
-        "release_date": "2026-04-24",
-        "last_updated": "2026-06-11",
+        "release_date": "2026-04-23",
+        "last_updated": "2026-04-23",
         "modalities": {
           "input": [
             "text",
@@ -37955,6 +38372,7 @@
       },
       "raw": {
         "id": "openai-gpt-image-1",
+        "type": "image",
         "name": "GPT Image 1",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -37982,7 +38400,8 @@
           "input": 5,
           "output": 40,
           "cache_read": 1.25
-        }
+        },
+        "canonical_model_id": "openai/gpt-image-1"
       }
     },
     {
@@ -38007,6 +38426,7 @@
       },
       "raw": {
         "id": "openai-gpt-image-1.5",
+        "type": "image",
         "name": "OpenAI GPT Image 1.5",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -38022,8 +38442,8 @@
             "image"
           ],
           "output": [
-            "image",
-            "text"
+            "text",
+            "image"
           ]
         },
         "open_weights": false,
@@ -38035,7 +38455,8 @@
           "input": 5,
           "output": 10,
           "cache_read": 1
-        }
+        },
+        "canonical_model_id": "openai/gpt-image-1.5"
       }
     },
     {
@@ -38060,6 +38481,7 @@
       },
       "raw": {
         "id": "openai-gpt-image-2",
+        "type": "image",
         "name": "OpenAI GPT Image 2",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -38067,8 +38489,8 @@
         "reasoning": false,
         "tool_call": false,
         "temperature": false,
-        "release_date": "2025-04-24",
-        "last_updated": "2025-04-24",
+        "release_date": "2026-04-21",
+        "last_updated": "2026-04-21",
         "modalities": {
           "input": [
             "text",
@@ -38087,7 +38509,8 @@
         "cost": {
           "input": 8,
           "output": 30
-        }
+        },
+        "canonical_model_id": "openai/gpt-image-2"
       }
     },
     {
@@ -38135,7 +38558,7 @@
         "temperature": true,
         "knowledge": "2024-06",
         "release_date": "2025-08-05",
-        "last_updated": "2026-04-16",
+        "last_updated": "2025-08-05",
         "modalities": {
           "input": [
             "text"
@@ -38153,7 +38576,8 @@
           "input": 0.1,
           "output": 0.7,
           "cache_read": 0.02
-        }
+        },
+        "canonical_model_id": "openai/gpt-oss-120b"
       }
     },
     {
@@ -38197,8 +38621,9 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2025-11-06",
-        "last_updated": "2026-06-11",
+        "knowledge": "2024-06",
+        "release_date": "2025-08-05",
+        "last_updated": "2025-08-05",
         "modalities": {
           "input": [
             "text"
@@ -38261,7 +38686,7 @@
         "temperature": true,
         "knowledge": "2024-06",
         "release_date": "2025-08-05",
-        "last_updated": "2026-04-16",
+        "last_updated": "2025-08-05",
         "modalities": {
           "input": [
             "text"
@@ -38279,7 +38704,8 @@
           "input": 0.05,
           "output": 0.45,
           "cache_read": 0.01
-        }
+        },
+        "canonical_model_id": "openai/gpt-oss-20b"
       }
     },
     {
@@ -38343,7 +38769,8 @@
           "input": 15,
           "output": 60,
           "cache_read": 7.5
-        }
+        },
+        "canonical_model_id": "openai/o1"
       }
     },
     {
@@ -38407,7 +38834,8 @@
           "input": 2,
           "output": 8,
           "cache_read": 0.5
-        }
+        },
+        "canonical_model_id": "openai/o3"
       }
     },
     {
@@ -38471,7 +38899,8 @@
           "input": 1.1,
           "output": 4.4,
           "cache_read": 0.55
-        }
+        },
+        "canonical_model_id": "openai/o3-mini"
       }
     },
     {
@@ -39763,8 +40192,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2026-04-06",
-        "last_updated": "2026-06-11",
+        "release_date": "2026-04-02",
+        "last_updated": "2026-04-02",
         "modalities": {
           "input": [
             "text",
@@ -39837,8 +40266,8 @@
         "reasoning_options": [],
         "tool_call": true,
         "temperature": true,
-        "release_date": "2026-05-22",
-        "last_updated": "2026-06-11",
+        "release_date": "2026-05-21",
+        "last_updated": "2026-05-21",
         "modalities": {
           "input": [
             "text",
@@ -39896,7 +40325,7 @@
         "temperature": true,
         "knowledge": "2025-04",
         "release_date": "2026-06-02",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-06-02",
         "modalities": {
           "input": [
             "text",
@@ -39969,7 +40398,7 @@
         "reasoning_options": [],
         "tool_call": true,
         "temperature": true,
-        "release_date": "2026-07-22",
+        "release_date": "2026-07-19",
         "last_updated": "2026-07-19",
         "modalities": {
           "input": [
@@ -40705,6 +41134,7 @@
       },
       "raw": {
         "id": "qwen3-embedding-0.6b",
+        "type": "embedding",
         "name": "Qwen3 Embedding 0.6B",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
         "family": "text-embedding",
@@ -41018,8 +41448,10 @@
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
-        "release_date": "2025-04-29",
-        "last_updated": "2026-06-11",
+        "temperature": true,
+        "knowledge": "2025-04",
+        "release_date": "2025-09",
+        "last_updated": "2025-09",
         "modalities": {
           "input": [
             "text"
@@ -41036,7 +41468,8 @@
         "cost": {
           "input": 0.35,
           "output": 1.9
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct"
       }
     },
     {
@@ -41111,6 +41544,7 @@
       },
       "raw": {
         "id": "qwen3-tts-voicedesign",
+        "type": "speech",
         "name": "Qwen3 TTS VoiceDesign",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "qwen",
@@ -42825,7 +43259,7 @@
           }
         ],
         "tool_call": true,
-        "structured_output": true,
+        "structured_output": false,
         "temperature": true,
         "release_date": "2026-02-14",
         "last_updated": "2026-02-14",
@@ -42962,8 +43396,8 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-06-28",
-        "last_updated": "2026-07-24",
+        "release_date": "2026-06-23",
+        "last_updated": "2026-06-23",
         "modalities": {
           "input": [
             "text",
@@ -43148,7 +43582,8 @@
         "family": "llama",
         "attachment": false,
         "reasoning": false,
-        "tool_call": true,
+        "tool_call": false,
+        "structured_output": false,
         "temperature": true,
         "knowledge": "2023-12",
         "release_date": "2024-12-06",
@@ -43243,6 +43678,7 @@
       },
       "raw": {
         "id": "stable-diffusion-3.5-large",
+        "type": "image",
         "name": "Stable Diffusion 3.5 Large",
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "stable-diffusion",
@@ -43264,10 +43700,6 @@
         "limit": {
           "context": 256,
           "output": 1
-        },
-        "cost": {
-          "input": 0.08,
-          "output": 0
         }
       }
     },
@@ -43299,7 +43731,7 @@
         "reasoning": true,
         "reasoning_options": [],
         "tool_call": true,
-        "structured_output": true,
+        "structured_output": false,
         "temperature": true,
         "knowledge": "2025-01",
         "release_date": "2026-01-29",
@@ -43362,7 +43794,7 @@
           }
         ],
         "tool_call": true,
-        "structured_output": true,
+        "structured_output": false,
         "temperature": true,
         "knowledge": "2025-01",
         "release_date": "2026-04-02",
@@ -43588,10 +44020,11 @@
       },
       "raw": {
         "id": "stepaudio-2.5-asr",
+        "type": "transcription",
         "name": "StepAudio 2.5 ASR",
         "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
         "family": "step",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": false,
         "temperature": false,
@@ -43634,10 +44067,11 @@
       },
       "raw": {
         "id": "stepaudio-2.5-asr",
+        "type": "transcription",
         "name": "StepAudio 2.5 ASR",
         "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
         "family": "step",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": false,
         "temperature": false,
@@ -43680,6 +44114,7 @@
       },
       "raw": {
         "id": "stepaudio-2.5-tts",
+        "type": "speech",
         "name": "StepAudio 2.5 TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "step",
@@ -43726,6 +44161,7 @@
       },
       "raw": {
         "id": "stepaudio-2.5-tts",
+        "type": "speech",
         "name": "StepAudio 2.5 TTS",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "step",
@@ -44085,7 +44521,7 @@
         "open_weights": true,
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 80000
         },
         "status": "beta",
         "cost": {
@@ -44903,6 +45339,7 @@
       },
       "raw": {
         "id": "wan2-2-t2v-a14b",
+        "type": "video",
         "name": "Wan2.2-T2V-A14B",
         "description": "Video model for prompt-guided generation, editing, and motion workflows",
         "attachment": false,
@@ -44923,10 +45360,6 @@
         "limit": {
           "context": 100,
           "output": 1
-        },
-        "cost": {
-          "input": 0.6,
-          "output": 0
         }
       }
     },
@@ -45152,15 +45585,16 @@
       },
       "raw": {
         "id": "whisper-large-v3",
+        "type": "transcription",
         "name": "Whisper",
         "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
         "family": "whisper",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": false,
         "temperature": true,
-        "release_date": "2023-09-01",
-        "last_updated": "2025-09-05",
+        "release_date": "2023-11-06",
+        "last_updated": "2023-11-06",
         "modalities": {
           "input": [
             "audio"
@@ -45171,9 +45605,10 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 0,
-          "output": 0
-        }
+          "context": 448,
+          "output": 448
+        },
+        "canonical_model_id": "openai/whisper-large-v3"
       }
     },
     {
@@ -45206,8 +45641,8 @@
         "reasoning": false,
         "tool_call": false,
         "temperature": true,
-        "release_date": "2024-10-01",
-        "last_updated": "2024-10-01",
+        "release_date": "2023-11-06",
+        "last_updated": "2023-11-06",
         "modalities": {
           "input": [
             "audio"
@@ -45301,10 +45736,11 @@
       },
       "raw": {
         "id": "whisper-large-v3-turbo",
+        "type": "transcription",
         "name": "Whisper Large V3 Turbo",
         "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
         "family": "whisper",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": false,
         "temperature": true,
@@ -45320,9 +45756,10 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 0,
-          "output": 0
-        }
+          "context": 448,
+          "output": 448
+        },
+        "canonical_model_id": "openai/whisper-large-v3-turbo"
       }
     },
     {
@@ -45570,8 +46007,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2024-12",
-        "release_date": "2026-06-11",
-        "last_updated": "2026-06-11",
+        "release_date": "2026-04-22",
+        "last_updated": "2026-04-22",
         "modalities": {
           "input": [
             "text",
@@ -45931,8 +46368,8 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-03-15",
-        "last_updated": "2026-06-11",
+        "release_date": "2026-03-16",
+        "last_updated": "2026-03-16",
         "modalities": {
           "input": [
             "text"
@@ -45941,7 +46378,7 @@
             "text"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
           "context": 200000,
           "output": 32768
@@ -45996,7 +46433,7 @@
         "structured_output": true,
         "temperature": true,
         "release_date": "2026-04-01",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-04-01",
         "modalities": {
           "input": [
             "text",
@@ -46175,8 +46612,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2024-04-01",
-        "last_updated": "2026-06-11",
+        "release_date": "2025-09-30",
+        "last_updated": "2025-09-30",
         "modalities": {
           "input": [
             "text"
@@ -46242,8 +46679,8 @@
         "structured_output": true,
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2025-12-24",
-        "last_updated": "2026-06-11",
+        "release_date": "2025-12-22",
+        "last_updated": "2025-12-22",
         "modalities": {
           "input": [
             "text"
@@ -46309,8 +46746,8 @@
         },
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-02-11",
-        "last_updated": "2026-06-11",
+        "release_date": "2026-02-12",
+        "last_updated": "2026-02-12",
         "modalities": {
           "input": [
             "text"
@@ -46377,7 +46814,7 @@
         "structured_output": true,
         "temperature": true,
         "release_date": "2026-04-07",
-        "last_updated": "2026-06-11",
+        "last_updated": "2026-04-07",
         "modalities": {
           "input": [
             "text"
@@ -46439,8 +46876,8 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "release_date": "2026-06-16",
-        "last_updated": "2026-06-16",
+        "release_date": "2026-06-13",
+        "last_updated": "2026-06-13",
         "modalities": {
           "input": [
             "text"

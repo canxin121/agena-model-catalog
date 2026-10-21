@@ -1887,43 +1887,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "claude-opus-5-fast",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-07-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "pioneer",
-          "source_id": "claude-opus-5-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-07-24",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "claude-opus-5-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-07-23",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "claude-opus-5-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "claude-sonnet-4",
       "field": "display_name",
       "winner": {
@@ -2790,43 +2753,6 @@
     },
     {
       "model_id": "deepseek-v4-flash-0731-fast",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-07-31",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "aihubmix",
-          "source_id": "deepseek-v4-flash-0731-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-07-31",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "aihubmix",
-            "source_id": "deepseek-v4-flash-0731-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-08-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "deepseek-v4-flash-0731-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "deepseek-v4-flash-0731-fast",
       "field": "origin",
       "winner": {
         "value": "AIHubMix",
@@ -2851,43 +2777,6 @@
         },
         {
           "value": "Venice AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "deepseek-v4-flash-0731-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "deepseek-v4-flash-0731-fast",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-07-31",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "aihubmix",
-          "source_id": "deepseek-v4-flash-0731-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-07-31",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "aihubmix",
-            "source_id": "deepseek-v4-flash-0731-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-08-09",
           "source": {
             "upstream": "models.dev",
             "provider": "venice",
@@ -5149,6 +5038,43 @@
     },
     {
       "model_id": "gemini-3.1-pro",
+      "field": "lifecycle",
+      "winner": {
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "pioneer",
+          "source_id": "gemini-3.1-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "deprecated",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "pioneer",
+            "source_id": "gemini-3.1-pro",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "beta",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "snowflake-cortex",
+            "source_id": "gemini-3.1-pro",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gemini-3.1-pro",
       "field": "origin",
       "winner": {
         "value": "OpenCode",
@@ -6035,53 +5961,6 @@
     },
     {
       "model_id": "glm-4.7-flash",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-01-19",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "zai",
-          "source_id": "glm-4.7-flash",
-          "priority": 70,
-          "policy_rank": 4
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-01-19",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zai",
-            "source_id": "glm-4.7-flash",
-            "priority": 70,
-            "policy_rank": 4
-          }
-        },
-        {
-          "value": "2026-01-19",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zhipuai",
-            "source_id": "glm-4.7-flash",
-            "priority": 70,
-            "policy_rank": 22
-          }
-        },
-        {
-          "value": "2025-08-08",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "zai-org/GLM-4.7-Flash",
-            "priority": 70,
-            "policy_rank": 38
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "glm-4.7-flash",
       "field": "max_output_tokens",
       "winner": {
         "value": 131072,
@@ -6181,53 +6060,6 @@
             "input_usd_per_million_tokens": "0",
             "output_usd_per_million_tokens": "0"
           },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "zai-org/GLM-4.7-Flash",
-            "priority": 70,
-            "policy_rank": 38
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "glm-4.7-flash",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-01-19",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "zai",
-          "source_id": "glm-4.7-flash",
-          "priority": 70,
-          "policy_rank": 4
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-01-19",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zai",
-            "source_id": "glm-4.7-flash",
-            "priority": 70,
-            "policy_rank": 4
-          }
-        },
-        {
-          "value": "2026-01-19",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zhipuai",
-            "source_id": "glm-4.7-flash",
-            "priority": 70,
-            "policy_rank": 22
-          }
-        },
-        {
-          "value": "2025-08-08",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -6387,53 +6219,6 @@
     },
     {
       "model_id": "glm-5",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-02-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "zai",
-          "source_id": "glm-5",
-          "priority": 70,
-          "policy_rank": 4
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-02-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zai",
-            "source_id": "glm-5",
-            "priority": 70,
-            "policy_rank": 4
-          }
-        },
-        {
-          "value": "2026-02-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zhipuai",
-            "source_id": "glm-5",
-            "priority": 70,
-            "policy_rank": 22
-          }
-        },
-        {
-          "value": "2026-02-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "zai-org/GLM-5",
-            "priority": 70,
-            "policy_rank": 38
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "glm-5",
       "field": "pricing",
       "winner": {
         "value": {
@@ -6509,53 +6294,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "glm-5",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-02-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "zai",
-          "source_id": "glm-5",
-          "priority": 70,
-          "policy_rank": 4
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-02-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zai",
-            "source_id": "glm-5",
-            "priority": 70,
-            "policy_rank": 4
-          }
-        },
-        {
-          "value": "2026-02-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zhipuai",
-            "source_id": "glm-5",
-            "priority": 70,
-            "policy_rank": 22
-          }
-        },
-        {
-          "value": "2026-02-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "zai-org/GLM-5",
-            "priority": 70,
-            "policy_rank": 38
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "glm-5-1",
       "field": "display_name",
       "winner": {
@@ -6581,43 +6319,6 @@
         },
         {
           "value": "GLM-5.1",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "kenari",
-            "source_id": "glm-5-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "glm-5-1",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-06-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "empiriolabs",
-          "source_id": "glm-5-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "empiriolabs",
-            "source_id": "glm-5-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-04-07",
           "source": {
             "upstream": "models.dev",
             "provider": "kenari",
@@ -6876,53 +6577,6 @@
     },
     {
       "model_id": "glm-5.1",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-04-07",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "zai",
-          "source_id": "glm-5.1",
-          "priority": 70,
-          "policy_rank": 4
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-04-07",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zai",
-            "source_id": "glm-5.1",
-            "priority": 70,
-            "policy_rank": 4
-          }
-        },
-        {
-          "value": "2026-04-07",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zhipuai",
-            "source_id": "glm-5.1",
-            "priority": 70,
-            "policy_rank": 22
-          }
-        },
-        {
-          "value": "2026-04-03",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "zai-org/GLM-5.1",
-            "priority": 70,
-            "policy_rank": 38
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "glm-5.1",
       "field": "pricing",
       "winner": {
         "value": {
@@ -6986,53 +6640,6 @@
             "output_usd_per_million_tokens": "3.2",
             "cache_read_usd_per_million_tokens": "0.2"
           },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "zai-org/GLM-5.1",
-            "priority": 70,
-            "policy_rank": 38
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "glm-5.1",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-04-07",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "zai",
-          "source_id": "glm-5.1",
-          "priority": 70,
-          "policy_rank": 4
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-04-07",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zai",
-            "source_id": "glm-5.1",
-            "priority": 70,
-            "policy_rank": 4
-          }
-        },
-        {
-          "value": "2026-04-07",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zhipuai",
-            "source_id": "glm-5.1",
-            "priority": 70,
-            "policy_rank": 22
-          }
-        },
-        {
-          "value": "2026-04-03",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -12216,53 +11823,6 @@
     },
     {
       "model_id": "grok-build-0-1",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-04-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "grok-build-0-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-04-16",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "kenari",
-            "source_id": "grok-build-0-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-04-16",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "grok-build-0-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-06-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "grok-build-0-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "grok-build-0-1",
       "field": "origin",
       "winner": {
         "value": "Kenari",
@@ -12297,53 +11857,6 @@
         },
         {
           "value": "Venice AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "grok-build-0-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "grok-build-0-1",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-04-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "grok-build-0-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-04-16",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "kenari",
-            "source_id": "grok-build-0-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-04-16",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "grok-build-0-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-05-21",
           "source": {
             "upstream": "models.dev",
             "provider": "venice",
@@ -12872,6 +12385,43 @@
             "upstream": "models.dev",
             "provider": "kimi-code-plan-global",
             "source_id": "k3-256k",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "kimi-for-coding",
+      "field": "display_name",
+      "winner": {
+        "value": "Kimi K2.8 Preview",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "kimi-code-plan-cn",
+          "source_id": "kimi-for-coding",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Kimi K2.8 Preview",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "kimi-code-plan-cn",
+            "source_id": "kimi-for-coding",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "kimi-for-coding",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "kimi-code-plan-global",
+            "source_id": "kimi-for-coding",
             "priority": 20,
             "policy_rank": 0
           }
@@ -14072,7 +13622,7 @@
       "model_id": "llama-4-maverick",
       "field": "last_updated",
       "winner": {
-        "value": "2026-04-30",
+        "value": "2025-04-05",
         "source": {
           "upstream": "models.dev",
           "provider": "digitalocean",
@@ -14083,7 +13633,7 @@
       },
       "candidates": [
         {
-          "value": "2026-04-30",
+          "value": "2025-04-05",
           "source": {
             "upstream": "models.dev",
             "provider": "digitalocean",
@@ -14332,80 +13882,6 @@
     },
     {
       "model_id": "mimo-v2-flash",
-      "field": "knowledge_cutoff",
-      "winner": {
-        "value": "2024-12-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xiaomi",
-          "source_id": "mimo-v2-flash",
-          "priority": 70,
-          "policy_rank": 14
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-12-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "xiaomi",
-            "source_id": "mimo-v2-flash",
-            "priority": 70,
-            "policy_rank": 14
-          }
-        },
-        {
-          "value": "2024-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "XiaomiMiMo/MiMo-V2-Flash",
-            "priority": 70,
-            "policy_rank": 33
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mimo-v2-flash",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-06-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xiaomi",
-          "source_id": "mimo-v2-flash",
-          "priority": 70,
-          "policy_rank": 14
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-24",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "xiaomi",
-            "source_id": "mimo-v2-flash",
-            "priority": 70,
-            "policy_rank": 14
-          }
-        },
-        {
-          "value": "2025-12-16",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "XiaomiMiMo/MiMo-V2-Flash",
-            "priority": 70,
-            "policy_rank": 33
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mimo-v2-flash",
       "field": "max_output_tokens",
       "winner": {
         "value": 65536,
@@ -14612,43 +14088,6 @@
     },
     {
       "model_id": "mimo-v2.5",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-06-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xiaomi",
-          "source_id": "mimo-v2.5",
-          "priority": 70,
-          "policy_rank": 14
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-24",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "xiaomi",
-            "source_id": "mimo-v2.5",
-            "priority": 70,
-            "policy_rank": 14
-          }
-        },
-        {
-          "value": "2026-04-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "XiaomiMiMo/MiMo-V2.5",
-            "priority": 70,
-            "policy_rank": 33
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mimo-v2.5",
       "field": "pricing",
       "winner": {
         "value": {
@@ -14688,43 +14127,6 @@
             "upstream": "models.dev",
             "provider": "huggingface",
             "source_id": "XiaomiMiMo/MiMo-V2.5",
-            "priority": 70,
-            "policy_rank": 33
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mimo-v2.5-pro",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-06-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xiaomi",
-          "source_id": "mimo-v2.5-pro",
-          "priority": 70,
-          "policy_rank": 14
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-24",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "xiaomi",
-            "source_id": "mimo-v2.5-pro",
-            "priority": 70,
-            "policy_rank": 14
-          }
-        },
-        {
-          "value": "2026-04-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "XiaomiMiMo/MiMo-V2.5-Pro",
             "priority": 70,
             "policy_rank": 33
           }
@@ -17720,80 +17122,6 @@
     },
     {
       "model_id": "nemotron-3-ultra-550b",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-06-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "digitalocean",
-          "source_id": "nemotron-3-ultra-550b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "nemotron-3-ultra-550b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-06-04",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "nemotron-3-ultra-550b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "nemotron-3-ultra-550b",
-      "field": "open_weights",
-      "winner": {
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "digitalocean",
-          "source_id": "nemotron-3-ultra-550b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "nemotron-3-ultra-550b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "nemotron-3-ultra-550b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "nemotron-3-ultra-550b",
       "field": "origin",
       "winner": {
         "value": "DigitalOcean",
@@ -17979,43 +17307,6 @@
     },
     {
       "model_id": "nvidia-nemotron-3-nano-30b-a3b",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-12-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-12-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-06-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "nvidia-nemotron-3-nano-30b-a3b",
       "field": "origin",
       "winner": {
         "value": "Cortecs",
@@ -18040,43 +17331,6 @@
         },
         {
           "value": "Venice AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "nvidia-nemotron-3-nano-30b-a3b",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-12-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-12-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "nvidia-nemotron-3-nano-30b-a3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01-27",
           "source": {
             "upstream": "models.dev",
             "provider": "venice",
@@ -18830,43 +18084,6 @@
     },
     {
       "model_id": "openai-gpt-5.5",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-04-30",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "digitalocean",
-          "source_id": "openai-gpt-5.5",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-04-30",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "openai-gpt-5.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-04-23",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "snowflake-cortex",
-            "source_id": "openai-gpt-5.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "openai-gpt-5.5",
       "field": "origin",
       "winner": {
         "value": "DigitalOcean",
@@ -19200,43 +18417,6 @@
     },
     {
       "model_id": "openai-gpt-oss-120b",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-04-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "digitalocean",
-          "source_id": "openai-gpt-oss-120b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-04-16",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "openai-gpt-oss-120b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-06-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "openai-gpt-oss-120b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "openai-gpt-oss-120b",
       "field": "origin",
       "winner": {
         "value": "DigitalOcean",
@@ -19261,43 +18441,6 @@
         },
         {
           "value": "Venice AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "openai-gpt-oss-120b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "openai-gpt-oss-120b",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-08-05",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "digitalocean",
-          "source_id": "openai-gpt-oss-120b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "openai-gpt-oss-120b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-06",
           "source": {
             "upstream": "models.dev",
             "provider": "venice",
@@ -20023,7 +19166,7 @@
           }
         },
         {
-          "value": "2026-06-11",
+          "value": "2026-04-02",
           "source": {
             "upstream": "models.dev",
             "provider": "venice",
@@ -20061,43 +19204,6 @@
         },
         {
           "value": "Venice AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "qwen-3-6-plus",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen-3-6-plus",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-04-02",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "frogbot",
-          "source_id": "qwen-3-6-plus",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-04-02",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "frogbot",
-            "source_id": "qwen-3-6-plus",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-04-06",
           "source": {
             "upstream": "models.dev",
             "provider": "venice",
@@ -21943,54 +21049,7 @@
           }
         },
         {
-          "value": "2025-07-23",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-coder-480b-a35b-instruct",
-      "field": "max_output_tokens",
-      "winner": {
-        "value": 65536,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-coder-480b-a35b-instruct",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": 65536,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-coder-480b-a35b-instruct",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": 65536,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-coder-480b-a35b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": 66536,
+          "value": "2025-07-22",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -22138,7 +21197,7 @@
           }
         },
         {
-          "value": "2025-07-23",
+          "value": "2025-07-22",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -22885,100 +21944,6 @@
     },
     {
       "model_id": "qwen3-next-80b-a3b-instruct",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-next-80b-a3b-instruct",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-next-80b-a3b-instruct",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": "2025-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-next-80b-a3b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": "2025-09-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-next-80b-a3b-instruct",
-      "field": "max_output_tokens",
-      "winner": {
-        "value": 32768,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-next-80b-a3b-instruct",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": 32768,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-next-80b-a3b-instruct",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": 32768,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-next-80b-a3b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": 66536,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-next-80b-a3b-instruct",
       "field": "pricing",
       "winner": {
         "value": {
@@ -23025,53 +21990,6 @@
             "input_usd_per_million_tokens": "0.25",
             "output_usd_per_million_tokens": "1"
           },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-next-80b-a3b-instruct",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-next-80b-a3b-instruct",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-next-80b-a3b-instruct",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": "2025-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-next-80b-a3b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": "2025-09-11",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -23226,147 +22144,6 @@
     },
     {
       "model_id": "qwen3-next-80b-a3b-thinking",
-      "field": "features.reasoning",
-      "winner": {
-        "value": "supported",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-next-80b-a3b-thinking",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": "supported",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": "supported",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": "unsupported",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-next-80b-a3b-thinking",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-next-80b-a3b-thinking",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": "2025-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": "2025-09-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-next-80b-a3b-thinking",
-      "field": "max_output_tokens",
-      "winner": {
-        "value": 32768,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-next-80b-a3b-thinking",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": 32768,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": 32768,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": 131072,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-next-80b-a3b-thinking",
       "field": "pricing",
       "winner": {
         "value": {
@@ -23413,53 +22190,6 @@
             "input_usd_per_million_tokens": "0.3",
             "output_usd_per_million_tokens": "2"
           },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-next-80b-a3b-thinking",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-next-80b-a3b-thinking",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": "2025-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": "2025-09-11",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -24513,7 +23243,7 @@
           }
         },
         {
-          "value": "2026-02-01",
+          "value": "2026-02-15",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -24674,7 +23404,7 @@
           }
         },
         {
-          "value": "2026-02-01",
+          "value": "2026-02-15",
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",
@@ -26592,43 +25322,6 @@
     },
     {
       "model_id": "seed-2-1-turbo",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-06-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "empiriolabs",
-          "source_id": "seed-2-1-turbo",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-23",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "empiriolabs",
-            "source_id": "seed-2-1-turbo",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-07-24",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "seed-2-1-turbo",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "seed-2-1-turbo",
       "field": "origin",
       "winner": {
         "value": "EmpirioLabs AI",
@@ -26653,43 +25346,6 @@
         },
         {
           "value": "Venice AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "seed-2-1-turbo",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "seed-2-1-turbo",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-06-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "empiriolabs",
-          "source_id": "seed-2-1-turbo",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-23",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "empiriolabs",
-            "source_id": "seed-2-1-turbo",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-06-28",
           "source": {
             "upstream": "models.dev",
             "provider": "venice",
@@ -26787,53 +25443,6 @@
     },
     {
       "model_id": "step-3.5-flash",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-06-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "stepfun-ai",
-          "source_id": "step-3.5-flash",
-          "priority": 70,
-          "policy_rank": 13
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "stepfun-ai",
-            "source_id": "step-3.5-flash",
-            "priority": 70,
-            "policy_rank": 13
-          }
-        },
-        {
-          "value": "2026-06-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "stepfun",
-            "source_id": "step-3.5-flash",
-            "priority": 70,
-            "policy_rank": 26
-          }
-        },
-        {
-          "value": "2026-02-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "stepfun-ai/Step-3.5-Flash",
-            "priority": 70,
-            "policy_rank": 36
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "step-3.5-flash",
       "field": "pricing",
       "winner": {
         "value": {
@@ -26866,9 +25475,9 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.1",
-            "output_usd_per_million_tokens": "0.3",
-            "cache_read_usd_per_million_tokens": "0.02"
+            "input_usd_per_million_tokens": "0.10461",
+            "output_usd_per_million_tokens": "0.31384",
+            "cache_read_usd_per_million_tokens": "0.02092"
           },
           "source": {
             "upstream": "models.dev",
@@ -26889,6 +25498,55 @@
             "source_id": "stepfun-ai/Step-3.5-Flash",
             "priority": 70,
             "policy_rank": 36
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "step-3.5-flash-2603",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "0.1",
+          "output_usd_per_million_tokens": "0.3",
+          "cache_read_usd_per_million_tokens": "0.02"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "stepfun-ai",
+          "source_id": "step-3.5-flash-2603",
+          "priority": 70,
+          "policy_rank": 13
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.1",
+            "output_usd_per_million_tokens": "0.3",
+            "cache_read_usd_per_million_tokens": "0.02"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "stepfun-ai",
+            "source_id": "step-3.5-flash-2603",
+            "priority": 70,
+            "policy_rank": 13
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.10461",
+            "output_usd_per_million_tokens": "0.31384",
+            "cache_read_usd_per_million_tokens": "0.02092"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "stepfun",
+            "source_id": "step-3.5-flash-2603",
+            "priority": 70,
+            "policy_rank": 26
           }
         }
       ],
@@ -26943,59 +25601,12 @@
     },
     {
       "model_id": "step-3.7-flash",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-06-29",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "stepfun-ai",
-          "source_id": "step-3.7-flash",
-          "priority": 70,
-          "policy_rank": 13
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-06-29",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "stepfun-ai",
-            "source_id": "step-3.7-flash",
-            "priority": 70,
-            "policy_rank": 13
-          }
-        },
-        {
-          "value": "2026-06-29",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "stepfun",
-            "source_id": "step-3.7-flash",
-            "priority": 70,
-            "policy_rank": 26
-          }
-        },
-        {
-          "value": "2026-05-29",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "stepfun-ai/Step-3.7-Flash",
-            "priority": 70,
-            "policy_rank": 36
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "step-3.7-flash",
       "field": "pricing",
       "winner": {
         "value": {
-          "input_usd_per_million_tokens": "0.185",
-          "output_usd_per_million_tokens": "1.11",
-          "cache_read_usd_per_million_tokens": "0.037"
+          "input_usd_per_million_tokens": "0.2",
+          "output_usd_per_million_tokens": "1.15",
+          "cache_read_usd_per_million_tokens": "0.04"
         },
         "source": {
           "upstream": "models.dev",
@@ -27008,9 +25619,9 @@
       "candidates": [
         {
           "value": {
-            "input_usd_per_million_tokens": "0.185",
-            "output_usd_per_million_tokens": "1.11",
-            "cache_read_usd_per_million_tokens": "0.037"
+            "input_usd_per_million_tokens": "0.2",
+            "output_usd_per_million_tokens": "1.15",
+            "cache_read_usd_per_million_tokens": "0.04"
           },
           "source": {
             "upstream": "models.dev",
@@ -27022,9 +25633,9 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.185",
-            "output_usd_per_million_tokens": "1.11",
-            "cache_read_usd_per_million_tokens": "0.037"
+            "input_usd_per_million_tokens": "0.20175",
+            "output_usd_per_million_tokens": "1.21052",
+            "cache_read_usd_per_million_tokens": "0.04035"
           },
           "source": {
             "upstream": "models.dev",
@@ -27131,7 +25742,7 @@
         "value": {
           "input_usd_per_million_tokens": "1",
           "output_usd_per_million_tokens": "2.7",
-          "cache_read_usd_per_million_tokens": "0.05"
+          "cache_read_usd_per_million_tokens": "0.1"
         },
         "source": {
           "upstream": "models.dev",
@@ -27146,7 +25757,7 @@
           "value": {
             "input_usd_per_million_tokens": "1",
             "output_usd_per_million_tokens": "2.7",
-            "cache_read_usd_per_million_tokens": "0.05"
+            "cache_read_usd_per_million_tokens": "0.1"
           },
           "source": {
             "upstream": "models.dev",
@@ -27158,9 +25769,9 @@
         },
         {
           "value": {
-            "input_usd_per_million_tokens": "0.959",
-            "output_usd_per_million_tokens": "2.741",
-            "cache_read_usd_per_million_tokens": "0.048"
+            "input_usd_per_million_tokens": "1.04613",
+            "output_usd_per_million_tokens": "2.98895",
+            "cache_read_usd_per_million_tokens": "0.10461"
           },
           "source": {
             "upstream": "models.dev",
@@ -27567,7 +26178,7 @@
       "model_id": "whisper-large-v3",
       "field": "last_updated",
       "winner": {
-        "value": "2025-09-05",
+        "value": "2023-11-06",
         "source": {
           "upstream": "models.dev",
           "provider": "groq",
@@ -27578,7 +26189,7 @@
       },
       "candidates": [
         {
-          "value": "2025-09-05",
+          "value": "2023-11-06",
           "source": {
             "upstream": "models.dev",
             "provider": "groq",
@@ -27588,7 +26199,7 @@
           }
         },
         {
-          "value": "2024-10-01",
+          "value": "2023-11-06",
           "source": {
             "upstream": "models.dev",
             "provider": "privatemode-ai",
@@ -27661,7 +26272,7 @@
       "model_id": "whisper-large-v3",
       "field": "release_date",
       "winner": {
-        "value": "2023-09-01",
+        "value": "2023-11-06",
         "source": {
           "upstream": "models.dev",
           "provider": "groq",
@@ -27672,7 +26283,7 @@
       },
       "candidates": [
         {
-          "value": "2023-09-01",
+          "value": "2023-11-06",
           "source": {
             "upstream": "models.dev",
             "provider": "groq",
@@ -27682,7 +26293,7 @@
           }
         },
         {
-          "value": "2024-10-01",
+          "value": "2023-11-06",
           "source": {
             "upstream": "models.dev",
             "provider": "privatemode-ai",

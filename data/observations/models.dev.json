@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "7250abfb1e7e559c4af8d8352aa0d9cbac0334c199afc471ad3e04df11a59988",
+    "sha256": "466cb0122831ad11808f204046d3e6f215849b7a8841baf9106d9e9736d0ac6e",
     "record_count": 232
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -2028,12 +2028,13 @@
         "open_weights": true,
         "limit": {
           "context": 163840,
-          "output": 163840
+          "output": 32768
         },
         "cost": {
           "input": 3,
           "output": 5
-        }
+        },
+        "canonical_model_id": "deepseek/deepseek-r1-0528"
       }
     },
     {
@@ -2238,7 +2239,8 @@
         "cost": {
           "input": 0.28,
           "output": 0.4
-        }
+        },
+        "canonical_model_id": "deepseek/deepseek-v3.2"
       }
     },
     {
@@ -6621,6 +6623,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2025-01",
         "release_date": "2026-04-02",
         "last_updated": "2026-04-02",
         "modalities": {
@@ -6811,6 +6814,7 @@
           "context": 131072,
           "output": 98304
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.6,
           "output": 2.2
@@ -7779,11 +7783,7 @@
         "family": "glm-flash",
         "attachment": true,
         "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          }
-        ],
+        "reasoning_options": [],
         "tool_call": true,
         "temperature": true,
         "release_date": "2025-12-08",
@@ -7995,7 +7995,8 @@
           "input": 0.6,
           "output": 2.2,
           "cache_read": 0.11
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.7"
       }
     },
     {
@@ -8153,8 +8154,8 @@
         },
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2025-08-08",
-        "last_updated": "2025-08-08",
+        "release_date": "2026-01-19",
+        "last_updated": "2026-01-19",
         "modalities": {
           "input": [
             "text"
@@ -8171,7 +8172,8 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-4.7-flash"
       }
     },
     {
@@ -8460,8 +8462,8 @@
           "field": "reasoning_content"
         },
         "temperature": true,
-        "release_date": "2026-02-11",
-        "last_updated": "2026-02-11",
+        "release_date": "2026-02-12",
+        "last_updated": "2026-02-12",
         "modalities": {
           "input": [
             "text"
@@ -8479,7 +8481,8 @@
           "input": 1,
           "output": 3.2,
           "cache_read": 0.2
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-5"
       }
     },
     {
@@ -8709,8 +8712,8 @@
           "field": "reasoning_content"
         },
         "temperature": true,
-        "release_date": "2026-04-03",
-        "last_updated": "2026-04-03",
+        "release_date": "2026-04-07",
+        "last_updated": "2026-04-07",
         "modalities": {
           "input": [
             "text"
@@ -8728,7 +8731,8 @@
           "input": 1,
           "output": 3.2,
           "cache_read": 0.2
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-5.1"
       }
     },
     {
@@ -12863,6 +12867,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2024-06",
         "release_date": "2025-08-05",
         "last_updated": "2025-08-05",
         "modalities": {
@@ -12924,6 +12929,7 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
+        "knowledge": "2024-06",
         "release_date": "2025-08-05",
         "last_updated": "2025-08-05",
         "modalities": {
@@ -14244,8 +14250,8 @@
         "tool_call": true,
         "temperature": true,
         "knowledge": "2024-10",
-        "release_date": "2025-07-14",
-        "last_updated": "2025-07-14",
+        "release_date": "2025-07-11",
+        "last_updated": "2025-07-11",
         "modalities": {
           "input": [
             "text"
@@ -14262,7 +14268,8 @@
         "cost": {
           "input": 1,
           "output": 3
-        }
+        },
+        "canonical_model_id": "moonshotai/kimi-k2-instruct"
       }
     },
     {
@@ -14294,8 +14301,8 @@
         "tool_call": true,
         "temperature": true,
         "knowledge": "2024-10",
-        "release_date": "2025-09-04",
-        "last_updated": "2025-09-04",
+        "release_date": "2025-09-05",
+        "last_updated": "2025-09-05",
         "modalities": {
           "input": [
             "text"
@@ -14312,7 +14319,8 @@
         "cost": {
           "input": 1,
           "output": 3
-        }
+        },
+        "canonical_model_id": "moonshotai/kimi-k2-0905"
       }
     },
     {
@@ -14367,7 +14375,8 @@
           "input": 0.6,
           "output": 2.5,
           "cache_read": 0.15
-        }
+        },
+        "canonical_model_id": "moonshotai/kimi-k2-thinking"
       }
     },
     {
@@ -14403,8 +14412,8 @@
         },
         "temperature": true,
         "knowledge": "2025-01",
-        "release_date": "2026-01-01",
-        "last_updated": "2026-01-01",
+        "release_date": "2026-01-27",
+        "last_updated": "2026-01-27",
         "modalities": {
           "input": [
             "text",
@@ -14424,7 +14433,8 @@
           "input": 0.6,
           "output": 3,
           "cache_read": 0.1
-        }
+        },
+        "canonical_model_id": "moonshotai/kimi-k2.5"
       }
     },
     {
@@ -14607,7 +14617,8 @@
           "input": 0.95,
           "output": 4,
           "cache_read": 0.16
-        }
+        },
+        "canonical_model_id": "moonshotai/kimi-k2.6"
       }
     },
     {
@@ -15428,7 +15439,8 @@
           "input": 0.25,
           "output": 0.75,
           "cache_read": 0.025
-        }
+        },
+        "canonical_model_id": "inception/mercury-2"
       }
     },
     {
@@ -15472,7 +15484,7 @@
         "temperature": true,
         "knowledge": "2025-11-01",
         "release_date": "2026-09-08",
-        "last_updated": "2026-09-10",
+        "last_updated": "2026-09-08",
         "modalities": {
           "input": [
             "text"
@@ -15487,10 +15499,11 @@
           "output": 65536
         },
         "cost": {
-          "input": 0.04,
-          "output": 0.15,
-          "cache_read": 0.004
-        }
+          "input": 0.2,
+          "output": 0.75,
+          "cache_read": 0.02
+        },
+        "canonical_model_id": "inception/mercury-2.5"
       }
     },
     {
@@ -15551,7 +15564,8 @@
           "input": 0.1,
           "output": 0.35,
           "cache_read": 0.01
-        }
+        },
+        "canonical_model_id": "inception/mercury-3"
       }
     },
     {
@@ -15602,7 +15616,8 @@
           "input": 0.25,
           "output": 0.75,
           "cache_read": 0.025
-        }
+        },
+        "canonical_model_id": "inception/mercury-edit-2"
       }
     },
     {
@@ -15643,7 +15658,7 @@
         "temperature": true,
         "knowledge": "2024-12-01",
         "release_date": "2025-12-16",
-        "last_updated": "2026-06-24",
+        "last_updated": "2026-02-04",
         "modalities": {
           "input": [
             "text"
@@ -15662,7 +15677,8 @@
           "input": 0.14,
           "output": 0.28,
           "cache_read": 0.0028
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2-flash"
       }
     },
     {
@@ -15694,9 +15710,9 @@
         "reasoning_options": [],
         "tool_call": true,
         "temperature": true,
-        "knowledge": "2024-12",
+        "knowledge": "2024-12-01",
         "release_date": "2025-12-16",
-        "last_updated": "2025-12-16",
+        "last_updated": "2026-02-04",
         "modalities": {
           "input": [
             "text"
@@ -15710,10 +15726,12 @@
           "context": 262144,
           "output": 4096
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.1,
           "output": 0.3
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2-flash"
       }
     },
     {
@@ -15754,7 +15772,7 @@
         "temperature": true,
         "knowledge": "2024-12",
         "release_date": "2026-03-18",
-        "last_updated": "2026-06-24",
+        "last_updated": "2026-03-18",
         "modalities": {
           "input": [
             "text",
@@ -15777,7 +15795,8 @@
           "input": 0.14,
           "output": 0.28,
           "cache_read": 0.0028
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2-omni"
       }
     },
     {
@@ -15818,7 +15837,7 @@
         "temperature": true,
         "knowledge": "2024-12",
         "release_date": "2026-03-18",
-        "last_updated": "2026-06-24",
+        "last_updated": "2026-03-18",
         "modalities": {
           "input": [
             "text"
@@ -15837,7 +15856,8 @@
           "input": 0.435,
           "output": 0.87,
           "cache_read": 0.0036
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2-pro"
       }
     },
     {
@@ -15878,7 +15898,7 @@
         "temperature": true,
         "knowledge": "2024-12",
         "release_date": "2026-04-22",
-        "last_updated": "2026-06-24",
+        "last_updated": "2026-04-22",
         "modalities": {
           "input": [
             "text",
@@ -15900,7 +15920,8 @@
           "input": 0.14,
           "output": 0.28,
           "cache_read": 0.0028
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5"
       }
     },
     {
@@ -15930,9 +15951,6 @@
         "attachment": false,
         "reasoning": true,
         "reasoning_options": [
-          {
-            "type": "toggle"
-          },
           {
             "type": "effort",
             "values": [
@@ -16008,7 +16026,7 @@
         "temperature": true,
         "knowledge": "2024-12",
         "release_date": "2026-04-22",
-        "last_updated": "2026-06-24",
+        "last_updated": "2026-04-22",
         "modalities": {
           "input": [
             "text"
@@ -16027,7 +16045,8 @@
           "input": 0.435,
           "output": 0.87,
           "cache_read": 0.0036
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-pro"
       }
     },
     {
@@ -16057,9 +16076,6 @@
         "attachment": false,
         "reasoning": true,
         "reasoning_options": [
-          {
-            "type": "toggle"
-          },
           {
             "type": "effort",
             "values": [
@@ -16154,7 +16170,8 @@
           "input": 1.305,
           "output": 2.61,
           "cache_read": 0.0108
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.5-pro-ultraspeed"
       }
     },
     {
@@ -16192,6 +16209,7 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "structured_output": true,
         "temperature": true,
         "release_date": "2026-09-22",
         "last_updated": "2026-09-22",
@@ -16215,7 +16233,8 @@
           "input": 0.14,
           "output": 0.28,
           "cache_read": 0.0028
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.6-flash"
       }
     },
     {
@@ -16253,6 +16272,7 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "structured_output": true,
         "temperature": true,
         "release_date": "2026-09-22",
         "last_updated": "2026-09-22",
@@ -16276,7 +16296,8 @@
           "input": 0.435,
           "output": 0.87,
           "cache_read": 0.0036
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.6-pro"
       }
     },
     {
@@ -16314,6 +16335,7 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "structured_output": true,
         "temperature": true,
         "release_date": "2026-09-21",
         "last_updated": "2026-09-21",
@@ -16337,7 +16359,8 @@
           "input": 4.35,
           "output": 8.7,
           "cache_read": 0.036
-        }
+        },
+        "canonical_model_id": "xiaomi/mimo-v2.6-pro-ultraspeed"
       }
     },
     {
@@ -16703,7 +16726,8 @@
         "cost": {
           "input": 0.3,
           "output": 1.2
-        }
+        },
+        "canonical_model_id": "minimax/MiniMax-M2.1"
       }
     },
     {
@@ -16863,7 +16887,8 @@
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.03
-        }
+        },
+        "canonical_model_id": "minimax/MiniMax-M2.5"
       }
     },
     {
@@ -17130,7 +17155,8 @@
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.06
-        }
+        },
+        "canonical_model_id": "minimax/MiniMax-M2.7"
       }
     },
     {
@@ -22643,8 +22669,8 @@
         "tool_call": true,
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2025-07-23",
-        "last_updated": "2025-07-23",
+        "release_date": "2025-07-22",
+        "last_updated": "2025-07-22",
         "modalities": {
           "input": [
             "text"
@@ -22656,12 +22682,13 @@
         "open_weights": true,
         "limit": {
           "context": 262144,
-          "output": 66536
+          "output": 65536
         },
         "cost": {
           "input": 2,
           "output": 2
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct"
       }
     },
     {
@@ -22846,7 +22873,7 @@
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
-        "knowledge": "2025-04",
+        "knowledge": "2025-09",
         "release_date": "2026-02-03",
         "last_updated": "2026-02-03",
         "modalities": {
@@ -22865,7 +22892,8 @@
         "cost": {
           "input": 0.2,
           "output": 1.5
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3-coder-next"
       }
     },
     {
@@ -23017,6 +23045,7 @@
       },
       "raw": {
         "id": "Qwen/Qwen3-Embedding-4B",
+        "type": "embedding",
         "name": "Qwen 3 Embedding 4B",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
         "family": "qwen",
@@ -23025,8 +23054,8 @@
         "tool_call": false,
         "temperature": false,
         "knowledge": "2024-12",
-        "release_date": "2025-01-01",
-        "last_updated": "2025-01-01",
+        "release_date": "2025-06-05",
+        "last_updated": "2025-06-05",
         "modalities": {
           "input": [
             "text"
@@ -23037,13 +23066,14 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 32000,
-          "output": 2048
+          "context": 32768,
+          "output": 0
         },
         "cost": {
           "input": 0.01,
           "output": 0
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3-embedding-4b"
       }
     },
     {
@@ -23067,6 +23097,7 @@
       },
       "raw": {
         "id": "Qwen/Qwen3-Embedding-8B",
+        "type": "embedding",
         "name": "Qwen 3 Embedding 8B",
         "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
         "family": "qwen",
@@ -23075,8 +23106,8 @@
         "tool_call": false,
         "temperature": false,
         "knowledge": "2024-12",
-        "release_date": "2025-01-01",
-        "last_updated": "2025-01-01",
+        "release_date": "2025-06-05",
+        "last_updated": "2025-06-05",
         "modalities": {
           "input": [
             "text"
@@ -23087,13 +23118,14 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 32000,
-          "output": 4096
+          "context": 32768,
+          "output": 0
         },
         "cost": {
           "input": 0.01,
           "output": 0
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3-embedding-8b"
       }
     },
     {
@@ -23421,8 +23453,8 @@
         "tool_call": true,
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2025-09-11",
-        "last_updated": "2025-09-11",
+        "release_date": "2025-09",
+        "last_updated": "2025-09",
         "modalities": {
           "input": [
             "text"
@@ -23434,12 +23466,13 @@
         "open_weights": true,
         "limit": {
           "context": 262144,
-          "output": 66536
+          "output": 32768
         },
         "cost": {
           "input": 0.25,
           "output": 1
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct"
       }
     },
     {
@@ -23579,12 +23612,13 @@
         "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
         "family": "qwen",
         "attachment": false,
-        "reasoning": false,
+        "reasoning": true,
+        "reasoning_options": [],
         "tool_call": true,
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2025-09-11",
-        "last_updated": "2025-09-11",
+        "release_date": "2025-09",
+        "last_updated": "2025-09",
         "modalities": {
           "input": [
             "text"
@@ -23596,12 +23630,14 @@
         "open_weights": true,
         "limit": {
           "context": 262144,
-          "output": 131072
+          "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.3,
           "output": 2
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3-next-80b-a3b-thinking"
       }
     },
     {
@@ -24781,12 +24817,13 @@
         "open_weights": true,
         "limit": {
           "context": 262144,
-          "output": 131072
+          "output": 81920
         },
         "cost": {
           "input": 0.3,
           "output": 3
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3-235b-a22b-thinking-2507"
       }
     },
     {
@@ -25531,8 +25568,8 @@
         },
         "temperature": true,
         "knowledge": "2025-04",
-        "release_date": "2026-02-01",
-        "last_updated": "2026-02-01",
+        "release_date": "2026-02-15",
+        "last_updated": "2026-02-15",
         "modalities": {
           "input": [
             "text",
@@ -25550,7 +25587,8 @@
         "cost": {
           "input": 0.6,
           "output": 3.6
-        }
+        },
+        "canonical_model_id": "alibaba/qwen3.5-397b-a17b"
       }
     },
     {
@@ -28309,10 +28347,12 @@
           "context": 128000,
           "output": 4096
         },
+        "status": "deprecated",
         "cost": {
           "input": 1,
           "output": 1
-        }
+        },
+        "canonical_model_id": "perplexity/sonar"
       }
     },
     {
@@ -28338,6 +28378,7 @@
         "id": "sonar-deep-research",
         "name": "Perplexity Sonar Deep Research",
         "description": "Sonar search model for current answers, retrieval, and citation-backed chat",
+        "family": "sonar",
         "attachment": false,
         "reasoning": true,
         "reasoning_options": [
@@ -28369,11 +28410,13 @@
           "context": 128000,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 2,
           "output": 8,
           "reasoning": 3
-        }
+        },
+        "canonical_model_id": "perplexity/sonar-deep-research"
       }
     },
     {
@@ -28421,10 +28464,12 @@
           "context": 200000,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 3,
           "output": 15
-        }
+        },
+        "canonical_model_id": "perplexity/sonar-pro"
       }
     },
     {
@@ -28483,10 +28528,12 @@
           "context": 128000,
           "output": 4096
         },
+        "status": "deprecated",
         "cost": {
           "input": 2,
           "output": 8
-        }
+        },
+        "canonical_model_id": "perplexity/sonar-reasoning-pro"
       }
     },
     {
@@ -28533,6 +28580,7 @@
           "input": 32768,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 2.05,
           "output": 9.59,
@@ -28584,6 +28632,7 @@
           "input": 32768,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 2.05,
           "output": 9.59,
@@ -28635,6 +28684,7 @@
           "input": 16384,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 5.21,
           "output": 16.44,
@@ -28686,6 +28736,7 @@
           "input": 16384,
           "output": 8192
         },
+        "status": "deprecated",
         "cost": {
           "input": 5.21,
           "output": 16.44,
@@ -28731,10 +28782,11 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-01",
         "release_date": "2026-01-29",
-        "last_updated": "2026-06-15",
+        "last_updated": "2026-02-13",
         "modalities": {
           "input": [
             "text"
@@ -28753,7 +28805,8 @@
           "input": 0.1,
           "output": 0.3,
           "cache_read": 0.02
-        }
+        },
+        "canonical_model_id": "stepfun/step-3.5-flash"
       }
     },
     {
@@ -28794,10 +28847,11 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-01",
         "release_date": "2026-01-29",
-        "last_updated": "2026-06-15",
+        "last_updated": "2026-02-13",
         "modalities": {
           "input": [
             "text"
@@ -28813,10 +28867,11 @@
           "output": 256000
         },
         "cost": {
-          "input": 0.1,
-          "output": 0.3,
-          "cache_read": 0.02
-        }
+          "input": 0.10461,
+          "output": 0.31384,
+          "cache_read": 0.02092
+        },
+        "canonical_model_id": "stepfun/step-3.5-flash"
       }
     },
     {
@@ -28908,6 +28963,7 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-01",
         "release_date": "2026-04-02",
@@ -28930,7 +28986,8 @@
           "input": 0.1,
           "output": 0.3,
           "cache_read": 0.02
-        }
+        },
+        "canonical_model_id": "stepfun/step-3.5-flash-2603"
       }
     },
     {
@@ -28971,6 +29028,7 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-01",
         "release_date": "2026-04-02",
@@ -28990,10 +29048,11 @@
           "output": 256000
         },
         "cost": {
-          "input": 0.1,
-          "output": 0.3,
-          "cache_read": 0.02
-        }
+          "input": 0.10461,
+          "output": 0.31384,
+          "cache_read": 0.02092
+        },
+        "canonical_model_id": "stepfun/step-3.5-flash-2603"
       }
     },
     {
@@ -29035,10 +29094,11 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2026-03-01",
         "release_date": "2026-05-29",
-        "last_updated": "2026-06-29",
+        "last_updated": "2026-05-29",
         "modalities": {
           "input": [
             "text",
@@ -29056,9 +29116,9 @@
           "output": 256000
         },
         "cost": {
-          "input": 0.185,
-          "output": 1.11,
-          "cache_read": 0.037
+          "input": 0.2,
+          "output": 1.15,
+          "cache_read": 0.04
         },
         "canonical_model_id": "stepfun/step-3.7-flash"
       }
@@ -29102,10 +29162,11 @@
         "interleaved": {
           "field": "reasoning_content"
         },
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2026-03-01",
         "release_date": "2026-05-29",
-        "last_updated": "2026-06-29",
+        "last_updated": "2026-05-29",
         "modalities": {
           "input": [
             "text",
@@ -29123,9 +29184,9 @@
           "output": 256000
         },
         "cost": {
-          "input": 0.185,
-          "output": 1.11,
-          "cache_read": 0.037
+          "input": 0.20175,
+          "output": 1.21052,
+          "cache_read": 0.04035
         },
         "canonical_model_id": "stepfun/step-3.7-flash"
       }
@@ -29254,7 +29315,7 @@
         "cost": {
           "input": 1,
           "output": 2.7,
-          "cache_read": 0.05
+          "cache_read": 0.1
         },
         "canonical_model_id": "stepfun/step-5-preview"
       }
@@ -29319,9 +29380,9 @@
           "output": 65536
         },
         "cost": {
-          "input": 0.959,
-          "output": 2.741,
-          "cache_read": 0.048
+          "input": 1.04613,
+          "output": 2.98895,
+          "cache_read": 0.10461
         },
         "canonical_model_id": "stepfun/step-5-preview"
       }
@@ -29347,6 +29408,7 @@
       },
       "raw": {
         "id": "step-tts-2",
+        "type": "speech",
         "name": "Step TTS 2",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "step",
@@ -29392,6 +29454,7 @@
       },
       "raw": {
         "id": "step-tts-2",
+        "type": "speech",
         "name": "Step TTS 2",
         "description": "Speech generation model for controllable voice, narration, and audio delivery",
         "family": "step",

@@ -3,9 +3,9 @@
   "source": {
     "id": "litellm",
     "status": "current",
-    "sha256": "78a8b487e19567c6becdd0d112a397daadb722cc35008d8fd59a3ab94ee499e7",
-    "record_count": 4239,
-    "retrieved_at": "2026-10-20T19:16:53+00:00"
+    "sha256": "91da1a98e194e0d7c436aaf970800c8e734d70cc78027cfe314d5b27dfaf9a4c",
+    "record_count": 4245,
+    "retrieved_at": "2026-10-21T19:18:17+00:00"
   },
   "scope": "provider_route_reference",
   "records": [
@@ -1493,6 +1493,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_vision": true,
         "supports_web_search": true
       }
@@ -1530,6 +1531,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_vision": true,
         "supports_web_search": true
       }
@@ -24149,6 +24151,54 @@
       }
     },
     {
+      "route_id": "azure_ai/MAI-Code-1.1-Flash",
+      "provider": "azure_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "mai-code-1.1-flash",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 256000,
+        "max_output_tokens": 64000,
+        "input_usd_per_million_tokens": "0.2",
+        "output_usd_per_million_tokens": "1.2",
+        "cache_read_usd_per_million_tokens": "0.02",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 2e-08,
+        "deprecation_date": "2026-12-09",
+        "input_cost_per_token": 2e-07,
+        "litellm_provider": "azure_ai",
+        "max_input_tokens": 256000,
+        "max_output_tokens": 64000,
+        "max_tokens": 64000,
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-06,
+        "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/responses"
+        ],
+        "supported_modalities": [
+          "text",
+          "image"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
+      }
+    },
+    {
       "route_id": "azure_ai/MAI-Cyber-1-Flash",
       "provider": "azure_ai",
       "scope": "provider_route_reference",
@@ -29517,21 +29567,21 @@
       "fields": {
         "max_input_tokens": 1048576,
         "max_output_tokens": 131072,
-        "input_usd_per_million_tokens": "1.3",
-        "output_usd_per_million_tokens": "4.3",
-        "cache_read_usd_per_million_tokens": "0.13",
+        "input_usd_per_million_tokens": "0.4",
+        "output_usd_per_million_tokens": "1.2",
+        "cache_read_usd_per_million_tokens": "0.04",
         "cache_write_usd_per_million_tokens": null,
         "source_url": "https://inference.baseten.co/v1/models"
       },
       "raw": {
-        "cache_read_input_token_cost": 1.3e-07,
-        "input_cost_per_token": 1.3e-06,
+        "cache_read_input_token_cost": 4e-08,
+        "input_cost_per_token": 4e-07,
         "litellm_provider": "baseten",
         "max_input_tokens": 1048576,
         "max_output_tokens": 131072,
         "max_tokens": 131072,
         "mode": "chat",
-        "output_cost_per_token": 4.3e-06,
+        "output_cost_per_token": 1.2e-06,
         "source": "https://inference.baseten.co/v1/models",
         "supports_function_calling": true,
         "supports_prompt_caching": true,
@@ -42033,6 +42083,35 @@
       }
     },
     {
+      "route_id": "cloudflare/@cf/cloudflare/clairic",
+      "provider": "cloudflare",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 65536,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "0.1",
+        "output_usd_per_million_tokens": "0",
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://developers.cloudflare.com/workers-ai/models/clairic/"
+      },
+      "raw": {
+        "input_cost_per_token": 1e-07,
+        "litellm_provider": "cloudflare",
+        "max_input_tokens": 65536,
+        "mode": "extraction",
+        "output_cost_per_token": 0.0,
+        "source": "https://developers.cloudflare.com/workers-ai/models/clairic/",
+        "supports_vision": true
+      }
+    },
+    {
       "route_id": "cloudflare/@cf/cloudflare/clef",
       "provider": "cloudflare",
       "scope": "provider_route_reference",
@@ -43079,6 +43158,35 @@
         "mode": "chat",
         "output_cost_per_token": 1.923e-06,
         "rpm": 300
+      }
+    },
+    {
+      "route_id": "cloudflare/clairic",
+      "provider": "cloudflare",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 65536,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "0.1",
+        "output_usd_per_million_tokens": "0",
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://developers.cloudflare.com/workers-ai/models/clairic/"
+      },
+      "raw": {
+        "input_cost_per_token": 1e-07,
+        "litellm_provider": "cloudflare",
+        "max_input_tokens": 65536,
+        "mode": "extraction",
+        "output_cost_per_token": 0.0,
+        "source": "https://developers.cloudflare.com/workers-ai/models/clairic/",
+        "supports_vision": true
       }
     },
     {
@@ -48178,6 +48286,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_tool_choice": true,
         "supports_vision": true
       }
@@ -48229,6 +48338,7 @@
         "supports_function_calling": true,
         "supports_prompt_caching": true,
         "supports_reasoning": true,
+        "supports_sampling_params": false,
         "supports_tool_choice": true,
         "supports_vision": true
       }
@@ -48273,6 +48383,7 @@
         ],
         "supports_function_calling": true,
         "supports_reasoning": true,
+        "supports_sampling_params": false,
         "supports_tool_choice": true,
         "supports_vision": true
       }
@@ -48317,6 +48428,7 @@
         ],
         "supports_function_calling": true,
         "supports_reasoning": true,
+        "supports_sampling_params": false,
         "supports_tool_choice": true,
         "supports_vision": true
       }
@@ -54139,6 +54251,7 @@
         "supports_tool_choice": true,
         "supports_response_schema": true,
         "supports_reasoning": true,
+        "supports_sampling_params": false,
         "supports_vision": true,
         "source": "https://deepinfra.com/pricing",
         "supports_audio_input": true
@@ -68065,6 +68178,46 @@
       }
     },
     {
+      "route_id": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash-1017-us",
+      "provider": "fireworks_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 393216,
+        "input_usd_per_million_tokens": "0.45",
+        "output_usd_per_million_tokens": "1.8",
+        "cache_read_usd_per_million_tokens": "0.009",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.fireworks.ai/serverless/us-only-serverless"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 9e-09,
+        "cache_read_input_token_cost_priority": 1.125e-08,
+        "input_cost_per_token": 4.5e-07,
+        "input_cost_per_token_priority": 5.625e-07,
+        "litellm_provider": "fireworks_ai",
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 393216,
+        "max_tokens": 393216,
+        "mode": "chat",
+        "output_cost_per_token": 1.8e-06,
+        "output_cost_per_token_priority": 2.25e-06,
+        "source": "https://docs.fireworks.ai/serverless/us-only-serverless",
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
+      }
+    },
+    {
       "route_id": "fireworks_ai/accounts/fireworks/models/devstral-small-2505",
       "provider": "fireworks_ai",
       "scope": "provider_route_reference",
@@ -71529,17 +71682,21 @@
         "output_usd_per_million_tokens": "4.25",
         "cache_read_usd_per_million_tokens": "0.15",
         "cache_write_usd_per_million_tokens": null,
-        "source_url": "https://fireworks.ai/models/fireworks/muse-spark-open"
+        "source_url": "https://docs.fireworks.ai/serverless/pricing"
       },
       "raw": {
         "cache_read_input_token_cost": 1.5e-07,
+        "cache_read_input_token_cost_priority": 2.25e-07,
         "input_cost_per_token": 1.25e-06,
+        "input_cost_per_token_priority": 1.875e-06,
         "litellm_provider": "fireworks_ai",
         "max_input_tokens": 1048576,
         "mode": "chat",
         "output_cost_per_token": 4.25e-06,
-        "source": "https://fireworks.ai/models/fireworks/muse-spark-open",
+        "output_cost_per_token_priority": 6.375e-06,
+        "source": "https://docs.fireworks.ai/serverless/pricing",
         "supports_function_calling": true,
+        "supports_reasoning": true,
         "supports_vision": true
       }
     },
@@ -75197,6 +75354,7 @@
       "raw": {
         "cache_read_input_token_cost": 4.5e-08,
         "cache_read_input_token_cost_priority": 5.625e-08,
+        "deprecation_date": "2026-11-07",
         "input_cost_per_token": 2.25e-07,
         "input_cost_per_token_priority": 2.8125e-07,
         "litellm_provider": "fireworks_ai",
@@ -76027,6 +76185,7 @@
       "raw": {
         "cache_read_input_token_cost": 4.5e-08,
         "cache_read_input_token_cost_priority": 5.625e-08,
+        "deprecation_date": "2026-11-07",
         "input_cost_per_token": 2.25e-07,
         "input_cost_per_token_priority": 2.8125e-07,
         "litellm_provider": "fireworks_ai",
@@ -79455,6 +79614,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -79535,6 +79695,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -79620,6 +79781,7 @@
         "supports_reasoning": true,
         "supports_minimal_reasoning_effort": false,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -79720,6 +79882,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -79789,6 +79952,7 @@
         "supports_reasoning": true,
         "supports_minimal_reasoning_effort": false,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": false,
         "supports_url_context": false,
@@ -80425,12 +80589,10 @@
       "raw": {
         "cache_read_input_token_cost": 1.5e-07,
         "cache_read_input_token_cost_batches": 7.5e-08,
-        "cache_read_input_token_cost_flex": 7.5e-08,
         "cache_read_input_token_cost_priority": 2.7e-07,
         "input_cost_per_image": 0.00168,
         "input_cost_per_token": 1.5e-06,
         "input_cost_per_token_batches": 7.5e-07,
-        "input_cost_per_token_flex": 7.5e-07,
         "input_cost_per_token_priority": 2.7e-06,
         "litellm_provider": "vertex_ai-language-models",
         "max_input_tokens": 131072,
@@ -80441,7 +80603,6 @@
         "output_cost_per_image_token": 3e-05,
         "output_cost_per_token": 7.5e-06,
         "output_cost_per_token_batches": 3.75e-06,
-        "output_cost_per_token_flex": 3.75e-06,
         "output_cost_per_token_priority": 1.35e-05,
         "search_context_cost_per_query": {
           "search_context_size_low": 0.014,
@@ -82620,6 +82781,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -82840,6 +83002,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -82926,6 +83089,7 @@
         "supports_reasoning": true,
         "supports_minimal_reasoning_effort": false,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -83012,6 +83176,7 @@
         "supports_reasoning": true,
         "supports_minimal_reasoning_effort": false,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -85616,6 +85781,7 @@
         "supports_function_calling": true,
         "supports_parallel_function_calling": true,
         "supports_reasoning": true,
+        "supports_sampling_params": false,
         "supports_vision": true
       }
     },
@@ -85654,6 +85820,7 @@
         "supports_function_calling": true,
         "supports_parallel_function_calling": true,
         "supports_reasoning": true,
+        "supports_sampling_params": false,
         "supports_vision": true
       }
     },
@@ -121366,6 +121533,7 @@
       "raw": {
         "litellm_provider": "perplexity",
         "mode": "responses",
+        "supports_sampling_params": false,
         "supports_web_search": true,
         "supports_function_calling": true,
         "input_cost_per_token": 3e-07,
@@ -121396,6 +121564,7 @@
       "raw": {
         "litellm_provider": "perplexity",
         "mode": "responses",
+        "supports_sampling_params": false,
         "supports_web_search": true,
         "supports_function_calling": true,
         "input_cost_per_token": 1.5e-06,
@@ -121426,6 +121595,7 @@
       "raw": {
         "litellm_provider": "perplexity",
         "mode": "responses",
+        "supports_sampling_params": false,
         "supports_web_search": true,
         "supports_function_calling": true,
         "input_cost_per_token": 7.5e-07,
@@ -121456,6 +121626,7 @@
       "raw": {
         "litellm_provider": "perplexity",
         "mode": "responses",
+        "supports_sampling_params": false,
         "input_cost_per_token": 7.5e-07,
         "output_cost_per_token": 3.75e-06,
         "cache_read_input_token_cost": 7.5e-08,
@@ -151525,6 +151696,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -151780,6 +151952,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -151865,6 +152038,7 @@
         "supports_reasoning": true,
         "supports_minimal_reasoning_effort": false,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -151965,6 +152139,7 @@
         "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": true,
         "supports_url_context": true,
@@ -152034,6 +152209,7 @@
         "supports_reasoning": true,
         "supports_minimal_reasoning_effort": false,
         "supports_response_schema": true,
+        "supports_sampling_params": false,
         "supports_system_messages": true,
         "supports_tool_choice": false,
         "supports_url_context": false,
@@ -152432,12 +152608,10 @@
       "raw": {
         "cache_read_input_token_cost": 1.5e-07,
         "cache_read_input_token_cost_batches": 7.5e-08,
-        "cache_read_input_token_cost_flex": 7.5e-08,
         "cache_read_input_token_cost_priority": 2.7e-07,
         "input_cost_per_image": 0.00168,
         "input_cost_per_token": 1.5e-06,
         "input_cost_per_token_batches": 7.5e-07,
-        "input_cost_per_token_flex": 7.5e-07,
         "input_cost_per_token_priority": 2.7e-06,
         "litellm_provider": "vertex_ai-language-models",
         "max_input_tokens": 131072,
@@ -152448,7 +152622,6 @@
         "output_cost_per_image_token": 3e-05,
         "output_cost_per_token": 7.5e-06,
         "output_cost_per_token_batches": 3.75e-06,
-        "output_cost_per_token_flex": 3.75e-06,
         "output_cost_per_token_priority": 1.35e-05,
         "search_context_cost_per_query": {
           "search_context_size_low": 0.014,
@@ -157625,6 +157798,41 @@
       }
     },
     {
+      "route_id": "wandb/reflection/Beam-1.0-501B-A23B",
+      "provider": "wandb",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1049000,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "1",
+        "output_usd_per_million_tokens": "3",
+        "cache_read_usd_per_million_tokens": "0.1",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://www.coreweave.com/products/coreweave-forge/serverless-inference"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 1e-07,
+        "input_cost_per_token": 1e-06,
+        "litellm_provider": "wandb",
+        "max_input_tokens": 1049000,
+        "mode": "chat",
+        "output_cost_per_token": 3e-06,
+        "source": "https://www.coreweave.com/products/coreweave-forge/serverless-inference",
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": false
+      }
+    },
+    {
       "route_id": "wandb/zai-org/GLM-5.2",
       "provider": "wandb",
       "scope": "provider_route_reference",
@@ -157655,6 +157863,41 @@
         "mode": "chat",
         "supports_vision": false,
         "source": "https://wandb.ai/site/pricing/tokens/"
+      }
+    },
+    {
+      "route_id": "wandb/zai-org/GLM-5.3",
+      "provider": "wandb",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "glm-5.3",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1049000,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "1.2",
+        "output_usd_per_million_tokens": "4",
+        "cache_read_usd_per_million_tokens": "0.19",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://www.coreweave.com/products/coreweave-forge/serverless-inference"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 1.9e-07,
+        "input_cost_per_token": 1.2e-06,
+        "litellm_provider": "wandb",
+        "max_input_tokens": 1049000,
+        "mode": "chat",
+        "output_cost_per_token": 4e-06,
+        "source": "https://www.coreweave.com/products/coreweave-forge/serverless-inference",
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": false
       }
     },
     {

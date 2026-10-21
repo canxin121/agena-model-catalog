@@ -83,16 +83,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-07-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "the-grid-ai",
-          "source_id": "agent-max",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
         "kind": "upstream_field_observation",
@@ -297,16 +288,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-07-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "the-grid-ai",
-          "source_id": "agent-standard",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
         "kind": "upstream_field_observation",
@@ -1118,16 +1100,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-03-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "aihubmix",
-          "source_id": "alicloud-glm-5.1",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -1157,16 +1130,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-03-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "aihubmix",
-          "source_id": "alicloud-glm-5.1",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -4945,16 +4909,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Open Gemma instruction model for efficient chat and self-hosted deployments",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "scaleway",
-          "source_id": "bge-multilingual-gemma2",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -4975,16 +4930,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-06-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "scaleway",
-          "source_id": "bge-multilingual-gemma2",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -4993,16 +4939,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "scaleway",
-          "source_id": "bge-multilingual-gemma2",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -5014,16 +4951,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-07-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "scaleway",
-          "source_id": "bge-multilingual-gemma2",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "bge-reranker-base": {
@@ -7048,16 +6976,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Fast Claude model for responsive assistance, classification, and lightweight agents",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-3-haiku-20240307",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -7090,16 +7009,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-03-07",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-3-haiku-20240307",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -7129,16 +7039,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-03-07",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-3-haiku-20240307",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "claude-3-opus": {
@@ -7288,7 +7189,16 @@
         }
       },
       "lifecycle": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "qiniu-ai",
+          "source_id": "claude-3.5-haiku",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -7365,12 +7275,9 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
-      },
-      "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-09",
+        "value": "2024-04-30",
         "source": {
           "upstream": "models.dev",
           "provider": "qiniu-ai",
@@ -7378,6 +7285,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -7407,16 +7317,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "claude-3.5-sonnet",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -7579,7 +7480,16 @@
         }
       },
       "lifecycle": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "qiniu-ai",
+          "source_id": "claude-3.7-sonnet",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -7857,10 +7767,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-05",
+        "value": "2025-03-31",
         "source": {
           "upstream": "models.dev",
           "provider": "qiniu-ai",
@@ -7868,6 +7778,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -7894,16 +7807,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-05",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "claude-4.0-opus",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -7943,10 +7847,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-05",
+        "value": "2025-03-31",
         "source": {
           "upstream": "models.dev",
           "provider": "qiniu-ai",
@@ -7954,6 +7858,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -7980,16 +7887,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-05",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "claude-4.0-sonnet",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -8029,10 +7927,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-06",
+        "value": "2025-03-31",
         "source": {
           "upstream": "models.dev",
           "provider": "qiniu-ai",
@@ -8040,6 +7938,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -8066,16 +7967,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-06",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "claude-4.1-opus",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -8086,16 +7978,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Fast Claude model for responsive assistance, classification, and lightweight agents",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-4.5-haiku",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -8128,16 +8011,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-10-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-4.5-haiku",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -8167,16 +8041,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-10-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-4.5-haiku",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "claude-4.5-opus": {
@@ -10139,16 +10004,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-opus-4",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -10178,16 +10034,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-opus-4",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -10362,7 +10209,16 @@
         }
       },
       "lifecycle": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "claude-opus-4-1-20250805",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -10442,28 +10298,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-03",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "claude-opus-4-1-20250805-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "claude-opus-4-1-20250805-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -10493,16 +10331,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "claude-opus-4-1-20250805-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -10769,10 +10598,28 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-03-31",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "claude-opus-4-20250514",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-05-22",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "claude-opus-4-20250514",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -10802,7 +10649,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-05-22",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "claude-opus-4-20250514",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -14747,7 +14603,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-05-22",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "helicone",
+          "source_id": "claude-sonnet-4",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -14777,7 +14642,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-05-22",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "helicone",
+          "source_id": "claude-sonnet-4",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -14809,10 +14683,28 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-03-31",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "claude-sonnet-4-20250514",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-05-22",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "claude-sonnet-4-20250514",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -14842,7 +14734,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-05-22",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "claude-sonnet-4-20250514",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -15375,16 +15276,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-30",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "claude-sonnet-4-5-20250929-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -15414,16 +15306,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-30",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "claude-sonnet-4-5-20250929-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -15777,16 +15660,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "claude-sonnet-4-6-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -15807,16 +15681,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "claude-sonnet-4-6-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
         "kind": "upstream_field_observation",
@@ -15858,16 +15723,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-02-18",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "claude-sonnet-4-6-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -17401,16 +17257,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-07-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "the-grid-ai",
-          "source_id": "code-max",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
         "kind": "upstream_field_observation",
@@ -17615,16 +17462,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-07-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "the-grid-ai",
-          "source_id": "code-standard",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
         "kind": "upstream_field_observation",
@@ -19715,16 +19553,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "aihubmix",
-          "source_id": "coding-glm-5.1",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -19754,16 +19583,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "aihubmix",
-          "source_id": "coding-glm-5.1",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -28718,7 +28538,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2026-02-28",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "helicone",
+          "source_id": "deepseek-reasoner",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -28727,7 +28556,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "helicone",
+          "source_id": "deepseek-reasoner",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -28739,7 +28577,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-12-01",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "helicone",
+          "source_id": "deepseek-reasoner",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -29999,16 +29846,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "DeepSeek chat model for instruction following, coding, and analysis",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "deepseek-v3.2-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -30062,16 +29900,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "deepseek-v3.2-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -35135,7 +34964,27 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "items": {
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "volcengine",
+              "source_id": "doubao-seed-1-6-251015",
+              "priority": 70,
+              "policy_rank": 20
+            }
+          },
           "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "volcengine",
+              "source_id": "doubao-seed-1-6-251015",
+              "priority": 70,
+              "policy_rank": 20
+            }
+          },
+          "video": {
             "value": "supported",
             "source": {
               "upstream": "models.dev",
@@ -35151,6 +35000,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-10-15",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "volcengine",
+          "source_id": "doubao-seed-1-6-251015",
+          "priority": 70,
+          "policy_rank": 20
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "volcengine",
@@ -35458,6 +35319,16 @@
               "priority": 70,
               "policy_rank": 20
             }
+          },
+          "video": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "volcengine",
+              "source_id": "doubao-seed-1-6-flash-250828",
+              "priority": 70,
+              "policy_rank": 20
+            }
           }
         }
       },
@@ -35465,6 +35336,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-08-28",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "volcengine",
+          "source_id": "doubao-seed-1-6-flash-250828",
+          "priority": 70,
+          "policy_rank": 20
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "volcengine",
@@ -35824,6 +35707,18 @@
           "policy_rank": 20
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "volcengine",
+          "source_id": "doubao-seed-1-6-vision-250815",
+          "priority": 70,
+          "policy_rank": 20
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -35970,16 +35865,7 @@
         "has_source_notes": true
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-12-18",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "doubao-seed-1-8-251215",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -36009,16 +35895,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-12-18",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "doubao-seed-1-8-251215",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -36172,6 +36049,18 @@
           "policy_rank": 20
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "volcengine",
+          "source_id": "doubao-seed-1-8-251228",
+          "priority": 70,
+          "policy_rank": 20
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -36293,16 +36182,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Multimodal reasoning model for visual analysis, planning, and tool use",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-1.6",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -36323,16 +36203,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-1.6",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -36368,16 +36239,7 @@
         "has_source_notes": true
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-1.6",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -36391,16 +36253,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Multimodal reasoning model for visual analysis, planning, and tool use",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-1.6-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -36421,16 +36274,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-1.6-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -36466,16 +36310,7 @@
         "has_source_notes": true
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-1.6-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -36883,6 +36718,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2026-02-14",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "volcengine",
+          "source_id": "doubao-seed-2-0-code-preview-260215",
+          "priority": 70,
+          "policy_rank": 20
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "volcengine",
@@ -37980,6 +37827,18 @@
           "policy_rank": 20
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "volcengine",
+          "source_id": "doubao-seed-2-0-pro-260215",
+          "priority": 70,
+          "policy_rank": 20
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -38612,16 +38471,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Coding model for repository understanding, refactors, and agentic engineering tasks",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-2.0-code",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -38710,16 +38560,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Multimodal reasoning model for visual analysis, planning, and tool use",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-2.0-lite",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -38808,16 +38649,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Multimodal reasoning model for visual analysis, planning, and tool use",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-2.0-mini",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -38906,16 +38738,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Multimodal reasoning model for visual analysis, planning, and tool use",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-2.0-pro",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -42300,16 +42123,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "gemini-2.0-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -42329,10 +42143,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-05",
+        "value": "2024-06",
         "source": {
           "upstream": "models.dev",
           "provider": "qiniu-ai",
@@ -42340,6 +42154,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -42369,16 +42186,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-05",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "gemini-2.0-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "gemini-2.0-flash-lite": {
@@ -42428,16 +42236,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-06-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-2.0-flash-lite",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -42467,16 +42266,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-06-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-2.0-flash-lite",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "gemini-2.0-pro-exp-02-05": {
@@ -43597,16 +43387,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Low-latency Gemini model for high-volume multimodal and agent workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-flash-lite-preview-06-17",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -43626,10 +43407,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2026-01",
+        "value": "2025-01",
         "source": {
           "upstream": "models.dev",
           "provider": "jiekou",
@@ -43637,6 +43418,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -43666,16 +43450,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-flash-lite-preview-06-17",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -43790,16 +43565,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "gemini-2.5-flash-lite-preview-09-2025-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -43818,6 +43584,18 @@
       },
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-01",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "nano-gpt",
+          "source_id": "gemini-2.5-flash-lite-preview-09-2025-thinking",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
@@ -43879,16 +43657,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-2.5-flash-nothink",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -43921,16 +43690,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-06-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-2.5-flash-nothink",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -43960,16 +43720,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-06-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-2.5-flash-nothink",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "gemini-2.5-flash-nothinking": {
@@ -44241,16 +43992,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-flash-preview-05-20",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -44270,10 +44012,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2026-01",
+        "value": "2025-01",
         "source": {
           "upstream": "models.dev",
           "provider": "jiekou",
@@ -44281,6 +44023,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -44310,16 +44055,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-flash-preview-05-20",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -44330,16 +44066,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "gemini-2.5-flash-preview-05-20:thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -44358,6 +44085,18 @@
       },
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-01",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "nano-gpt",
+          "source_id": "gemini-2.5-flash-preview-05-20:thinking",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
@@ -45519,23 +45258,14 @@
         "value": "2025-01-31",
         "source": {
           "upstream": "models.dev",
-          "provider": "nano-gpt",
+          "provider": "jiekou",
           "source_id": "gemini-2.5-pro-preview-06-05",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-pro-preview-06-05",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -45565,16 +45295,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-pro-preview-06-05",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -46864,16 +46585,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-3-pro-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -46906,16 +46618,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-19",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-3-pro-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -46945,16 +46648,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-19",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-3-pro-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -46965,16 +46659,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "gemini-3.0-flash-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -46994,10 +46679,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-12-18",
+        "value": "2025-01",
         "source": {
           "upstream": "models.dev",
           "provider": "qiniu-ai",
@@ -47005,6 +46690,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -47031,16 +46719,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-12-18",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "gemini-3.0-flash-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -47051,16 +46730,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Image model for prompt-driven generation, editing, and visual design workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "gemini-3.0-pro-image-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -47079,6 +46749,18 @@
       },
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-01",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "qiniu-ai",
+          "source_id": "gemini-3.0-pro-image-preview",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
@@ -47134,16 +46816,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "gemini-3.0-pro-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -47163,10 +46836,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-19",
+        "value": "2025-01",
         "source": {
           "upstream": "models.dev",
           "provider": "qiniu-ai",
@@ -47174,6 +46847,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -47200,16 +46876,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-19",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "gemini-3.0-pro-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -61527,16 +61194,7 @@
         "has_source_notes": true
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "glm-5.2-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -61566,16 +61224,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "glm-5.2-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -62495,16 +62144,7 @@
         "has_source_notes": true
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "glm-5.2-short",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -62534,16 +62174,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "glm-5.2-short",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -62593,16 +62224,7 @@
         "has_source_notes": true
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "glm-5.2-short-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -62632,16 +62254,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "glm-5.2-short-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "glm-5.2-short-fast-flex": {
@@ -62685,16 +62298,7 @@
         "has_source_notes": true
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "glm-5.2-short-fast-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -62724,16 +62328,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "glm-5.2-short-fast-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "glm-5.2-short-flex": {
@@ -62777,16 +62372,7 @@
         "has_source_notes": true
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "glm-5.2-short-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -62816,16 +62402,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "glm-5.2-short-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -66825,16 +66402,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "gpt-4.1-mini-2025-04-14",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -69100,16 +68668,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-09-30",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "gpt-5-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -69139,16 +68698,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-09-30",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "gpt-5-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "gpt-5-codex": {
@@ -70132,16 +69682,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -70174,16 +69715,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-08",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -70213,16 +69745,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-08",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5-thinking",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -70583,16 +70106,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5.1-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -70625,16 +70139,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5.1-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -70664,16 +70169,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5.1-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -71430,10 +70926,28 @@
         }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-12-11",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.2-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "lifecycle": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "gpt-5.2-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -71463,7 +70977,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-12-11",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-5.2-chat-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -71985,7 +71508,7 @@
         "value": "deprecated",
         "source": {
           "upstream": "models.dev",
-          "provider": "opper",
+          "provider": "abacus",
           "source_id": "gpt-5.3-chat-latest",
           "priority": 20,
           "policy_rank": 0
@@ -83303,16 +82826,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4-fast-non-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -83342,16 +82856,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4-fast-non-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "grok-4-fast-reasoning": {
@@ -83401,16 +82906,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4-fast-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -83440,16 +82936,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4-fast-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -84416,16 +83903,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Grok model for agentic tool use, reasoning, coding, and live assistance",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4.20-beta-0309-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -84446,16 +83924,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-03-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4.20-beta-0309-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -84485,16 +83954,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-03-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4.20-beta-0309-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -86375,16 +85835,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-20",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "opencode",
-          "source_id": "grok-code",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
         "kind": "upstream_field_observation",
@@ -86426,16 +85877,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-20",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "opencode",
-          "source_id": "grok-code",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -86491,9 +85933,12 @@
         }
       },
       "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
+      },
+      "lifecycle": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-01",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "abacus",
@@ -86501,9 +85946,6 @@
           "priority": 20,
           "policy_rank": 0
         }
-      },
-      "lifecycle": {
-        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -86533,16 +85975,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "grok-code-fast-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "grok-composer-2.5-fast": {
@@ -88260,16 +87693,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Open Llama instruction model for multilingual chat, reasoning, and coding",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "hermes-2-pro-llama-3-8b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -88302,16 +87726,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-05-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "hermes-2-pro-llama-3-8b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -88320,16 +87735,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "hermes-2-pro-llama-3-8b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -88341,16 +87747,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-05-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "hermes-2-pro-llama-3-8b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "hermes-3-llama-3.1-405b": {
@@ -89981,7 +89378,16 @@
         }
       },
       "lifecycle": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "aihubmix",
+          "source_id": "hy3-preview",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -93320,7 +92726,16 @@
         }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-07-11",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "iflowcn",
+          "source_id": "kimi-k2",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "lifecycle": {
         "kind": "upstream_field_observation",
@@ -93328,7 +92743,7 @@
         "value": "deprecated",
         "source": {
           "upstream": "models.dev",
-          "provider": "opencode",
+          "provider": "iflowcn",
           "source_id": "kimi-k2",
           "priority": 20,
           "policy_rank": 0
@@ -93341,7 +92756,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "iflowcn",
+          "source_id": "kimi-k2",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -93353,7 +92777,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-07-11",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "iflowcn",
+          "source_id": "kimi-k2",
+          "priority": 20,
+          "policy_rank": 0
+        }
       }
     },
     "kimi-k2-instruct": {
@@ -100433,16 +99866,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Open multimodal Llama model for long-context analysis and efficient agents",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "llama-4-scout",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -100475,16 +99899,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-01-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "llama-4-scout",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -100493,16 +99908,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "llama-4-scout",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -100514,16 +99920,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-01-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "llama-4-scout",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "llama-4-scout-17b-16e-instruct": {
@@ -100860,46 +100257,210 @@
     },
     "llama-guard-4-12b": {
       "context_window_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 163840,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-Guard-4-12B",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Multimodal Llama 4-based safety classifier for moderating prompts and responses",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-Guard-4-12B",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Llama Guard 4 12B",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-Guard-4-12B",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "features": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-Guard-4-12B",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-Guard-4-12B",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          },
+          "tool_calling": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-Guard-4-12B",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          }
+        }
       },
       "input": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-Guard-4-12B",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-Guard-4-12B",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          }
+        }
       },
       "knowledge_cutoff": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2025-04-29",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-Guard-4-12B",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 163840,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-Guard-4-12B",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-Guard-4-12B",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "origin": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Meta",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-Guard-4-12B",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "output_modalities": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-Guard-4-12B",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "pricing": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.18",
+          "output_usd_per_million_tokens": "0.18"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-Guard-4-12B",
+          "priority": 70,
+          "policy_rank": 30
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "huggingface"
+        ],
+        "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "meta-llama/Llama-Guard-4-12B"
+          }
+        ]
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2025-04-29",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-Guard-4-12B",
+          "priority": 70,
+          "policy_rank": 30
+        }
       }
     },
     "llama-nemotron-embed-1b-v2": {
@@ -124323,10 +123884,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-12-01",
+        "value": "2025-10",
         "source": {
           "upstream": "models.dev",
           "provider": "nova",
@@ -124334,6 +123895,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -124363,16 +123927,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-12-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nova",
-          "source_id": "nova-2-lite-v1",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -133463,16 +133018,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "phi-4-multimodal-instruct",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -133492,10 +133038,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-26",
+        "value": "2024-06",
         "source": {
           "upstream": "models.dev",
           "provider": "nano-gpt",
@@ -133503,6 +133049,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -133532,16 +133081,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-26",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "phi-4-multimodal-instruct",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "phi-4-reasoning": {
@@ -134894,16 +134434,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-11-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "qwen-2.5-coder-32b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -134933,16 +134464,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-11-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "qwen-2.5-coder-32b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "qwen-2.5-coder-32b-instruct": {
@@ -135226,23 +134748,14 @@
         "value": "2025-04",
         "source": {
           "upstream": "models.dev",
-          "provider": "venice",
+          "provider": "frogbot",
           "source_id": "qwen-3-6-plus",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-03",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "frogbot",
-          "source_id": "qwen-3-6-plus",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -137568,10 +137081,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-05",
+        "value": "2024-04",
         "source": {
           "upstream": "models.dev",
           "provider": "qiniu-ai",
@@ -137579,6 +137092,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -137611,16 +137127,7 @@
         "has_source_notes": true
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-08-05",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "qwen-max-2025-01-25",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "qwen-max-latest": {
@@ -143316,19 +142823,7 @@
         }
       },
       "pricing": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": {
-          "input_usd_per_million_tokens": "0.035",
-          "output_usd_per_million_tokens": "0.035"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-asr-flash",
-          "priority": 70,
-          "policy_rank": 5
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "provider_sources": {
         "kind": "upstream_field_observation",
@@ -143366,16 +142861,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Qwen coding model for software agents, repository edits, and code reasoning",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "qwen3-coder",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -143408,16 +142894,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "qwen3-coder",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
         "kind": "upstream_field_observation",
@@ -143438,16 +142915,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "qwen3-coder",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -143459,16 +142927,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "qwen3-coder",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "qwen3-coder-30b": {
@@ -145728,16 +145187,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Flagship model for demanding analysis, coding, and production agent workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "qwen3-max-2025-09-23",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -145770,16 +145220,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "qwen3-max-2025-09-23",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -145809,16 +145250,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-09-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "qwen3-max-2025-09-23",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -145978,16 +145410,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-01-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "iflowcn",
-          "source_id": "qwen3-max-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -146017,16 +145440,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-01-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "iflowcn",
-          "source_id": "qwen3-max-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -151224,16 +150638,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qvac",
-          "source_id": "qwen3.5-0.8b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -151263,16 +150668,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qvac",
-          "source_id": "qwen3.5-0.8b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -151319,16 +150715,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-02-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "regolo-ai",
-          "source_id": "qwen3.5-122b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -151361,16 +150748,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-02-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "regolo-ai",
-          "source_id": "qwen3.5-122b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -152024,16 +151402,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qvac",
-          "source_id": "qwen3.5-2b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -152063,16 +151432,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qvac",
-          "source_id": "qwen3.5-2b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -152808,16 +152168,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qvac",
-          "source_id": "qwen3.5-4b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -152847,16 +152198,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-11-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qvac",
-          "source_id": "qwen3.5-4b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -154749,16 +154091,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "qwen3.6-35b-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -154788,16 +154121,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "qwen3.6-35b-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "qwen3.6-flash": {
@@ -158036,6 +157360,16 @@
               "policy_rank": 5
             }
           },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "Qwen/Qwen3-8B",
+              "priority": 70,
+              "policy_rank": 28
+            }
+          },
           "temperature": {
             "value": "supported",
             "source": {
@@ -158171,7 +157505,8 @@
         "scope": "publisher_api_model",
         "value": [
           "alibaba",
-          "alibaba-cn"
+          "alibaba-cn",
+          "huggingface"
         ],
         "observations": [
           {
@@ -158181,6 +157516,10 @@
           {
             "provider": "alibaba-cn",
             "source_id": "qwen3-8b"
+          },
+          {
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-8B"
           }
         ]
       },
@@ -160815,16 +160154,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-03-06",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "sarvam",
-          "source_id": "sarvam-30b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -163964,7 +163294,7 @@
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-01",
+        "value": "2026-03-23",
         "source": {
           "upstream": "models.dev",
           "provider": "upstage",
@@ -164060,7 +163390,7 @@
       "release_date": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2026-01",
+        "value": "2026-01-26",
         "source": {
           "upstream": "models.dev",
           "provider": "upstage",
@@ -169427,16 +168757,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-07-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "the-grid-ai",
-          "source_id": "text-max",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -169652,16 +168973,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-07-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "the-grid-ai",
-          "source_id": "text-standard",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -172520,16 +171832,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "privatemode-ai",
-          "source_id": "voxtral-mini-3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -172559,16 +171862,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "privatemode-ai",
-          "source_id": "voxtral-mini-3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "voxtral-mini-3b-2507": {
@@ -175313,16 +174607,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-05-29",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xpersona",
-          "source_id": "xpersona-gpt-5.5",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -175361,16 +174646,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-05-29",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xpersona",
-          "source_id": "xpersona-gpt-5.5",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -175753,16 +175029,7 @@
         }
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-02-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "frogbot",
-          "source_id": "zai-glm-5-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -175792,16 +175059,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-01-20",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "frogbot",
-          "source_id": "zai-glm-5-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "zai-glm-5.1": {
@@ -175845,16 +175103,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-03-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "aihubmix",
-          "source_id": "zai-glm-5.1",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -175884,16 +175133,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-03-27",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "aihubmix",
-          "source_id": "zai-glm-5.1",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",

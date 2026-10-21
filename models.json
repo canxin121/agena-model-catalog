@@ -4298,7 +4298,8 @@
           "structured_output"
         ]
       },
-      "max_input_tokens": 200000
+      "max_input_tokens": 200000,
+      "knowledge_cutoff": "2025-03-31"
     },
     "claude-4.0-sonnet": {
       "context_window_tokens": 200000,
@@ -4341,7 +4342,8 @@
           "structured_output"
         ]
       },
-      "max_input_tokens": 200000
+      "max_input_tokens": 200000,
+      "knowledge_cutoff": "2025-03-31"
     },
     "claude-4.1-opus": {
       "context_window_tokens": 200000,
@@ -4384,7 +4386,8 @@
           "structured_output"
         ]
       },
-      "max_input_tokens": 200000
+      "max_input_tokens": 200000,
+      "knowledge_cutoff": "2025-03-31"
     },
     "claude-4.5-haiku": {
       "context_window_tokens": 200000,
@@ -16599,7 +16602,9 @@
       },
       "input": {
         "supported": [
-          "text"
+          "image",
+          "text",
+          "video"
         ]
       },
       "features": {
@@ -16635,7 +16640,8 @@
       },
       "provider_sources": [
         "volcengine"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "doubao-seed-1-6-flash-250615": {
       "context_window_tokens": 256000,
@@ -16723,7 +16729,8 @@
       "input": {
         "supported": [
           "image",
-          "text"
+          "text",
+          "video"
         ]
       },
       "features": {
@@ -16737,7 +16744,8 @@
       "max_input_tokens": 256000,
       "provider_sources": [
         "volcengine"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "doubao-seed-1-6-thinking-250715": {
       "context_window_tokens": 256000,
@@ -16831,7 +16839,8 @@
       "assistant_reasoning_field": "reasoning_content",
       "provider_sources": [
         "volcengine"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "doubao-seed-1-8-251215": {
       "context_window_tokens": 224000,
@@ -16984,7 +16993,8 @@
       },
       "provider_sources": [
         "volcengine"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "doubao-seed-1.6": {
       "context_window_tokens": 256000,
@@ -17346,7 +17356,8 @@
       "assistant_reasoning_field": "reasoning_content",
       "provider_sources": [
         "volcengine"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "doubao-seed-2-0-lite-260215": {
       "context_window_tokens": 256000,
@@ -17782,7 +17793,8 @@
       "assistant_reasoning_field": "reasoning_content",
       "provider_sources": [
         "volcengine"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "doubao-seed-2-1-pro-260628": {
       "context_window_tokens": 256000,
@@ -20167,7 +20179,8 @@
           "structured_output"
         ]
       },
-      "max_input_tokens": 1048576
+      "max_input_tokens": 1048576,
+      "knowledge_cutoff": "2024-06"
     },
     "gemini-2.0-flash-lite": {
       "context_window_tokens": 2000000,
@@ -20559,7 +20572,8 @@
           "temperature",
           "tool_calling"
         ]
-      }
+      },
+      "knowledge_cutoff": "2025-01"
     },
     "gemini-2.5-flash-lite-preview-09-2025": {
       "context_window_tokens": 1000000,
@@ -20659,7 +20673,8 @@
           "structured_output",
           "tool_calling"
         ]
-      }
+      },
+      "knowledge_cutoff": "2025-01"
     },
     "gemini-2.5-flash-nothink": {
       "context_window_tokens": 1000000,
@@ -20874,7 +20889,8 @@
           "temperature",
           "tool_calling"
         ]
-      }
+      },
+      "knowledge_cutoff": "2025-01"
     },
     "gemini-2.5-flash-preview-05-20:thinking": {
       "context_window_tokens": 1048000,
@@ -20921,7 +20937,8 @@
           "structured_output",
           "tool_calling"
         ]
-      }
+      },
+      "knowledge_cutoff": "2025-01"
     },
     "gemini-2.5-flash-preview-09-2025": {
       "context_window_tokens": 1000000,
@@ -22008,7 +22025,8 @@
           "structured_output"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "knowledge_cutoff": "2025-01"
     },
     "gemini-3.0-pro-image-preview": {
       "context_window_tokens": 32768,
@@ -22040,7 +22058,8 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 32768
+      "max_input_tokens": 32768,
+      "knowledge_cutoff": "2025-01"
     },
     "gemini-3.0-pro-preview": {
       "context_window_tokens": 1000000,
@@ -22086,7 +22105,8 @@
           "structured_output"
         ]
       },
-      "max_input_tokens": 1000000
+      "max_input_tokens": 1000000,
+      "knowledge_cutoff": "2025-01"
     },
     "gemini-3.1-flash-image": {
       "context_window_tokens": 131072,
@@ -44578,12 +44598,12 @@
     },
     "llama-guard-4-12b": {
       "context_window_tokens": 163840,
-      "max_output_tokens": 16384,
-      "description": "Safety model for policy screening, moderation, and risk-aware routing workflows",
+      "max_output_tokens": 163840,
+      "description": "Multimodal Llama 4-based safety classifier for moderating prompts and responses",
       "knowledge_cutoff": "2024-08-31",
-      "release_date": "2025-04-30",
-      "last_updated": "2025-04-30",
-      "open_weights": false,
+      "release_date": "2025-04-29",
+      "last_updated": "2025-04-29",
+      "open_weights": true,
       "output_modalities": [
         "text"
       ],
@@ -44591,23 +44611,29 @@
         "input_usd_per_million_tokens": "0.18",
         "output_usd_per_million_tokens": "0.18"
       },
-      "display_name": "Meta: Llama Guard 4 12B",
-      "origin": "NVIDIA",
-      "input": [
-        "image",
-        "file"
-      ],
+      "display_name": "Llama Guard 4 12B",
+      "origin": "Meta",
+      "input": {
+        "supported": [
+          "file",
+          "image",
+          "text"
+        ]
+      },
       "features": {
         "supported": [
           "temperature"
         ],
         "unsupported": [
           "reasoning",
-          "tool_calling",
-          "structured_output"
+          "structured_output",
+          "tool_calling"
         ]
       },
-      "max_input_tokens": 163840
+      "max_input_tokens": 163840,
+      "provider_sources": [
+        "huggingface"
+      ]
     },
     "llama-nemotron-embed-1b-v2": {
       "release_date": "2025-10-16",
@@ -53619,7 +53645,8 @@
             }
           }
         }
-      }
+      },
+      "knowledge_cutoff": "2025-10"
     },
     "nova-2-pro-v1": {
       "context_window_tokens": 1000000,
@@ -58791,7 +58818,8 @@
         "supported": [
           "text"
         ]
-      }
+      },
+      "knowledge_cutoff": "2024-06"
     },
     "phi-4-reasoning": {
       "context_window_tokens": 32000,
@@ -60338,7 +60366,8 @@
         "input_usd_per_million_tokens": "1.6",
         "output_usd_per_million_tokens": "6.4",
         "cache_read_usd_per_million_tokens": "0.79985"
-      }
+      },
+      "knowledge_cutoff": "2024-04"
     },
     "qwen-max-latest": {
       "context_window_tokens": 131072,
@@ -66878,11 +66907,9 @@
       "features": {
         "supported": [
           "reasoning",
+          "structured_output",
           "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "structured_output"
         ]
       },
       "thinking_modes": {
@@ -66907,7 +66934,8 @@
       },
       "provider_sources": [
         "alibaba",
-        "alibaba-cn"
+        "alibaba-cn",
+        "huggingface"
       ],
       "lifecycle": "deprecated"
     },
@@ -69941,8 +69969,8 @@
       "max_output_tokens": 8192,
       "description": "Flagship model for demanding analysis, coding, and production agent workflows",
       "knowledge_cutoff": "2025-03",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "release_date": "2026-01-26",
+      "last_updated": "2026-03-23",
       "open_weights": false,
       "output_modalities": [
         "text"

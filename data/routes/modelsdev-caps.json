@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "97eb8965f0c98f92497c76564bac17b81e764e2107d8c40ae29a26b37b0df35a",
+    "sha256": "5b9d178e17700e15fa8dbce08d72218b3b1b67d4f8da8e2e125cb636e36530ff",
     "record_count": 232
   },
   "scope": "configured_route_limit_cap",
@@ -56,6 +56,7 @@
           "context": 1000000,
           "output": 384000
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.14,
           "output": 0.28,
@@ -112,9 +113,9 @@
           "output": 384000
         },
         "cost": {
-          "input": 1.74,
-          "output": 3.48,
-          "cache_read": 0.0145
+          "input": 0.66,
+          "output": 1.98,
+          "cache_read": 0.022
         },
         "canonical_model_id": "deepseek/deepseek-v4-pro"
       }
@@ -222,6 +223,7 @@
           "context": 1000000,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.4,
           "output": 4.4,
@@ -334,7 +336,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1000000,
           "output": 131072
@@ -343,7 +345,8 @@
           "input": 0.15,
           "output": 0.5,
           "cache_read": 0.03
-        }
+        },
+        "canonical_model_id": "zhipuai/glm-5.3-flash"
       }
     },
     {
@@ -390,6 +393,7 @@
           "context": 262144,
           "output": 262144
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.95,
           "output": 4,
@@ -438,6 +442,7 @@
           "context": 262144,
           "output": 262144
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.95,
           "output": 4,
@@ -654,6 +659,7 @@
           "context": 1048576,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.14,
           "output": 0.28,
@@ -712,6 +718,7 @@
           "context": 1048576,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.435,
           "output": 0.87,
@@ -821,6 +828,11 @@
         "limit": {
           "context": 1048576,
           "output": 131072
+        },
+        "cost": {
+          "input": 0.1,
+          "output": 0.2,
+          "cache_read": 0.002
         },
         "canonical_model_id": "meta/muse-spark-1.3"
       }

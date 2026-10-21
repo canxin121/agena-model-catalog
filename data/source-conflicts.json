@@ -115,9 +115,9 @@
     },
     {
       "model_id": "claude-3.5-haiku",
-      "field": "last_updated",
+      "field": "knowledge_cutoff",
       "winner": {
-        "value": "2024-10-22",
+        "value": "2024-10",
         "source": {
           "upstream": "models.dev",
           "provider": "helicone",
@@ -128,7 +128,7 @@
       },
       "candidates": [
         {
-          "value": "2024-10-22",
+          "value": "2024-10",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -138,7 +138,7 @@
           }
         },
         {
-          "value": "2025-08-26",
+          "value": "2024-07-31",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -176,43 +176,6 @@
         },
         {
           "value": "Qiniu",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "claude-3.5-haiku",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-3.5-haiku",
-      "field": "release_date",
-      "winner": {
-        "value": "2024-10-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-3.5-haiku",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-10-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-3.5-haiku",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-26",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -263,9 +226,9 @@
     },
     {
       "model_id": "claude-3.7-sonnet",
-      "field": "last_updated",
+      "field": "knowledge_cutoff",
       "winner": {
-        "value": "2025-02-19",
+        "value": "2025-02",
         "source": {
           "upstream": "models.dev",
           "provider": "helicone",
@@ -276,7 +239,7 @@
       },
       "candidates": [
         {
-          "value": "2025-02-19",
+          "value": "2025-02",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -286,7 +249,7 @@
           }
         },
         {
-          "value": "2025-08-05",
+          "value": "2024-10-31",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -324,43 +287,6 @@
         },
         {
           "value": "Qiniu",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "claude-3.7-sonnet",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-3.7-sonnet",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-02-19",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-3.7-sonnet",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-02-19",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-3.7-sonnet",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -411,9 +337,9 @@
     },
     {
       "model_id": "claude-4.5-haiku",
-      "field": "last_updated",
+      "field": "knowledge_cutoff",
       "winner": {
-        "value": "2025-10-01",
+        "value": "2025-10",
         "source": {
           "upstream": "models.dev",
           "provider": "helicone",
@@ -424,7 +350,7 @@
       },
       "candidates": [
         {
-          "value": "2025-10-01",
+          "value": "2025-10",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -434,7 +360,7 @@
           }
         },
         {
-          "value": "2025-10-16",
+          "value": "2025-02-28",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -472,43 +398,6 @@
         },
         {
           "value": "Qiniu",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "claude-4.5-haiku",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-4.5-haiku",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-10-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-4.5-haiku",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-10-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-4.5-haiku",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-10-16",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -559,9 +448,9 @@
     },
     {
       "model_id": "claude-4.5-opus",
-      "field": "last_updated",
+      "field": "knowledge_cutoff",
       "winner": {
-        "value": "2025-11-24",
+        "value": "2025-11",
         "source": {
           "upstream": "models.dev",
           "provider": "helicone",
@@ -572,7 +461,7 @@
       },
       "candidates": [
         {
-          "value": "2025-11-24",
+          "value": "2025-11",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -582,7 +471,7 @@
           }
         },
         {
-          "value": "2025-11-25",
+          "value": "2025-05",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -620,43 +509,6 @@
         },
         {
           "value": "Qiniu",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "claude-4.5-opus",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-4.5-opus",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-11-24",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-4.5-opus",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-24",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-4.5-opus",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-25",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -707,9 +559,9 @@
     },
     {
       "model_id": "claude-4.5-sonnet",
-      "field": "last_updated",
+      "field": "knowledge_cutoff",
       "winner": {
-        "value": "2025-09-29",
+        "value": "2025-09",
         "source": {
           "upstream": "models.dev",
           "provider": "helicone",
@@ -720,7 +572,7 @@
       },
       "candidates": [
         {
-          "value": "2025-09-29",
+          "value": "2025-09",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -730,7 +582,7 @@
           }
         },
         {
-          "value": "2025-09-30",
+          "value": "2025-07-31",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -768,43 +620,6 @@
         },
         {
           "value": "Qiniu",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "claude-4.5-sonnet",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-4.5-sonnet",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-09-29",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-4.5-sonnet",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09-29",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-4.5-sonnet",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-30",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -1407,44 +1222,7 @@
           }
         },
         {
-          "value": "2025-08",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-opus-4-1-20250805",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-08-05",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "claude-opus-4-1-20250805",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
+          "value": "2025-03-31",
           "source": {
             "upstream": "models.dev",
             "provider": "abacus",
@@ -1454,7 +1232,7 @@
           }
         },
         {
-          "value": "2025-08-05",
+          "value": "2025-08",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -1464,7 +1242,7 @@
           }
         },
         {
-          "value": "2026-01",
+          "value": "2025-03-31",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -1534,63 +1312,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "claude-opus-4-1-20250805",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-08-05",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "claude-opus-4-1-20250805",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "claude-opus-4-1-20250805",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "claude-opus-4-20250514",
       "field": "display_name",
       "winner": {
@@ -1629,43 +1350,6 @@
     },
     {
       "model_id": "claude-opus-4-20250514",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-05-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "claude-opus-4-20250514",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-05-14",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "claude-opus-4-20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "claude-opus-4-20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-opus-4-20250514",
       "field": "origin",
       "winner": {
         "value": "Abacus",
@@ -1690,43 +1374,6 @@
         },
         {
           "value": "Jiekou.AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "claude-opus-4-20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-opus-4-20250514",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-05-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "claude-opus-4-20250514",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-05-14",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "claude-opus-4-20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -1962,43 +1609,6 @@
     },
     {
       "model_id": "claude-sonnet-4",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-05-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-sonnet-4",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-05-14",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-sonnet-4",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-05-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "claude-sonnet-4",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-sonnet-4",
       "field": "origin",
       "winner": {
         "value": "Helicone",
@@ -2023,43 +1633,6 @@
         },
         {
           "value": "OpenCode",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "claude-sonnet-4",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-sonnet-4",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-05-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "claude-sonnet-4",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-05-14",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-sonnet-4",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-05-22",
           "source": {
             "upstream": "models.dev",
             "provider": "opencode",
@@ -2110,43 +1683,6 @@
     },
     {
       "model_id": "claude-sonnet-4-20250514",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-05-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "claude-sonnet-4-20250514",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-05-14",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "claude-sonnet-4-20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "claude-sonnet-4-20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-sonnet-4-20250514",
       "field": "origin",
       "winner": {
         "value": "Abacus",
@@ -2171,43 +1707,6 @@
         },
         {
           "value": "Jiekou.AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "claude-sonnet-4-20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-sonnet-4-20250514",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-05-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "claude-sonnet-4-20250514",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-05-14",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "claude-sonnet-4-20250514",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -3294,43 +2793,6 @@
     },
     {
       "model_id": "doubao-seed-2.0-lite",
-      "field": "description",
-      "winner": {
-        "value": "Multimodal reasoning model for visual analysis, planning, and tool use",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-2.0-lite",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Multimodal reasoning model for visual analysis, planning, and tool use",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "doubao-seed-2.0-lite",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Cost-efficient ByteDance Seed 2.0 model for production chat, analysis, and structured generation",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "volcengine-coding-plan",
-            "source_id": "doubao-seed-2.0-lite",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "doubao-seed-2.0-lite",
       "field": "display_name",
       "winner": {
         "value": "Doubao Seed 2.0 Lite",
@@ -3489,9 +2951,9 @@
     },
     {
       "model_id": "gemini-2.0-flash-lite",
-      "field": "last_updated",
+      "field": "knowledge_cutoff",
       "winner": {
-        "value": "2025-06-16",
+        "value": "2024-11",
         "source": {
           "upstream": "models.dev",
           "provider": "302ai",
@@ -3502,7 +2964,7 @@
       },
       "candidates": [
         {
-          "value": "2025-06-16",
+          "value": "2024-11",
           "source": {
             "upstream": "models.dev",
             "provider": "302ai",
@@ -3512,7 +2974,7 @@
           }
         },
         {
-          "value": "2025-08-05",
+          "value": "2024-06",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -3562,80 +3024,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "gemini-2.0-flash-lite",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-06-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-2.0-flash-lite",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-06-16",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "gemini-2.0-flash-lite",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "gemini-2.0-flash-lite",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-2.5-flash-lite-preview-06-17",
-      "field": "description",
-      "winner": {
-        "value": "Low-latency Gemini model for high-volume multimodal and agent workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-flash-lite-preview-06-17",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Low-latency Gemini model for high-volume multimodal and agent workloads",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gemini-2.5-flash-lite-preview-06-17",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "gemini-2.5-flash-lite-preview-06-17",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "gemini-2.5-flash-lite-preview-06-17",
       "field": "display_name",
       "winner": {
@@ -3661,43 +3049,6 @@
         },
         {
           "value": "Gemini 2.5 Flash Lite Preview",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "gemini-2.5-flash-lite-preview-06-17",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-2.5-flash-lite-preview-06-17",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-flash-lite-preview-06-17",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gemini-2.5-flash-lite-preview-06-17",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-06-17",
           "source": {
             "upstream": "models.dev",
             "provider": "nano-gpt",
@@ -3747,43 +3098,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "gemini-2.5-flash-lite-preview-06-17",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-flash-lite-preview-06-17",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gemini-2.5-flash-lite-preview-06-17",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-06-17",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "gemini-2.5-flash-lite-preview-06-17",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "gemini-2.5-flash-lite-preview-09-2025",
       "field": "description",
       "winner": {
@@ -3808,7 +3122,7 @@
           }
         },
         {
-          "value": "Low-latency Gemini model for high-volume multimodal and agent workloads",
+          "value": "September 2025 preview of Gemini 2.5 Flash-Lite with better instruction following and multimodal quality",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -3818,7 +3132,7 @@
           }
         },
         {
-          "value": "Compact GPT model for low-latency assistance and high-volume workloads",
+          "value": "September 2025 preview of Gemini 2.5 Flash-Lite with better instruction following and multimodal quality",
           "source": {
             "upstream": "models.dev",
             "provider": "nano-gpt",
@@ -3902,7 +3216,7 @@
           }
         },
         {
-          "value": "2026-01",
+          "value": "2025-09-25",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -3996,7 +3310,7 @@
           }
         },
         {
-          "value": "2026-01",
+          "value": "2025-09-25",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -4011,43 +3325,6 @@
             "upstream": "models.dev",
             "provider": "nano-gpt",
             "source_id": "gemini-2.5-flash-lite-preview-09-2025",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-2.5-flash-preview-05-20",
-      "field": "description",
-      "winner": {
-        "value": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-flash-preview-05-20",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gemini-2.5-flash-preview-05-20",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "gemini-2.5-flash-preview-05-20",
             "priority": 20,
             "policy_rank": 0
           }
@@ -4094,43 +3371,6 @@
     },
     {
       "model_id": "gemini-2.5-flash-preview-05-20",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-flash-preview-05-20",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gemini-2.5-flash-preview-05-20",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-05-20",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "gemini-2.5-flash-preview-05-20",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-2.5-flash-preview-05-20",
       "field": "origin",
       "winner": {
         "value": "Jiekou.AI",
@@ -4155,43 +3395,6 @@
         },
         {
           "value": "NanoGPT",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "gemini-2.5-flash-preview-05-20",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-2.5-flash-preview-05-20",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-flash-preview-05-20",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gemini-2.5-flash-preview-05-20",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-05-20",
           "source": {
             "upstream": "models.dev",
             "provider": "nano-gpt",
@@ -4464,43 +3667,6 @@
     },
     {
       "model_id": "gemini-2.5-pro-preview-06-05",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-pro-preview-06-05",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gemini-2.5-pro-preview-06-05",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-06-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "gemini-2.5-pro-preview-06-05",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-2.5-pro-preview-06-05",
       "field": "origin",
       "winner": {
         "value": "Jiekou.AI",
@@ -4525,43 +3691,6 @@
         },
         {
           "value": "NanoGPT",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "gemini-2.5-pro-preview-06-05",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-2.5-pro-preview-06-05",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "jiekou",
-          "source_id": "gemini-2.5-pro-preview-06-05",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gemini-2.5-pro-preview-06-05",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-06-05",
           "source": {
             "upstream": "models.dev",
             "provider": "nano-gpt",
@@ -4716,6 +3845,63 @@
     },
     {
       "model_id": "gemini-3-pro-preview",
+      "field": "description",
+      "winner": {
+        "value": "Preview Gemini flagship for complex reasoning, coding, and rich multimodal prompts",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gemini-3-pro-preview",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Preview Gemini flagship for complex reasoning, coding, and rich multimodal prompts",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gemini-3-pro-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Preview Gemini flagship for complex reasoning, coding, and rich multimodal prompts",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "gemini-3-pro-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Preview Gemini flagship for complex reasoning, coding, and rich multimodal prompts",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "jiekou",
+            "source_id": "gemini-3-pro-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "qihang-ai",
+            "source_id": "gemini-3-pro-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gemini-3-pro-preview",
       "field": "display_name",
       "winner": {
         "value": "gemini-3-pro-preview",
@@ -4806,54 +3992,7 @@
           }
         },
         {
-          "value": "2025-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qihang-ai",
-            "source_id": "gemini-3-pro-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-3-pro-preview",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-11-19",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-3-pro-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-19",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "gemini-3-pro-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-18",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "gemini-3-pro-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
+          "value": "2025-01",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -4863,7 +4002,7 @@
           }
         },
         {
-          "value": "2025-11-19",
+          "value": "2025-11",
           "source": {
             "upstream": "models.dev",
             "provider": "qihang-ai",
@@ -4921,63 +4060,6 @@
         },
         {
           "value": "QiHang",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qihang-ai",
-            "source_id": "gemini-3-pro-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-3-pro-preview",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-11-19",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gemini-3-pro-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-19",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "gemini-3-pro-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-18",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "gemini-3-pro-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gemini-3-pro-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-19",
           "source": {
             "upstream": "models.dev",
             "provider": "qihang-ai",
@@ -6912,7 +5994,7 @@
           }
         },
         {
-          "value": "2026-06-17",
+          "value": "2026-06-13",
           "source": {
             "upstream": "models.dev",
             "provider": "neuralwatt",
@@ -7083,7 +6165,7 @@
           }
         },
         {
-          "value": "2026-06-17",
+          "value": "2026-06-13",
           "source": {
             "upstream": "models.dev",
             "provider": "neuralwatt",
@@ -7636,7 +6718,7 @@
           }
         },
         {
-          "value": "2026-07-06",
+          "value": "2026-08-18",
           "source": {
             "upstream": "models.dev",
             "provider": "the-grid-ai",
@@ -7946,9 +7028,9 @@
     },
     {
       "model_id": "gpt-5-chat-latest",
-      "field": "last_updated",
+      "field": "knowledge_cutoff",
       "winner": {
-        "value": "2024-09-30",
+        "value": "2024-09",
         "source": {
           "upstream": "models.dev",
           "provider": "helicone",
@@ -7959,7 +7041,7 @@
       },
       "candidates": [
         {
-          "value": "2024-09-30",
+          "value": "2024-09",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -7969,7 +7051,7 @@
           }
         },
         {
-          "value": "2026-01",
+          "value": "2024-09-30",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -8007,43 +7089,6 @@
         },
         {
           "value": "Jiekou.AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gpt-5-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5-chat-latest",
-      "field": "release_date",
-      "winner": {
-        "value": "2024-09-30",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "gpt-5-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-09-30",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "gpt-5-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -8190,73 +7235,6 @@
           "value": "2024-09-30",
           "source": {
             "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5-codex",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-09-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "gpt-5-codex",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-01-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
             "provider": "jiekou",
             "source_id": "gpt-5-codex",
             "priority": 20,
@@ -8264,7 +7242,7 @@
           }
         },
         {
-          "value": "2025-09-15",
+          "value": "2024-09-30",
           "source": {
             "upstream": "models.dev",
             "provider": "opencode",
@@ -8354,87 +7332,10 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "gpt-5-codex",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-09-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "gpt-5-codex",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-01-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-15",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "gpt-5-codex",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "gpt-5.1-chat-latest",
       "field": "description",
       "winner": {
-        "value": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
+        "value": "Chat-tuned GPT-5.1 for polished assistants, writing, and product conversations",
         "source": {
           "upstream": "models.dev",
           "provider": "302ai",
@@ -8445,7 +7346,7 @@
       },
       "candidates": [
         {
-          "value": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
+          "value": "Chat-tuned GPT-5.1 for polished assistants, writing, and product conversations",
           "source": {
             "upstream": "models.dev",
             "provider": "302ai",
@@ -8465,7 +7366,7 @@
           }
         },
         {
-          "value": "Image model for prompt-driven generation, editing, and visual design workflows",
+          "value": "Chat-tuned GPT-5.1 for polished assistants, writing, and product conversations",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -8573,53 +7474,6 @@
     },
     {
       "model_id": "gpt-5.1-chat-latest",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-11-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5.1-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-14",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "gpt-5.1-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "gpt-5.1-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-01-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "gpt-5.1-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5.1-chat-latest",
       "field": "origin",
       "winner": {
         "value": "302.AI",
@@ -8654,53 +7508,6 @@
         },
         {
           "value": "Helicone",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "gpt-5.1-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5.1-chat-latest",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-11-14",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5.1-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-14",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "gpt-5.1-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "gpt-5.1-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-01-01",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -8767,7 +7574,7 @@
           }
         },
         {
-          "value": "Image model for prompt-driven generation, editing, and visual design workflows",
+          "value": "Codex GPT for repository edits, code review, and practical software agents",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -8777,7 +7584,7 @@
           }
         },
         {
-          "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
+          "value": "Codex GPT for repository edits, code review, and practical software agents",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -8994,6 +7801,16 @@
           "value": "2024-09-30",
           "source": {
             "upstream": "models.dev",
+            "provider": "jiekou",
+            "source_id": "gpt-5.1-codex",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-09-30",
+          "source": {
+            "upstream": "models.dev",
             "provider": "llmgateway",
             "source_id": "gpt-5.1-codex",
             "priority": 20,
@@ -9078,7 +7895,7 @@
           }
         },
         {
-          "value": "2025-01-01",
+          "value": "2025-11-13",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -9088,7 +7905,7 @@
           }
         },
         {
-          "value": "2026-01",
+          "value": "2025-11-13",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -9292,7 +8109,7 @@
           }
         },
         {
-          "value": "2025-01-01",
+          "value": "2025-11-13",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -9302,7 +8119,7 @@
           }
         },
         {
-          "value": "2026-01",
+          "value": "2025-11-13",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -9423,83 +8240,6 @@
     },
     {
       "model_id": "gpt-5.1-codex-max",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-11-13",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "gpt-5.1-codex-max",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "vivgrid",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5.1-codex-max",
       "field": "origin",
       "winner": {
         "value": "Abacus",
@@ -9568,170 +8308,6 @@
             "upstream": "models.dev",
             "provider": "vivgrid",
             "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5.1-codex-max",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-11-13",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "gpt-5.1-codex-max",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "vivgrid",
-            "source_id": "gpt-5.1-codex-max",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5.1-codex-mini",
-      "field": "description",
-      "winner": {
-        "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "aihubmix",
-          "source_id": "gpt-5.1-codex-mini",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "aihubmix",
-            "source_id": "gpt-5.1-codex-mini",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "gpt-5.1-codex-mini",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "gpt-5.1-codex-mini",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Image model for prompt-driven generation, editing, and visual design workflows",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "gpt-5.1-codex-mini",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "gpt-5.1-codex-mini",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "gpt-5.1-codex-mini",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "gpt-5.1-codex-mini",
             "priority": 20,
             "policy_rank": 0
           }
@@ -9884,6 +8460,16 @@
           "value": "2024-09-30",
           "source": {
             "upstream": "models.dev",
+            "provider": "jiekou",
+            "source_id": "gpt-5.1-codex-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-09-30",
+          "source": {
+            "upstream": "models.dev",
             "provider": "llmgateway",
             "source_id": "gpt-5.1-codex-mini",
             "priority": 20,
@@ -9948,7 +8534,7 @@
           }
         },
         {
-          "value": "2025-01-01",
+          "value": "2025-11-13",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -9958,7 +8544,7 @@
           }
         },
         {
-          "value": "2026-01",
+          "value": "2025-11-13",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -10122,7 +8708,7 @@
           }
         },
         {
-          "value": "2025-01-01",
+          "value": "2025-11-13",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -10132,7 +8718,7 @@
           }
         },
         {
-          "value": "2026-01",
+          "value": "2025-11-13",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -10240,43 +8826,6 @@
     },
     {
       "model_id": "gpt-5.2-chat-latest",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-12-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-12-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "gpt-5.2-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "gpt-5.2-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5.2-chat-latest",
       "field": "origin",
       "winner": {
         "value": "302.AI",
@@ -10301,43 +8850,6 @@
         },
         {
           "value": "Abacus",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "gpt-5.2-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5.2-chat-latest",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-12-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5.2-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-12-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "gpt-5.2-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01-01",
           "source": {
             "upstream": "models.dev",
             "provider": "abacus",
@@ -10404,7 +8916,7 @@
           }
         },
         {
-          "value": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
+          "value": "Code-specialist GPT for repository edits, reviews, and long-running software agents",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -10618,7 +9130,7 @@
           }
         },
         {
-          "value": "2026-01",
+          "value": "2025-12-11",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -10638,7 +9150,7 @@
           }
         },
         {
-          "value": "2026-01-14",
+          "value": "2025-12-11",
           "source": {
             "upstream": "models.dev",
             "provider": "opencode",
@@ -10658,7 +9170,7 @@
           }
         },
         {
-          "value": "2026-01-14",
+          "value": "2025-12-11",
           "source": {
             "upstream": "models.dev",
             "provider": "vivgrid",
@@ -10832,7 +9344,7 @@
           }
         },
         {
-          "value": "2026-01",
+          "value": "2025-12-11",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -10852,7 +9364,7 @@
           }
         },
         {
-          "value": "2026-01-14",
+          "value": "2025-12-11",
           "source": {
             "upstream": "models.dev",
             "provider": "opencode",
@@ -10872,7 +9384,7 @@
           }
         },
         {
-          "value": "2026-01-14",
+          "value": "2025-12-11",
           "source": {
             "upstream": "models.dev",
             "provider": "vivgrid",
@@ -10933,53 +9445,6 @@
     },
     {
       "model_id": "gpt-5.3-chat-latest",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-03-03",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5.3-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-03-03",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "gpt-5.3-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-03-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "gpt-5.3-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-03-03",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opper",
-            "source_id": "gpt-5.3-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5.3-chat-latest",
       "field": "origin",
       "winner": {
         "value": "302.AI",
@@ -11014,53 +9479,6 @@
         },
         {
           "value": "Opper",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opper",
-            "source_id": "gpt-5.3-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gpt-5.3-chat-latest",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-03-03",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "gpt-5.3-chat-latest",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-03-03",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "gpt-5.3-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-03-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "gpt-5.3-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-03-03",
           "source": {
             "upstream": "models.dev",
             "provider": "opper",
@@ -11427,63 +9845,6 @@
     },
     {
       "model_id": "grok-4-fast-non-reasoning",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-09-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4-fast-non-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09-23",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "grok-4-fast-non-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-07-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "grok-4-fast-non-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-19",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "grok-4-fast-non-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "grok-4-fast-non-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "grok-4-fast-non-reasoning",
       "field": "origin",
       "winner": {
         "value": "302.AI",
@@ -11528,63 +9889,6 @@
         },
         {
           "value": "Jiekou.AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "grok-4-fast-non-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "grok-4-fast-non-reasoning",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-09-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4-fast-non-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09-23",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "grok-4-fast-non-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-07-09",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "grok-4-fast-non-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-19",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "grok-4-fast-non-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -11682,53 +9986,6 @@
     },
     {
       "model_id": "grok-4-fast-reasoning",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-09-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4-fast-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09-23",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "grok-4-fast-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "grok-4-fast-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "grok-4-fast-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "grok-4-fast-reasoning",
       "field": "origin",
       "winner": {
         "value": "302.AI",
@@ -11763,53 +10020,6 @@
         },
         {
           "value": "Jiekou.AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "grok-4-fast-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "grok-4-fast-reasoning",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-09-23",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "302ai",
-          "source_id": "grok-4-fast-reasoning",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09-23",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "302ai",
-            "source_id": "grok-4-fast-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "grok-4-fast-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -11964,63 +10174,6 @@
     },
     {
       "model_id": "grok-code-fast-1",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-09-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "grok-code-fast-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "grok-code-fast-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-28",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "frogbot",
-            "source_id": "grok-code-fast-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-08-25",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "grok-code-fast-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "grok-code-fast-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "grok-code-fast-1",
       "field": "origin",
       "winner": {
         "value": "Abacus",
@@ -12065,63 +10218,6 @@
         },
         {
           "value": "Jiekou.AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "jiekou",
-            "source_id": "grok-code-fast-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "grok-code-fast-1",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-09-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "abacus",
-          "source_id": "grok-code-fast-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-09-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "abacus",
-            "source_id": "grok-code-fast-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-28",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "frogbot",
-            "source_id": "grok-code-fast-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-08-25",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "grok-code-fast-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-01",
           "source": {
             "upstream": "models.dev",
             "provider": "jiekou",
@@ -12619,9 +10715,9 @@
     },
     {
       "model_id": "kimi-k2",
-      "field": "last_updated",
+      "field": "knowledge_cutoff",
       "winner": {
-        "value": "2024-12-01",
+        "value": "2024-10",
         "source": {
           "upstream": "models.dev",
           "provider": "iflowcn",
@@ -12632,7 +10728,54 @@
       },
       "candidates": [
         {
-          "value": "2024-12-01",
+          "value": "2024-10",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "iflowcn",
+            "source_id": "kimi-k2",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-10",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "opencode",
+            "source_id": "kimi-k2",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-12-31",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "qiniu-ai",
+            "source_id": "kimi-k2",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "kimi-k2",
+      "field": "last_updated",
+      "winner": {
+        "value": "2025-07-11",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "iflowcn",
+          "source_id": "kimi-k2",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-07-11",
           "source": {
             "upstream": "models.dev",
             "provider": "iflowcn",
@@ -12662,64 +10805,7 @@
           }
         },
         {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "kimi-k2",
-      "field": "open_weights",
-      "winner": {
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "iflowcn",
-          "source_id": "kimi-k2",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": false,
+          "value": "2025-07-11",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -12792,7 +10878,7 @@
       "model_id": "kimi-k2",
       "field": "release_date",
       "winner": {
-        "value": "2024-12-01",
+        "value": "2025-07-11",
         "source": {
           "upstream": "models.dev",
           "provider": "iflowcn",
@@ -12803,7 +10889,7 @@
       },
       "candidates": [
         {
-          "value": "2024-12-01",
+          "value": "2025-07-11",
           "source": {
             "upstream": "models.dev",
             "provider": "iflowcn",
@@ -12833,7 +10919,7 @@
           }
         },
         {
-          "value": "2025-08-05",
+          "value": "2025-07-11",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -13478,6 +11564,228 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "kimi-latest",
+      "field": "description",
+      "winner": {
+        "value": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "privatemode-ai",
+          "source_id": "kimi-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "privatemode-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Lab latest market for Kimi supply. You contract for the latest qualifying route, not a specific model.",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "the-grid-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "kimi-latest",
+      "field": "display_name",
+      "winner": {
+        "value": "Kimi (latest)",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "privatemode-ai",
+          "source_id": "kimi-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Kimi (latest)",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "privatemode-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Kimi Latest",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "the-grid-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "kimi-latest",
+      "field": "last_updated",
+      "winner": {
+        "value": "2026-04-20",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "privatemode-ai",
+          "source_id": "kimi-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2026-04-20",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "privatemode-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2026-07-06",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "the-grid-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "kimi-latest",
+      "field": "open_weights",
+      "winner": {
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "privatemode-ai",
+          "source_id": "kimi-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": true,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "privatemode-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": false,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "the-grid-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "kimi-latest",
+      "field": "origin",
+      "winner": {
+        "value": "Privatemode AI",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "privatemode-ai",
+          "source_id": "kimi-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Privatemode AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "privatemode-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "The Grid AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "the-grid-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "kimi-latest",
+      "field": "release_date",
+      "winner": {
+        "value": "2026-04-20",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "privatemode-ai",
+          "source_id": "kimi-latest",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2026-04-20",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "privatemode-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2026-07-06",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "the-grid-ai",
+            "source_id": "kimi-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "llama-4-maverick",
       "field": "description",
       "winner": {
@@ -13502,7 +11810,7 @@
           }
         },
         {
-          "value": "Open multimodal Llama model for strong reasoning and fast responses",
+          "value": "Open multimodal Llama for strong reasoning with efficient everyday serving",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -13620,100 +11928,6 @@
     },
     {
       "model_id": "llama-4-maverick",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-04-05",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "digitalocean",
-          "source_id": "llama-4-maverick",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-04-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-01-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-04-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neon",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "llama-4-maverick",
-      "field": "open_weights",
-      "winner": {
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "digitalocean",
-          "source_id": "llama-4-maverick",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neon",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "llama-4-maverick",
       "field": "origin",
       "winner": {
         "value": "DigitalOcean",
@@ -13748,53 +11962,6 @@
         },
         {
           "value": "Neon",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neon",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "llama-4-maverick",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-04-05",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "digitalocean",
-          "source_id": "llama-4-maverick",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-04-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-01-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-04-05",
           "source": {
             "upstream": "models.dev",
             "provider": "neon",
@@ -16470,63 +14637,6 @@
     },
     {
       "model_id": "mistral-small-3.2-24b-instruct-2506",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-06-20",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-small-3.2-24b-instruct-2506",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-06-20",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-06-20",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "greenpt",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-06-20",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "ovhcloud",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-03-17",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "scaleway",
-            "source_id": "mistral-small-3.2-24b-instruct-2506",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-small-3.2-24b-instruct-2506",
       "field": "origin",
       "winner": {
         "value": "Cortecs",
@@ -19032,43 +17142,6 @@
     },
     {
       "model_id": "qwen-3-6-plus",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-04-03",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "frogbot",
-          "source_id": "qwen-3-6-plus",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-04-03",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "frogbot",
-            "source_id": "qwen-3-6-plus",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-04-02",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "qwen-3-6-plus",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen-3-6-plus",
       "field": "origin",
       "winner": {
         "value": "FrogBot",
@@ -20337,56 +18410,10 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "qwen3-asr-flash",
-      "field": "pricing",
-      "winner": {
-        "value": {
-          "input_usd_per_million_tokens": "0.035",
-          "output_usd_per_million_tokens": "0.035"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-asr-flash",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.035",
-            "output_usd_per_million_tokens": "0.035"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-asr-flash",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.032",
-            "output_usd_per_million_tokens": "0.032"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-asr-flash",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "qwen3-coder",
       "field": "description",
       "winner": {
-        "value": "Qwen coding model for software agents, repository edits, and code reasoning",
+        "value": "Open Qwen coding heavyweight for repository reasoning and agentic engineering",
         "source": {
           "upstream": "models.dev",
           "provider": "helicone",
@@ -20397,7 +18424,7 @@
       },
       "candidates": [
         {
-          "value": "Qwen coding model for software agents, repository edits, and code reasoning",
+          "value": "Open Qwen coding heavyweight for repository reasoning and agentic engineering",
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -20482,43 +18509,6 @@
         },
         {
           "value": "2025-04",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "qwen3-coder",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-coder",
-      "field": "open_weights",
-      "winner": {
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "qwen3-coder",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "qwen3-coder",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
           "source": {
             "upstream": "models.dev",
             "provider": "opencode",
@@ -21554,43 +19544,6 @@
     },
     {
       "model_id": "qwen3-max-preview",
-      "field": "description",
-      "winner": {
-        "value": "Flagship Qwen model for complex reasoning, coding, and agentic workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "iflowcn",
-          "source_id": "qwen3-max-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Flagship Qwen model for complex reasoning, coding, and agentic workflows",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "qwen3-max-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Flagship model for demanding analysis, coding, and production agent workflows",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "qwen3-max-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-max-preview",
       "field": "display_name",
       "winner": {
         "value": "Qwen3-Max-Preview",
@@ -21628,9 +19581,9 @@
     },
     {
       "model_id": "qwen3-max-preview",
-      "field": "last_updated",
+      "field": "knowledge_cutoff",
       "winner": {
-        "value": "2025-01-01",
+        "value": "2024-12",
         "source": {
           "upstream": "models.dev",
           "provider": "iflowcn",
@@ -21641,7 +19594,7 @@
       },
       "candidates": [
         {
-          "value": "2025-01-01",
+          "value": "2024-12",
           "source": {
             "upstream": "models.dev",
             "provider": "iflowcn",
@@ -21651,7 +19604,7 @@
           }
         },
         {
-          "value": "2025-09-06",
+          "value": "2025-04",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -21689,43 +19642,6 @@
         },
         {
           "value": "Qiniu",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "qwen3-max-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-max-preview",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-01-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "iflowcn",
-          "source_id": "qwen3-max-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-01-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "qwen3-max-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-09-06",
           "source": {
             "upstream": "models.dev",
             "provider": "qiniu-ai",
@@ -22894,43 +20810,6 @@
     },
     {
       "model_id": "qwen3.5-2b",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-11-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qvac",
-          "source_id": "qwen3.5-2b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qvac",
-            "source_id": "qwen3.5-2b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-03-02",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
-            "source_id": "qwen3.5-2b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3.5-2b",
       "field": "origin",
       "winner": {
         "value": "QVAC",
@@ -22955,43 +20834,6 @@
         },
         {
           "value": "Requesty",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
-            "source_id": "qwen3.5-2b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3.5-2b",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-11-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qvac",
-          "source_id": "qwen3.5-2b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qvac",
-            "source_id": "qwen3.5-2b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-03-02",
           "source": {
             "upstream": "models.dev",
             "provider": "requesty",
@@ -24527,6 +22369,194 @@
     },
     {
       "model_id": "qwen3.8b",
+      "field": "context_window_tokens",
+      "winner": {
+        "value": 131072,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-8b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": 131072,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-8b",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": 131072,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-8b",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": 40960,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-8B",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.8b",
+      "field": "description",
+      "winner": {
+        "value": "Qwen instruction model for multilingual chat, reasoning, and tool use",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-8b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": "Qwen instruction model for multilingual chat, reasoning, and tool use",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-8b",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": "Qwen instruction model for multilingual chat, reasoning, and tool use",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-8b",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": "Dense 8B Qwen3 model with switchable thinking for chat, reasoning, and tool use",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-8B",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.8b",
+      "field": "last_updated",
+      "winner": {
+        "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-8b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-8b",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-8b",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": "2025-04-29",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-8B",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.8b",
+      "field": "max_output_tokens",
+      "winner": {
+        "value": 8192,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-8b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": 8192,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-8b",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": 8192,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-8b",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": 32768,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-8B",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.8b",
       "field": "pricing",
       "winner": {
         "value": {
@@ -24566,6 +22596,66 @@
             "source_id": "qwen3-8b",
             "priority": 70,
             "policy_rank": 23
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.07",
+            "output_usd_per_million_tokens": "0.18"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-8B",
+            "priority": 70,
+            "policy_rank": 28
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen3.8b",
+      "field": "release_date",
+      "winner": {
+        "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "alibaba",
+          "source_id": "qwen3-8b",
+          "priority": 70,
+          "policy_rank": 5
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba",
+            "source_id": "qwen3-8b",
+            "priority": 70,
+            "policy_rank": 5
+          }
+        },
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "alibaba-cn",
+            "source_id": "qwen3-8b",
+            "priority": 70,
+            "policy_rank": 23
+          }
+        },
+        {
+          "value": "2025-04-29",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-8B",
+            "priority": 70,
+            "policy_rank": 28
           }
         }
       ],
@@ -25087,43 +23177,6 @@
         },
         {
           "value": "Sarvam-105B",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "sarvam",
-            "source_id": "sarvam-105b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "sarvam-105b",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-02-18",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "sarvam-105b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-02-18",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "sarvam-105b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-03-06",
           "source": {
             "upstream": "models.dev",
             "provider": "sarvam",

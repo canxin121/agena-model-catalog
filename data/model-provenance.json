@@ -133992,28 +133992,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Pixtral 2409 12B is a state-of-the-art multimodal model with 12B parameters and a 400M vision encoder, natively trained on interleaved text and image data. It excels in tasks spanning vision-language reasoning, instruction following, and pure text understanding, making it highly effective for real-world multimodal applications.",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "pixtral-12b-2409",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "pixtral-12b-2409",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "pixtral-12b-2409",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -134027,7 +134009,7 @@
         "value": "2024-09",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "greenpt",
           "source_id": "pixtral-12b-2409",
           "priority": 20,
           "policy_rank": 0

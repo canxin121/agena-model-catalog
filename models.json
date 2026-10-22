@@ -20456,11 +20456,11 @@
       },
       "features": {
         "supported": [
-          "reasoning",
           "structured_output",
           "temperature"
         ],
         "unsupported": [
+          "reasoning",
           "tool_calling"
         ]
       },

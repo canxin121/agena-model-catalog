@@ -42963,7 +42963,7 @@
         "scope": "publisher_api_model",
         "items": {
           "reasoning": {
-            "value": "supported",
+            "value": "unsupported",
             "source": {
               "upstream": "models.dev",
               "provider": "google",

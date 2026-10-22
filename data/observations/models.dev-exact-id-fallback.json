@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "29c500dd313d2e38a09848cd5ad2a9ad8120e127a4d446cf03af5bad22c9a7d4",
+    "sha256": "0a2915802d946dbaef2cdc8f6ed2249588e4228296cc09f6cc3226e4f783852c",
     "record_count": 232
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -24297,6 +24297,9 @@
         "limit": {
           "context": 0,
           "output": 8192
+        },
+        "provider": {
+          "api": "https://api.greenpt.ai"
         }
       }
     },
@@ -24343,6 +24346,9 @@
         "limit": {
           "context": 0,
           "output": 8192
+        },
+        "provider": {
+          "api": "https://api.greenpt.ai"
         }
       }
     },
@@ -25663,6 +25669,10 @@
           "context": 0,
           "output": 0
         },
+        "provider": {
+          "npm": "@ai-sdk/alibaba",
+          "api": "https://token-plan.ap-southeast-1.maas.aliyuncs.com"
+        },
         "cost": {
           "input": 0,
           "output": 0
@@ -25714,6 +25724,10 @@
           "context": 0,
           "output": 0
         },
+        "provider": {
+          "npm": "@ai-sdk/alibaba",
+          "api": "https://token-plan.cn-beijing.maas.aliyuncs.com"
+        },
         "cost": {
           "input": 0,
           "output": 0
@@ -25764,6 +25778,10 @@
         "limit": {
           "context": 0,
           "output": 0
+        },
+        "provider": {
+          "npm": "@ai-sdk/alibaba",
+          "api": "https://token-plan.ap-southeast-1.maas.aliyuncs.com"
         },
         "cost": {
           "input": 0,
@@ -25816,6 +25834,10 @@
           "context": 0,
           "output": 0
         },
+        "provider": {
+          "npm": "@ai-sdk/alibaba",
+          "api": "https://token-plan.cn-beijing.maas.aliyuncs.com"
+        },
         "cost": {
           "input": 0,
           "output": 0
@@ -25866,6 +25888,10 @@
           "context": 0,
           "output": 0
         },
+        "provider": {
+          "npm": "@ai-sdk/alibaba",
+          "api": "https://token-plan.ap-southeast-1.maas.aliyuncs.com"
+        },
         "cost": {
           "input": 0,
           "output": 0
@@ -25915,6 +25941,10 @@
         "limit": {
           "context": 0,
           "output": 0
+        },
+        "provider": {
+          "npm": "@ai-sdk/alibaba",
+          "api": "https://token-plan.cn-beijing.maas.aliyuncs.com"
         },
         "cost": {
           "input": 0,
@@ -29638,6 +29668,7 @@
         ],
         "tool_call": true,
         "structured_output": true,
+        "temperature": false,
         "release_date": "2026-08-11",
         "last_updated": "2026-08-11",
         "modalities": {
@@ -41184,6 +41215,9 @@
           "context": 8192,
           "output": 0
         },
+        "provider": {
+          "api": "https://token-plan.ap-southeast-1.maas.aliyuncs.com/api/v1"
+        },
         "cost": {
           "input": 0,
           "output": 0
@@ -41234,6 +41268,9 @@
         "limit": {
           "context": 8192,
           "output": 0
+        },
+        "provider": {
+          "api": "https://token-plan.cn-beijing.maas.aliyuncs.com/api/v1"
         },
         "cost": {
           "input": 0,
@@ -41286,6 +41323,9 @@
           "context": 8192,
           "output": 0
         },
+        "provider": {
+          "api": "https://token-plan.ap-southeast-1.maas.aliyuncs.com/api/v1"
+        },
         "cost": {
           "input": 0,
           "output": 0
@@ -41336,6 +41376,9 @@
         "limit": {
           "context": 8192,
           "output": 0
+        },
+        "provider": {
+          "api": "https://token-plan.cn-beijing.maas.aliyuncs.com/api/v1"
         },
         "cost": {
           "input": 0,
@@ -42218,6 +42261,9 @@
         "limit": {
           "context": 32768,
           "output": 1
+        },
+        "provider": {
+          "npm": "@ai-sdk/openai"
         }
       }
     },
@@ -44718,6 +44764,9 @@
         "limit": {
           "context": 0,
           "output": 0
+        },
+        "provider": {
+          "npm": "@ai-sdk/openai"
         }
       }
     },
@@ -44812,6 +44861,9 @@
         "limit": {
           "context": 0,
           "output": 0
+        },
+        "provider": {
+          "npm": "@ai-sdk/openai"
         }
       }
     },
@@ -44859,6 +44911,9 @@
         "limit": {
           "context": 0,
           "output": 0
+        },
+        "provider": {
+          "npm": "@ai-sdk/openai"
         }
       }
     },
@@ -45935,6 +45990,9 @@
           "context": 32000,
           "output": 32000
         },
+        "provider": {
+          "npm": "@ai-sdk/openai"
+        },
         "cost": {
           "input": 0.00462,
           "output": 0
@@ -46087,6 +46145,9 @@
           "context": 8192,
           "output": 0
         },
+        "provider": {
+          "api": "https://token-plan.ap-southeast-1.maas.aliyuncs.com/api/v1"
+        },
         "cost": {
           "input": 0,
           "output": 0
@@ -46136,6 +46197,9 @@
         "limit": {
           "context": 8192,
           "output": 0
+        },
+        "provider": {
+          "api": "https://token-plan.cn-beijing.maas.aliyuncs.com/api/v1"
         },
         "cost": {
           "input": 0,
@@ -46187,6 +46251,9 @@
           "context": 8192,
           "output": 0
         },
+        "provider": {
+          "api": "https://token-plan.ap-southeast-1.maas.aliyuncs.com/api/v1"
+        },
         "cost": {
           "input": 0,
           "output": 0
@@ -46236,6 +46303,9 @@
         "limit": {
           "context": 8192,
           "output": 0
+        },
+        "provider": {
+          "api": "https://token-plan.cn-beijing.maas.aliyuncs.com/api/v1"
         },
         "cost": {
           "input": 0,
@@ -46335,6 +46405,9 @@
         "limit": {
           "context": 448,
           "output": 4096
+        },
+        "provider": {
+          "npm": "@ai-sdk/openai"
         },
         "cost": {
           "input": 0.01618,
@@ -46483,6 +46556,9 @@
         "limit": {
           "context": 448,
           "output": 448
+        },
+        "provider": {
+          "npm": "@ai-sdk/openai"
         },
         "canonical_model_id": "openai/whisper-large-v3-turbo"
       }

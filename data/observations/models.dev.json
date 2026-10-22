@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "29c500dd313d2e38a09848cd5ad2a9ad8120e127a4d446cf03af5bad22c9a7d4",
+    "sha256": "0a2915802d946dbaef2cdc8f6ed2249588e4228296cc09f6cc3226e4f783852c",
     "record_count": 232
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -4363,8 +4363,7 @@
         "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
         "family": "gemini-flash",
         "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
+        "reasoning": false,
         "tool_call": false,
         "temperature": true,
         "knowledge": "2024-06",
@@ -5605,7 +5604,7 @@
         "name": "Gemini 3.5 Live Translate Preview",
         "description": "Low-latency audio-to-audio model for real-time speech translation across 70+ languages",
         "family": "gemini-pro",
-        "attachment": false,
+        "attachment": true,
         "reasoning": false,
         "tool_call": false,
         "temperature": true,
@@ -20532,6 +20531,9 @@
           "output": 2048
         },
         "status": "deprecated",
+        "provider": {
+          "api": "wss://dashscope-intl.aliyuncs.com/api-ws/v1/realtime"
+        },
         "cost": {
           "input": 0.27,
           "output": 1.07,
@@ -20589,6 +20591,9 @@
           "output": 2048
         },
         "status": "deprecated",
+        "provider": {
+          "api": "wss://dashscope.aliyuncs.com/api-ws/v1/realtime"
+        },
         "cost": {
           "input": 0.23,
           "output": 0.918,
@@ -23121,6 +23126,9 @@
           "context": 32768,
           "output": 0
         },
+        "provider": {
+          "api": "https://router.huggingface.co/deepinfra/v1/openai"
+        },
         "cost": {
           "input": 0.01,
           "output": 0
@@ -23172,6 +23180,9 @@
         "limit": {
           "context": 32768,
           "output": 0
+        },
+        "provider": {
+          "api": "https://router.huggingface.co/deepinfra/v1/openai"
         },
         "cost": {
           "input": 0.01,
@@ -23230,6 +23241,9 @@
           "output": 4096
         },
         "status": "deprecated",
+        "provider": {
+          "api": "wss://dashscope-intl.aliyuncs.com/api-ws/v1/realtime"
+        },
         "cost": {
           "input": 10,
           "output": 10,
@@ -23864,6 +23878,9 @@
           "output": 16384
         },
         "status": "deprecated",
+        "provider": {
+          "api": "wss://dashscope-intl.aliyuncs.com/api-ws/v1/realtime"
+        },
         "cost": {
           "input": 0.52,
           "output": 1.99,
@@ -23921,6 +23938,9 @@
           "output": 16384
         },
         "status": "deprecated",
+        "provider": {
+          "api": "wss://dashscope.aliyuncs.com/api-ws/v1/realtime"
+        },
         "cost": {
           "input": 0.23,
           "output": 0.918,
@@ -29553,6 +29573,9 @@
         "limit": {
           "context": 0,
           "output": 0
+        },
+        "provider": {
+          "npm": "@ai-sdk/openai"
         }
       }
     },
@@ -29599,6 +29622,9 @@
         "limit": {
           "context": 0,
           "output": 0
+        },
+        "provider": {
+          "npm": "@ai-sdk/openai"
         }
       }
     },

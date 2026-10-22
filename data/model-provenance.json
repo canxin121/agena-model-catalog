@@ -114510,9 +114510,9 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": {
-          "input_usd_per_million_tokens": "0.68",
-          "output_usd_per_million_tokens": "2.09",
-          "cache_read_usd_per_million_tokens": "0.07"
+          "input_usd_per_million_tokens": "1.36",
+          "output_usd_per_million_tokens": "4.18",
+          "cache_read_usd_per_million_tokens": "0.14"
         },
         "source": {
           "upstream": "models.dev",
@@ -170968,202 +170968,40 @@
     },
     "veo-3.1-fast-generate-preview": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 480,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-fast-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Video model for prompt-guided generation, editing, and motion workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-fast-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Veo 3.1 fast",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-fast-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-fast-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "temperature": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-fast-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "tool_calling": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-fast-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "image": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-fast-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-fast-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "video": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-fast-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2026-01-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-fast-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 8192,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-fast-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-fast-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Google",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-fast-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "video"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-fast-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
-      },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "google"
-        ],
-        "observations": [
-          {
-            "provider": "google",
-            "source_id": "veo-3.1-fast-generate-preview"
-          }
-        ]
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2025-10-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-fast-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "veo-3.1-generate-001": {
@@ -171203,204 +171041,43 @@
     },
     "veo-3.1-generate-preview": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 480,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Video model for prompt-guided generation, editing, and motion workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Veo 3.1",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "temperature": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "tool_calling": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "image": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "beta",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 8192,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Google",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "video"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
-      },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "google"
-        ],
-        "observations": [
-          {
-            "provider": "google",
-            "source_id": "veo-3.1-generate-preview"
-          }
-        ]
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2025-10-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "veo-3.1-lite-generate-001": {
@@ -171440,192 +171117,40 @@
     },
     "veo-3.1-lite-generate-preview": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 480,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-lite-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Video model for prompt-guided generation, editing, and motion workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-lite-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Veo 3.1 lite",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-lite-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-lite-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "temperature": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-lite-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "tool_calling": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-lite-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "image": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-lite-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "veo-3.1-lite-generate-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2026-03-31",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-lite-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 8192,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-lite-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-lite-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Google",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-lite-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "video"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-lite-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
-      },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "google"
-        ],
-        "observations": [
-          {
-            "provider": "google",
-            "source_id": "veo-3.1-lite-generate-preview"
-          }
-        ]
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2026-03-31",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "veo-3.1-lite-generate-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "veo3.1": {

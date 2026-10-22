@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "fd70d4edf75e6b29b624a2683b316bac61a871d5b0ca6122e4fbe4e99f7f41de",
+    "sha256": "080bd419e7feb1fa6596600539f993592003f43978e6284870a76ba6c18c07ab",
     "record_count": 232
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -18140,9 +18140,9 @@
         },
         "status": "beta",
         "cost": {
-          "input": 0.68,
-          "output": 2.09,
-          "cache_read": 0.07
+          "input": 1.36,
+          "output": 4.18,
+          "cache_read": 0.14
         },
         "canonical_model_id": "mistral/mistral-large-4"
       }
@@ -29779,152 +29779,6 @@
           "input": 0.1,
           "output": 0
         }
-      }
-    },
-    {
-      "canonical_model_id": "veo-3.1-fast-generate-preview",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "google",
-        "source_id": "veo-3.1-fast-generate-preview",
-        "priority": 70,
-        "policy_rank": 2
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "veo-3.1-fast-generate-preview",
-        "type": "video",
-        "name": "Veo 3.1 fast",
-        "description": "Video model for prompt-guided generation, editing, and motion workflows",
-        "family": "veo",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": false,
-        "temperature": false,
-        "release_date": "2025-10-15",
-        "last_updated": "2026-01-01",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output": [
-            "video"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 480,
-          "output": 8192
-        },
-        "canonical_model_id": "google/veo-3.1-fast-generate-preview"
-      }
-    },
-    {
-      "canonical_model_id": "veo-3.1-generate-preview",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "google",
-        "source_id": "veo-3.1-generate-preview",
-        "priority": 70,
-        "policy_rank": 2
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "veo-3.1-generate-preview",
-        "type": "video",
-        "name": "Veo 3.1",
-        "description": "Video model for prompt-guided generation, editing, and motion workflows",
-        "family": "veo",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": false,
-        "temperature": false,
-        "release_date": "2025-10-15",
-        "last_updated": "2026-01",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "video"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 480,
-          "output": 8192
-        },
-        "status": "beta",
-        "canonical_model_id": "google/veo-3.1-generate-preview"
-      }
-    },
-    {
-      "canonical_model_id": "veo-3.1-lite-generate-preview",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "google",
-        "source_id": "veo-3.1-lite-generate-preview",
-        "priority": 70,
-        "policy_rank": 2
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "veo-3.1-lite-generate-preview",
-        "type": "video",
-        "name": "Veo 3.1 lite",
-        "description": "Video model for prompt-guided generation, editing, and motion workflows",
-        "family": "veo",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": false,
-        "temperature": false,
-        "release_date": "2026-03-31",
-        "last_updated": "2026-03-31",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "video"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 480,
-          "output": 8192
-        },
-        "canonical_model_id": "google/veo-3.1-lite-generate-preview"
       }
     },
     {

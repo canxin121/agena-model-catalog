@@ -10884,6 +10884,110 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "kimi-k3.1-pro",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "2",
+          "output_usd_per_million_tokens": "10",
+          "cache_read_usd_per_million_tokens": "0.2",
+          "cache_write_usd_per_million_tokens": "2"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "2",
+            "output_usd_per_million_tokens": "10",
+            "cache_read_usd_per_million_tokens": "0.2",
+            "cache_write_usd_per_million_tokens": "2"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "moonshotai",
+            "source_id": "kimi-k3.1-pro",
+            "priority": 70,
+            "policy_rank": 8
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "1.9437",
+            "output_usd_per_million_tokens": "10.1671",
+            "cache_read_usd_per_million_tokens": "0.1944",
+            "cache_write_usd_per_million_tokens": "1.9437"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "moonshotai-cn",
+            "source_id": "kimi-k3.1-pro",
+            "priority": 70,
+            "policy_rank": 24
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "kimi-k3.1-pro-highspeed",
+      "field": "pricing",
+      "winner": {
+        "value": {
+          "input_usd_per_million_tokens": "4",
+          "output_usd_per_million_tokens": "20",
+          "cache_read_usd_per_million_tokens": "0.2",
+          "cache_write_usd_per_million_tokens": "4"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "candidates": [
+        {
+          "value": {
+            "input_usd_per_million_tokens": "4",
+            "output_usd_per_million_tokens": "20",
+            "cache_read_usd_per_million_tokens": "0.2",
+            "cache_write_usd_per_million_tokens": "4"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "moonshotai",
+            "source_id": "kimi-k3.1-pro-highspeed",
+            "priority": 70,
+            "policy_rank": 8
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "3.8874",
+            "output_usd_per_million_tokens": "20.3342",
+            "cache_read_usd_per_million_tokens": "0.1944",
+            "cache_write_usd_per_million_tokens": "3.8874"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "moonshotai-cn",
+            "source_id": "kimi-k3.1-pro-highspeed",
+            "priority": 70,
+            "policy_rank": 24
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "kimi-latest",
       "field": "description",
       "winner": {

@@ -94997,6 +94997,528 @@
         "kind": "existing_catalog_or_pipeline_value"
       }
     },
+    "kimi-k3.1-pro": {
+      "assistant_reasoning_field": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "assistant_reasoning_interleaved": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "context_window_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1048576,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "description": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "display_name": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Kimi K3.1 Pro",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "features": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          },
+          "temperature": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          },
+          "video": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          }
+        }
+      },
+      "last_updated": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-23",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "max_input_tokens": {
+        "kind": "existing_catalog_or_pipeline_value"
+      },
+      "max_output_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1048576,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "open_weights": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "origin": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Moonshot AI",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "output_modalities": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "pricing": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "2",
+          "output_usd_per_million_tokens": "10",
+          "cache_read_usd_per_million_tokens": "0.2",
+          "cache_write_usd_per_million_tokens": "2"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "moonshotai",
+          "moonshotai-cn"
+        ],
+        "observations": [
+          {
+            "provider": "moonshotai",
+            "source_id": "kimi-k3.1-pro"
+          },
+          {
+            "provider": "moonshotai-cn",
+            "source_id": "kimi-k3.1-pro"
+          }
+        ]
+      },
+      "release_date": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-23",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
+      }
+    },
+    "kimi-k3.1-pro-highspeed": {
+      "assistant_reasoning_field": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "assistant_reasoning_interleaved": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "context_window_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1048576,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "description": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "display_name": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Kimi K3.1 Pro Highspeed",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "features": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro-highspeed",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro-highspeed",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          },
+          "temperature": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro-highspeed",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro-highspeed",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro-highspeed",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro-highspeed",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          },
+          "video": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "moonshotai",
+              "source_id": "kimi-k3.1-pro-highspeed",
+              "priority": 70,
+              "policy_rank": 8
+            }
+          }
+        }
+      },
+      "last_updated": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-23",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "max_input_tokens": {
+        "kind": "existing_catalog_or_pipeline_value"
+      },
+      "max_output_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1048576,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "open_weights": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "origin": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Moonshot AI",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "output_modalities": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "pricing": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "4",
+          "output_usd_per_million_tokens": "20",
+          "cache_read_usd_per_million_tokens": "0.2",
+          "cache_write_usd_per_million_tokens": "4"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "moonshotai",
+          "moonshotai-cn"
+        ],
+        "observations": [
+          {
+            "provider": "moonshotai",
+            "source_id": "kimi-k3.1-pro-highspeed"
+          },
+          {
+            "provider": "moonshotai-cn",
+            "source_id": "kimi-k3.1-pro-highspeed"
+          }
+        ]
+      },
+      "release_date": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-23",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3.1-pro-highspeed",
+          "priority": 70,
+          "policy_rank": 8
+        }
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
+      }
+    },
     "kimi-k3.256k": {
       "context_window_tokens": {
         "kind": "existing_catalog_or_pipeline_value"

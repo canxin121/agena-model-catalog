@@ -19,7 +19,7 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "13c4f53a70d0290aad17ec3f4ace632f25d04010e16721edc962403b8d9236d1",
+      "snapshot_sha256": "a7774fa4305e6795d7b30f5104ffc8955e134937f3abb99cfe8ed051ba41f881",
       "snapshot_record_count": 230
     },
     {
@@ -132,7 +132,7 @@
     }
   ],
   "route_record_counts": {
-    "models.dev_allowlisted_observations": 444,
+    "models.dev_allowlisted_observations": 448,
     "models.dev_exact_id_fallback_candidates": 738,
     "models.dev_route_limit_caps": 18,
     "openrouter": 468,
@@ -141,5 +141,5 @@
   "artifact_record_counts": {
     "huggingface": 982
   },
-  "model_provenance_count": 1895
+  "model_provenance_count": 1897
 }

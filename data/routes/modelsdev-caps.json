@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "13c4f53a70d0290aad17ec3f4ace632f25d04010e16721edc962403b8d9236d1",
+    "sha256": "a7774fa4305e6795d7b30f5104ffc8955e134937f3abb99cfe8ed051ba41f881",
     "record_count": 230
   },
   "scope": "configured_route_limit_cap",
@@ -659,7 +659,6 @@
           "context": 1048576,
           "output": 131072
         },
-        "status": "deprecated",
         "cost": {
           "input": 0.14,
           "output": 0.28,
@@ -718,7 +717,6 @@
           "context": 1048576,
           "output": 131072
         },
-        "status": "deprecated",
         "cost": {
           "input": 0.435,
           "output": 0.87,

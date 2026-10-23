@@ -42611,6 +42611,126 @@
       },
       "max_input_tokens": 1000000
     },
+    "kimi-k3.1-pro": {
+      "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+      "release_date": "2026-10-23",
+      "last_updated": "2026-10-23",
+      "open_weights": false,
+      "display_name": "Kimi K3.1 Pro",
+      "origin": "Moonshot AI",
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input": {
+        "supported": [
+          "image",
+          "text",
+          "video"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "tool_calling"
+        ],
+        "unsupported": [
+          "temperature"
+        ]
+      },
+      "output_modalities": [
+        "text"
+      ],
+      "assistant_reasoning_interleaved": true,
+      "assistant_reasoning_field": "reasoning_content",
+      "pricing": {
+        "input_usd_per_million_tokens": "2",
+        "output_usd_per_million_tokens": "10",
+        "cache_read_usd_per_million_tokens": "0.2",
+        "cache_write_usd_per_million_tokens": "2"
+      },
+      "provider_sources": [
+        "moonshotai",
+        "moonshotai-cn"
+      ],
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      },
+      "max_input_tokens": 1048576
+    },
+    "kimi-k3.1-pro-highspeed": {
+      "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+      "release_date": "2026-10-23",
+      "last_updated": "2026-10-23",
+      "open_weights": false,
+      "display_name": "Kimi K3.1 Pro Highspeed",
+      "origin": "Moonshot AI",
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 1048576,
+      "input": {
+        "supported": [
+          "image",
+          "text",
+          "video"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "tool_calling"
+        ],
+        "unsupported": [
+          "temperature"
+        ]
+      },
+      "output_modalities": [
+        "text"
+      ],
+      "assistant_reasoning_interleaved": true,
+      "assistant_reasoning_field": "reasoning_content",
+      "pricing": {
+        "input_usd_per_million_tokens": "4",
+        "output_usd_per_million_tokens": "20",
+        "cache_read_usd_per_million_tokens": "0.2",
+        "cache_write_usd_per_million_tokens": "4"
+      },
+      "provider_sources": [
+        "moonshotai",
+        "moonshotai-cn"
+      ],
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      },
+      "max_input_tokens": 1048576
+    },
     "kimi-k3.256k": {
       "context_window_tokens": 262144,
       "max_output_tokens": 65536,

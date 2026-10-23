@@ -709,36 +709,16 @@
       "model_id": "claude-opus-4-1",
       "field": "display_name",
       "winner": {
-        "value": "Claude Opus 4.1",
+        "value": "Anthropic: Claude Opus 4.1",
         "source": {
           "upstream": "models.dev",
-          "provider": "azure",
+          "provider": "helicone",
           "source_id": "claude-opus-4-1",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "Claude Opus 4.1",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Claude Opus 4.1",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "Anthropic: Claude Opus 4.1",
           "source": {
@@ -773,16 +753,6 @@
           "value": "Claude Opus 4.1 (latest)",
           "source": {
             "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Claude Opus 4.1 (latest)",
-          "source": {
-            "upstream": "models.dev",
             "provider": "requesty",
             "source_id": "claude-opus-4-1",
             "priority": 20,
@@ -796,36 +766,16 @@
       "model_id": "claude-opus-4-1",
       "field": "knowledge_cutoff",
       "winner": {
-        "value": "2025-03-31",
+        "value": "2025-08",
         "source": {
           "upstream": "models.dev",
-          "provider": "azure",
+          "provider": "helicone",
           "source_id": "claude-opus-4-1",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "2025-03-31",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-03-31",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "2025-08",
           "source": {
@@ -860,103 +810,6 @@
           "value": "2025-03-31",
           "source": {
             "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-03-31",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-opus-4-1",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-11-18",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "azure",
-          "source_id": "claude-opus-4-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-18",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-18",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neon",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
             "provider": "requesty",
             "source_id": "claude-opus-4-1",
             "priority": 20,
@@ -970,36 +823,16 @@
       "model_id": "claude-opus-4-1",
       "field": "origin",
       "winner": {
-        "value": "Azure",
+        "value": "Helicone",
         "source": {
           "upstream": "models.dev",
-          "provider": "azure",
+          "provider": "helicone",
           "source_id": "claude-opus-4-1",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "Azure",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Azure Cognitive Services",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "Helicone",
           "source": {
@@ -1031,104 +864,7 @@
           }
         },
         {
-          "value": "Pioneer",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
           "value": "Requesty",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "claude-opus-4-1",
-      "field": "release_date",
-      "winner": {
-        "value": "2025-11-18",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "azure",
-          "source_id": "claude-opus-4-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-11-18",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-11-18",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neon",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "claude-opus-4-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
           "source": {
             "upstream": "models.dev",
             "provider": "requesty",
@@ -1854,64 +1590,7 @@
           }
         },
         {
-          "value": "2025-01-30",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "deepseek-r1-distill-llama-70b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
           "value": "2025-01-20",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "deepseek-r1-distill-llama-70b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "deepseek-r1-distill-llama-70b",
-      "field": "open_weights",
-      "winner": {
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba-cn",
-          "source_id": "deepseek-r1-distill-llama-70b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "deepseek-r1-distill-llama-70b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "deepseek-r1-distill-llama-70b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": false,
           "source": {
             "upstream": "models.dev",
             "provider": "helicone",
@@ -1942,16 +1621,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "alibaba-cn",
-            "source_id": "deepseek-r1-distill-llama-70b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "DigitalOcean",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
             "source_id": "deepseek-r1-distill-llama-70b",
             "priority": 20,
             "policy_rank": 0
@@ -1989,16 +1658,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "alibaba-cn",
-            "source_id": "deepseek-r1-distill-llama-70b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-01-30",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
             "source_id": "deepseek-r1-distill-llama-70b",
             "priority": 20,
             "policy_rank": 0
@@ -3735,16 +3394,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "New Gemini flash lane bringing frontier-style multimodal reasoning to cheaper runs",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "gemini-3-flash",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -3782,16 +3431,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "Gemini 3 Flash Preview",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "gemini-3-flash",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -3825,16 +3464,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "opencode",
-            "source_id": "gemini-3-flash",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Pioneer",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
             "source_id": "gemini-3-flash",
             "priority": 20,
             "policy_rank": 0
@@ -4099,53 +3728,6 @@
           "value": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
           "source": {
             "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "gemini-3.1-pro",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "snowflake-cortex",
-            "source_id": "gemini-3.1-pro",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "gemini-3.1-pro",
-      "field": "lifecycle",
-      "winner": {
-        "value": "deprecated",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "pioneer",
-          "source_id": "gemini-3.1-pro",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "deprecated",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "gemini-3.1-pro",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "beta",
-          "source": {
-            "upstream": "models.dev",
             "provider": "snowflake-cortex",
             "source_id": "gemini-3.1-pro",
             "priority": 20,
@@ -4174,16 +3756,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "opencode",
-            "source_id": "gemini-3.1-pro",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Pioneer",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
             "source_id": "gemini-3.1-pro",
             "priority": 20,
             "policy_rank": 0
@@ -4318,71 +3890,6 @@
             "source_id": "gemma4-31b",
             "priority": 20,
             "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "glm-4.5",
-      "field": "pricing",
-      "winner": {
-        "value": {
-          "input_usd_per_million_tokens": "0.6",
-          "output_usd_per_million_tokens": "2.2",
-          "cache_read_usd_per_million_tokens": "0.11",
-          "cache_write_usd_per_million_tokens": "0"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "zai",
-          "source_id": "glm-4.5",
-          "priority": 70,
-          "policy_rank": 4
-        }
-      },
-      "candidates": [
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.6",
-            "output_usd_per_million_tokens": "2.2",
-            "cache_read_usd_per_million_tokens": "0.11",
-            "cache_write_usd_per_million_tokens": "0"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zai",
-            "source_id": "glm-4.5",
-            "priority": 70,
-            "policy_rank": 4
-          }
-        },
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.6",
-            "output_usd_per_million_tokens": "2.2",
-            "cache_read_usd_per_million_tokens": "0.11",
-            "cache_write_usd_per_million_tokens": "0"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "zhipuai",
-            "source_id": "glm-4.5",
-            "priority": 70,
-            "policy_rank": 22
-          }
-        },
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.6",
-            "output_usd_per_million_tokens": "2.2"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "zai-org/GLM-4.5",
-            "priority": 70,
-            "policy_rank": 38
           }
         }
       ],
@@ -5880,16 +5387,6 @@
           }
         },
         {
-          "value": "Efficient GLM model for fast reasoning, coding, and agent workflows",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neuralwatt",
-            "source_id": "glm-5.2-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
           "value": "GLM-5.2 introduces a robust 1M-token context and advanced, multi-effort coding capabilities to significantly enhance performance on long-horizon tasks. Its new IndexShare architecture and improved MTP layer simultaneously boost efficiency by reducing per-token FLOPs and increasing speculative decoding lengths. A 743B-parameter model in Zhipu AI's GLM series, designed to plan, execute, and iterate autonomously on extended, engineering-grade tasks.",
           "source": {
             "upstream": "models.dev",
@@ -5931,16 +5428,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "llmgateway",
-            "source_id": "glm-5.2-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "GLM 5.2 Fast",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neuralwatt",
             "source_id": "glm-5.2-fast",
             "priority": 20,
             "policy_rank": 0
@@ -5994,16 +5481,6 @@
           }
         },
         {
-          "value": "2026-06-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neuralwatt",
-            "source_id": "glm-5.2-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
           "value": "2026-07-13",
           "source": {
             "upstream": "models.dev",
@@ -6045,16 +5522,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "llmgateway",
-            "source_id": "glm-5.2-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neuralwatt",
             "source_id": "glm-5.2-fast",
             "priority": 20,
             "policy_rank": 0
@@ -6108,16 +5575,6 @@
           }
         },
         {
-          "value": "Neuralwatt",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neuralwatt",
-            "source_id": "glm-5.2-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
           "value": "Requesty",
           "source": {
             "upstream": "models.dev",
@@ -6159,16 +5616,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "llmgateway",
-            "source_id": "glm-5.2-fast",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-06-13",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "neuralwatt",
             "source_id": "glm-5.2-fast",
             "priority": 20,
             "policy_rank": 0
@@ -9429,16 +8876,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "GPT-5.3 Chat (latest)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opper",
-            "source_id": "gpt-5.3-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -9472,16 +8909,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "abacus",
-            "source_id": "gpt-5.3-chat-latest",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Opper",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opper",
             "source_id": "gpt-5.3-chat-latest",
             "priority": 20,
             "policy_rank": 0
@@ -10606,23 +10033,13 @@
         "value": "Kimi model for long-context chat, coding, and agentic reasoning",
         "source": {
           "upstream": "models.dev",
-          "provider": "iflowcn",
+          "provider": "llmgateway",
           "source_id": "kimi-k2",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "Kimi model for long-context chat, coding, and agentic reasoning",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "Kimi model for long-context chat, coding, and agentic reasoning",
           "source": {
@@ -10658,85 +10075,18 @@
     },
     {
       "model_id": "kimi-k2",
-      "field": "display_name",
-      "winner": {
-        "value": "Kimi-K2",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "iflowcn",
-          "source_id": "kimi-k2",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Kimi-K2",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Kimi K2",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Kimi K2",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencode",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Kimi K2",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "kimi-k2",
       "field": "knowledge_cutoff",
       "winner": {
         "value": "2024-10",
         "source": {
           "upstream": "models.dev",
-          "provider": "iflowcn",
+          "provider": "opencode",
           "source_id": "kimi-k2",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "2024-10",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "2024-10",
           "source": {
@@ -10767,23 +10117,13 @@
         "value": "2025-07-11",
         "source": {
           "upstream": "models.dev",
-          "provider": "iflowcn",
+          "provider": "llmgateway",
           "source_id": "kimi-k2",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "2025-07-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "2025-07-11",
           "source": {
@@ -10821,26 +10161,16 @@
       "model_id": "kimi-k2",
       "field": "origin",
       "winner": {
-        "value": "iFlow",
+        "value": "DevPass (LLM Gateway)",
         "source": {
           "upstream": "models.dev",
-          "provider": "iflowcn",
+          "provider": "llmgateway",
           "source_id": "kimi-k2",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "iFlow",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "DevPass (LLM Gateway)",
           "source": {
@@ -10881,23 +10211,13 @@
         "value": "2025-07-11",
         "source": {
           "upstream": "models.dev",
-          "provider": "iflowcn",
+          "provider": "llmgateway",
           "source_id": "kimi-k2",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "2025-07-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "kimi-k2",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "2025-07-11",
           "source": {
@@ -12003,175 +11323,6 @@
             "upstream": "models.dev",
             "provider": "azure-cognitive-services",
             "source_id": "llama-4-scout-17b-16e-instruct",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mimo-v2-flash",
-      "field": "description",
-      "winner": {
-        "value": "Legacy model retained for compatibility with older integrations",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xiaomi",
-          "source_id": "mimo-v2-flash",
-          "priority": 70,
-          "policy_rank": 14
-        }
-      },
-      "candidates": [
-        {
-          "value": "Legacy model retained for compatibility with older integrations",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "xiaomi",
-            "source_id": "mimo-v2-flash",
-            "priority": 70,
-            "policy_rank": 14
-          }
-        },
-        {
-          "value": "MiMo flash model for fast multimodal assistance and agent workflows",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "XiaomiMiMo/MiMo-V2-Flash",
-            "priority": 70,
-            "policy_rank": 33
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mimo-v2-flash",
-      "field": "max_output_tokens",
-      "winner": {
-        "value": 65536,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xiaomi",
-          "source_id": "mimo-v2-flash",
-          "priority": 70,
-          "policy_rank": 14
-        }
-      },
-      "candidates": [
-        {
-          "value": 65536,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "xiaomi",
-            "source_id": "mimo-v2-flash",
-            "priority": 70,
-            "policy_rank": 14
-          }
-        },
-        {
-          "value": 4096,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "XiaomiMiMo/MiMo-V2-Flash",
-            "priority": 70,
-            "policy_rank": 33
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mimo-v2-flash",
-      "field": "pricing",
-      "winner": {
-        "value": {
-          "input_usd_per_million_tokens": "0.14",
-          "output_usd_per_million_tokens": "0.28",
-          "cache_read_usd_per_million_tokens": "0.0028"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xiaomi",
-          "source_id": "mimo-v2-flash",
-          "priority": 70,
-          "policy_rank": 14
-        }
-      },
-      "candidates": [
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.14",
-            "output_usd_per_million_tokens": "0.28",
-            "cache_read_usd_per_million_tokens": "0.0028"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "xiaomi",
-            "source_id": "mimo-v2-flash",
-            "priority": 70,
-            "policy_rank": 14
-          }
-        },
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.1",
-            "output_usd_per_million_tokens": "0.3"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "XiaomiMiMo/MiMo-V2-Flash",
-            "priority": 70,
-            "policy_rank": 33
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mimo-v2-tts",
-      "field": "origin",
-      "winner": {
-        "value": "Xiaomi Token Plan (Europe)",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xiaomi-token-plan-ams",
-          "source_id": "mimo-v2-tts",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Xiaomi Token Plan (Europe)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "xiaomi-token-plan-ams",
-            "source_id": "mimo-v2-tts",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Xiaomi Token Plan (China)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "xiaomi-token-plan-cn",
-            "source_id": "mimo-v2-tts",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Xiaomi Token Plan (Singapore)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "xiaomi-token-plan-sgp",
-            "source_id": "mimo-v2-tts",
             "priority": 20,
             "policy_rank": 0
           }
@@ -13452,53 +12603,6 @@
     },
     {
       "model_id": "ministral-3b",
-      "field": "last_updated",
-      "winner": {
-        "value": "2024-10-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "azure",
-          "source_id": "ministral-3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-10-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "ministral-3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-10-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "ministral-3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-10-16",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "ministral-3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "ministral-3b",
       "field": "origin",
       "winner": {
         "value": "Azure",
@@ -13526,63 +12630,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "azure-cognitive-services",
-            "source_id": "ministral-3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Pioneer",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "ministral-3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "ministral-3b",
-      "field": "release_date",
-      "winner": {
-        "value": "2024-10-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "azure",
-          "source_id": "ministral-3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-10-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure",
-            "source_id": "ministral-3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-10-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "azure-cognitive-services",
-            "source_id": "ministral-3b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-10-16",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
             "source_id": "ministral-3b",
             "priority": 20,
             "policy_rank": 0
@@ -13621,228 +12668,6 @@
             "upstream": "models.dev",
             "provider": "requesty",
             "source_id": "mistral-medium-3-5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-medium-3.5",
-      "field": "description",
-      "winner": {
-        "value": "Mistral Medium 3.5 is a frontier multimodal 128B model combining reasoning, coding, and instruction-following with strong agentic performance and efficient deployment.",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-medium-3.5",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Mistral Medium 3.5 is a frontier multimodal 128B model combining reasoning, coding, and instruction-following with strong agentic performance and efficient deployment.",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Balanced Mistral model for enterprise assistants, multilingual work, and tools",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-medium-3.5",
-      "field": "display_name",
-      "winner": {
-        "value": "mistral-medium-3.5",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-medium-3.5",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "mistral-medium-3.5",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Mistral Medium 3.5",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-medium-3.5",
-      "field": "last_updated",
-      "winner": {
-        "value": "2026-04-30",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-medium-3.5",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-04-30",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-04-29",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-medium-3.5",
-      "field": "open_weights",
-      "winner": {
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-medium-3.5",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": false,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": true,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-medium-3.5",
-      "field": "origin",
-      "winner": {
-        "value": "Cortecs",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-medium-3.5",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Cortecs",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Pioneer",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-medium-3.5",
-      "field": "release_date",
-      "winner": {
-        "value": "2026-04-30",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "mistral-medium-3.5",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2026-04-30",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "cortecs",
-            "source_id": "mistral-medium-3.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2026-04-29",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "pioneer",
-            "source_id": "mistral-medium-3.5",
             "priority": 20,
             "policy_rank": 0
           }
@@ -13949,16 +12774,6 @@
           }
         },
         {
-          "value": "Legacy model retained for compatibility with older integrations",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
           "value": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
           "source": {
             "upstream": "models.dev",
@@ -13996,16 +12811,6 @@
           }
         },
         {
-          "value": "Mistral Nemo Instruct",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
           "value": "Mistral-Nemo-Instruct-2407",
           "source": {
             "upstream": "models.dev",
@@ -14037,16 +12842,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "cortecs",
-            "source_id": "mistral-nemo-instruct-2407",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "DigitalOcean",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "digitalocean",
             "source_id": "mistral-nemo-instruct-2407",
             "priority": 20,
             "policy_rank": 0
@@ -17184,12 +15979,16 @@
         "value": {
           "input_usd_per_million_tokens": "0.05",
           "output_usd_per_million_tokens": "0.4",
+          "cache_read_usd_per_million_tokens": "0.01",
+          "cache_write_usd_per_million_tokens": "0.0625",
           "tiers": [
             {
               "tier_type": "context",
               "size_tokens": 256000,
               "input_usd_per_million_tokens": "0.25",
-              "output_usd_per_million_tokens": "2"
+              "output_usd_per_million_tokens": "2",
+              "cache_read_usd_per_million_tokens": "0.05",
+              "cache_write_usd_per_million_tokens": "0.3125"
             }
           ]
         },
@@ -17206,12 +16005,16 @@
           "value": {
             "input_usd_per_million_tokens": "0.05",
             "output_usd_per_million_tokens": "0.4",
+            "cache_read_usd_per_million_tokens": "0.01",
+            "cache_write_usd_per_million_tokens": "0.0625",
             "tiers": [
               {
                 "tier_type": "context",
                 "size_tokens": 256000,
                 "input_usd_per_million_tokens": "0.25",
-                "output_usd_per_million_tokens": "2"
+                "output_usd_per_million_tokens": "2",
+                "cache_read_usd_per_million_tokens": "0.05",
+                "cache_write_usd_per_million_tokens": "0.3125"
               }
             ]
           },
@@ -17227,18 +16030,24 @@
           "value": {
             "input_usd_per_million_tokens": "0.022",
             "output_usd_per_million_tokens": "0.216",
+            "cache_read_usd_per_million_tokens": "0.0044",
+            "cache_write_usd_per_million_tokens": "0.0275",
             "tiers": [
               {
                 "tier_type": "context",
                 "size_tokens": 128000,
                 "input_usd_per_million_tokens": "0.087",
-                "output_usd_per_million_tokens": "0.861"
+                "output_usd_per_million_tokens": "0.861",
+                "cache_read_usd_per_million_tokens": "0.0174",
+                "cache_write_usd_per_million_tokens": "0.10875"
               },
               {
                 "tier_type": "context",
                 "size_tokens": 256000,
                 "input_usd_per_million_tokens": "0.173",
-                "output_usd_per_million_tokens": "1.721"
+                "output_usd_per_million_tokens": "1.721",
+                "cache_read_usd_per_million_tokens": "0.0346",
+                "cache_write_usd_per_million_tokens": "0.21625"
               }
             ]
           },
@@ -17601,12 +16410,16 @@
         "value": {
           "input_usd_per_million_tokens": "0.4",
           "output_usd_per_million_tokens": "1.2",
+          "cache_read_usd_per_million_tokens": "0.08",
+          "cache_write_usd_per_million_tokens": "0.5",
           "tiers": [
             {
               "tier_type": "context",
               "size_tokens": 256000,
               "input_usd_per_million_tokens": "1.2",
-              "output_usd_per_million_tokens": "3.6"
+              "output_usd_per_million_tokens": "3.6",
+              "cache_read_usd_per_million_tokens": "0.24",
+              "cache_write_usd_per_million_tokens": "1.5"
             }
           ]
         },
@@ -17623,12 +16436,16 @@
           "value": {
             "input_usd_per_million_tokens": "0.4",
             "output_usd_per_million_tokens": "1.2",
+            "cache_read_usd_per_million_tokens": "0.08",
+            "cache_write_usd_per_million_tokens": "0.5",
             "tiers": [
               {
                 "tier_type": "context",
                 "size_tokens": 256000,
                 "input_usd_per_million_tokens": "1.2",
-                "output_usd_per_million_tokens": "3.6"
+                "output_usd_per_million_tokens": "3.6",
+                "cache_read_usd_per_million_tokens": "0.24",
+                "cache_write_usd_per_million_tokens": "1.5"
               }
             ]
           },
@@ -17644,20 +16461,24 @@
           "value": {
             "input_usd_per_million_tokens": "0.115",
             "output_usd_per_million_tokens": "0.287",
-            "cache_read_usd_per_million_tokens": "0.012",
+            "cache_read_usd_per_million_tokens": "0.023",
             "cache_write_usd_per_million_tokens": "0.144",
             "tiers": [
               {
                 "tier_type": "context",
                 "size_tokens": 128000,
                 "input_usd_per_million_tokens": "0.345",
-                "output_usd_per_million_tokens": "2.868"
+                "output_usd_per_million_tokens": "2.868",
+                "cache_read_usd_per_million_tokens": "0.069",
+                "cache_write_usd_per_million_tokens": "0.43125"
               },
               {
                 "tier_type": "context",
                 "size_tokens": 256000,
                 "input_usd_per_million_tokens": "0.689",
-                "output_usd_per_million_tokens": "6.881"
+                "output_usd_per_million_tokens": "6.881",
+                "cache_read_usd_per_million_tokens": "0.1378",
+                "cache_write_usd_per_million_tokens": "0.86125"
               }
             ]
           },
@@ -17931,347 +16752,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "qwen2.5-14b-instruct",
-      "field": "pricing",
-      "winner": {
-        "value": {
-          "input_usd_per_million_tokens": "0.35",
-          "output_usd_per_million_tokens": "1.4"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen2-5-14b-instruct",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.35",
-            "output_usd_per_million_tokens": "1.4"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen2-5-14b-instruct",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.144",
-            "output_usd_per_million_tokens": "0.431"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen2-5-14b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen2.5-32b-instruct",
-      "field": "pricing",
-      "winner": {
-        "value": {
-          "input_usd_per_million_tokens": "0.7",
-          "output_usd_per_million_tokens": "2.8"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen2-5-32b-instruct",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.7",
-            "output_usd_per_million_tokens": "2.8"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen2-5-32b-instruct",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.287",
-            "output_usd_per_million_tokens": "0.861"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen2-5-32b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen2.5-72b-instruct",
-      "field": "pricing",
-      "winner": {
-        "value": {
-          "input_usd_per_million_tokens": "1.4",
-          "output_usd_per_million_tokens": "5.6"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen2-5-72b-instruct",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": {
-            "input_usd_per_million_tokens": "1.4",
-            "output_usd_per_million_tokens": "5.6"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen2-5-72b-instruct",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.574",
-            "output_usd_per_million_tokens": "1.721"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen2-5-72b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen2.5-7b-instruct",
-      "field": "pricing",
-      "winner": {
-        "value": {
-          "input_usd_per_million_tokens": "0.175",
-          "output_usd_per_million_tokens": "0.7"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen2-5-7b-instruct",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.175",
-            "output_usd_per_million_tokens": "0.7"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen2-5-7b-instruct",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.072",
-            "output_usd_per_million_tokens": "0.144"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen2-5-7b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen2.5-coder-32b-instruct",
-      "field": "display_name",
-      "winner": {
-        "value": "Qwen2.5-Coder 32B Instruct",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba-cn",
-          "source_id": "qwen2-5-coder-32b-instruct",
-          "priority": 70,
-          "policy_rank": 23
-        }
-      },
-      "candidates": [
-        {
-          "value": "Qwen2.5-Coder 32B Instruct",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen2-5-coder-32b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": "Qwen2.5-Coder-32B-Instruct",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen2.5-Coder-32B-Instruct",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen2.5-coder-32b-instruct",
-      "field": "last_updated",
-      "winner": {
-        "value": "2024-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba-cn",
-          "source_id": "qwen2-5-coder-32b-instruct",
-          "priority": 70,
-          "policy_rank": 23
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen2-5-coder-32b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": "2024-11-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen2.5-Coder-32B-Instruct",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen2.5-coder-32b-instruct",
-      "field": "pricing",
-      "winner": {
-        "value": {
-          "input_usd_per_million_tokens": "0.287",
-          "output_usd_per_million_tokens": "0.861"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba-cn",
-          "source_id": "qwen2-5-coder-32b-instruct",
-          "priority": 70,
-          "policy_rank": 23
-        }
-      },
-      "candidates": [
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.287",
-            "output_usd_per_million_tokens": "0.861"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen2-5-coder-32b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.06",
-            "output_usd_per_million_tokens": "0.2"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen2.5-Coder-32B-Instruct",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen2.5-coder-32b-instruct",
-      "field": "release_date",
-      "winner": {
-        "value": "2024-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba-cn",
-          "source_id": "qwen2-5-coder-32b-instruct",
-          "priority": 70,
-          "policy_rank": 23
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-11",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen2-5-coder-32b-instruct",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": "2024-11-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen2.5-Coder-32B-Instruct",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "qwen2.5-omni-7b",
       "field": "pricing",
       "winner": {
@@ -18319,91 +16799,140 @@
     },
     {
       "model_id": "qwen2.5-vl-72b-instruct",
-      "field": "pricing",
+      "field": "description",
       "winner": {
-        "value": {
-          "input_usd_per_million_tokens": "2.8",
-          "output_usd_per_million_tokens": "8.4"
-        },
+        "value": "Qwen2.5-VL is a powerful vision-language model with advanced capabilities in visual understanding, long video reasoning, and structured output generation.",
         "source": {
           "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen2-5-vl-72b-instruct",
-          "priority": 70,
-          "policy_rank": 5
+          "provider": "cortecs",
+          "source_id": "qwen2.5-vl-72b-instruct",
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "candidates": [
         {
-          "value": {
-            "input_usd_per_million_tokens": "2.8",
-            "output_usd_per_million_tokens": "8.4"
-          },
+          "value": "Qwen2.5-VL is a powerful vision-language model with advanced capabilities in visual understanding, long video reasoning, and structured output generation.",
           "source": {
             "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen2-5-vl-72b-instruct",
-            "priority": 70,
-            "policy_rank": 5
+            "provider": "cortecs",
+            "source_id": "qwen2.5-vl-72b-instruct",
+            "priority": 20,
+            "policy_rank": 0
           }
         },
         {
-          "value": {
-            "input_usd_per_million_tokens": "2.294",
-            "output_usd_per_million_tokens": "6.881"
-          },
+          "value": "Multimodal model for analyzing text, images, documents, and rich media",
           "source": {
             "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen2-5-vl-72b-instruct",
-            "priority": 70,
-            "policy_rank": 23
+            "provider": "ovhcloud",
+            "source_id": "qwen2.5-vl-72b-instruct",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "qiniu-ai",
+            "source_id": "qwen2.5-vl-72b-instruct",
+            "priority": 20,
+            "policy_rank": 0
           }
         }
       ],
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "qwen2.5-vl-7b-instruct",
-      "field": "pricing",
+      "model_id": "qwen2.5-vl-72b-instruct",
+      "field": "display_name",
       "winner": {
-        "value": {
-          "input_usd_per_million_tokens": "0.35",
-          "output_usd_per_million_tokens": "1.05"
-        },
+        "value": "qwen2.5-vl-72b-instruct",
         "source": {
           "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen2-5-vl-7b-instruct",
-          "priority": 70,
-          "policy_rank": 5
+          "provider": "cortecs",
+          "source_id": "qwen2.5-vl-72b-instruct",
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "candidates": [
         {
-          "value": {
-            "input_usd_per_million_tokens": "0.35",
-            "output_usd_per_million_tokens": "1.05"
-          },
+          "value": "qwen2.5-vl-72b-instruct",
           "source": {
             "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen2-5-vl-7b-instruct",
-            "priority": 70,
-            "policy_rank": 5
+            "provider": "cortecs",
+            "source_id": "qwen2.5-vl-72b-instruct",
+            "priority": 20,
+            "policy_rank": 0
           }
         },
         {
-          "value": {
-            "input_usd_per_million_tokens": "0.287",
-            "output_usd_per_million_tokens": "0.717"
-          },
+          "value": "Qwen2.5-VL-72B-Instruct",
           "source": {
             "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen2-5-vl-7b-instruct",
-            "priority": 70,
-            "policy_rank": 23
+            "provider": "ovhcloud",
+            "source_id": "qwen2.5-vl-72b-instruct",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Qwen 2.5 VL 72B Instruct",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "qiniu-ai",
+            "source_id": "qwen2.5-vl-72b-instruct",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "qwen2.5-vl-72b-instruct",
+      "field": "origin",
+      "winner": {
+        "value": "Cortecs",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "cortecs",
+          "source_id": "qwen2.5-vl-72b-instruct",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Cortecs",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "qwen2.5-vl-72b-instruct",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "OVHcloud AI Endpoints",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "ovhcloud",
+            "source_id": "qwen2.5-vl-72b-instruct",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Qiniu",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "qiniu-ai",
+            "source_id": "qwen2.5-vl-72b-instruct",
+            "priority": 20,
+            "policy_rank": 0
           }
         }
       ],
@@ -19095,24 +17624,32 @@
         "value": {
           "input_usd_per_million_tokens": "0.3",
           "output_usd_per_million_tokens": "1.5",
+          "cache_read_usd_per_million_tokens": "0.06",
+          "cache_write_usd_per_million_tokens": "0.375",
           "tiers": [
             {
               "tier_type": "context",
               "size_tokens": 32000,
               "input_usd_per_million_tokens": "0.5",
-              "output_usd_per_million_tokens": "2.5"
+              "output_usd_per_million_tokens": "2.5",
+              "cache_read_usd_per_million_tokens": "0.1",
+              "cache_write_usd_per_million_tokens": "0.625"
             },
             {
               "tier_type": "context",
               "size_tokens": 128000,
               "input_usd_per_million_tokens": "0.8",
-              "output_usd_per_million_tokens": "4"
+              "output_usd_per_million_tokens": "4",
+              "cache_read_usd_per_million_tokens": "0.16",
+              "cache_write_usd_per_million_tokens": "1"
             },
             {
               "tier_type": "context",
               "size_tokens": 256000,
               "input_usd_per_million_tokens": "1.6",
-              "output_usd_per_million_tokens": "9.6"
+              "output_usd_per_million_tokens": "9.6",
+              "cache_read_usd_per_million_tokens": "0.32",
+              "cache_write_usd_per_million_tokens": "2"
             }
           ]
         },
@@ -19129,24 +17666,32 @@
           "value": {
             "input_usd_per_million_tokens": "0.3",
             "output_usd_per_million_tokens": "1.5",
+            "cache_read_usd_per_million_tokens": "0.06",
+            "cache_write_usd_per_million_tokens": "0.375",
             "tiers": [
               {
                 "tier_type": "context",
                 "size_tokens": 32000,
                 "input_usd_per_million_tokens": "0.5",
-                "output_usd_per_million_tokens": "2.5"
+                "output_usd_per_million_tokens": "2.5",
+                "cache_read_usd_per_million_tokens": "0.1",
+                "cache_write_usd_per_million_tokens": "0.625"
               },
               {
                 "tier_type": "context",
                 "size_tokens": 128000,
                 "input_usd_per_million_tokens": "0.8",
-                "output_usd_per_million_tokens": "4"
+                "output_usd_per_million_tokens": "4",
+                "cache_read_usd_per_million_tokens": "0.16",
+                "cache_write_usd_per_million_tokens": "1"
               },
               {
                 "tier_type": "context",
                 "size_tokens": 256000,
                 "input_usd_per_million_tokens": "1.6",
-                "output_usd_per_million_tokens": "9.6"
+                "output_usd_per_million_tokens": "9.6",
+                "cache_read_usd_per_million_tokens": "0.32",
+                "cache_write_usd_per_million_tokens": "2"
               }
             ]
           },
@@ -19162,24 +17707,32 @@
           "value": {
             "input_usd_per_million_tokens": "0.144",
             "output_usd_per_million_tokens": "0.574",
+            "cache_read_usd_per_million_tokens": "0.0288",
+            "cache_write_usd_per_million_tokens": "0.18",
             "tiers": [
               {
                 "tier_type": "context",
                 "size_tokens": 32000,
                 "input_usd_per_million_tokens": "0.216",
-                "output_usd_per_million_tokens": "0.861"
+                "output_usd_per_million_tokens": "0.861",
+                "cache_read_usd_per_million_tokens": "0.0432",
+                "cache_write_usd_per_million_tokens": "0.27"
               },
               {
                 "tier_type": "context",
                 "size_tokens": 128000,
                 "input_usd_per_million_tokens": "0.359",
-                "output_usd_per_million_tokens": "1.434"
+                "output_usd_per_million_tokens": "1.434",
+                "cache_read_usd_per_million_tokens": "0.0718",
+                "cache_write_usd_per_million_tokens": "0.44875"
               },
               {
                 "tier_type": "context",
                 "size_tokens": 256000,
                 "input_usd_per_million_tokens": "0.717",
-                "output_usd_per_million_tokens": "3.584"
+                "output_usd_per_million_tokens": "3.584",
+                "cache_read_usd_per_million_tokens": "0.1434",
+                "cache_write_usd_per_million_tokens": "0.89625"
               }
             ]
           },
@@ -19543,117 +18096,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "qwen3-max-preview",
-      "field": "display_name",
-      "winner": {
-        "value": "Qwen3-Max-Preview",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "iflowcn",
-          "source_id": "qwen3-max-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Qwen3-Max-Preview",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "qwen3-max-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Qwen3 Max Preview",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "qwen3-max-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-max-preview",
-      "field": "knowledge_cutoff",
-      "winner": {
-        "value": "2024-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "iflowcn",
-          "source_id": "qwen3-max-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-12",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "qwen3-max-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-04",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "qwen3-max-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-max-preview",
-      "field": "origin",
-      "winner": {
-        "value": "iFlow",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "iflowcn",
-          "source_id": "qwen3-max-preview",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "iFlow",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "iflowcn",
-            "source_id": "qwen3-max-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Qiniu",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "qwen3-max-preview",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "qwen3-next-80b-a3b-instruct",
       "field": "context_window_tokens",
       "winner": {
@@ -19808,53 +18250,6 @@
     },
     {
       "model_id": "qwen3-next-80b-a3b-thinking",
-      "field": "context_window_tokens",
-      "winner": {
-        "value": 131072,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-next-80b-a3b-thinking",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": 131072,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": 131072,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": 262144,
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-next-80b-a3b-thinking",
       "field": "description",
       "winner": {
         "value": "Efficient Qwen thinking model for local reasoning, math, and coding agents",
@@ -19885,63 +18280,6 @@
             "source_id": "qwen3-next-80b-a3b-thinking",
             "priority": 70,
             "policy_rank": 23
-          }
-        },
-        {
-          "value": "Qwen reasoning model for deliberate problem solving, math, and coding",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-            "priority": 70,
-            "policy_rank": 28
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "qwen3-next-80b-a3b-thinking",
-      "field": "display_name",
-      "winner": {
-        "value": "Qwen3-Next 80B-A3B (Thinking)",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "alibaba",
-          "source_id": "qwen3-next-80b-a3b-thinking",
-          "priority": 70,
-          "policy_rank": 5
-        }
-      },
-      "candidates": [
-        {
-          "value": "Qwen3-Next 80B-A3B (Thinking)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 5
-          }
-        },
-        {
-          "value": "Qwen3-Next 80B-A3B (Thinking)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "alibaba-cn",
-            "source_id": "qwen3-next-80b-a3b-thinking",
-            "priority": 70,
-            "policy_rank": 23
-          }
-        },
-        {
-          "value": "Qwen3-Next-80B-A3B-Thinking",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-            "priority": 70,
-            "policy_rank": 28
           }
         }
       ],
@@ -19988,19 +18326,6 @@
             "source_id": "qwen3-next-80b-a3b-thinking",
             "priority": 70,
             "policy_rank": 23
-          }
-        },
-        {
-          "value": {
-            "input_usd_per_million_tokens": "0.3",
-            "output_usd_per_million_tokens": "2"
-          },
-          "source": {
-            "upstream": "models.dev",
-            "provider": "huggingface",
-            "source_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-            "priority": 70,
-            "policy_rank": 28
           }
         }
       ],
@@ -20197,18 +18522,24 @@
         "value": {
           "input_usd_per_million_tokens": "0.2",
           "output_usd_per_million_tokens": "1.6",
+          "cache_read_usd_per_million_tokens": "0.04",
+          "cache_write_usd_per_million_tokens": "0.25",
           "tiers": [
             {
               "tier_type": "context",
               "size_tokens": 32000,
               "input_usd_per_million_tokens": "0.3",
-              "output_usd_per_million_tokens": "2.4"
+              "output_usd_per_million_tokens": "2.4",
+              "cache_read_usd_per_million_tokens": "0.06",
+              "cache_write_usd_per_million_tokens": "0.375"
             },
             {
               "tier_type": "context",
               "size_tokens": 128000,
               "input_usd_per_million_tokens": "0.6",
-              "output_usd_per_million_tokens": "4.8"
+              "output_usd_per_million_tokens": "4.8",
+              "cache_read_usd_per_million_tokens": "0.12",
+              "cache_write_usd_per_million_tokens": "0.75"
             }
           ]
         },
@@ -20225,18 +18556,24 @@
           "value": {
             "input_usd_per_million_tokens": "0.2",
             "output_usd_per_million_tokens": "1.6",
+            "cache_read_usd_per_million_tokens": "0.04",
+            "cache_write_usd_per_million_tokens": "0.25",
             "tiers": [
               {
                 "tier_type": "context",
                 "size_tokens": 32000,
                 "input_usd_per_million_tokens": "0.3",
-                "output_usd_per_million_tokens": "2.4"
+                "output_usd_per_million_tokens": "2.4",
+                "cache_read_usd_per_million_tokens": "0.06",
+                "cache_write_usd_per_million_tokens": "0.375"
               },
               {
                 "tier_type": "context",
                 "size_tokens": 128000,
                 "input_usd_per_million_tokens": "0.6",
-                "output_usd_per_million_tokens": "4.8"
+                "output_usd_per_million_tokens": "4.8",
+                "cache_read_usd_per_million_tokens": "0.12",
+                "cache_write_usd_per_million_tokens": "0.75"
               }
             ]
           },
@@ -20252,18 +18589,24 @@
           "value": {
             "input_usd_per_million_tokens": "0.143353",
             "output_usd_per_million_tokens": "1.433525",
+            "cache_read_usd_per_million_tokens": "0.028671",
+            "cache_write_usd_per_million_tokens": "0.179191",
             "tiers": [
               {
                 "tier_type": "context",
                 "size_tokens": 32000,
                 "input_usd_per_million_tokens": "0.215",
-                "output_usd_per_million_tokens": "2.15"
+                "output_usd_per_million_tokens": "2.15",
+                "cache_read_usd_per_million_tokens": "0.043",
+                "cache_write_usd_per_million_tokens": "0.26875"
               },
               {
                 "tier_type": "context",
                 "size_tokens": 128000,
                 "input_usd_per_million_tokens": "0.43",
-                "output_usd_per_million_tokens": "4.301"
+                "output_usd_per_million_tokens": "4.301",
+                "cache_read_usd_per_million_tokens": "0.086",
+                "cache_write_usd_per_million_tokens": "0.5375"
               }
             ]
           },
@@ -21860,7 +20203,7 @@
         "value": {
           "input_usd_per_million_tokens": "0.03",
           "output_usd_per_million_tokens": "0.13",
-          "cache_read_usd_per_million_tokens": "0.003",
+          "cache_read_usd_per_million_tokens": "0.006",
           "cache_write_usd_per_million_tokens": "0.0375",
           "tiers": [
             {
@@ -21868,7 +20211,7 @@
               "size_tokens": 32000,
               "input_usd_per_million_tokens": "0.1",
               "output_usd_per_million_tokens": "0.4",
-              "cache_read_usd_per_million_tokens": "0.01",
+              "cache_read_usd_per_million_tokens": "0.02",
               "cache_write_usd_per_million_tokens": "0.125"
             },
             {
@@ -21876,7 +20219,7 @@
               "size_tokens": 256000,
               "input_usd_per_million_tokens": "0.2",
               "output_usd_per_million_tokens": "0.8",
-              "cache_read_usd_per_million_tokens": "0.02",
+              "cache_read_usd_per_million_tokens": "0.04",
               "cache_write_usd_per_million_tokens": "0.25"
             }
           ]
@@ -21894,7 +20237,7 @@
           "value": {
             "input_usd_per_million_tokens": "0.03",
             "output_usd_per_million_tokens": "0.13",
-            "cache_read_usd_per_million_tokens": "0.003",
+            "cache_read_usd_per_million_tokens": "0.006",
             "cache_write_usd_per_million_tokens": "0.0375",
             "tiers": [
               {
@@ -21902,7 +20245,7 @@
                 "size_tokens": 32000,
                 "input_usd_per_million_tokens": "0.1",
                 "output_usd_per_million_tokens": "0.4",
-                "cache_read_usd_per_million_tokens": "0.01",
+                "cache_read_usd_per_million_tokens": "0.02",
                 "cache_write_usd_per_million_tokens": "0.125"
               },
               {
@@ -21910,7 +20253,7 @@
                 "size_tokens": 256000,
                 "input_usd_per_million_tokens": "0.2",
                 "output_usd_per_million_tokens": "0.8",
-                "cache_read_usd_per_million_tokens": "0.02",
+                "cache_read_usd_per_million_tokens": "0.04",
                 "cache_write_usd_per_million_tokens": "0.25"
               }
             ]
@@ -21927,7 +20270,7 @@
           "value": {
             "input_usd_per_million_tokens": "0.02962",
             "output_usd_per_million_tokens": "0.1185",
-            "cache_read_usd_per_million_tokens": "0.002962",
+            "cache_read_usd_per_million_tokens": "0.005924",
             "cache_write_usd_per_million_tokens": "0.03703",
             "tiers": [
               {
@@ -21935,7 +20278,7 @@
                 "size_tokens": 32000,
                 "input_usd_per_million_tokens": "0.08887",
                 "output_usd_per_million_tokens": "0.35549",
-                "cache_read_usd_per_million_tokens": "0.008887",
+                "cache_read_usd_per_million_tokens": "0.017774",
                 "cache_write_usd_per_million_tokens": "0.11109"
               },
               {
@@ -21943,7 +20286,7 @@
                 "size_tokens": 256000,
                 "input_usd_per_million_tokens": "0.17774",
                 "output_usd_per_million_tokens": "0.71098",
-                "cache_read_usd_per_million_tokens": "0.017774",
+                "cache_read_usd_per_million_tokens": "0.035548",
                 "cache_write_usd_per_million_tokens": "0.22218"
               }
             ]
@@ -22092,7 +20435,7 @@
         "value": {
           "input_usd_per_million_tokens": "0.4",
           "output_usd_per_million_tokens": "1.6",
-          "cache_read_usd_per_million_tokens": "0.04",
+          "cache_read_usd_per_million_tokens": "0.08",
           "cache_write_usd_per_million_tokens": "0.5",
           "tiers": [
             {
@@ -22100,7 +20443,7 @@
               "size_tokens": 256000,
               "input_usd_per_million_tokens": "1.2",
               "output_usd_per_million_tokens": "4.8",
-              "cache_read_usd_per_million_tokens": "0.12",
+              "cache_read_usd_per_million_tokens": "0.24",
               "cache_write_usd_per_million_tokens": "1.5"
             }
           ]
@@ -22118,7 +20461,7 @@
           "value": {
             "input_usd_per_million_tokens": "0.4",
             "output_usd_per_million_tokens": "1.6",
-            "cache_read_usd_per_million_tokens": "0.04",
+            "cache_read_usd_per_million_tokens": "0.08",
             "cache_write_usd_per_million_tokens": "0.5",
             "tiers": [
               {
@@ -22126,7 +20469,7 @@
                 "size_tokens": 256000,
                 "input_usd_per_million_tokens": "1.2",
                 "output_usd_per_million_tokens": "4.8",
-                "cache_read_usd_per_million_tokens": "0.12",
+                "cache_read_usd_per_million_tokens": "0.24",
                 "cache_write_usd_per_million_tokens": "1.5"
               }
             ]
@@ -22143,7 +20486,7 @@
           "value": {
             "input_usd_per_million_tokens": "0.276",
             "output_usd_per_million_tokens": "1.101",
-            "cache_read_usd_per_million_tokens": "0.0276",
+            "cache_read_usd_per_million_tokens": "0.0552",
             "cache_write_usd_per_million_tokens": "0.345",
             "tiers": [
               {
@@ -22151,7 +20494,7 @@
                 "size_tokens": 256000,
                 "input_usd_per_million_tokens": "0.826",
                 "output_usd_per_million_tokens": "3.301",
-                "cache_read_usd_per_million_tokens": "0.0826",
+                "cache_read_usd_per_million_tokens": "0.1652",
                 "cache_write_usd_per_million_tokens": "1.0325"
               }
             ]
@@ -22205,8 +20548,8 @@
           "value": {
             "input_usd_per_million_tokens": "0.11875",
             "output_usd_per_million_tokens": "0.40073",
-            "cache_read_usd_per_million_tokens": "0.01187",
-            "cache_write_usd_per_million_tokens": "0.14844"
+            "cache_read_usd_per_million_tokens": "0.014844",
+            "cache_write_usd_per_million_tokens": "0.185547"
           },
           "source": {
             "upstream": "models.dev",

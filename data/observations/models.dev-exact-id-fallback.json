@@ -3,8 +3,8 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "1ac2ae15da5a9015ed44aef1456f8ebe9ea6e3c9019788a6f416232cfb93e1f4",
-    "record_count": 232
+    "sha256": "78e4722b4db9b8d3edc47acb4d68fe9336a44e997fbe3af97d142d01da6b1259",
+    "record_count": 230
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
   "records": [
@@ -304,72 +304,6 @@
       }
     },
     {
-      "catalog_model_id": "alibaba-qwen3-32b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "alibaba-qwen3-32b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "alibaba-qwen3-32b",
-        "name": "Qwen3 32B",
-        "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-        "family": "qwen",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-04",
-        "release_date": "2025-04-28",
-        "last_updated": "2025-04-28",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 32768,
-          "output": 32768
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.25,
-          "output": 0.55
-        },
-        "canonical_model_id": "alibaba/qwen3-32b"
-      }
-    },
-    {
       "catalog_model_id": "alicloud-deepseek-v4-flash",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -657,303 +591,6 @@
           "output": 0
         },
         "canonical_model_id": "sdaia/allam-2-7b"
-      }
-    },
-    {
-      "catalog_model_id": "anthropic-claude-3-opus",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "anthropic-claude-3-opus",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "anthropic-claude-3-opus",
-        "name": "Claude 3 Opus",
-        "description": "Legacy model retained for compatibility with older integrations",
-        "family": "claude-opus",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2023-08",
-        "release_date": "2024-02-29",
-        "last_updated": "2024-02-29",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 4096
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 15,
-          "output": 75,
-          "cache_read": 1.5,
-          "cache_write": 18.75
-        }
-      }
-    },
-    {
-      "catalog_model_id": "anthropic-claude-3.5-haiku",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "anthropic-claude-3.5-haiku",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "anthropic-claude-3.5-haiku",
-        "name": "Claude 3.5 Haiku",
-        "description": "Legacy model retained for compatibility with older integrations",
-        "family": "claude-haiku",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-07-31",
-        "release_date": "2024-10-22",
-        "last_updated": "2024-10-22",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 8192
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.8,
-          "output": 4,
-          "cache_read": 0.08,
-          "cache_write": 1
-        },
-        "canonical_model_id": "anthropic/claude-3-5-haiku-20241022"
-      }
-    },
-    {
-      "catalog_model_id": "anthropic-claude-3.5-sonnet",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "anthropic-claude-3.5-sonnet",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "anthropic-claude-3.5-sonnet",
-        "name": "Claude 3.5 Sonnet",
-        "description": "Legacy model retained for compatibility with older integrations",
-        "family": "claude-sonnet",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-04",
-        "release_date": "2024-06-20",
-        "last_updated": "2024-10-22",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 8192
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3,
-          "cache_write": 3.75
-        }
-      }
-    },
-    {
-      "catalog_model_id": "anthropic-claude-3.7-sonnet",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "anthropic-claude-3.7-sonnet",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "anthropic-claude-3.7-sonnet",
-        "name": "Claude 3.7 Sonnet",
-        "description": "Legacy model retained for compatibility with older integrations",
-        "family": "claude-sonnet",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-10-31",
-        "release_date": "2025-02-19",
-        "last_updated": "2025-02-19",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 64000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3,
-          "cache_write": 3.75
-        },
-        "canonical_model_id": "anthropic/claude-3-7-sonnet-20250219"
-      }
-    },
-    {
-      "catalog_model_id": "anthropic-claude-4.1-opus",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "anthropic-claude-4.1-opus",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "anthropic-claude-4.1-opus",
-        "name": "Anthropic Claude 4.1 Opus",
-        "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-        "family": "claude-opus",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-03-31",
-        "release_date": "2025-08-05",
-        "last_updated": "2025-08-05",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 8192
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 15,
-          "output": 75,
-          "cache_read": 1.5,
-          "cache_write": 18.75
-        },
-        "canonical_model_id": "anthropic/claude-opus-4-1"
       }
     },
     {
@@ -1321,73 +958,6 @@
       }
     },
     {
-      "catalog_model_id": "anthropic-claude-opus-4",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "anthropic-claude-opus-4",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "anthropic-claude-opus-4",
-        "name": "Claude Opus 4",
-        "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-        "family": "claude-opus",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-03-31",
-        "release_date": "2025-05-22",
-        "last_updated": "2025-05-22",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 32000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 15,
-          "output": 75,
-          "cache_read": 1.5,
-          "cache_write": 18.75
-        },
-        "canonical_model_id": "anthropic/claude-opus-4-0"
-      }
-    },
-    {
       "catalog_model_id": "anthropic-claude-opus-4.5",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -1734,91 +1304,6 @@
           "cache_write": 6.25
         },
         "canonical_model_id": "anthropic/claude-opus-5"
-      }
-    },
-    {
-      "catalog_model_id": "anthropic-claude-sonnet-4",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "anthropic-claude-sonnet-4",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "anthropic-claude-sonnet-4",
-        "name": "Claude Sonnet 4",
-        "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
-        "family": "claude-sonnet",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-03-31",
-        "release_date": "2025-05-22",
-        "last_updated": "2025-05-22",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1000000,
-          "output": 64000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3,
-          "cache_write": 3.75,
-          "tiers": [
-            {
-              "input": 6,
-              "output": 22.5,
-              "cache_read": 0.3,
-              "cache_write": 3.75,
-              "tier": {
-                "type": "context",
-                "size": 200000
-              }
-            }
-          ],
-          "context_over_200k": {
-            "input": 6,
-            "output": 22.5,
-            "cache_read": 0.3,
-            "cache_write": 3.75
-          }
-        },
-        "canonical_model_id": "anthropic/claude-sonnet-4-0"
       }
     },
     {
@@ -2716,112 +2201,6 @@
       }
     },
     {
-      "catalog_model_id": "cerebras-llama-4-maverick-17b-128e-instruct",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "llama",
-        "source_id": "cerebras-llama-4-maverick-17b-128e-instruct",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "cerebras-llama-4-maverick-17b-128e-instruct",
-        "name": "Cerebras-Llama-4-Maverick-17B-128E-Instruct",
-        "description": "Open multimodal Llama model for strong reasoning and fast responses",
-        "family": "llama",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-01",
-        "release_date": "2025-04-05",
-        "last_updated": "2025-04-05",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 4096
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "canonical_model_id": "meta/llama-4-maverick-17b-instruct"
-      }
-    },
-    {
-      "catalog_model_id": "cerebras-llama-4-scout-17b-16e-instruct",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "llama",
-        "source_id": "cerebras-llama-4-scout-17b-16e-instruct",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "cerebras-llama-4-scout-17b-16e-instruct",
-        "name": "Cerebras-Llama-4-Scout-17B-16E-Instruct",
-        "description": "Open multimodal Llama model for long-context analysis and efficient agents",
-        "family": "llama",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-01",
-        "release_date": "2025-04-05",
-        "last_updated": "2025-04-05",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 4096
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "canonical_model_id": "meta/llama-4-scout-17b-instruct"
-      }
-    },
-    {
       "catalog_model_id": "chatgpt-4o-latest",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -2987,76 +2366,6 @@
         "cost": {
           "input": 3,
           "output": 15
-        },
-        "canonical_model_id": "anthropic/claude-3-7-sonnet-20250219"
-      }
-    },
-    {
-      "catalog_model_id": "claude-3-7-sonnet-latest",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "claude-3-7-sonnet-latest",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "claude-3-7-sonnet-latest",
-        "name": "Claude Sonnet 3.7",
-        "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
-        "family": "claude-sonnet",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "temperature": true,
-        "knowledge": "2024-10-31",
-        "release_date": "2025-02-19",
-        "last_updated": "2025-02-19",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1000000,
-          "output": 128000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3,
-          "cache_write": 3.75
         },
         "canonical_model_id": "anthropic/claude-3-7-sonnet-20250219"
       }
@@ -4438,138 +3747,6 @@
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
         "upstream": "models.dev",
-        "provider": "azure",
-        "source_id": "claude-opus-4-1",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "claude-opus-4-1",
-        "name": "Claude Opus 4.1",
-        "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-        "family": "claude-opus",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "budget_tokens",
-            "min": 1024
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-03-31",
-        "release_date": "2025-11-18",
-        "last_updated": "2025-11-18",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 32000
-        },
-        "provider": {
-          "npm": "@ai-sdk/anthropic",
-          "api": "https://${AZURE_RESOURCE_NAME}.services.ai.azure.com/anthropic/v1"
-        },
-        "cost": {
-          "input": 15,
-          "output": 75,
-          "cache_read": 1.5,
-          "cache_write": 18.75
-        }
-      }
-    },
-    {
-      "catalog_model_id": "claude-opus-4-1",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "azure-cognitive-services",
-        "source_id": "claude-opus-4-1",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "claude-opus-4-1",
-        "name": "Claude Opus 4.1",
-        "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-        "family": "claude-opus",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "budget_tokens",
-            "min": 1024
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-03-31",
-        "release_date": "2025-11-18",
-        "last_updated": "2025-11-18",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 32000
-        },
-        "provider": {
-          "npm": "@ai-sdk/anthropic",
-          "api": "https://${AZURE_COGNITIVE_SERVICES_RESOURCE_NAME}.services.ai.azure.com/anthropic/v1"
-        },
-        "cost": {
-          "input": 15,
-          "output": 75,
-          "cache_read": 1.5,
-          "cache_write": 18.75
-        }
-      }
-    },
-    {
-      "catalog_model_id": "claude-opus-4-1",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
         "provider": "helicone",
         "source_id": "claude-opus-4-1",
         "priority": 20,
@@ -4755,71 +3932,6 @@
           "npm": "@ai-sdk/anthropic",
           "api": "https://opencode.ai/inference/anthropic/v1"
         },
-        "cost": {
-          "input": 15,
-          "output": 75,
-          "cache_read": 1.5,
-          "cache_write": 18.75
-        },
-        "canonical_model_id": "anthropic/claude-opus-4-1"
-      }
-    },
-    {
-      "catalog_model_id": "claude-opus-4-1",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "claude-opus-4-1",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "claude-opus-4-1",
-        "name": "Claude Opus 4.1 (latest)",
-        "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-        "family": "claude-opus",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          }
-        ],
-        "tool_call": true,
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "temperature": true,
-        "knowledge": "2025-03-31",
-        "release_date": "2025-08-05",
-        "last_updated": "2025-08-05",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 32000
-        },
-        "status": "deprecated",
         "cost": {
           "input": 15,
           "output": 75,
@@ -7434,6 +6546,9 @@
           "context": 256000,
           "output": 256000
         },
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.3,
           "output": 0.9
@@ -7484,6 +6599,9 @@
         "limit": {
           "context": 256000,
           "output": 256000
+        },
+        "provider": {
+          "shape": "completions"
         },
         "cost": {
           "input": 0.3,
@@ -10912,70 +10030,6 @@
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
         "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "deepseek-r1-distill-llama-70b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "deepseek-r1-distill-llama-70b",
-        "name": "DeepSeek R1 Distill Llama 70B",
-        "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
-        "family": "deepseek-thinking",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "release_date": "2025-01-30",
-        "last_updated": "2025-01-30",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 32678,
-          "output": 8192
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.99,
-          "output": 0.99
-        }
-      }
-    },
-    {
-      "catalog_model_id": "deepseek-r1-distill-llama-70b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
         "provider": "helicone",
         "source_id": "deepseek-r1-distill-llama-70b",
         "priority": 20,
@@ -11578,128 +10632,6 @@
       }
     },
     {
-      "catalog_model_id": "deepseek-v4-flash:0731",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "ollama-cloud",
-        "source_id": "deepseek-v4-flash:0731",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "deepseek-v4-flash:0731",
-        "name": "DeepSeek V4 Flash 0731",
-        "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
-        "family": "deepseek-flash",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          },
-          {
-            "type": "effort",
-            "values": [
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": false,
-        "temperature": true,
-        "knowledge": "2025-05",
-        "release_date": "2026-07-31",
-        "last_updated": "2026-07-31",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1048576,
-          "output": 1048576
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.22,
-          "output": 0.66,
-          "cache_read": 0.007
-        },
-        "canonical_model_id": "deepseek/deepseek-v4-flash-0731"
-      }
-    },
-    {
-      "catalog_model_id": "devstral-2",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "devstral-2",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "devstral-2",
-        "name": "Devstral 2",
-        "description": "Mistral's coding-agent model for repository work, terminal tasks, and software fixes",
-        "family": "devstral",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-12",
-        "release_date": "2025-12-09",
-        "last_updated": "2025-12-09",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 256000,
-          "output": 131072
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.4,
-          "output": 2,
-          "cache_read": 0.4,
-          "cache_write": 0.4
-        },
-        "canonical_model_id": "mistral/devstral-2512"
-      }
-    },
-    {
       "catalog_model_id": "devstral-2-123b-instruct-2512",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -11750,62 +10682,6 @@
           "output": 2.736
         },
         "canonical_model_id": "mistral/devstral-2512"
-      }
-    },
-    {
-      "catalog_model_id": "devstral-small-2",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "devstral-small-2",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "devstral-small-2",
-        "name": "Devstral Small 2",
-        "description": "Compact multimodal coding model for repository exploration, file editing, and software agents",
-        "family": "devstral",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-12",
-        "release_date": "2025-12-09",
-        "last_updated": "2025-12-09",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 256000,
-          "output": 131072
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.1,
-          "output": 0.3,
-          "cache_read": 0.1,
-          "cache_write": 0.1
-        },
-        "canonical_model_id": "mistral/devstral-small-2"
       }
     },
     {
@@ -15796,80 +14672,6 @@
       }
     },
     {
-      "catalog_model_id": "gemini-3-flash",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "gemini-3-flash",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "gemini-3-flash",
-        "name": "Gemini 3 Flash Preview",
-        "description": "New Gemini flash lane bringing frontier-style multimodal reasoning to cheaper runs",
-        "family": "gemini-flash",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "minimal",
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-01",
-        "release_date": "2025-12-17",
-        "last_updated": "2025-12-17",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video",
-            "audio",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1000000,
-          "output": 65000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.5,
-          "output": 3,
-          "cache_read": 0.05,
-          "cache_write": 0.083333
-        },
-        "canonical_model_id": "google/gemini-3-flash-preview"
-      }
-    },
-    {
       "catalog_model_id": "gemini-3-pro",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -16459,79 +15261,6 @@
             "output": 18,
             "cache_read": 0.4
           }
-        },
-        "canonical_model_id": "google/gemini-3.1-pro-preview"
-      }
-    },
-    {
-      "catalog_model_id": "gemini-3.1-pro",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "gemini-3.1-pro",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "gemini-3.1-pro",
-        "name": "Gemini 3.1 Pro Preview",
-        "description": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
-        "family": "gemini-pro",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-01",
-        "release_date": "2026-02-19",
-        "last_updated": "2026-02-19",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video",
-            "audio",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1000000,
-          "output": 64000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 2,
-          "output": 12,
-          "cache_read": 0.2,
-          "cache_write": 0.375
         },
         "canonical_model_id": "google/gemini-3.1-pro-preview"
       }
@@ -18547,74 +17276,6 @@
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
         "upstream": "models.dev",
-        "provider": "neuralwatt",
-        "source_id": "glm-5.2-fast",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-5.2-fast",
-        "name": "GLM 5.2 Fast",
-        "description": "Efficient GLM model for fast reasoning, coding, and agent workflows",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high",
-              "max"
-            ]
-          },
-          {
-            "type": "budget_tokens"
-          }
-        ],
-        "tool_call": true,
-        "interleaved": true,
-        "structured_output": false,
-        "temperature": true,
-        "release_date": "2026-06-13",
-        "last_updated": "2026-06-13",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1048560,
-          "output": 1048560
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 1.45,
-          "output": 4.5,
-          "cache_read": 0.145
-        },
-        "canonical_model_id": "zhipuai/glm-5.2"
-      }
-    },
-    {
-      "catalog_model_id": "glm-5.2-fast",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
         "provider": "requesty",
         "source_id": "glm-5.2-fast",
         "priority": 20,
@@ -18671,74 +17332,6 @@
           "output": 6.6,
           "cache_read": 0.21
         }
-      }
-    },
-    {
-      "catalog_model_id": "glm-5.2-flex",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "neuralwatt",
-        "source_id": "glm-5.2-flex",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-5.2-flex",
-        "name": "GLM 5.2 Flex",
-        "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high",
-              "max"
-            ]
-          },
-          {
-            "type": "budget_tokens"
-          }
-        ],
-        "tool_call": true,
-        "interleaved": true,
-        "structured_output": false,
-        "temperature": true,
-        "release_date": "2026-06-13",
-        "last_updated": "2026-06-13",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1048560,
-          "output": 1048560
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.9425,
-          "output": 2.925,
-          "cache_read": 0.09425
-        },
-        "canonical_model_id": "zhipuai/glm-5.2"
       }
     },
     {
@@ -19253,278 +17846,6 @@
           "input": 1.738325,
           "output": 5.1589,
           "cache_read": 0.4486
-        },
-        "canonical_model_id": "zhipuai/glm-5.2"
-      }
-    },
-    {
-      "catalog_model_id": "glm-5.2-short",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "neuralwatt",
-        "source_id": "glm-5.2-short",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-5.2-short",
-        "name": "GLM 5.2 Short",
-        "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high",
-              "max"
-            ]
-          },
-          {
-            "type": "budget_tokens"
-          }
-        ],
-        "tool_call": true,
-        "interleaved": true,
-        "structured_output": false,
-        "temperature": true,
-        "release_date": "2026-06-13",
-        "last_updated": "2026-06-13",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 199984,
-          "output": 32000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 1.45,
-          "output": 4.5,
-          "cache_read": 0.145
-        },
-        "canonical_model_id": "zhipuai/glm-5.2"
-      }
-    },
-    {
-      "catalog_model_id": "glm-5.2-short-fast",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "neuralwatt",
-        "source_id": "glm-5.2-short-fast",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-5.2-short-fast",
-        "name": "GLM 5.2 Short Fast",
-        "description": "Efficient GLM model for fast reasoning, coding, and agent workflows",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high",
-              "max"
-            ]
-          },
-          {
-            "type": "budget_tokens"
-          }
-        ],
-        "tool_call": true,
-        "interleaved": true,
-        "structured_output": false,
-        "temperature": true,
-        "release_date": "2026-06-13",
-        "last_updated": "2026-06-13",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 199984,
-          "output": 32000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 1.45,
-          "output": 4.5,
-          "cache_read": 0.145
-        },
-        "canonical_model_id": "zhipuai/glm-5.2"
-      }
-    },
-    {
-      "catalog_model_id": "glm-5.2-short-fast-flex",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "neuralwatt",
-        "source_id": "glm-5.2-short-fast-flex",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-5.2-short-fast-flex",
-        "name": "GLM 5.2 Short Fast Flex",
-        "description": "Efficient GLM model for fast reasoning, coding, and agent workflows",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high",
-              "max"
-            ]
-          },
-          {
-            "type": "budget_tokens"
-          }
-        ],
-        "tool_call": true,
-        "interleaved": true,
-        "structured_output": false,
-        "temperature": true,
-        "release_date": "2026-06-13",
-        "last_updated": "2026-06-13",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 199984,
-          "output": 32000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.9425,
-          "output": 2.925,
-          "cache_read": 0.09425
-        },
-        "canonical_model_id": "zhipuai/glm-5.2"
-      }
-    },
-    {
-      "catalog_model_id": "glm-5.2-short-flex",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "neuralwatt",
-        "source_id": "glm-5.2-short-flex",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-5.2-short-flex",
-        "name": "GLM 5.2 Short Flex",
-        "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high",
-              "max"
-            ]
-          },
-          {
-            "type": "budget_tokens"
-          }
-        ],
-        "tool_call": true,
-        "interleaved": true,
-        "structured_output": false,
-        "temperature": true,
-        "release_date": "2026-06-13",
-        "last_updated": "2026-06-13",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 199984,
-          "output": 32000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.9425,
-          "output": 2.925,
-          "cache_read": 0.09425
         },
         "canonical_model_id": "zhipuai/glm-5.2"
       }
@@ -20071,6 +18392,9 @@
           "output": 4096
         },
         "status": "deprecated",
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.5,
           "output": 1.5
@@ -20123,6 +18447,9 @@
           "output": 4096
         },
         "status": "deprecated",
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.5,
           "output": 1.5
@@ -20175,6 +18502,9 @@
           "output": 4096
         },
         "status": "deprecated",
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 1,
           "output": 2
@@ -20227,6 +18557,9 @@
           "output": 4096
         },
         "status": "deprecated",
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 1,
           "output": 2
@@ -20384,6 +18717,9 @@
           "output": 4096
         },
         "status": "deprecated",
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 10,
           "output": 30
@@ -20437,6 +18773,9 @@
           "output": 4096
         },
         "status": "deprecated",
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 10,
           "output": 30
@@ -23565,62 +21904,6 @@
       }
     },
     {
-      "catalog_model_id": "gpt-5.3-chat-latest",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "opper",
-        "source_id": "gpt-5.3-chat-latest",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "gpt-5.3-chat-latest",
-        "name": "GPT-5.3 Chat (latest)",
-        "description": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
-        "family": "gpt",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-08-31",
-        "release_date": "2026-03-03",
-        "last_updated": "2026-03-03",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "output": 16384
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 1.75,
-          "output": 14,
-          "cache_read": 0.175
-        },
-        "canonical_model_id": "openai/gpt-5.3-chat-latest"
-      }
-    },
-    {
       "catalog_model_id": "gpt-5.3-codex-xhigh",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -25521,59 +23804,6 @@
       }
     },
     {
-      "catalog_model_id": "groq-llama-4-maverick-17b-128e-instruct",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "llama",
-        "source_id": "groq-llama-4-maverick-17b-128e-instruct",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "groq-llama-4-maverick-17b-128e-instruct",
-        "name": "Groq-Llama-4-Maverick-17B-128E-Instruct",
-        "description": "Open multimodal Llama model for strong reasoning and fast responses",
-        "family": "llama",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-01",
-        "release_date": "2025-04-05",
-        "last_updated": "2025-04-05",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 4096
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "canonical_model_id": "meta/llama-4-maverick-17b-instruct"
-      }
-    },
-    {
       "catalog_model_id": "gte-large-en-v1.5",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -27412,59 +25642,6 @@
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
         "upstream": "models.dev",
-        "provider": "iflowcn",
-        "source_id": "kimi-k2",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "kimi-k2",
-        "name": "Kimi-K2",
-        "description": "Kimi model for long-context chat, coding, and agentic reasoning",
-        "family": "kimi-k2",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-10",
-        "release_date": "2025-07-11",
-        "last_updated": "2025-07-11",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 64000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "canonical_model_id": "moonshotai/kimi-k2"
-      }
-    },
-    {
-      "catalog_model_id": "kimi-k2",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
         "provider": "llmgateway",
         "source_id": "kimi-k2",
         "priority": 20,
@@ -29020,6 +27197,9 @@
           "context": 128000,
           "output": 8192
         },
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.2,
           "output": 0.78
@@ -29071,6 +27251,9 @@
         "limit": {
           "context": 128000,
           "output": 8192
+        },
+        "provider": {
+          "shape": "completions"
         },
         "cost": {
           "input": 0.2,
@@ -29494,142 +27677,6 @@
       }
     },
     {
-      "catalog_model_id": "magistral-medium",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "magistral-medium",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "magistral-medium",
-        "name": "Magistral Medium (latest)",
-        "description": "Mistral reasoning model for transparent analysis, math, and complex decisions",
-        "family": "magistral-medium",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "temperature": true,
-        "knowledge": "2025-06",
-        "release_date": "2025-03-17",
-        "last_updated": "2025-03-20",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "output": 64000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 2,
-          "output": 5,
-          "cache_read": 2,
-          "cache_write": 2
-        },
-        "canonical_model_id": "mistral/magistral-medium-latest"
-      }
-    },
-    {
-      "catalog_model_id": "mai-code-1-flash-picker",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "github-copilot",
-        "source_id": "mai-code-1-flash-picker",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mai-code-1-flash-picker",
-        "name": "MAI-Code-1-Flash",
-        "description": "Microsoft coding model built for fast, efficient assistance in everyday developer workflows",
-        "family": "mai",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-12",
-        "release_date": "2026-06-02",
-        "last_updated": "2026-06-08",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 256000,
-          "input": 128000,
-          "output": 128000
-        },
-        "status": "deprecated",
-        "provider": {
-          "npm": "@ai-sdk/openai"
-        },
-        "cost": {
-          "input": 0.75,
-          "output": 4.5,
-          "cache_read": 0.075
-        },
-        "canonical_model_id": "microsoft/mai-code-1-flash"
-      }
-    },
-    {
       "catalog_model_id": "mai-code-1.1-flash",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -30019,12 +28066,12 @@
       }
     },
     {
-      "catalog_model_id": "mimo-v2-tts",
+      "catalog_model_id": "mimo-v2-flash",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
         "upstream": "models.dev",
-        "provider": "xiaomi-token-plan-ams",
-        "source_id": "mimo-v2-tts",
+        "provider": "qiniu-ai",
+        "source_id": "mimo-v2-flash",
         "priority": 20,
         "policy_rank": 0
       },
@@ -30039,45 +28086,47 @@
         "artifact": 0
       },
       "raw": {
-        "id": "mimo-v2-tts",
-        "type": "speech",
-        "name": "MiMo-V2-TTS",
-        "description": "Speech generation model for controllable voice, narration, and audio delivery",
+        "id": "mimo-v2-flash",
+        "name": "Mimo-V2-Flash",
+        "description": "MiMo flash model for fast multimodal assistance and agent workflows",
         "family": "mimo",
         "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "temperature": false,
-        "release_date": "2026-03-18",
-        "last_updated": "2026-03-18",
+        "reasoning": true,
+        "reasoning_options": [],
+        "tool_call": true,
+        "temperature": true,
+        "knowledge": "2024-12-01",
+        "release_date": "2025-12-16",
+        "last_updated": "2026-02-04",
         "modalities": {
           "input": [
             "text"
           ],
           "output": [
-            "audio"
+            "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
-          "context": 8192,
-          "output": 8192
+          "context": 256000,
+          "output": 256000
         },
         "status": "deprecated",
         "cost": {
-          "input": 0,
-          "output": 0
+          "input": 0.1,
+          "output": 0.3,
+          "cache_read": 0.01
         },
-        "canonical_model_id": "xiaomi/mimo-v2-tts"
+        "canonical_model_id": "xiaomi/mimo-v2-flash"
       }
     },
     {
-      "catalog_model_id": "mimo-v2-tts",
+      "catalog_model_id": "mimo-v2-pro",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
         "upstream": "models.dev",
-        "provider": "xiaomi-token-plan-cn",
-        "source_id": "mimo-v2-tts",
+        "provider": "abacus",
+        "source_id": "mimo-v2-pro",
         "priority": 20,
         "policy_rank": 0
       },
@@ -30092,15 +28141,16 @@
         "artifact": 0
       },
       "raw": {
-        "id": "mimo-v2-tts",
-        "type": "speech",
-        "name": "MiMo-V2-TTS",
-        "description": "Speech generation model for controllable voice, narration, and audio delivery",
+        "id": "mimo-v2-pro",
+        "name": "MiMo-V2-Pro",
+        "description": "Earlier MiMo Pro model for multimodal agents, reasoning, and code tasks",
         "family": "mimo",
         "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "temperature": false,
+        "reasoning": true,
+        "reasoning_options": [],
+        "tool_call": true,
+        "temperature": true,
+        "knowledge": "2024-12",
         "release_date": "2026-03-18",
         "last_updated": "2026-03-18",
         "modalities": {
@@ -30108,73 +28158,20 @@
             "text"
           ],
           "output": [
-            "audio"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 8192,
-          "output": 8192
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "canonical_model_id": "xiaomi/mimo-v2-tts"
-      }
-    },
-    {
-      "catalog_model_id": "mimo-v2-tts",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "xiaomi-token-plan-sgp",
-        "source_id": "mimo-v2-tts",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mimo-v2-tts",
-        "type": "speech",
-        "name": "MiMo-V2-TTS",
-        "description": "Speech generation model for controllable voice, narration, and audio delivery",
-        "family": "mimo",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "temperature": false,
-        "release_date": "2026-03-18",
-        "last_updated": "2026-03-18",
-        "modalities": {
-          "input": [
             "text"
-          ],
-          "output": [
-            "audio"
           ]
         },
         "open_weights": false,
         "limit": {
-          "context": 8192,
-          "output": 8192
+          "context": 1048576,
+          "output": 131072
         },
-        "status": "deprecated",
         "cost": {
-          "input": 0,
-          "output": 0
+          "input": 1,
+          "output": 3,
+          "cache_read": 0.2
         },
-        "canonical_model_id": "xiaomi/mimo-v2-tts"
+        "canonical_model_id": "xiaomi/mimo-v2-pro"
       }
     },
     {
@@ -31052,109 +29049,6 @@
       }
     },
     {
-      "catalog_model_id": "ministral-14b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "ministral-14b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ministral-14b",
-        "name": "Ministral 14B",
-        "description": "Compact multimodal Mistral model for local assistants, edge agents, and efficient tool use",
-        "family": "ministral",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "release_date": "2025-12-02",
-        "last_updated": "2025-12-02",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 256000,
-          "output": 131072
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.2,
-          "output": 0.2,
-          "cache_read": 0.2,
-          "cache_write": 0.2
-        },
-        "canonical_model_id": "mistral/ministral-14b"
-      }
-    },
-    {
-      "catalog_model_id": "ministral-3-8b-instruct-2512",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "ministral-3-8b-instruct-2512",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ministral-3-8b-instruct-2512",
-        "name": "Ministral 3 8B",
-        "description": "Compact Mistral model for edge, latency-sensitive, and cost-efficient workloads",
-        "family": "ministral",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "release_date": "2025-12-02",
-        "last_updated": "2025-12-02",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "canonical_model_id": "mistral/ministral-3-8b-instruct-2512"
-      }
-    },
-    {
       "catalog_model_id": "ministral-3b",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -31198,6 +29092,9 @@
         "limit": {
           "context": 128000,
           "output": 8192
+        },
+        "provider": {
+          "shape": "completions"
         },
         "cost": {
           "input": 0.04,
@@ -31250,65 +29147,13 @@
           "context": 128000,
           "output": 8192
         },
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.04,
           "output": 0.04
         }
-      }
-    },
-    {
-      "catalog_model_id": "ministral-3b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "ministral-3b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ministral-3b",
-        "name": "Ministral 3B",
-        "description": "Compact Mistral model for edge, latency-sensitive, and cost-efficient workloads",
-        "family": "ministral",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-03",
-        "release_date": "2024-10-16",
-        "last_updated": "2024-10-16",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 4000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.1,
-          "output": 0.1,
-          "cache_read": 0.1,
-          "cache_write": 0.1
-        },
-        "canonical_model_id": "mistral/ministral-3b"
       }
     },
     {
@@ -31359,52 +29204,6 @@
         "cost": {
           "input": 0.159,
           "output": 0.219
-        }
-      }
-    },
-    {
-      "catalog_model_id": "mistral-7b-instruct-v0.3",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "mistral-7b-instruct-v0.3",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mistral-7b-instruct-v0.3",
-        "name": "Mistral 7B Instruct v0.3",
-        "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "family": "mistral",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "release_date": "2024-05-22",
-        "last_updated": "2024-05-22",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 32768,
-          "output": 32768
         }
       }
     },
@@ -31565,12 +29364,12 @@
       }
     },
     {
-      "catalog_model_id": "mistral-large-3",
+      "catalog_model_id": "mistral-large-2411",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
         "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "mistral-large-3",
+        "provider": "helicone",
+        "source_id": "mistral-large-2411",
         "priority": 20,
         "policy_rank": 0
       },
@@ -31585,21 +29384,20 @@
         "artifact": 0
       },
       "raw": {
-        "id": "mistral-large-3",
-        "name": "Mistral Large 3",
-        "description": "Mistral's largest general model for enterprise agents, coding, and multilingual reasoning",
+        "id": "mistral-large-2411",
+        "name": "Mistral-Large",
+        "description": "Flagship Mistral model for advanced reasoning, coding, and multilingual work",
         "family": "mistral-large",
-        "attachment": true,
+        "attachment": false,
         "reasoning": false,
         "tool_call": true,
         "temperature": true,
-        "knowledge": "2024-11",
-        "release_date": "2025-12-02",
-        "last_updated": "2025-12-02",
+        "knowledge": "2024-07",
+        "release_date": "2024-11-18",
+        "last_updated": "2024-11-18",
         "modalities": {
           "input": [
-            "text",
-            "image"
+            "text"
           ],
           "output": [
             "text"
@@ -31607,17 +29405,14 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 256000,
-          "output": 131072
+          "context": 128000,
+          "output": 32768
         },
-        "status": "deprecated",
         "cost": {
-          "input": 0.5,
-          "output": 1.5,
-          "cache_read": 0.5,
-          "cache_write": 0.5
+          "input": 2,
+          "output": 6
         },
-        "canonical_model_id": "mistral/mistral-large-2512"
+        "canonical_model_id": "mistral/mistral-large-2411"
       }
     },
     {
@@ -31725,62 +29520,6 @@
           "output": 6
         },
         "canonical_model_id": "mistral/mistral-large-2407"
-      }
-    },
-    {
-      "catalog_model_id": "mistral-medium",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "mistral-medium",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mistral-medium",
-        "name": "Mistral Medium 3",
-        "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "family": "mistral-medium",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-05",
-        "release_date": "2025-05-07",
-        "last_updated": "2025-05-07",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "output": 64000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.4,
-          "output": 2,
-          "cache_read": 0.4,
-          "cache_write": 0.4
-        },
-        "canonical_model_id": "mistral/mistral-medium-2505"
       }
     },
     {
@@ -32016,74 +29755,6 @@
       }
     },
     {
-      "catalog_model_id": "mistral-medium-3.5",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "pioneer",
-        "source_id": "mistral-medium-3.5",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mistral-medium-3.5",
-        "name": "Mistral Medium 3.5",
-        "description": "Balanced Mistral model for enterprise assistants, multilingual work, and tools",
-        "family": "mistral-medium",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "structured_output": true,
-        "temperature": true,
-        "release_date": "2026-04-29",
-        "last_updated": "2026-04-29",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 256000,
-          "output": 131072
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 1.5,
-          "output": 7.5,
-          "cache_read": 1.5,
-          "cache_write": 1.5
-        },
-        "canonical_model_id": "mistral/mistral-medium-2604"
-      }
-    },
-    {
       "catalog_model_id": "mistral-medium-3.5-128b",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -32208,6 +29879,58 @@
       }
     },
     {
+      "catalog_model_id": "mistral-nemo",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "helicone",
+        "source_id": "mistral-nemo",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "mistral-nemo",
+        "name": "Mistral Nemo",
+        "description": "Efficient Mistral-NVIDIA open model for multilingual chat and local deployment",
+        "family": "mistral-nemo",
+        "attachment": false,
+        "reasoning": false,
+        "tool_call": false,
+        "temperature": true,
+        "knowledge": "2024-07",
+        "release_date": "2024-07-18",
+        "last_updated": "2024-07-18",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 128000,
+          "output": 16400
+        },
+        "cost": {
+          "input": 20,
+          "output": 40
+        },
+        "canonical_model_id": "mistral/mistral-nemo"
+      }
+    },
+    {
       "catalog_model_id": "mistral-nemo-instruct-2407",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -32257,59 +29980,6 @@
           "input": 0.145,
           "output": 0.145,
           "cache_read": 0.014
-        },
-        "canonical_model_id": "mistral/mistral-nemo"
-      }
-    },
-    {
-      "catalog_model_id": "mistral-nemo-instruct-2407",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "mistral-nemo-instruct-2407",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mistral-nemo-instruct-2407",
-        "name": "Mistral Nemo Instruct",
-        "description": "Legacy model retained for compatibility with older integrations",
-        "family": "mistral-nemo",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-07",
-        "release_date": "2024-07-18",
-        "last_updated": "2024-07-18",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 16384
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.3,
-          "output": 0.3
         },
         "canonical_model_id": "mistral/mistral-nemo"
       }
@@ -32466,6 +30136,9 @@
           "context": 128000,
           "output": 32768
         },
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.1,
           "output": 0.3
@@ -32517,6 +30190,9 @@
         "limit": {
           "context": 128000,
           "output": 32768
+        },
+        "provider": {
+          "shape": "completions"
         },
         "cost": {
           "input": 0.1,
@@ -33669,66 +31345,6 @@
           "input": 0,
           "output": 0
         }
-      }
-    },
-    {
-      "catalog_model_id": "nemotron-3-nano-30b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "nemotron-3-nano-30b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "nemotron-3-nano-30b",
-        "name": "Nemotron 3 Nano 30B A3B",
-        "description": "Small Nemotron 3 MoE for efficient coding, math, and long-context agents",
-        "family": "nemotron",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-06-25",
-        "release_date": "2025-12-15",
-        "last_updated": "2025-12-15",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "canonical_model_id": "nvidia/nemotron-3-nano-30b-a3b"
       }
     },
     {
@@ -35506,73 +33122,6 @@
       }
     },
     {
-      "catalog_model_id": "nvidia-nemotron-3-super-120b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "nvidia-nemotron-3-super-120b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "nvidia-nemotron-3-super-120b",
-        "name": "NVIDIA Nemotron 3 Super 120B  (Public Preview)",
-        "description": "Nemotron middle tier for collaborative agents and high-volume reasoning workloads",
-        "family": "nemotron",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-06",
-        "release_date": "2026-03-11",
-        "last_updated": "2026-03-11",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1000000,
-          "output": 32768
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.3,
-          "output": 0.65,
-          "cache_read": 0.06
-        },
-        "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b"
-      }
-    },
-    {
       "catalog_model_id": "nvidia-nemotron-3-ultra-550b-a55b",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -36566,74 +34115,6 @@
       }
     },
     {
-      "catalog_model_id": "openai-gpt-5.1-codex-max",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "openai-gpt-5.1-codex-max",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "openai-gpt-5.1-codex-max",
-        "name": "GPT-5.1 Codex Max",
-        "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-        "family": "gpt-codex",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": false,
-        "knowledge": "2024-09-30",
-        "release_date": "2025-11-13",
-        "last_updated": "2025-11-13",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 400000,
-          "input": 272000,
-          "output": 128000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 1.25,
-          "output": 10,
-          "cache_read": 0.125
-        },
-        "canonical_model_id": "openai/gpt-5.1-codex-max"
-      }
-    },
-    {
       "catalog_model_id": "openai-gpt-5.2",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -37515,11 +34996,13 @@
           "input": 0.2,
           "output": 1.2,
           "cache_read": 0.02,
+          "cache_write": 0.25,
           "tiers": [
             {
               "input": 0.4,
               "output": 1.8,
               "cache_read": 0.04,
+              "cache_write": 0.5,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -37529,7 +35012,8 @@
           "context_over_200k": {
             "input": 0.4,
             "output": 1.8,
-            "cache_read": 0.04
+            "cache_read": 0.04,
+            "cache_write": 0.5
           }
         },
         "canonical_model_id": "openai/gpt-5.6-luna"
@@ -37687,11 +35171,13 @@
           "input": 4,
           "output": 20,
           "cache_read": 0.4,
+          "cache_write": 5,
           "tiers": [
             {
               "input": 8,
               "output": 30,
               "cache_read": 0.8,
+              "cache_write": 10,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -37701,7 +35187,8 @@
           "context_over_200k": {
             "input": 8,
             "output": 30,
-            "cache_read": 0.8
+            "cache_read": 0.8,
+            "cache_write": 10
           }
         },
         "canonical_model_id": "openai/gpt-5.6-sol"
@@ -37859,11 +35346,13 @@
           "input": 2,
           "output": 12,
           "cache_read": 0.2,
+          "cache_write": 2.5,
           "tiers": [
             {
               "input": 4,
               "output": 18,
               "cache_read": 0.4,
+              "cache_write": 5,
               "tier": {
                 "type": "context",
                 "size": 272000
@@ -37873,7 +35362,8 @@
           "context_over_200k": {
             "input": 4,
             "output": 18,
-            "cache_read": 0.4
+            "cache_read": 0.4,
+            "cache_write": 5
           }
         },
         "canonical_model_id": "openai/gpt-5.6-terra"
@@ -39614,6 +37104,9 @@
           "context": 128000,
           "output": 4096
         },
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.125,
           "output": 0.5
@@ -39664,6 +37157,9 @@
         "limit": {
           "context": 128000,
           "output": 4096
+        },
+        "provider": {
+          "shape": "completions"
         },
         "cost": {
           "input": 0.125,
@@ -39716,6 +37212,9 @@
           "context": 128000,
           "output": 4096
         },
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.075,
           "output": 0.3
@@ -39766,6 +37265,9 @@
         "limit": {
           "context": 128000,
           "output": 4096
+        },
+        "provider": {
+          "shape": "completions"
         },
         "cost": {
           "input": 0.075,
@@ -39874,6 +37376,9 @@
           "context": 128000,
           "output": 4096
         },
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.075,
           "output": 0.3
@@ -39925,6 +37430,9 @@
         "limit": {
           "context": 128000,
           "output": 4096
+        },
+        "provider": {
+          "shape": "completions"
         },
         "cost": {
           "input": 0.075,
@@ -39979,6 +37487,9 @@
           "context": 128000,
           "output": 4096
         },
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.08,
           "output": 0.32,
@@ -40032,6 +37543,9 @@
         "limit": {
           "context": 128000,
           "output": 4096
+        },
+        "provider": {
+          "shape": "completions"
         },
         "cost": {
           "input": 0.08,
@@ -40141,6 +37655,9 @@
           "context": 32000,
           "output": 4096
         },
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.125,
           "output": 0.5
@@ -40192,6 +37709,9 @@
         "limit": {
           "context": 32000,
           "output": 4096
+        },
+        "provider": {
+          "shape": "completions"
         },
         "cost": {
           "input": 0.125,
@@ -40245,6 +37765,9 @@
           "context": 32000,
           "output": 4096
         },
+        "provider": {
+          "shape": "completions"
+        },
         "cost": {
           "input": 0.125,
           "output": 0.5
@@ -40296,6 +37819,9 @@
         "limit": {
           "context": 32000,
           "output": 4096
+        },
+        "provider": {
+          "shape": "completions"
         },
         "cost": {
           "input": 0.125,
@@ -40622,53 +38148,6 @@
           "input": 1.2,
           "output": 4.8,
           "cache_read": 0.6
-        }
-      }
-    },
-    {
-      "catalog_model_id": "qwen-2.5-14b-instruct",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "digitalocean",
-        "source_id": "qwen-2.5-14b-instruct",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "qwen-2.5-14b-instruct",
-        "name": "Qwen 2.5 14B Instruct",
-        "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-        "family": "qwen",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-09",
-        "release_date": "2024-09-19",
-        "last_updated": "2024-09-19",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 131072,
-          "output": 131072
         }
       }
     },
@@ -41600,6 +39079,170 @@
       }
     },
     {
+      "catalog_model_id": "qwen2.5-vl-72b-instruct",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "cortecs",
+        "source_id": "qwen2.5-vl-72b-instruct",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "qwen2.5-vl-72b-instruct",
+        "name": "qwen2.5-vl-72b-instruct",
+        "description": "Qwen2.5-VL is a powerful vision-language model with advanced capabilities in visual understanding, long video reasoning, and structured output generation.",
+        "family": "qwen",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": false,
+        "structured_output": true,
+        "temperature": false,
+        "knowledge": "2024-04",
+        "release_date": "2025-01-26",
+        "last_updated": "2025-01-26",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 32000,
+          "output": 32000
+        },
+        "cost": {
+          "input": 1.014,
+          "output": 1.014
+        },
+        "canonical_model_id": "alibaba/qwen2-5-vl-72b-instruct"
+      }
+    },
+    {
+      "catalog_model_id": "qwen2.5-vl-72b-instruct",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "ovhcloud",
+        "source_id": "qwen2.5-vl-72b-instruct",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "qwen2.5-vl-72b-instruct",
+        "name": "Qwen2.5-VL-72B-Instruct",
+        "description": "Multimodal model for analyzing text, images, documents, and rich media",
+        "family": "qwen",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": false,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2024-04",
+        "release_date": "2025-01-26",
+        "last_updated": "2025-01-26",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 32768,
+          "output": 32768
+        },
+        "cost": {
+          "input": 1.01,
+          "output": 1.01
+        },
+        "canonical_model_id": "alibaba/qwen2-5-vl-72b-instruct"
+      }
+    },
+    {
+      "catalog_model_id": "qwen2.5-vl-72b-instruct",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "qiniu-ai",
+        "source_id": "qwen2.5-vl-72b-instruct",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "qwen2.5-vl-72b-instruct",
+        "name": "Qwen 2.5 VL 72B Instruct",
+        "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+        "family": "qwen",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2024-04",
+        "release_date": "2025-01-26",
+        "last_updated": "2025-01-26",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 128000,
+          "output": 8192
+        },
+        "status": "deprecated",
+        "cost": {
+          "input": 2.31884058,
+          "output": 6.95652174
+        },
+        "canonical_model_id": "alibaba/qwen2-5-vl-72b-instruct"
+      }
+    },
+    {
       "catalog_model_id": "qwen3-coder",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -41986,59 +39629,6 @@
           "cache_read": 0,
           "cache_write": 0
         }
-      }
-    },
-    {
-      "catalog_model_id": "qwen3-max-preview",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "iflowcn",
-        "source_id": "qwen3-max-preview",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "qwen3-max-preview",
-        "name": "Qwen3-Max-Preview",
-        "description": "Flagship Qwen model for complex reasoning, coding, and agentic workflows",
-        "family": "qwen",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-12",
-        "release_date": "2025-09-05",
-        "last_updated": "2025-09-23",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 256000,
-          "output": 32000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "canonical_model_id": "alibaba/qwen3-max-preview"
       }
     },
     {

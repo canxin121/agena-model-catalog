@@ -15966,10 +15966,7 @@
           "text"
         ]
       },
-      "max_input_tokens": 128000,
-      "provider_sources": [
-        "mistral"
-      ]
+      "max_input_tokens": 128000
     },
     "devstral-medium-latest": {
       "lifecycle": "deprecated",
@@ -16077,10 +16074,7 @@
         "supported": [
           "text"
         ]
-      },
-      "provider_sources": [
-        "mistral"
-      ]
+      }
     },
     "devstral-small-2507": {
       "lifecycle": "deprecated",
@@ -16114,10 +16108,7 @@
           "text"
         ]
       },
-      "max_input_tokens": 128000,
-      "provider_sources": [
-        "mistral"
-      ]
+      "max_input_tokens": 128000
     },
     "diffusiongemma-26b-a4b-it": {
       "context_window_tokens": 262144,
@@ -25383,7 +25374,6 @@
         }
       },
       "provider_sources": [
-        "huggingface",
         "zai",
         "zhipuai"
       ],
@@ -46359,11 +46349,7 @@
           }
         }
       },
-      "max_input_tokens": 262144,
-      "provider_sources": [
-        "huggingface",
-        "xiaomi"
-      ]
+      "max_input_tokens": 262144
     },
     "mimo-v2-omni": {
       "lifecycle": "deprecated",
@@ -46420,10 +46406,7 @@
           }
         }
       },
-      "max_input_tokens": 262144,
-      "provider_sources": [
-        "xiaomi"
-      ]
+      "max_input_tokens": 262144
     },
     "mimo-v2-pro": {
       "lifecycle": "deprecated",
@@ -46486,10 +46469,7 @@
           }
         }
       },
-      "max_input_tokens": 1048576,
-      "provider_sources": [
-        "xiaomi"
-      ]
+      "max_input_tokens": 1048576
     },
     "mimo-v2-tts": {
       "context_window_tokens": 8192,
@@ -49256,10 +49236,7 @@
         ]
       },
       "max_input_tokens": 131072,
-      "lifecycle": "deprecated",
-      "provider_sources": [
-        "mistral"
-      ]
+      "lifecycle": "deprecated"
     },
     "mistral-large-2512": {
       "context_window_tokens": 262144,
@@ -50146,10 +50123,7 @@
         ]
       },
       "max_input_tokens": 128000,
-      "lifecycle": "deprecated",
-      "provider_sources": [
-        "mistral"
-      ]
+      "lifecycle": "deprecated"
     },
     "mistral-nemo-12b-instruct": {
       "context_window_tokens": 16000,
@@ -59046,10 +59020,7 @@
         ]
       },
       "max_input_tokens": 128000,
-      "lifecycle": "deprecated",
-      "provider_sources": [
-        "mistral"
-      ]
+      "lifecycle": "deprecated"
     },
     "plamo-embedding-1b": {
       "context_window_tokens": 128000,
@@ -60010,7 +59981,9 @@
             "tier_type": "context",
             "size_tokens": 256000,
             "input_usd_per_million_tokens": "0.25",
-            "output_usd_per_million_tokens": "2"
+            "output_usd_per_million_tokens": "2",
+            "cache_read_usd_per_million_tokens": "0.05",
+            "cache_write_usd_per_million_tokens": "0.3125"
           }
         ]
       },
@@ -60582,7 +60555,9 @@
             "tier_type": "context",
             "size_tokens": 256000,
             "input_usd_per_million_tokens": "1.2",
-            "output_usd_per_million_tokens": "3.6"
+            "output_usd_per_million_tokens": "3.6",
+            "cache_read_usd_per_million_tokens": "0.24",
+            "cache_write_usd_per_million_tokens": "1.5"
           }
         ]
       },
@@ -61059,10 +61034,6 @@
           "text"
         ]
       },
-      "provider_sources": [
-        "alibaba",
-        "alibaba-cn"
-      ],
       "lifecycle": "deprecated"
     },
     "qwen2.5-32b-instruct": {
@@ -61097,10 +61068,6 @@
           "text"
         ]
       },
-      "provider_sources": [
-        "alibaba",
-        "alibaba-cn"
-      ],
       "lifecycle": "deprecated"
     },
     "qwen2.5-72b-instruct": {
@@ -61136,10 +61103,6 @@
           "text"
         ]
       },
-      "provider_sources": [
-        "alibaba",
-        "alibaba-cn"
-      ],
       "lifecycle": "deprecated"
     },
     "qwen2.5-7b-instruct": {
@@ -61175,10 +61138,6 @@
           "text"
         ]
       },
-      "provider_sources": [
-        "alibaba",
-        "alibaba-cn"
-      ],
       "lifecycle": "deprecated"
     },
     "qwen2.5-7b-instruct-turbo": {
@@ -61246,18 +61205,18 @@
       "max_output_tokens": 8192,
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
       "knowledge_cutoff": "2024-04",
-      "release_date": "2024-11",
-      "last_updated": "2024-11",
+      "release_date": "2024-11-12",
+      "last_updated": "2024-11-12",
       "open_weights": true,
       "output_modalities": [
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.287",
-        "output_usd_per_million_tokens": "0.861",
+        "input_usd_per_million_tokens": "0.06",
+        "output_usd_per_million_tokens": "0.2",
         "cache_read_usd_per_million_tokens": "0.1003"
       },
-      "display_name": "Qwen2.5-Coder 32B Instruct",
+      "display_name": "Qwen2.5-Coder-32B-Instruct",
       "origin": "Alibaba",
       "features": {
         "supported": [
@@ -61275,7 +61234,6 @@
         ]
       },
       "provider_sources": [
-        "alibaba-cn",
         "huggingface"
       ],
       "lifecycle": "deprecated"
@@ -61345,9 +61303,6 @@
           "text"
         ]
       },
-      "provider_sources": [
-        "alibaba-cn"
-      ],
       "lifecycle": "deprecated"
     },
     "qwen2.5-math-72b-instruct": {
@@ -61382,9 +61337,6 @@
           "text"
         ]
       },
-      "provider_sources": [
-        "alibaba-cn"
-      ],
       "lifecycle": "deprecated"
     },
     "qwen2.5-math-7b-instruct": {
@@ -61419,9 +61371,6 @@
           "text"
         ]
       },
-      "provider_sources": [
-        "alibaba-cn"
-      ],
       "lifecycle": "deprecated"
     },
     "qwen2.5-omni-7b": {
@@ -61540,10 +61489,6 @@
           "reasoning"
         ]
       },
-      "provider_sources": [
-        "alibaba",
-        "alibaba-cn"
-      ],
       "lifecycle": "deprecated"
     },
     "qwen2.5-vl-7b-instruct": {
@@ -61583,10 +61528,6 @@
         ]
       },
       "max_input_tokens": 131072,
-      "provider_sources": [
-        "alibaba",
-        "alibaba-cn"
-      ],
       "lifecycle": "deprecated"
     },
     "qwen25-vl-72b-instruct": {
@@ -61916,19 +61857,25 @@
             "tier_type": "context",
             "size_tokens": 32000,
             "input_usd_per_million_tokens": "0.5",
-            "output_usd_per_million_tokens": "2.5"
+            "output_usd_per_million_tokens": "2.5",
+            "cache_read_usd_per_million_tokens": "0.1",
+            "cache_write_usd_per_million_tokens": "0.625"
           },
           {
             "tier_type": "context",
             "size_tokens": 128000,
             "input_usd_per_million_tokens": "0.8",
-            "output_usd_per_million_tokens": "4"
+            "output_usd_per_million_tokens": "4",
+            "cache_read_usd_per_million_tokens": "0.16",
+            "cache_write_usd_per_million_tokens": "1"
           },
           {
             "tier_type": "context",
             "size_tokens": 256000,
             "input_usd_per_million_tokens": "1.6",
-            "output_usd_per_million_tokens": "9.6"
+            "output_usd_per_million_tokens": "9.6",
+            "cache_read_usd_per_million_tokens": "0.32",
+            "cache_write_usd_per_million_tokens": "2"
           }
         ]
       },
@@ -62576,8 +62523,7 @@
       },
       "provider_sources": [
         "alibaba",
-        "alibaba-cn",
-        "huggingface"
+        "alibaba-cn"
       ],
       "lifecycle": "deprecated"
     },
@@ -63405,13 +63351,17 @@
             "tier_type": "context",
             "size_tokens": 32000,
             "input_usd_per_million_tokens": "0.3",
-            "output_usd_per_million_tokens": "2.4"
+            "output_usd_per_million_tokens": "2.4",
+            "cache_read_usd_per_million_tokens": "0.06",
+            "cache_write_usd_per_million_tokens": "0.375"
           },
           {
             "tier_type": "context",
             "size_tokens": 128000,
             "input_usd_per_million_tokens": "0.6",
-            "output_usd_per_million_tokens": "4.8"
+            "output_usd_per_million_tokens": "4.8",
+            "cache_read_usd_per_million_tokens": "0.12",
+            "cache_write_usd_per_million_tokens": "0.75"
           }
         ]
       },
@@ -66163,7 +66113,7 @@
       "pricing": {
         "input_usd_per_million_tokens": "0.03",
         "output_usd_per_million_tokens": "0.13",
-        "cache_read_usd_per_million_tokens": "0.003",
+        "cache_read_usd_per_million_tokens": "0.006",
         "cache_write_usd_per_million_tokens": "0.0375",
         "tiers": [
           {
@@ -66171,7 +66121,7 @@
             "size_tokens": 32000,
             "input_usd_per_million_tokens": "0.1",
             "output_usd_per_million_tokens": "0.4",
-            "cache_read_usd_per_million_tokens": "0.01",
+            "cache_read_usd_per_million_tokens": "0.02",
             "cache_write_usd_per_million_tokens": "0.125"
           },
           {
@@ -66179,7 +66129,7 @@
             "size_tokens": 256000,
             "input_usd_per_million_tokens": "0.2",
             "output_usd_per_million_tokens": "0.8",
-            "cache_read_usd_per_million_tokens": "0.02",
+            "cache_read_usd_per_million_tokens": "0.04",
             "cache_write_usd_per_million_tokens": "0.25"
           }
         ]
@@ -66382,7 +66332,7 @@
       "pricing": {
         "input_usd_per_million_tokens": "0.4",
         "output_usd_per_million_tokens": "1.6",
-        "cache_read_usd_per_million_tokens": "0.04",
+        "cache_read_usd_per_million_tokens": "0.08",
         "cache_write_usd_per_million_tokens": "0.5",
         "tiers": [
           {
@@ -66390,7 +66340,7 @@
             "size_tokens": 256000,
             "input_usd_per_million_tokens": "1.2",
             "output_usd_per_million_tokens": "4.8",
-            "cache_read_usd_per_million_tokens": "0.12",
+            "cache_read_usd_per_million_tokens": "0.24",
             "cache_write_usd_per_million_tokens": "1.5"
           }
         ]
@@ -67224,9 +67174,6 @@
           "effort": "high"
         }
       },
-      "provider_sources": [
-        "alibaba-cn"
-      ],
       "lifecycle": "deprecated"
     },
     "qwq-plus": {
@@ -70667,10 +70614,6 @@
           "text"
         ]
       },
-      "provider_sources": [
-        "stepfun",
-        "stepfun-ai"
-      ],
       "lifecycle": "deprecated"
     },
     "step-2-16k": {
@@ -70706,10 +70649,6 @@
           "text"
         ]
       },
-      "provider_sources": [
-        "stepfun",
-        "stepfun-ai"
-      ],
       "lifecycle": "deprecated"
     },
     "step-2-16k-exp": {

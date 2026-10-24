@@ -3,9 +3,9 @@
   "source": {
     "id": "litellm",
     "status": "current",
-    "sha256": "91da1a98e194e0d7c436aaf970800c8e734d70cc78027cfe314d5b27dfaf9a4c",
-    "record_count": 4245,
-    "retrieved_at": "2026-10-22T23:59:11+00:00"
+    "sha256": "a9be5a76633f1a1f00e6365e9d93fd59609beed9b9426877f077a931d58f6884",
+    "record_count": 4261,
+    "retrieved_at": "2026-10-24T08:07:40+00:00"
   },
   "scope": "provider_route_reference",
   "records": [
@@ -24889,6 +24889,7 @@
         "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
       },
       "raw": {
+        "deprecation_date": "2027-01-17",
         "input_cost_per_token": 1.25e-07,
         "litellm_provider": "azure_ai",
         "max_input_tokens": 16384,
@@ -24922,6 +24923,7 @@
         "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
       },
       "raw": {
+        "deprecation_date": "2027-01-17",
         "input_cost_per_token": 7.5e-08,
         "litellm_provider": "azure_ai",
         "max_input_tokens": 131072,
@@ -24953,6 +24955,7 @@
         "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
       },
       "raw": {
+        "deprecation_date": "2027-01-17",
         "input_cost_per_token": 7.5e-08,
         "litellm_provider": "azure_ai",
         "max_input_tokens": 131072,
@@ -24984,6 +24987,7 @@
         "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
       },
       "raw": {
+        "deprecation_date": "2027-01-17",
         "input_cost_per_audio_token": 4e-06,
         "input_cost_per_token": 8e-08,
         "litellm_provider": "azure_ai",
@@ -25018,6 +25022,7 @@
         "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
       },
       "raw": {
+        "deprecation_date": "2027-01-17",
         "input_cost_per_token": 1.25e-07,
         "litellm_provider": "azure_ai",
         "max_input_tokens": 32768,
@@ -34811,6 +34816,7 @@
         "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 1.8e-07,
         "litellm_provider": "bedrock",
         "max_input_tokens": 128000,
@@ -34850,6 +34856,7 @@
         "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 8.4e-08,
         "litellm_provider": "bedrock",
         "max_input_tokens": 128000,
@@ -35948,6 +35955,7 @@
         "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 1.8e-07,
         "litellm_provider": "bedrock",
         "max_input_tokens": 128000,
@@ -35987,6 +35995,7 @@
         "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 8.4e-08,
         "litellm_provider": "bedrock",
         "max_input_tokens": 128000,
@@ -37883,6 +37892,7 @@
         "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 1.5e-07,
         "input_cost_per_token_batches": 7.5e-08,
         "input_cost_per_token_flex": 7.5e-08,
@@ -37928,6 +37938,7 @@
         "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 7e-08,
         "input_cost_per_token_batches": 3.5e-08,
         "input_cost_per_token_flex": 3.5e-08,
@@ -37973,6 +37984,7 @@
         "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 1.5e-07,
         "input_cost_per_token_batches": 7e-08,
         "input_cost_per_token_flex": 7e-08,
@@ -38016,6 +38028,7 @@
         "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 7e-08,
         "input_cost_per_token_batches": 3e-08,
         "input_cost_per_token_flex": 3e-08,
@@ -38360,6 +38373,7 @@
         "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 1.8e-07,
         "output_cost_per_token": 7.2e-07,
         "litellm_provider": "bedrock_mantle",
@@ -38399,6 +38413,7 @@
         "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 8.4e-08,
         "output_cost_per_token": 3.6e-07,
         "litellm_provider": "bedrock_mantle",
@@ -38930,6 +38945,7 @@
         "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 1.8e-07,
         "output_cost_per_token": 7.2e-07,
         "litellm_provider": "bedrock_mantle",
@@ -38969,6 +38985,7 @@
         "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 8.4e-08,
         "output_cost_per_token": 3.6e-07,
         "litellm_provider": "bedrock_mantle",
@@ -57473,6 +57490,72 @@
       }
     },
     {
+      "route_id": "elevenlabs/eleven_flash_v2",
+      "provider": "elevenlabs",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://elevenlabs.io/pricing/api"
+      },
+      "raw": {
+        "input_cost_per_character": 4e-05,
+        "litellm_provider": "elevenlabs",
+        "metadata": {
+          "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+          "notes": "ElevenLabs Eleven Flash v2 - low-latency English-only TTS model"
+        },
+        "mode": "audio_speech",
+        "source": "https://elevenlabs.io/pricing/api",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ]
+      }
+    },
+    {
+      "route_id": "elevenlabs/eleven_flash_v2_5",
+      "provider": "elevenlabs",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://elevenlabs.io/pricing/api"
+      },
+      "raw": {
+        "input_cost_per_character": 4e-05,
+        "litellm_provider": "elevenlabs",
+        "metadata": {
+          "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+          "notes": "ElevenLabs Eleven Flash v2.5 - low-latency multilingual TTS model"
+        },
+        "mode": "audio_speech",
+        "source": "https://elevenlabs.io/pricing/api",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ]
+      }
+    },
+    {
       "route_id": "elevenlabs/eleven_multilingual_v2",
       "provider": "elevenlabs",
       "scope": "provider_route_reference",
@@ -57489,17 +57572,83 @@
         "output_usd_per_million_tokens": null,
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
-        "source_url": "https://elevenlabs.io/pricing"
+        "source_url": "https://elevenlabs.io/pricing/api"
       },
       "raw": {
-        "input_cost_per_character": 0.00018,
+        "input_cost_per_character": 8e-05,
         "litellm_provider": "elevenlabs",
         "metadata": {
-          "calculation": "$0.18/1000 characters (Scale plan pricing, 1 credit per character)",
+          "calculation": "$0.08/1000 characters (API usage pricing, billed in USD per character)",
           "notes": "ElevenLabs Eleven Multilingual v2 - default TTS model with 29 languages support"
         },
         "mode": "audio_speech",
-        "source": "https://elevenlabs.io/pricing",
+        "source": "https://elevenlabs.io/pricing/api",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ]
+      }
+    },
+    {
+      "route_id": "elevenlabs/eleven_turbo_v2",
+      "provider": "elevenlabs",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://elevenlabs.io/pricing/api"
+      },
+      "raw": {
+        "input_cost_per_character": 4e-05,
+        "litellm_provider": "elevenlabs",
+        "metadata": {
+          "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+          "notes": "ElevenLabs Eleven Turbo v2 - English-only TTS model"
+        },
+        "mode": "audio_speech",
+        "source": "https://elevenlabs.io/pricing/api",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ]
+      }
+    },
+    {
+      "route_id": "elevenlabs/eleven_turbo_v2_5",
+      "provider": "elevenlabs",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://elevenlabs.io/pricing/api"
+      },
+      "raw": {
+        "input_cost_per_character": 4e-05,
+        "litellm_provider": "elevenlabs",
+        "metadata": {
+          "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+          "notes": "ElevenLabs Eleven Turbo v2.5 - multilingual TTS model"
+        },
+        "mode": "audio_speech",
+        "source": "https://elevenlabs.io/pricing/api",
         "supported_endpoints": [
           "/v1/audio/speech"
         ]
@@ -57522,17 +57671,116 @@
         "output_usd_per_million_tokens": null,
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
-        "source_url": "https://elevenlabs.io/pricing"
+        "source_url": "https://elevenlabs.io/pricing/api"
       },
       "raw": {
-        "input_cost_per_character": 0.00018,
+        "input_cost_per_character": 8e-05,
         "litellm_provider": "elevenlabs",
         "metadata": {
-          "calculation": "$0.18/1000 characters (Scale plan pricing, 1 credit per character)",
+          "calculation": "$0.08/1000 characters (API usage pricing, billed in USD per character)",
           "notes": "ElevenLabs Eleven v3 - most expressive TTS model with 70+ languages and audio tags support"
         },
         "mode": "audio_speech",
-        "source": "https://elevenlabs.io/pricing",
+        "source": "https://elevenlabs.io/pricing/api",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ]
+      }
+    },
+    {
+      "route_id": "elevenlabs/eleven_v3_conversational",
+      "provider": "elevenlabs",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://elevenlabs.io/pricing/api"
+      },
+      "raw": {
+        "input_cost_per_character": 4e-05,
+        "litellm_provider": "elevenlabs",
+        "metadata": {
+          "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+          "notes": "ElevenLabs Eleven v3 Conversational - low-latency v3 tuned for realtime conversation"
+        },
+        "mode": "audio_speech",
+        "source": "https://elevenlabs.io/pricing/api",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ]
+      }
+    },
+    {
+      "route_id": "elevenlabs/eleven_v4",
+      "provider": "elevenlabs",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://elevenlabs.io/pricing/api"
+      },
+      "raw": {
+        "input_cost_per_character": 8e-05,
+        "litellm_provider": "elevenlabs",
+        "metadata": {
+          "calculation": "$0.08/1000 characters (API usage pricing, billed in USD per character)",
+          "notes": "ElevenLabs Eleven v4 - most emotive TTS model with audio tags and 90+ languages"
+        },
+        "mode": "audio_speech",
+        "source": "https://elevenlabs.io/pricing/api",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ]
+      }
+    },
+    {
+      "route_id": "elevenlabs/eleven_v4_turbo",
+      "provider": "elevenlabs",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://elevenlabs.io/pricing/api"
+      },
+      "raw": {
+        "input_cost_per_character": 4e-05,
+        "litellm_provider": "elevenlabs",
+        "metadata": {
+          "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+          "notes": "ElevenLabs Eleven v4 Turbo - low-latency v4 tuned for real-time and agents"
+        },
+        "mode": "audio_speech",
+        "source": "https://elevenlabs.io/pricing/api",
         "supported_endpoints": [
           "/v1/audio/speech"
         ]
@@ -94461,17 +94709,17 @@
       },
       "raw": {
         "cache_creation_input_token_cost": 1.25e-07,
-        "cache_creation_input_token_cost_decisions": 1e-07,
+        "cache_creation_input_token_cost_decisions": 1.25e-07,
         "cache_creation_input_token_cost_above_272k_tokens": 2.5e-07,
-        "cache_creation_input_token_cost_above_272k_tokens_decisions": 2e-07,
+        "cache_creation_input_token_cost_above_272k_tokens_decisions": 2.5e-07,
         "cache_creation_input_token_cost_above_272k_tokens_flex": 1.25e-07,
         "cache_creation_input_token_cost_above_272k_tokens_priority": 5e-07,
         "cache_creation_input_token_cost_flex": 6.25e-08,
         "cache_creation_input_token_cost_priority": 2.5e-07,
         "cache_read_input_token_cost": 1e-08,
-        "cache_read_input_token_cost_decisions": 1e-07,
+        "cache_read_input_token_cost_decisions": 1e-08,
         "cache_read_input_token_cost_above_272k_tokens": 2e-08,
-        "cache_read_input_token_cost_above_272k_tokens_decisions": 2e-07,
+        "cache_read_input_token_cost_above_272k_tokens_decisions": 2e-08,
         "cache_read_input_token_cost_above_272k_tokens_flex": 1e-08,
         "cache_read_input_token_cost_above_272k_tokens_priority": 4e-08,
         "cache_read_input_token_cost_batches": 5e-09,
@@ -107776,6 +108024,78 @@
       }
     },
     {
+      "route_id": "mistral/voxtral-mini-transcribe-3",
+      "provider": "mistral",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-3-0"
+      },
+      "raw": {
+        "input_cost_per_second": 5.83333e-05,
+        "litellm_provider": "mistral",
+        "mode": "audio_transcription",
+        "source": "https://docs.mistral.ai/models/voxtral-mini-transcribe-3-0",
+        "supported_endpoints": [
+          "/v1/audio/transcriptions"
+        ],
+        "supported_modalities": [
+          "audio"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true
+      }
+    },
+    {
+      "route_id": "mistral/voxtral-mini-transcribe-3-0",
+      "provider": "mistral",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-3-0"
+      },
+      "raw": {
+        "input_cost_per_second": 5.83333e-05,
+        "litellm_provider": "mistral",
+        "mode": "audio_transcription",
+        "source": "https://docs.mistral.ai/models/voxtral-mini-transcribe-3-0",
+        "supported_endpoints": [
+          "/v1/audio/transcriptions"
+        ],
+        "supported_modalities": [
+          "audio"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true
+      }
+    },
+    {
       "route_id": "mistral/voxtral-mini-transcribe-realtime-2602",
       "provider": "mistral",
       "scope": "provider_route_reference",
@@ -107799,6 +108119,78 @@
         "litellm_provider": "mistral",
         "mode": "audio_transcription",
         "source": "https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-realtime-26-02",
+        "supported_endpoints": [
+          "/v1/audio/transcriptions"
+        ],
+        "supported_modalities": [
+          "audio"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true
+      }
+    },
+    {
+      "route_id": "mistral/voxtral-mini-transcribe-realtime-3",
+      "provider": "mistral",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0"
+      },
+      "raw": {
+        "input_cost_per_second": 0.000133333,
+        "litellm_provider": "mistral",
+        "mode": "audio_transcription",
+        "source": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
+        "supported_endpoints": [
+          "/v1/audio/transcriptions"
+        ],
+        "supported_modalities": [
+          "audio"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true
+      }
+    },
+    {
+      "route_id": "mistral/voxtral-mini-transcribe-realtime-3-0",
+      "provider": "mistral",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0"
+      },
+      "raw": {
+        "input_cost_per_second": 0.000133333,
+        "litellm_provider": "mistral",
+        "mode": "audio_transcription",
+        "source": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
         "supported_endpoints": [
           "/v1/audio/transcriptions"
         ],
@@ -107871,6 +108263,78 @@
         "litellm_provider": "mistral",
         "mode": "audio_speech",
         "source": "https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ],
+        "supported_modalities": [
+          "text"
+        ],
+        "supported_output_modalities": [
+          "audio"
+        ],
+        "supports_audio_output": true
+      }
+    },
+    {
+      "route_id": "mistral/voxtral-mini-tts-3",
+      "provider": "mistral",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0"
+      },
+      "raw": {
+        "input_cost_per_character": 1.3e-05,
+        "litellm_provider": "mistral",
+        "mode": "audio_speech",
+        "source": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ],
+        "supported_modalities": [
+          "text"
+        ],
+        "supported_output_modalities": [
+          "audio"
+        ],
+        "supports_audio_output": true
+      }
+    },
+    {
+      "route_id": "mistral/voxtral-mini-tts-3-0",
+      "provider": "mistral",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0"
+      },
+      "raw": {
+        "input_cost_per_character": 1.3e-05,
+        "litellm_provider": "mistral",
+        "mode": "audio_speech",
+        "source": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
         "supported_endpoints": [
           "/v1/audio/speech"
         ],
@@ -107987,6 +108451,78 @@
         "supports_function_calling": true,
         "supports_response_schema": true,
         "supports_tool_choice": true
+      }
+    },
+    {
+      "route_id": "mistral/voxtral-small-transcribe-3",
+      "provider": "mistral",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0"
+      },
+      "raw": {
+        "input_cost_per_second": 6.66667e-05,
+        "litellm_provider": "mistral",
+        "mode": "audio_transcription",
+        "source": "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0",
+        "supported_endpoints": [
+          "/v1/audio/transcriptions"
+        ],
+        "supported_modalities": [
+          "audio"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true
+      }
+    },
+    {
+      "route_id": "mistral/voxtral-small-transcribe-3-0",
+      "provider": "mistral",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0"
+      },
+      "raw": {
+        "input_cost_per_second": 6.66667e-05,
+        "litellm_provider": "mistral",
+        "mode": "audio_transcription",
+        "source": "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0",
+        "supported_endpoints": [
+          "/v1/audio/transcriptions"
+        ],
+        "supported_modalities": [
+          "audio"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true
       }
     },
     {
@@ -119833,6 +120369,7 @@
         "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json"
       },
       "raw": {
+        "supports_vision": false,
         "supported_endpoints": [
           "/v1/chat/completions"
         ],
@@ -119878,6 +120415,7 @@
         "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json"
       },
       "raw": {
+        "supports_vision": false,
         "supported_endpoints": [
           "/v1/chat/completions"
         ],
@@ -137672,6 +138210,37 @@
       }
     },
     {
+      "route_id": "together_ai/MiniMaxAI/MiniMax-M3.1-Flash",
+      "provider": "together_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "minimax-m3.1-flash",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "0.15",
+        "output_usd_per_million_tokens": "0.6",
+        "cache_read_usd_per_million_tokens": "0.015",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://www.together.ai/pricing"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 1.5e-08,
+        "input_cost_per_token": 1.5e-07,
+        "litellm_provider": "together_ai",
+        "max_input_tokens": 1048576,
+        "max_tokens": 1048576,
+        "mode": "chat",
+        "output_cost_per_token": 6e-07,
+        "source": "https://www.together.ai/pricing",
+        "supports_prompt_caching": true
+      }
+    },
+    {
       "route_id": "together_ai/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
       "provider": "together_ai",
       "scope": "provider_route_reference",
@@ -141253,6 +141822,7 @@
         "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 1.8e-07,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 128000,
@@ -141292,6 +141862,7 @@
         "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html"
       },
       "raw": {
+        "supports_vision": false,
         "input_cost_per_token": 8.4e-08,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 128000,
@@ -153417,12 +153988,14 @@
       },
       "raw": {
         "input_cost_per_token": 3.5e-07,
+        "input_cost_per_token_batches": 1.75e-07,
         "litellm_provider": "vertex_ai-llama_models",
         "max_input_tokens": 1000000,
         "max_output_tokens": 1000000,
         "max_tokens": 1000000,
         "mode": "chat",
         "output_cost_per_token": 1.15e-06,
+        "output_cost_per_token_batches": 5.75e-07,
         "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#partner-models",
         "supported_modalities": [
           "text",
@@ -153457,12 +154030,14 @@
       },
       "raw": {
         "input_cost_per_token": 2.5e-07,
+        "input_cost_per_token_batches": 1.25e-07,
         "litellm_provider": "vertex_ai-llama_models",
         "max_input_tokens": 10000000,
         "max_output_tokens": 10000000,
         "max_tokens": 10000000,
         "mode": "chat",
         "output_cost_per_token": 7e-07,
+        "output_cost_per_token_batches": 3.5e-07,
         "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#partner-models",
         "supported_modalities": [
           "text",
@@ -154639,6 +155214,7 @@
         "source_url": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing#veo"
       },
       "raw": {
+        "deprecation_date": "2026-06-30",
         "litellm_provider": "vertex_ai-video-models",
         "max_input_tokens": 1024,
         "max_tokens": 1024,

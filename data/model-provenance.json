@@ -117092,16 +117092,7 @@
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Morph v3 Fast",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "morph",
-          "source_id": "morph-v3-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -117110,16 +117101,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-08-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "morph",
-          "source_id": "morph-v3-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -117158,16 +117140,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-08-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "morph",
-          "source_id": "morph-v3-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "morph-v3-large": {
@@ -117187,16 +117160,7 @@
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Morph v3 Large",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "morph",
-          "source_id": "morph-v3-large",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -117205,16 +117169,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-08-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "morph",
-          "source_id": "morph-v3-large",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -117253,16 +117208,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-08-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "morph",
-          "source_id": "morph-v3-large",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "motif-3": {

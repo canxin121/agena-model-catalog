@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "058101da3c4fe2ae61e70fef566461c66dede2bf46f2e2f3bef92986eb67394b",
+    "sha256": "d4a40795be1ad89e9414a34fd2a8659c37f8172f17dec59e5054e5cb91b0c0a2",
     "record_count": 232
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -30771,15 +30771,15 @@
       },
       "raw": {
         "id": "morph-v3-fast",
-        "name": "Morph v3 Fast",
+        "name": "Morph V3 Fast",
         "description": "Efficient model for low-latency assistance, extraction, and routine automation",
         "family": "morph",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
-        "temperature": false,
-        "release_date": "2024-08-15",
-        "last_updated": "2024-08-15",
+        "temperature": true,
+        "release_date": "2025-07-07",
+        "last_updated": "2025-07-07",
         "modalities": {
           "input": [
             "text"
@@ -30790,13 +30790,14 @@
         },
         "open_weights": false,
         "limit": {
-          "context": 16000,
-          "output": 16000
+          "context": 262144,
+          "output": 131072
         },
         "cost": {
           "input": 0.8,
           "output": 1.2
-        }
+        },
+        "canonical_model_id": "morph/morph-v3-fast"
       }
     },
     {
@@ -30821,15 +30822,15 @@
       },
       "raw": {
         "id": "morph-v3-large",
-        "name": "Morph v3 Large",
+        "name": "Morph V3 Large",
         "description": "Flagship model for demanding analysis, coding, and production agent workflows",
         "family": "morph",
         "attachment": false,
         "reasoning": false,
         "tool_call": false,
-        "temperature": false,
-        "release_date": "2024-08-15",
-        "last_updated": "2024-08-15",
+        "temperature": true,
+        "release_date": "2025-07-07",
+        "last_updated": "2025-07-07",
         "modalities": {
           "input": [
             "text"
@@ -30840,13 +30841,14 @@
         },
         "open_weights": false,
         "limit": {
-          "context": 32000,
-          "output": 32000
+          "context": 262144,
+          "output": 131072
         },
         "cost": {
           "input": 0.9,
           "output": 1.9
-        }
+        },
+        "canonical_model_id": "morph/morph-v3-large"
       }
     },
     {

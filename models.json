@@ -34102,17 +34102,6 @@
       "provider_sources": [
         "openai"
       ],
-      "verbosity_by_provider": {
-        "openai": {
-          "supported": true,
-          "levels": [
-            "low",
-            "medium",
-            "high"
-          ],
-          "provider_default": "medium"
-        }
-      },
       "thinking_modes": {
         "off": {
           "display_name": "Off",
@@ -34169,6 +34158,17 @@
           "display_name": "Default"
         },
         "default": "standard"
+      },
+      "verbosity_by_provider": {
+        "openai": {
+          "supported": true,
+          "levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "provider_default": "medium"
+        }
       }
     },
     "gpt-audio": {

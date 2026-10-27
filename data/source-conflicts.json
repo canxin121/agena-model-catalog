@@ -12658,6 +12658,53 @@
     },
     {
       "model_id": "minimax-m3.1-flash",
+      "field": "max_output_tokens",
+      "winner": {
+        "value": 524288,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "minimax",
+          "source_id": "MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 9
+        }
+      },
+      "candidates": [
+        {
+          "value": 524288,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax",
+            "source_id": "MiniMax-M3.1-Flash",
+            "priority": 70,
+            "policy_rank": 9
+          }
+        },
+        {
+          "value": 524288,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "minimax-cn",
+            "source_id": "MiniMax-M3.1-Flash",
+            "priority": 70,
+            "policy_rank": 25
+          }
+        },
+        {
+          "value": 512000,
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "MiniMaxAI/MiniMax-M3.1-Flash",
+            "priority": 70,
+            "policy_rank": 32
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "minimax-m3.1-flash",
       "field": "pricing",
       "winner": {
         "value": {
@@ -12700,6 +12747,19 @@
             "source_id": "MiniMax-M3.1-Flash",
             "priority": 70,
             "policy_rank": 25
+          }
+        },
+        {
+          "value": {
+            "input_usd_per_million_tokens": "0.15",
+            "output_usd_per_million_tokens": "0.6"
+          },
+          "source": {
+            "upstream": "models.dev",
+            "provider": "huggingface",
+            "source_id": "MiniMaxAI/MiniMax-M3.1-Flash",
+            "priority": 70,
+            "policy_rank": 32
           }
         }
       ],

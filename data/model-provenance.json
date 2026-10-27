@@ -75308,6 +75308,299 @@
         }
       }
     },
+    "gpt-6.1-terra": {
+      "context_window_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1050000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "description": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Fast, efficient model for visual reasoning, precise computer use, and clear, natural writing.",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "display_name": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "GPT-6.1 Terra",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "features": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "openai",
+              "source_id": "gpt-6.1-terra",
+              "priority": 70,
+              "policy_rank": 0
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "openai",
+              "source_id": "gpt-6.1-terra",
+              "priority": 70,
+              "policy_rank": 0
+            }
+          },
+          "temperature": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "openai",
+              "source_id": "gpt-6.1-terra",
+              "priority": 70,
+              "policy_rank": 0
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "openai",
+              "source_id": "gpt-6.1-terra",
+              "priority": 70,
+              "policy_rank": 0
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "document": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "openai",
+              "source_id": "gpt-6.1-terra",
+              "priority": 70,
+              "policy_rank": 0
+            }
+          },
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "openai",
+              "source_id": "gpt-6.1-terra",
+              "priority": 70,
+              "policy_rank": 0
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "openai",
+              "source_id": "gpt-6.1-terra",
+              "priority": 70,
+              "policy_rank": 0
+            }
+          }
+        }
+      },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-06-01",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "last_updated": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-26",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "max_input_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 922000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "max_output_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 128000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "open_weights": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "origin": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "OpenAI",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "output_modalities": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "pricing": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "1",
+          "output_usd_per_million_tokens": "5",
+          "cache_read_usd_per_million_tokens": "0.05",
+          "cache_write_usd_per_million_tokens": "1.25",
+          "tiers": [
+            {
+              "tier_type": "context",
+              "size_tokens": 272000,
+              "input_usd_per_million_tokens": "2",
+              "output_usd_per_million_tokens": "7.5",
+              "cache_read_usd_per_million_tokens": "0.1",
+              "cache_write_usd_per_million_tokens": "2.5"
+            }
+          ]
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "openai"
+        ],
+        "observations": [
+          {
+            "provider": "openai",
+            "source_id": "gpt-6.1-terra"
+          }
+        ]
+      },
+      "release_date": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-10-26",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-6.1-terra",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "speed_modes": {
+        "kind": "derived_from_models.dev_experimental_modes",
+        "upstream": "models.dev",
+        "priority": 70
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
+      },
+      "verbosity_by_provider": {
+        "kind": "provider_scoped_verbosity_resolution",
+        "scope": "publisher_api_model",
+        "providers": {
+          "openai": {
+            "kind": "curated_provider_api_profile",
+            "value": {
+              "supported": true,
+              "levels": [
+                "low",
+                "medium",
+                "high"
+              ],
+              "provider_default": "medium"
+            },
+            "source": {
+              "upstream": "models.dev",
+              "provider": "openai",
+              "source_id": "gpt-6.1-terra",
+              "priority": 70,
+              "policy_rank": 0
+            }
+          }
+        }
+      }
+    },
     "gpt-audio": {
       "context_window_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -109037,6 +109330,30 @@
       }
     },
     "minimax-m3.1-flash": {
+      "assistant_reasoning_field": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "MiniMaxAI/MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 32
+        }
+      },
+      "assistant_reasoning_interleaved": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "MiniMaxAI/MiniMax-M3.1-Flash",
+          "priority": 70,
+          "policy_rank": 32
+        }
+      },
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
@@ -109240,10 +109557,15 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": [
+          "huggingface",
           "minimax",
           "minimax-cn"
         ],
         "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "MiniMaxAI/MiniMax-M3.1-Flash"
+          },
           {
             "provider": "minimax",
             "source_id": "MiniMax-M3.1-Flash"

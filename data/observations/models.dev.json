@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "5e76c6463f4c36bf46ea91d64f6c72be06f16f54a5f17b25529d60f35deeaaa3",
+    "sha256": "14d7540bc6644342c5559bb75b8cc473c8aeef898ad3cb5b5b9ac013a411cbeb",
     "record_count": 232
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -12271,6 +12271,120 @@
       }
     },
     {
+      "canonical_model_id": "gpt-6.1-terra",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "openai",
+        "source_id": "gpt-6.1-terra",
+        "priority": 70,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "gpt-6.1-terra",
+        "name": "GPT-6.1 Terra",
+        "description": "Fast, efficient model for visual reasoning, precise computer use, and clear, natural writing.",
+        "family": "gpt-terra",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": false,
+        "knowledge": "2026-06-01",
+        "release_date": "2026-10-26",
+        "last_updated": "2026-10-26",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1050000,
+          "input": 922000,
+          "output": 128000
+        },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 2,
+                "output": 10,
+                "cache_read": 0.1,
+                "cache_write": 2.5
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            },
+            "pro": {
+              "provider": {
+                "body": {
+                  "reasoning": {
+                    "mode": "pro"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cost": {
+          "input": 1,
+          "output": 5,
+          "cache_read": 0.05,
+          "cache_write": 1.25,
+          "tiers": [
+            {
+              "input": 2,
+              "output": 7.5,
+              "cache_read": 0.1,
+              "cache_write": 2.5,
+              "tier": {
+                "type": "context",
+                "size": 272000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 2,
+            "output": 7.5,
+            "cache_read": 0.1,
+            "cache_write": 2.5
+          }
+        },
+        "canonical_model_id": "openai/gpt-6.1-terra"
+      }
+    },
+    {
       "canonical_model_id": "gpt-daybreak-blue-latest",
       "scope": "publisher_api_model",
       "source": {
@@ -17479,6 +17593,72 @@
           "input": 0.1494,
           "output": 0.5976,
           "cache_read": 0.0149
+        },
+        "canonical_model_id": "minimax/MiniMax-M3.1-Flash"
+      }
+    },
+    {
+      "canonical_model_id": "minimax-m3.1-flash",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "MiniMaxAI/MiniMax-M3.1-Flash",
+        "priority": 70,
+        "policy_rank": 32
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "MiniMaxAI/MiniMax-M3.1-Flash",
+        "name": "MiniMax-M3.1-Flash",
+        "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+        "family": "minimax",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1000000,
+          "output": 512000
+        },
+        "cost": {
+          "input": 0.15,
+          "output": 0.6
         },
         "canonical_model_id": "minimax/MiniMax-M3.1-Flash"
       }

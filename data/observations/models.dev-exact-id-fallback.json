@@ -3,8 +3,8 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "500e85c624a5546fb1bf02cbda838ac594a1dae956b302a47a5aec7f8ec35223",
-    "record_count": 232
+    "sha256": "2b7bc31889088e3b899fe4a348f54f56c8603140a7a723595b55a02df6fb0127",
+    "record_count": 233
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
   "records": [
@@ -26829,57 +26829,6 @@
           "output": 0.72
         },
         "canonical_model_id": "meta/llama-3.1-70b-instruct"
-      }
-    },
-    {
-      "catalog_model_id": "llama-3.2-3b-instruct",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "llmgateway",
-        "source_id": "llama-3.2-3b-instruct",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "llama-3.2-3b-instruct",
-        "name": "Llama 3.2 3B Instruct",
-        "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
-        "family": "llama",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": true,
-        "temperature": true,
-        "release_date": "2024-09-18",
-        "last_updated": "2024-09-18",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 32768,
-          "output": 32000
-        },
-        "cost": {
-          "input": 0.03,
-          "output": 0.05
-        }
       }
     },
     {

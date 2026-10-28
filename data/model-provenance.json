@@ -98478,28 +98478,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Open Llama instruction model for multilingual chat, reasoning, and coding",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.2-3b-instruct",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Llama 3.2 3B Instruct",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.2-3b-instruct",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -98511,16 +98493,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-09-18",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.2-3b-instruct",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -98529,16 +98502,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.2-3b-instruct",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -98550,16 +98514,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-09-18",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.2-3b-instruct",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "llama-3.2-90b-vision-instruct": {

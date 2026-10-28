@@ -2303,154 +2303,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "doubao-1.5-pro-32k",
-      "field": "description",
-      "winner": {
-        "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-pro-32k",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "doubao-1.5-pro-32k",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Flagship model for demanding analysis, coding, and production agent workflows",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "doubao-1.5-pro-32k",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "doubao-1.5-pro-32k",
-      "field": "last_updated",
-      "winner": {
-        "value": "2025-01-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-pro-32k",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-01-22",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "doubao-1.5-pro-32k",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "doubao-1.5-pro-32k",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "doubao-1.5-pro-32k",
-      "field": "origin",
-      "winner": {
-        "value": "NanoGPT",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-pro-32k",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "NanoGPT",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "doubao-1.5-pro-32k",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Qiniu",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "doubao-1.5-pro-32k",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "doubao-1.5-pro-32k",
-      "field": "release_date",
-      "winner": {
-        "value": "2024-11-20",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-pro-32k",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2024-11-20",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "nano-gpt",
-            "source_id": "doubao-1.5-pro-32k",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2025-08-05",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "qiniu-ai",
-            "source_id": "doubao-1.5-pro-32k",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "doubao-seed-2.0-lite",
       "field": "display_name",
       "winner": {
@@ -3473,6 +3325,147 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "gemini-3-pro-image-preview",
+      "field": "display_name",
+      "winner": {
+        "value": "gemini-3-pro-image-preview",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gemini-3-pro-image-preview",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "gemini-3-pro-image-preview",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gemini-3-pro-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Nano Banana Pro Preview",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gemini-3-pro-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Gemini 3 Pro Image",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "nano-gpt",
+            "source_id": "gemini-3-pro-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gemini-3-pro-image-preview",
+      "field": "knowledge_cutoff",
+      "winner": {
+        "value": "2025-06",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gemini-3-pro-image-preview",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2025-06",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gemini-3-pro-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2025-01",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gemini-3-pro-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2025-01",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "nano-gpt",
+            "source_id": "gemini-3-pro-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gemini-3-pro-image-preview",
+      "field": "origin",
+      "winner": {
+        "value": "302.AI",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gemini-3-pro-image-preview",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "302.AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gemini-3-pro-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Abacus",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gemini-3-pro-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "NanoGPT",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "nano-gpt",
+            "source_id": "gemini-3-pro-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "gemini-3-pro-preview",
       "field": "description",
       "winner": {
@@ -3693,6 +3686,80 @@
             "upstream": "models.dev",
             "provider": "qihang-ai",
             "source_id": "gemini-3-pro-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gemini-3.1-flash-image-preview",
+      "field": "display_name",
+      "winner": {
+        "value": "gemini-3.1-flash-image-preview",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gemini-3.1-flash-image-preview",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "gemini-3.1-flash-image-preview",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gemini-3.1-flash-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Nano Banana 2 Preview",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gemini-3.1-flash-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gemini-3.1-flash-image-preview",
+      "field": "origin",
+      "winner": {
+        "value": "302.AI",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gemini-3.1-flash-image-preview",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "302.AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gemini-3.1-flash-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Abacus",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gemini-3.1-flash-image-preview",
             "priority": 20,
             "policy_rank": 0
           }
@@ -8947,6 +9014,43 @@
             "upstream": "models.dev",
             "provider": "azure-cognitive-services",
             "source_id": "gpt-chat-latest",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-image-1",
+      "field": "origin",
+      "winner": {
+        "value": "Azure",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "azure",
+          "source_id": "gpt-image-1",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Azure",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "gpt-image-1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Azure Cognitive Services",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "gpt-image-1",
             "priority": 20,
             "policy_rank": 0
           }

@@ -5884,6 +5884,18 @@
           "policy_rank": 0
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "chatgpt-image-latest",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
       "max_input_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
@@ -33160,16 +33172,7 @@
         "has_source_notes": true
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Doubao 1.5 Pro 256k",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-pro-256k",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -33178,16 +33181,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-03-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-pro-256k",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -33196,16 +33190,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-pro-256k",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -33217,16 +33202,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-03-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-pro-256k",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "doubao-1.5-pro-32k": {
@@ -33245,7 +33221,7 @@
         "value": "Doubao 1.5 Pro 32k",
         "source": {
           "upstream": "models.dev",
-          "provider": "nano-gpt",
+          "provider": "qiniu-ai",
           "source_id": "doubao-1.5-pro-32k",
           "priority": 20,
           "policy_rank": 0
@@ -33258,16 +33234,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-01-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-pro-32k",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -33281,7 +33248,7 @@
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "nano-gpt",
+          "provider": "qiniu-ai",
           "source_id": "doubao-1.5-pro-32k",
           "priority": 20,
           "policy_rank": 0
@@ -33297,16 +33264,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-11-20",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-pro-32k",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "doubao-1.5-thinking-pro": {
@@ -33507,16 +33465,7 @@
         "has_source_notes": true
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Doubao 1.5 Vision Pro 32k",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-vision-pro-32k",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -33525,16 +33474,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-01-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-vision-pro-32k",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -33543,16 +33483,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-vision-pro-32k",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -33564,16 +33495,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-11-20",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "doubao-1.5-vision-pro-32k",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "doubao-seed-1-6-250615": {
@@ -39271,16 +39193,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-06-30",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "ernie-4.5-vl-424b-a47b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -39307,16 +39220,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-06-30",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "ernie-4.5-vl-424b-a47b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -41812,6 +41716,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-08-26",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-2.5-flash-image",
+          "priority": 70,
+          "policy_rank": 2
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "google",
@@ -45147,213 +45063,85 @@
     },
     "gemini-3-pro-image-preview": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 131072,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3-pro-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
         "source": {
           "upstream": "models.dev",
-          "provider": "google",
+          "provider": "302ai",
           "source_id": "gemini-3-pro-image-preview",
-          "priority": 70,
-          "policy_rank": 2
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Nano Banana Pro",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3-pro-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3-pro-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "temperature": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3-pro-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "tool_calling": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3-pro-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "image": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3-pro-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3-pro-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2025-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3-pro-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2025-11-20",
         "source": {
           "upstream": "models.dev",
-          "provider": "google",
+          "provider": "302ai",
           "source_id": "gemini-3-pro-image-preview",
-          "priority": 70,
-          "policy_rank": 2
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 32768,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3-pro-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "google",
+          "provider": "302ai",
           "source_id": "gemini-3-pro-image-preview",
-          "priority": 70,
-          "policy_rank": 2
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Google",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3-pro-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "text",
-          "image"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3-pro-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "pricing": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "google"
-        ],
-        "observations": [
-          {
-            "provider": "google",
-            "source_id": "gemini-3-pro-image-preview"
-          }
-        ]
-      },
       "release_date": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2025-11-20",
         "source": {
           "upstream": "models.dev",
-          "provider": "google",
+          "provider": "302ai",
           "source_id": "gemini-3-pro-image-preview",
-          "priority": 70,
-          "policy_rank": 2
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "thinking_modes": {
-        "kind": "derived_from_models.dev_reasoning_options",
-        "upstream": "models.dev",
-        "priority": 70
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "gemini-3-pro-preview": {
@@ -45891,223 +45679,94 @@
     },
     "gemini-3.1-flash-image-preview": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 65536,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3.1-flash-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "Image model for prompt-driven generation, editing, and visual design workflows",
         "source": {
           "upstream": "models.dev",
-          "provider": "google",
+          "provider": "302ai",
           "source_id": "gemini-3.1-flash-image-preview",
-          "priority": 70,
-          "policy_rank": 2
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Nano Banana 2",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3.1-flash-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3.1-flash-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "temperature": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3.1-flash-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "tool_calling": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3.1-flash-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "document": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3.1-flash-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "image": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3.1-flash-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          },
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "google",
-              "source_id": "gemini-3.1-flash-image-preview",
-              "priority": 70,
-              "policy_rank": 2
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2025-01",
         "source": {
           "upstream": "models.dev",
-          "provider": "google",
+          "provider": "302ai",
           "source_id": "gemini-3.1-flash-image-preview",
-          "priority": 70,
-          "policy_rank": 2
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2026-02-26",
         "source": {
           "upstream": "models.dev",
-          "provider": "google",
+          "provider": "302ai",
           "source_id": "gemini-3.1-flash-image-preview",
-          "priority": 70,
-          "policy_rank": 2
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 65536,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3.1-flash-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "google",
+          "provider": "302ai",
           "source_id": "gemini-3.1-flash-image-preview",
-          "priority": 70,
-          "policy_rank": 2
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Google",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3.1-flash-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "text",
-          "image"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google",
-          "source_id": "gemini-3.1-flash-image-preview",
-          "priority": 70,
-          "policy_rank": 2
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "pricing": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "google"
-        ],
-        "observations": [
-          {
-            "provider": "google",
-            "source_id": "gemini-3.1-flash-image-preview"
-          }
-        ]
-      },
       "release_date": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2026-02-26",
         "source": {
           "upstream": "models.dev",
-          "provider": "google",
+          "provider": "302ai",
           "source_id": "gemini-3.1-flash-image-preview",
-          "priority": 70,
-          "policy_rank": 2
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "thinking_modes": {
-        "kind": "derived_from_models.dev_reasoning_options",
-        "upstream": "models.dev",
-        "priority": 70
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "gemini-3.1-flash-lite": {
@@ -54440,28 +54099,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4-air-0111",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "GLM 4 Air 0111",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4-air-0111",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54470,16 +54111,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-01-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4-air-0111",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54488,16 +54120,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4-air-0111",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54509,16 +54132,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-01-11",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4-air-0111",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "glm-4-airx": {
@@ -54735,28 +54349,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4-plus-0111",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "GLM 4 Plus 0111",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4-plus-0111",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54765,16 +54361,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-02-19",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4-plus-0111",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54783,16 +54370,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4-plus-0111",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54804,16 +54382,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-02-19",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4-plus-0111",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "glm-4.1v-thinking-flash": {
@@ -54821,28 +54390,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4.1v-thinking-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "GLM 4.1V Thinking Flash",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4.1v-thinking-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54851,16 +54402,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4.1v-thinking-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54869,16 +54411,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4.1v-thinking-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54890,16 +54423,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4.1v-thinking-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -54913,28 +54437,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4.1v-thinking-flashx",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "GLM 4.1V Thinking FlashX",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4.1v-thinking-flashx",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54943,16 +54449,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4.1v-thinking-flashx",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54961,16 +54458,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4.1v-thinking-flashx",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -54982,16 +54470,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-07-09",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-4.1v-thinking-flashx",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -62565,28 +62044,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-z1-airx",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "GLM Z1 AirX",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-z1-airx",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -62595,16 +62056,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-04-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-z1-airx",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -62613,16 +62065,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-z1-airx",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -62634,16 +62077,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-04-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "nano-gpt",
-          "source_id": "glm-z1-airx",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -76307,214 +75741,80 @@
     },
     "gpt-image-1": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 0,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-image-1",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "OpenAI image model for production generation, edits, and brand-safe visual workflows",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "azure",
           "source_id": "gpt-image-1",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "gpt-image-1",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-image-1",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-image-1",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "temperature": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-image-1",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "tool_calling": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-image-1",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "image": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-image-1",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          },
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "openai",
-              "source_id": "gpt-image-1",
-              "priority": 70,
-              "policy_rank": 0
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2025-04-24",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "azure",
           "source_id": "gpt-image-1",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "lifecycle": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "deprecated",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-image-1",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 0,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-image-1",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 0,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-image-1",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "azure",
           "source_id": "gpt-image-1",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "OpenAI",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-image-1",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "image"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-image-1",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "pricing": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "openai"
-        ],
-        "observations": [
-          {
-            "provider": "openai",
-            "source_id": "gpt-image-1"
-          }
-        ]
-      },
       "release_date": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2025-04-24",
         "source": {
           "upstream": "models.dev",
-          "provider": "openai",
+          "provider": "azure",
           "source_id": "gpt-image-1",
-          "priority": 70,
+          "priority": 20,
           "policy_rank": 0
         }
       }
@@ -76622,6 +75922,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-09-26",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-image-1-mini",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "openai",
@@ -76825,6 +76137,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-11-25",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "openai",
+          "source_id": "gpt-image-1.5",
+          "priority": 70,
+          "policy_rank": 0
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "openai",

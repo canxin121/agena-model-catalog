@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "2b7bc31889088e3b899fe4a348f54f56c8603140a7a723595b55a02df6fb0127",
+    "sha256": "c61feed0f6bf4778417e6892d60cb48ddb2dd321e2f30c47b8481659b9be9568",
     "record_count": 233
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -10685,108 +10685,6 @@
       }
     },
     {
-      "catalog_model_id": "doubao-1.5-pro-256k",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "doubao-1.5-pro-256k",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "doubao-1.5-pro-256k",
-        "name": "Doubao 1.5 Pro 256k",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2025-03-12",
-        "last_updated": "2025-03-12",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 256000,
-          "input": 256000,
-          "output": 16384
-        },
-        "cost": {
-          "input": 0.799,
-          "output": 1.445,
-          "cache_read": 0.3995
-        }
-      }
-    },
-    {
-      "catalog_model_id": "doubao-1.5-pro-32k",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "doubao-1.5-pro-32k",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "doubao-1.5-pro-32k",
-        "name": "Doubao 1.5 Pro 32k",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2024-11-20",
-        "last_updated": "2025-01-22",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 32000,
-          "input": 32000,
-          "output": 8192
-        },
-        "cost": {
-          "input": 0.1343,
-          "output": 0.3349,
-          "cache_read": 0.06715
-        }
-      }
-    },
-    {
       "catalog_model_id": "doubao-1.5-pro-32k",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -10939,58 +10837,6 @@
         "cost": {
           "input": 0.43478261,
           "output": 1.30434783
-        }
-      }
-    },
-    {
-      "catalog_model_id": "doubao-1.5-vision-pro-32k",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "doubao-1.5-vision-pro-32k",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "doubao-1.5-vision-pro-32k",
-        "name": "Doubao 1.5 Vision Pro 32k",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2024-11-20",
-        "last_updated": "2025-01-22",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 32000,
-          "input": 32000,
-          "output": 8192
-        },
-        "cost": {
-          "input": 0.459,
-          "output": 1.377,
-          "cache_read": 0.2295
         }
       }
     },
@@ -12197,59 +12043,6 @@
         "cost": {
           "input": 0.07,
           "output": 0.28
-        }
-      }
-    },
-    {
-      "catalog_model_id": "ernie-4.5-vl-424b-a47b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "llmgateway",
-        "source_id": "ernie-4.5-vl-424b-a47b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ernie-4.5-vl-424b-a47b",
-        "name": "ERNIE 4.5 VL 424B A47B",
-        "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
-        "family": "ernie",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": false,
-        "structured_output": false,
-        "temperature": true,
-        "release_date": "2025-06-30",
-        "last_updated": "2025-06-30",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 123000,
-          "output": 123000
-        },
-        "cost": {
-          "input": 0.42,
-          "output": 1.25
         }
       }
     },
@@ -14760,6 +14553,176 @@
       }
     },
     {
+      "catalog_model_id": "gemini-3-pro-image-preview",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "302ai",
+        "source_id": "gemini-3-pro-image-preview",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gemini-3-pro-image-preview",
+        "type": "image",
+        "name": "gemini-3-pro-image-preview",
+        "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
+        "family": "gemini-pro",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": false,
+        "temperature": true,
+        "knowledge": "2025-06",
+        "release_date": "2025-11-20",
+        "last_updated": "2025-11-20",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text",
+            "image"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 32768,
+          "output": 64000
+        },
+        "cost": {
+          "input": 2,
+          "output": 120
+        },
+        "canonical_model_id": "google/gemini-3-pro-image-preview"
+      }
+    },
+    {
+      "catalog_model_id": "gemini-3-pro-image-preview",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "abacus",
+        "source_id": "gemini-3-pro-image-preview",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gemini-3-pro-image-preview",
+        "type": "image",
+        "name": "Nano Banana Pro Preview",
+        "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
+        "family": "gemini-pro",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "tool_call": false,
+        "temperature": true,
+        "knowledge": "2025-01",
+        "release_date": "2025-11-20",
+        "last_updated": "2025-11-20",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text",
+            "image"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 65536,
+          "output": 32768
+        },
+        "status": "deprecated",
+        "cost": {
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2
+        },
+        "canonical_model_id": "google/gemini-3-pro-image-preview"
+      }
+    },
+    {
+      "catalog_model_id": "gemini-3-pro-image-preview",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "nano-gpt",
+        "source_id": "gemini-3-pro-image-preview",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gemini-3-pro-image-preview",
+        "type": "chat",
+        "name": "Gemini 3 Pro Image",
+        "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
+        "family": "gemini-pro",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": false,
+        "structured_output": false,
+        "temperature": true,
+        "knowledge": "2025-01",
+        "release_date": "2025-11-20",
+        "last_updated": "2025-11-20",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 65536,
+          "input": 65536,
+          "output": 32768
+        },
+        "cost": {
+          "input": 2,
+          "output": 12,
+          "cache_read": 0.2
+        },
+        "canonical_model_id": "google/gemini-3-pro-image-preview"
+      }
+    },
+    {
       "catalog_model_id": "gemini-3-pro-preview",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -15175,6 +15138,119 @@
         },
         "status": "deprecated",
         "canonical_model_id": "google/gemini-3-pro-preview"
+      }
+    },
+    {
+      "catalog_model_id": "gemini-3.1-flash-image-preview",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "302ai",
+        "source_id": "gemini-3.1-flash-image-preview",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gemini-3.1-flash-image-preview",
+        "type": "image",
+        "name": "gemini-3.1-flash-image-preview",
+        "description": "Image model for prompt-driven generation, editing, and visual design workflows",
+        "family": "gemini-flash",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": false,
+        "temperature": true,
+        "knowledge": "2025-01",
+        "release_date": "2026-02-26",
+        "last_updated": "2026-02-26",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text",
+            "image"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 131072,
+          "output": 32768
+        },
+        "cost": {
+          "input": 0.5,
+          "output": 60
+        },
+        "canonical_model_id": "google/gemini-3.1-flash-image-preview"
+      }
+    },
+    {
+      "catalog_model_id": "gemini-3.1-flash-image-preview",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "abacus",
+        "source_id": "gemini-3.1-flash-image-preview",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gemini-3.1-flash-image-preview",
+        "type": "image",
+        "name": "Nano Banana 2 Preview",
+        "description": "Image model for prompt-driven generation, editing, and visual design workflows",
+        "family": "gemini-flash",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "tool_call": false,
+        "temperature": true,
+        "knowledge": "2025-01",
+        "release_date": "2026-02-26",
+        "last_updated": "2026-02-26",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text",
+            "image"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1048576,
+          "output": 32768
+        },
+        "status": "deprecated",
+        "cost": {
+          "input": 0.5,
+          "output": 3
+        },
+        "canonical_model_id": "google/gemini-3.1-flash-image-preview"
       }
     },
     {
@@ -16133,58 +16209,6 @@
       }
     },
     {
-      "catalog_model_id": "glm-4-air-0111",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "glm-4-air-0111",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-4-air-0111",
-        "name": "GLM 4 Air 0111",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2025-01-11",
-        "last_updated": "2025-01-11",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "input": 128000,
-          "output": 4096
-        },
-        "cost": {
-          "input": 0.1394,
-          "output": 0.1394,
-          "cache_read": 0.0697
-        }
-      }
-    },
-    {
       "catalog_model_id": "glm-4-long",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -16233,164 +16257,6 @@
           "input": 0.2006,
           "output": 0.2006,
           "cache_read": 0.1003
-        }
-      }
-    },
-    {
-      "catalog_model_id": "glm-4-plus-0111",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "glm-4-plus-0111",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-4-plus-0111",
-        "name": "GLM 4 Plus 0111",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2025-02-19",
-        "last_updated": "2025-02-19",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "input": 128000,
-          "output": 4096
-        },
-        "cost": {
-          "input": 9.996,
-          "output": 9.996,
-          "cache_read": 4.998
-        }
-      }
-    },
-    {
-      "catalog_model_id": "glm-4.1v-thinking-flash",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "glm-4.1v-thinking-flash",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-4.1v-thinking-flash",
-        "name": "GLM 4.1V Thinking Flash",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "glm-flash",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2025-07-09",
-        "last_updated": "2025-07-09",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 64000,
-          "input": 64000,
-          "output": 8192
-        },
-        "cost": {
-          "input": 0.3,
-          "output": 0.3,
-          "cache_read": 0.15
-        }
-      }
-    },
-    {
-      "catalog_model_id": "glm-4.1v-thinking-flashx",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "glm-4.1v-thinking-flashx",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-4.1v-thinking-flashx",
-        "name": "GLM 4.1V Thinking FlashX",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "glm-flash",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2025-07-09",
-        "last_updated": "2025-07-09",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 64000,
-          "input": 64000,
-          "output": 8192
-        },
-        "cost": {
-          "input": 0.3,
-          "output": 0.3,
-          "cache_read": 0.15
         }
       }
     },
@@ -17970,58 +17836,6 @@
           "context": 1048576,
           "input": 917504,
           "output": 131072
-        }
-      }
-    },
-    {
-      "catalog_model_id": "glm-z1-airx",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "glm-z1-airx",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-z1-airx",
-        "name": "GLM Z1 AirX",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": true,
-        "release_date": "2025-04-15",
-        "last_updated": "2025-04-15",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 32000,
-          "input": 32000,
-          "output": 16384
-        },
-        "cost": {
-          "input": 0.7,
-          "output": 0.7,
-          "cache_read": 0.35
         }
       }
     },
@@ -22302,6 +22116,114 @@
           "cache_read": 0.5
         },
         "canonical_model_id": "openai/gpt-5.5-instant"
+      }
+    },
+    {
+      "catalog_model_id": "gpt-image-1",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "azure",
+        "source_id": "gpt-image-1",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gpt-image-1",
+        "type": "image",
+        "name": "GPT-Image-1",
+        "description": "OpenAI image model for production generation, edits, and brand-safe visual workflows",
+        "family": "gpt-image",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": false,
+        "temperature": false,
+        "release_date": "2025-04-24",
+        "last_updated": "2025-04-24",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "image"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 0,
+          "output": 0
+        },
+        "cost": {
+          "input": 5,
+          "output": 40,
+          "cache_read": 1.25
+        },
+        "canonical_model_id": "openai/gpt-image-1"
+      }
+    },
+    {
+      "catalog_model_id": "gpt-image-1",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "azure-cognitive-services",
+        "source_id": "gpt-image-1",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gpt-image-1",
+        "type": "image",
+        "name": "GPT-Image-1",
+        "description": "OpenAI image model for production generation, edits, and brand-safe visual workflows",
+        "family": "gpt-image",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": false,
+        "temperature": false,
+        "release_date": "2025-04-24",
+        "last_updated": "2025-04-24",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "image"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 0,
+          "output": 0
+        },
+        "cost": {
+          "input": 5,
+          "output": 40,
+          "cache_read": 1.25
+        },
+        "canonical_model_id": "openai/gpt-image-1"
       }
     },
     {

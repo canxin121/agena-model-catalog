@@ -3576,7 +3576,8 @@
       },
       "provider_sources": [
         "openai"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "cheap": {
       "context_window_tokens": 1000000,
@@ -20457,7 +20458,8 @@
       },
       "provider_sources": [
         "google"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "gemini-2.5-flash-lite": {
       "context_window_tokens": 1048576,
@@ -21895,10 +21897,7 @@
         "unsupported": [
           "tool_calling"
         ]
-      },
-      "provider_sources": [
-        "google"
-      ]
+      }
     },
     "gemini-3-pro-preview": {
       "context_window_tokens": 1000000,
@@ -22213,10 +22212,7 @@
         "unsupported": [
           "tool_calling"
         ]
-      },
-      "provider_sources": [
-        "google"
-      ]
+      }
     },
     "gemini-3.1-flash-lite": {
       "context_window_tokens": 1048576,
@@ -34486,10 +34482,7 @@
           "temperature",
           "tool_calling"
         ]
-      },
-      "provider_sources": [
-        "openai"
-      ]
+      }
     },
     "gpt-image-1-mini": {
       "context_window_tokens": 0,
@@ -34526,7 +34519,8 @@
       },
       "provider_sources": [
         "openai"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "gpt-image-1.5": {
       "context_window_tokens": 0,
@@ -34563,7 +34557,8 @@
       },
       "provider_sources": [
         "openai"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "gpt-image-2": {
       "context_window_tokens": 0,

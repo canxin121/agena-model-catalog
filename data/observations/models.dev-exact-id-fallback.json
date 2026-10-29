@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "c61feed0f6bf4778417e6892d60cb48ddb2dd321e2f30c47b8481659b9be9568",
+    "sha256": "ed8c8b547dbce7bc1720259fa2f36295fefbc7dd4fbb18b6bd3bc30eb1cf9231",
     "record_count": 233
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -1495,7 +1495,7 @@
         "id": "asi1-mini",
         "name": "ASI1 Mini",
         "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "attachment": true,
+        "attachment": false,
         "reasoning": false,
         "tool_call": false,
         "structured_output": false,
@@ -1503,8 +1503,7 @@
         "last_updated": "2025-03-25",
         "modalities": {
           "input": [
-            "text",
-            "pdf"
+            "text"
           ],
           "output": [
             "text"

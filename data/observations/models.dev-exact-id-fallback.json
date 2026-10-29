@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "ed8c8b547dbce7bc1720259fa2f36295fefbc7dd4fbb18b6bd3bc30eb1cf9231",
+    "sha256": "6e47d4ec9e877529bda6961644f3d6df39b4d0ff49b2c49214f7ff1b791956a5",
     "record_count": 233
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -11328,8 +11328,8 @@
           "output": 32000
         },
         "cost": {
-          "input": 0.1462,
-          "output": 0.8738,
+          "input": 0.25,
+          "output": 2,
           "cache_read": 0.0731
         },
         "canonical_model_id": "bytedance-seed/seed-2.0-lite"
@@ -11382,7 +11382,7 @@
           "output": 32000
         },
         "cost": {
-          "input": 0.0493,
+          "input": 0.1,
           "output": 0.4845,
           "cache_read": 0.02465
         },
@@ -37967,59 +37967,6 @@
         "cost": {
           "input": 1.147,
           "output": 4.588
-        }
-      }
-    },
-    {
-      "catalog_model_id": "qvq-max",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "qvq-max",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "qvq-max",
-        "name": "Qwen: QvQ Max",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "qwen",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2025-03-28",
-        "last_updated": "2025-03-28",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "input": 128000,
-          "output": 8192
-        },
-        "cost": {
-          "input": 1.2,
-          "output": 4.8,
-          "cache_read": 0.6
         }
       }
     },

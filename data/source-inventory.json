@@ -19,7 +19,7 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "6e47d4ec9e877529bda6961644f3d6df39b4d0ff49b2c49214f7ff1b791956a5",
+      "snapshot_sha256": "d645251e1d2a24ed0efa3cb0b3c19b23b6a8bec92e132a1107e35fc1611ab4c7",
       "snapshot_record_count": 233
     },
     {
@@ -74,9 +74,9 @@
       "published_snapshot": "data/routes/openrouter.json",
       "selection": "exact OpenRouter route only; never merged into provider-global model fields",
       "snapshot_status": "current",
-      "snapshot_sha256": "5582ec297c0fe5d5f43dba80bc145bae1868fb3dbd7d3513072e97545f9a0932",
-      "snapshot_record_count": 457,
-      "last_successful_retrieval": "2026-10-29T00:56:21+00:00"
+      "snapshot_sha256": "35a15d7105f012ca0c745ac2ab6b87b7d093cfd7be925fcda9e456e669db6e47",
+      "snapshot_record_count": 456,
+      "last_successful_retrieval": "2026-10-29T20:17:29+00:00"
     },
     {
       "id": "litellm",
@@ -135,7 +135,7 @@
     "models.dev_allowlisted_observations": 447,
     "models.dev_exact_id_fallback_candidates": 734,
     "models.dev_route_limit_caps": 18,
-    "openrouter": 457,
+    "openrouter": 456,
     "litellm": 4430
   },
   "artifact_record_counts": {

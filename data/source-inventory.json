@@ -19,7 +19,7 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "5b0eafd137777a2bb3a794571bca79502a90ac50ca041a95b8a2cbebf26673cb",
+      "snapshot_sha256": "ce1d843a8385f0c11340a6d1064aa9404083f9d4c55b4cf8dfcfa5121d0efcfc",
       "snapshot_record_count": 233
     },
     {
@@ -74,9 +74,9 @@
       "published_snapshot": "data/routes/openrouter.json",
       "selection": "exact OpenRouter route only; never merged into provider-global model fields",
       "snapshot_status": "current",
-      "snapshot_sha256": "35a15d7105f012ca0c745ac2ab6b87b7d093cfd7be925fcda9e456e669db6e47",
+      "snapshot_sha256": "bf923bf4fc1c69cc6c09583466e6dee8499e14bcfbf2d6c8cfc22e8019a39e40",
       "snapshot_record_count": 456,
-      "last_successful_retrieval": "2026-10-29T20:17:29+00:00"
+      "last_successful_retrieval": "2026-10-30T10:00:42+00:00"
     },
     {
       "id": "litellm",
@@ -94,9 +94,9 @@
       "published_snapshot": "data/routes/litellm.json",
       "selection": "route-level price and limit cross-check; no global fallback without explicit route mapping",
       "snapshot_status": "current",
-      "snapshot_sha256": "435c776a71589ecdf87c6454a2a02889f36fc0aaf021ea19fffd464aeb56ddd5",
-      "snapshot_record_count": 4430,
-      "last_successful_retrieval": "2026-10-29T09:57:42+00:00"
+      "snapshot_sha256": "cd0e3abf6faa1a7fafe5e06f6090b40e8d817064d9a12184e66417a820a4f627",
+      "snapshot_record_count": 4538,
+      "last_successful_retrieval": "2026-10-30T10:00:42+00:00"
     },
     {
       "id": "codex-client",
@@ -132,14 +132,14 @@
     }
   ],
   "route_record_counts": {
-    "models.dev_allowlisted_observations": 447,
+    "models.dev_allowlisted_observations": 448,
     "models.dev_exact_id_fallback_candidates": 734,
     "models.dev_route_limit_caps": 18,
     "openrouter": 456,
-    "litellm": 4430
+    "litellm": 4538
   },
   "artifact_record_counts": {
     "huggingface": 991
   },
-  "model_provenance_count": 1898
+  "model_provenance_count": 1899
 }

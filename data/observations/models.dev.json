@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "5b0eafd137777a2bb3a794571bca79502a90ac50ca041a95b8a2cbebf26673cb",
+    "sha256": "ce1d843a8385f0c11340a6d1064aa9404083f9d4c55b4cf8dfcfa5121d0efcfc",
     "record_count": 233
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -17903,7 +17903,8 @@
           {
             "type": "effort",
             "values": [
-              "none",
+              "low",
+              "medium",
               "high"
             ]
           }
@@ -17930,9 +17931,74 @@
         },
         "status": "beta",
         "cost": {
-          "input": 1.36,
-          "output": 4.18,
-          "cache_read": 0.14
+          "input": 0.7,
+          "output": 2.1,
+          "cache_read": 0.07
+        },
+        "canonical_model_id": "mistral/mistral-large-4"
+      }
+    },
+    {
+      "canonical_model_id": "mistral-large-4-0-8",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "mistral",
+        "source_id": "mistral-large-4-0-8",
+        "priority": 70,
+        "policy_rank": 7
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "mistral-large-4-0-8",
+        "name": "Mistral Large 4.0.8",
+        "description": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
+        "family": "mistral-large",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "release_date": "2026-10-06",
+        "last_updated": "2026-10-06",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1048576,
+          "output": 262144
+        },
+        "status": "beta",
+        "cost": {
+          "input": 0.7,
+          "output": 2.1,
+          "cache_read": 0.07
         },
         "canonical_model_id": "mistral/mistral-large-4"
       }

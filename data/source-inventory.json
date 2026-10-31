@@ -19,7 +19,7 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "8457229b7a33df92b27009e1ff8b1f8c20bf170f8dbb43b3a953e78a904dab56",
+      "snapshot_sha256": "9d70f7e2eaffa7df1d8a6a93cfe9d2c3b5dc40c64add94f026e5953abea80654",
       "snapshot_record_count": 234
     },
     {
@@ -74,9 +74,9 @@
       "published_snapshot": "data/routes/openrouter.json",
       "selection": "exact OpenRouter route only; never merged into provider-global model fields",
       "snapshot_status": "current",
-      "snapshot_sha256": "bf923bf4fc1c69cc6c09583466e6dee8499e14bcfbf2d6c8cfc22e8019a39e40",
+      "snapshot_sha256": "09fa65626c470db6f4050a365f1b0d3a0c8ba63c9f05172e8fb2b535ad50d15a",
       "snapshot_record_count": 456,
-      "last_successful_retrieval": "2026-10-30T10:00:42+00:00"
+      "last_successful_retrieval": "2026-10-31T00:47:59+00:00"
     },
     {
       "id": "litellm",

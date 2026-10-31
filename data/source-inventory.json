@@ -19,7 +19,7 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "b85175b1dbf2f9cac8329b0ac3fb0fbd93eec0e3702e5fe5a4ec66925a19071f",
+      "snapshot_sha256": "ff2265c652d645d65cbc9e356a62a05155e6039d73407ef4ca2e4f808266ccb6",
       "snapshot_record_count": 235
     },
     {
@@ -74,9 +74,9 @@
       "published_snapshot": "data/routes/openrouter.json",
       "selection": "exact OpenRouter route only; never merged into provider-global model fields",
       "snapshot_status": "current",
-      "snapshot_sha256": "09fa65626c470db6f4050a365f1b0d3a0c8ba63c9f05172e8fb2b535ad50d15a",
-      "snapshot_record_count": 456,
-      "last_successful_retrieval": "2026-10-31T00:47:59+00:00"
+      "snapshot_sha256": "92903b65046aca587531f06b9d2c13037795b362f772fa570944819b37d35a53",
+      "snapshot_record_count": 452,
+      "last_successful_retrieval": "2026-10-31T19:18:08+00:00"
     },
     {
       "id": "litellm",
@@ -94,9 +94,9 @@
       "published_snapshot": "data/routes/litellm.json",
       "selection": "route-level price and limit cross-check; no global fallback without explicit route mapping",
       "snapshot_status": "current",
-      "snapshot_sha256": "cd0e3abf6faa1a7fafe5e06f6090b40e8d817064d9a12184e66417a820a4f627",
-      "snapshot_record_count": 4538,
-      "last_successful_retrieval": "2026-10-30T10:00:42+00:00"
+      "snapshot_sha256": "a00d6bdf774672924f61344a8c0a5e19ed4cd19061a02cef7b3734719c42fb49",
+      "snapshot_record_count": 4553,
+      "last_successful_retrieval": "2026-10-31T19:18:09+00:00"
     },
     {
       "id": "codex-client",
@@ -135,8 +135,8 @@
     "models.dev_allowlisted_observations": 448,
     "models.dev_exact_id_fallback_candidates": 734,
     "models.dev_route_limit_caps": 18,
-    "openrouter": 456,
-    "litellm": 4538
+    "openrouter": 452,
+    "litellm": 4553
   },
   "artifact_record_counts": {
     "huggingface": 991

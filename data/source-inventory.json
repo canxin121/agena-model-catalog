@@ -19,7 +19,7 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "f8d44e95283687a2f2526bfae047321c4a96b4984293706e42af949fb507b220",
+      "snapshot_sha256": "45b14ad169670f19763ef73ee96fe7b8ec74076945c507d44d6af7d88040cc13",
       "snapshot_record_count": 235
     },
     {
@@ -94,9 +94,9 @@
       "published_snapshot": "data/routes/litellm.json",
       "selection": "route-level price and limit cross-check; no global fallback without explicit route mapping",
       "snapshot_status": "current",
-      "snapshot_sha256": "a00d6bdf774672924f61344a8c0a5e19ed4cd19061a02cef7b3734719c42fb49",
+      "snapshot_sha256": "7f7f1567bee2b7ba4118e4b9b3c1de70b122fd9164f69d9adfc12aca1033101a",
       "snapshot_record_count": 4553,
-      "last_successful_retrieval": "2026-10-31T19:18:09+00:00"
+      "last_successful_retrieval": "2026-11-01T19:40:08+00:00"
     },
     {
       "id": "codex-client",

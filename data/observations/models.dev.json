@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "f8d44e95283687a2f2526bfae047321c4a96b4984293706e42af949fb507b220",
+    "sha256": "45b14ad169670f19763ef73ee96fe7b8ec74076945c507d44d6af7d88040cc13",
     "record_count": 235
   },
   "scope": "allowlisted_publisher_api_model_observation",

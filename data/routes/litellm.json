@@ -3,9 +3,9 @@
   "source": {
     "id": "litellm",
     "status": "current",
-    "sha256": "a00d6bdf774672924f61344a8c0a5e19ed4cd19061a02cef7b3734719c42fb49",
+    "sha256": "7f7f1567bee2b7ba4118e4b9b3c1de70b122fd9164f69d9adfc12aca1033101a",
     "record_count": 4553,
-    "retrieved_at": "2026-10-31T19:18:09+00:00"
+    "retrieved_at": "2026-11-01T19:40:08+00:00"
   },
   "scope": "provider_route_reference",
   "records": [
@@ -37963,20 +37963,21 @@
       },
       "fields": {
         "max_input_tokens": 8000,
-        "max_output_tokens": 2048,
+        "max_output_tokens": 8192,
         "input_usd_per_million_tokens": "2.65",
         "output_usd_per_million_tokens": "3.5",
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
-        "source_url": null
+        "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.md"
       },
       "raw": {
         "input_cost_per_token": 2.65e-06,
         "litellm_provider": "bedrock",
         "max_input_tokens": 8000,
-        "max_output_tokens": 2048,
+        "max_output_tokens": 8192,
         "mode": "chat",
         "output_cost_per_token": 3.5e-06,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.md",
         "supports_pdf_input": true
       }
     },
@@ -37992,20 +37993,21 @@
       },
       "fields": {
         "max_input_tokens": 8000,
-        "max_output_tokens": 2048,
+        "max_output_tokens": 8192,
         "input_usd_per_million_tokens": "0.3",
         "output_usd_per_million_tokens": "0.6",
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
-        "source_url": null
+        "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md"
       },
       "raw": {
         "input_cost_per_token": 3e-07,
         "litellm_provider": "bedrock",
         "max_input_tokens": 8000,
-        "max_output_tokens": 2048,
+        "max_output_tokens": 8192,
         "mode": "chat",
         "output_cost_per_token": 6e-07,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md",
         "supports_pdf_input": true
       }
     },
@@ -148827,6 +148829,7 @@
       },
       "raw": {
         "cache_read_input_token_cost": 2.5e-07,
+        "deprecation_date": "2026-11-04",
         "input_cost_per_token": 2e-06,
         "litellm_provider": "together_ai",
         "max_input_tokens": 1010000,

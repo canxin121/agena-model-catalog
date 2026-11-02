@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "430a3555582cc0c22c34eea4f2629b8a72c02726eff2384f268fc9d35e55d146",
+    "sha256": "1c804b0169a6028062df6b3addd45f401192253855963417380fcba86485085d",
     "record_count": 235
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -24153,60 +24153,6 @@
           "output": 0.14
         },
         "canonical_model_id": "nousresearch/hermes-2-pro-llama-3-8b"
-      }
-    },
-    {
-      "catalog_model_id": "hermes-3-llama-3.1-405b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "venice",
-        "source_id": "hermes-3-llama-3.1-405b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "hermes-3-llama-3.1-405b",
-        "name": "Hermes 3 Llama 3.1 405b",
-        "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
-        "family": "nousresearch",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2023-12-31",
-        "release_date": "2024-08-16",
-        "last_updated": "2024-08-16",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 16384
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 1.1,
-          "output": 3
-        },
-        "canonical_model_id": "nousresearch/hermes-3-llama-3.1-405b"
       }
     },
     {

@@ -85945,28 +85945,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Open Llama instruction model for multilingual chat, reasoning, and coding",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "hermes-3-llama-3.1-405b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Hermes 3 Llama 3.1 405b",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "hermes-3-llama-3.1-405b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -85975,16 +85957,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2023-12-31",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "hermes-3-llama-3.1-405b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -85996,16 +85969,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "hermes-3-llama-3.1-405b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"

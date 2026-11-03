@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "1c804b0169a6028062df6b3addd45f401192253855963417380fcba86485085d",
+    "sha256": "5bee2330fddf72f49bae11b8903a8c1753d3b7d325eed528da7bfc2129cc7222",
     "record_count": 235
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -13437,55 +13437,6 @@
           "output": 0
         },
         "canonical_model_id": "xai/grok-imagine-image"
-      }
-    },
-    {
-      "canonical_model_id": "grok-imagine-image-quality",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "xai",
-        "source_id": "grok-imagine-image-quality",
-        "priority": 70,
-        "policy_rank": 6
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "grok-imagine-image-quality",
-        "type": "image",
-        "name": "Grok Imagine Image Quality",
-        "description": "Higher-fidelity Grok Imagine image model for prompt-driven generation, editing, and visual design workflows",
-        "family": "grok",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": false,
-        "temperature": false,
-        "release_date": "2026-04-03",
-        "last_updated": "2026-04-03",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "image"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 16000,
-          "output": 0
-        },
-        "status": "deprecated",
-        "canonical_model_id": "xai/grok-imagine-image-quality"
       }
     },
     {

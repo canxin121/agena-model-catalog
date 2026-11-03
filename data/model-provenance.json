@@ -3214,16 +3214,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Apertus 70B is an open, multilingual language model designed for research, long-context reasoning, and sovereignty-focused AI systems.",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "apertus-70b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -3231,7 +3222,7 @@
         "value": "Apertus 70B",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "regolo-ai",
           "source_id": "apertus-70b",
           "priority": 20,
           "policy_rank": 0
@@ -3249,7 +3240,7 @@
         "value": "2025-09",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "regolo-ai",
           "source_id": "apertus-70b",
           "priority": 20,
           "policy_rank": 0
@@ -3261,7 +3252,7 @@
         "value": "2025-09-02",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "regolo-ai",
           "source_id": "apertus-70b",
           "priority": 20,
           "policy_rank": 0
@@ -3279,7 +3270,7 @@
         "value": true,
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "regolo-ai",
           "source_id": "apertus-70b",
           "priority": 20,
           "policy_rank": 0
@@ -3300,7 +3291,7 @@
         "value": "2025-09-02",
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "regolo-ai",
           "source_id": "apertus-70b",
           "priority": 20,
           "policy_rank": 0
@@ -84469,204 +84460,43 @@
     },
     "grok-imagine-image-quality": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 16000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-imagine-image-quality",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Higher-fidelity Grok Imagine image model for prompt-driven generation, editing, and visual design workflows",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-imagine-image-quality",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "Grok Imagine Image Quality",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-imagine-image-quality",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-imagine-image-quality",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
-          "temperature": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-imagine-image-quality",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
-          "tool_calling": {
-            "value": "unsupported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-imagine-image-quality",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "image": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-imagine-image-quality",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-imagine-image-quality",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2026-04-03",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-imagine-image-quality",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "lifecycle": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "deprecated",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-imagine-image-quality",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 0,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-imagine-image-quality",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-imagine-image-quality",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "xAI",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-imagine-image-quality",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "image"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-imagine-image-quality",
-          "priority": 70,
-          "policy_rank": 6
-        }
-      },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "xai"
-        ],
-        "observations": [
-          {
-            "provider": "xai",
-            "source_id": "grok-imagine-image-quality"
-          }
-        ]
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "2026-04-03",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-imagine-image-quality",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       }
     },
     "grok-imagine-video": {

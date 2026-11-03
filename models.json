@@ -38314,9 +38314,6 @@
         ]
       },
       "max_input_tokens": 16000,
-      "provider_sources": [
-        "xai"
-      ],
       "lifecycle": "deprecated"
     },
     "grok-imagine-video": {

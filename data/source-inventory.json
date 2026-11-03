@@ -19,7 +19,7 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "1c804b0169a6028062df6b3addd45f401192253855963417380fcba86485085d",
+      "snapshot_sha256": "5bee2330fddf72f49bae11b8903a8c1753d3b7d325eed528da7bfc2129cc7222",
       "snapshot_record_count": 235
     },
     {
@@ -132,8 +132,8 @@
     }
   ],
   "route_record_counts": {
-    "models.dev_allowlisted_observations": 448,
-    "models.dev_exact_id_fallback_candidates": 733,
+    "models.dev_allowlisted_observations": 447,
+    "models.dev_exact_id_fallback_candidates": 732,
     "models.dev_route_limit_caps": 18,
     "openrouter": 451,
     "litellm": 4554

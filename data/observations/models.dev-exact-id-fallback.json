@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "5bee2330fddf72f49bae11b8903a8c1753d3b7d325eed528da7bfc2129cc7222",
+    "sha256": "0d6995e11f1174c560cf6dd7bf7458e53258ea0b4de19dc8072e9b3e972051c8",
     "record_count": 235
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -18031,7 +18031,7 @@
         "open_weights": true,
         "limit": {
           "context": 256000,
-          "output": 8192
+          "output": 16384
         },
         "cost": {
           "input": 0.13,
@@ -18098,7 +18098,7 @@
         "open_weights": true,
         "limit": {
           "context": 256000,
-          "output": 8192
+          "output": 16384
         },
         "cost": {
           "input": 0.12,
@@ -28752,7 +28752,7 @@
         "open_weights": true,
         "limit": {
           "context": 524288,
-          "output": 65536
+          "output": 131072
         },
         "cost": {
           "input": 0.3,
@@ -32363,7 +32363,7 @@
           "output": 768
         },
         "cost": {
-          "input": 0.05,
+          "input": 0.016,
           "output": 0
         }
       }
@@ -37746,8 +37746,8 @@
         },
         "open_weights": false,
         "limit": {
-          "context": 10000000,
-          "input": 10000000,
+          "context": 250000,
+          "input": 250000,
           "output": 60000
         },
         "cost": {

@@ -108575,7 +108575,7 @@
       "open_weights": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": false,
+        "value": true,
         "source": {
           "upstream": "models.dev",
           "provider": "minimax",

@@ -48294,7 +48294,7 @@
       "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
       "release_date": "2026-10-19",
       "last_updated": "2026-10-19",
-      "open_weights": false,
+      "open_weights": true,
       "display_name": "MiniMax-M3.1-Flash",
       "origin": "MiniMax",
       "context_window_tokens": 1000000,

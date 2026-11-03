@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "5bee2330fddf72f49bae11b8903a8c1753d3b7d325eed528da7bfc2129cc7222",
+    "sha256": "0d6995e11f1174c560cf6dd7bf7458e53258ea0b4de19dc8072e9b3e972051c8",
     "record_count": 235
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -17305,7 +17305,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1000000,
           "output": 524288
@@ -17371,7 +17371,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1000000,
           "output": 524288
@@ -17438,7 +17438,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1000000,
           "output": 512000

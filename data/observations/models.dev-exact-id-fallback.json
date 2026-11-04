@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "dfaca15772ef4e736fbeb5573a42b38252463914dc63de8e1c77f1e68567483d",
+    "sha256": "a032bd9630156a5a601e8097d13005838c9be0822e37b1e0cb035af10e6e79ca",
     "record_count": 235
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -29745,59 +29745,6 @@
           "input": 0.145,
           "output": 0.145,
           "cache_read": 0.014
-        },
-        "canonical_model_id": "mistral/mistral-nemo"
-      }
-    },
-    {
-      "catalog_model_id": "mistral-nemo-instruct-2407",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "ovhcloud",
-        "source_id": "mistral-nemo-instruct-2407",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mistral-nemo-instruct-2407",
-        "name": "Mistral-Nemo-Instruct-2407",
-        "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "family": "mistral-nemo",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2024-07",
-        "release_date": "2024-07-18",
-        "last_updated": "2024-07-18",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 65536,
-          "output": 65536
-        },
-        "cost": {
-          "input": 0.14,
-          "output": 0.14
         },
         "canonical_model_id": "mistral/mistral-nemo"
       }

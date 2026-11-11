@@ -8280,7 +8280,8 @@
       "max_input_tokens": 200000,
       "provider_sources": [
         "anthropic"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "claude-sonnet-4-5-20250929": {
       "context_window_tokens": 200000,
@@ -8336,7 +8337,8 @@
       },
       "provider_sources": [
         "anthropic"
-      ]
+      ],
+      "lifecycle": "deprecated"
     },
     "claude-sonnet-4-5-20250929-thinking": {
       "context_window_tokens": 200000,

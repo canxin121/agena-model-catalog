@@ -14511,6 +14511,18 @@
           "policy_rank": 1
         }
       },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "anthropic",
+          "source_id": "claude-sonnet-4-5",
+          "priority": 70,
+          "policy_rank": 1
+        }
+      },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -14733,6 +14745,18 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": "2025-09-29",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "anthropic",
+          "source_id": "claude-sonnet-4-5-20250929",
+          "priority": 70,
+          "policy_rank": 1
+        }
+      },
+      "lifecycle": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "deprecated",
         "source": {
           "upstream": "models.dev",
           "provider": "anthropic",

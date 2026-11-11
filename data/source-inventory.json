@@ -19,7 +19,7 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "a032bd9630156a5a601e8097d13005838c9be0822e37b1e0cb035af10e6e79ca",
+      "snapshot_sha256": "fcdb515c0dcbd8cadcda9e839ec2d1486c004e80252841c289c3ce6ec8ba2034",
       "snapshot_record_count": 235
     },
     {
@@ -52,9 +52,9 @@
       "refresh_interval_seconds": 604800,
       "published_snapshot": "data/observations/huggingface.json",
       "snapshot_status": "current",
-      "snapshot_sha256": "3dda07e9f0db456054d8223f6f9973efd47610efe7020d469f877169a48e8f64",
-      "snapshot_record_count": 2280,
-      "last_successful_retrieval": "2026-10-29T09:57:42+00:00"
+      "snapshot_sha256": "a199491f81b47344d7c0515d3831f05cddbbb12aa1990cf61b1e05e7824ebe3f",
+      "snapshot_record_count": 2285,
+      "last_successful_retrieval": "2026-11-11T04:40:31+00:00"
     },
     {
       "id": "openrouter",
@@ -74,9 +74,9 @@
       "published_snapshot": "data/routes/openrouter.json",
       "selection": "exact OpenRouter route only; never merged into provider-global model fields",
       "snapshot_status": "current",
-      "snapshot_sha256": "920a6a69468611bbbd534770c9d1cbe62a9158208acc64b959a3380d4194928f",
-      "snapshot_record_count": 454,
-      "last_successful_retrieval": "2026-11-04T21:20:13+00:00"
+      "snapshot_sha256": "a5d2439b5ebddba0e5f4ccd81f6ca7b3ba60259ad0a230c2fb2a81b6ea61075d",
+      "snapshot_record_count": 469,
+      "last_successful_retrieval": "2026-11-11T04:40:34+00:00"
     },
     {
       "id": "litellm",
@@ -94,9 +94,9 @@
       "published_snapshot": "data/routes/litellm.json",
       "selection": "route-level price and limit cross-check; no global fallback without explicit route mapping",
       "snapshot_status": "current",
-      "snapshot_sha256": "363799541e3cf722b0a5c9317bebb070b417fc4a932313aeedc6d37f26af23c9",
-      "snapshot_record_count": 4526,
-      "last_successful_retrieval": "2026-11-04T01:20:18+00:00"
+      "snapshot_sha256": "9d202d85be228ed1a2484c9def1a5dc9ef3985d78e45706993cda2c0c70f2108",
+      "snapshot_record_count": 5869,
+      "last_successful_retrieval": "2026-11-11T04:40:40+00:00"
     },
     {
       "id": "codex-client",
@@ -132,14 +132,14 @@
     }
   ],
   "route_record_counts": {
-    "models.dev_allowlisted_observations": 447,
-    "models.dev_exact_id_fallback_candidates": 731,
+    "models.dev_allowlisted_observations": 450,
+    "models.dev_exact_id_fallback_candidates": 726,
     "models.dev_route_limit_caps": 18,
-    "openrouter": 454,
-    "litellm": 4526
+    "openrouter": 469,
+    "litellm": 5869
   },
   "artifact_record_counts": {
-    "huggingface": 991
+    "huggingface": 994
   },
-  "model_provenance_count": 1899
+  "model_provenance_count": 1902
 }

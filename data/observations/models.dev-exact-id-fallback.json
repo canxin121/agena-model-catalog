@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "a032bd9630156a5a601e8097d13005838c9be0822e37b1e0cb035af10e6e79ca",
+    "sha256": "fcdb515c0dcbd8cadcda9e839ec2d1486c004e80252841c289c3ce6ec8ba2034",
     "record_count": 235
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -1417,57 +1417,6 @@
           "cache_read": 0.06
         },
         "canonical_model_id": "arcee-ai/trinity-large-thinking"
-      }
-    },
-    {
-      "catalog_model_id": "asi1-mini",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "asi1-mini",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "asi1-mini",
-        "name": "ASI1 Mini",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2025-03-25",
-        "last_updated": "2025-03-25",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "input": 128000,
-          "output": 16384
-        },
-        "cost": {
-          "input": 1,
-          "output": 1,
-          "cache_read": 0.5
-        }
       }
     },
     {
@@ -9540,7 +9489,7 @@
         },
         "open_weights": false,
         "limit": {
-          "context": 131072,
+          "context": 1048576,
           "output": 65536
         },
         "cost": {
@@ -9615,7 +9564,7 @@
         },
         "open_weights": false,
         "limit": {
-          "context": 131072,
+          "context": 1048576,
           "output": 65536
         },
         "cost": {
@@ -11991,165 +11940,6 @@
         "cost": {
           "input": 0.07,
           "output": 0.28
-        }
-      }
-    },
-    {
-      "catalog_model_id": "ernie-5.0-thinking-preview",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "ernie-5.0-thinking-preview",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ernie-5.0-thinking-preview",
-        "name": "Ernie 5.0 Thinking Preview",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "ernie",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2025-11-18",
-        "last_updated": "2025-11-18",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "input": 128000,
-          "output": 16384
-        },
-        "cost": {
-          "input": 1,
-          "output": 3.5,
-          "cache_read": 0.5
-        }
-      }
-    },
-    {
-      "catalog_model_id": "ernie-5.1",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "ernie-5.1",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ernie-5.1",
-        "name": "ERNIE 5.1",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "ernie",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2026-05-10",
-        "last_updated": "2026-05-10",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 119000,
-          "input": 119000,
-          "output": 64000
-        },
-        "cost": {
-          "input": 0.75,
-          "output": 3,
-          "cache_read": 0.75
-        }
-      }
-    },
-    {
-      "catalog_model_id": "ernie-5.1:thinking",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "ernie-5.1:thinking",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ernie-5.1:thinking",
-        "name": "ERNIE 5.1 Thinking",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "ernie",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2026-05-10",
-        "last_updated": "2026-05-10",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 119000,
-          "input": 119000,
-          "output": 64000
-        },
-        "cost": {
-          "input": 0.75,
-          "output": 3,
-          "cache_read": 0.75
         }
       }
     },
@@ -16154,58 +15944,6 @@
           "output": 0
         },
         "canonical_model_id": "zhipuai/glm-4.7-flash"
-      }
-    },
-    {
-      "catalog_model_id": "glm-4-long",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "nano-gpt",
-        "source_id": "glm-4-long",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-4-long",
-        "name": "GLM-4 Long",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "release_date": "2024-01-01",
-        "last_updated": "2024-08-01",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1000000,
-          "input": 1000000,
-          "output": 4095
-        },
-        "cost": {
-          "input": 0.2006,
-          "output": 0.2006,
-          "cache_read": 0.1003
-        }
       }
     },
     {
@@ -22262,7 +22000,17 @@
         "description": "Safety model for policy screening, moderation, and risk-aware routing workflows",
         "family": "gpt-oss",
         "attachment": false,
-        "reasoning": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        ],
         "tool_call": true,
         "structured_output": true,
         "temperature": true,

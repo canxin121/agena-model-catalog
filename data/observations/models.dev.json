@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "a032bd9630156a5a601e8097d13005838c9be0822e37b1e0cb035af10e6e79ca",
+    "sha256": "fcdb515c0dcbd8cadcda9e839ec2d1486c004e80252841c289c3ce6ec8ba2034",
     "record_count": 235
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -190,6 +190,91 @@
           "cache_write": 12.5
         },
         "canonical_model_id": "anthropic/claude-fable-5-1"
+      }
+    },
+    {
+      "canonical_model_id": "claude-fable-5-2",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "anthropic",
+        "source_id": "claude-fable-5-2",
+        "priority": 70,
+        "policy_rank": 1
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "claude-fable-5-2",
+        "name": "Claude Fable 5.2",
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": false,
+        "knowledge": "2026-06",
+        "release_date": "2026-11-09",
+        "last_updated": "2026-11-09",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "input": 16,
+                "output": 80,
+                "cache_read": 0.4,
+                "cache_write": 20
+              },
+              "provider": {
+                "body": {
+                  "speed": "fast"
+                }
+              }
+            }
+          }
+        },
+        "cost": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.2,
+          "cache_write": 10
+        },
+        "canonical_model_id": "anthropic/claude-fable-5-2"
       }
     },
     {
@@ -5635,6 +5720,74 @@
           "input_audio": 2
         },
         "canonical_model_id": "google/gemini-4-argon"
+      }
+    },
+    {
+      "canonical_model_id": "gemini-4-carbon",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "google",
+        "source_id": "gemini-4-carbon",
+        "priority": 70,
+        "policy_rank": 2
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "gemini-4-carbon",
+        "name": "Gemini 4 Carbon",
+        "description": "Google's most capable reasoning model for complex software engineering, deep math and science, high factual accuracy, and long-horizon autonomous agents",
+        "family": "gemini",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2026-03",
+        "release_date": "2026-11-10",
+        "last_updated": "2026-11-10",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1048576,
+          "output": 32768
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1,
+          "input_audio": 2
+        },
+        "canonical_model_id": "google/gemini-4-carbon"
       }
     },
     {
@@ -14834,7 +14987,7 @@
       "raw": {
         "id": "kimi-k3.1-pro",
         "name": "Kimi K3.1 Pro",
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "attachment": true,
         "reasoning": true,
@@ -14866,7 +15019,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1048576,
           "output": 1048576
@@ -14902,7 +15055,7 @@
       "raw": {
         "id": "kimi-k3.1-pro",
         "name": "Kimi K3.1 Pro",
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "attachment": true,
         "reasoning": true,
@@ -14934,7 +15087,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1048576,
           "output": 1048576
@@ -14970,7 +15123,7 @@
       "raw": {
         "id": "kimi-k3.1-pro-highspeed",
         "name": "Kimi K3.1 Pro Highspeed",
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "attachment": true,
         "reasoning": true,
@@ -15002,7 +15155,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1048576,
           "output": 1048576
@@ -15038,7 +15191,7 @@
       "raw": {
         "id": "kimi-k3.1-pro-highspeed",
         "name": "Kimi K3.1 Pro Highspeed",
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "attachment": true,
         "reasoning": true,
@@ -15070,7 +15223,7 @@
             "text"
           ]
         },
-        "open_weights": false,
+        "open_weights": true,
         "limit": {
           "context": 1048576,
           "output": 1048576
@@ -18413,6 +18566,91 @@
           "output": 0.6,
           "cache_read": 0.015
         }
+      }
+    },
+    {
+      "canonical_model_id": "muse-ember-1.0",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "meta",
+        "source_id": "muse-ember-1.0",
+        "priority": 70,
+        "policy_rank": 17
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "muse-ember-1.0",
+        "name": "Muse Ember",
+        "description": "Muse Ember is Meta's smallest and most efficient reasoning model, built for the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long-document parsing. It pairs with Muse Wonder or Muse Spark, which plan while Muse Ember handles the volume.",
+        "family": "muse",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "release_date": "2026-11-09",
+        "last_updated": "2026-11-09",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "pdf",
+            "audio"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1048576,
+          "output": 524288
+        },
+        "cost": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": 0.004,
+          "tiers": [
+            {
+              "input": 0.3,
+              "output": 1.5,
+              "cache_read": 0.012,
+              "tier": {
+                "type": "context",
+                "size": 200000
+              }
+            }
+          ],
+          "context_over_200k": {
+            "input": 0.3,
+            "output": 1.5,
+            "cache_read": 0.012
+          }
+        },
+        "canonical_model_id": "meta/muse-ember-1.0"
       }
     },
     {

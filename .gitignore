@@ -2,3 +2,6 @@
 # Kept on disk for offline merge/verify tooling; not committed.
 .cache/
 .DS_Store
+
+# Python bytecode from local pipeline runs.
+__pycache__/

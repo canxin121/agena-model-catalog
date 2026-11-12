@@ -3577,7 +3577,12 @@
       "provider_sources": [
         "openai"
       ],
-      "lifecycle": "deprecated"
+      "lifecycle": "deprecated",
+      "pricing": {
+        "input_usd_per_million_tokens": "5",
+        "output_usd_per_million_tokens": "10",
+        "cache_read_usd_per_million_tokens": "1.25"
+      }
     },
     "cheap": {
       "context_window_tokens": 1000000,
@@ -23540,6 +23545,68 @@
       },
       "max_input_tokens": 1048576
     },
+    "gemini-4-hydrogen": {
+      "description": "Google's Gemini 4 model for everyday coding and agentic workflows, with four thinking levels and a 1M-token context window",
+      "knowledge_cutoff": "2026-03",
+      "release_date": "2026-11-12",
+      "last_updated": "2026-11-12",
+      "open_weights": false,
+      "display_name": "Gemini 4 Hydrogen",
+      "origin": "Google",
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 65536,
+      "input": {
+        "supported": [
+          "audio",
+          "document",
+          "image",
+          "text",
+          "video"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "temperature",
+          "tool_calling"
+        ]
+      },
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "1.5",
+        "output_usd_per_million_tokens": "7.5",
+        "cache_read_usd_per_million_tokens": "0.075"
+      },
+      "provider_sources": [
+        "google"
+      ],
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "xhigh": {
+          "display_name": "Think Xhigh",
+          "strategy": "effort",
+          "effort": "xhigh"
+        }
+      },
+      "max_input_tokens": 1048576
+    },
     "gemini-deep-research": {
       "lifecycle": "deprecated",
       "context_window_tokens": 1048576,
@@ -23865,10 +23932,7 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 131072,
-      "provider_sources": [
-        "google"
-      ]
+      "max_input_tokens": 131072
     },
     "gemini-pro-agent": {
       "context_window_tokens": 1048576,
@@ -24353,8 +24417,8 @@
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.13",
-        "output_usd_per_million_tokens": "0.4",
+        "input_usd_per_million_tokens": "0",
+        "output_usd_per_million_tokens": "0",
         "cache_read_usd_per_million_tokens": "0.015",
         "cache_write_usd_per_million_tokens": "0.058"
       },
@@ -24412,8 +24476,8 @@
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.14",
-        "output_usd_per_million_tokens": "0.4",
+        "input_usd_per_million_tokens": "0",
+        "output_usd_per_million_tokens": "0",
         "cache_read_usd_per_million_tokens": "0.012",
         "cache_write_usd_per_million_tokens": "0.5"
       },
@@ -34680,7 +34744,7 @@
       ],
       "pricing": {
         "input_usd_per_million_tokens": "5",
-        "output_usd_per_million_tokens": "32",
+        "output_usd_per_million_tokens": "10",
         "cache_read_usd_per_million_tokens": "1.25"
       },
       "display_name": "gpt-image-1.5",

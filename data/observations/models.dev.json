@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "bf1b7897e56fb84df8c0ca5e44a2cf315119d6111c54f414064c12a3938f3dd7",
+    "sha256": "f47733e7815c06b9ec40ec380eb0765437ffaec66881632e9850e3ba51fecc73",
     "record_count": 235
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -55,7 +55,12 @@
           "input": 0,
           "output": 0
         },
-        "status": "deprecated"
+        "status": "deprecated",
+        "cost": {
+          "input": 5,
+          "output": 10,
+          "cache_read": 1.25
+        }
       }
     },
     {
@@ -4185,21 +4190,7 @@
         },
         "cost": {
           "input": 1.25,
-          "output": 10,
-          "tiers": [
-            {
-              "input": 2.5,
-              "output": 15,
-              "tier": {
-                "type": "context",
-                "size": 200000
-              }
-            }
-          ],
-          "context_over_200k": {
-            "input": 2.5,
-            "output": 15
-          }
+          "output": 10
         },
         "canonical_model_id": "google/gemini-2.5-computer-use-preview-10-2025"
       }
@@ -5793,6 +5784,75 @@
       }
     },
     {
+      "canonical_model_id": "gemini-4-hydrogen",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "google",
+        "source_id": "gemini-4-hydrogen",
+        "priority": 70,
+        "policy_rank": 2
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "gemini-4-hydrogen",
+        "name": "Gemini 4 Hydrogen",
+        "description": "Google's Gemini 4 model for everyday coding and agentic workflows, with four thinking levels and a 1M-token context window",
+        "family": "gemini",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2026-03",
+        "release_date": "2026-11-12",
+        "last_updated": "2026-11-12",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1048576,
+          "output": 65536
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.075,
+          "input_audio": 1.5
+        },
+        "canonical_model_id": "google/gemini-4-hydrogen"
+      }
+    },
+    {
       "canonical_model_id": "gemini-embedding-001",
       "scope": "publisher_api_model",
       "source": {
@@ -6032,60 +6092,6 @@
           "output": 2.5,
           "cache_read": 0.03
         }
-      }
-    },
-    {
-      "canonical_model_id": "gemini-omni-flash-preview",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "google",
-        "source_id": "gemini-omni-flash-preview",
-        "priority": 70,
-        "policy_rank": 2
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gemini-omni-flash-preview",
-        "type": "video",
-        "name": "Gemini Omni Flash Preview",
-        "description": "Video generation and editing model for fast, conversational text- and image-to-video workflows",
-        "family": "gemini",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": false,
-        "temperature": true,
-        "release_date": "2026-06-30",
-        "last_updated": "2026-06-30",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output": [
-            "video"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 131072,
-          "output": 65536
-        },
-        "cost": {
-          "input": 1.5,
-          "output": 17.5
-        },
-        "canonical_model_id": "google/gemini-omni-flash-preview"
       }
     },
     {
@@ -6379,6 +6385,10 @@
         "limit": {
           "context": 262144,
           "output": 32768
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
         }
       }
     },
@@ -6484,6 +6494,10 @@
         "limit": {
           "context": 262144,
           "output": 32768
+        },
+        "cost": {
+          "input": 0,
+          "output": 0
         }
       }
     },
@@ -12678,6 +12692,11 @@
           "output": 0
         },
         "status": "deprecated",
+        "cost": {
+          "input": 5,
+          "output": 10,
+          "cache_read": 1.25
+        },
         "canonical_model_id": "openai/gpt-image-1.5"
       }
     },

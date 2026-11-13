@@ -3,9 +3,9 @@
   "source": {
     "id": "litellm",
     "status": "current",
-    "sha256": "0d46736fa01ea12ccabd887821ef8c11e40afb896261d76d549a422b13a3a7a5",
-    "record_count": 5920,
-    "retrieved_at": "2026-11-12T11:08:22+00:00"
+    "sha256": "230dfd5649d6fa5fc08c306b316448b4dbcf4f4935dca572ea155ed5162e74d8",
+    "record_count": 5988,
+    "retrieved_at": "2026-11-13T21:25:36+00:00"
   },
   "scope": "provider_route_reference",
   "records": [
@@ -85,7 +85,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.009,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -128,7 +128,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -179,7 +179,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.013,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -222,7 +222,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -247,7 +247,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.013,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -290,7 +290,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -4303,7 +4303,8 @@
         "output_cost_per_token": 2.75e-06,
         "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-5-sonic.md",
         "supports_audio_input": true,
-        "supports_audio_output": true
+        "supports_audio_output": true,
+        "supports_function_calling": true
       }
     },
     {
@@ -5036,7 +5037,9 @@
         "supports_tool_choice": true,
         "supports_vision": true,
         "cache_creation_input_token_cost": 3.75e-06,
-        "cache_read_input_token_cost": 3e-07
+        "cache_read_input_token_cost": 3e-07,
+        "deprecation_date": "2026-11-13",
+        "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html"
       }
     },
     {
@@ -5074,7 +5077,9 @@
         "supports_prompt_caching": true,
         "supports_response_schema": true,
         "supports_tool_choice": true,
-        "supports_vision": true
+        "supports_vision": true,
+        "deprecation_date": "2026-11-13",
+        "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html"
       }
     },
     {
@@ -5152,7 +5157,9 @@
         "supports_reasoning": true,
         "supports_response_schema": true,
         "supports_tool_choice": true,
-        "supports_vision": true
+        "supports_vision": true,
+        "deprecation_date": "2026-11-13",
+        "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html"
       }
     },
     {
@@ -16761,11 +16768,7 @@
         "cache_creation_input_token_cost_above_272k_tokens_flex": 1.25e-05,
         "cache_read_input_token_cost_above_272k_tokens_flex": 1e-06,
         "input_cost_per_token_above_272k_tokens_flex": 1e-05,
-        "output_cost_per_token_above_272k_tokens_flex": 3.75e-05,
-        "input_cost_per_token_flex": 5e-06,
-        "output_cost_per_token_flex": 2.5e-05,
-        "cache_read_input_token_cost_flex": 5e-07,
-        "cache_creation_input_token_cost_flex": 6.25e-06
+        "output_cost_per_token_above_272k_tokens_flex": 3.75e-05
       }
     },
     {
@@ -16909,15 +16912,7 @@
         "supports_tool_choice": true,
         "supports_vision": true,
         "supports_web_search": true,
-        "supports_xhigh_reasoning_effort": true,
-        "cache_creation_input_token_cost_above_272k_tokens_flex": 1.25e-07,
-        "cache_creation_input_token_cost_flex": 6.25e-08,
-        "cache_read_input_token_cost_above_272k_tokens_flex": 1e-08,
-        "cache_read_input_token_cost_flex": 5e-09,
-        "input_cost_per_token_above_272k_tokens_flex": 1e-07,
-        "input_cost_per_token_flex": 5e-08,
-        "output_cost_per_token_above_272k_tokens_flex": 3.75e-07,
-        "output_cost_per_token_flex": 2.5e-07
+        "supports_xhigh_reasoning_effort": true
       }
     },
     {
@@ -24635,8 +24630,8 @@
         "source_url": "https://management.azure.com/subscriptions/a88257a5-3323-4ef9-95bf-5681a46c9624/providers/Microsoft.CognitiveServices/locations/eastus/models?api-version=2024-10-01"
       },
       "raw": {
-        "deprecation_date": "2027-02-26",
-        "deprecation_source": "https://management.azure.com/subscriptions/a88257a5-3323-4ef9-95bf-5681a46c9624/providers/Microsoft.CognitiveServices/locations/eastus/models?api-version=2024-10-01",
+        "deprecation_date": "2026-12-15",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule",
         "input_cost_per_second": 0.0001,
         "litellm_provider": "azure",
         "mode": "audio_transcription",
@@ -24664,8 +24659,8 @@
         "source_url": "https://management.azure.com/subscriptions/a88257a5-3323-4ef9-95bf-5681a46c9624/providers/Microsoft.CognitiveServices/locations/eastus/models?api-version=2024-10-01"
       },
       "raw": {
-        "deprecation_date": "2027-02-26",
-        "deprecation_source": "https://management.azure.com/subscriptions/a88257a5-3323-4ef9-95bf-5681a46c9624/providers/Microsoft.CognitiveServices/locations/eastus/models?api-version=2024-10-01",
+        "deprecation_date": "2026-12-15",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule",
         "input_cost_per_second": 0.0001,
         "litellm_provider": "azure",
         "mode": "audio_transcription",
@@ -28215,6 +28210,38 @@
         "deprecation_date": "2026-12-15",
         "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
         "source": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/deepseek-v4-1-flash-is-coming-to-microsoft-foundry/4556431"
+      }
+    },
+    {
+      "route_id": "azure_ai/deepseek-v4.1-flash-1017",
+      "provider": "azure_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "deepseek-v4.1-flash-1017",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "input_usd_per_million_tokens": "0.3",
+        "output_usd_per_million_tokens": "1.2",
+        "cache_read_usd_per_million_tokens": "0.006",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://ai.azure.com/catalog/models/DeepSeek-V4.1-Flash-1017"
+      },
+      "raw": {
+        "input_cost_per_token": 3e-07,
+        "output_cost_per_token": 1.2e-06,
+        "cache_read_input_token_cost": 6e-09,
+        "litellm_provider": "azure_ai",
+        "mode": "chat",
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "supports_prompt_caching": true,
+        "supports_vision": false,
+        "source": "https://ai.azure.com/catalog/models/DeepSeek-V4.1-Flash-1017"
       }
     },
     {
@@ -36372,7 +36399,9 @@
         "supports_tool_choice": true,
         "supports_vision": true,
         "cache_read_input_token_cost": 3e-07,
-        "cache_creation_input_token_cost": 3.75e-06
+        "cache_creation_input_token_cost": 3.75e-06,
+        "deprecation_date": "2026-11-13",
+        "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html"
       }
     },
     {
@@ -45545,7 +45574,7 @@
         "cache_read_input_token_cost_batches": 6.3e-07,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image_token": 8e-06,
         "input_cost_per_image_token_batches": 4e-06,
         "input_cost_per_token": 5e-06,
@@ -55363,6 +55392,9 @@
         "output_cost_per_token_priority": 6.75003e-06,
         "cache_read_input_token_cost_priority": 1.3503e-07,
         "cache_creation_input_token_cost_priority": 1.35002e-06,
+        "deprecation_date": "2026-11-19",
+        "deprecation_source": "https://docs.databricks.com/aws/en/machine-learning/retired-models-policy",
+        "successor_model": "databricks/databricks-gemini-3-8-flash",
         "supports_audio_input": true,
         "supports_video_input": true
       }
@@ -61402,6 +61434,43 @@
       }
     },
     {
+      "route_id": "deepinfra/XiaomiMiMo/MiMo-V2.6-Flash",
+      "provider": "deepinfra",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "mimo-v2.6-flash",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "0.14",
+        "output_usd_per_million_tokens": "0.28",
+        "cache_read_usd_per_million_tokens": "0.0028",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://deepinfra.com/XiaomiMiMo/MiMo-V2.6-Flash"
+      },
+      "raw": {
+        "max_input_tokens": 1048576,
+        "input_cost_per_token": 1.4e-07,
+        "output_cost_per_token": 2.8e-07,
+        "cache_read_input_token_cost": 2.8e-09,
+        "supports_prompt_caching": true,
+        "litellm_provider": "deepinfra",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": true,
+        "supports_video_input": true,
+        "supports_audio_input": true,
+        "source": "https://deepinfra.com/XiaomiMiMo/MiMo-V2.6-Flash"
+      }
+    },
+    {
       "route_id": "deepinfra/allenai/olmOCR-7B-0725-FP8",
       "provider": "deepinfra",
       "scope": "provider_route_reference",
@@ -62224,6 +62293,7 @@
         "supports_function_calling": true,
         "supports_tool_choice": true,
         "supports_response_schema": true,
+        "supports_reasoning": true,
         "supports_vision": false,
         "source": "https://deepinfra.com/pricing"
       }
@@ -62259,6 +62329,7 @@
         "supports_function_calling": true,
         "supports_tool_choice": true,
         "supports_response_schema": true,
+        "supports_reasoning": true,
         "supports_vision": false,
         "source": "https://deepinfra.com/pricing"
       }
@@ -63652,6 +63723,7 @@
         "supports_function_calling": true,
         "supports_tool_choice": true,
         "supports_response_schema": true,
+        "supports_reasoning": true,
         "supports_vision": true,
         "source": "https://deepinfra.com/pricing"
       }
@@ -63817,6 +63889,42 @@
         "supports_reasoning": true,
         "cache_read_input_token_cost": 4e-08,
         "supports_prompt_caching": true
+      }
+    },
+    {
+      "route_id": "deepinfra/nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+      "provider": "deepinfra",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 262144,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "0.15",
+        "output_usd_per_million_tokens": "0.5",
+        "cache_read_usd_per_million_tokens": "0.02",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://deepinfra.com/nvidia/NVIDIA-Nemotron-3.5-Super-VL"
+      },
+      "raw": {
+        "max_input_tokens": 262144,
+        "input_cost_per_token": 1.5e-07,
+        "output_cost_per_token": 5e-07,
+        "cache_read_input_token_cost": 2e-08,
+        "supports_prompt_caching": true,
+        "litellm_provider": "deepinfra",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": true,
+        "supports_video_input": true,
+        "source": "https://deepinfra.com/nvidia/NVIDIA-Nemotron-3.5-Super-VL"
       }
     },
     {
@@ -64112,6 +64220,42 @@
         "supports_reasoning": true,
         "supports_vision": false,
         "source": "https://deepinfra.com/pricing"
+      }
+    },
+    {
+      "route_id": "deepinfra/tencent/Hy4-preview",
+      "provider": "deepinfra",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "hy4-preview",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 131072,
+        "input_usd_per_million_tokens": "0.834",
+        "output_usd_per_million_tokens": "2.501",
+        "cache_read_usd_per_million_tokens": "0.042",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://deepinfra.com/tencent/Hy4-preview"
+      },
+      "raw": {
+        "max_output_tokens": 131072,
+        "max_input_tokens": 1048576,
+        "input_cost_per_token": 8.34e-07,
+        "output_cost_per_token": 2.501e-06,
+        "cache_read_input_token_cost": 4.2e-08,
+        "supports_prompt_caching": true,
+        "litellm_provider": "deepinfra",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": false,
+        "source": "https://deepinfra.com/tencent/Hy4-preview"
       }
     },
     {
@@ -64430,6 +64574,43 @@
         "supports_reasoning": true,
         "supports_vision": false,
         "source": "https://deepinfra.com/pricing"
+      }
+    },
+    {
+      "route_id": "deepinfra/zai-org/GLM-5.3-Flash",
+      "provider": "deepinfra",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "glm-5.3-flash",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 1048576,
+        "input_usd_per_million_tokens": "0.15",
+        "output_usd_per_million_tokens": "0.5",
+        "cache_read_usd_per_million_tokens": "0.03",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://deepinfra.com/zai-org/GLM-5.3-Flash"
+      },
+      "raw": {
+        "max_output_tokens": 1048576,
+        "max_input_tokens": 1048576,
+        "input_cost_per_token": 1.5e-07,
+        "output_cost_per_token": 5e-07,
+        "cache_read_input_token_cost": 3e-08,
+        "supports_prompt_caching": true,
+        "litellm_provider": "deepinfra",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": true,
+        "supports_video_input": true,
+        "source": "https://deepinfra.com/zai-org/GLM-5.3-Flash"
       }
     },
     {
@@ -70188,7 +70369,9 @@
         "supports_tool_choice": true,
         "supports_vision": true,
         "cache_read_input_token_cost": 3e-07,
-        "cache_creation_input_token_cost": 3.75e-06
+        "cache_creation_input_token_cost": 3.75e-06,
+        "deprecation_date": "2026-11-13",
+        "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html"
       }
     },
     {
@@ -70226,7 +70409,9 @@
         "supports_tool_choice": true,
         "supports_vision": true,
         "cache_read_input_token_cost": 3e-07,
-        "cache_creation_input_token_cost": 3.75e-06
+        "cache_creation_input_token_cost": 3.75e-06,
+        "deprecation_date": "2026-11-13",
+        "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html"
       }
     },
     {
@@ -70265,7 +70450,9 @@
         "supports_tool_choice": true,
         "supports_vision": true,
         "cache_read_input_token_cost": 3e-07,
-        "cache_creation_input_token_cost": 3.75e-06
+        "cache_creation_input_token_cost": 3.75e-06,
+        "deprecation_date": "2026-11-13",
+        "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html"
       }
     },
     {
@@ -71438,7 +71625,7 @@
       },
       "fields": {
         "max_input_tokens": 163840,
-        "max_output_tokens": 163840,
+        "max_output_tokens": 8000,
         "input_usd_per_million_tokens": "0.74",
         "output_usd_per_million_tokens": "2.22",
         "cache_read_usd_per_million_tokens": null,
@@ -71450,7 +71637,7 @@
         "input_cost_per_token_flex": 3.7e-07,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 163840,
-        "max_output_tokens": 163840,
+        "max_output_tokens": 8000,
         "mode": "chat",
         "output_cost_per_token": 2.22e-06,
         "output_cost_per_token_flex": 1.11e-06,
@@ -75333,6 +75520,181 @@
       }
     },
     {
+      "route_id": "fal_ai/bytedance/seedance-latest/image-to-video",
+      "provider": null,
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": null
+      },
+      "raw": {
+        "alias_of": "fal_ai/bytedance/seedance-2.5/image-to-video"
+      }
+    },
+    {
+      "route_id": "fal_ai/bytedance/seedance-latest/reference-to-video",
+      "provider": null,
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": null
+      },
+      "raw": {
+        "alias_of": "fal_ai/bytedance/seedance-2.5/reference-to-video"
+      }
+    },
+    {
+      "route_id": "fal_ai/bytedance/seedance-latest/text-to-video",
+      "provider": null,
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": null
+      },
+      "raw": {
+        "alias_of": "fal_ai/bytedance/seedance-2.5/text-to-video"
+      }
+    },
+    {
+      "route_id": "fal_ai/bytedance/seedream/v5.5/edit",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/bytedance/seedream/v5.5/edit"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "metadata": {
+          "comment": "per output image with one input image at the default image_size auto_2K ($0.0405 per output plus $0.012 per input image per output); 1K and 1.5K outputs are $0.03 plus the input fee and each additional input image adds $0.012 per output, which is not modeled"
+        },
+        "mode": "image_generation",
+        "output_cost_per_image": 0.0525,
+        "output_cost_per_image_1K": 0.042,
+        "output_cost_per_image_2K": 0.0525,
+        "source": "https://fal.ai/models/bytedance/seedream/v5.5/edit",
+        "supported_endpoints": [
+          "/v1/images/edits",
+          "/v1/images/generations"
+        ],
+        "supports_vision": true
+      }
+    },
+    {
+      "route_id": "fal_ai/bytedance/seedream/v5.5/layerize",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/bytedance/seedream/v5.5/layerize"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "metadata": {
+          "comment": "per returned output image (the base image and every separated layer) at the default image_size auto, where a base image above 2,610,000 pixels bills $0.0405 per output and one at or under that area bills $0.03; fal also bills $0.012 for the input image once per request and returns up to max_images (default 30) outputs, which is not modeled"
+        },
+        "mode": "image_generation",
+        "output_cost_per_image": 0.0405,
+        "output_cost_per_image_1K": 0.03,
+        "output_cost_per_image_2K": 0.0405,
+        "source": "https://fal.ai/models/bytedance/seedream/v5.5/layerize",
+        "supported_endpoints": [
+          "/v1/images/edits",
+          "/v1/images/generations"
+        ],
+        "supports_vision": true
+      }
+    },
+    {
+      "route_id": "fal_ai/bytedance/seedream/v5.5/text-to-image",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/bytedance/seedream/v5.5/text-to-image"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "metadata": {
+          "comment": "per image at the default image_size auto_2K; 1K and 1.5K outputs are $0.03 and custom dimensions are $0.03 up to and including 2,610,000 pixels and $0.0405 above, so 1.5K has no catalog field"
+        },
+        "mode": "image_generation",
+        "output_cost_per_image": 0.0405,
+        "output_cost_per_image_1K": 0.03,
+        "output_cost_per_image_2K": 0.0405,
+        "source": "https://fal.ai/models/bytedance/seedream/v5.5/text-to-image",
+        "supported_endpoints": [
+          "/v1/images/generations"
+        ]
+      }
+    },
+    {
       "route_id": "fal_ai/bytedance/seedream/v5/flash/edit",
       "provider": "fal_ai",
       "scope": "provider_route_reference",
@@ -75666,6 +76028,42 @@
       }
     },
     {
+      "route_id": "fal_ai/decart/lucy-5b/image-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/decart/lucy-5b/image-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.15,
+        "source": "https://fal.ai/models/decart/lucy-5b/image-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "image"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
       "route_id": "fal_ai/decart/lucy-restyle",
       "provider": "fal_ai",
       "scope": "provider_route_reference",
@@ -75839,6 +76237,42 @@
         "supported_modalities": [
           "text",
           "image"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/auto-caption",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/auto-caption"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.1,
+        "source": "https://fal.ai/models/fal-ai/auto-caption",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
         ],
         "supported_output_modalities": [
           "video"
@@ -76856,6 +77290,29 @@
           "/v1/images/generations"
         ],
         "supports_vision": true
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/decart/lucy-5b/image-to-video",
+      "provider": null,
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": null
+      },
+      "raw": {
+        "alias_of": "fal_ai/decart/lucy-5b/image-to-video"
       }
     },
     {
@@ -80286,6 +80743,40 @@
       }
     },
     {
+      "route_id": "fal_ai/fal-ai/flux-pro/v1/vto",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/flux-pro/v1/vto"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "metadata": {
+          "comment": "per try-on with one 1 MP input image and one 1 MP output ($0.0375 for the first input megapixel plus $0.005 per output megapixel); fal bills $0.005 per additional input megapixel and rounds each input image and the output up to whole megapixels separately, which is not modeled"
+        },
+        "mode": "image_generation",
+        "output_cost_per_image": 0.0425,
+        "source": "https://fal.ai/models/fal-ai/flux-pro/v1/vto",
+        "supported_endpoints": [
+          "/v1/images/edits",
+          "/v1/images/generations"
+        ],
+        "supports_vision": true
+      }
+    },
+    {
       "route_id": "fal_ai/fal-ai/flux-pulid",
       "provider": "fal_ai",
       "scope": "provider_route_reference",
@@ -81812,6 +82303,78 @@
         "source": "https://fal.ai/models/fal-ai/hunyuan-image/v3/text-to-image",
         "supported_endpoints": [
           "/v1/images/generations"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/hunyuan-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/hunyuan-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.4,
+        "source": "https://fal.ai/models/fal-ai/hunyuan-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/hunyuan-video-image-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/hunyuan-video-image-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.4,
+        "source": "https://fal.ai/models/fal-ai/hunyuan-video-image-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
         ]
       }
     },
@@ -84112,6 +84675,42 @@
         "output_cost_per_image": 0.06,
         "supported_endpoints": [
           "/v1/images/generations"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/infinity-star/text-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/infinity-star/text-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.07,
+        "source": "https://fal.ai/models/fal-ai/infinity-star/text-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
         ]
       }
     },
@@ -86699,6 +87298,186 @@
       }
     },
     {
+      "route_id": "fal_ai/fal-ai/ltx-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/ltx-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.02,
+        "source": "https://fal.ai/models/fal-ai/ltx-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/ltx-video-13b-distilled",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/ltx-video-13b-distilled"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.04,
+        "source": "https://fal.ai/models/fal-ai/ltx-video-13b-distilled",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/ltx-video-13b-distilled/extend",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/ltx-video-13b-distilled/extend"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.04,
+        "source": "https://fal.ai/models/fal-ai/ltx-video-13b-distilled/extend",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/ltx-video-13b-distilled/multiconditioning",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/ltx-video-13b-distilled/multiconditioning"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.04,
+        "source": "https://fal.ai/models/fal-ai/ltx-video-13b-distilled/multiconditioning",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/ltx-video/image-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/ltx-video/image-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.02,
+        "source": "https://fal.ai/models/fal-ai/ltx-video/image-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
       "route_id": "fal_ai/fal-ai/ltxv-13b-098-distilled",
       "provider": "fal_ai",
       "scope": "provider_route_reference",
@@ -87091,6 +87870,42 @@
       }
     },
     {
+      "route_id": "fal_ai/fal-ai/minimax/hailuo-2.3-fast/pro/image-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/minimax/hailuo-2.3-fast/pro/image-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.33,
+        "source": "https://fal.ai/models/fal-ai/minimax/hailuo-2.3-fast/pro/image-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
       "route_id": "fal_ai/fal-ai/minimax/image-01",
       "provider": "fal_ai",
       "scope": "provider_route_reference",
@@ -87148,6 +87963,258 @@
           "/v1/images/generations"
         ],
         "supports_vision": true
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/minimax/video-01",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/minimax/video-01"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.5,
+        "source": "https://fal.ai/models/fal-ai/minimax/video-01",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/minimax/video-01-director",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/minimax/video-01-director"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.5,
+        "source": "https://fal.ai/models/fal-ai/minimax/video-01-director",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/minimax/video-01-director/image-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/minimax/video-01-director/image-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.5,
+        "source": "https://fal.ai/models/fal-ai/minimax/video-01-director/image-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/minimax/video-01-live",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/minimax/video-01-live"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.5,
+        "source": "https://fal.ai/models/fal-ai/minimax/video-01-live",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/minimax/video-01-live/image-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/minimax/video-01-live/image-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.5,
+        "source": "https://fal.ai/models/fal-ai/minimax/video-01-live/image-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/minimax/video-01-subject-reference",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/minimax/video-01-subject-reference"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.5,
+        "source": "https://fal.ai/models/fal-ai/minimax/video-01-subject-reference",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/minimax/video-01/image-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/minimax/video-01/image-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.5,
+        "source": "https://fal.ai/models/fal-ai/minimax/video-01/image-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
       }
     },
     {
@@ -87765,6 +88832,78 @@
       }
     },
     {
+      "route_id": "fal_ai/fal-ai/ovi",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/ovi"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.2,
+        "source": "https://fal.ai/models/fal-ai/ovi",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/ovi/image-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/ovi/image-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.2,
+        "source": "https://fal.ai/models/fal-ai/ovi/image-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
       "route_id": "fal_ai/fal-ai/patina",
       "provider": "fal_ai",
       "scope": "provider_route_reference",
@@ -87792,6 +88931,74 @@
         "output_cost_per_image": 0.01,
         "output_cost_per_pixel": 9.5367431640625e-09,
         "source": "https://fal.ai/models/fal-ai/patina",
+        "supported_endpoints": [
+          "/v1/images/edits",
+          "/v1/images/generations"
+        ],
+        "supports_vision": true
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/patina/material",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/patina/material"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "metadata": {
+          "comment": "per request at the schema defaults (1024x1024 square_hd, all 5 maps, no upscaling), the page's own example; fal bills $0.01 per request plus $0.02 per megapixel plus $0.01 per megapixel per map type, and 2x or 4x upscaling adds $0.004 or $0.016 per pre-upscaling megapixel per map, which is not modeled"
+        },
+        "mode": "image_generation",
+        "output_cost_per_image": 0.08,
+        "source": "https://fal.ai/models/fal-ai/patina/material",
+        "supported_endpoints": [
+          "/v1/images/edits",
+          "/v1/images/generations"
+        ],
+        "supports_vision": true
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/patina/material/extract",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/patina/material/extract"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "metadata": {
+          "comment": "per request at the schema defaults (1024x1024 input, all 5 maps, no upscaling), the page's own example; fal bills $0.10 per request plus $0.02 per megapixel plus $0.01 per megapixel per map type, and 2x or 4x upscaling adds $0.004 or $0.016 per pre-upscaling megapixel per map, which is not modeled"
+        },
+        "mode": "image_generation",
+        "output_cost_per_image": 0.17,
+        "source": "https://fal.ai/models/fal-ai/patina/material/extract",
         "supported_endpoints": [
           "/v1/images/edits",
           "/v1/images/generations"
@@ -90823,6 +92030,45 @@
       }
     },
     {
+      "route_id": "fal_ai/fal-ai/vidu/template-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/vidu/template-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "metadata": {
+          "comment": "per second derived from the $0.20 Standard template price over the fixed 4s clip the sibling vidu endpoints state; Premium templates are $0.30 and Advanced templates $0.50 per video, which has no catalog field"
+        },
+        "mode": "video_generation",
+        "output_cost_per_second": 0.05,
+        "source": "https://fal.ai/models/fal-ai/vidu/template-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "image"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
       "route_id": "fal_ai/fal-ai/wan-22-vace-fun-a14b/depth",
       "provider": "fal_ai",
       "scope": "provider_route_reference",
@@ -91123,6 +92369,114 @@
         ],
         "supported_modalities": [
           "text"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/wan-i2v-lora",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/wan-i2v-lora"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.75,
+        "source": "https://fal.ai/models/fal-ai/wan-i2v-lora",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/wan-pro/image-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/wan-pro/image-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.8,
+        "source": "https://fal.ai/models/fal-ai/wan-pro/image-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/wan-t2v-lora",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/wan-t2v-lora"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.75,
+        "source": "https://fal.ai/models/fal-ai/wan-t2v-lora",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
         ],
         "supported_output_modalities": [
           "video"
@@ -91581,6 +92935,42 @@
       }
     },
     {
+      "route_id": "fal_ai/fal-ai/wan/v2.2-5b/image-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/wan/v2.2-5b/image-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.15,
+        "source": "https://fal.ai/models/fal-ai/wan/v2.2-5b/image-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
       "route_id": "fal_ai/fal-ai/wan/v2.2-5b/text-to-image",
       "provider": "fal_ai",
       "scope": "provider_route_reference",
@@ -91606,6 +92996,42 @@
         "source": "https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-image",
         "supported_endpoints": [
           "/v1/images/generations"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/fal-ai/wan/v2.2-5b/text-to-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.15,
+        "source": "https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
         ]
       }
     },
@@ -92956,6 +94382,167 @@
         "supported_output_modalities": [
           "video"
         ]
+      }
+    },
+    {
+      "route_id": "fal_ai/google/gemini-omni-flash/v1.2/upscale",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/google/gemini-omni-flash/v1.2/upscale"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "metadata": {
+          "comment": "per second of upscaled output video by target resolution; the 1080p tier and output_cost_per_second take the higher source-dependent rate ($0.0819 from a 360p source) because the catalog selects by target resolution alone and the source resolution has no field, so a 720p source upscaled to 1080p ($0.041 per second) is overcounted, the same convention as fal_ai/blackforestlabs/flux-video-upscale"
+        },
+        "mode": "video_generation",
+        "output_cost_per_second": 0.0819,
+        "output_cost_per_second_1080p": 0.0819,
+        "output_cost_per_second_4k": 0.1638,
+        "output_cost_per_second_720p": 0.041,
+        "source": "https://fal.ai/models/google/gemini-omni-flash/v1.2/upscale",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/google/nano-banana-2.1",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/google/nano-banana-2.1"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "metadata": {
+          "comment": "fal bills this endpoint by tokens and reports the charge in the x-fal-billable-units response header, priced at output_cost_per_billable_unit dollars per unit. The per-image prices are fal's representative costs by the request's resolution field (1K default, 2K, 4K) for a short prompt, used when the header is absent"
+        },
+        "mode": "image_generation",
+        "output_cost_per_billable_unit": 1.0,
+        "output_cost_per_image": 0.04,
+        "output_cost_per_image_1K": 0.04,
+        "output_cost_per_image_2K": 0.059,
+        "output_cost_per_image_4K": 0.134,
+        "source": "https://fal.ai/models/google/nano-banana-2.1",
+        "supported_endpoints": [
+          "/v1/images/generations"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/google/nano-banana-2.1/edit",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/google/nano-banana-2.1/edit"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "metadata": {
+          "comment": "fal bills this endpoint by tokens and reports the charge in the x-fal-billable-units response header, priced at output_cost_per_billable_unit dollars per unit. The per-image prices are fal's representative costs by the request's resolution field (1K default, 2K, 4K) for a short prompt and two 1K input images, used when the header is absent"
+        },
+        "mode": "image_generation",
+        "output_cost_per_billable_unit": 1.0,
+        "output_cost_per_image": 0.044,
+        "output_cost_per_image_1K": 0.044,
+        "output_cost_per_image_2K": 0.063,
+        "output_cost_per_image_4K": 0.138,
+        "source": "https://fal.ai/models/google/nano-banana-2.1/edit",
+        "supported_endpoints": [
+          "/v1/images/edits",
+          "/v1/images/generations"
+        ],
+        "supports_vision": true
+      }
+    },
+    {
+      "route_id": "fal_ai/google/nano-banana-latest",
+      "provider": null,
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": null
+      },
+      "raw": {
+        "alias_of": "fal_ai/google/nano-banana-2.1"
+      }
+    },
+    {
+      "route_id": "fal_ai/google/nano-banana-latest/edit",
+      "provider": null,
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": null
+      },
+      "raw": {
+        "alias_of": "fal_ai/google/nano-banana-2.1/edit"
       }
     },
     {
@@ -99824,6 +101411,114 @@
       }
     },
     {
+      "route_id": "fal_ai/moonvalley/marey/motion-transfer",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/moonvalley/marey/motion-transfer"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 2,
+        "source": "https://fal.ai/models/moonvalley/marey/motion-transfer",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/moonvalley/marey/pose-transfer",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/moonvalley/marey/pose-transfer"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 2,
+        "source": "https://fal.ai/models/moonvalley/marey/pose-transfer",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
+      "route_id": "fal_ai/mureka/api/generate/lyrics-video",
+      "provider": "fal_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://fal.ai/models/mureka/api/generate/lyrics-video"
+      },
+      "raw": {
+        "litellm_provider": "fal_ai",
+        "mode": "video_generation",
+        "output_cost_per_video": 0.1,
+        "source": "https://fal.ai/models/mureka/api/generate/lyrics-video",
+        "supported_endpoints": [
+          "/v1/videos"
+        ],
+        "supported_modalities": [
+          "text",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
       "route_id": "fal_ai/nvidia/cosmos-3-super/image-to-video",
       "provider": "fal_ai",
       "scope": "provider_route_reference",
@@ -104538,7 +106233,7 @@
         "mode": "chat",
         "output_cost_per_token": 2.8e-07,
         "source": "https://docs.fireworks.ai/serverless/pricing",
-        "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731",
+        "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash",
         "supports_function_calling": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
@@ -104993,6 +106688,7 @@
         "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
         "supports_function_calling": true,
         "supports_mid_conversation_system": true,
+        "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
         "supports_tool_choice": true,
@@ -105900,6 +107596,7 @@
         "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
         "supports_function_calling": true,
         "supports_mid_conversation_system": true,
+        "supports_prompt_caching": true,
         "supports_response_schema": true,
         "supports_tool_choice": true,
         "supports_vision": true
@@ -106591,6 +108288,7 @@
         "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
         "supports_function_calling": true,
         "supports_mid_conversation_system": true,
+        "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
         "supports_tool_choice": true,
@@ -107662,6 +109360,7 @@
         "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
         "supports_function_calling": true,
         "supports_mid_conversation_system": true,
+        "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
         "supports_tool_choice": true,
@@ -111394,6 +113093,7 @@
         "output_cost_per_token_priority": 6.25e-07,
         "source": "https://docs.fireworks.ai/serverless/pricing.md",
         "supports_function_calling": false,
+        "supports_prompt_caching": true,
         "supports_response_schema": true,
         "supports_tool_choice": false,
         "supports_vision": true
@@ -112649,7 +114349,7 @@
         "mode": "chat",
         "output_cost_per_token": 2.1e-07,
         "source": "https://api.fireworks.ai/v1/serverless/models",
-        "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731",
+        "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash",
         "supports_function_calling": true,
         "supports_prompt_caching": true,
         "supports_reasoning": true,
@@ -112688,7 +114388,7 @@
         "mode": "chat",
         "output_cost_per_token": 2.8e-07,
         "source": "https://docs.fireworks.ai/serverless/pricing",
-        "successor_model": "fireworks_ai/deepseek-v4-flash-0731",
+        "successor_model": "fireworks_ai/deepseek-v4p1-flash",
         "supports_function_calling": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
@@ -113221,6 +114921,7 @@
         "source": "https://api.fireworks.ai/v1/serverless/models",
         "supports_function_calling": true,
         "supports_mid_conversation_system": true,
+        "supports_prompt_caching": true,
         "supports_response_schema": true,
         "supports_tool_choice": true,
         "supports_vision": true
@@ -115365,7 +117066,7 @@
         "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
       },
       "raw": {
-        "deprecation_date": "2026-11-17",
+        "deprecation_date": "2027-03-31",
         "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
         "successor_model": "gemini/gemini-3.8-live",
         "input_cost_per_audio_token": 3e-06,
@@ -115488,7 +117189,7 @@
         "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
       },
       "raw": {
-        "deprecation_date": "2026-11-17",
+        "deprecation_date": "2026-12-18",
         "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
         "successor_model": "gemini/gemini-3.8-flash-tts",
         "input_cost_per_token": 5e-07,
@@ -116295,8 +117996,6 @@
         "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
       },
       "raw": {
-        "deprecation_date": "2026-11-17",
-        "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
         "successor_model": "gemini/gemini-3.8-live",
         "input_cost_per_audio_token": 3e-06,
         "input_cost_per_image_token": 1e-06,
@@ -116979,7 +118678,7 @@
         ],
         "supports_audio_output": false,
         "supports_audio_input": true,
-        "supports_function_calling": false,
+        "supports_function_calling": true,
         "supports_pdf_input": true,
         "supports_prompt_caching": true,
         "supports_reasoning": true,
@@ -116991,7 +118690,7 @@
         "supports_url_context": false,
         "supports_video_input": true,
         "supports_vision": true,
-        "supports_web_search": false,
+        "supports_web_search": true,
         "supports_native_streaming": true
       }
     },
@@ -118531,7 +120230,7 @@
         "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
       },
       "raw": {
-        "deprecation_date": "2026-11-17",
+        "deprecation_date": "2027-03-31",
         "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
         "successor_model": "gemini/gemini-3.8-live",
         "input_cost_per_audio_token": 3e-06,
@@ -118587,7 +120286,7 @@
         "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
       },
       "raw": {
-        "deprecation_date": "2026-11-17",
+        "deprecation_date": "2026-12-18",
         "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
         "successor_model": "gemini/gemini-3.8-flash-tts",
         "input_cost_per_token": 5e-07,
@@ -118725,7 +120424,7 @@
       },
       "raw": {
         "cache_read_input_token_cost": 1.25e-07,
-        "deprecation_date": "2026-11-17",
+        "deprecation_date": "2026-12-18",
         "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
         "successor_model": "gemini/gemini-3.8-flash-tts",
         "input_cost_per_audio_token": 7e-07,
@@ -119400,8 +121099,6 @@
         "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
       },
       "raw": {
-        "deprecation_date": "2026-11-17",
-        "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
         "successor_model": "gemini/gemini-3.8-live",
         "input_cost_per_audio_token": 3e-06,
         "input_cost_per_image_token": 1e-06,
@@ -119466,7 +121163,7 @@
         "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
       },
       "raw": {
-        "deprecation_date": "2026-11-17",
+        "deprecation_date": "2026-12-18",
         "deprecation_source": "https://ai.google.dev/gemini-api/docs/deprecations",
         "successor_model": "gemini/gemini-3.8-flash-tts",
         "input_cost_per_token": 1e-06,
@@ -120256,15 +121953,11 @@
         "max_output_tokens": 16384,
         "input_usd_per_million_tokens": "0.5",
         "output_usd_per_million_tokens": "6",
-        "cache_read_usd_per_million_tokens": "0.125",
+        "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
         "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
       },
       "raw": {
-        "cache_read_input_token_cost": 1.25e-07,
-        "cache_read_input_token_cost_batches": 6.25e-08,
-        "cache_read_input_token_cost_flex": 2.5e-08,
-        "cache_read_input_token_cost_priority": 2.25e-07,
         "input_cost_per_token": 5e-07,
         "input_cost_per_token_batches": 2.5e-07,
         "input_cost_per_token_flex": 2.5e-07,
@@ -120282,7 +121975,7 @@
         "supported_endpoints": [
           "/v1/audio/speech"
         ],
-        "supports_prompt_caching": true
+        "supports_prompt_caching": false
       }
     },
     {
@@ -120300,15 +121993,11 @@
         "max_output_tokens": 16384,
         "input_usd_per_million_tokens": "0.5",
         "output_usd_per_million_tokens": "9",
-        "cache_read_usd_per_million_tokens": "0.125",
+        "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
         "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
       },
       "raw": {
-        "cache_read_input_token_cost": 1.25e-07,
-        "cache_read_input_token_cost_batches": 6.25e-08,
-        "cache_read_input_token_cost_flex": 2.5e-08,
-        "cache_read_input_token_cost_priority": 2.25e-07,
         "input_cost_per_token": 5e-07,
         "input_cost_per_token_batches": 2.5e-07,
         "input_cost_per_token_flex": 2.5e-07,
@@ -120326,7 +122015,7 @@
         "supported_endpoints": [
           "/v1/audio/speech"
         ],
-        "supports_prompt_caching": true
+        "supports_prompt_caching": false
       }
     },
     {
@@ -120560,6 +122249,92 @@
           "shared_group": "gemini-3"
         },
         "source": "https://aistudio.google.com/docs/pricing#gemini-4-carbon",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/completions"
+        ],
+        "supported_modalities": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true,
+        "supports_audio_output": false,
+        "supports_computer_use": true,
+        "supports_continuation": true,
+        "supports_function_calling": true,
+        "supports_minimal_reasoning_effort": false,
+        "supports_native_streaming": true,
+        "supports_parallel_function_calling": true,
+        "supports_pdf_input": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_system_messages": true,
+        "supports_tool_choice": true,
+        "supports_url_context": true,
+        "supports_video_input": true,
+        "supports_vision": true,
+        "supports_web_search": true,
+        "tpm": 800000.0,
+        "web_search_billing_unit": "per_query"
+      }
+    },
+    {
+      "route_id": "gemini/gemini-4-hydrogen",
+      "provider": "gemini",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "gemini-4-hydrogen",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 1048576,
+        "input_usd_per_million_tokens": "1.5",
+        "output_usd_per_million_tokens": "7.5",
+        "cache_read_usd_per_million_tokens": "0.075",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://aistudio.google.com/docs/pricing#gemini-4-hydrogen"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 7.5e-08,
+        "cache_read_input_token_cost_batches": 3.75e-08,
+        "cache_read_input_token_cost_flex": 3.75e-08,
+        "cache_read_input_token_cost_priority": 1.35e-07,
+        "google_maps_grounding_cost_per_query": 0.014,
+        "input_cost_per_token": 1.5e-06,
+        "input_cost_per_token_batches": 7.5e-07,
+        "input_cost_per_token_flex": 7.5e-07,
+        "input_cost_per_token_priority": 2.7e-06,
+        "litellm_provider": "gemini",
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 1048576,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 7.5e-06,
+        "output_cost_per_token": 7.5e-06,
+        "output_cost_per_token_batches": 3.75e-06,
+        "output_cost_per_token_flex": 3.75e-06,
+        "output_cost_per_token_priority": 1.35e-05,
+        "prompt_cache_min_tokens": 4096.0,
+        "rpm": 2000.0,
+        "search_context_cost_per_query": {
+          "search_context_size_low": 0.014,
+          "search_context_size_medium": 0.014,
+          "search_context_size_high": 0.014
+        },
+        "search_free_requests": {
+          "count": 5000,
+          "period": "month",
+          "shared_group": "gemini-3"
+        },
+        "source": "https://aistudio.google.com/docs/pricing#gemini-4-hydrogen",
         "supported_endpoints": [
           "/v1/chat/completions",
           "/v1/completions"
@@ -122062,6 +123837,29 @@
       }
     },
     {
+      "route_id": "gemini/nano-banana-latest",
+      "provider": null,
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": null
+      },
+      "raw": {
+        "alias_of": "gemini/gemini-nano-banana-2.1"
+      }
+    },
+    {
       "route_id": "gemini/nano-banana-pro-preview",
       "provider": "gemini",
       "scope": "provider_route_reference",
@@ -123248,6 +125046,43 @@
         "mode": "chat",
         "output_cost_per_token": 1e-05,
         "source": "https://github.blog/changelog/2026-11-09-gemini-4-carbon-in-github-copilot",
+        "supported_endpoints": [
+          "/v1/chat/completions"
+        ],
+        "supports_function_calling": true,
+        "supports_parallel_function_calling": true,
+        "supports_reasoning": true,
+        "supports_vision": true
+      }
+    },
+    {
+      "route_id": "github_copilot/gemini-4-hydrogen",
+      "provider": "github_copilot",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "gemini-4-hydrogen",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 200000,
+        "max_output_tokens": 65536,
+        "input_usd_per_million_tokens": "1.5",
+        "output_usd_per_million_tokens": "7.5",
+        "cache_read_usd_per_million_tokens": "0.075",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 7.5e-08,
+        "input_cost_per_token": 1.5e-06,
+        "litellm_provider": "github_copilot",
+        "max_input_tokens": 200000,
+        "max_output_tokens": 65536,
+        "mode": "chat",
+        "output_cost_per_token": 7.5e-06,
+        "source": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
         "supported_endpoints": [
           "/v1/chat/completions"
         ],
@@ -128602,6 +130437,35 @@
       }
     },
     {
+      "route_id": "gmi/google/gemini-4-carbon",
+      "provider": "gmi",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "gemini-4-carbon",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "2",
+        "output_usd_per_million_tokens": "10",
+        "cache_read_usd_per_million_tokens": "0.1",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 1e-07,
+        "input_cost_per_token": 2e-06,
+        "litellm_provider": "gmi",
+        "max_input_tokens": 1048576,
+        "mode": "chat",
+        "output_cost_per_token": 1e-05,
+        "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts"
+      }
+    },
+    {
       "route_id": "gmi/google/gemma-4-26b-a4b-it",
       "provider": "gmi",
       "scope": "provider_route_reference",
@@ -129866,6 +131730,38 @@
         "max_input_tokens": 2000000,
         "mode": "chat",
         "output_cost_per_token": 6e-06,
+        "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts"
+      }
+    },
+    {
+      "route_id": "gmi/xai/grok4.7",
+      "provider": "gmi",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 500000,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "2",
+        "output_usd_per_million_tokens": "6",
+        "cache_read_usd_per_million_tokens": "0.5",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 5e-07,
+        "cache_read_input_token_cost_above_200k_tokens": 1e-06,
+        "input_cost_per_token": 2e-06,
+        "input_cost_per_token_above_200k_tokens": 4e-06,
+        "litellm_provider": "gmi",
+        "max_input_tokens": 500000,
+        "mode": "chat",
+        "output_cost_per_token": 6e-06,
+        "output_cost_per_token_above_200k_tokens": 1.2e-05,
         "source": "https://ie-api.gmicloud.ai/v1/artifact/get_public_artifacts"
       }
     },
@@ -131489,6 +133385,7 @@
         "mode": "chat",
         "output_cost_per_audio_token": 2e-05,
         "output_cost_per_token": 6e-07,
+        "successor_model": "gpt-audio-1.5",
         "supports_audio_input": true,
         "supports_audio_output": true,
         "supports_function_calling": true,
@@ -131529,6 +133426,7 @@
         "mode": "realtime",
         "output_cost_per_audio_token": 2e-05,
         "output_cost_per_token": 2.4e-06,
+        "successor_model": "gpt-realtime-2.1-mini",
         "supports_audio_input": true,
         "supports_audio_output": true,
         "supports_function_calling": true,
@@ -132066,7 +133964,7 @@
         "cache_read_input_token_cost_priority": 2.5e-07,
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-sol",
+        "successor_model": "gpt-6.1-sol",
         "input_cost_per_token": 1.25e-06,
         "input_cost_per_token_batches": 6.25e-07,
         "input_cost_per_token_flex": 6.25e-07,
@@ -132147,7 +134045,7 @@
         "cache_read_input_token_cost_priority": 2.5e-07,
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-sol",
+        "successor_model": "gpt-6.1-sol",
         "input_cost_per_token": 1.25e-06,
         "input_cost_per_token_batches": 6.25e-07,
         "input_cost_per_token_flex": 6.25e-07,
@@ -132394,7 +134292,7 @@
         "cache_read_input_token_cost_priority": 4.5e-08,
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-terra",
+        "successor_model": "gpt-6.1-terra",
         "input_cost_per_token": 2.5e-07,
         "input_cost_per_token_batches": 1.25e-07,
         "input_cost_per_token_flex": 1.25e-07,
@@ -132475,7 +134373,7 @@
         "cache_read_input_token_cost_priority": 4.5e-08,
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-terra",
+        "successor_model": "gpt-6.1-terra",
         "input_cost_per_token": 2.5e-07,
         "input_cost_per_token_batches": 1.25e-07,
         "input_cost_per_token_flex": 1.25e-07,
@@ -132555,7 +134453,7 @@
         "cache_read_input_token_cost_flex": 2.5e-09,
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-luna",
+        "successor_model": "gpt-6-luna",
         "input_cost_per_token": 5e-08,
         "input_cost_per_token_batches": 2.5e-08,
         "input_cost_per_token_flex": 2.5e-08,
@@ -132633,7 +134531,7 @@
         "cache_read_input_token_cost_flex": 2.5e-09,
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-luna",
+        "successor_model": "gpt-6-luna",
         "input_cost_per_token": 5e-08,
         "input_cost_per_token_batches": 2.5e-08,
         "input_cost_per_token_flex": 2.5e-08,
@@ -132708,7 +134606,7 @@
       "raw": {
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-sol",
+        "successor_model": "gpt-6.1-sol",
         "input_cost_per_token": 1.5e-05,
         "input_cost_per_token_batches": 7.5e-06,
         "litellm_provider": "openai",
@@ -132780,7 +134678,7 @@
       "raw": {
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-sol",
+        "successor_model": "gpt-6.1-sol",
         "input_cost_per_token": 1.5e-05,
         "input_cost_per_token_batches": 7.5e-06,
         "litellm_provider": "openai",
@@ -134772,7 +136670,6 @@
         "input_cost_per_token_above_272k_tokens": 6e-05,
         "input_cost_per_token_flex": 1.5e-05,
         "input_cost_per_token_batches": 1.5e-05,
-        "input_cost_per_token_above_272k_tokens_batches": 3e-05,
         "litellm_provider": "openai",
         "max_input_tokens": 1050000,
         "max_output_tokens": 128000,
@@ -134781,7 +136678,6 @@
         "output_cost_per_token_above_272k_tokens": 0.00027,
         "output_cost_per_token_flex": 9e-05,
         "output_cost_per_token_batches": 9e-05,
-        "output_cost_per_token_above_272k_tokens_batches": 0.000135,
         "reasoning_contexts": [
           "auto",
           "current_turn",
@@ -136756,7 +138652,7 @@
         "cache_read_input_token_cost_batches": 1e-07,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image_token": 2.5e-06,
         "input_cost_per_image_token_batches": 1.25e-06,
         "input_cost_per_token": 2e-06,
@@ -136798,7 +138694,7 @@
         "cache_read_input_token_cost_batches": 6.3e-07,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_token": 5e-06,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -136842,7 +138738,7 @@
         "cache_read_input_token_cost_batches": 6.3e-07,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_token": 5e-06,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -137119,12 +139015,17 @@
       },
       "raw": {
         "cache_read_input_image_token_cost": 2e-06,
+        "cache_read_input_image_token_cost_batches": 1e-06,
         "cache_read_input_token_cost": 1.25e-06,
+        "cache_read_input_token_cost_batches": 6.25e-07,
         "input_cost_per_image_token": 8e-06,
+        "input_cost_per_image_token_batches": 4e-06,
         "input_cost_per_token": 5e-06,
+        "input_cost_per_token_batches": 2.5e-06,
         "litellm_provider": "openai",
         "mode": "image_generation",
         "output_cost_per_image_token": 3e-05,
+        "output_cost_per_image_token_batches": 1.5e-05,
         "source": "https://developers.openai.com/api/docs/pricing",
         "supported_endpoints": [
           "/v1/images/generations",
@@ -137155,12 +139056,17 @@
       },
       "raw": {
         "cache_read_input_image_token_cost": 2e-06,
+        "cache_read_input_image_token_cost_batches": 1e-06,
         "cache_read_input_token_cost": 1.25e-06,
+        "cache_read_input_token_cost_batches": 6.25e-07,
         "input_cost_per_image_token": 8e-06,
+        "input_cost_per_image_token_batches": 4e-06,
         "input_cost_per_token": 5e-06,
+        "input_cost_per_token_batches": 2.5e-06,
         "litellm_provider": "openai",
         "mode": "image_generation",
         "output_cost_per_image_token": 3e-05,
+        "output_cost_per_image_token_batches": 1.5e-05,
         "source": "https://developers.openai.com/api/docs/pricing",
         "supported_endpoints": [
           "/v1/images/generations",
@@ -138909,7 +140815,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.133,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -138952,7 +140858,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -139010,7 +140916,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.2,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -139053,7 +140959,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -139111,7 +141017,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.2,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -139154,7 +141060,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -147340,7 +149246,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.005,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -147371,7 +149277,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.009,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -147414,7 +149320,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -147508,7 +149414,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.006,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -147539,7 +149445,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.013,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -147582,7 +149488,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -147640,7 +149546,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.006,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -147671,7 +149577,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.013,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -147714,7 +149620,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -147824,7 +149730,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.011,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -147855,7 +149761,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.034,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -147898,7 +149804,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -147956,7 +149862,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.015,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -147987,7 +149893,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.05,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -148030,7 +149936,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -148088,7 +149994,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.015,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -148119,7 +150025,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.05,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -148162,7 +150068,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -151468,11 +153374,12 @@
         "max_output_tokens": null,
         "input_usd_per_million_tokens": "0.1",
         "output_usd_per_million_tokens": null,
-        "cache_read_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": "0.01",
         "cache_write_usd_per_million_tokens": null,
         "source_url": null
       },
       "raw": {
+        "cache_read_input_token_cost": 1e-08,
         "input_cost_per_token": 1e-07,
         "litellm_provider": "mistral",
         "max_input_tokens": 8192,
@@ -151494,11 +153401,12 @@
         "max_output_tokens": null,
         "input_usd_per_million_tokens": "0.1",
         "output_usd_per_million_tokens": null,
-        "cache_read_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": "0.01",
         "cache_write_usd_per_million_tokens": null,
         "source_url": "https://docs.mistral.ai/models/mistral-embed-23-12"
       },
       "raw": {
+        "cache_read_input_token_cost": 1e-08,
         "input_cost_per_token": 1e-07,
         "litellm_provider": "mistral",
         "max_input_tokens": 8192,
@@ -151605,7 +153513,8 @@
         "mode": "chat",
         "output_cost_per_token": 2.1e-06,
         "reasoning_effort_levels": [
-          "none",
+          "low",
+          "medium",
           "high"
         ],
         "source": "https://docs.mistral.ai/models/mistral-large-4-0",
@@ -151646,7 +153555,8 @@
         "mode": "chat",
         "output_cost_per_token": 2.1e-06,
         "reasoning_effort_levels": [
-          "none",
+          "low",
+          "medium",
           "high"
         ],
         "source": "https://docs.mistral.ai/models/mistral-large-4-0",
@@ -154529,21 +156439,80 @@
         "pricing": 40
       },
       "fields": {
-        "max_input_tokens": 131072,
+        "max_input_tokens": 262144,
         "max_output_tokens": null,
-        "input_usd_per_million_tokens": "0.06",
+        "input_usd_per_million_tokens": "0.03",
         "output_usd_per_million_tokens": "0",
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
         "source_url": "https://console.nace.ai/docs/drex/reference/models"
       },
       "raw": {
-        "input_cost_per_token": 6e-08,
+        "input_cost_per_token": 3e-08,
         "litellm_provider": "nace",
-        "max_input_tokens": 131072,
+        "max_input_tokens": 262144,
         "mode": "evaluation",
         "output_cost_per_token": 0.0,
-        "source": "https://console.nace.ai/docs/drex/reference/models"
+        "source": "https://console.nace.ai/docs/drex/reference/models",
+        "supports_vision": true
+      }
+    },
+    {
+      "route_id": "nace/drex-max",
+      "provider": "nace",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 262144,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "0.03",
+        "output_usd_per_million_tokens": "0",
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://console.nace.ai/docs/drex/guides/drex-max"
+      },
+      "raw": {
+        "input_cost_per_token": 3e-08,
+        "litellm_provider": "nace",
+        "max_input_tokens": 262144,
+        "mode": "evaluation",
+        "output_cost_per_token": 0.0,
+        "source": "https://console.nace.ai/docs/drex/guides/drex-max",
+        "supports_vision": true
+      }
+    },
+    {
+      "route_id": "nace/drex-max-v1.1",
+      "provider": "nace",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 262144,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "0.03",
+        "output_usd_per_million_tokens": "0",
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://console.nace.ai/docs/drex/guides/drex-max"
+      },
+      "raw": {
+        "input_cost_per_token": 3e-08,
+        "litellm_provider": "nace",
+        "max_input_tokens": 262144,
+        "mode": "evaluation",
+        "output_cost_per_token": 0.0,
+        "source": "https://console.nace.ai/docs/drex/guides/drex-max",
+        "supports_vision": true
       }
     },
     {
@@ -154557,21 +156526,22 @@
         "pricing": 40
       },
       "fields": {
-        "max_input_tokens": 32768,
+        "max_input_tokens": 262144,
         "max_output_tokens": null,
-        "input_usd_per_million_tokens": "0.04",
+        "input_usd_per_million_tokens": "0.03",
         "output_usd_per_million_tokens": "0",
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
         "source_url": "https://console.nace.ai/docs/drex/reference/models"
       },
       "raw": {
-        "input_cost_per_token": 4e-08,
+        "input_cost_per_token": 3e-08,
         "litellm_provider": "nace",
-        "max_input_tokens": 32768,
+        "max_input_tokens": 262144,
         "mode": "evaluation",
         "output_cost_per_token": 0.0,
-        "source": "https://console.nace.ai/docs/drex/reference/models"
+        "source": "https://console.nace.ai/docs/drex/reference/models",
+        "supports_vision": true
       }
     },
     {
@@ -154585,21 +156555,22 @@
         "pricing": 40
       },
       "fields": {
-        "max_input_tokens": 131072,
+        "max_input_tokens": 262144,
         "max_output_tokens": null,
-        "input_usd_per_million_tokens": "0.05",
+        "input_usd_per_million_tokens": "0.03",
         "output_usd_per_million_tokens": "0",
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
         "source_url": "https://console.nace.ai/docs/drex/reference/models"
       },
       "raw": {
-        "input_cost_per_token": 5e-08,
+        "input_cost_per_token": 3e-08,
         "litellm_provider": "nace",
-        "max_input_tokens": 131072,
+        "max_input_tokens": 262144,
         "mode": "evaluation",
         "output_cost_per_token": 0.0,
-        "source": "https://console.nace.ai/docs/drex/reference/models"
+        "source": "https://console.nace.ai/docs/drex/reference/models",
+        "supports_vision": true
       }
     },
     {
@@ -154613,18 +156584,18 @@
         "pricing": 40
       },
       "fields": {
-        "max_input_tokens": 131072,
+        "max_input_tokens": 262144,
         "max_output_tokens": null,
-        "input_usd_per_million_tokens": "0.06",
+        "input_usd_per_million_tokens": "0.03",
         "output_usd_per_million_tokens": "0",
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
         "source_url": "https://console.nace.ai/docs/drex/reference/models"
       },
       "raw": {
-        "input_cost_per_token": 6e-08,
+        "input_cost_per_token": 3e-08,
         "litellm_provider": "nace",
-        "max_input_tokens": 131072,
+        "max_input_tokens": 262144,
         "mode": "evaluation",
         "output_cost_per_token": 0.0,
         "source": "https://console.nace.ai/docs/drex/reference/models"
@@ -162184,7 +164155,8 @@
         "cache_read_input_token_cost_flex": 2.5e-07,
         "cache_read_input_token_cost_priority": 8.75e-07,
         "deprecation_date": "2026-12-11",
-        "successor_model": "gpt-5.6-sol",
+        "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
+        "successor_model": "gpt-6.1-sol",
         "input_cost_per_token": 2e-06,
         "input_cost_per_token_batches": 1e-06,
         "input_cost_per_token_flex": 1e-06,
@@ -162260,7 +164232,7 @@
         "cache_read_input_token_cost_priority": 8.75e-07,
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-sol",
+        "successor_model": "gpt-6.1-sol",
         "input_cost_per_token": 2e-06,
         "input_cost_per_token_batches": 1e-06,
         "input_cost_per_token_flex": 1e-06,
@@ -162527,7 +164499,7 @@
       "raw": {
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-sol",
+        "successor_model": "gpt-6.1-sol",
         "input_cost_per_token": 2e-05,
         "input_cost_per_token_batches": 1e-05,
         "litellm_provider": "openai",
@@ -162594,7 +164566,7 @@
       "raw": {
         "deprecation_date": "2026-12-11",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-5.6-sol",
+        "successor_model": "gpt-6.1-sol",
         "input_cost_per_token": 2e-05,
         "input_cost_per_token_batches": 1e-05,
         "litellm_provider": "openai",
@@ -167734,6 +169706,34 @@
       }
     },
     {
+      "route_id": "perplexity/anthropic/claude-fable-5-2",
+      "provider": "perplexity",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "claude-fable-5-2",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "8",
+        "output_usd_per_million_tokens": "40",
+        "cache_read_usd_per_million_tokens": "0.2",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.perplexity.ai/docs/agent-api/models"
+      },
+      "raw": {
+        "litellm_provider": "perplexity",
+        "mode": "responses",
+        "input_cost_per_token": 8e-06,
+        "output_cost_per_token": 4e-05,
+        "cache_read_input_token_cost": 2e-07,
+        "source": "https://docs.perplexity.ai/docs/agent-api/models"
+      }
+    },
+    {
       "route_id": "perplexity/anthropic/claude-haiku-4-5",
       "provider": "perplexity",
       "scope": "provider_route_reference",
@@ -168520,6 +170520,62 @@
         "input_cost_per_token": 2e-06,
         "output_cost_per_token": 1e-05,
         "cache_read_input_token_cost": 1e-07,
+        "source": "https://docs.perplexity.ai/docs/agent-api/models"
+      }
+    },
+    {
+      "route_id": "perplexity/google/gemini-4-carbon",
+      "provider": "perplexity",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "gemini-4-carbon",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "2",
+        "output_usd_per_million_tokens": "10",
+        "cache_read_usd_per_million_tokens": "0.1",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.perplexity.ai/docs/agent-api/models"
+      },
+      "raw": {
+        "litellm_provider": "perplexity",
+        "mode": "responses",
+        "input_cost_per_token": 2e-06,
+        "output_cost_per_token": 1e-05,
+        "cache_read_input_token_cost": 1e-07,
+        "source": "https://docs.perplexity.ai/docs/agent-api/models"
+      }
+    },
+    {
+      "route_id": "perplexity/google/gemini-4-hydrogen",
+      "provider": "perplexity",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "gemini-4-hydrogen",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "1.5",
+        "output_usd_per_million_tokens": "7.5",
+        "cache_read_usd_per_million_tokens": "0.075",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.perplexity.ai/docs/agent-api/models"
+      },
+      "raw": {
+        "litellm_provider": "perplexity",
+        "mode": "responses",
+        "input_cost_per_token": 1.5e-06,
+        "output_cost_per_token": 7.5e-06,
+        "cache_read_input_token_cost": 7.5e-08,
         "source": "https://docs.perplexity.ai/docs/agent-api/models"
       }
     },
@@ -179579,6 +181635,29 @@
       }
     },
     {
+      "route_id": "replicate/google/nano-banana-latest",
+      "provider": null,
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": null
+      },
+      "raw": {
+        "alias_of": "replicate/google/nano-banana-2.1"
+      }
+    },
+    {
       "route_id": "replicate/heygen/avatar-iv",
       "provider": "replicate",
       "scope": "provider_route_reference",
@@ -186428,6 +188507,44 @@
       }
     },
     {
+      "route_id": "runwayml/kling_4",
+      "provider": "runwayml",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.dev.runwayml.com/guides/pricing/"
+      },
+      "raw": {
+        "litellm_provider": "runwayml",
+        "metadata": {
+          "comment": "Promo rate through 2026-11-30 UTC: 12.56 credits per second (720p) and 18.8 (1080p) without input video @ $0.01 per credit = $0.1256 and $0.188 per second; list rate 15.7/23.5 credits per second applies from 2026-12-01 UTC (ruling runwayml-kling-4-promo-rate). The with-input-video rate (7.52/11.28 credits per output second plus the same per second of the greater of input and output duration) and rounding up to the next credit are not modeled"
+        },
+        "mode": "video_generation",
+        "output_cost_per_second": 0.1256,
+        "output_cost_per_second_1080p": 0.188,
+        "source": "https://docs.dev.runwayml.com/guides/pricing/",
+        "supported_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "video"
+        ]
+      }
+    },
+    {
       "route_id": "runwayml/kling_4_flash",
       "provider": "runwayml",
       "scope": "provider_route_reference",
@@ -186498,6 +188615,29 @@
         "supported_output_modalities": [
           "image"
         ]
+      }
+    },
+    {
+      "route_id": "runwayml/seedance-latest",
+      "provider": null,
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": null
+      },
+      "raw": {
+        "alias_of": "runwayml/seedance2_5"
       }
     },
     {
@@ -187804,6 +189944,11 @@
         "source_url": null
       },
       "raw": {
+        "output_cost_per_video_clip": {
+          "5s": {
+            "720p": 0.0
+          }
+        },
         "code_interpreter_cost_per_session": 0.0,
         "computer_use_input_cost_per_1k_tokens": 0.0,
         "computer_use_output_cost_per_1k_tokens": 0.0,
@@ -189820,11 +191965,50 @@
         "supported_endpoints": [
           "/v1/audio/transcriptions"
         ],
-        "supports_audio_input": true
+        "supports_audio_input": true,
+        "deprecation_date": "2026-06-30",
+        "deprecation_source": "https://docs.soniox.com/stt/models",
+        "successor_model": "soniox/stt-async-v5"
       }
     },
     {
       "route_id": "soniox/stt-async-v5",
+      "provider": "soniox",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 8000,
+        "max_output_tokens": 8000,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://soniox.com/pricing"
+      },
+      "raw": {
+        "litellm_provider": "soniox",
+        "max_output_tokens": 8000,
+        "max_input_tokens": 8000,
+        "input_cost_per_second": 0.0,
+        "output_cost_per_second": 2.77778e-05,
+        "mode": "audio_transcription",
+        "source": "https://soniox.com/pricing",
+        "supported_endpoints": [
+          "/v1/audio/transcriptions"
+        ],
+        "supports_audio_input": true,
+        "deprecation_date": "2026-12-15",
+        "deprecation_source": "https://docs.soniox.com/stt/models",
+        "successor_model": "soniox/stt-async-v6"
+      }
+    },
+    {
+      "route_id": "soniox/stt-async-v6",
       "provider": "soniox",
       "scope": "provider_route_reference",
       "catalog_model_id_candidate": null,
@@ -189933,7 +192117,10 @@
         "supported_output_modalities": [
           "text"
         ],
-        "supports_audio_input": true
+        "supports_audio_input": true,
+        "deprecation_date": "2025-10-31",
+        "deprecation_source": "https://docs.soniox.com/stt/models",
+        "successor_model": "soniox/stt-rt-v3"
       }
     },
     {
@@ -189973,7 +192160,10 @@
         "supported_output_modalities": [
           "text"
         ],
-        "supports_audio_input": true
+        "supports_audio_input": true,
+        "deprecation_date": "2026-02-28",
+        "deprecation_source": "https://docs.soniox.com/stt/models",
+        "successor_model": "soniox/stt-rt-v4"
       }
     },
     {
@@ -190053,11 +192243,57 @@
         "supported_output_modalities": [
           "text"
         ],
-        "supports_audio_input": true
+        "supports_audio_input": true,
+        "deprecation_date": "2026-06-30",
+        "deprecation_source": "https://docs.soniox.com/stt/models",
+        "successor_model": "soniox/stt-rt-v5"
       }
     },
     {
       "route_id": "soniox/stt-rt-v5",
+      "provider": "soniox",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://soniox.com/pricing"
+      },
+      "raw": {
+        "input_cost_per_second": 3.333e-05,
+        "litellm_provider": "soniox",
+        "metadata": {
+          "calculation": "$0.12/3600 seconds = $0.00003333 per second",
+          "original_pricing_per_hour": 0.12
+        },
+        "mode": "audio_transcription",
+        "source": "https://soniox.com/pricing",
+        "supported_endpoints": [
+          "/v1/realtime"
+        ],
+        "supported_modalities": [
+          "audio"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true,
+        "deprecation_date": "2026-12-15",
+        "deprecation_source": "https://docs.soniox.com/stt/models",
+        "successor_model": "soniox/stt-rt-v6"
+      }
+    },
+    {
+      "route_id": "soniox/stt-rt-v6",
       "provider": "soniox",
       "scope": "provider_route_reference",
       "catalog_model_id_candidate": null,
@@ -191361,7 +193597,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.009,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -191404,7 +193640,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -191429,7 +193665,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.013,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -191472,7 +193708,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -191497,7 +193733,7 @@
       "raw": {
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst",
+        "successor_model": "gpt-image-2.6-sunburst",
         "input_cost_per_image": 0.013,
         "litellm_provider": "openai",
         "mode": "image_generation",
@@ -191540,7 +193776,7 @@
         "supports_pdf_input": true,
         "deprecation_date": "2026-12-01",
         "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
-        "successor_model": "gpt-image-2.5-sunburst"
+        "successor_model": "gpt-image-2.6-sunburst"
       }
     },
     {
@@ -195425,8 +197661,10 @@
         "mode": "chat",
         "output_cost_per_token": 3e-06,
         "source": "https://api.together.ai/v1/models",
+        "supports_function_calling": true,
         "supports_prompt_caching": true,
         "supports_reasoning": true,
+        "supports_response_schema": true,
         "supports_vision": true
       }
     },
@@ -196478,6 +198716,42 @@
         "supports_prompt_caching": true,
         "supports_response_schema": true,
         "supports_tool_choice": true
+      }
+    },
+    {
+      "route_id": "together_ai/thinkingmachines/Inkling-2-Small",
+      "provider": "together_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 1048576,
+        "input_usd_per_million_tokens": "0.3",
+        "output_usd_per_million_tokens": "1",
+        "cache_read_usd_per_million_tokens": "0.03",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://api.together.ai/v1/models"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 3e-08,
+        "input_cost_per_token": 3e-07,
+        "litellm_provider": "together_ai",
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 1048576,
+        "mode": "chat",
+        "output_cost_per_token": 1e-06,
+        "source": "https://api.together.ai/v1/models",
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
       }
     },
     {
@@ -198406,7 +200680,9 @@
         "supports_tool_choice": true,
         "supports_vision": true,
         "cache_read_input_token_cost": 3e-07,
-        "cache_creation_input_token_cost": 3.75e-06
+        "cache_creation_input_token_cost": 3.75e-06,
+        "deprecation_date": "2026-11-13",
+        "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html"
       }
     },
     {
@@ -198444,7 +200720,9 @@
         "supports_prompt_caching": true,
         "supports_response_schema": true,
         "supports_tool_choice": true,
-        "supports_vision": true
+        "supports_vision": true,
+        "deprecation_date": "2026-11-13",
+        "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html"
       }
     },
     {
@@ -198483,7 +200761,9 @@
         "supports_reasoning": true,
         "supports_response_schema": true,
         "supports_tool_choice": true,
-        "supports_vision": true
+        "supports_vision": true,
+        "deprecation_date": "2026-11-13",
+        "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html"
       }
     },
     {
@@ -199882,7 +202162,7 @@
       },
       "fields": {
         "max_input_tokens": 163840,
-        "max_output_tokens": 163840,
+        "max_output_tokens": 8000,
         "input_usd_per_million_tokens": "0.62",
         "output_usd_per_million_tokens": "1.85",
         "cache_read_usd_per_million_tokens": null,
@@ -199896,7 +202176,7 @@
         "input_cost_per_token_priority": 1.085e-06,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 163840,
-        "max_output_tokens": 163840,
+        "max_output_tokens": 8000,
         "mode": "chat",
         "output_cost_per_token": 1.85e-06,
         "output_cost_per_token_batches": 9.25e-07,
@@ -207363,6 +209643,40 @@
       }
     },
     {
+      "route_id": "vertex_ai/deep-research-preview-04-2026",
+      "provider": "vertex_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "deep-research-preview-04-2026",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "2",
+        "output_usd_per_million_tokens": "12",
+        "cache_read_usd_per_million_tokens": "0.2",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://cloud.google.com/model-garden/pricing"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 2e-07,
+        "input_cost_per_token": 2e-06,
+        "litellm_provider": "vertex_ai",
+        "mode": "chat",
+        "output_cost_per_token": 1.2e-05,
+        "search_context_cost_per_query": {
+          "search_context_size_low": 0.014,
+          "search_context_size_medium": 0.014,
+          "search_context_size_high": 0.014
+        },
+        "source": "https://cloud.google.com/model-garden/pricing",
+        "web_search_billing_unit": "per_query"
+      }
+    },
+    {
       "route_id": "vertex_ai/deep-research-pro-preview-12-2025",
       "provider": "vertex_ai-language-models",
       "scope": "provider_route_reference",
@@ -209319,7 +211633,7 @@
           "text"
         ],
         "supports_audio_input": true,
-        "supports_function_calling": false,
+        "supports_function_calling": true,
         "supports_pdf_input": true,
         "supports_prompt_caching": true,
         "supports_reasoning": true,
@@ -209331,7 +211645,7 @@
         "supports_url_context": false,
         "supports_video_input": true,
         "supports_vision": true,
-        "supports_web_search": false,
+        "supports_web_search": true,
         "supports_native_streaming": true
       }
     },
@@ -209784,6 +212098,95 @@
         ],
         "supports_audio_input": true,
         "supports_computer_use": false,
+        "supports_continuation": true,
+        "supports_function_calling": true,
+        "supports_minimal_reasoning_effort": false,
+        "supports_native_streaming": true,
+        "supports_parallel_function_calling": true,
+        "supports_pdf_input": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_system_messages": true,
+        "supports_tool_choice": true,
+        "supports_url_context": true,
+        "supports_video_input": true,
+        "supports_vision": true,
+        "supports_web_search": true,
+        "web_search_billing_unit": "per_query"
+      }
+    },
+    {
+      "route_id": "vertex_ai/gemini-4-hydrogen",
+      "provider": "vertex_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "gemini-4-hydrogen",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 1048576,
+        "input_usd_per_million_tokens": "1.5",
+        "output_usd_per_million_tokens": "7.5",
+        "cache_read_usd_per_million_tokens": "0.075",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 7.5e-08,
+        "cache_read_input_token_cost_batches": 3.75e-08,
+        "cache_read_input_token_cost_flex": 3.75e-08,
+        "cache_read_input_token_cost_priority": 1.35e-07,
+        "google_maps_grounding_cost_per_query": 0.014,
+        "input_cost_per_audio_token": 1.5e-06,
+        "input_cost_per_audio_token_batches": 7.5e-07,
+        "input_cost_per_audio_token_priority": 2.7e-06,
+        "input_cost_per_token": 1.5e-06,
+        "input_cost_per_token_batches": 7.5e-07,
+        "input_cost_per_token_flex": 7.5e-07,
+        "input_cost_per_token_priority": 2.7e-06,
+        "litellm_provider": "vertex_ai",
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 1048576,
+        "mode": "chat",
+        "output_cost_per_reasoning_token": 7.5e-06,
+        "output_cost_per_token": 7.5e-06,
+        "output_cost_per_token_batches": 3.75e-06,
+        "output_cost_per_token_flex": 3.75e-06,
+        "output_cost_per_token_priority": 1.35e-05,
+        "prompt_cache_min_tokens": 4096.0,
+        "regional_endpoint_uplift_multiplier": 1.1,
+        "search_context_cost_per_query": {
+          "search_context_size_high": 0.014,
+          "search_context_size_low": 0.014,
+          "search_context_size_medium": 0.014
+        },
+        "search_free_requests": {
+          "count": 5000,
+          "period": "month",
+          "shared_group": "gemini-3"
+        },
+        "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/v1/completions",
+          "/v1/batch"
+        ],
+        "supported_modalities": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supports_audio_input": true,
+        "supports_audio_output": false,
+        "supports_computer_use": true,
         "supports_continuation": true,
         "supports_function_calling": true,
         "supports_minimal_reasoning_effort": false,
@@ -211491,6 +213894,29 @@
         "supports_pdf_input": false,
         "supports_tool_choice": true,
         "supports_web_search": true
+      }
+    },
+    {
+      "route_id": "vertex_ai/nano-banana-latest",
+      "provider": null,
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": null
+      },
+      "raw": {
+        "alias_of": "vertex_ai/gemini-nano-banana-2.1"
       }
     },
     {
@@ -218899,15 +221325,17 @@
         "output_usd_per_million_tokens": null,
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
-        "source_url": "https://docs.x.ai/docs/models"
+        "source_url": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2"
       },
       "raw": {
         "deprecation_date": "2026-05-15",
         "deprecation_source": "https://docs.x.ai/developers/migration/may-15-retirement",
-        "input_cost_per_image": 0.05,
+        "input_cost_per_image": 0.04,
         "litellm_provider": "xai",
         "mode": "image_generation",
-        "source": "https://docs.x.ai/docs/models",
+        "output_cost_per_image_1K": 0.04,
+        "output_cost_per_image_2K": 0.06,
+        "source": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2",
         "successor_model": "xai/grok-imagine-image-2.0",
         "supported_endpoints": [
           "/v1/images/generations"
@@ -218938,15 +221366,17 @@
         "output_usd_per_million_tokens": null,
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
-        "source_url": "https://docs.x.ai/docs/models"
+        "source_url": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2"
       },
       "raw": {
         "deprecation_date": "2026-11-02",
         "deprecation_source": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2",
-        "input_cost_per_image": 0.05,
+        "input_cost_per_image": 0.04,
         "litellm_provider": "xai",
         "mode": "image_generation",
-        "source": "https://docs.x.ai/docs/models",
+        "output_cost_per_image_1K": 0.04,
+        "output_cost_per_image_2K": 0.06,
+        "source": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2",
         "successor_model": "xai/grok-imagine-image-2.0",
         "supported_endpoints": [
           "/v1/images/generations"
@@ -218977,15 +221407,17 @@
         "output_usd_per_million_tokens": null,
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
-        "source_url": "https://docs.x.ai/docs/models"
+        "source_url": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2"
       },
       "raw": {
         "deprecation_date": "2026-11-02",
         "deprecation_source": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2",
-        "input_cost_per_image": 0.05,
+        "input_cost_per_image": 0.04,
         "litellm_provider": "xai",
         "mode": "image_generation",
-        "source": "https://docs.x.ai/docs/models",
+        "output_cost_per_image_1K": 0.04,
+        "output_cost_per_image_2K": 0.06,
+        "source": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2",
         "successor_model": "xai/grok-imagine-image-2.0",
         "supported_endpoints": [
           "/v1/images/generations"
@@ -219016,15 +221448,17 @@
         "output_usd_per_million_tokens": null,
         "cache_read_usd_per_million_tokens": null,
         "cache_write_usd_per_million_tokens": null,
-        "source_url": "https://docs.x.ai/docs/models"
+        "source_url": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2"
       },
       "raw": {
         "deprecation_date": "2026-11-02",
         "deprecation_source": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2",
-        "input_cost_per_image": 0.05,
+        "input_cost_per_image": 0.04,
         "litellm_provider": "xai",
         "mode": "image_generation",
-        "source": "https://docs.x.ai/docs/models",
+        "output_cost_per_image_1K": 0.04,
+        "output_cost_per_image_2K": 0.06,
+        "source": "https://docs.x.ai/developers/migration/imagine-image-quality-nov-2",
         "successor_model": "xai/grok-imagine-image-2.0",
         "supported_endpoints": [
           "/v1/images/generations"

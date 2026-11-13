@@ -32803,10 +32803,8 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "temperature"
         ]
       },
       "provider_sources": [
@@ -33073,10 +33071,8 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "temperature"
         ]
       },
       "provider_sources": [
@@ -33212,10 +33208,8 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "temperature"
         ]
       },
       "provider_sources": [
@@ -33438,10 +33432,8 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "temperature"
         ]
       },
       "provider_sources": [
@@ -33664,10 +33656,8 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "temperature"
         ]
       },
       "provider_sources": [
@@ -33936,10 +33926,8 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "temperature"
         ]
       },
       "thinking_modes": {
@@ -34055,10 +34043,8 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "temperature"
         ]
       },
       "thinking_modes": {
@@ -34278,10 +34264,8 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "temperature"
         ]
       },
       "output_modalities": [
@@ -34546,10 +34530,8 @@
         "supported": [
           "reasoning",
           "structured_output",
+          "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "temperature"
         ]
       },
       "thinking_modes": {
@@ -50005,20 +49987,20 @@
       "max_input_tokens": 128000
     },
     "mistral-large-latest": {
-      "context_window_tokens": 262144,
+      "context_window_tokens": 1048576,
       "max_output_tokens": 262144,
-      "description": "Flagship Mistral model for advanced reasoning, coding, and multilingual work",
+      "description": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
       "knowledge_cutoff": "2024-11",
-      "release_date": "2024-11-01",
-      "last_updated": "2025-12-02",
-      "open_weights": true,
+      "release_date": "2026-10-06",
+      "last_updated": "2026-10-06",
+      "open_weights": false,
       "output_modalities": [
         "text"
       ],
       "pricing": {
-        "input_usd_per_million_tokens": "0.5",
-        "output_usd_per_million_tokens": "1.5",
-        "cache_read_usd_per_million_tokens": "0.05"
+        "input_usd_per_million_tokens": "0.7",
+        "output_usd_per_million_tokens": "2.1",
+        "cache_read_usd_per_million_tokens": "0.07"
       },
       "display_name": "Mistral Large (latest)",
       "origin": "Mistral AI",
@@ -50032,18 +50014,34 @@
       },
       "features": {
         "supported": [
+          "reasoning",
           "structured_output",
           "temperature",
           "tool_calling"
-        ],
-        "unsupported": [
-          "reasoning"
         ]
       },
-      "max_input_tokens": 262144,
+      "max_input_tokens": 1048576,
       "provider_sources": [
         "mistral"
-      ]
+      ],
+      "lifecycle": "beta",
+      "thinking_modes": {
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
     },
     "mistral-large2": {
       "context_window_tokens": 262144,

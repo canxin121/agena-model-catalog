@@ -11873,28 +11873,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Top Claude Opus tier for the hardest reasoning, coding, and long-horizon agents",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "claude-opus-4-8-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Claude Opus 4.8 Fast",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "claude-opus-4-8-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -11903,16 +11885,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "claude-opus-4-8-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -11924,16 +11897,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": false,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "claude-opus-4-8-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -11945,16 +11909,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-05-28",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "venice",
-          "source_id": "claude-opus-4-8-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -71505,7 +71460,7 @@
             }
           },
           "temperature": {
-            "value": "unsupported",
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "openai",
@@ -72094,7 +72049,7 @@
             }
           },
           "temperature": {
-            "value": "unsupported",
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "openai",
@@ -72393,7 +72348,7 @@
             }
           },
           "temperature": {
-            "value": "unsupported",
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "openai",
@@ -72781,7 +72736,7 @@
             }
           },
           "temperature": {
-            "value": "unsupported",
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "openai",
@@ -73169,7 +73124,7 @@
             }
           },
           "temperature": {
-            "value": "unsupported",
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "openai",
@@ -73844,7 +73799,7 @@
             }
           },
           "temperature": {
-            "value": "unsupported",
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "openai",
@@ -74137,7 +74092,7 @@
             }
           },
           "temperature": {
-            "value": "unsupported",
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "openai",
@@ -74723,7 +74678,7 @@
             }
           },
           "temperature": {
-            "value": "unsupported",
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "openai",
@@ -75214,7 +75169,7 @@
             }
           },
           "temperature": {
-            "value": "unsupported",
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "openai",
@@ -112446,7 +112401,7 @@
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 262144,
+        "value": 1048576,
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -112458,7 +112413,7 @@
       "description": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "Flagship Mistral model for advanced reasoning, coding, and multilingual work",
+        "value": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -112484,7 +112439,7 @@
         "scope": "publisher_api_model",
         "items": {
           "reasoning": {
-            "value": "unsupported",
+            "value": "supported",
             "source": {
               "upstream": "models.dev",
               "provider": "mistral",
@@ -112562,9 +112517,12 @@
         }
       },
       "knowledge_cutoff": {
+        "kind": "existing_catalog_or_pipeline_value"
+      },
+      "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2024-11",
+        "value": "2026-10-06",
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -112573,10 +112531,10 @@
           "policy_rank": 7
         }
       },
-      "last_updated": {
+      "lifecycle": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2025-12-02",
+        "value": "beta",
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -112603,7 +112561,7 @@
       "open_weights": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": true,
+        "value": false,
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -112642,9 +112600,9 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": {
-          "input_usd_per_million_tokens": "0.5",
-          "output_usd_per_million_tokens": "1.5",
-          "cache_read_usd_per_million_tokens": "0.05"
+          "input_usd_per_million_tokens": "0.7",
+          "output_usd_per_million_tokens": "2.1",
+          "cache_read_usd_per_million_tokens": "0.07"
         },
         "source": {
           "upstream": "models.dev",
@@ -112670,7 +112628,7 @@
       "release_date": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": "2024-11-01",
+        "value": "2026-10-06",
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",
@@ -112678,6 +112636,11 @@
           "priority": 70,
           "policy_rank": 7
         }
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
       }
     },
     "mistral-large2": {

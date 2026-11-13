@@ -3,8 +3,8 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "f47733e7815c06b9ec40ec380eb0765437ffaec66881632e9850e3ba51fecc73",
-    "record_count": 235
+    "sha256": "39fcecfbcb2d708ed0b519682b7a3c6fea18cfbd9cd55c650e1569c561d9c51a",
+    "record_count": 236
   },
   "scope": "allowlisted_publisher_api_model_observation",
   "records": [
@@ -11250,7 +11250,7 @@
         ],
         "tool_call": true,
         "structured_output": true,
-        "temperature": false,
+        "temperature": true,
         "knowledge": "2025-12-01",
         "release_date": "2026-04-23",
         "last_updated": "2026-04-23",
@@ -11428,7 +11428,7 @@
         ],
         "tool_call": true,
         "structured_output": true,
-        "temperature": false,
+        "temperature": true,
         "knowledge": "2026-02-16",
         "release_date": "2026-07-09",
         "last_updated": "2026-07-09",
@@ -11542,7 +11542,7 @@
         ],
         "tool_call": true,
         "structured_output": true,
-        "temperature": false,
+        "temperature": true,
         "knowledge": "2026-02-16",
         "release_date": "2026-07-09",
         "last_updated": "2026-07-09",
@@ -11656,7 +11656,7 @@
         ],
         "tool_call": true,
         "structured_output": true,
-        "temperature": false,
+        "temperature": true,
         "knowledge": "2026-02-16",
         "release_date": "2026-07-09",
         "last_updated": "2026-07-09",
@@ -11770,7 +11770,7 @@
         ],
         "tool_call": true,
         "structured_output": true,
-        "temperature": false,
+        "temperature": true,
         "knowledge": "2026-02-16",
         "release_date": "2026-07-09",
         "last_updated": "2026-07-09",
@@ -12010,7 +12010,7 @@
         ],
         "tool_call": true,
         "structured_output": true,
-        "temperature": false,
+        "temperature": true,
         "knowledge": "2026-05-18",
         "release_date": "2026-09-22",
         "last_updated": "2026-09-22",
@@ -12124,7 +12124,7 @@
         ],
         "tool_call": true,
         "structured_output": true,
-        "temperature": false,
+        "temperature": true,
         "knowledge": "2026-04-20",
         "release_date": "2026-09-22",
         "last_updated": "2026-09-22",
@@ -12364,7 +12364,7 @@
         ],
         "tool_call": true,
         "structured_output": true,
-        "temperature": false,
+        "temperature": true,
         "knowledge": "2026-06-01",
         "release_date": "2026-10-26",
         "last_updated": "2026-10-26",
@@ -12478,7 +12478,7 @@
         ],
         "tool_call": true,
         "structured_output": true,
-        "temperature": false,
+        "temperature": true,
         "knowledge": "2026-02-16",
         "release_date": "2026-08-07",
         "last_updated": "2026-08-07",
@@ -18150,16 +18150,25 @@
       "raw": {
         "id": "mistral-large-latest",
         "name": "Mistral Large (latest)",
-        "description": "Flagship Mistral model for advanced reasoning, coding, and multilingual work",
+        "description": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
         "family": "mistral-large",
         "attachment": true,
-        "reasoning": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        ],
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "knowledge": "2024-11",
-        "release_date": "2024-11-01",
-        "last_updated": "2025-12-02",
+        "release_date": "2026-10-06",
+        "last_updated": "2026-10-06",
         "modalities": {
           "input": [
             "text",
@@ -18170,16 +18179,18 @@
             "text"
           ]
         },
-        "open_weights": true,
+        "open_weights": false,
         "limit": {
-          "context": 262144,
+          "context": 1048576,
           "output": 262144
         },
+        "status": "beta",
         "cost": {
-          "input": 0.5,
-          "output": 1.5,
-          "cache_read": 0.05
-        }
+          "input": 0.7,
+          "output": 2.1,
+          "cache_read": 0.07
+        },
+        "canonical_model_id": "mistral/mistral-large-4"
       }
     },
     {

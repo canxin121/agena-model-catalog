@@ -23179,7 +23179,7 @@
     },
     "gemini-3.5-live-translate-preview": {
       "context_window_tokens": 16384,
-      "max_output_tokens": 32768,
+      "max_output_tokens": 16384,
       "description": "Low-latency audio-to-audio model for real-time speech translation across 70+ languages",
       "knowledge_cutoff": "2025-01",
       "release_date": "2026-06-09",
@@ -34915,7 +34915,7 @@
     "gpt-oss-120b": {
       "context_window_tokens": 131072,
       "max_input_tokens": 131072,
-      "max_output_tokens": 32768,
+      "max_output_tokens": 131072,
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "knowledge_cutoff": "2024-06",
       "release_date": "2025-08-05",
@@ -35032,7 +35032,7 @@
       "lifecycle": "deprecated",
       "context_window_tokens": 131072,
       "max_input_tokens": 131072,
-      "max_output_tokens": 32768,
+      "max_output_tokens": 131072,
       "description": "Open-weight GPT model for self-hosted reasoning and instruction-following workloads",
       "knowledge_cutoff": "2024-06",
       "release_date": "2025-08-05",
@@ -40415,7 +40415,7 @@
     "inkling-small": {
       "context_window_tokens": 524288,
       "max_input_tokens": 524288,
-      "max_output_tokens": 1048576,
+      "max_output_tokens": 524288,
       "description": "Efficient model for low-latency assistance, extraction, and routine automation",
       "release_date": "2026-07-30",
       "last_updated": "2026-07-30",
@@ -42730,7 +42730,7 @@
     "kimi-k3": {
       "context_window_tokens": 1048576,
       "max_input_tokens": 1048576,
-      "max_output_tokens": 131072,
+      "max_output_tokens": 1048576,
       "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
       "release_date": "2026-07-16",
       "last_updated": "2026-07-16",
@@ -49013,7 +49013,7 @@
     "ministral-3b-2512": {
       "context_window_tokens": 131072,
       "max_input_tokens": 131072,
-      "max_output_tokens": 262144,
+      "max_output_tokens": 131072,
       "description": "Compact open vision-language model for edge deployment, instruction following, and tool use",
       "release_date": "2025-12-02",
       "last_updated": "2025-12-02",

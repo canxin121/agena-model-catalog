@@ -48102,7 +48102,7 @@
       "max_output_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 32768,
+        "value": 16384,
         "source": {
           "upstream": "models.dev",
           "provider": "google",
@@ -76586,7 +76586,7 @@
       "max_output_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 32768,
+        "value": 131072,
         "source": {
           "upstream": "models.dev",
           "provider": "huggingface",
@@ -76876,7 +76876,7 @@
       "max_output_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 32768,
+        "value": 131072,
         "source": {
           "upstream": "models.dev",
           "provider": "huggingface",
@@ -88569,7 +88569,7 @@
       "max_output_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 1048576,
+        "value": 524288,
         "source": {
           "upstream": "models.dev",
           "provider": "huggingface",
@@ -93974,23 +93974,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "configured_route_limit_cap",
-        "upstream": "models.dev",
-        "value": 131072,
-        "priority": 70,
-        "resolution": "lower configured route limit",
-        "official_value": 1048576,
-        "route_value": 131072,
-        "routes": [
-          {
-            "upstream": "models.dev",
-            "provider": "cline-pass",
-            "source_id": "cline-pass/kimi-k3",
-            "route_id": "cline-pass/kimi-k3",
-            "context_window_tokens": 1048576,
-            "max_output_tokens": 131072
-          }
-        ]
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1048576,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "moonshotai",
+          "source_id": "kimi-k3",
+          "priority": 70,
+          "policy_rank": 8
+        }
       },
       "open_weights": {
         "kind": "upstream_field_observation",
@@ -109547,7 +109540,7 @@
       "max_output_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 262144,
+        "value": 131072,
         "source": {
           "upstream": "models.dev",
           "provider": "mistral",

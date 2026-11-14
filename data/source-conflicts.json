@@ -10397,7 +10397,7 @@
           }
         },
         {
-          "value": 131072,
+          "value": 1000000,
           "source": {
             "upstream": "models.dev",
             "provider": "huggingface",

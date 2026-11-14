@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "021f44edf970945e9c4af45c732e0532d30d1eb407a7819ed1ba5a647203e889",
+    "sha256": "3babfc21f65e1415058bff0f791ed14eb3815c92962b70b2f971da4b329aca2c",
     "record_count": 236
   },
   "scope": "configured_route_limit_cap",
@@ -460,7 +460,7 @@
       "priority": 70,
       "fields": {
         "context_window_tokens": 1048576,
-        "max_output_tokens": 131072
+        "max_output_tokens": 1048576
       },
       "raw": {
         "id": "cline-pass/kimi-k3",
@@ -498,7 +498,7 @@
         "open_weights": true,
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 1048576
         },
         "cost": {
           "input": 3,

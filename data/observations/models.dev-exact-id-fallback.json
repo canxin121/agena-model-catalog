@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "021f44edf970945e9c4af45c732e0532d30d1eb407a7819ed1ba5a647203e889",
+    "sha256": "3babfc21f65e1415058bff0f791ed14eb3815c92962b70b2f971da4b329aca2c",
     "record_count": 236
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -11917,7 +11917,7 @@
         "open_weights": true,
         "limit": {
           "context": 448,
-          "output": 4096
+          "output": 448
         },
         "cost": {
           "input": 0,
@@ -13379,7 +13379,7 @@
         "open_weights": false,
         "limit": {
           "context": 32768,
-          "output": 64000
+          "output": 32768
         },
         "cost": {
           "input": 2,
@@ -17473,7 +17473,6 @@
         "open_weights": false,
         "limit": {
           "context": 128000,
-          "input": 272000,
           "output": 16384
         },
         "cost": {
@@ -21017,7 +21016,7 @@
         "open_weights": true,
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 131072
         },
         "cost": {
           "input": 0.15,
@@ -21134,7 +21133,7 @@
         "open_weights": true,
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 131072
         },
         "cost": {
           "input": 0.399,
@@ -23661,7 +23660,7 @@
         "open_weights": true,
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 1048576
         },
         "cost": {
           "input": 0,
@@ -23731,7 +23730,7 @@
         "open_weights": true,
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 1048576
         },
         "cost": {
           "input": 0,
@@ -23800,7 +23799,7 @@
         "open_weights": true,
         "limit": {
           "context": 262144,
-          "output": 131072
+          "output": 262144
         },
         "cost": {
           "input": 0,
@@ -23869,7 +23868,7 @@
         "open_weights": true,
         "limit": {
           "context": 262144,
-          "output": 131072
+          "output": 262144
         },
         "cost": {
           "input": 0,
@@ -24754,7 +24753,7 @@
         "open_weights": true,
         "limit": {
           "context": 1040384,
-          "output": 131072
+          "output": 1040384
         },
         "cost": {
           "input": 4.5,
@@ -24933,7 +24932,7 @@
         "open_weights": true,
         "limit": {
           "context": 256000,
-          "output": 262144
+          "output": 256000
         },
         "status": "deprecated",
         "cost": {
@@ -33859,7 +33858,6 @@
         "open_weights": false,
         "limit": {
           "context": 256000,
-          "input": 272000,
           "output": 65536
         },
         "cost": {
@@ -41370,7 +41368,7 @@
         "open_weights": true,
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 1048576
         },
         "cost": {
           "input": 3,
@@ -41440,7 +41438,7 @@
         "open_weights": true,
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 1048576
         },
         "cost": {
           "input": 0,
@@ -42032,7 +42030,7 @@
         "open_weights": true,
         "limit": {
           "context": 448,
-          "output": 4096
+          "output": 448
         },
         "provider": {
           "npm": "@ai-sdk/openai"

@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "021f44edf970945e9c4af45c732e0532d30d1eb407a7819ed1ba5a647203e889",
+    "sha256": "3babfc21f65e1415058bff0f791ed14eb3815c92962b70b2f971da4b329aca2c",
     "record_count": 236
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -5432,7 +5432,7 @@
         "open_weights": false,
         "limit": {
           "context": 16384,
-          "output": 32768
+          "output": 16384
         },
         "cost": {
           "input": 3.5,
@@ -12807,7 +12807,7 @@
         "open_weights": true,
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 131072
         },
         "cost": {
           "input": 0.25,
@@ -12869,7 +12869,7 @@
         "open_weights": true,
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 131072
         },
         "cost": {
           "input": 0.1,
@@ -13985,7 +13985,7 @@
         "open_weights": true,
         "limit": {
           "context": 524288,
-          "output": 1048576
+          "output": 524288
         },
         "cost": {
           "input": 0.5,
@@ -14977,7 +14977,7 @@
         "open_weights": true,
         "limit": {
           "context": 1000000,
-          "output": 131072
+          "output": 1000000
         },
         "cost": {
           "input": 3,
@@ -17722,7 +17722,7 @@
         "open_weights": true,
         "limit": {
           "context": 131072,
-          "output": 262144
+          "output": 131072
         },
         "cost": {
           "input": 0.1,

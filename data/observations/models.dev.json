@@ -3,8 +3,8 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "3babfc21f65e1415058bff0f791ed14eb3815c92962b70b2f971da4b329aca2c",
-    "record_count": 236
+    "sha256": "75d7f8b39c5f4eeaa2c91bd65ab6da7ee0695a5ca439e0ae125b52a704b6051b",
+    "record_count": 328
   },
   "scope": "allowlisted_publisher_api_model_observation",
   "records": [
@@ -3908,7 +3908,7 @@
         },
         "open_weights": false,
         "limit": {
-          "context": 256000,
+          "context": 1024000,
           "output": 256000
         },
         "cost": {
@@ -4131,7 +4131,7 @@
         },
         "open_weights": false,
         "limit": {
-          "context": 256000,
+          "context": 1024000,
           "output": 256000
         },
         "cost": {
@@ -6092,6 +6092,60 @@
           "output": 2.5,
           "cache_read": 0.03
         }
+      }
+    },
+    {
+      "canonical_model_id": "gemini-omni-flash-preview",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "google",
+        "source_id": "gemini-omni-flash-preview",
+        "priority": 70,
+        "policy_rank": 2
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "gemini-omni-flash-preview",
+        "type": "video",
+        "name": "Gemini Omni Flash Preview",
+        "description": "Video generation and editing model for fast, conversational text- and image-to-video workflows",
+        "family": "gemini",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "tool_call": false,
+        "temperature": true,
+        "release_date": "2026-06-30",
+        "last_updated": "2026-06-30",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "video"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 131072,
+          "output": 65536
+        },
+        "cost": {
+          "input": 1.5,
+          "output": 17.5
+        },
+        "canonical_model_id": "google/gemini-omni-flash-preview"
       }
     },
     {
@@ -10931,6 +10985,18 @@
                   "service_tier": "priority"
                 }
               }
+            },
+            "flex": {
+              "cost": {
+                "input": 1.25,
+                "output": 7.5,
+                "cache_read": 0.125
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "flex"
+                }
+              }
             }
           }
         },
@@ -11283,6 +11349,18 @@
                   "service_tier": "priority"
                 }
               }
+            },
+            "flex": {
+              "cost": {
+                "input": 2.5,
+                "output": 15,
+                "cache_read": 0.25
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "flex"
+                }
+              }
             }
           }
         },
@@ -11577,6 +11655,19 @@
                 }
               }
             },
+            "flex": {
+              "cost": {
+                "input": 0.1,
+                "output": 0.6,
+                "cache_read": 0.01,
+                "cache_write": 0.125
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "flex"
+                }
+              }
+            },
             "pro": {
               "provider": {
                 "body": {
@@ -11688,6 +11779,19 @@
               "provider": {
                 "body": {
                   "service_tier": "priority"
+                }
+              }
+            },
+            "flex": {
+              "cost": {
+                "input": 2,
+                "output": 10,
+                "cache_read": 0.2,
+                "cache_write": 2.5
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "flex"
                 }
               }
             },
@@ -11805,6 +11909,19 @@
                 }
               }
             },
+            "flex": {
+              "cost": {
+                "input": 1,
+                "output": 6,
+                "cache_read": 0.1,
+                "cache_write": 1.25
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "flex"
+                }
+              }
+            },
             "pro": {
               "provider": {
                 "body": {
@@ -11915,6 +12032,19 @@
               "provider": {
                 "body": {
                   "service_tier": "priority"
+                }
+              }
+            },
+            "flex": {
+              "cost": {
+                "input": 5,
+                "output": 25,
+                "cache_read": 0.5,
+                "cache_write": 6.25
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "flex"
                 }
               }
             },
@@ -12045,6 +12175,19 @@
                 }
               }
             },
+            "flex": {
+              "cost": {
+                "input": 0.05,
+                "output": 0.25,
+                "cache_read": 0.005,
+                "cache_write": 0.0625
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "flex"
+                }
+              }
+            },
             "pro": {
               "provider": {
                 "body": {
@@ -12159,6 +12302,19 @@
                 }
               }
             },
+            "flex": {
+              "cost": {
+                "input": 1,
+                "output": 5,
+                "cache_read": 0.1,
+                "cache_write": 1.25
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "flex"
+                }
+              }
+            },
             "pro": {
               "provider": {
                 "body": {
@@ -12269,6 +12425,19 @@
               "provider": {
                 "body": {
                   "service_tier": "priority"
+                }
+              }
+            },
+            "flex": {
+              "cost": {
+                "input": 1,
+                "output": 5,
+                "cache_read": 0.05,
+                "cache_write": 1.25
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "flex"
                 }
               }
             },
@@ -12396,6 +12565,19 @@
               "provider": {
                 "body": {
                   "service_tier": "priority"
+                }
+              }
+            },
+            "flex": {
+              "cost": {
+                "input": 0.5,
+                "output": 2.5,
+                "cache_read": 0.025,
+                "cache_write": 0.625
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "flex"
                 }
               }
             },
@@ -13943,6 +14125,71 @@
       }
     },
     {
+      "canonical_model_id": "inkling-2-small",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "thinkingmachines/Inkling-2-Small",
+        "priority": 70,
+        "policy_rank": 34
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "thinkingmachines/Inkling-2-Small",
+        "name": "Inkling 2 Small",
+        "description": "Multimodal MoE reasoning model (594B total, 17B active) for agentic coding, vision, and knowledge work",
+        "family": "ling",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "release_date": "2026-11-05",
+        "last_updated": "2026-11-12",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "cost": {
+          "input": 0.3,
+          "output": 1
+        },
+        "canonical_model_id": "thinkingmachines/inkling-2-small"
+      }
+    },
+    {
       "canonical_model_id": "inkling-small",
       "scope": "publisher_api_model",
       "source": {
@@ -15118,6 +15365,68 @@
           "output": 10.1671,
           "cache_read": 0.1944,
           "cache_write": 1.9437
+        },
+        "canonical_model_id": "moonshotai/kimi-k3.1-pro"
+      }
+    },
+    {
+      "canonical_model_id": "kimi-k3.1-pro",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "moonshotai/Kimi-K3.1-Pro",
+        "priority": 70,
+        "policy_rank": 31
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "moonshotai/Kimi-K3.1-Pro",
+        "name": "Kimi K3.1 Pro",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+        "family": "kimi-k3",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": false,
+        "release_date": "2026-10-23",
+        "last_updated": "2026-10-23",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "cost": {
+          "input": 2,
+          "output": 10
         },
         "canonical_model_id": "moonshotai/kimi-k3.1-pro"
       }

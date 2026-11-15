@@ -19,8 +19,8 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "3babfc21f65e1415058bff0f791ed14eb3815c92962b70b2f971da4b329aca2c",
-      "snapshot_record_count": 236
+      "snapshot_sha256": "75d7f8b39c5f4eeaa2c91bd65ab6da7ee0695a5ca439e0ae125b52a704b6051b",
+      "snapshot_record_count": 328
     },
     {
       "id": "opencode",
@@ -74,9 +74,9 @@
       "published_snapshot": "data/routes/openrouter.json",
       "selection": "exact OpenRouter route only; never merged into provider-global model fields",
       "snapshot_status": "current",
-      "snapshot_sha256": "ea9a7f002a5345ba77d12c7ace92748dff5b89e0b4e73a20504e6ab07389a684",
+      "snapshot_sha256": "c5c61a3721a856a4e2930e02d4d812a413ec68a8784d1f23a6133f66ef26075d",
       "snapshot_record_count": 471,
-      "last_successful_retrieval": "2026-11-14T10:25:40+00:00"
+      "last_successful_retrieval": "2026-11-15T01:03:15+00:00"
     },
     {
       "id": "litellm",
@@ -94,9 +94,9 @@
       "published_snapshot": "data/routes/litellm.json",
       "selection": "route-level price and limit cross-check; no global fallback without explicit route mapping",
       "snapshot_status": "current",
-      "snapshot_sha256": "230dfd5649d6fa5fc08c306b316448b4dbcf4f4935dca572ea155ed5162e74d8",
-      "snapshot_record_count": 5988,
-      "last_successful_retrieval": "2026-11-13T21:25:36+00:00"
+      "snapshot_sha256": "3b5829b9df6a8d32f5ad44f8ec09001b0c31ac8553734a160d0fb0ba95573889",
+      "snapshot_record_count": 5994,
+      "last_successful_retrieval": "2026-11-15T01:03:15+00:00"
     },
     {
       "id": "codex-client",
@@ -132,14 +132,14 @@
     }
   ],
   "route_record_counts": {
-    "models.dev_allowlisted_observations": 450,
-    "models.dev_exact_id_fallback_candidates": 704,
-    "models.dev_route_limit_caps": 18,
+    "models.dev_allowlisted_observations": 453,
+    "models.dev_exact_id_fallback_candidates": 717,
+    "models.dev_route_limit_caps": 21,
     "openrouter": 471,
-    "litellm": 5988
+    "litellm": 5994
   },
   "artifact_record_counts": {
     "huggingface": 994
   },
-  "model_provenance_count": 1903
+  "model_provenance_count": 1904
 }

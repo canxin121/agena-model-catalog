@@ -15914,7 +15914,8 @@
           "reasoning"
         ]
       },
-      "max_input_tokens": 256000
+      "max_input_tokens": 256000,
+      "knowledge_cutoff": "2025-12"
     },
     "devstral-2-123b-instruct-2512": {
       "context_window_tokens": 200000,
@@ -17881,7 +17882,7 @@
       "lifecycle": "deprecated"
     },
     "doubao-seed-2-1-pro-260628": {
-      "context_window_tokens": 256000,
+      "context_window_tokens": 1024000,
       "max_output_tokens": 256000,
       "description": "Flagship ByteDance Seed 2.1 model for complex multimodal reasoning, coding, and agents",
       "release_date": "2026-06-23",
@@ -17914,7 +17915,7 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 256000,
+      "max_input_tokens": 1024000,
       "thinking_modes": {
         "off": {
           "display_name": "Off",
@@ -18564,7 +18565,7 @@
       "max_input_tokens": 256000
     },
     "doubao-seed-evolving": {
-      "context_window_tokens": 256000,
+      "context_window_tokens": 1024000,
       "max_output_tokens": 256000,
       "description": "Rolling ByteDance Seed model for rapidly updated reasoning, coding, and agent capabilities",
       "release_date": "2026-06-23",
@@ -18597,7 +18598,7 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 256000,
+      "max_input_tokens": 1024000,
       "thinking_modes": {
         "off": {
           "display_name": "Off",
@@ -23932,7 +23933,10 @@
           "tool_calling"
         ]
       },
-      "max_input_tokens": 131072
+      "max_input_tokens": 131072,
+      "provider_sources": [
+        "google"
+      ]
     },
     "gemini-pro-agent": {
       "context_window_tokens": 1048576,
@@ -40355,6 +40359,72 @@
         "huggingface"
       ]
     },
+    "inkling-2-small": {
+      "description": "Multimodal MoE reasoning model (594B total, 17B active) for agentic coding, vision, and knowledge work",
+      "release_date": "2026-11-05",
+      "last_updated": "2026-11-12",
+      "open_weights": true,
+      "display_name": "Inkling 2 Small",
+      "origin": "Thinking Machines",
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 131072,
+      "input": {
+        "supported": [
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "temperature",
+          "tool_calling"
+        ]
+      },
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "0.3",
+        "output_usd_per_million_tokens": "1"
+      },
+      "provider_sources": [
+        "huggingface"
+      ],
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      },
+      "max_input_tokens": 1048576
+    },
     "inkling-nvfp4": {
       "context_window_tokens": 1048576,
       "max_output_tokens": 262144,
@@ -42920,7 +42990,7 @@
       "display_name": "Kimi K3.1 Pro",
       "origin": "Moonshot AI",
       "context_window_tokens": 1048576,
-      "max_output_tokens": 1048576,
+      "max_output_tokens": 943718,
       "input": {
         "supported": [
           "image",
@@ -42950,6 +43020,7 @@
         "cache_write_usd_per_million_tokens": "2"
       },
       "provider_sources": [
+        "huggingface",
         "moonshotai",
         "moonshotai-cn"
       ],
@@ -73006,7 +73077,8 @@
           "effort": "high"
         }
       },
-      "max_input_tokens": 262144
+      "max_input_tokens": 262144,
+      "knowledge_cutoff": "2025-05"
     },
     "umans-glm-5.1": {
       "context_window_tokens": 204800,

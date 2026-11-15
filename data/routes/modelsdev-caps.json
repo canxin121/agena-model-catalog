@@ -3,8 +3,8 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "3babfc21f65e1415058bff0f791ed14eb3815c92962b70b2f971da4b329aca2c",
-    "record_count": 236
+    "sha256": "75d7f8b39c5f4eeaa2c91bd65ab6da7ee0695a5ca439e0ae125b52a704b6051b",
+    "record_count": 328
   },
   "scope": "configured_route_limit_cap",
   "records": [
@@ -175,6 +175,63 @@
           "cache_read": 0.003
         },
         "canonical_model_id": "deepseek/deepseek-v4.1-flash"
+      }
+    },
+    {
+      "canonical_model_id": "deepseek-v4.1-flash-1017",
+      "route_id": "cline-pass/deepseek-v4.1-flash-1017",
+      "provider": "cline-pass",
+      "source_id": "cline-pass/deepseek-v4.1-flash-1017",
+      "scope": "models.dev_route_limit_cap",
+      "priority": 70,
+      "fields": {
+        "context_window_tokens": 1048576,
+        "max_output_tokens": 393216
+      },
+      "raw": {
+        "id": "cline-pass/deepseek-v4.1-flash-1017",
+        "name": "DeepSeek V4.1 Flash 1017",
+        "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+        "family": "deepseek-flash",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2025-05",
+        "release_date": "2026-10-17",
+        "last_updated": "2026-10-17",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 1048576,
+          "output": 393216
+        },
+        "cost": {
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.003
+        },
+        "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017"
       }
     },
     {
@@ -509,6 +566,63 @@
       }
     },
     {
+      "canonical_model_id": "kimi-k3.1-pro",
+      "route_id": "cline-pass/kimi-k3.1-pro",
+      "provider": "cline-pass",
+      "source_id": "cline-pass/kimi-k3.1-pro",
+      "scope": "models.dev_route_limit_cap",
+      "priority": 70,
+      "fields": {
+        "context_window_tokens": 1048576,
+        "max_output_tokens": 943718
+      },
+      "raw": {
+        "id": "cline-pass/kimi-k3.1-pro",
+        "name": "Kimi K3.1 Pro",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+        "family": "kimi-k3",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": false,
+        "release_date": "2026-10-23",
+        "last_updated": "2026-10-23",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 1048576,
+          "output": 943718
+        },
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2,
+          "cache_write": 2
+        },
+        "canonical_model_id": "moonshotai/kimi-k3.1-pro"
+      }
+    },
+    {
       "canonical_model_id": "mimo-v2.5",
       "route_id": "cline-pass/mimo-v2.5",
       "provider": "cline-pass",
@@ -552,6 +666,7 @@
           "context": 1048576,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.14,
           "output": 0.28,
@@ -601,6 +716,7 @@
           "context": 1048576,
           "output": 131072
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.74,
           "output": 3.48,
@@ -773,6 +889,64 @@
           "cache_read": 0.06
         },
         "canonical_model_id": "minimax/MiniMax-M3"
+      }
+    },
+    {
+      "canonical_model_id": "minimax-m3.1-flash",
+      "route_id": "cline-pass/minimax-m3.1-flash",
+      "provider": "cline-pass",
+      "source_id": "cline-pass/minimax-m3.1-flash",
+      "scope": "models.dev_route_limit_cap",
+      "priority": 70,
+      "fields": {
+        "context_window_tokens": 1048576,
+        "max_output_tokens": 524288
+      },
+      "raw": {
+        "id": "cline-pass/minimax-m3.1-flash",
+        "name": "MiniMax-M3.1-Flash",
+        "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+        "family": "minimax",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": false,
+        "temperature": true,
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 1048576,
+          "output": 524288
+        },
+        "cost": {
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.015
+        },
+        "canonical_model_id": "minimax/MiniMax-M3.1-Flash"
       }
     },
     {

@@ -15577,10 +15577,28 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "hostinger-router",
+          "source_id": "claude-sonnet-4.5",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Claude Sonnet 4.5 (latest)",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "hostinger-router",
+          "source_id": "claude-sonnet-4.5",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -15589,10 +15607,28 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-07-31",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "hostinger-router",
+          "source_id": "claude-sonnet-4.5",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-09-29",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "hostinger-router",
+          "source_id": "claude-sonnet-4.5",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -15601,7 +15637,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "hostinger-router",
+          "source_id": "claude-sonnet-4.5",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -15613,7 +15658,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-09-29",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "hostinger-router",
+          "source_id": "claude-sonnet-4.5",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -32085,6 +32139,18 @@
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-12",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "opencheap",
+          "source_id": "devstral-2-123b",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
       "last_updated": {
         "kind": "existing_catalog_or_pipeline_value"
       },
@@ -32095,7 +32161,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "opencheap",
+          "source_id": "devstral-2-123b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -36872,7 +36947,7 @@
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 256000,
+        "value": 1024000,
         "source": {
           "upstream": "models.dev",
           "provider": "volcengine",
@@ -37451,16 +37526,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Doubao Seed 2.0 Lite",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "qiniu-ai",
-          "source_id": "doubao-seed-2.0-lite",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -37477,7 +37543,7 @@
         "value": "2026-02-14",
         "source": {
           "upstream": "models.dev",
-          "provider": "qiniu-ai",
+          "provider": "adzuki",
           "source_id": "doubao-seed-2.0-lite",
           "priority": 20,
           "policy_rank": 0
@@ -37498,7 +37564,7 @@
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "qiniu-ai",
+          "provider": "adzuki",
           "source_id": "doubao-seed-2.0-lite",
           "priority": 20,
           "policy_rank": 0
@@ -37519,7 +37585,7 @@
         "value": "2026-02-14",
         "source": {
           "upstream": "models.dev",
-          "provider": "qiniu-ai",
+          "provider": "adzuki",
           "source_id": "doubao-seed-2.0-lite",
           "priority": 20,
           "policy_rank": 0
@@ -37724,7 +37790,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2026-06-23",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "adzuki",
+          "source_id": "doubao-seed-2.1-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -37733,7 +37808,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "adzuki",
+          "source_id": "doubao-seed-2.1-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -37745,7 +37829,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2026-06-23",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "adzuki",
+          "source_id": "doubao-seed-2.1-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -38255,7 +38348,7 @@
       "context_window_tokens": {
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
-        "value": 256000,
+        "value": 1024000,
         "source": {
           "upstream": "models.dev",
           "provider": "volcengine",
@@ -50924,22 +51017,124 @@
     },
     "gemini-omni-flash-preview": {
       "context_window_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 131072,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-omni-flash-preview",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Video generation and editing model for fast, conversational text- and image-to-video workflows",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-omni-flash-preview",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Gemini Omni Flash Preview",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-omni-flash-preview",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "features": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-omni-flash-preview",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-omni-flash-preview",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "tool_calling": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-omni-flash-preview",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          }
+        }
       },
       "input": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-omni-flash-preview",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-omni-flash-preview",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          },
+          "video": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "google",
+              "source_id": "gemini-omni-flash-preview",
+              "priority": 70,
+              "policy_rank": 2
+            }
+          }
+        }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-06-30",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-omni-flash-preview",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -50948,22 +51143,94 @@
         "has_source_notes": true
       },
       "max_output_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 65536,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-omni-flash-preview",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-omni-flash-preview",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "origin": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Google",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-omni-flash-preview",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "output_modalities": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "video"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-omni-flash-preview",
+          "priority": 70,
+          "policy_rank": 2
+        }
       },
       "pricing": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "1.5",
+          "output_usd_per_million_tokens": "17.5"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-omni-flash-preview",
+          "priority": 70,
+          "policy_rank": 2
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "google"
+        ],
+        "observations": [
+          {
+            "provider": "google",
+            "source_id": "gemini-omni-flash-preview"
+          }
+        ]
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-06-30",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "google",
+          "source_id": "gemini-omni-flash-preview",
+          "priority": 70,
+          "policy_rank": 2
+        }
       }
     },
     "gemini-pro-agent": {
@@ -62116,28 +62383,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "The same model served for high TPS.",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "wafer.ai",
-          "source_id": "glm5.2-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "GLM5.2-Fast",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "wafer.ai",
-          "source_id": "glm5.2-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -62152,16 +62401,7 @@
         "has_source_notes": true
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-13",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "wafer.ai",
-          "source_id": "glm5.2-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -62173,16 +62413,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "wafer.ai",
-          "source_id": "glm5.2-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -62194,16 +62425,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-13",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "wafer.ai",
-          "source_id": "glm5.2-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -82483,10 +82705,28 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Grok model for agentic tool use, reasoning, coding, and live assistance",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "tokenlab",
+          "source_id": "grok-4.20-non-reasoning",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Grok 4.20 (Non-Reasoning)",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "tokenlab",
+          "source_id": "grok-4.20-non-reasoning",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82498,7 +82738,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2026-03-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "tokenlab",
+          "source_id": "grok-4.20-non-reasoning",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "lifecycle": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82510,7 +82759,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "tokenlab",
+          "source_id": "grok-4.20-non-reasoning",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -82522,7 +82780,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2026-03-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "tokenlab",
+          "source_id": "grok-4.20-non-reasoning",
+          "priority": 20,
+          "policy_rank": 0
+        }
       }
     },
     "grok-4.20-non-reasoning-beta": {
@@ -88393,6 +88660,226 @@
         "has_source_notes": true
       }
     },
+    "inkling-2-small": {
+      "context_window_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1048576,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Small",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "description": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Multimodal MoE reasoning model (594B total, 17B active) for agentic coding, vision, and knowledge work",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Small",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "display_name": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Inkling 2 Small",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Small",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "features": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Small",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Small",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Small",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Small",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Small",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Small",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          }
+        }
+      },
+      "last_updated": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-11-12",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Small",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "max_input_tokens": {
+        "kind": "existing_catalog_or_pipeline_value"
+      },
+      "max_output_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 131072,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Small",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "open_weights": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Small",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "origin": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Thinking Machines",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Small",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "output_modalities": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Small",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "pricing": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.3",
+          "output_usd_per_million_tokens": "1"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Small",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "huggingface"
+        ],
+        "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "thinkingmachines/Inkling-2-Small"
+          }
+        ]
+      },
+      "release_date": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-11-05",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Small",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
+      }
+    },
     "inkling-nvfp4": {
       "assistant_reasoning_field": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -93036,28 +93523,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "kimi-k2.7-code-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Kimi K2.7 Code Flex",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "kimi-k2.7-code-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -93066,28 +93535,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "kimi-k2.7-code-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "kimi-k2.7-code-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -93099,16 +93550,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "kimi-k2.7-code-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -93120,16 +93562,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-06-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "neuralwatt",
-          "source_id": "kimi-k2.7-code-flex",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -94153,23 +94586,14 @@
         "value": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
+          "provider": "abliteratedllm",
           "source_id": "kimi-k3-fast",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Kimi K3",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "kimi-k3-fast",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -94183,7 +94607,7 @@
         "value": "2026-07-16",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
+          "provider": "abliteratedllm",
           "source_id": "kimi-k3-fast",
           "priority": 20,
           "policy_rank": 0
@@ -94201,7 +94625,7 @@
         "value": true,
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
+          "provider": "abliteratedllm",
           "source_id": "kimi-k3-fast",
           "priority": 20,
           "policy_rank": 0
@@ -94222,7 +94646,7 @@
         "value": "2026-07-16",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
+          "provider": "abliteratedllm",
           "source_id": "kimi-k3-fast",
           "priority": 20,
           "policy_rank": 0
@@ -94456,16 +94880,23 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 1048576,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "moonshotai",
-          "source_id": "kimi-k3.1-pro",
-          "priority": 70,
-          "policy_rank": 8
-        }
+        "kind": "configured_route_limit_cap",
+        "upstream": "models.dev",
+        "value": 943718,
+        "priority": 70,
+        "resolution": "lower configured route limit",
+        "official_value": 1048576,
+        "route_value": 943718,
+        "routes": [
+          {
+            "upstream": "models.dev",
+            "provider": "cline-pass",
+            "source_id": "cline-pass/kimi-k3.1-pro",
+            "route_id": "cline-pass/kimi-k3.1-pro",
+            "context_window_tokens": 1048576,
+            "max_output_tokens": 943718
+          }
+        ]
       },
       "open_weights": {
         "kind": "upstream_field_observation",
@@ -94526,10 +94957,15 @@
         "kind": "upstream_field_observation",
         "scope": "publisher_api_model",
         "value": [
+          "huggingface",
           "moonshotai",
           "moonshotai-cn"
         ],
         "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "moonshotai/Kimi-K3.1-Pro"
+          },
           {
             "provider": "moonshotai",
             "source_id": "kimi-k3.1-pro"
@@ -138859,7 +139295,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "opencheap",
+          "source_id": "qwen3-coder-30b-a3b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -138886,7 +139331,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-07-31",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "opencheap",
+          "source_id": "qwen3-coder-30b-a3b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       }
     },
     "qwen3-coder-30b-a3b-instruct": {
@@ -149602,23 +150056,14 @@
         "value": "Open multimodal Qwen MoE for local agents that need vision, audio, and code",
         "source": {
           "upstream": "models.dev",
-          "provider": "aki-io",
+          "provider": "neuralwatt",
           "source_id": "qwen3.6-35b",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Qwen3.6 35B-A3B",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "aki-io",
-          "source_id": "qwen3.6-35b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -149635,7 +150080,7 @@
         "value": "2026-04-17",
         "source": {
           "upstream": "models.dev",
-          "provider": "aki-io",
+          "provider": "neuralwatt",
           "source_id": "qwen3.6-35b",
           "priority": 20,
           "policy_rank": 0
@@ -149656,7 +150101,7 @@
         "value": true,
         "source": {
           "upstream": "models.dev",
-          "provider": "aki-io",
+          "provider": "neuralwatt",
           "source_id": "qwen3.6-35b",
           "priority": 20,
           "policy_rank": 0
@@ -149677,7 +150122,7 @@
         "value": "2026-04-17",
         "source": {
           "upstream": "models.dev",
-          "provider": "aki-io",
+          "provider": "neuralwatt",
           "source_id": "qwen3.6-35b",
           "priority": 20,
           "policy_rank": 0
@@ -165000,16 +165445,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Open multimodal Qwen MoE for local agents that need vision, audio, and code",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "umans-ai",
-          "source_id": "umans-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "upstream_field_observation",
@@ -165029,10 +165465,10 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "last_updated": {
+      "knowledge_cutoff": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-17",
+        "value": "2025-05",
         "source": {
           "upstream": "models.dev",
           "provider": "umans-ai",
@@ -165040,6 +165476,9 @@
           "priority": 20,
           "policy_rank": 0
         }
+      },
+      "last_updated": {
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -165072,16 +165511,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-17",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "umans-ai",
-          "source_id": "umans-flash",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -165272,28 +165702,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "umans-ai",
-          "source_id": "umans-kimi-k3",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Kimi K3",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "umans-ai",
-          "source_id": "umans-kimi-k3",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -165302,16 +165714,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-07-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "umans-ai",
-          "source_id": "umans-kimi-k3",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "verified_curated_patch",
@@ -165344,16 +165747,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-07-16",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "umans-ai",
-          "source_id": "umans-kimi-k3",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",

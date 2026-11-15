@@ -3,8 +3,8 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "75d7f8b39c5f4eeaa2c91bd65ab6da7ee0695a5ca439e0ae125b52a704b6051b",
-    "record_count": 328
+    "sha256": "8109d24d0d424266b610e96a1af76b8a3cc7e2da7c0bf12df1359c3a2c86f641",
+    "record_count": 324
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
   "records": [
@@ -3485,69 +3485,6 @@
         "limit": {
           "context": 200000,
           "output": 64000
-        },
-        "canonical_model_id": "anthropic/claude-haiku-4-5"
-      }
-    },
-    {
-      "catalog_model_id": "claude-haiku-4.5",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "void-api",
-        "source_id": "claude-haiku-4.5",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "claude-haiku-4.5",
-        "name": "Claude Haiku 4.5 (latest)",
-        "description": "Fast Claude lane for lightweight agents, office tasks, and responsive chat",
-        "family": "claude-haiku",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "budget_tokens",
-            "min": 1024
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-02-28",
-        "release_date": "2025-10-15",
-        "last_updated": "2025-10-15",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 64000
-        },
-        "cost": {
-          "input": 0.9,
-          "output": 4.5,
-          "cache_read": 0.075,
-          "cache_write": 0.666
         },
         "canonical_model_id": "anthropic/claude-haiku-4-5"
       }
@@ -9912,7 +9849,7 @@
         "name": "DeepSeek V3/Deepseek Chat",
         "description": "DeepSeek chat model for instruction following, coding, and analysis",
         "family": "deepseek",
-        "attachment": true,
+        "attachment": false,
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
@@ -9922,8 +9859,7 @@
         "last_updated": "2026-02-28",
         "modalities": {
           "input": [
-            "text",
-            "pdf"
+            "text"
           ],
           "output": [
             "text"
@@ -10702,58 +10638,6 @@
           "cache_read": 0.0875
         },
         "canonical_model_id": "deepseek/deepseek-v4-flash-0731"
-      }
-    },
-    {
-      "catalog_model_id": "devstral-2-123b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "opencheap",
-        "source_id": "devstral-2-123b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "devstral-2-123b",
-        "name": "Devstral 2",
-        "description": "Mistral's coding-agent model for repository work, terminal tasks, and software fixes",
-        "family": "devstral",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-12",
-        "release_date": "2025-12-09",
-        "last_updated": "2025-12-09",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "cost": {
-          "input": 0.006,
-          "output": 0.03
-        },
-        "canonical_model_id": "mistral/devstral-2512"
       }
     },
     {
@@ -26207,60 +26091,6 @@
       }
     },
     {
-      "catalog_model_id": "llama-4-maverick",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "opencheap",
-        "source_id": "llama-4-maverick",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "llama-4-maverick",
-        "name": "Llama 4 Maverick 17B Instruct",
-        "description": "Open multimodal Llama for strong reasoning with efficient everyday serving",
-        "family": "llama",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-08",
-        "release_date": "2025-04-05",
-        "last_updated": "2025-04-05",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1000000,
-          "output": 16384
-        },
-        "cost": {
-          "input": 0.3,
-          "output": 0.3,
-          "cache_read": 0.18
-        },
-        "canonical_model_id": "meta/llama-4-maverick-17b-instruct"
-      }
-    },
-    {
       "catalog_model_id": "llama-4-maverick-17b-instruct",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -26363,59 +26193,6 @@
         "cost": {
           "input": 0.08,
           "output": 0.3
-        },
-        "canonical_model_id": "meta/llama-4-scout-17b-instruct"
-      }
-    },
-    {
-      "catalog_model_id": "llama-4-scout",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "opencheap",
-        "source_id": "llama-4-scout",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "llama-4-scout",
-        "name": "Llama 4 Scout 17B Instruct",
-        "description": "Open Llama with long-context vision for efficient multimodal agents",
-        "family": "llama",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-08",
-        "release_date": "2025-04-05",
-        "last_updated": "2025-04-05",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 328000,
-          "output": 16384
-        },
-        "cost": {
-          "input": 0.11,
-          "output": 0.32
         },
         "canonical_model_id": "meta/llama-4-scout-17b-instruct"
       }
@@ -29145,58 +28922,6 @@
         "cost": {
           "input": 20,
           "output": 40
-        },
-        "canonical_model_id": "mistral/mistral-nemo"
-      }
-    },
-    {
-      "catalog_model_id": "mistral-nemo",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "opencheap",
-        "source_id": "mistral-nemo",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mistral-nemo",
-        "name": "Mistral Nemo",
-        "description": "Efficient Mistral-NVIDIA open model for multilingual chat and local deployment",
-        "family": "mistral-nemo",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-07",
-        "release_date": "2024-07-18",
-        "last_updated": "2024-07-18",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 128000
-        },
-        "cost": {
-          "input": 0.031,
-          "output": 0.032
         },
         "canonical_model_id": "mistral/mistral-nemo"
       }
@@ -38457,59 +38182,6 @@
           "output": 1.8
         },
         "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct"
-      }
-    },
-    {
-      "catalog_model_id": "qwen3-coder-30b-a3b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "opencheap",
-        "source_id": "qwen3-coder-30b-a3b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "qwen3-coder-30b-a3b",
-        "name": "Qwen3-Coder 30B-A3B Instruct",
-        "description": "Smaller Qwen coder for efficient local agents and repo-level fixes",
-        "family": "qwen",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-04",
-        "release_date": "2025-07-31",
-        "last_updated": "2025-07-31",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 262144,
-          "output": 65536
-        },
-        "cost": {
-          "input": 0.0011,
-          "output": 0.0043,
-          "cache_read": 0.00016
-        },
-        "canonical_model_id": "alibaba/qwen3-coder-30b-a3b-instruct"
       }
     },
     {

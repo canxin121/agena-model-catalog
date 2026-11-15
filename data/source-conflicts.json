@@ -600,16 +600,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "Void API",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "void-api",
-            "source_id": "claude-haiku-4.5",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -11158,16 +11148,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "Open multimodal Llama for strong reasoning with efficient everyday serving",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencheap",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -11211,16 +11191,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "neon",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Llama 4 Maverick 17B Instruct",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencheap",
             "source_id": "llama-4-maverick",
             "priority": 20,
             "policy_rank": 0
@@ -11272,16 +11242,6 @@
             "priority": 20,
             "policy_rank": 0
           }
-        },
-        {
-          "value": "2024-08",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencheap",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
         }
       ],
       "resolution": "highest field priority, then source policy order"
@@ -11326,127 +11286,6 @@
             "upstream": "models.dev",
             "provider": "neon",
             "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "OpenCheap",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencheap",
-            "source_id": "llama-4-maverick",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "llama-4-scout",
-      "field": "display_name",
-      "winner": {
-        "value": "Meta Llama 4 Scout 17B 16E",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "llama-4-scout",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Meta Llama 4 Scout 17B 16E",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "llama-4-scout",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Llama 4 Scout 17B Instruct",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencheap",
-            "source_id": "llama-4-scout",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "llama-4-scout",
-      "field": "knowledge_cutoff",
-      "winner": {
-        "value": "2025-01",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "llama-4-scout",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "2025-01",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "llama-4-scout",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "2024-08",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencheap",
-            "source_id": "llama-4-scout",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "llama-4-scout",
-      "field": "origin",
-      "winner": {
-        "value": "Helicone",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "llama-4-scout",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Helicone",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "llama-4-scout",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "OpenCheap",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencheap",
-            "source_id": "llama-4-scout",
             "priority": 20,
             "policy_rank": 0
           }
@@ -12963,43 +12802,6 @@
             "upstream": "models.dev",
             "provider": "scaleway",
             "source_id": "mistral-medium-3.5-128b",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "mistral-nemo",
-      "field": "origin",
-      "winner": {
-        "value": "Helicone",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "helicone",
-          "source_id": "mistral-nemo",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "Helicone",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "helicone",
-            "source_id": "mistral-nemo",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "OpenCheap",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "opencheap",
-            "source_id": "mistral-nemo",
             "priority": 20,
             "policy_rank": 0
           }

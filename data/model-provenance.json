@@ -156088,7 +156088,7 @@
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "sakana",
+          "provider": "llmgateway",
           "source_id": "sakana-namazu",
           "priority": 20,
           "policy_rank": 0

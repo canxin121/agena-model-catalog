@@ -21236,6 +21236,43 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "sakana-namazu",
+      "field": "origin",
+      "winner": {
+        "value": "DevPass (LLM Gateway)",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "llmgateway",
+          "source_id": "sakana-namazu",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "DevPass (LLM Gateway)",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "llmgateway",
+            "source_id": "sakana-namazu",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Sakana AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "sakana",
+            "source_id": "sakana-namazu",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "sarvam-105b",
       "field": "display_name",
       "winner": {

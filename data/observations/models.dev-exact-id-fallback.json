@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "8109d24d0d424266b610e96a1af76b8a3cc7e2da7c0bf12df1359c3a2c86f641",
+    "sha256": "dece7e4079db58377d44013a48b759b1a166569019649d84849f0aff6844cd55",
     "record_count": 324
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -13179,9 +13179,7 @@
           "input": [
             "text",
             "image",
-            "video",
-            "audio",
-            "pdf"
+            "audio"
           ],
           "output": [
             "text"
@@ -39673,6 +39671,74 @@
           "output": 10,
           "cache_read": 0.1
         }
+      }
+    },
+    {
+      "catalog_model_id": "sakana-namazu",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "llmgateway",
+        "source_id": "sakana-namazu",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "sakana-namazu",
+        "name": "Sakana Namazu",
+        "description": "Japanese-specialized reasoning model based on Kimi K2.6 and tuned for Japanese language, culture, and business workflows",
+        "family": "sakana-namazu",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "temperature": true,
+        "release_date": "2026-08-03",
+        "last_updated": "2026-08-03",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "cost": {
+          "input": 0.95,
+          "output": 4,
+          "cache_read": 0.15
+        },
+        "canonical_model_id": "sakana/sakana-namazu"
       }
     },
     {

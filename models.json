@@ -20509,7 +20509,7 @@
       ],
       "pricing": {
         "input_usd_per_million_tokens": "0.3",
-        "output_usd_per_million_tokens": "30",
+        "output_usd_per_million_tokens": "2.5",
         "cache_read_usd_per_million_tokens": "0.075",
         "cache_write_usd_per_million_tokens": "0.083333"
       },
@@ -21901,7 +21901,7 @@
       ],
       "pricing": {
         "input_usd_per_million_tokens": "2",
-        "output_usd_per_million_tokens": "120",
+        "output_usd_per_million_tokens": "12",
         "cache_read_usd_per_million_tokens": "0.2",
         "cache_write_usd_per_million_tokens": "0.375"
       },
@@ -22206,7 +22206,7 @@
       ],
       "pricing": {
         "input_usd_per_million_tokens": "0.5",
-        "output_usd_per_million_tokens": "60",
+        "output_usd_per_million_tokens": "3",
         "cache_read_usd_per_million_tokens": "0.05"
       },
       "display_name": "Nano Banana 2",
@@ -22391,7 +22391,7 @@
       ],
       "pricing": {
         "input_usd_per_million_tokens": "0.25",
-        "output_usd_per_million_tokens": "30",
+        "output_usd_per_million_tokens": "1.5",
         "cache_read_usd_per_million_tokens": "0.03"
       },
       "display_name": "Nano Banana 2 Lite",

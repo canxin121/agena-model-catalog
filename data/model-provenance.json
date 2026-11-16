@@ -76514,20 +76514,7 @@
         }
       },
       "pricing": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": {
-          "input_usd_per_million_tokens": "5",
-          "output_usd_per_million_tokens": "30",
-          "cache_read_usd_per_million_tokens": "1.25"
-        },
-        "source": {
-          "upstream": "models.dev",
-          "provider": "openai",
-          "source_id": "gpt-image-2",
-          "priority": 70,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "provider_sources": {
         "kind": "upstream_field_observation",

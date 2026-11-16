@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "dece7e4079db58377d44013a48b759b1a166569019649d84849f0aff6844cd55",
+    "sha256": "9f57f7b0238e1eb0c7e5064d0e833bc0e19b2f884861949264d27ea28630f397",
     "record_count": 324
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -4313,7 +4313,7 @@
         "status": "deprecated",
         "cost": {
           "input": 0.3,
-          "output": 30,
+          "output": 2.5,
           "cache_read": 0.075
         },
         "canonical_model_id": "google/gemini-2.5-flash-image"
@@ -4694,7 +4694,7 @@
         },
         "cost": {
           "input": 2,
-          "output": 120
+          "output": 12
         },
         "canonical_model_id": "google/gemini-3-pro-image"
       }
@@ -4759,7 +4759,7 @@
         },
         "cost": {
           "input": 0.5,
-          "output": 60
+          "output": 3
         },
         "canonical_model_id": "google/gemini-3.1-flash-image"
       }
@@ -4891,7 +4891,7 @@
         },
         "cost": {
           "input": 0.25,
-          "output": 30
+          "output": 1.5
         },
         "canonical_model_id": "google/gemini-3.1-flash-lite-image"
       }
@@ -12927,11 +12927,6 @@
           "context": 0,
           "input": 0,
           "output": 0
-        },
-        "cost": {
-          "input": 5,
-          "output": 30,
-          "cache_read": 1.25
         },
         "canonical_model_id": "openai/gpt-image-2"
       }

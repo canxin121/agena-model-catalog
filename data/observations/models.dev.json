@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "2cc561b786db0238b49c7854764d41ee8cb3fd9847cefb3da5740f36e8e6a520",
+    "sha256": "82eb03a35fac1b36ca09218a3c64126dbf8f1bc08ddd879c5f59fd1987780282",
     "record_count": 324
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -6732,6 +6732,58 @@
       }
     },
     {
+      "canonical_model_id": "glm-4.5",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "zai-org/GLM-4.5",
+        "priority": 70,
+        "policy_rank": 38
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "zai-org/GLM-4.5",
+        "name": "GLM-4.5",
+        "description": "Hybrid-reasoning GLM release that made the 4.5 line broadly useful",
+        "family": "glm",
+        "attachment": false,
+        "reasoning": true,
+        "reasoning_options": [],
+        "tool_call": true,
+        "temperature": true,
+        "knowledge": "2025-04",
+        "release_date": "2025-07-28",
+        "last_updated": "2025-07-28",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 131072,
+          "output": 98304
+        },
+        "cost": {
+          "input": 0.6,
+          "output": 2.2
+        },
+        "canonical_model_id": "zhipuai/glm-4.5"
+      }
+    },
+    {
       "canonical_model_id": "glm-4.5-air",
       "scope": "publisher_api_model",
       "source": {
@@ -7538,6 +7590,59 @@
               }
             }
           ]
+        },
+        "canonical_model_id": "zhipuai/glm-4.6v"
+      }
+    },
+    {
+      "canonical_model_id": "glm-4.6v",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "zai-org/GLM-4.6V",
+        "priority": 70,
+        "policy_rank": 38
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "zai-org/GLM-4.6V",
+        "name": "GLM-4.6V",
+        "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
+        "family": "glm",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "tool_call": true,
+        "temperature": true,
+        "knowledge": "2025-04",
+        "release_date": "2025-12-08",
+        "last_updated": "2025-12-08",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 131072,
+          "output": 32768
+        },
+        "cost": {
+          "input": 0.3,
+          "output": 0.9
         },
         "canonical_model_id": "zhipuai/glm-4.6v"
       }

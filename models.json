@@ -25582,6 +25582,7 @@
         }
       },
       "provider_sources": [
+        "huggingface",
         "zai",
         "zhipuai"
       ],
@@ -26235,6 +26236,7 @@
         }
       },
       "provider_sources": [
+        "huggingface",
         "zai",
         "zhipuai"
       ],

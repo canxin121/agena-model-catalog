@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "2cc561b786db0238b49c7854764d41ee8cb3fd9847cefb3da5740f36e8e6a520",
+    "sha256": "82eb03a35fac1b36ca09218a3c64126dbf8f1bc08ddd879c5f59fd1987780282",
     "record_count": 324
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -3889,75 +3889,6 @@
         "provider": {
           "npm": "@ai-sdk/anthropic",
           "api": "https://opencode.ai/inference/anthropic/v1"
-        },
-        "cost": {
-          "input": 15,
-          "output": 75,
-          "cache_read": 1.5,
-          "cache_write": 18.75
-        },
-        "canonical_model_id": "anthropic/claude-opus-4-1"
-      }
-    },
-    {
-      "catalog_model_id": "claude-opus-4-1",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "claude-opus-4-1",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "claude-opus-4-1",
-        "name": "Claude Opus 4.1 (latest)",
-        "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-        "family": "claude-opus",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-03-31",
-        "release_date": "2025-08-05",
-        "last_updated": "2025-08-05",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 32000
         },
         "cost": {
           "input": 15,
@@ -16338,69 +16269,6 @@
       }
     },
     {
-      "catalog_model_id": "glm-5.2-fast",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "glm-5.2-fast",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-5.2-fast",
-        "name": "glm-5.2-fast",
-        "description": "GLM-5.2 introduces a robust 1M-token context and advanced, multi-effort coding capabilities to significantly enhance performance on long-horizon tasks. Its new IndexShare architecture and improved MTP layer simultaneously boost efficiency by reducing per-token FLOPs and increasing speculative decoding lengths. A 743B-parameter model in Zhipu AI's GLM series, designed to plan, execute, and iterate autonomously on extended, engineering-grade tasks.",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": false,
-        "release_date": "2026-07-13",
-        "last_updated": "2026-07-13",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1000000,
-          "output": 131072
-        },
-        "cost": {
-          "input": 2.1,
-          "output": 6.6,
-          "cache_read": 0.21
-        }
-      }
-    },
-    {
       "catalog_model_id": "glm-5.2-highspeed",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -24458,56 +24326,6 @@
       }
     },
     {
-      "catalog_model_id": "kat-coder-pro",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "kat-coder-pro",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "kat-coder-pro",
-        "name": "kat-coder-pro",
-        "description": "KAT-Coder-Pro V2 by KwaiKAT is a non-reasoning model optimized for agentic coding. It delivers strong performance on reasoning-style tasks while requiring significantly fewer output tokens than peer models. With the 1210 release, it achieved a score of 64 on the Artificial Analysis Intelligence Index, placing it in the global Top 10 and ranking first among all non-reasoning models.",
-        "family": "kat-coder",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": false,
-        "release_date": "2026-03-27",
-        "last_updated": "2026-03-27",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 256000,
-          "output": 256000
-        },
-        "cost": {
-          "input": 0.3,
-          "output": 1.2
-        }
-      }
-    },
-    {
       "catalog_model_id": "kimi-for-coding",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -25640,106 +25458,6 @@
       }
     },
     {
-      "catalog_model_id": "ling-2.6-1t",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "ling-2.6-1t",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ling-2.6-1t",
-        "name": "ling-2.6-1t",
-        "description": "Inclusion AI ling-2.6-1t",
-        "family": "ling",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": false,
-        "release_date": "2026-04-23",
-        "last_updated": "2026-04-23",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "cost": {
-          "input": 0.3,
-          "output": 2.5
-        }
-      }
-    },
-    {
-      "catalog_model_id": "ling-2.6-flash",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "ling-2.6-flash",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ling-2.6-flash",
-        "name": "ling-2.6-flash",
-        "description": "Inclusion AI ling-2.6-flash",
-        "family": "ling",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": false,
-        "release_date": "2026-04-21",
-        "last_updated": "2026-04-21",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "cost": {
-          "input": 0.1,
-          "output": 0.3
-        }
-      }
-    },
-    {
       "catalog_model_id": "ling-3.0-flash",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -25798,68 +25516,6 @@
           "cache_read": 0.012
         },
         "canonical_model_id": "inclusionai/ling-3.0-flash"
-      }
-    },
-    {
-      "catalog_model_id": "ling-3.0-tiny",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "ling-3.0-tiny",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ling-3.0-tiny",
-        "name": "ling-3.0-tiny",
-        "description": "Ling-3.0-tiny is an efficient 7.9B parameter MoE model from inclusionAI with only 1.3B active parameters per token. Built for responsive agents, reliable instruction following and multi turn conversation, with a 256K context window, native function calling, prompt caching and switchable Thinking and Instant modes.",
-        "family": "ling",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": false,
-        "release_date": "2026-08-05",
-        "last_updated": "2026-08-05",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 262144,
-          "output": 32768
-        },
-        "cost": {
-          "input": 0,
-          "output": 0
-        }
       }
     },
     {
@@ -30344,69 +30000,6 @@
       }
     },
     {
-      "catalog_model_id": "nemotron-3-nano-omni",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "nemotron-3-nano-omni",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "nemotron-3-nano-omni",
-        "name": "nemotron-3-nano-omni",
-        "description": "The most open, efficient, and accurate omni modal reasoning model for agentic AI.",
-        "family": "nemotron",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "release_date": "2026-05-20",
-        "last_updated": "2026-05-20",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 300000,
-          "output": 300000
-        },
-        "cost": {
-          "input": 0.06,
-          "output": 0.24,
-          "cache_read": 0.06
-        }
-      }
-    },
-    {
       "catalog_model_id": "nemotron-3-nano-omni-30b-a3b-reasoning",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -30708,71 +30301,6 @@
           "input": 0.09714286,
           "output": 0.48,
           "cache_read": 0.00971429
-        },
-        "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b"
-      }
-    },
-    {
-      "catalog_model_id": "nemotron-3-super-120b-a12b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "nemotron-3-super-120b-a12b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "nemotron-3-super-120b-a12b",
-        "name": "Nemotron 3 Super 120B A12B",
-        "description": "Nemotron middle tier for collaborative agents and high-volume reasoning workloads",
-        "family": "nemotron",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": false,
-        "temperature": true,
-        "knowledge": "2025-06",
-        "release_date": "2026-03-11",
-        "last_updated": "2026-03-11",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1048576,
-          "output": 65536
-        },
-        "cost": {
-          "input": 0,
-          "output": 0
         },
         "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b"
       }
@@ -31121,71 +30649,6 @@
           "output": 0
         },
         "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b"
-      }
-    },
-    {
-      "catalog_model_id": "nemotron-3.5-content-safety",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "nemotron-3.5-content-safety",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "nemotron-3.5-content-safety",
-        "name": "Nemotron 3.5 Content Safety",
-        "description": "Safety model for policy screening, moderation, and risk-aware routing workflows",
-        "family": "nemotron",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": false,
-        "structured_output": false,
-        "temperature": true,
-        "release_date": "2026-06-02",
-        "last_updated": "2026-06-02",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 131072,
-          "output": 8192
-        },
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "canonical_model_id": "nvidia/nemotron-3.5-content-safety"
       }
     },
     {
@@ -39542,68 +39005,6 @@
         "cost": {
           "input": 0,
           "output": 0
-        }
-      }
-    },
-    {
-      "catalog_model_id": "ring-2.6-1t",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "ring-2.6-1t",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "ring-2.6-1t",
-        "name": "ring-2.6-1t",
-        "description": "Inclusion AI ring-2.6-1t",
-        "family": "ring",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": false,
-        "release_date": "2026-05-08",
-        "last_updated": "2026-05-08",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "cost": {
-          "input": 0.3,
-          "output": 2.5
         }
       }
     },

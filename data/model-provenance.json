@@ -83876,7 +83876,7 @@
         "value": "Fast Grok coding model tuned for agentic engineering and iterative edits",
         "source": {
           "upstream": "models.dev",
-          "provider": "kenari",
+          "provider": "llmgateway",
           "source_id": "grok-build-0-1",
           "priority": 20,
           "policy_rank": 0
@@ -83888,7 +83888,7 @@
         "value": "Grok Build 0.1",
         "source": {
           "upstream": "models.dev",
-          "provider": "kenari",
+          "provider": "llmgateway",
           "source_id": "grok-build-0-1",
           "priority": 20,
           "policy_rank": 0
@@ -83906,7 +83906,7 @@
         "value": "2026-04-16",
         "source": {
           "upstream": "models.dev",
-          "provider": "kenari",
+          "provider": "llmgateway",
           "source_id": "grok-build-0-1",
           "priority": 20,
           "policy_rank": 0
@@ -83924,7 +83924,7 @@
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "kenari",
+          "provider": "llmgateway",
           "source_id": "grok-build-0-1",
           "priority": 20,
           "policy_rank": 0
@@ -83945,7 +83945,7 @@
         "value": "2026-04-16",
         "source": {
           "upstream": "models.dev",
-          "provider": "kenari",
+          "provider": "llmgateway",
           "source_id": "grok-build-0-1",
           "priority": 20,
           "policy_rank": 0
@@ -84605,10 +84605,28 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Higher-fidelity Grok Imagine image model for prompt-driven generation, editing, and visual design workflows",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "kenari",
+          "source_id": "grok-imagine-image-quality",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Grok Imagine Image Quality",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "kenari",
+          "source_id": "grok-imagine-image-quality",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -84617,7 +84635,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2026-04-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "kenari",
+          "source_id": "grok-imagine-image-quality",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "lifecycle": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -84629,7 +84656,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "kenari",
+          "source_id": "grok-imagine-image-quality",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -84638,7 +84674,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2026-04-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "kenari",
+          "source_id": "grok-imagine-image-quality",
+          "priority": 20,
+          "policy_rank": 0
+        }
       }
     },
     "grok-imagine-video": {
@@ -103273,16 +103318,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Open MiMo model for multimodal coding agents and long-context automation",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "mimo-v2-5",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -103294,28 +103330,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "mimo-v2-5",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "mimo-v2-5",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -103324,16 +103342,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "mimo-v2-5",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -103345,16 +103354,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "mimo-v2-5",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -103368,16 +103368,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "mimo-v2-5-pro",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -103389,28 +103380,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2024-12",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "mimo-v2-5-pro",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "mimo-v2-5-pro",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -103419,16 +103392,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "mimo-v2-5-pro",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -103440,16 +103404,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-04-22",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "mimo-v2-5-pro",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -119761,28 +119716,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Small Nemotron 3 MoE for efficient coding, math, and long-context agents",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Nemotron 3 Nano 30B A3B",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -119794,16 +119731,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-12-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -119812,16 +119740,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -119833,16 +119752,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-12-15",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "kenari",
-          "source_id": "nemotron-3-nano-30b-a3b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -168784,7 +168694,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Whisper",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "kenari",
+          "source_id": "whisper-1",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -168802,7 +168721,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "kenari",
+          "source_id": "whisper-1",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"

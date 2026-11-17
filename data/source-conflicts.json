@@ -4821,80 +4821,6 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
-      "model_id": "glm-5-1",
-      "field": "display_name",
-      "winner": {
-        "value": "GLM 5.1",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "empiriolabs",
-          "source_id": "glm-5-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "GLM 5.1",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "empiriolabs",
-            "source_id": "glm-5-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "GLM-5.1",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "kenari",
-            "source_id": "glm-5-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "glm-5-1",
-      "field": "origin",
-      "winner": {
-        "value": "EmpirioLabs AI",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "empiriolabs",
-          "source_id": "glm-5-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "EmpirioLabs AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "empiriolabs",
-            "source_id": "glm-5-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Kenari",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "kenari",
-            "source_id": "glm-5-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
       "model_id": "glm-5-2",
       "field": "display_name",
       "winner": {
@@ -9269,26 +9195,16 @@
       "model_id": "grok-build-0-1",
       "field": "origin",
       "winner": {
-        "value": "Kenari",
+        "value": "DevPass (LLM Gateway)",
         "source": {
           "upstream": "models.dev",
-          "provider": "kenari",
+          "provider": "llmgateway",
           "source_id": "grok-build-0-1",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "candidates": [
-        {
-          "value": "Kenari",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "kenari",
-            "source_id": "grok-build-0-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
         {
           "value": "DevPass (LLM Gateway)",
           "source": {

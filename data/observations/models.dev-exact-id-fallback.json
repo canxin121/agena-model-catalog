@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "82eb03a35fac1b36ca09218a3c64126dbf8f1bc08ddd879c5f59fd1987780282",
+    "sha256": "01221db67a47999df0d93c2e7d85ad70172bc6732815751da164ce875231c88e",
     "record_count": 324
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -15578,56 +15578,6 @@
       }
     },
     {
-      "catalog_model_id": "glm-5-1",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "kenari",
-        "source_id": "glm-5-1",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "glm-5-1",
-        "name": "GLM-5.1",
-        "description": "Strong GLM coding model for agentic engineering, terminals, and repository generation",
-        "family": "glm",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "release_date": "2026-04-07",
-        "last_updated": "2026-04-07",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 200000,
-          "output": 131072
-        },
-        "status": "deprecated",
-        "canonical_model_id": "zhipuai/glm-5.1"
-      }
-    },
-    {
       "catalog_model_id": "glm-5-2",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -15750,9 +15700,9 @@
           "output": 131072
         },
         "cost": {
-          "input": 0.28571429,
-          "output": 3.42857143,
-          "cache_read": 0.05314286
+          "input": 0.2857,
+          "output": 3.43,
+          "cache_read": 0.0531
         },
         "canonical_model_id": "zhipuai/glm-5.2"
       }
@@ -16261,7 +16211,7 @@
           "output": 131072
         },
         "cost": {
-          "input": 2.156,
+          "input": 2.1256,
           "output": 6.776,
           "cache_read": 0.429
         },
@@ -22383,58 +22333,6 @@
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
         "upstream": "models.dev",
-        "provider": "kenari",
-        "source_id": "grok-build-0-1",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "grok-build-0-1",
-        "name": "Grok Build 0.1",
-        "description": "Fast Grok coding model tuned for agentic engineering and iterative edits",
-        "family": "grok-build",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "release_date": "2026-04-16",
-        "last_updated": "2026-04-16",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 256000,
-          "output": 256000
-        },
-        "status": "deprecated",
-        "canonical_model_id": "xai/grok-build-0.1"
-      }
-    },
-    {
-      "catalog_model_id": "grok-build-0-1",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
         "provider": "llmgateway",
         "source_id": "grok-build-0-1",
         "priority": 20,
@@ -22852,6 +22750,55 @@
           "cache_read": 0.019
         },
         "canonical_model_id": "xai/grok-code-fast-1"
+      }
+    },
+    {
+      "catalog_model_id": "grok-imagine-image-quality",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "kenari",
+        "source_id": "grok-imagine-image-quality",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "grok-imagine-image-quality",
+        "type": "image",
+        "name": "Grok Imagine Image Quality",
+        "description": "Higher-fidelity Grok Imagine image model for prompt-driven generation, editing, and visual design workflows",
+        "family": "grok",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": false,
+        "temperature": false,
+        "release_date": "2026-04-03",
+        "last_updated": "2026-04-03",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "image"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 16000,
+          "output": 0
+        },
+        "canonical_model_id": "xai/grok-imagine-image-quality"
       }
     },
     {
@@ -26645,117 +26592,6 @@
       }
     },
     {
-      "catalog_model_id": "mimo-v2-5",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "kenari",
-        "source_id": "mimo-v2-5",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mimo-v2-5",
-        "name": "MiMo-V2.5",
-        "description": "Open MiMo model for multimodal coding agents and long-context automation",
-        "family": "mimo",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-12",
-        "release_date": "2026-04-22",
-        "last_updated": "2026-04-22",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "audio",
-            "video"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1048576,
-          "output": 131072
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.16571429,
-          "output": 0.33142857
-        },
-        "canonical_model_id": "xiaomi/mimo-v2.5"
-      }
-    },
-    {
-      "catalog_model_id": "mimo-v2-5-pro",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "kenari",
-        "source_id": "mimo-v2-5-pro",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "mimo-v2-5-pro",
-        "name": "MiMo-V2.5-Pro",
-        "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
-        "family": "mimo",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-12",
-        "release_date": "2026-04-22",
-        "last_updated": "2026-04-22",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 1048576,
-          "output": 131072
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.52,
-          "output": 1.02857143
-        },
-        "canonical_model_id": "xiaomi/mimo-v2.5-pro"
-      }
-    },
-    {
       "catalog_model_id": "mimo-v2-flash",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -29883,56 +29719,6 @@
       }
     },
     {
-      "catalog_model_id": "nemotron-3-nano-30b-a3b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "kenari",
-        "source_id": "nemotron-3-nano-30b-a3b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "nemotron-3-nano-30b-a3b",
-        "name": "Nemotron 3 Nano 30B A3B",
-        "description": "Small Nemotron 3 MoE for efficient coding, math, and long-context agents",
-        "family": "nemotron",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-06-25",
-        "release_date": "2025-12-15",
-        "last_updated": "2025-12-15",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "status": "deprecated",
-        "canonical_model_id": "nvidia/nemotron-3-nano-30b-a3b"
-      }
-    },
-    {
       "catalog_model_id": "nemotron-3-nano-omni",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -30298,9 +30084,9 @@
           "output": 262144
         },
         "cost": {
-          "input": 0.09714286,
+          "input": 0.0971,
           "output": 0.48,
-          "cache_read": 0.00971429
+          "cache_read": 0.0097
         },
         "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b"
       }
@@ -30557,7 +30343,12 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
+            "type": "effort",
+            "values": [
+              "none",
+              "medium",
+              "high"
+            ]
           }
         ],
         "tool_call": true,
@@ -30579,9 +30370,9 @@
           "output": 128000
         },
         "cost": {
-          "input": 0.68571429,
-          "output": 4.28571429,
-          "cache_read": 0.06857143
+          "input": 0.6857,
+          "output": 4.29,
+          "cache_read": 0.0686
         },
         "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b"
       }
@@ -40226,7 +40017,7 @@
         },
         "cost": {
           "input": 0.24,
-          "output": 1.37142857,
+          "output": 1.37,
           "cache_read": 0.048
         },
         "canonical_model_id": "stepfun/step-3.7-flash"
@@ -41883,6 +41674,54 @@
           "input": 0,
           "output": 0
         }
+      }
+    },
+    {
+      "catalog_model_id": "whisper-1",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "kenari",
+        "source_id": "whisper-1",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "whisper-1",
+        "type": "transcription",
+        "name": "Whisper",
+        "description": "General-purpose speech recognition model for transcription and translation",
+        "family": "whisper",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": false,
+        "temperature": true,
+        "release_date": "2023-03-01",
+        "last_updated": "2023-03-01",
+        "modalities": {
+          "input": [
+            "audio"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 0,
+          "output": 0
+        },
+        "canonical_model_id": "openai/whisper-1"
       }
     },
     {

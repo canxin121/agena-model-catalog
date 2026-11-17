@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "01221db67a47999df0d93c2e7d85ad70172bc6732815751da164ce875231c88e",
+    "sha256": "152e5625c5a807eb0a7f2517f277f6b7eda66ca5ba1ac773acdc7e488d54cfd0",
     "record_count": 324
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -2712,10 +2712,10 @@
           "output": 64000
         },
         "cost": {
-          "input": 2.989,
-          "output": 14.945,
-          "cache_read": 0.326,
-          "cache_write": 4.078
+          "input": 3.411,
+          "output": 17.058,
+          "cache_read": 0.341,
+          "cache_write": 4.264
         },
         "canonical_model_id": "anthropic/claude-sonnet-4-5"
       }
@@ -2783,10 +2783,10 @@
           "output": 128000
         },
         "cost": {
-          "input": 3.196,
-          "output": 15.94,
-          "cache_read": 0.32,
-          "cache_write": 3.999
+          "input": 3.411,
+          "output": 17.058,
+          "cache_read": 0.341,
+          "cache_write": 4.264
         },
         "canonical_model_id": "anthropic/claude-sonnet-4-6"
       }
@@ -5064,10 +5064,10 @@
           "output": 64000
         },
         "cost": {
-          "input": 5.313,
-          "output": 26.568,
-          "cache_read": 0.531,
-          "cache_write": 6.645
+          "input": 5.687,
+          "output": 28.436,
+          "cache_read": 0.569,
+          "cache_write": 7.108
         },
         "canonical_model_id": "anthropic/claude-opus-4-5"
       }
@@ -5135,10 +5135,10 @@
           "output": 128000
         },
         "cost": {
-          "input": 5.313,
-          "output": 26.561,
-          "cache_read": 0.531,
-          "cache_write": 6.645
+          "input": 5.687,
+          "output": 28.436,
+          "cache_read": 0.569,
+          "cache_write": 7.108
         },
         "canonical_model_id": "anthropic/claude-opus-4-6"
       }
@@ -5202,10 +5202,10 @@
           "output": 128000
         },
         "cost": {
-          "input": 5.437,
-          "output": 27.186,
-          "cache_read": 0.544,
-          "cache_write": 6.797
+          "input": 5.687,
+          "output": 28.436,
+          "cache_read": 0.569,
+          "cache_write": 7.108
         },
         "canonical_model_id": "anthropic/claude-opus-4-7"
       }
@@ -5269,10 +5269,10 @@
           "output": 128000
         },
         "cost": {
-          "input": 5.437,
-          "output": 27.186,
-          "cache_read": 0.544,
-          "cache_write": 6.797
+          "input": 5.687,
+          "output": 28.436,
+          "cache_read": 0.569,
+          "cache_write": 7.108
         },
         "canonical_model_id": "anthropic/claude-opus-4-8"
       }

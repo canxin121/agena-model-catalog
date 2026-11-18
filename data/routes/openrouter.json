@@ -58714,7 +58714,7 @@
     {
       "route_id": "tencent/hy4-flash",
       "scope": "openrouter_api_route",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "hy4-flash",
       "priority": {
         "identity": 50,
         "limits": 90,

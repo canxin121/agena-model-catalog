@@ -32995,7 +32995,7 @@
       "repository_id": "tencent/Hy4-flash",
       "organization": "tencent",
       "scope": "weight_artifact_candidate",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "hy4-flash",
       "priority": {
         "identity": 80,
         "artifact": 100,

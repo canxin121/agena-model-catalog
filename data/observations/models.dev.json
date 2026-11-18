@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "d386013a3df274d61c0807cd88a75a0060913f4ce5b79736dae6b40480d8a839",
+    "sha256": "de13afda1380de8a1614da35471ec7ab2400a96b1864693079054b54d2a4f5c2",
     "record_count": 324
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -5850,6 +5850,75 @@
           "input_audio": 1.5
         },
         "canonical_model_id": "google/gemini-4-hydrogen"
+      }
+    },
+    {
+      "canonical_model_id": "gemini-4-neon",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "google",
+        "source_id": "gemini-4-neon",
+        "priority": 70,
+        "policy_rank": 2
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "gemini-4-neon",
+        "name": "Gemini 4 Neon",
+        "description": "Google's Gemini 4 model for fast, frontier-level coding, knowledge work and science workflows, with four thinking levels and a 1M-token context window",
+        "family": "gemini",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2026-03",
+        "release_date": "2026-11-18",
+        "last_updated": "2026-11-18",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1048576,
+          "output": 65536
+        },
+        "cost": {
+          "input": 3,
+          "output": 15,
+          "cache_read": 0.15,
+          "input_audio": 3
+        },
+        "canonical_model_id": "google/gemini-4-neon"
       }
     },
     {
@@ -14340,6 +14409,68 @@
           "output": 0.58
         },
         "canonical_model_id": "tencent/hy3"
+      }
+    },
+    {
+      "canonical_model_id": "hy4-flash",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "tencent/Hy4-flash",
+        "priority": 70,
+        "policy_rank": 37
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "tencent/Hy4-flash",
+        "name": "Hy4 flash",
+        "description": "Tencent's lower-cost Hy4 tier for everyday agent and productivity tasks, with image understanding and a 1M-token context window.",
+        "family": "Hy",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "release_date": "2026-11-16",
+        "last_updated": "2026-11-16",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "limit": {
+          "context": 1048576,
+          "input": 983040,
+          "output": 65536
+        },
+        "cost": {
+          "input": 0.035,
+          "output": 0.1405
+        },
+        "canonical_model_id": "tencent/hy4-flash"
       }
     },
     {

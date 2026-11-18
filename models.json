@@ -34415,17 +34415,6 @@
       "provider_sources": [
         "openai"
       ],
-      "verbosity_by_provider": {
-        "openai": {
-          "supported": true,
-          "levels": [
-            "low",
-            "medium",
-            "high"
-          ],
-          "provider_default": "medium"
-        }
-      },
       "thinking_modes": {
         "low": {
           "display_name": "Think Low",
@@ -34486,6 +34475,17 @@
           "display_name": "Default"
         },
         "default": "standard"
+      },
+      "verbosity_by_provider": {
+        "openai": {
+          "supported": true,
+          "levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "provider_default": "medium"
+        }
       }
     },
     "gpt-6.2-sol": {
@@ -34538,17 +34538,6 @@
       "provider_sources": [
         "openai"
       ],
-      "verbosity_by_provider": {
-        "openai": {
-          "supported": true,
-          "levels": [
-            "low",
-            "medium",
-            "high"
-          ],
-          "provider_default": "medium"
-        }
-      },
       "thinking_modes": {
         "low": {
           "display_name": "Think Low",
@@ -34609,6 +34598,17 @@
           "display_name": "Default"
         },
         "default": "standard"
+      },
+      "verbosity_by_provider": {
+        "openai": {
+          "supported": true,
+          "levels": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "provider_default": "medium"
+        }
       }
     },
     "gpt-audio": {

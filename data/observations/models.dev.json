@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "de13afda1380de8a1614da35471ec7ab2400a96b1864693079054b54d2a4f5c2",
+    "sha256": "d014cb228c92293dd70bc138b977b493801c80beb7f78da73d2b682a2ebbaf9b",
     "record_count": 324
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -6298,6 +6298,58 @@
           }
         },
         "canonical_model_id": "google/gemini-3.1-pro-preview"
+      }
+    },
+    {
+      "canonical_model_id": "gemma-2-27b-it",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "google/gemma-2-27b-it",
+        "priority": 70,
+        "policy_rank": 29
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "google/gemma-2-27b-it",
+        "name": "Gemma 2 27B",
+        "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
+        "family": "gemma",
+        "attachment": false,
+        "reasoning": false,
+        "tool_call": false,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2024-06-30",
+        "release_date": "2024-07-13",
+        "last_updated": "2024-07-13",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 8192,
+          "output": 2048
+        },
+        "cost": {
+          "input": 0.65,
+          "output": 0.65
+        },
+        "canonical_model_id": "google/gemma-2-27b-it"
       }
     },
     {
@@ -16039,6 +16091,57 @@
       }
     },
     {
+      "canonical_model_id": "llama-3.1-70b-instruct",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+        "priority": 70,
+        "policy_rank": 30
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "meta-llama/Llama-3.1-70B-Instruct",
+        "name": "Llama-3.1-70B-Instruct",
+        "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
+        "family": "llama",
+        "attachment": false,
+        "reasoning": false,
+        "tool_call": true,
+        "temperature": true,
+        "knowledge": "2023-12",
+        "release_date": "2024-07-23",
+        "last_updated": "2024-07-23",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 131072,
+          "output": 4096
+        },
+        "cost": {
+          "input": 0.72,
+          "output": 0.72
+        },
+        "canonical_model_id": "meta/llama-3.1-70b-instruct"
+      }
+    },
+    {
       "canonical_model_id": "llama-3.1-8b-instruct",
       "scope": "publisher_api_model",
       "source": {
@@ -16088,6 +16191,109 @@
           "output": 0.06
         },
         "canonical_model_id": "meta/llama-3.1-8b-instruct"
+      }
+    },
+    {
+      "canonical_model_id": "llama-3.2-1b-instruct",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+        "priority": 70,
+        "policy_rank": 30
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "meta-llama/Llama-3.2-1B-Instruct",
+        "name": "Llama 3.2 1B Instruct",
+        "description": "Compact instruction-tuned Llama model for multilingual dialogue and on-device assistants",
+        "family": "llama",
+        "attachment": false,
+        "reasoning": false,
+        "tool_call": true,
+        "temperature": true,
+        "knowledge": "2023-12",
+        "release_date": "2024-09-25",
+        "last_updated": "2024-09-25",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 60000,
+          "output": 32000
+        },
+        "cost": {
+          "input": 0.027,
+          "output": 0.201
+        },
+        "canonical_model_id": "meta/llama-3.2-1b-instruct"
+      }
+    },
+    {
+      "canonical_model_id": "llama-3.2-3b-instruct",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+        "priority": 70,
+        "policy_rank": 30
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "meta-llama/Llama-3.2-3B-Instruct",
+        "name": "Llama 3.2 3B Instruct",
+        "description": "Small instruction-tuned Llama model for multilingual dialogue and agentic retrieval",
+        "family": "llama",
+        "attachment": false,
+        "reasoning": false,
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "knowledge": "2023-12",
+        "release_date": "2024-09-25",
+        "last_updated": "2024-09-25",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 80000,
+          "output": 80000
+        },
+        "cost": {
+          "input": 0.0509,
+          "output": 0.335
+        },
+        "canonical_model_id": "meta/llama-3.2-3b-instruct"
       }
     },
     {
@@ -24881,6 +25087,57 @@
           "output": 0.5
         },
         "canonical_model_id": "alibaba/qwen3-30b-a3b"
+      }
+    },
+    {
+      "canonical_model_id": "qwen3.30b-a3b-instruct-2507",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "huggingface",
+        "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "priority": 70,
+        "policy_rank": 28
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "name": "Qwen3 30B-A3B Instruct 2507",
+        "description": "Updated compact Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
+        "family": "qwen",
+        "attachment": false,
+        "reasoning": false,
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "release_date": "2025-07-28",
+        "last_updated": "2025-07-28",
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 262144,
+          "output": 16384
+        },
+        "cost": {
+          "input": 0.09,
+          "output": 0.3
+        },
+        "canonical_model_id": "alibaba/qwen3-30b-a3b-instruct-2507"
       }
     },
     {

@@ -51812,43 +51812,219 @@
     },
     "gemma-2-27b-it": {
       "context_window_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 8192,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Open Gemma instruction model for efficient chat and self-hosted deployments",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Gemma 2 27B",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
       },
       "features": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "google/gemma-2-27b-it",
+              "priority": 70,
+              "policy_rank": 29
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "google/gemma-2-27b-it",
+              "priority": 70,
+              "policy_rank": 29
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "google/gemma-2-27b-it",
+              "priority": 70,
+              "policy_rank": 29
+            }
+          },
+          "tool_calling": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "google/gemma-2-27b-it",
+              "priority": 70,
+              "policy_rank": 29
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "google/gemma-2-27b-it",
+              "priority": 70,
+              "policy_rank": 29
+            }
+          }
+        }
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2024-06-30",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2024-07-13",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 2048,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
       },
       "origin": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Google",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
       },
       "output_modalities": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
       },
       "pricing": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.65",
+          "output_usd_per_million_tokens": "0.65"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "huggingface"
+        ],
+        "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "google/gemma-2-27b-it"
+          }
+        ]
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2024-07-13",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "google/gemma-2-27b-it",
+          "priority": 70,
+          "policy_rank": 29
+        }
       }
     },
     "gemma-2-2b-it": {
@@ -97986,102 +98162,199 @@
     },
     "llama-3.1-70b-instruct": {
       "context_window_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 131072,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "description": {
         "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
+        "scope": "publisher_api_model",
         "value": "Open Llama instruction model for multilingual chat, reasoning, and coding",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.1-70b-instruct",
-          "priority": 20,
-          "policy_rank": 0
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
         }
       },
       "display_name": {
         "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Llama 3.1 70B Instruct",
+        "scope": "publisher_api_model",
+        "value": "Llama-3.1-70B-Instruct",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.1-70b-instruct",
-          "priority": 20,
-          "policy_rank": 0
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
         }
       },
       "features": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          }
+        }
       },
       "input": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          }
+        }
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2023-12",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "last_updated": {
         "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
+        "scope": "publisher_api_model",
         "value": "2024-07-23",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.1-70b-instruct",
-          "priority": 20,
-          "policy_rank": 0
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
         }
       },
       "lifecycle": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "beta",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.1-70b-instruct",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 4096,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "open_weights": {
         "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
+        "scope": "publisher_api_model",
         "value": true,
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.1-70b-instruct",
-          "priority": 20,
-          "policy_rank": 0
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
         }
       },
       "origin": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Meta",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "output_modalities": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "pricing": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "huggingface"
+        ],
+        "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "meta-llama/Llama-3.1-70B-Instruct"
+          }
+        ]
+      },
       "release_date": {
         "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
+        "scope": "publisher_api_model",
         "value": "2024-07-23",
         "source": {
           "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "llama-3.1-70b-instruct",
-          "priority": 20,
-          "policy_rank": 0
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.1-70B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
         }
       }
     },
@@ -98910,43 +99183,197 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "context_window_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 60000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Compact instruction-tuned Llama model for multilingual dialogue and on-device assistants",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Llama 3.2 1B Instruct",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "features": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          }
+        }
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2023-12",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2024-09-25",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 32000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "origin": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Meta",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "output_modalities": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "pricing": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "huggingface"
+        ],
+        "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "meta-llama/Llama-3.2-1B-Instruct"
+          }
+        ]
+      },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2024-09-25",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-1B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       }
     },
     "llama-3.2-3b-instruct": {
@@ -98957,46 +99384,207 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "context_window_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 80000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Small instruction-tuned Llama model for multilingual dialogue and agentic retrieval",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Llama 3.2 3B Instruct",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "features": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          }
+        }
       },
       "input": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+              "priority": 70,
+              "policy_rank": 30
+            }
+          }
+        }
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2023-12",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2024-09-25",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 80000,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "origin": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Meta",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "output_modalities": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       },
       "pricing": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "huggingface"
+        ],
+        "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "meta-llama/Llama-3.2-3B-Instruct"
+          }
+        ]
+      },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2024-09-25",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "meta-llama/Llama-3.2-3B-Instruct",
+          "priority": 70,
+          "policy_rank": 30
+        }
       }
     },
     "llama-3.2-90b-vision-instruct": {
@@ -147442,43 +148030,198 @@
     },
     "qwen3.30b-a3b-instruct-2507": {
       "context_window_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 262144,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "priority": 70,
+          "policy_rank": 28
+        }
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Updated compact Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "priority": 70,
+          "policy_rank": 28
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Qwen3 30B-A3B Instruct 2507",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "priority": 70,
+          "policy_rank": 28
+        }
       },
       "features": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "unsupported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+              "priority": 70,
+              "policy_rank": 28
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+              "priority": 70,
+              "policy_rank": 28
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+              "priority": 70,
+              "policy_rank": 28
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+              "priority": 70,
+              "policy_rank": 28
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+              "priority": 70,
+              "policy_rank": 28
+            }
+          }
+        }
       },
       "knowledge_cutoff": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2025-07-28",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "priority": 70,
+          "policy_rank": 28
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 16384,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "priority": 70,
+          "policy_rank": 28
+        }
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "priority": 70,
+          "policy_rank": 28
+        }
       },
       "origin": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Alibaba",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "priority": 70,
+          "policy_rank": 28
+        }
       },
       "output_modalities": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "priority": 70,
+          "policy_rank": 28
+        }
       },
       "pricing": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "huggingface"
+        ],
+        "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507"
+          }
+        ]
+      },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2025-07-28",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "priority": 70,
+          "policy_rank": 28
+        }
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",

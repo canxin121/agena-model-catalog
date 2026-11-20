@@ -38639,10 +38639,7 @@
           "strategy": "effort",
           "effort": "high"
         }
-      },
-      "provider_sources": [
-        "xai"
-      ]
+      }
     },
     "grok-code": {
       "lifecycle": "deprecated",

@@ -84985,214 +84985,87 @@
     },
     "grok-build-0.1": {
       "context_window_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 256000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-build-0.1",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "Fast Grok coding model tuned for agentic engineering and iterative edits",
         "source": {
           "upstream": "models.dev",
-          "provider": "xai",
+          "provider": "aihubmix",
           "source_id": "grok-build-0.1",
-          "priority": 70,
-          "policy_rank": 6
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "display_name": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "Grok Build 0.1",
         "source": {
           "upstream": "models.dev",
-          "provider": "xai",
+          "provider": "aihubmix",
           "source_id": "grok-build-0.1",
-          "priority": 70,
-          "policy_rank": 6
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "features": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "reasoning": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-build-0.1",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
-          "structured_output": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-build-0.1",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
-          "temperature": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-build-0.1",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
-          "tool_calling": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-build-0.1",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "input": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "items": {
-          "document": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-build-0.1",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
-          "image": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-build-0.1",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          },
-          "text": {
-            "value": "supported",
-            "source": {
-              "upstream": "models.dev",
-              "provider": "xai",
-              "source_id": "grok-build-0.1",
-              "priority": 70,
-              "policy_rank": 6
-            }
-          }
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2026-04-16",
         "source": {
           "upstream": "models.dev",
-          "provider": "xai",
+          "provider": "aihubmix",
           "source_id": "grok-build-0.1",
-          "priority": 70,
-          "policy_rank": 6
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "max_output_tokens": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": 256000,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-build-0.1",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "xai",
+          "provider": "aihubmix",
           "source_id": "grok-build-0.1",
-          "priority": 70,
-          "policy_rank": 6
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": "xAI",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-build-0.1",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "text"
-        ],
-        "source": {
-          "upstream": "models.dev",
-          "provider": "xai",
-          "source_id": "grok-build-0.1",
-          "priority": 70,
-          "policy_rank": 6
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "pricing": {
         "kind": "existing_catalog_or_pipeline_value"
       },
-      "provider_sources": {
-        "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
-        "value": [
-          "xai"
-        ],
-        "observations": [
-          {
-            "provider": "xai",
-            "source_id": "grok-build-0.1"
-          }
-        ]
-      },
       "release_date": {
         "kind": "upstream_field_observation",
-        "scope": "publisher_api_model",
+        "scope": "legacy_exact_id_fallback",
         "value": "2026-04-16",
         "source": {
           "upstream": "models.dev",
-          "provider": "xai",
+          "provider": "aihubmix",
           "source_id": "grok-build-0.1",
-          "priority": 70,
-          "policy_rank": 6
+          "priority": 20,
+          "policy_rank": 0
         }
       },
       "thinking_modes": {

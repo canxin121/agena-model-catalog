@@ -3460,6 +3460,43 @@
     },
     {
       "model_id": "gemini-3.1-pro",
+      "field": "lifecycle",
+      "winner": {
+        "value": "deprecated",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "opencode",
+          "source_id": "gemini-3.1-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "deprecated",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "opencode",
+            "source_id": "gemini-3.1-pro",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "beta",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "snowflake-cortex",
+            "source_id": "gemini-3.1-pro",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gemini-3.1-pro",
       "field": "origin",
       "winner": {
         "value": "OpenCode",
@@ -9221,6 +9258,63 @@
             "upstream": "models.dev",
             "provider": "venice",
             "source_id": "grok-build-0-1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "grok-build-0.1",
+      "field": "origin",
+      "winner": {
+        "value": "AIHubMix",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "aihubmix",
+          "source_id": "grok-build-0.1",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "AIHubMix",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "aihubmix",
+            "source_id": "grok-build-0.1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "OpenCode",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "opencode",
+            "source_id": "grok-build-0.1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Opper",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "opper",
+            "source_id": "grok-build-0.1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Requesty",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "requesty",
+            "source_id": "grok-build-0.1",
             "priority": 20,
             "policy_rank": 0
           }

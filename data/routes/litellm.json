@@ -168324,7 +168324,7 @@
       "route_id": "gmi/tencent/hy4",
       "provider": "gmi",
       "scope": "provider_route_reference",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "hy4",
       "priority": {
         "identity": 20,
         "limits": 40,
@@ -236411,7 +236411,7 @@
       "route_id": "tencent/hy4",
       "provider": "tencent",
       "scope": "provider_route_reference",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "hy4",
       "priority": {
         "identity": 20,
         "limits": 40,

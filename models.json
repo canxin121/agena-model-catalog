@@ -40132,6 +40132,52 @@
       },
       "max_input_tokens": 256000
     },
+    "hy4": {
+      "description": "A next-generation multimodal productivity model with significantly enhanced Agent and complex task execution capabilities.",
+      "release_date": "2026-11-04",
+      "last_updated": "2026-11-04",
+      "open_weights": false,
+      "display_name": "Hy4",
+      "origin": "Tencent",
+      "context_window_tokens": 1048576,
+      "max_input_tokens": 983010,
+      "max_output_tokens": 65536,
+      "input": {
+        "supported": [
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "temperature",
+          "tool_calling"
+        ]
+      },
+      "output_modalities": [
+        "text"
+      ],
+      "pricing": {
+        "input_usd_per_million_tokens": "0.417",
+        "output_usd_per_million_tokens": "1.2505"
+      },
+      "provider_sources": [
+        "huggingface"
+      ],
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        }
+      }
+    },
     "hy4-flash": {
       "description": "Tencent's lower-cost Hy4 tier for everyday agent and productivity tasks, with image understanding and a 1M-token context window.",
       "release_date": "2026-11-16",

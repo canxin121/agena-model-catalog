@@ -88504,6 +88504,235 @@
         "has_source_notes": true
       }
     },
+    "hy4": {
+      "context_window_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 1048576,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "description": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "A next-generation multimodal productivity model with significantly enhanced Agent and complex task execution capabilities.",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "display_name": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Hy4",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "features": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "tencent/Hy4",
+              "priority": 70,
+              "policy_rank": 37
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "tencent/Hy4",
+              "priority": 70,
+              "policy_rank": 37
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "tencent/Hy4",
+              "priority": 70,
+              "policy_rank": 37
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "tencent/Hy4",
+              "priority": 70,
+              "policy_rank": 37
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "tencent/Hy4",
+              "priority": 70,
+              "policy_rank": 37
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "tencent/Hy4",
+              "priority": 70,
+              "policy_rank": 37
+            }
+          }
+        }
+      },
+      "last_updated": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-11-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "max_input_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 983010,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "max_output_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 65536,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "open_weights": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "origin": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Tencent",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "output_modalities": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "pricing": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.417",
+          "output_usd_per_million_tokens": "1.2505"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "huggingface"
+        ],
+        "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "tencent/Hy4"
+          }
+        ]
+      },
+      "release_date": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-11-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "tencent/Hy4",
+          "priority": 70,
+          "policy_rank": 37
+        }
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
+      }
+    },
     "hy4-flash": {
       "context_window_tokens": {
         "kind": "upstream_field_observation",

@@ -15130,6 +15130,117 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "pixtral-large-2502",
+      "field": "description",
+      "winner": {
+        "value": "Pixtral Large (25.02) is a 124B open-weight multimodal model built on Mistral Large 2, offering advanced image understanding and strong performance across text and code tasks.",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "cortecs",
+          "source_id": "pixtral-large-2502",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Pixtral Large (25.02) is a 124B open-weight multimodal model built on Mistral Large 2, offering advanced image understanding and strong performance across text and code tasks.",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "pixtral-large-2502",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Mistral vision-language model for image understanding and multimodal chat",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "llmgateway",
+            "source_id": "pixtral-large-2502",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "pixtral-large-2502",
+      "field": "display_name",
+      "winner": {
+        "value": "Pixtral Large (25.02)",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "cortecs",
+          "source_id": "pixtral-large-2502",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Pixtral Large (25.02)",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "pixtral-large-2502",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Pixtral Large 25.02",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "llmgateway",
+            "source_id": "pixtral-large-2502",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "pixtral-large-2502",
+      "field": "origin",
+      "winner": {
+        "value": "Cortecs",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "cortecs",
+          "source_id": "pixtral-large-2502",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Cortecs",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "pixtral-large-2502",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "DevPass (LLM Gateway)",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "llmgateway",
+            "source_id": "pixtral-large-2502",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "qvq-max",
       "field": "description",
       "winner": {

@@ -3,9 +3,9 @@
   "source": {
     "id": "litellm",
     "status": "current",
-    "sha256": "f410a08e6d566829e3a858b00e8b23f5a796fd2360f056a69cab43526f908864",
-    "record_count": 7092,
-    "retrieved_at": "2026-11-21T11:00:07+00:00"
+    "sha256": "6d01a4f5d5135c3a0830dbd543c4b25e4aa438891360c3ecae7608db7d257b97",
+    "record_count": 7100,
+    "retrieved_at": "2026-11-22T11:24:05+00:00"
   },
   "scope": "provider_route_reference",
   "records": [
@@ -18790,6 +18790,9 @@
         "litellm_provider": "azure",
         "mode": "realtime",
         "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
+        "supported_endpoints": [
+          "/v1/live/sessions"
+        ],
         "supported_modalities": [
           "text",
           "audio"
@@ -19589,6 +19592,9 @@
         "max_output_tokens": 4096,
         "mode": "realtime",
         "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
+        "supported_endpoints": [
+          "/v1/realtime/translations"
+        ],
         "supported_modalities": [
           "audio"
         ],
@@ -19635,6 +19641,9 @@
           "realtime_ga_only": 1
         },
         "source": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/a-new-chapter-for-realtime-ai-reasoning-translation-and-real-time-transcription/4517124",
+        "supported_endpoints": [
+          "/v1/realtime/translations"
+        ],
         "supported_modalities": [
           "audio"
         ],
@@ -19676,6 +19685,9 @@
           "realtime_ga_only": 1
         },
         "source": "https://ai.azure.com/catalog/models/gpt-realtime-translate",
+        "supported_endpoints": [
+          "/v1/realtime/translations"
+        ],
         "supported_modalities": [
           "audio"
         ],
@@ -27529,8 +27541,8 @@
           "/v1/images/generations",
           "/v1/images/edits"
         ],
-        "deprecation_date": "2026-10-01",
-        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
+        "deprecation_date": "2026-11-24",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#microsoft",
         "successor_model": "azure_ai/MAI-Image-2.6",
         "max_input_tokens": 32000
       }
@@ -27566,8 +27578,8 @@
           "/v1/images/generations",
           "/v1/images/edits"
         ],
-        "deprecation_date": "2026-10-01",
-        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
+        "deprecation_date": "2026-11-24",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#microsoft",
         "successor_model": "azure_ai/MAI-Image-2.6-Flash",
         "max_input_tokens": 32000
       }
@@ -27593,8 +27605,8 @@
       },
       "raw": {
         "successor_model": "azure_ai/MAI-Image-2.6",
-        "deprecation_date": "2026-10-01",
-        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
+        "deprecation_date": "2026-11-24",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#microsoft",
         "input_cost_per_image_token": 8e-06,
         "input_cost_per_token": 5e-06,
         "litellm_provider": "azure_ai",
@@ -27629,6 +27641,8 @@
         "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
       },
       "raw": {
+        "deprecation_date": "2027-05-01",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#microsoft",
         "input_cost_per_image_token": 8e-06,
         "input_cost_per_token": 5e-06,
         "litellm_provider": "azure_ai",
@@ -27662,6 +27676,8 @@
         "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
       },
       "raw": {
+        "deprecation_date": "2027-05-01",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#microsoft",
         "input_cost_per_image_token": 2.5e-06,
         "input_cost_per_token": 1.75e-06,
         "litellm_provider": "azure_ai",
@@ -27695,6 +27711,8 @@
         "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
       },
       "raw": {
+        "deprecation_date": "2027-03-02",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#microsoft",
         "cache_read_input_token_cost": 2e-07,
         "input_cost_per_token": 2e-06,
         "litellm_provider": "azure_ai",
@@ -27739,6 +27757,8 @@
         "source_url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
       },
       "raw": {
+        "deprecation_date": "2027-02-04",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#microsoft",
         "input_cost_per_token": 4.2e-08,
         "litellm_provider": "azure_ai",
         "max_input_tokens": 32768,
@@ -27973,8 +27993,8 @@
       },
       "raw": {
         "successor_model": "azure_ai/claude-fable-5-2",
-        "deprecation_date": "2027-12-05",
-        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
+        "deprecation_date": "2027-12-07",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#anthropic",
         "supports_mid_conversation_system": true,
         "input_cost_per_token": 1e-05,
         "output_cost_per_token": 5e-05,
@@ -28062,8 +28082,8 @@
         "supports_web_search": true,
         "prompt_cache_min_tokens": 512,
         "successor_model": "azure_ai/claude-fable-5-2",
-        "deprecation_date": "2027-12-05",
-        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement"
+        "deprecation_date": "2027-12-07",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#anthropic"
       }
     },
     {
@@ -28357,8 +28377,8 @@
         "cache_creation_input_token_cost_above_1hr": 2e-05,
         "cache_read_input_token_cost": 2.5e-07,
         "successor_model": "azure_ai/claude-mythos-5-2",
-        "deprecation_date": "2027-09-01",
-        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
+        "deprecation_date": "2027-12-07",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#anthropic",
         "litellm_provider": "azure_ai",
         "max_input_tokens": 1000000,
         "max_output_tokens": 128000,
@@ -30733,7 +30753,9 @@
         "supports_response_schema": true,
         "supports_system_messages": true,
         "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
+        "supports_xhigh_reasoning_effort": true,
+        "deprecation_date": "2028-01-11",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule"
       }
     },
     {
@@ -30795,7 +30817,9 @@
         "supports_response_schema": true,
         "supports_system_messages": true,
         "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
+        "supports_xhigh_reasoning_effort": true,
+        "deprecation_date": "2028-01-11",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule"
       }
     },
     {
@@ -30861,7 +30885,9 @@
         "supports_response_schema": true,
         "supports_system_messages": true,
         "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
+        "supports_xhigh_reasoning_effort": true,
+        "deprecation_date": "2028-01-11",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule"
       }
     },
     {
@@ -30927,7 +30953,9 @@
         "supports_response_schema": true,
         "supports_system_messages": true,
         "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
+        "supports_xhigh_reasoning_effort": true,
+        "deprecation_date": "2028-01-11",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule"
       }
     },
     {
@@ -30993,7 +31021,9 @@
         "supports_response_schema": true,
         "supports_system_messages": true,
         "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
+        "supports_xhigh_reasoning_effort": true,
+        "deprecation_date": "2028-01-11",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule"
       }
     },
     {
@@ -31059,7 +31089,9 @@
         "supports_response_schema": true,
         "supports_system_messages": true,
         "supports_vision": true,
-        "supports_xhigh_reasoning_effort": true
+        "supports_xhigh_reasoning_effort": true,
+        "deprecation_date": "2028-01-11",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule"
       }
     },
     {
@@ -31082,6 +31114,8 @@
         "source_url": "https://ai.azure.com/catalog/models/gpt-6-astra"
       },
       "raw": {
+        "deprecation_date": "2028-01-11",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#azure-openai",
         "cache_creation_input_token_cost": 1.25e-05,
         "cache_creation_input_token_cost_above_272k_tokens": 2.5e-05,
         "cache_read_input_token_cost": 1e-06,
@@ -31150,6 +31184,8 @@
         "source_url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/"
       },
       "raw": {
+        "deprecation_date": "2028-03-11",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#azure-openai",
         "cache_creation_input_token_cost": 1.25e-07,
         "cache_creation_input_token_cost_above_272k_tokens": 2.5e-07,
         "cache_read_input_token_cost": 1e-08,
@@ -31218,6 +31254,8 @@
         "source_url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/"
       },
       "raw": {
+        "deprecation_date": "2028-03-11",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#azure-openai",
         "cache_creation_input_token_cost": 2.5e-06,
         "cache_creation_input_token_cost_above_272k_tokens": 5e-06,
         "cache_read_input_token_cost": 2e-07,
@@ -31286,6 +31324,8 @@
         "source_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models"
       },
       "raw": {
+        "deprecation_date": "2028-03-11",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#azure-openai",
         "cache_creation_input_token_cost": 2.5e-06,
         "cache_creation_input_token_cost_above_272k_tokens": 5e-06,
         "cache_read_input_token_cost": 1e-07,
@@ -31354,6 +31394,8 @@
         "source_url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/gpt-6-1-terra-now-generally-available-in-microsoft-foundry-build-agents-that-see/4567769"
       },
       "raw": {
+        "deprecation_date": "2027-10-26",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#azure-openai",
         "cache_creation_input_token_cost": 1.25e-06,
         "cache_creation_input_token_cost_above_272k_tokens": 2.5e-06,
         "cache_read_input_token_cost": 5e-08,
@@ -31988,6 +32030,8 @@
         "source_url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
       },
       "raw": {
+        "deprecation_date": "2027-05-12",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#xai",
         "cache_read_input_token_cost": 2e-07,
         "cache_read_input_token_cost_above_200k_tokens": 4e-07,
         "input_cost_per_token": 1.25e-06,
@@ -32029,6 +32073,8 @@
         "source_url": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok/"
       },
       "raw": {
+        "deprecation_date": "2027-08-24",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#xai",
         "cache_read_input_token_cost": 5e-07,
         "cache_read_input_token_cost_above_200k_tokens": 1e-06,
         "input_cost_per_token": 2e-06,
@@ -32677,6 +32723,8 @@
         "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
       },
       "raw": {
+        "deprecation_date": "2027-10-01",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#mistral-ai",
         "input_cost_per_token": 1.5e-06,
         "litellm_provider": "azure_ai",
         "max_input_tokens": 128000,
@@ -32802,6 +32850,8 @@
         "source_url": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/mistral/"
       },
       "raw": {
+        "deprecation_date": "2027-10-01",
+        "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement#mistral-ai",
         "litellm_provider": "azure_ai",
         "ocr_cost_per_page": 0.004,
         "annotation_cost_per_page": 0.005,
@@ -78802,7 +78852,7 @@
         "pricing": 40
       },
       "fields": {
-        "max_input_tokens": 128000,
+        "max_input_tokens": 272000,
         "max_output_tokens": 128000,
         "input_usd_per_million_tokens": null,
         "output_usd_per_million_tokens": null,
@@ -78812,7 +78862,7 @@
       },
       "raw": {
         "litellm_provider": "chatgpt",
-        "max_input_tokens": 128000,
+        "max_input_tokens": 272000,
         "max_output_tokens": 128000,
         "mode": "responses",
         "supported_endpoints": [
@@ -78836,7 +78886,7 @@
         "pricing": 40
       },
       "fields": {
-        "max_input_tokens": 128000,
+        "max_input_tokens": 272000,
         "max_output_tokens": 64000,
         "input_usd_per_million_tokens": null,
         "output_usd_per_million_tokens": null,
@@ -78846,7 +78896,7 @@
       },
       "raw": {
         "litellm_provider": "chatgpt",
-        "max_input_tokens": 128000,
+        "max_input_tokens": 272000,
         "max_output_tokens": 64000,
         "mode": "responses",
         "supported_endpoints": [
@@ -78870,7 +78920,7 @@
         "pricing": 40
       },
       "fields": {
-        "max_input_tokens": 128000,
+        "max_input_tokens": 272000,
         "max_output_tokens": 64000,
         "input_usd_per_million_tokens": null,
         "output_usd_per_million_tokens": null,
@@ -78880,7 +78930,7 @@
       },
       "raw": {
         "litellm_provider": "chatgpt",
-        "max_input_tokens": 128000,
+        "max_input_tokens": 272000,
         "max_output_tokens": 64000,
         "mode": "responses",
         "supported_endpoints": [
@@ -78909,7 +78959,7 @@
         "pricing": 40
       },
       "fields": {
-        "max_input_tokens": 128000,
+        "max_input_tokens": 272000,
         "max_output_tokens": 128000,
         "input_usd_per_million_tokens": null,
         "output_usd_per_million_tokens": null,
@@ -78919,7 +78969,7 @@
       },
       "raw": {
         "litellm_provider": "chatgpt",
-        "max_input_tokens": 128000,
+        "max_input_tokens": 272000,
         "max_output_tokens": 128000,
         "mode": "responses",
         "supported_endpoints": [
@@ -78978,7 +79028,7 @@
         "pricing": 40
       },
       "fields": {
-        "max_input_tokens": 128000,
+        "max_input_tokens": 272000,
         "max_output_tokens": 128000,
         "input_usd_per_million_tokens": null,
         "output_usd_per_million_tokens": null,
@@ -78988,7 +79038,7 @@
       },
       "raw": {
         "litellm_provider": "chatgpt",
-        "max_input_tokens": 128000,
+        "max_input_tokens": 272000,
         "max_output_tokens": 128000,
         "mode": "responses",
         "supported_endpoints": [
@@ -150119,6 +150169,45 @@
       }
     },
     {
+      "route_id": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-us",
+      "provider": "fireworks_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 393216,
+        "input_usd_per_million_tokens": "0.45",
+        "output_usd_per_million_tokens": "1.8",
+        "cache_read_usd_per_million_tokens": "0.009",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.fireworks.ai/serverless/us-only-serverless"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 9e-09,
+        "cache_read_input_token_cost_priority": 1.125e-08,
+        "input_cost_per_token": 4.5e-07,
+        "input_cost_per_token_priority": 5.625e-07,
+        "litellm_provider": "fireworks_ai",
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 393216,
+        "mode": "chat",
+        "output_cost_per_token": 1.8e-06,
+        "output_cost_per_token_priority": 2.25e-06,
+        "source": "https://docs.fireworks.ai/serverless/us-only-serverless",
+        "supports_function_calling": true,
+        "supports_prompt_caching": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
+      }
+    },
+    {
       "route_id": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot",
       "provider": "fireworks_ai",
       "scope": "provider_route_reference",
@@ -150839,6 +150928,51 @@
         "source": "https://docs.fireworks.ai/serverless/pricing",
         "supports_function_calling": true,
         "supports_mid_conversation_system": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
+      }
+    },
+    {
+      "route_id": "fireworks_ai/accounts/fireworks/routers/kimi-k3p1-pro-us",
+      "provider": "fireworks_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 131072,
+        "input_usd_per_million_tokens": "2.5",
+        "output_usd_per_million_tokens": "12.5",
+        "cache_read_usd_per_million_tokens": "0.25",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.fireworks.ai/serverless/pricing"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 2.5e-07,
+        "cache_read_input_token_cost_priority": 3.75e-07,
+        "input_cost_per_token": 2.5e-06,
+        "input_cost_per_token_priority": 3.75e-06,
+        "litellm_provider": "fireworks_ai",
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 131072,
+        "mode": "chat",
+        "output_cost_per_token": 1.25e-05,
+        "output_cost_per_token_priority": 1.875e-05,
+        "reasoning_effort_levels": [
+          "low",
+          "high",
+          "max"
+        ],
+        "source": "https://docs.fireworks.ai/serverless/pricing",
+        "supports_function_calling": true,
+        "supports_mid_conversation_system": true,
+        "supports_prompt_caching": true,
         "supports_reasoning": true,
         "supports_response_schema": true,
         "supports_tool_choice": true,
@@ -155112,9 +155246,9 @@
         "input_cost_per_token_priority": 1.35e-06,
         "output_cost_per_token_priority": 6.75e-06,
         "cache_read_input_token_cost_priority": 1.35e-07,
-        "deprecation_date": "2026-11-19",
+        "deprecation_date": "2027-01-28",
         "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
-        "successor_model": "gemini-3.8-flash",
+        "successor_model": "vertex_ai/gemini-4-hydrogen",
         "search_context_cost_per_query": {
           "search_context_size_low": 0.014,
           "search_context_size_medium": 0.014,
@@ -155202,7 +155336,7 @@
         "cache_read_input_token_cost_priority": 1.35e-07,
         "deprecation_date": "2027-01-28",
         "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
-        "successor_model": "gemini-3.8-flash",
+        "successor_model": "vertex_ai/gemini-4-hydrogen",
         "search_context_cost_per_query": {
           "search_context_size_low": 0.014,
           "search_context_size_medium": 0.014,
@@ -165016,6 +165150,7 @@
         "cache_creation_input_token_cost": 1.5625e-05,
         "cache_read_input_token_cost": 1.25e-06,
         "output_cost_per_token": 7.5e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -165071,6 +165206,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 4e-08,
         "output_cost_per_token": 1.2e-06,
         "output_cost_per_token_above_272k_tokens": 1.8e-06,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -165127,6 +165263,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 8e-07,
         "output_cost_per_token": 2e-05,
         "output_cost_per_token_above_272k_tokens": 3e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -165183,6 +165320,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 4e-07,
         "output_cost_per_token": 1.2e-05,
         "output_cost_per_token_above_272k_tokens": 1.8e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -165245,6 +165383,7 @@
         "input_cost_per_token_ultrafast": 6e-05,
         "output_cost_per_token": 5e-05,
         "output_cost_per_token_above_272k_tokens": 7.5e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -165305,6 +165444,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 2e-08,
         "output_cost_per_token": 5e-07,
         "output_cost_per_token_above_272k_tokens": 7.5e-07,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -165363,6 +165503,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 4e-07,
         "output_cost_per_token": 1e-05,
         "output_cost_per_token_above_272k_tokens": 1.5e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -165424,6 +165565,7 @@
         "input_cost_per_token_above_272k_tokens": 4e-06,
         "input_cost_per_token_above_272k_tokens_ultrafast": 2.4e-05,
         "input_cost_per_token_ultrafast": 1.2e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 1000000,
@@ -165484,6 +165626,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 1e-07,
         "input_cost_per_token": 1e-06,
         "input_cost_per_token_above_272k_tokens": 2e-06,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
@@ -165548,6 +165691,7 @@
         "input_cost_per_token_above_272k_tokens": 1.6e-05,
         "input_cost_per_token_above_272k_tokens_ultrafast": 4.8e-05,
         "input_cost_per_token_ultrafast": 2.4e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
@@ -165608,6 +165752,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 2e-07,
         "input_cost_per_token": 2e-06,
         "input_cost_per_token_above_272k_tokens": 4e-06,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
@@ -176782,6 +176927,9 @@
         "litellm_provider": "openai",
         "mode": "realtime",
         "source": "https://developers.openai.com/api/docs/pricing",
+        "supported_endpoints": [
+          "/v1/live/sessions"
+        ],
         "supported_modalities": [
           "text",
           "audio"
@@ -176819,6 +176967,9 @@
         "litellm_provider": "openai",
         "mode": "realtime",
         "source": "https://developers.openai.com/api/docs/pricing",
+        "supported_endpoints": [
+          "/v1/live/sessions"
+        ],
         "supported_modalities": [
           "text",
           "audio"
@@ -177398,6 +177549,9 @@
         "max_output_tokens": 2000,
         "mode": "realtime",
         "source": "https://developers.openai.com/api/docs/pricing",
+        "supported_endpoints": [
+          "/v1/realtime/translations"
+        ],
         "supported_modalities": [
           "audio"
         ],
@@ -178039,6 +178193,108 @@
         "supports_tool_choice": false,
         "max_input_tokens": 200000,
         "max_output_tokens": 100000
+      }
+    },
+    {
+      "route_id": "gradium/default",
+      "provider": "gradium",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://gradium.ai/pricing"
+      },
+      "raw": {
+        "input_cost_per_character": 7e-05,
+        "litellm_provider": "gradium",
+        "metadata": {
+          "calculation": "1 credit per character synthesized; $7 per 100k add-on credits (XS plan) = $0.00007/char. Larger plans are cheaper (down to $3.8/100k on L), and Pro Voice Clone voices bill 1.2 credits per character.",
+          "notes": "Gradium TTS bills per character of input text, not per second of audio."
+        },
+        "mode": "audio_speech",
+        "output_cost_per_character": 0.0,
+        "source": "https://gradium.ai/pricing",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ]
+      }
+    },
+    {
+      "route_id": "gradium/gradium-tts-202602",
+      "provider": "gradium",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://gradium.ai/pricing"
+      },
+      "raw": {
+        "input_cost_per_character": 7e-05,
+        "litellm_provider": "gradium",
+        "metadata": {
+          "calculation": "1 credit per character synthesized; $7 per 100k add-on credits (XS plan) = $0.00007/char. Larger plans are cheaper (down to $3.8/100k on L), and Pro Voice Clone voices bill 1.2 credits per character.",
+          "notes": "Gradium TTS bills per character of input text, not per second of audio."
+        },
+        "mode": "audio_speech",
+        "output_cost_per_character": 0.0,
+        "source": "https://gradium.ai/pricing",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ]
+      }
+    },
+    {
+      "route_id": "gradium/gradium-tts-beta",
+      "provider": "gradium",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": null,
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": null,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": null,
+        "output_usd_per_million_tokens": null,
+        "cache_read_usd_per_million_tokens": null,
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://gradium.ai/pricing"
+      },
+      "raw": {
+        "input_cost_per_character": 7e-05,
+        "litellm_provider": "gradium",
+        "metadata": {
+          "calculation": "1 credit per character synthesized; $7 per 100k add-on credits (XS plan) = $0.00007/char. Larger plans are cheaper (down to $3.8/100k on L), and Pro Voice Clone voices bill 1.2 credits per character.",
+          "notes": "Gradium TTS bills per character of input text, not per second of audio."
+        },
+        "mode": "audio_speech",
+        "output_cost_per_character": 0.0,
+        "source": "https://gradium.ai/pricing",
+        "supported_endpoints": [
+          "/v1/audio/speech"
+        ]
       }
     },
     {
@@ -208096,6 +208352,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 2e-08,
         "output_cost_per_token": 5e-07,
         "output_cost_per_token_above_272k_tokens": 7.5e-07,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -208149,6 +208406,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 4e-07,
         "output_cost_per_token": 1e-05,
         "output_cost_per_token_above_272k_tokens": 1.5e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -208206,6 +208464,7 @@
         "input_cost_per_token_above_272k_tokens": 1.6e-05,
         "input_cost_per_token_above_272k_tokens_ultrafast": 4.8e-05,
         "input_cost_per_token_ultrafast": 2.4e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
@@ -208261,6 +208520,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 2e-07,
         "input_cost_per_token": 2e-06,
         "input_cost_per_token_above_272k_tokens": 4e-06,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
@@ -244079,6 +244339,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 5.28e-08,
         "output_cost_per_token": 1.584e-06,
         "output_cost_per_token_above_272k_tokens": 2.376e-06,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -244135,6 +244396,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 5.28e-07,
         "output_cost_per_token": 1.584e-05,
         "output_cost_per_token_above_272k_tokens": 2.376e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -246788,6 +247050,7 @@
         "cache_creation_input_token_cost": 1.71875e-05,
         "cache_read_input_token_cost": 1.375e-06,
         "output_cost_per_token": 8.25e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -246843,6 +247106,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 4.4e-08,
         "output_cost_per_token": 1.32e-06,
         "output_cost_per_token_above_272k_tokens": 1.98e-06,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -246899,6 +247163,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 8.8e-07,
         "output_cost_per_token": 2.2e-05,
         "output_cost_per_token_above_272k_tokens": 3.3e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -246955,6 +247220,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 4.4e-07,
         "output_cost_per_token": 1.32e-05,
         "output_cost_per_token_above_272k_tokens": 1.98e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -247017,6 +247283,7 @@
         "input_cost_per_token_ultrafast": 6.6e-05,
         "output_cost_per_token": 5.5e-05,
         "output_cost_per_token_above_272k_tokens": 8.25e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -247077,6 +247344,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 2.2e-08,
         "output_cost_per_token": 5.5e-07,
         "output_cost_per_token_above_272k_tokens": 8.25e-07,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -247135,6 +247403,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 4.4e-07,
         "output_cost_per_token": 1.1e-05,
         "output_cost_per_token_above_272k_tokens": 1.65e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 922000,
@@ -247196,6 +247465,7 @@
         "input_cost_per_token_above_272k_tokens": 4.4e-06,
         "input_cost_per_token_above_272k_tokens_ultrafast": 2.64e-05,
         "input_cost_per_token_ultrafast": 1.32e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "supports_bedrock_converse_tool_result_images": false,
         "max_input_tokens": 1000000,
@@ -247256,6 +247526,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 1.1e-07,
         "input_cost_per_token": 1.1e-06,
         "input_cost_per_token_above_272k_tokens": 2.2e-06,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
@@ -247320,6 +247591,7 @@
         "input_cost_per_token_above_272k_tokens": 1.76e-05,
         "input_cost_per_token_above_272k_tokens_ultrafast": 5.28e-05,
         "input_cost_per_token_ultrafast": 2.64e-05,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
@@ -247380,6 +247652,7 @@
         "cache_read_input_token_cost_above_272k_tokens": 2.2e-07,
         "input_cost_per_token": 2.2e-06,
         "input_cost_per_token_above_272k_tokens": 4.4e-06,
+        "supports_openai_prompt_cache_breakpoint": true,
         "litellm_provider": "bedrock_converse",
         "max_input_tokens": 922000,
         "max_output_tokens": 128000,
@@ -255799,9 +256072,9 @@
         "input_cost_per_token_priority": 1.35e-06,
         "output_cost_per_token_priority": 6.75e-06,
         "cache_read_input_token_cost_priority": 1.35e-07,
-        "deprecation_date": "2026-11-19",
+        "deprecation_date": "2027-01-28",
         "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
-        "successor_model": "vertex_ai/gemini-3.8-flash",
+        "successor_model": "vertex_ai/gemini-4-hydrogen",
         "search_context_cost_per_query": {
           "search_context_size_low": 0.014,
           "search_context_size_medium": 0.014,
@@ -255890,7 +256163,7 @@
         "cache_read_input_token_cost_priority": 1.35e-07,
         "deprecation_date": "2027-01-28",
         "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
-        "successor_model": "vertex_ai/gemini-3.8-flash",
+        "successor_model": "vertex_ai/gemini-4-hydrogen",
         "search_context_cost_per_query": {
           "search_context_size_low": 0.014,
           "search_context_size_medium": 0.014,
@@ -257871,6 +258144,166 @@
         "output_cost_per_token": 0.0,
         "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#partner-models",
         "supports_tool_choice": true
+      }
+    },
+    {
+      "route_id": "vertex_ai/meta/muse-ember-1.0",
+      "provider": "vertex_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "muse-ember-1.0",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 524288,
+        "input_usd_per_million_tokens": "0.1",
+        "output_usd_per_million_tokens": "0.5",
+        "cache_read_usd_per_million_tokens": "0.004",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 4e-09,
+        "cache_read_input_token_cost_above_200k_tokens": 1.2e-08,
+        "input_cost_per_token": 1e-07,
+        "input_cost_per_token_above_200k_tokens": 3e-07,
+        "litellm_provider": "vertex_ai",
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 524288,
+        "mode": "responses",
+        "output_cost_per_token": 5e-07,
+        "output_cost_per_token_above_200k_tokens": 1.5e-06,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0",
+        "supported_endpoints": [
+          "/v1/responses"
+        ],
+        "supported_modalities": [
+          "text",
+          "image"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supported_regions": [
+          "global"
+        ],
+        "supports_function_calling": true,
+        "supports_max_reasoning_effort": true,
+        "supports_minimal_reasoning_effort": true,
+        "supports_native_structured_output": true,
+        "supports_none_reasoning_effort": false,
+        "supports_pdf_input": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_vision": true,
+        "supports_xhigh_reasoning_effort": true
+      }
+    },
+    {
+      "route_id": "vertex_ai/meta/muse-spark-1.3",
+      "provider": "vertex_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "muse-spark-1.3",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "1.25",
+        "output_usd_per_million_tokens": "4.25",
+        "cache_read_usd_per_million_tokens": "0.15",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-spark-1-3"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 1.5e-07,
+        "input_cost_per_token": 1.25e-06,
+        "litellm_provider": "vertex_ai",
+        "max_input_tokens": 1048576,
+        "mode": "responses",
+        "output_cost_per_token": 4.25e-06,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-spark-1-3",
+        "supported_endpoints": [
+          "/v1/responses"
+        ],
+        "supported_modalities": [
+          "text",
+          "image"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supported_regions": [
+          "global"
+        ],
+        "supports_function_calling": true,
+        "supports_max_reasoning_effort": false,
+        "supports_minimal_reasoning_effort": true,
+        "supports_native_structured_output": true,
+        "supports_none_reasoning_effort": false,
+        "supports_pdf_input": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_vision": true,
+        "supports_xhigh_reasoning_effort": true
+      }
+    },
+    {
+      "route_id": "vertex_ai/meta/muse-wonder-1.0",
+      "provider": "vertex_ai",
+      "scope": "provider_route_reference",
+      "catalog_model_id_candidate": "muse-wonder-1.0",
+      "priority": {
+        "identity": 20,
+        "limits": 40,
+        "pricing": 40
+      },
+      "fields": {
+        "max_input_tokens": 1048576,
+        "max_output_tokens": null,
+        "input_usd_per_million_tokens": "4",
+        "output_usd_per_million_tokens": "20",
+        "cache_read_usd_per_million_tokens": "0.2",
+        "cache_write_usd_per_million_tokens": null,
+        "source_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0"
+      },
+      "raw": {
+        "cache_read_input_token_cost": 2e-07,
+        "input_cost_per_token": 4e-06,
+        "litellm_provider": "vertex_ai",
+        "max_input_tokens": 1048576,
+        "mode": "responses",
+        "output_cost_per_token": 2e-05,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
+        "supported_endpoints": [
+          "/v1/responses"
+        ],
+        "supported_modalities": [
+          "text",
+          "image"
+        ],
+        "supported_output_modalities": [
+          "text"
+        ],
+        "supported_regions": [
+          "global"
+        ],
+        "supports_function_calling": true,
+        "supports_max_reasoning_effort": false,
+        "supports_minimal_reasoning_effort": true,
+        "supports_native_structured_output": true,
+        "supports_none_reasoning_effort": false,
+        "supports_pdf_input": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_vision": true,
+        "supports_xhigh_reasoning_effort": true
       }
     },
     {

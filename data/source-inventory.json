@@ -19,8 +19,8 @@
       },
       "selection": "curation/sources.json first-party provider policy",
       "snapshot_status": "current",
-      "snapshot_sha256": "4fe96995535dc6490a940773570609cdb71bf3b635f047fdecdfa25ec32301da",
-      "snapshot_record_count": 324
+      "snapshot_sha256": "3e2948fbba3559d20aac8d193419c87d41ad3620b16f15ea5b5325c8494d36fd",
+      "snapshot_record_count": 326
     },
     {
       "id": "opencode",
@@ -133,7 +133,7 @@
   ],
   "route_record_counts": {
     "models.dev_allowlisted_observations": 464,
-    "models.dev_exact_id_fallback_candidates": 703,
+    "models.dev_exact_id_fallback_candidates": 716,
     "models.dev_route_limit_caps": 21,
     "openrouter": 476,
     "litellm": 7100

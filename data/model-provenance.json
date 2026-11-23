@@ -78293,7 +78293,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Safety model for policy screening, moderation, and risk-aware routing workflows",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "gpt-oss-safeguard-20b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "display_name": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -78305,7 +78314,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-10-29",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "gpt-oss-safeguard-20b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "lifecycle": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -78329,7 +78347,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-10-29",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "gpt-oss-safeguard-20b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -83714,7 +83741,7 @@
         "value": "Grok model for agentic tool use, reasoning, coding, and live assistance",
         "source": {
           "upstream": "models.dev",
-          "provider": "tokenlab",
+          "provider": "concentrate",
           "source_id": "grok-4.20-non-reasoning",
           "priority": 20,
           "policy_rank": 0
@@ -83726,7 +83753,7 @@
         "value": "Grok 4.20 (Non-Reasoning)",
         "source": {
           "upstream": "models.dev",
-          "provider": "tokenlab",
+          "provider": "concentrate",
           "source_id": "grok-4.20-non-reasoning",
           "priority": 20,
           "policy_rank": 0
@@ -83747,7 +83774,7 @@
         "value": "2026-03-09",
         "source": {
           "upstream": "models.dev",
-          "provider": "tokenlab",
+          "provider": "concentrate",
           "source_id": "grok-4.20-non-reasoning",
           "priority": 20,
           "policy_rank": 0
@@ -83768,7 +83795,7 @@
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "tokenlab",
+          "provider": "concentrate",
           "source_id": "grok-4.20-non-reasoning",
           "priority": 20,
           "policy_rank": 0
@@ -83789,7 +83816,7 @@
         "value": "2026-03-09",
         "source": {
           "upstream": "models.dev",
-          "provider": "tokenlab",
+          "provider": "concentrate",
           "source_id": "grok-4.20-non-reasoning",
           "priority": 20,
           "policy_rank": 0
@@ -115493,7 +115520,7 @@
         "value": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
         "source": {
           "upstream": "models.dev",
-          "provider": "google-vertex",
+          "provider": "concentrate",
           "source_id": "mistral-medium-3",
           "priority": 20,
           "policy_rank": 0
@@ -115505,7 +115532,7 @@
         "value": "Mistral Medium 3",
         "source": {
           "upstream": "models.dev",
-          "provider": "google-vertex",
+          "provider": "concentrate",
           "source_id": "mistral-medium-3",
           "priority": 20,
           "policy_rank": 0
@@ -115518,16 +115545,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2025-05",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "google-vertex",
-          "source_id": "mistral-medium-3",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "last_updated": {
         "kind": "upstream_field_observation",
@@ -115535,7 +115553,7 @@
         "value": "2025-05-07",
         "source": {
           "upstream": "models.dev",
-          "provider": "google-vertex",
+          "provider": "concentrate",
           "source_id": "mistral-medium-3",
           "priority": 20,
           "policy_rank": 0
@@ -115553,7 +115571,7 @@
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "google-vertex",
+          "provider": "concentrate",
           "source_id": "mistral-medium-3",
           "priority": 20,
           "policy_rank": 0
@@ -115574,7 +115592,7 @@
         "value": "2025-05-07",
         "source": {
           "upstream": "models.dev",
-          "provider": "google-vertex",
+          "provider": "concentrate",
           "source_id": "mistral-medium-3",
           "priority": 20,
           "policy_rank": 0
@@ -115713,7 +115731,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "mistral-medium-3.1",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "display_name": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -115725,7 +115752,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-06-30",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "mistral-medium-3.1",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -115737,7 +115773,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "mistral-medium-3.1",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -121449,7 +121494,16 @@
         "has_source_notes": true
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-12-15",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nemotron-3-nano-30b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -121470,7 +121524,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-12-15",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nemotron-3-nano-30b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",
@@ -123575,16 +123638,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Nova 2 Lite is an advanced multimodal reasoning model that combines efficiency and performance, delivering reliable AI for agentic workflows and enterprise applications.",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "cortecs",
-          "source_id": "nova-2-lite",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -123613,7 +123667,7 @@
         "value": false,
         "source": {
           "upstream": "models.dev",
-          "provider": "cortecs",
+          "provider": "concentrate",
           "source_id": "nova-2-lite",
           "priority": 20,
           "policy_rank": 0
@@ -123847,10 +123901,28 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Efficient model for low-latency assistance, extraction, and routine automation",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-lite",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Nova Lite",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-lite",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -123859,10 +123931,28 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-10",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-lite",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-12-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-lite",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -123871,7 +123961,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-lite",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -123883,7 +123982,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-12-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-lite",
+          "priority": 20,
+          "policy_rank": 0
+        }
       }
     },
     "nova-lite-v1": {
@@ -123962,19 +124070,55 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Efficient model for low-latency assistance, extraction, and routine automation",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-micro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Nova Micro",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-micro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-10",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-micro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-12-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-micro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -123983,7 +124127,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-micro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -123995,7 +124148,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-12-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-micro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       }
     },
     "nova-micro-v1": {
@@ -124115,10 +124277,28 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Flagship model for demanding analysis, coding, and production agent workflows",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Nova Pro",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -124127,10 +124307,28 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "knowledge_cutoff": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-10",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "last_updated": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-12-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "max_input_tokens": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -124139,7 +124337,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": false,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "origin": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -124151,7 +124358,16 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2024-12-03",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "nova-pro",
+          "priority": 20,
+          "policy_rank": 0
+        }
       }
     },
     "nova-pro-v1": {
@@ -151797,14 +152013,23 @@
         "value": "Open multimodal Qwen MoE for local agents that need vision, audio, and code",
         "source": {
           "upstream": "models.dev",
-          "provider": "neuralwatt",
+          "provider": "concentrate",
           "source_id": "qwen3.6-35b",
           "priority": 20,
           "policy_rank": 0
         }
       },
       "display_name": {
-        "kind": "existing_catalog_or_pipeline_value"
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "Qwen3.6 35B-A3B",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "concentrate",
+          "source_id": "qwen3.6-35b",
+          "priority": 20,
+          "policy_rank": 0
+        }
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -151821,7 +152046,7 @@
         "value": "2026-04-17",
         "source": {
           "upstream": "models.dev",
-          "provider": "neuralwatt",
+          "provider": "concentrate",
           "source_id": "qwen3.6-35b",
           "priority": 20,
           "policy_rank": 0
@@ -151842,7 +152067,7 @@
         "value": true,
         "source": {
           "upstream": "models.dev",
-          "provider": "neuralwatt",
+          "provider": "concentrate",
           "source_id": "qwen3.6-35b",
           "priority": 20,
           "policy_rank": 0
@@ -151863,7 +152088,7 @@
         "value": "2026-04-17",
         "source": {
           "upstream": "models.dev",
-          "provider": "neuralwatt",
+          "provider": "concentrate",
           "source_id": "qwen3.6-35b",
           "priority": 20,
           "policy_rank": 0
@@ -163334,7 +163559,7 @@
         "value": "Newer StepFun flash model for faster agents, coding, and multimodal prompts",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "concentrate",
           "source_id": "step-3-7-flash",
           "priority": 20,
           "policy_rank": 0
@@ -163346,7 +163571,7 @@
         "value": "Step 3.7 Flash",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "concentrate",
           "source_id": "step-3-7-flash",
           "priority": 20,
           "policy_rank": 0
@@ -163364,7 +163589,7 @@
         "value": "2026-03-01",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "concentrate",
           "source_id": "step-3-7-flash",
           "priority": 20,
           "policy_rank": 0
@@ -163376,7 +163601,7 @@
         "value": "2026-05-29",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "concentrate",
           "source_id": "step-3-7-flash",
           "priority": 20,
           "policy_rank": 0
@@ -163394,7 +163619,7 @@
         "value": true,
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "concentrate",
           "source_id": "step-3-7-flash",
           "priority": 20,
           "policy_rank": 0
@@ -163415,7 +163640,7 @@
         "value": "2026-05-29",
         "source": {
           "upstream": "models.dev",
-          "provider": "empiriolabs",
+          "provider": "concentrate",
           "source_id": "step-3-7-flash",
           "priority": 20,
           "policy_rank": 0

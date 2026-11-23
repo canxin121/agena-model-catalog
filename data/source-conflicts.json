@@ -3626,6 +3626,53 @@
     },
     {
       "model_id": "gemma4",
+      "field": "description",
+      "winner": {
+        "value": "Open Gemma instruction model for efficient chat and self-hosted deployments",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "greenpt",
+          "source_id": "gemma4",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Open Gemma instruction model for efficient chat and self-hosted deployments",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "greenpt",
+            "source_id": "gemma4",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Open Gemma instruction model for efficient chat and self-hosted deployments",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "nan",
+            "source_id": "gemma4",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Largest Gemma 4 instruction model for open, self-hosted chat and reasoning",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "sarvam",
+            "source_id": "gemma4",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gemma4",
       "field": "display_name",
       "winner": {
         "value": "gemma4",
@@ -3653,6 +3700,16 @@
           "source": {
             "upstream": "models.dev",
             "provider": "nan",
+            "source_id": "gemma4",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Gemma 4 31B IT",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "sarvam",
             "source_id": "gemma4",
             "priority": 20,
             "policy_rank": 0
@@ -3690,6 +3747,16 @@
           "source": {
             "upstream": "models.dev",
             "provider": "nan",
+            "source_id": "gemma4",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Sarvam AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "sarvam",
             "source_id": "gemma4",
             "priority": 20,
             "policy_rank": 0
@@ -9351,16 +9418,6 @@
           "source": {
             "upstream": "models.dev",
             "provider": "opper",
-            "source_id": "grok-build-0.1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Requesty",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "requesty",
             "source_id": "grok-build-0.1",
             "priority": 20,
             "policy_rank": 0

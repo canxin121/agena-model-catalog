@@ -24698,7 +24698,8 @@
           "effort": "high"
         }
       },
-      "max_input_tokens": 262144
+      "max_input_tokens": 262144,
+      "knowledge_cutoff": "2025-01"
     },
     "gemma4-26b": {
       "context_window_tokens": 256000,

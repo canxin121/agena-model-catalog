@@ -53593,6 +53593,18 @@
       "input": {
         "kind": "existing_catalog_or_pipeline_value"
       },
+      "knowledge_cutoff": {
+        "kind": "upstream_field_observation",
+        "scope": "legacy_exact_id_fallback",
+        "value": "2025-01",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "sarvam",
+          "source_id": "gemma4",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
       "last_updated": {
         "kind": "upstream_field_observation",
         "scope": "legacy_exact_id_fallback",
@@ -158259,28 +158271,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "description": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Efficient Indian-language reasoning model for chat, coding, and multilingual work",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "sarvam",
-          "source_id": "sarvam-30b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "display_name": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Sarvam-30B",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "sarvam",
-          "source_id": "sarvam-30b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "features": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -158298,28 +158292,10 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "open_weights": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": true,
-        "source": {
-          "upstream": "models.dev",
-          "provider": "sarvam",
-          "source_id": "sarvam-30b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "origin": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "Sarvam AI",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "sarvam",
-          "source_id": "sarvam-30b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "output_modalities": {
         "kind": "existing_catalog_or_pipeline_value"
@@ -158328,16 +158304,7 @@
         "kind": "existing_catalog_or_pipeline_value"
       },
       "release_date": {
-        "kind": "upstream_field_observation",
-        "scope": "legacy_exact_id_fallback",
-        "value": "2026-02-18",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "sarvam",
-          "source_id": "sarvam-30b",
-          "priority": 20,
-          "policy_rank": 0
-        }
+        "kind": "existing_catalog_or_pipeline_value"
       },
       "thinking_modes": {
         "kind": "verified_curated_patch",

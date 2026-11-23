@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "3e2948fbba3559d20aac8d193419c87d41ad3620b16f15ea5b5325c8494d36fd",
+    "sha256": "cb002bf463608c324a067db9702469f1d41f800423b250cef34cacdf44354ee4",
     "record_count": 326
   },
   "scope": "exact_id_low_priority_descriptive_fallback_candidates",
@@ -14925,6 +14925,74 @@
       }
     },
     {
+      "catalog_model_id": "gemma4",
+      "scope": "legacy_exact_id_fallback_candidate",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "sarvam",
+        "source_id": "gemma4",
+        "priority": 20,
+        "policy_rank": 0
+      },
+      "field_priorities": {
+        "identity": 20,
+        "descriptive": 20,
+        "limits": 0,
+        "capabilities": 0,
+        "semantics": 0,
+        "pricing": 0,
+        "modes": 0,
+        "artifact": 0
+      },
+      "raw": {
+        "id": "gemma4",
+        "name": "Gemma 4 31B IT",
+        "description": "Largest Gemma 4 instruction model for open, self-hosted chat and reasoning",
+        "family": "gemma",
+        "attachment": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "temperature": true,
+        "knowledge": "2025-01",
+        "release_date": "2026-04-02",
+        "last_updated": "2026-04-02",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 262144,
+          "output": 32768
+        },
+        "cost": {
+          "input": 0.37234043,
+          "output": 0.95744681,
+          "cache_read": 0.10638298
+        },
+        "canonical_model_id": "google/gemma-4-31b-it"
+      }
+    },
+    {
       "catalog_model_id": "gemma4-26b",
       "scope": "legacy_exact_id_fallback_candidate",
       "source": {
@@ -22913,61 +22981,6 @@
           "input": 1,
           "output": 2,
           "cache_read": 0.2
-        },
-        "canonical_model_id": "xai/grok-build-0.1"
-      }
-    },
-    {
-      "catalog_model_id": "grok-build-0.1",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "requesty",
-        "source_id": "grok-build-0.1",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "grok-build-0.1",
-        "name": "Grok Build 0.1",
-        "description": "Fast Grok coding model tuned for agentic engineering and iterative edits",
-        "family": "grok-build",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "release_date": "2026-04-16",
-        "last_updated": "2026-04-16",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 256000,
-          "output": 256000
-        },
-        "cost": {
-          "input": 1,
-          "output": 2,
-          "cache_read": 0.1
         },
         "canonical_model_id": "xai/grok-build-0.1"
       }
@@ -40091,79 +40104,15 @@
         },
         "open_weights": true,
         "limit": {
-          "context": 131072,
-          "output": 131072
+          "context": 128000,
+          "output": 128000
         },
         "cost": {
-          "input": 0.15790269,
-          "output": 0.63161075,
-          "cache_read": 0.05263423
+          "input": 0.10638298,
+          "output": 0.26595745,
+          "cache_read": 0.00265957
         },
         "canonical_model_id": "sarvam/sarvam-105b"
-      }
-    },
-    {
-      "catalog_model_id": "sarvam-30b",
-      "scope": "legacy_exact_id_fallback_candidate",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "sarvam",
-        "source_id": "sarvam-30b",
-        "priority": 20,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 20,
-        "descriptive": 20,
-        "limits": 0,
-        "capabilities": 0,
-        "semantics": 0,
-        "pricing": 0,
-        "modes": 0,
-        "artifact": 0
-      },
-      "raw": {
-        "id": "sarvam-30b",
-        "name": "Sarvam-30B",
-        "description": "Efficient Indian-language reasoning model for chat, coding, and multilingual work",
-        "family": "sarvam",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          },
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "temperature": true,
-        "release_date": "2026-02-18",
-        "last_updated": "2026-02-18",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 65536,
-          "output": 65536
-        },
-        "status": "deprecated",
-        "canonical_model_id": "sarvam/sarvam-30b"
       }
     },
     {

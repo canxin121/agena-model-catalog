@@ -191635,7 +191635,7 @@
       "route_id": "mistral/ministral-14b-latest",
       "provider": "mistral",
       "scope": "provider_route_reference",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "ministral-14b-latest",
       "priority": {
         "identity": 20,
         "limits": 40,

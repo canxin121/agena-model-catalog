@@ -3,7 +3,7 @@
   "source": {
     "id": "models.dev",
     "status": "current",
-    "sha256": "cb002bf463608c324a067db9702469f1d41f800423b250cef34cacdf44354ee4",
+    "sha256": "95a88e5cc36bbc143ea6a5947e99ff95cd5be74e6441bf8f0be81fc3be1a5246",
     "record_count": 326
   },
   "scope": "allowlisted_publisher_api_model_observation",
@@ -310,6 +310,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
+            "type": "toggle"
+          },
+          {
             "type": "budget_tokens",
             "min": 1024
           }
@@ -371,6 +374,9 @@
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
+          {
+            "type": "toggle"
+          },
           {
             "type": "budget_tokens",
             "min": 1024
@@ -516,6 +522,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
+            "type": "toggle"
+          },
+          {
             "type": "effort",
             "values": [
               "low",
@@ -549,6 +558,7 @@
           "context": 200000,
           "output": 64000
         },
+        "status": "deprecated",
         "cost": {
           "input": 5,
           "output": 25,
@@ -586,6 +596,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
+            "type": "toggle"
+          },
+          {
             "type": "effort",
             "values": [
               "low",
@@ -619,6 +632,7 @@
           "context": 200000,
           "output": 64000
         },
+        "status": "deprecated",
         "cost": {
           "input": 5,
           "output": 25,
@@ -654,6 +668,9 @@
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
+          {
+            "type": "toggle"
+          },
           {
             "type": "effort",
             "values": [
@@ -725,6 +742,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
+            "type": "toggle"
+          },
+          {
             "type": "effort",
             "values": [
               "low",
@@ -791,6 +811,9 @@
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
+          {
+            "type": "toggle"
+          },
           {
             "type": "effort",
             "values": [
@@ -878,6 +901,9 @@
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
+          {
+            "type": "toggle"
+          },
           {
             "type": "effort",
             "values": [
@@ -1010,9 +1036,6 @@
               "provider": {
                 "body": {
                   "speed": "fast"
-                },
-                "headers": {
-                  "anthropic-beta": "fast-mode-2026-02-01"
                 }
               }
             }
@@ -1054,6 +1077,9 @@
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
+          {
+            "type": "toggle"
+          },
           {
             "type": "budget_tokens",
             "min": 1024
@@ -1118,6 +1144,9 @@
         "reasoning": true,
         "reasoning_options": [
           {
+            "type": "toggle"
+          },
+          {
             "type": "budget_tokens",
             "min": 1024
           }
@@ -1179,6 +1208,9 @@
         "attachment": true,
         "reasoning": true,
         "reasoning_options": [
+          {
+            "type": "toggle"
+          },
           {
             "type": "effort",
             "values": [
@@ -2982,159 +3014,6 @@
       }
     },
     {
-      "canonical_model_id": "devstral-2512",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "devstral-2512",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "devstral-2512",
-        "name": "Devstral 2",
-        "description": "Mistral's coding-agent model for repository work, terminal tasks, and software fixes",
-        "family": "devstral",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-12",
-        "release_date": "2025-12-09",
-        "last_updated": "2025-12-09",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.4,
-          "output": 2
-        }
-      }
-    },
-    {
-      "canonical_model_id": "devstral-latest",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "devstral-latest",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "devstral-latest",
-        "name": "Devstral 2",
-        "description": "Legacy model retained for compatibility with older integrations",
-        "family": "devstral",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-12",
-        "release_date": "2025-12-09",
-        "last_updated": "2025-12-09",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.4,
-          "output": 2
-        }
-      }
-    },
-    {
-      "canonical_model_id": "devstral-medium-latest",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "devstral-medium-latest",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "devstral-medium-latest",
-        "name": "Devstral 2 (latest)",
-        "description": "Legacy model retained for compatibility with older integrations",
-        "family": "devstral-medium",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-12",
-        "release_date": "2025-12-02",
-        "last_updated": "2025-12-02",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.4,
-          "output": 2
-        }
-      }
-    },
-    {
       "canonical_model_id": "doubao-seed-1-6-251015",
       "scope": "publisher_api_model",
       "source": {
@@ -4143,59 +4022,6 @@
       }
     },
     {
-      "canonical_model_id": "gemini-2.5-computer-use-preview-10-2025",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "google",
-        "source_id": "gemini-2.5-computer-use-preview-10-2025",
-        "priority": 70,
-        "policy_rank": 2
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gemini-2.5-computer-use-preview-10-2025",
-        "name": "Gemini 2.5 Computer Use Preview 10-2025",
-        "description": "Specialized Gemini 2.5 model for browser-control agents that automate UI tasks",
-        "family": "gemini-computer-use",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-01",
-        "release_date": "2025-10-07",
-        "last_updated": "2025-10-07",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "output": 64000
-        },
-        "cost": {
-          "input": 1.25,
-          "output": 10
-        },
-        "canonical_model_id": "google/gemini-2.5-computer-use-preview-10-2025"
-      }
-    },
-    {
       "canonical_model_id": "gemini-2.5-flash",
       "scope": "publisher_api_model",
       "source": {
@@ -4254,6 +4080,7 @@
           "context": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.3,
           "output": 2.5,
@@ -4431,6 +4258,7 @@
           "context": 8192,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.5,
           "output": 10
@@ -4493,6 +4321,7 @@
           "context": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.25,
           "output": 10,
@@ -4562,6 +4391,7 @@
           "context": 8192,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 1,
           "output": 20
@@ -4757,6 +4587,7 @@
           "context": 131072,
           "output": 32768
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.5,
           "output": 3
@@ -4824,6 +4655,7 @@
           "context": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.25,
           "output": 1.5,
@@ -4894,75 +4726,6 @@
           "output": 1.5
         },
         "canonical_model_id": "google/gemini-3.1-flash-lite-image"
-      }
-    },
-    {
-      "canonical_model_id": "gemini-3.1-flash-lite-preview",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "google",
-        "source_id": "gemini-3.1-flash-lite-preview",
-        "priority": 70,
-        "policy_rank": 2
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gemini-3.1-flash-lite-preview",
-        "name": "Gemini 3.1 Flash Lite Preview",
-        "description": "Legacy model retained for compatibility with older integrations",
-        "family": "gemini-flash-lite",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "minimal",
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2025-01",
-        "release_date": "2026-03-03",
-        "last_updated": "2026-03-03",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video",
-            "audio",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1048576,
-          "output": 65536
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.25,
-          "output": 1.5,
-          "cache_read": 0.025,
-          "input_audio": 0.5
-        }
       }
     },
     {
@@ -5081,6 +4844,7 @@
           "context": 8192,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 1,
           "output": 20
@@ -5312,6 +5076,7 @@
           "context": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.5,
           "output": 9,
@@ -5571,6 +5336,7 @@
           "context": 1048576,
           "output": 65536
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.75,
           "output": 3.75,
@@ -5966,6 +5732,7 @@
           "context": 2048,
           "output": 1
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.15,
           "output": 0
@@ -6051,7 +5818,7 @@
       "raw": {
         "id": "gemini-flash-latest",
         "name": "Gemini Flash Latest",
-        "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
+        "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
         "family": "gemini-flash",
         "attachment": true,
         "reasoning": true,
@@ -6068,9 +5835,8 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "knowledge": "2026-03",
-        "release_date": "2026-08-13",
-        "last_updated": "2026-08-13",
+        "release_date": "2026-09-02",
+        "last_updated": "2026-09-02",
         "modalities": {
           "input": [
             "text",
@@ -6161,60 +5927,6 @@
           "output": 2.5,
           "cache_read": 0.03
         }
-      }
-    },
-    {
-      "canonical_model_id": "gemini-omni-flash-preview",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "google",
-        "source_id": "gemini-omni-flash-preview",
-        "priority": 70,
-        "policy_rank": 2
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gemini-omni-flash-preview",
-        "type": "video",
-        "name": "Gemini Omni Flash Preview",
-        "description": "Video generation and editing model for fast, conversational text- and image-to-video workflows",
-        "family": "gemini-omni-flash",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "tool_call": false,
-        "temperature": true,
-        "release_date": "2026-06-30",
-        "last_updated": "2026-06-30",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output": [
-            "video"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 131072,
-          "output": 65536
-        },
-        "cost": {
-          "input": 1.5,
-          "output": 17.5
-        },
-        "canonical_model_id": "google/gemini-omni-flash-preview"
       }
     },
     {
@@ -9728,164 +9440,6 @@
       }
     },
     {
-      "canonical_model_id": "gpt-3.5-turbo",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "gpt-3.5-turbo",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gpt-3.5-turbo",
-        "name": "GPT-3.5-turbo",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "gpt",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": false,
-        "structured_output": false,
-        "temperature": true,
-        "knowledge": "2021-09-01",
-        "release_date": "2023-03-01",
-        "last_updated": "2023-11-06",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 16385,
-          "output": 4096
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.5,
-          "output": 1.5,
-          "cache_read": 0
-        }
-      }
-    },
-    {
-      "canonical_model_id": "gpt-4",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "gpt-4",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gpt-4",
-        "name": "GPT-4",
-        "description": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
-        "family": "gpt",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": false,
-        "temperature": true,
-        "knowledge": "2023-11",
-        "release_date": "2023-11-06",
-        "last_updated": "2024-04-09",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 8192,
-          "output": 8192
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 30,
-          "output": 60
-        }
-      }
-    },
-    {
-      "canonical_model_id": "gpt-4-turbo",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "gpt-4-turbo",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gpt-4-turbo",
-        "name": "GPT-4 Turbo",
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "gpt",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": false,
-        "temperature": true,
-        "knowledge": "2023-12",
-        "release_date": "2023-11-06",
-        "last_updated": "2024-04-09",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "output": 4096
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 10,
-          "output": 30
-        }
-      }
-    },
-    {
       "canonical_model_id": "gpt-4.1",
       "scope": "publisher_api_model",
       "source": {
@@ -9932,6 +9486,7 @@
           "context": 1047576,
           "output": 32768
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "fast": {
@@ -10002,6 +9557,7 @@
           "context": 1047576,
           "output": 32768
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "fast": {
@@ -10022,76 +9578,6 @@
           "input": 0.4,
           "output": 1.6,
           "cache_read": 0.1
-        }
-      }
-    },
-    {
-      "canonical_model_id": "gpt-4.1-nano",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "gpt-4.1-nano",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gpt-4.1-nano",
-        "name": "GPT-4.1 nano",
-        "description": "Tiny GPT-4.1 option for classification, routing, and very high-volume tasks",
-        "family": "gpt-nano",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2024-04",
-        "release_date": "2025-04-14",
-        "last_updated": "2025-04-14",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1047576,
-          "output": 32768
-        },
-        "status": "deprecated",
-        "experimental": {
-          "modes": {
-            "fast": {
-              "cost": {
-                "input": 0.2,
-                "output": 0.8,
-                "cache_read": 0.05
-              },
-              "provider": {
-                "body": {
-                  "service_tier": "priority"
-                }
-              }
-            }
-          }
-        },
-        "cost": {
-          "input": 0.1,
-          "output": 0.4,
-          "cache_read": 0.025
         }
       }
     },
@@ -10142,6 +9628,7 @@
           "context": 128000,
           "output": 16384
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "fast": {
@@ -10162,74 +9649,6 @@
           "input": 2.5,
           "output": 10,
           "cache_read": 1.25
-        }
-      }
-    },
-    {
-      "canonical_model_id": "gpt-4o-2024-05-13",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "gpt-4o-2024-05-13",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gpt-4o-2024-05-13",
-        "name": "GPT-4o (2024-05-13)",
-        "description": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
-        "family": "gpt",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "knowledge": "2023-09",
-        "release_date": "2024-05-13",
-        "last_updated": "2024-05-13",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "output": 4096
-        },
-        "status": "deprecated",
-        "experimental": {
-          "modes": {
-            "fast": {
-              "cost": {
-                "input": 8.75,
-                "output": 26.25
-              },
-              "provider": {
-                "body": {
-                  "service_tier": "priority"
-                }
-              }
-            }
-          }
-        },
-        "cost": {
-          "input": 5,
-          "output": 15
         }
       }
     },
@@ -10279,6 +9698,7 @@
           "context": 128000,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 2.5,
           "output": 10,
@@ -10332,6 +9752,7 @@
           "context": 128000,
           "output": 16384
         },
+        "status": "deprecated",
         "cost": {
           "input": 2.5,
           "output": 10,
@@ -10386,6 +9807,7 @@
           "context": 128000,
           "output": 16384
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "fast": {
@@ -10467,6 +9889,7 @@
           "input": 272000,
           "output": 128000
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "fast": {
@@ -10561,6 +9984,7 @@
           "input": 272000,
           "output": 128000
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "fast": {
@@ -10654,6 +10078,7 @@
           "input": 272000,
           "output": 128000
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "flex": {
@@ -10732,6 +10157,7 @@
           "input": 272000,
           "output": 272000
         },
+        "status": "deprecated",
         "cost": {
           "input": 15,
           "output": 120
@@ -10796,6 +10222,7 @@
           "input": 272000,
           "output": 128000
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "fast": {
@@ -11048,6 +10475,7 @@
           "input": 272000,
           "output": 128000
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "fast": {
@@ -11063,73 +10491,6 @@
               }
             }
           }
-        },
-        "cost": {
-          "input": 1.75,
-          "output": 14,
-          "cache_read": 0.175
-        }
-      }
-    },
-    {
-      "canonical_model_id": "gpt-5.3-codex-spark",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "gpt-5.3-codex-spark",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gpt-5.3-codex-spark",
-        "name": "GPT-5.3 Codex Spark",
-        "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-        "family": "gpt-codex-spark",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": false,
-        "knowledge": "2025-08-31",
-        "release_date": "2026-02-05",
-        "last_updated": "2026-02-05",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "input": 100000,
-          "output": 32000
         },
         "cost": {
           "input": 1.75,
@@ -11402,6 +10763,7 @@
           "input": 272000,
           "output": 128000
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "flex": {
@@ -13394,6 +12756,7 @@
           "input": 0,
           "output": 0
         },
+        "status": "deprecated",
         "canonical_model_id": "openai/gpt-image-2"
       }
     },
@@ -13519,78 +12882,6 @@
           "output": 0.5
         },
         "canonical_model_id": "openai/gpt-oss-20b"
-      }
-    },
-    {
-      "canonical_model_id": "gpt-realtime-2.1",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "gpt-realtime-2.1",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "gpt-realtime-2.1",
-        "type": "realtime",
-        "name": "GPT-Realtime-2.1",
-        "description": "Realtime speech-to-speech model with configurable reasoning, tool use, and robust voice-agent behavior",
-        "family": "gpt-realtime",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "minimal",
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": false,
-        "temperature": false,
-        "knowledge": "2024-09-30",
-        "release_date": "2026-07-06",
-        "last_updated": "2026-07-06",
-        "modalities": {
-          "input": [
-            "text",
-            "audio",
-            "image"
-          ],
-          "output": [
-            "text",
-            "audio"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 128000,
-          "input": 96000,
-          "output": 32000
-        },
-        "cost": {
-          "input": 4,
-          "output": 24,
-          "cache_read": 0.4,
-          "input_audio": 32,
-          "output_audio": 64
-        },
-        "canonical_model_id": "openai/gpt-realtime-2.1"
       }
     },
     {
@@ -14614,6 +13905,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "structured_output": true,
         "temperature": true,
         "release_date": "2026-07-15",
@@ -14679,6 +13973,9 @@
           }
         ],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "structured_output": true,
         "temperature": true,
         "release_date": "2026-11-05",
@@ -14732,6 +14029,9 @@
         "reasoning": true,
         "reasoning_options": [],
         "tool_call": true,
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "temperature": true,
         "release_date": "2026-07-30",
         "last_updated": "2026-07-30",
@@ -16533,6 +15833,7 @@
           }
         ],
         "tool_call": true,
+        "structured_output": true,
         "temperature": true,
         "knowledge": "2025-06",
         "release_date": "2025-03-17",
@@ -16540,7 +15841,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -16549,12 +15851,13 @@
         "open_weights": true,
         "limit": {
           "context": 262144,
-          "output": 16384
+          "output": 262144
         },
         "status": "deprecated",
         "cost": {
-          "input": 2,
-          "output": 5
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.15
         }
       }
     },
@@ -18657,6 +17960,60 @@
       }
     },
     {
+      "canonical_model_id": "ministral-14b-latest",
+      "scope": "publisher_api_model",
+      "source": {
+        "upstream": "models.dev",
+        "provider": "mistral",
+        "source_id": "ministral-14b-latest",
+        "priority": 70,
+        "policy_rank": 7
+      },
+      "field_priorities": {
+        "identity": 70,
+        "descriptive": 70,
+        "limits": 70,
+        "capabilities": 70,
+        "semantics": 70,
+        "pricing": 70,
+        "modes": 70
+      },
+      "raw": {
+        "id": "ministral-14b-latest",
+        "name": "Ministral 3 14B (latest)",
+        "description": "Open vision-language model for efficient local deployment, instruction following, and tool use",
+        "family": "ministral",
+        "attachment": true,
+        "reasoning": false,
+        "tool_call": true,
+        "structured_output": true,
+        "temperature": true,
+        "release_date": "2025-12-02",
+        "last_updated": "2025-12-02",
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "limit": {
+          "context": 262144,
+          "output": 262144
+        },
+        "cost": {
+          "input": 0.2,
+          "output": 0.2,
+          "cache_read": 0.02
+        },
+        "canonical_model_id": "mistral/ministral-3-14b-instruct-2512"
+      }
+    },
+    {
       "canonical_model_id": "ministral-3b-2512",
       "scope": "publisher_api_model",
       "source": {
@@ -18731,17 +18088,16 @@
       },
       "raw": {
         "id": "ministral-3b-latest",
-        "name": "Ministral 3B (latest)",
-        "description": "Compact Mistral model for edge, latency-sensitive, and cost-efficient workloads",
+        "name": "Ministral 3 3B (latest)",
+        "description": "Compact open vision-language model for edge deployment, instruction following, and tool use",
         "family": "ministral",
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "knowledge": "2024-10",
-        "release_date": "2024-10-01",
-        "last_updated": "2024-10-04",
+        "release_date": "2025-12-02",
+        "last_updated": "2025-12-02",
         "modalities": {
           "input": [
             "text",
@@ -18755,13 +18111,14 @@
         "open_weights": true,
         "limit": {
           "context": 131072,
-          "output": 128000
+          "output": 131072
         },
         "cost": {
           "input": 0.1,
           "output": 0.1,
           "cache_read": 0.01
-        }
+        },
+        "canonical_model_id": "mistral/ministral-3-3b-instruct-2512"
       }
     },
     {
@@ -18839,17 +18196,16 @@
       },
       "raw": {
         "id": "ministral-8b-latest",
-        "name": "Ministral 8B (latest)",
-        "description": "Compact Mistral model for edge, latency-sensitive, and cost-efficient workloads",
+        "name": "Ministral 3 8B (latest)",
+        "description": "Compact open vision-language model for edge deployment, instruction following, and tool use",
         "family": "ministral",
         "attachment": true,
         "reasoning": false,
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "knowledge": "2024-10",
-        "release_date": "2024-10-01",
-        "last_updated": "2024-10-04",
+        "release_date": "2025-12-02",
+        "last_updated": "2025-12-02",
         "modalities": {
           "input": [
             "text",
@@ -18863,13 +18219,14 @@
         "open_weights": true,
         "limit": {
           "context": 262144,
-          "output": 128000
+          "output": 262144
         },
         "cost": {
           "input": 0.15,
           "output": 0.15,
           "cache_read": 0.015
-        }
+        },
+        "canonical_model_id": "mistral/ministral-3-8b-instruct-2512"
       }
     },
     {
@@ -18918,7 +18275,8 @@
         },
         "cost": {
           "input": 0.1,
-          "output": 0
+          "output": 0,
+          "cache_read": 0.01
         }
       }
     },
@@ -18951,8 +18309,8 @@
         "tool_call": true,
         "structured_output": true,
         "temperature": true,
-        "knowledge": "2024-11",
-        "release_date": "2024-11-01",
+        "knowledge": "2023-10",
+        "release_date": "2025-12-02",
         "last_updated": "2025-12-02",
         "modalities": {
           "input": [
@@ -18969,11 +18327,13 @@
           "context": 262144,
           "output": 262144
         },
+        "status": "deprecated",
         "cost": {
           "input": 0.5,
           "output": 1.5,
           "cache_read": 0.05
-        }
+        },
+        "canonical_model_id": "mistral/mistral-large-2512"
       }
     },
     {
@@ -19032,72 +18392,6 @@
           "context": 1048576,
           "output": 262144
         },
-        "status": "beta",
-        "cost": {
-          "input": 0.7,
-          "output": 2.1,
-          "cache_read": 0.07
-        },
-        "canonical_model_id": "mistral/mistral-large-4"
-      }
-    },
-    {
-      "canonical_model_id": "mistral-large-4-0-8",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "mistral-large-4-0-8",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "mistral-large-4-0-8",
-        "name": "Mistral Large 4.0.8",
-        "description": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
-        "family": "mistral-large",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": true,
-        "release_date": "2026-10-06",
-        "last_updated": "2026-10-06",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 1048576,
-          "output": 262144
-        },
-        "status": "beta",
         "cost": {
           "input": 0.7,
           "output": 2.1,
@@ -19162,117 +18456,12 @@
           "context": 1048576,
           "output": 262144
         },
-        "status": "beta",
         "cost": {
           "input": 0.7,
           "output": 2.1,
           "cache_read": 0.07
         },
         "canonical_model_id": "mistral/mistral-large-4"
-      }
-    },
-    {
-      "canonical_model_id": "mistral-medium-2505",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "mistral-medium-2505",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "mistral-medium-2505",
-        "name": "Mistral Medium 3",
-        "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "family": "mistral-medium",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-05",
-        "release_date": "2025-05-07",
-        "last_updated": "2025-05-07",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 131072,
-          "output": 131072
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.4,
-          "output": 2
-        }
-      }
-    },
-    {
-      "canonical_model_id": "mistral-medium-2508",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "mistral-medium-2508",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "mistral-medium-2508",
-        "name": "Mistral Medium 3.1",
-        "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
-        "family": "mistral-medium",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-05",
-        "release_date": "2025-08-12",
-        "last_updated": "2025-08-12",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.4,
-          "output": 2
-        }
       }
     },
     {
@@ -19330,6 +18519,7 @@
           "context": 262144,
           "output": 262144
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.5,
           "output": 7.5,
@@ -19392,64 +18582,13 @@
           "context": 262144,
           "output": 262144
         },
+        "status": "deprecated",
         "cost": {
           "input": 1.5,
           "output": 7.5,
           "cache_read": 0.15
         },
         "canonical_model_id": "mistral/mistral-medium-latest"
-      }
-    },
-    {
-      "canonical_model_id": "mistral-small-2506",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "mistral-small-2506",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "mistral-small-2506",
-        "name": "Mistral Small 3.2",
-        "description": "Efficient Mistral model for fast chat, extraction, and production assistants",
-        "family": "mistral-small",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2025-03",
-        "release_date": "2025-06-20",
-        "last_updated": "2025-06-20",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 16384
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.1,
-          "output": 0.3
-        }
       }
     },
     {
@@ -19711,7 +18850,8 @@
             "text",
             "image",
             "pdf",
-            "video"
+            "video",
+            "audio"
           ],
           "output": [
             "text"
@@ -20073,134 +19213,6 @@
       }
     },
     {
-      "canonical_model_id": "o1",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "o1",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "o1",
-        "name": "o1",
-        "description": "O-series reasoning model for hard analysis, math, coding, and planning",
-        "family": "o",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": false,
-        "knowledge": "2023-09",
-        "release_date": "2024-12-05",
-        "last_updated": "2024-12-05",
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 100000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 15,
-          "output": 60,
-          "cache_read": 7.5
-        }
-      }
-    },
-    {
-      "canonical_model_id": "o1-pro",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "o1-pro",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "o1-pro",
-        "name": "o1-pro",
-        "description": "O-series reasoning model for hard analysis, math, coding, and planning",
-        "family": "o-pro",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": false,
-        "knowledge": "2023-09",
-        "release_date": "2025-03-19",
-        "last_updated": "2025-03-19",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 100000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 150,
-          "output": 600
-        }
-      }
-    },
-    {
       "canonical_model_id": "o3",
       "scope": "publisher_api_model",
       "source": {
@@ -20257,6 +19269,7 @@
           "context": 200000,
           "output": 100000
         },
+        "status": "deprecated",
         "experimental": {
           "modes": {
             "fast": {
@@ -20289,69 +19302,6 @@
           "input": 2,
           "output": 8,
           "cache_read": 0.5
-        }
-      }
-    },
-    {
-      "canonical_model_id": "o3-mini",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "o3-mini",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "o3-mini",
-        "name": "o3-mini",
-        "description": "Smaller o-series reasoner for economical coding, math, and planning tasks",
-        "family": "o-mini",
-        "attachment": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": false,
-        "knowledge": "2024-05",
-        "release_date": "2024-12-20",
-        "last_updated": "2025-01-29",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 100000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 1.1,
-          "output": 4.4,
-          "cache_read": 0.55
         }
       }
     },
@@ -20411,204 +19361,10 @@
           "context": 200000,
           "output": 100000
         },
+        "status": "deprecated",
         "cost": {
           "input": 20,
           "output": 80
-        }
-      }
-    },
-    {
-      "canonical_model_id": "o4-mini",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "openai",
-        "source_id": "o4-mini",
-        "priority": 70,
-        "policy_rank": 0
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "o4-mini",
-        "name": "o4-mini",
-        "description": "Fast o-series model for compact reasoning, coding, and tool use",
-        "family": "o-mini",
-        "attachment": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "tool_call": true,
-        "structured_output": true,
-        "temperature": false,
-        "knowledge": "2024-05",
-        "release_date": "2025-04-16",
-        "last_updated": "2025-04-16",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "limit": {
-          "context": 200000,
-          "output": 100000
-        },
-        "status": "deprecated",
-        "experimental": {
-          "modes": {
-            "fast": {
-              "cost": {
-                "input": 2,
-                "output": 8,
-                "cache_read": 0.5
-              },
-              "provider": {
-                "body": {
-                  "service_tier": "priority"
-                }
-              }
-            },
-            "flex": {
-              "cost": {
-                "input": 0.55,
-                "output": 2.2,
-                "cache_read": 0.1375
-              },
-              "provider": {
-                "body": {
-                  "service_tier": "flex"
-                }
-              }
-            }
-          }
-        },
-        "cost": {
-          "input": 1.1,
-          "output": 4.4,
-          "cache_read": 0.275
-        }
-      }
-    },
-    {
-      "canonical_model_id": "open-mistral-nemo",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "open-mistral-nemo",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "open-mistral-nemo",
-        "name": "Open Mistral Nemo",
-        "description": "Legacy model retained for compatibility with older integrations",
-        "family": "mistral-nemo",
-        "attachment": false,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-07",
-        "release_date": "2024-07-01",
-        "last_updated": "2024-07-01",
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 128000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.15,
-          "output": 0.15
-        }
-      }
-    },
-    {
-      "canonical_model_id": "pixtral-12b",
-      "scope": "publisher_api_model",
-      "source": {
-        "upstream": "models.dev",
-        "provider": "mistral",
-        "source_id": "pixtral-12b",
-        "priority": 70,
-        "policy_rank": 7
-      },
-      "field_priorities": {
-        "identity": 70,
-        "descriptive": 70,
-        "limits": 70,
-        "capabilities": 70,
-        "semantics": 70,
-        "pricing": 70,
-        "modes": 70
-      },
-      "raw": {
-        "id": "pixtral-12b",
-        "name": "Pixtral 12B",
-        "description": "Mistral vision-language model for image understanding and multimodal chat",
-        "family": "pixtral",
-        "attachment": true,
-        "reasoning": false,
-        "tool_call": true,
-        "temperature": true,
-        "knowledge": "2024-09",
-        "release_date": "2024-09-01",
-        "last_updated": "2024-09-01",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "limit": {
-          "context": 128000,
-          "output": 128000
-        },
-        "status": "deprecated",
-        "cost": {
-          "input": 0.15,
-          "output": 0.15
         }
       }
     },
@@ -29751,7 +28507,8 @@
         "limit": {
           "context": 0,
           "output": 0
-        }
+        },
+        "status": "deprecated"
       }
     },
     {
@@ -29797,7 +28554,8 @@
         "limit": {
           "context": 0,
           "output": 0
-        }
+        },
+        "status": "deprecated"
       }
     },
     {

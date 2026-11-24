@@ -2246,6 +2246,80 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "devstral-2512",
+      "field": "description",
+      "winner": {
+        "value": "Mistral coding agent model for repository tasks and software engineering workflows",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "cortecs",
+          "source_id": "devstral-2512",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Mistral coding agent model for repository tasks and software engineering workflows",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "devstral-2512",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Mistral's coding-agent model for repository work, terminal tasks, and software fixes",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "llmgateway",
+            "source_id": "devstral-2512",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "devstral-2512",
+      "field": "origin",
+      "winner": {
+        "value": "Cortecs",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "cortecs",
+          "source_id": "devstral-2512",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Cortecs",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "devstral-2512",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "DevPass (LLM Gateway)",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "llmgateway",
+            "source_id": "devstral-2512",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "doubao-seed-2.0-lite",
       "field": "display_name",
       "winner": {
@@ -3414,6 +3488,63 @@
             "upstream": "models.dev",
             "provider": "abacus",
             "source_id": "gemini-3.1-flash-image-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gemini-3.1-flash-lite-preview",
+      "field": "origin",
+      "winner": {
+        "value": "302.AI",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gemini-3.1-flash-lite-preview",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "302.AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gemini-3.1-flash-lite-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Abacus",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gemini-3.1-flash-lite-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Concentrate",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "concentrate",
+            "source_id": "gemini-3.1-flash-lite-preview",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Vivgrid",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "vivgrid",
+            "source_id": "gemini-3.1-flash-lite-preview",
             "priority": 20,
             "policy_rank": 0
           }
@@ -6180,6 +6311,43 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "gpt-4-turbo",
+      "field": "origin",
+      "winner": {
+        "value": "Azure",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "azure",
+          "source_id": "gpt-4-turbo",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Azure",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "gpt-4-turbo",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Azure Cognitive Services",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "gpt-4-turbo",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "gpt-4-turbo-vision",
       "field": "origin",
       "winner": {
@@ -6209,6 +6377,297 @@
             "upstream": "models.dev",
             "provider": "azure-cognitive-services",
             "source_id": "gpt-4-turbo-vision",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-4.1-nano",
+      "field": "display_name",
+      "winner": {
+        "value": "gpt-4.1-nano",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-4.1-nano",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "gpt-4.1-nano",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "GPT-4.1 nano",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "GPT-4.1 nano",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "GPT-4.1 nano",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "GPT-4.1 nano",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "OpenAI GPT-4.1 Nano",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "GPT-4.1 Nano",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "llmgateway",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "gpt-4.1-nano",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "sap-ai-core",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-4.1-nano",
+      "field": "knowledge_cutoff",
+      "winner": {
+        "value": "2024-04",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-4.1-nano",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2024-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2025-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "llmgateway",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-04",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "sap-ai-core",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "gpt-4.1-nano",
+      "field": "origin",
+      "winner": {
+        "value": "302.AI",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "302ai",
+          "source_id": "gpt-4.1-nano",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "302.AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "302ai",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Abacus",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Azure",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Azure Cognitive Services",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Cortecs",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "cortecs",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Helicone",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "DevPass (LLM Gateway)",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "llmgateway",
+            "source_id": "gpt-4.1-nano",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "SAP AI Core",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "sap-ai-core",
+            "source_id": "gpt-4.1-nano",
             "priority": 20,
             "policy_rank": 0
           }
@@ -9325,43 +9784,6 @@
             "upstream": "models.dev",
             "provider": "tokenlab",
             "source_id": "grok-4.20-non-reasoning",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        }
-      ],
-      "resolution": "highest field priority, then source policy order"
-    },
-    {
-      "model_id": "grok-build-0-1",
-      "field": "origin",
-      "winner": {
-        "value": "DevPass (LLM Gateway)",
-        "source": {
-          "upstream": "models.dev",
-          "provider": "llmgateway",
-          "source_id": "grok-build-0-1",
-          "priority": 20,
-          "policy_rank": 0
-        }
-      },
-      "candidates": [
-        {
-          "value": "DevPass (LLM Gateway)",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "llmgateway",
-            "source_id": "grok-build-0-1",
-            "priority": 20,
-            "policy_rank": 0
-          }
-        },
-        {
-          "value": "Venice AI",
-          "source": {
-            "upstream": "models.dev",
-            "provider": "venice",
-            "source_id": "grok-build-0-1",
             "priority": 20,
             "policy_rank": 0
           }
@@ -12700,6 +13122,43 @@
       "resolution": "highest field priority, then source policy order"
     },
     {
+      "model_id": "mistral-medium-2505",
+      "field": "origin",
+      "winner": {
+        "value": "Azure",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "azure",
+          "source_id": "mistral-medium-2505",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Azure",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "mistral-medium-2505",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Azure Cognitive Services",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "mistral-medium-2505",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
       "model_id": "mistral-medium-3",
       "field": "knowledge_cutoff",
       "winner": {
@@ -14042,6 +14501,609 @@
             "upstream": "models.dev",
             "provider": "venice",
             "source_id": "nvidia-nemotron-3-nano-30b-a3b",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "o1",
+      "field": "display_name",
+      "winner": {
+        "value": "o1",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "azure",
+          "source_id": "o1",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "o1",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "o1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "o1",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "o1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "OpenAI: o1",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "o1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "o1",
+      "field": "knowledge_cutoff",
+      "winner": {
+        "value": "2023-09",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "azure",
+          "source_id": "o1",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2023-09",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "o1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2023-09",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "o1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2025-01",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "o1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "o1",
+      "field": "origin",
+      "winner": {
+        "value": "Azure",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "azure",
+          "source_id": "o1",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Azure",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "o1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Azure Cognitive Services",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "o1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Helicone",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "o1",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "o3-mini",
+      "field": "display_name",
+      "winner": {
+        "value": "o3-mini",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "o3-mini",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "o3-mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "o3-mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "o3-mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "OpenAI o3 Mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "o3-mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "jiekou",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "o3-mini",
+      "field": "knowledge_cutoff",
+      "winner": {
+        "value": "2024-05",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "o3-mini",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2024-05",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-05",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-05",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2023-10",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-05",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "jiekou",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "o3-mini",
+      "field": "origin",
+      "winner": {
+        "value": "Abacus",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "o3-mini",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Abacus",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Azure",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Azure Cognitive Services",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Helicone",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Jiekou.AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "jiekou",
+            "source_id": "o3-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "o4-mini",
+      "field": "display_name",
+      "winner": {
+        "value": "o4-mini",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "o4-mini",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "o4-mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "o4-mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "aihubmix",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "o4-mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "o4-mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "OpenAI o4 Mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "o4-mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "jiekou",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "o4-mini",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "model-oracle-ai",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "o4-mini",
+      "field": "knowledge_cutoff",
+      "winner": {
+        "value": "2024-05",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "o4-mini",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "2024-05",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-05",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "aihubmix",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-05",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-05",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-06",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-05",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "jiekou",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "2024-05",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "model-oracle-ai",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        }
+      ],
+      "resolution": "highest field priority, then source policy order"
+    },
+    {
+      "model_id": "o4-mini",
+      "field": "origin",
+      "winner": {
+        "value": "Abacus",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "abacus",
+          "source_id": "o4-mini",
+          "priority": 20,
+          "policy_rank": 0
+        }
+      },
+      "candidates": [
+        {
+          "value": "Abacus",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "abacus",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "AIHubMix",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "aihubmix",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Azure",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Azure Cognitive Services",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "azure-cognitive-services",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Helicone",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "helicone",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Jiekou.AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "jiekou",
+            "source_id": "o4-mini",
+            "priority": 20,
+            "policy_rank": 0
+          }
+        },
+        {
+          "value": "Model Oracle AI",
+          "source": {
+            "upstream": "models.dev",
+            "provider": "model-oracle-ai",
+            "source_id": "o4-mini",
             "priority": 20,
             "policy_rank": 0
           }

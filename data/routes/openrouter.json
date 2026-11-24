@@ -59067,7 +59067,7 @@
     {
       "route_id": "thinkingmachines/inkling-2-mini",
       "scope": "openrouter_api_route",
-      "catalog_model_id_candidate": null,
+      "catalog_model_id_candidate": "inkling-2-mini",
       "priority": {
         "identity": 50,
         "limits": 90,

@@ -88247,6 +88247,250 @@
         "has_source_notes": true
       }
     },
+    "inkling-2-mini": {
+      "assistant_reasoning_field": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "reasoning_content",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "assistant_reasoning_interleaved": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "context_window_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 262144,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "description": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Looped MoE reasoning model (26.4B total, 3.4B active) for agentic coding, vision, and knowledge work",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "display_name": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Inkling 2 Mini",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "features": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "reasoning": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Mini",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          },
+          "structured_output": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Mini",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          },
+          "temperature": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Mini",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          },
+          "tool_calling": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Mini",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          }
+        }
+      },
+      "input": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "items": {
+          "image": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Mini",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          },
+          "text": {
+            "value": "supported",
+            "source": {
+              "upstream": "models.dev",
+              "provider": "huggingface",
+              "source_id": "thinkingmachines/Inkling-2-Mini",
+              "priority": 70,
+              "policy_rank": 34
+            }
+          }
+        }
+      },
+      "last_updated": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-11-20",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "max_input_tokens": {
+        "kind": "existing_catalog_or_pipeline_value"
+      },
+      "max_output_tokens": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": 65536,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "open_weights": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": true,
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "origin": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "Thinking Machines",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "output_modalities": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "text"
+        ],
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "pricing": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": {
+          "input_usd_per_million_tokens": "0.12",
+          "output_usd_per_million_tokens": "0.5"
+        },
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "provider_sources": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": [
+          "huggingface"
+        ],
+        "observations": [
+          {
+            "provider": "huggingface",
+            "source_id": "thinkingmachines/Inkling-2-Mini"
+          }
+        ]
+      },
+      "release_date": {
+        "kind": "upstream_field_observation",
+        "scope": "publisher_api_model",
+        "value": "2026-11-20",
+        "source": {
+          "upstream": "models.dev",
+          "provider": "huggingface",
+          "source_id": "thinkingmachines/Inkling-2-Mini",
+          "priority": 70,
+          "policy_rank": 34
+        }
+      },
+      "thinking_modes": {
+        "kind": "derived_from_models.dev_reasoning_options",
+        "upstream": "models.dev",
+        "priority": 70
+      }
+    },
     "inkling-2-small": {
       "assistant_reasoning_field": {
         "kind": "upstream_field_observation",

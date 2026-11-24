@@ -40739,6 +40739,74 @@
         "huggingface"
       ]
     },
+    "inkling-2-mini": {
+      "description": "Looped MoE reasoning model (26.4B total, 3.4B active) for agentic coding, vision, and knowledge work",
+      "release_date": "2026-11-20",
+      "last_updated": "2026-11-20",
+      "open_weights": true,
+      "display_name": "Inkling 2 Mini",
+      "origin": "Thinking Machines",
+      "context_window_tokens": 262144,
+      "max_output_tokens": 65536,
+      "input": {
+        "supported": [
+          "image",
+          "text"
+        ]
+      },
+      "features": {
+        "supported": [
+          "reasoning",
+          "structured_output",
+          "temperature",
+          "tool_calling"
+        ]
+      },
+      "output_modalities": [
+        "text"
+      ],
+      "assistant_reasoning_interleaved": true,
+      "assistant_reasoning_field": "reasoning_content",
+      "pricing": {
+        "input_usd_per_million_tokens": "0.12",
+        "output_usd_per_million_tokens": "0.5"
+      },
+      "provider_sources": [
+        "huggingface"
+      ],
+      "thinking_modes": {
+        "off": {
+          "display_name": "Off",
+          "strategy": "disabled"
+        },
+        "minimal": {
+          "display_name": "Think Minimal",
+          "strategy": "effort",
+          "effort": "minimal"
+        },
+        "low": {
+          "display_name": "Think Low",
+          "strategy": "effort",
+          "effort": "low"
+        },
+        "medium": {
+          "display_name": "Think Medium",
+          "strategy": "effort",
+          "effort": "medium"
+        },
+        "high": {
+          "display_name": "Think High",
+          "strategy": "effort",
+          "effort": "high"
+        },
+        "max": {
+          "display_name": "Think Max",
+          "strategy": "effort",
+          "effort": "max"
+        }
+      },
+      "max_input_tokens": 262144
+    },
     "inkling-2-small": {
       "description": "Multimodal MoE reasoning model (594B total, 17B active) for agentic coding, vision, and knowledge work",
       "release_date": "2026-11-05",
